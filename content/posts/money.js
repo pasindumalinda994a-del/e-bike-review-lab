@@ -79,7 +79,7 @@ const money = [
           "68 lbs means it's not fun to carry up multiple flights of stairs",
           "Rear rack sold separately (though mounts are built-in)"
         ],
-        affiliateLink: "https://amazon.com/aventon-level-3"
+        affiliateLink: "https://www.aventon.com/products/level-3-commuter-ebike?variant=44177369759939"
       },
 
       {
@@ -111,7 +111,7 @@ const money = [
           "65 lbs is still heavy when you're carrying it folded",
           "Smaller wheels mean you'll feel bumps more than on full-size bikes"
         ],
-        affiliateLink: "https://amazon.com/lectric-xp4-750"
+        affiliateLink: "https://lectricebikes.com/products/xp-green-long-range"
       },
 
       {
@@ -143,7 +143,7 @@ const money = [
           "75 lbs means it's not a bike you want to manually haul around",
           "At $2,499, it's an investment (though competitive with similar feature sets)"
         ],
-        affiliateLink: "https://amazon.com/segway-xafari"
+        affiliateLink: "https://store.segway.com/segway-ebike-xafari?srsltid=AfmBOoo2Vmp4b1akHGxlzWrDj9fXcprWskKW6QwQD3vqYDsWSkCI7k9G"
       },
 
       {
@@ -175,7 +175,7 @@ const money = [
           "Not the fastest or most powerful option if you're chasing performance",
           "Frame design is practical but not particularly sleek"
         ],
-        affiliateLink: "https://amazon.com/rad-power-radster-trail"
+        affiliateLink: "https://www.radpowerbikes.com/products/radster-trail-electric-off-road-bike?srsltid=AfmBOopZAsu6fOYxUqJq4kn8w1oY3kv15qGAZtm5OiOpmwi2XagMikW_"
       },
 
       {
@@ -207,7 +207,7 @@ const money = [
           "77 lbs is hefty—storage and transport require consideration",
           "Fat tires create more rolling resistance on smooth pavement (slight speed/range impact)"
         ],
-        affiliateLink: "https://amazon.com/aventon-aventure-3"
+        affiliateLink: "https://www.aventon.com/products/aventure-3-ebike?srsltid=AfmBOopSondtD9EaATZVK7wAFVSJRmHv0KKz3_TgpRdIkckMeawVijkA&variant=44285587030211"
       },
 
       {
@@ -239,7 +239,7 @@ const money = [
           "500W motor is adequate but not powerful compared to 750W options",
           "More expensive than Lectric's budget offerings without dramatic performance gains"
         ],
-        affiliateLink: "https://amazon.com/lectric-one"
+        affiliateLink: "https://lectricebikes.com/products/lectric-one-long-range-ebike?srsltid=AfmBOorXGbSRmP-zaTE1iypLEUSV0xh4qJxjGWe1UA3VNdQfKZ7Niasy"
       },
 
       {
@@ -271,7 +271,7 @@ const money = [
           "Significantly more expensive than budget folders with similar specs",
           "Smaller battery means less range than full-size e-bikes"
         ],
-        affiliateLink: "https://amazon.com/blix-vika-x"
+        affiliateLink: "https://blixbike.com/products/vika-x-folding-ebike?srsltid=AfmBOop7VGSko1Zco_iPtcTjjI7DnDzBT6BcgjsEfl8F_65UZ2i5-mk5"
       },
 
       {
@@ -303,7 +303,7 @@ const money = [
           "350W motor and 20 mph limit mean it's not for speed enthusiasts or steep hills",
           "Smaller battery provides less range than premium options"
         ],
-        affiliateLink: "https://amazon.com/aventon-soltera-25"
+        affiliateLink: "https://www.aventon.com/products/soltera-2-5-ebike?srsltid=AfmBOorsFAoeB2t5b8Ldtr2HA4j0-dXRf1Z69NQ30CWhxn6Of0MPfDD8&variant=44077028704451"
       },
 
       {
@@ -335,7 +335,7 @@ const money = [
           "Jack-of-all-trades design means it doesn't excel at any one discipline",
           "Frame geometry is balanced but not as aggressive as dedicated trail bikes"
         ],
-        affiliateLink: "https://amazon.com/ride1up-vorsa"
+        affiliateLink: "https://ride1up.com/product/vorsa/#:~:text=The%20Vorsa%20is%20the%20most,compliant%20battery%20for%20extended%20range."
       },
 
       {
@@ -367,7 +367,7 @@ const money = [
           "Heavy (75 lbs) and utilitarian design isn't for riders who prioritize style",
           "Range decreases significantly when carrying heavy loads"
         ],
-        affiliateLink: "https://amazon.com/rad-power-radrunner-max"
+        affiliateLink: "https://www.radpowerbikes.com/products/radrunner-max-electric-cargo-utility-bike?srsltid=AfmBOopro-afso0jrrkkGA7NZKxwxeCwXV8ogmDy-_SobfdLJ9-nXd_R"
       }
     ],
 
@@ -377,7 +377,7 @@ const money = [
     comparisonTable: [
       {
         model: "Aventon Level 3",
-        affiliateLink: "https://amazon.com/aventon-level-3",
+        affiliateLink: "https://www.aventon.com/products/level-3-commuter-ebike?variant=44177369759939",
         price: "$1,899",
         motor: "750W",
         battery: "720Wh",
@@ -387,7 +387,7 @@ const money = [
       },
       {
         model: "Lectric XP4 750",
-        affiliateLink: "https://amazon.com/lectric-xp4-750",
+        affiliateLink: "https://lectricebikes.com/products/xp-green-long-range",
         price: "$1,199",
         motor: "750W",
         battery: "672Wh",
@@ -397,7 +397,7 @@ const money = [
       },
       {
         model: "Segway Xafari",
-        affiliateLink: "https://amazon.com/segway-xafari",
+        affiliateLink: "https://store.segway.com/segway-ebike-xafari?srsltid=AfmBOoo2Vmp4b1akHGxlzWrDj9fXcprWskKW6QwQD3vqYDsWSkCI7k9G",
         price: "$2,499",
         motor: "1000W",
         battery: "1104Wh",
@@ -407,7 +407,7 @@ const money = [
       },
       {
         model: "Rad Power Radster Trail",
-        affiliateLink: "https://amazon.com/rad-power-radster-trail",
+        affiliateLink: "https://www.radpowerbikes.com/products/radster-trail-electric-off-road-bike?srsltid=AfmBOopZAsu6fOYxUqJq4kn8w1oY3kv15qGAZtm5OiOpmwi2XagMikW_",
         price: "$1,799",
         motor: "750W",
         battery: "672Wh",
@@ -417,7 +417,7 @@ const money = [
       },
       {
         model: "Aventon Aventure.3",
-        affiliateLink: "https://amazon.com/aventon-aventure-3",
+        affiliateLink: "https://www.aventon.com/products/aventure-3-ebike?srsltid=AfmBOopSondtD9EaATZVK7wAFVSJRmHv0KKz3_TgpRdIkckMeawVijkA&variant=44285587030211",
         price: "$1,999",
         motor: "750W",
         battery: "720Wh",
@@ -427,7 +427,7 @@ const money = [
       },
       {
         model: "Lectric ONE",
-        affiliateLink: "https://amazon.com/lectric-one",
+        affiliateLink: "https://lectricebikes.com/products/lectric-one-long-range-ebike?srsltid=AfmBOorXGbSRmP-zaTE1iypLEUSV0xh4qJxjGWe1UA3VNdQfKZ7Niasy",
         price: "$1,799",
         motor: "500W",
         battery: "614Wh",
@@ -437,7 +437,7 @@ const money = [
       },
       {
         model: "Blix Vika X",
-        affiliateLink: "https://amazon.com/blix-vika-x",
+        affiliateLink: "https://blixbike.com/products/vika-x-folding-ebike?srsltid=AfmBOop7VGSko1Zco_iPtcTjjI7DnDzBT6BcgjsEfl8F_65UZ2i5-mk5",
         price: "$2,199",
         motor: "500W",
         battery: "480Wh",
@@ -447,7 +447,7 @@ const money = [
       },
       {
         model: "Aventon Soltera 2.5",
-        affiliateLink: "https://amazon.com/aventon-soltera-25",
+        affiliateLink: "https://www.aventon.com/products/soltera-2-5-ebike?srsltid=AfmBOorsFAoeB2t5b8Ldtr2HA4j0-dXRf1Z69NQ30CWhxn6Of0MPfDD8&variant=44077028704451",
         price: "$1,199",
         motor: "350W",
         battery: "378Wh",
@@ -457,7 +457,7 @@ const money = [
       },
       {
         model: "Ride1Up Vorsa",
-        affiliateLink: "https://amazon.com/ride1up-vorsa",
+        affiliateLink: "https://ride1up.com/product/vorsa/#:~:text=The%20Vorsa%20is%20the%20most,compliant%20battery%20for%20extended%20range.",
         price: "$1,495",
         motor: "750W",
         battery: "672Wh",
@@ -467,7 +467,7 @@ const money = [
       },
       {
         model: "Rad Power RadRunner Max",
-        affiliateLink: "https://amazon.com/rad-power-radrunner-max",
+        affiliateLink: "https://www.radpowerbikes.com/products/radrunner-max-electric-cargo-utility-bike?srsltid=AfmBOopro-afso0jrrkkGA7NZKxwxeCwXV8ogmDy-_SobfdLJ9-nXd_R",
         price: "$1,999",
         motor: "750W",
         battery: "672Wh",
