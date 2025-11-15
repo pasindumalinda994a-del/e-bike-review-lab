@@ -1,0 +1,206 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Informational Article Schema",
+  "description": "Schema for informational articles in the affiliate structure project",
+  "type": "object",
+  "required": [
+    "id",
+    "slug",
+    "categorySlug",
+    "category",
+    "contentType",
+    "heroImage",
+    "cardImage",
+    "articleHeroImage",
+    "heroImageAlt",
+    "title",
+    "h1",
+    "introductionHeading",
+    "introductionHook",
+    "snippetAnswer",
+    "roadmap",
+    "metaDescription",
+    "coreHeading",
+    "coreSections",
+    "contextHeading",
+    "contextFAQs",
+    "takeawayHeading",
+    "takeawayBullets",
+    "relatedGuides",
+    "publishedAt",
+    "updatedAt",
+    "estimatedReadingTime"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique article identifier in slug format (e.g., 'is-it-worth-getting-an-electric-bike-2025')"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL slug, usually same as id"
+    },
+    "categorySlug": {
+      "type": "string",
+      "description": "Category slug for URL routing (e.g., 'electric-bikes')"
+    },
+    "category": {
+      "type": "string",
+      "description": "Display name of category (e.g., 'Electric Bikes')"
+    },
+    "contentType": {
+      "type": "string",
+      "enum": ["information"],
+      "description": "Content type identifier, always 'information' for this type"
+    },
+    "heroImage": {
+      "type": "string",
+      "description": "Path to hero image (e.g., '/images/products/hero6.jpg')"
+    },
+    "cardImage": {
+      "type": "string",
+      "description": "Path to card/thumbnail image"
+    },
+    "articleHeroImage": {
+      "type": "string",
+      "description": "Path to article header image"
+    },
+    "heroImageAlt": {
+      "type": "string",
+      "description": "Alt text for hero image (accessibility and SEO)"
+    },
+    "title": {
+      "type": "string",
+      "description": "Full article title, SEO optimized, may include year"
+    },
+    "h1": {
+      "type": "string",
+      "description": "Main page heading, usually same as title"
+    },
+    "introductionHeading": {
+      "type": "string",
+      "description": "Introduction section heading (e.g., 'Introduction: Should You Join...')"
+    },
+    "introductionHook": {
+      "type": "string",
+      "description": "Engaging opening paragraph that hooks the reader"
+    },
+    "snippetAnswer": {
+      "type": "string",
+      "description": "Direct answer to main question in 2-3 sentences"
+    },
+    "roadmap": {
+      "type": "string",
+      "description": "Paragraph explaining what reader will learn in the guide"
+    },
+    "metaDescription": {
+      "type": "string",
+      "description": "SEO meta description (150-160 characters)"
+    },
+    "coreHeading": {
+      "type": "string",
+      "description": "Main core section heading"
+    },
+    "coreSections": {
+      "type": "array",
+      "description": "Array of core content sections",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["title"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Section title"
+          },
+          "paragraphs": {
+            "type": "array",
+            "description": "Optional array of introductory paragraphs",
+            "items": {
+              "type": "string"
+            }
+          },
+          "bullets": {
+            "type": "array",
+            "description": "Array of bullet points",
+            "items": {
+              "type": "object",
+              "required": ["text"],
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "Bullet point text content"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "contextHeading": {
+      "type": "string",
+      "description": "FAQ section heading"
+    },
+    "contextFAQs": {
+      "type": "array",
+      "description": "Array of frequently asked questions",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["question", "answer"],
+        "properties": {
+          "question": {
+            "type": "string",
+            "description": "FAQ question in natural language"
+          },
+          "answer": {
+            "type": "string",
+            "description": "Comprehensive answer to the question"
+          }
+        }
+      }
+    },
+    "takeawayHeading": {
+      "type": "string",
+      "description": "Key takeaways section heading"
+    },
+    "takeawayBullets": {
+      "type": "array",
+      "description": "Array of key takeaway points",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "properties": {
+          "text": {
+            "type": "string",
+            "description": "Takeaway point text"
+          }
+        }
+      }
+    },
+    "relatedGuides": {
+      "type": "array",
+      "description": "Array of related article IDs",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publishedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Publication date in ISO 8601 format"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last update date in ISO 8601 format"
+    },
+    "estimatedReadingTime": {
+      "type": "number",
+      "description": "Estimated reading time in minutes",
+      "minimum": 1
+    }
+  }
+}
+

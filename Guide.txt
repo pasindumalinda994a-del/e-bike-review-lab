@@ -1,0 +1,33 @@
+Customization Guide
+1. Project Identity
+app/layout.js – swap G-XXXXXXXXXX with your GA4 or GTM ID; update metadata (brand name, descriptions, social previews, robot rules); adjust <html lang> if needed.
+next.config.js – remove the sample redirect and add any real 301s; expand images.remotePatterns for your CDN(s).
+public/default-og.png / public/default-twitter.png – replace 1×1 placeholders with 1200×630 and 1200×600 assets.
+2. Money Page Content (lib/mock-data.js)
+Rename the roundup slug (slug) to your primary keyword; keep it URL-safe.
+Craft a 55–60 character seoTitle with a modifier (e.g., “2025”, “Top Picks”) that differs from the H1.
+Write a distinctive h1 that leans into secondary modifiers or audience pain points.
+Tighten metaDescription under ~155 characters; question format improves CTR.
+Refresh introduction to explain your research process and unique angle.
+Replace each element in products with real SKU data (image path, affiliate link, review highlights, pros/cons). Add or remove products as needed.
+Rewrite buyersGuide to hit decision criteria for your niche (materials, price tiers, warranty, etc.).
+Point relatedGuides to the supporting articles you will publish in /guides.
+3. Supporting Articles (guides array)
+Duplicate or remove entries to match your cluster; each needs slug, seoTitle, h1, metaDescription, body, and timestamps.
+In the HTML body, add internal links back to the roundup (/<category>/<slug>) and to any additional cluster pieces.
+Create new files in public/images/... if the guides will embed images.
+4. Components & Styling
+components/ComparisonTable.js / components/DetailedProductReviews.js / components/BuyersGuide.js – adjust copy, colors, or layout classes to match your design system. If you need pricing or spec columns, extend the props and markup.
+Tailwind tokens live in app/globals.css; define brand colors, fonts, or spacing there.
+5. Routing & Metadata
+The money page already uses the new fields for Three Kings and schema. If you introduce new structured data (e.g., ItemList, FAQ), compose it within app/[category]/[slug]/page.js.
+Guides use app/guides/[slug]/page.js. Add more schema (HowTo/FAQ) in articleSchema as needed.
+app/sitemap.js automatically includes posts and guides; confirm priorities and change-frequency values fit your publishing cadence.
+6. Data Source Upgrade (when ready)
+If you prefer real CMS data, replace the mock functions in lib/mock-data.js with fetches from your headless CMS or database and keep the return shape identical.
+Update the homepage (app/page.js) if you want to surface guides or use different hero copy.
+7. Quality Checks
+Run npm run lint and npm run dev after edits.
+Visit /<category>/<slug> and each /guides/<slug> to verify internal links, schema, and headings.
+Inspect HTML output (View Source > JSON-LD) to confirm metadata and Three Kings alignment.
+Follow these steps whenever you pivot to a new niche—swap the copy and data in one place, keep the architecture stable, and you’ll preserve the SEO structure while rolling out vertical-specific content.
