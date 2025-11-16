@@ -9,52 +9,19 @@ export const categories = [
   {
     slug: "electric-bikes",
     name: "Electric Bikes",
-    heroImage: "/images/products/hero1.jpg",
+    heroImage: "/images/categories/electric-bikes.jpg",
     description:
       "Hands-on electric bike reviews covering commuters, folders, cargo rigs, and all-terrain builds to help you choose the perfect ride.",
   },
   {
     slug: "electric-mountain-bikes",
     name: "Electric Mountain Bikes",
-    heroImage: "/images/products/hero2.jpg",
+    heroImage: "/images/categories/electric-mountain-bikes.jpg",
     description:
-      "In-depth electric mountain bike reviews focused on mid-drive power, suspension travel, and trail-tested durability for every kind of terrain.",
+      "Hands-on electric bike reviews covering commuters, folders, cargo rigs, and all-terrain builds to help you choose the perfect ride.",
   },
-  {
-    slug: "electric-folding-bikes",
-    name: "Electric Folding Bikes",
-    heroImage: "/images/products/hero3.jpg",
-    description:
-      "Compact electric folding bike reviews that balance portability, range, and ride quality for commuters, RV travelers, and space-conscious riders.",
-  },
-  {
-    slug: "electric-road-bikes",
-    name: "Electric Road Bikes",
-    heroImage: "/images/products/hero2.jpg",
-    description:
-      "Lightweight electric road bike reviews focused on endurance range, stealthy assists, and premium performance for long pavements rides.",
-  },
-  {
-    slug: "electric-cargo-bikes",
-    name: "Electric Cargo Bikes",
-    heroImage: "/images/products/hero5.jpg",
-    description:
-      "Electric cargo bike reviews covering longtails, front-loaders, and compact haulers built to replace car trips with pedal-assist utility.",
-  },
-  {
-    slug: "electric-city-bikes",
-    name: "Electric City Bikes",
-    heroImage: "/images/products/hero1.jpg",
-    description:
-      "Electric city bike reviews spotlighting lightweight commuters, step-through frames, and tech-savvy urban rides built to navigate packed streets.",
-  },
-  {
-    slug: "electric-fat-bikes",
-    name: "Electric Fat Bikes",
-    heroImage: "/images/products/hero4.jpg",
-    description:
-      "Electric fat bike reviews covering snow-ready monsters, folding fatties, and full-suspension beasts built to float over sand, snow, and singletrack.",
-  },
+  
+
 ];
 
 /**

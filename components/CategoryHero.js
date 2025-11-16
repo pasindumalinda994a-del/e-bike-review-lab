@@ -23,7 +23,7 @@ export default function CategoryHero({ categoryName, image }) {
       <div
         className="absolute inset-0 bg-cover bg-center transition-transform duration-[50ms] will-change-transform"
         style={{
-          backgroundImage: `url(${image})`,
+          backgroundImage: image ? `url("${encodeURI(image)}")` : undefined,
           transform: `translateY(${scrollY * 0.2}px) scale(1.06)`,
         }}
         aria-hidden
