@@ -74,7 +74,7 @@ export default async function HomePage() {
         latest={showcaseLatest}
         sidebarPopular={showcaseSidebar}
       />
-      <HomeStoryBanner />
+      <HomeStoryBanner video="/videos/ebike-vedio.mp4" />
       <HomeCategories />
       <HomeImageGallery posts={galleryPosts} />
       <HomeNewsletter />

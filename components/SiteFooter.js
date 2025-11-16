@@ -15,18 +15,19 @@ export default function SiteFooter() {
             <Image
               src="/EbikeLogo.png"
               alt="EBikeReviewLab"
-              width={220}
-              height={70}
-              className="h-24 w-auto"
+              width={180}
+              height={57}
+              className="h-20 w-auto"
             />
           </Link>
-          <p className="mt-6 text-xl font-semibold text-white">
-            Stay ahead of the ride.
-          </p>
-          <p className="mt-3 text-sm text-[#E8F1EE]">
-            Weekly roundups of range tests, firmware updates, and real-world ride
-            data so you can choose the e-bike that fits your commute, cargo
-            needs, or trail ambitions.
+          <p className="mt-6 text-sm italic text-[#E8F1EE]/80">
+            EBikeReviewLab is a participant in various affiliate partner programs
+            with e-bike manufacturers and retailers, including Aventon, Ride1Up,
+            Rad Power Bikes, Blix, and others. These affiliate programs are designed
+            to provide a means for sites to earn advertising fees by advertising and
+            linking to partner websites. When you make a purchase through our affiliate
+            links, we may earn a commission at no additional cost to you. These
+            commissions help fund our product testing and editorial coverage.
           </p>
           <Link
             href="/newsletter"

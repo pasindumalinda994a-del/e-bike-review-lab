@@ -70,7 +70,7 @@ export default function HomeCategories() {
         <div className="grid gap-10 md:grid-cols-[minmax(0,1.5fr)_minmax(0,2fr)] md:items-center">
           <div className="space-y-4 text-left">
             <p className="text-3xl font-bold uppercase tracking-[0.2em] text-[#0C1412]">
-              Tested. Connected. Commute Ready.
+              Welcome to EBikeReviewLab
             </p>
             <Link
               href="/about"
@@ -79,14 +79,12 @@ export default function HomeCategories() {
               Learn more about us →
             </Link>
           </div>
-          <div className="space-y-6 text-left text-[#0C1412]/90">
+          <div className="space-y-4 text-left text-[#0C1412]/90">
             <p className="text-base leading-relaxed">
-              Every recommendation comes from hands-on testing—hill repeats,
-              throttle range checks, brake fades, and connectivity trials—so you
-              know exactly how a bike behaves before you buy.
+              We help you find the best electric bikes through comprehensive testing, unbiased reviews, and up-to-date industry insights. Our mission is to guide you toward confident purchase decisions with detailed guides and real-world testing.
             </p>
-            <p className="text-sm font-medium italic text-[#0C1412]">
-              Earning your trust is still the mission.
+            <p className="text-sm text-[#0C1412]/70 italic">
+              Years of industry experience. Always current. Your trusted e-bike guide.
             </p>
           </div>
         </div>
