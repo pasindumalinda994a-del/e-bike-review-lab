@@ -1,86 +1,263 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
-// Helper function to safely extract string values
-const safeString = (value) =>
-  typeof value === "string" && value.trim().length ? value.trim() : null;
+// ============================================================================
+// CONSTANTS
+// ============================================================================
 
-// Helper to convert markdown bold (**text**) to React elements
-const renderMarkdownBold = (text) => {
-  if (typeof text !== "string") return text;
-  
+const BACKGROUND_PATTERN_STYLE = {
+  backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+  backgroundSize: '40px 40px',
+};
+
+// ============================================================================
+// UTILITY FUNCTIONS
+// ============================================================================
+
+/**
+ * Safely extracts and trims string values.
+ * Returns null if value is not a valid non-empty string.
+ *
+ * @param {unknown} value - Value to extract
+ * @returns {string|null} Trimmed string or null
+ */
+function safeString(value) {
+  return typeof value === 'string' && value.trim().length ? value.trim() : null;
+}
+
+/**
+ * Converts markdown bold syntax (**text**) to React strong elements.
+ *
+ * @param {unknown} text - Text that may contain markdown bold syntax
+ * @returns {React.ReactNode} Text with bold elements rendered
+ */
+function renderMarkdownBold(text) {
+  if (typeof text !== 'string') return text;
+
   const parts = [];
   let lastIndex = 0;
   const regex = /\*\*(.+?)\*\*/g;
   let match;
-  
+
   while ((match = regex.exec(text)) !== null) {
-    // Add text before the match
     if (match.index > lastIndex) {
       parts.push(text.substring(lastIndex, match.index));
     }
-    // Add the bold text
     parts.push(<strong key={match.index}>{match[1]}</strong>);
     lastIndex = regex.lastIndex;
   }
-  
-  // Add remaining text
+
   if (lastIndex < text.length) {
     parts.push(text.substring(lastIndex));
   }
-  
-  return parts.length > 0 ? parts : text;
-};
 
-// Helper to extract sections by title pattern
-const findSectionByTitle = (sections, patterns) => {
+  return parts.length > 0 ? parts : text;
+}
+
+/**
+ * Finds a section by matching title patterns.
+ *
+ * @param {Array<Object>|null} sections - Array of section objects
+ * @param {string[]} patterns - Array of title patterns to match
+ * @returns {Object|null} Matching section or null
+ */
+function findSectionByTitle(sections, patterns) {
   if (!Array.isArray(sections)) return null;
   return sections.find((section) => {
-    const title = section.title ?? section.heading ?? "";
-    return patterns.some((pattern) =>
-      title.toLowerCase().includes(pattern.toLowerCase())
-    );
+    const title = section.title ?? section.heading ?? '';
+    return patterns.some((pattern) => title.toLowerCase().includes(pattern.toLowerCase()));
   });
-};
+}
 
-// Helper to extract bullet text from various formats
-const extractBulletText = (bullet) => {
-  if (typeof bullet === "string") return bullet;
+/**
+ * Extracts text from bullet items that may be in various formats.
+ *
+ * @param {string|Object} bullet - Bullet item (string or object with text/label)
+ * @returns {string} Extracted text
+ */
+function extractBulletText(bullet) {
+  if (typeof bullet === 'string') return bullet;
   if (bullet?.text) return bullet.text;
   if (bullet?.label) return bullet.label;
-  return "";
-};
+  return '';
+}
 
-// Helper to normalize comparison table data
-const normalizeComparisonTable = (table) => {
+/**
+ * Normalizes comparison table data to a consistent format.
+ *
+ * @param {Object|Array|null} table - Table data in various formats
+ * @returns {Object|null} Normalized table with headers and rows
+ */
+function normalizeComparisonTable(table) {
   if (!table) return null;
-  
-  // If it's already in object format with headers/rows
+
   if (table.headers && table.rows) return table;
-  
-  // If it's an array of objects (from money.js structure)
+
   if (Array.isArray(table) && table.length > 0) {
     const firstItem = table[0];
     const headers = Object.keys(firstItem);
-    const rows = table.map((item) => headers.map((key) => item[key] ?? ""));
+    const rows = table.map((item) => headers.map((key) => item[key] ?? ''));
     return { headers, rows };
   }
-  
-  return null;
-};
 
-// 1. Headline + Sub-headline Section
+  return null;
+}
+
+/**
+ * Normalizes a value to an array format.
+ *
+ * @param {unknown} value - Value to normalize
+ * @returns {unknown[]} Normalized array
+ */
+function normalizeToArray(value) {
+  if (Array.isArray(value)) return value;
+  if (value) return [value];
+  return [];
+}
+
+// ============================================================================
+// SHARED COMPONENTS
+// ============================================================================
+
+/**
+ * Background pattern overlay component.
+ *
+ * @returns {JSX.Element} Pattern overlay div
+ */
+function BackgroundPattern() {
+  return (
+    <div
+      className="pointer-events-none absolute inset-0 opacity-[0.03]"
+      style={BACKGROUND_PATTERN_STYLE}
+      aria-hidden="true"
+    />
+  );
+}
+
+/**
+ * Section header component with consistent styling.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.label - Section label (small text)
+ * @param {string} props.title - Section title
+ * @returns {JSX.Element} Section header
+ */
+function SectionHeader({ label, title }) {
+  if (!title) return null;
+
+  return (
+    <header className="space-y-3">
+      {label && (
+        <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">{label}</p>
+      )}
+      <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#111827] sm:text-4xl">
+        {title}
+      </h2>
+    </header>
+  );
+}
+
+/**
+ * Reusable numbered card component for checklists and lists.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.text - Card text content
+ * @param {number} props.index - Card index (for numbering)
+ * @returns {JSX.Element} Numbered card
+ */
+function NumberedCard({ text, index }) {
+  const displayText = extractBulletText(text);
+  if (!displayText) return null;
+
+  return (
+    <div className="flex items-start gap-4 rounded-xl border border-[#e5e7eb] bg-white p-5 transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-sm sm:p-6">
+      <span className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-[#3e3ce7]/10 text-sm font-semibold text-[#3e3ce7]">
+        {index + 1}
+      </span>
+      <p className="flex-1 text-base leading-[1.75] text-[#374151]">
+        {renderMarkdownBold(displayText)}
+      </p>
+    </div>
+  );
+}
+
+/**
+ * Reusable benefit/drawback card component.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.text - Card text
+ * @param {'benefit'|'drawback'} props.type - Card type for styling
+ * @returns {JSX.Element|null} Benefit/drawback card
+ */
+function BenefitCard({ text, type }) {
+  const displayText = extractBulletText(text);
+  if (!displayText) return null;
+
+  const isBenefit = type === 'benefit';
+  const config = {
+    benefit: {
+      iconColor: 'text-green-600',
+      bgColor: 'bg-green-100',
+      hoverBorder: 'hover:border-green-200',
+      hoverBg: 'hover:bg-green-50/50',
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />,
+    },
+    drawback: {
+      iconColor: 'text-amber-600',
+      bgColor: 'bg-amber-100',
+      hoverBorder: 'hover:border-amber-200',
+      hoverBg: 'hover:bg-amber-50/50',
+      icon: (
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+        />
+      ),
+    },
+  };
+
+  const { iconColor, bgColor, hoverBorder, hoverBg, icon } = config[type];
+
+  return (
+    <div
+      className={`group rounded-xl border border-[#e5e7eb] bg-white p-5 transition-all duration-300 ${hoverBorder} ${hoverBg} hover:shadow-sm sm:p-6`}
+    >
+      <div className="mb-3 flex items-center gap-2">
+        <span className={`flex h-8 w-8 items-center justify-center rounded-lg ${bgColor} ${iconColor}`}>
+          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            {icon}
+          </svg>
+        </span>
+      </div>
+      <p className="text-sm leading-[1.7] text-[#374151] sm:text-base">
+        {renderMarkdownBold(displayText)}
+      </p>
+    </div>
+  );
+}
+
+// ============================================================================
+// SECTION COMPONENTS
+// ============================================================================
+
+/**
+ * Headline section with metadata and title.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.headline - Main headline
+ * @param {string} props.subheadline - Subheadline text
+ * @param {string} props.category - Category name
+ * @param {string} props.publishedDate - Publication date
+ * @param {string} props.readingTime - Estimated reading time
+ * @returns {JSX.Element} Headline section
+ */
 function HeadlineSection({ headline, subheadline, category, publishedDate, readingTime }) {
   return (
     <header className="relative overflow-hidden rounded-2xl border border-[#e5e7eb] bg-gradient-to-br from-[#0C1412] via-[#1a1a2e] to-[#16213e] px-6 py-12 text-white sm:px-8 sm:py-16 lg:px-12 lg:py-20">
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
-          backgroundSize: "40px 40px",
-        }}
-      />
-      
+      <BackgroundPattern />
+
       <div className="relative mx-auto max-w-4xl space-y-6">
         <div className="flex flex-wrap items-center gap-3 text-xs font-medium tracking-wide text-white/60">
           {category && (
@@ -117,16 +294,23 @@ function HeadlineSection({ headline, subheadline, category, publishedDate, readi
   );
 }
 
-// 2. Opening / Hook Section
+/**
+ * Opening section with hook, context, and expectations.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.hook - Hook/quote text
+ * @param {string} props.context - Context paragraph
+ * @param {string} props.expectation - What to expect text
+ * @param {string[]} props.introductionParagraphs - Introduction paragraphs
+ * @returns {JSX.Element|null} Opening section or null
+ */
 function OpeningSection({ hook, context, expectation, introductionParagraphs = [] }) {
   if (!hook && !context && !expectation && !introductionParagraphs.length) return null;
 
   return (
     <section className="mx-auto max-w-4xl space-y-8 py-8">
       {context && (
-        <p className="text-lg leading-[1.8] text-[#1f2937] sm:text-xl">
-          {context}
-        </p>
+        <p className="text-lg leading-[1.8] text-[#1f2937] sm:text-xl">{context}</p>
       )}
 
       {introductionParagraphs.length > 0 && (
@@ -155,32 +339,29 @@ function OpeningSection({ hook, context, expectation, introductionParagraphs = [
           <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#3e3ce7]">
             What You&rsquo;ll Learn
           </p>
-          <p className="text-base leading-[1.75] text-[#374151] sm:text-lg">
-            {expectation}
-          </p>
+          <p className="text-base leading-[1.75] text-[#374151] sm:text-lg">{expectation}</p>
         </div>
       )}
     </section>
   );
 }
 
-// 3. What is it / How it works Section
+/**
+ * What is it / How it works section.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.heading - Section heading
+ * @param {string} props.definition - Definition text
+ * @param {Array} props.types - Types/variants array
+ * @param {string} props.whyConsider - Why consider text
+ * @returns {JSX.Element|null} What is it section or null
+ */
 function WhatIsItSection({ heading, definition, types, whyConsider }) {
-  // Only show if there's actual content, not just a heading
   if (!definition && !types?.length && !whyConsider) return null;
 
   return (
     <section className="mx-auto max-w-4xl space-y-12 py-12">
-      {heading && (
-        <header className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">
-            Understanding
-          </p>
-          <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#111827] sm:text-4xl">
-            {heading}
-          </h2>
-        </header>
-      )}
+      {heading && <SectionHeader label="Understanding" title={heading} />}
 
       <div className="grid gap-6 md:grid-cols-2">
         {definition && (
@@ -189,25 +370,19 @@ function WhatIsItSection({ heading, definition, types, whyConsider }) {
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#3e3ce7]/10 text-sm font-semibold text-[#3e3ce7]">
                 01
               </span>
-              <h3 className="text-xl font-semibold text-[#111827]">
-                What It Is
-              </h3>
+              <h3 className="text-xl font-semibold text-[#111827]">What It Is</h3>
             </div>
-            <p className="text-base leading-[1.75] text-[#4b5563]">
-              {definition}
-            </p>
+            <p className="text-base leading-[1.75] text-[#4b5563]">{definition}</p>
           </div>
         )}
 
-        {types?.length ? (
+        {types?.length > 0 && (
           <div className="group rounded-xl border border-[#e5e7eb] bg-white p-6 transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-md sm:p-8">
             <div className="mb-4 flex items-center gap-3">
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#3e3ce7]/10 text-sm font-semibold text-[#3e3ce7]">
                 02
               </span>
-              <h3 className="text-xl font-semibold text-[#111827]">
-                Types & Variants
-              </h3>
+              <h3 className="text-xl font-semibold text-[#111827]">Types & Variants</h3>
             </div>
             <ul className="space-y-3">
               {types.map((type, index) => {
@@ -216,45 +391,42 @@ function WhatIsItSection({ heading, definition, types, whyConsider }) {
                 return (
                   <li key={index} className="flex items-start gap-3">
                     <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#3e3ce7]" />
-                    <span className="text-base leading-[1.7] text-[#4b5563]">{renderMarkdownBold(typeText)}</span>
+                    <span className="text-base leading-[1.7] text-[#4b5563]">
+                      {renderMarkdownBold(typeText)}
+                    </span>
                   </li>
                 );
               })}
             </ul>
           </div>
-        ) : null}
+        )}
       </div>
 
       {whyConsider && (
         <div className="rounded-xl border border-[#e5e7eb] bg-[#f9fafb] p-6 sm:p-8">
-          <h3 className="mb-4 text-xl font-semibold text-[#111827]">
-            Why People Consider It
-          </h3>
-          <p className="text-base leading-[1.75] text-[#4b5563]">
-            {whyConsider}
-          </p>
+          <h3 className="mb-4 text-xl font-semibold text-[#111827]">Why People Consider It</h3>
+          <p className="text-base leading-[1.75] text-[#4b5563]">{whyConsider}</p>
         </div>
       )}
     </section>
   );
 }
 
-// 4. Advantages / Benefits Section
+/**
+ * Advantages/Benefits section.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.heading - Section heading
+ * @param {Array} props.benefits - Benefits array
+ * @param {string[]} props.paragraphs - Paragraph text array
+ * @returns {JSX.Element|null} Advantages section or null
+ */
 function AdvantagesSection({ heading, benefits = [], paragraphs = [] }) {
   if (!heading && !benefits.length && !paragraphs.length) return null;
 
   return (
     <section className="mx-auto max-w-4xl space-y-10 py-12">
-      {heading && (
-        <header className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">
-            Benefits
-          </p>
-          <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#111827] sm:text-4xl">
-            {heading}
-          </h2>
-        </header>
-      )}
+      {heading && <SectionHeader label="Benefits" title={heading} />}
 
       {paragraphs.length > 0 && (
         <div className="space-y-4">
@@ -267,50 +439,31 @@ function AdvantagesSection({ heading, benefits = [], paragraphs = [] }) {
       )}
 
       {benefits.length > 0 && (
-      <div className="grid gap-5 sm:grid-cols-2">
-        {benefits.map((benefit, index) => {
-          const benefitText = extractBulletText(benefit);
-          if (!benefitText) return null;
-          return (
-            <div
-              key={index}
-              className="group rounded-xl border border-[#e5e7eb] bg-white p-5 transition-all duration-300 hover:border-green-200 hover:bg-green-50/50 hover:shadow-sm sm:p-6"
-            >
-              <div className="mb-3 flex items-center gap-2">
-                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-green-100 text-green-600">
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </span>
-              </div>
-              <p className="text-sm leading-[1.7] text-[#374151] sm:text-base">
-                {renderMarkdownBold(benefitText)}
-              </p>
-            </div>
-          );
-        })}
-      </div>
+        <div className="grid gap-5 sm:grid-cols-2">
+          {benefits.map((benefit, index) => (
+            <BenefitCard key={index} text={benefit} type="benefit" />
+          ))}
+        </div>
       )}
     </section>
   );
 }
 
-// 5. Drawbacks / Things to Consider Section
+/**
+ * Drawbacks/Considerations section.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.heading - Section heading
+ * @param {Array} props.drawbacks - Drawbacks array
+ * @param {string[]} props.paragraphs - Paragraph text array
+ * @returns {JSX.Element|null} Drawbacks section or null
+ */
 function DrawbacksSection({ heading, drawbacks = [], paragraphs = [] }) {
   if (!heading && !drawbacks.length && !paragraphs.length) return null;
 
   return (
     <section className="mx-auto max-w-4xl space-y-10 py-12">
-      {heading && (
-        <header className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">
-            Considerations
-          </p>
-          <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#111827] sm:text-4xl">
-            {heading}
-          </h2>
-        </header>
-      )}
+      {heading && <SectionHeader label="Considerations" title={heading} />}
 
       {paragraphs.length > 0 && (
         <div className="space-y-4">
@@ -323,50 +476,32 @@ function DrawbacksSection({ heading, drawbacks = [], paragraphs = [] }) {
       )}
 
       {drawbacks.length > 0 && (
-      <div className="grid gap-5 sm:grid-cols-2">
-        {drawbacks.map((drawback, index) => {
-          const drawbackText = extractBulletText(drawback);
-          if (!drawbackText) return null;
-          return (
-            <div
-              key={index}
-              className="group rounded-xl border border-[#e5e7eb] bg-white p-5 transition-all duration-300 hover:border-amber-200 hover:bg-amber-50/50 hover:shadow-sm sm:p-6"
-            >
-              <div className="mb-3 flex items-center gap-2">
-                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-amber-100 text-amber-600">
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                  </svg>
-                </span>
-              </div>
-              <p className="text-sm leading-[1.7] text-[#374151] sm:text-base">
-                {renderMarkdownBold(drawbackText)}
-              </p>
-            </div>
-          );
-        })}
-      </div>
+        <div className="grid gap-5 sm:grid-cols-2">
+          {drawbacks.map((drawback, index) => (
+            <BenefitCard key={index} text={drawback} type="drawback" />
+          ))}
+        </div>
       )}
     </section>
   );
 }
 
-// 6. How to Decide / Choose the Right One Section
+/**
+ * How to decide/choose section.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.heading - Section heading
+ * @param {Array} props.checklist - Checklist items
+ * @param {string} props.selfAudit - Self-audit questions text
+ * @param {string[]} props.paragraphs - Paragraph text array
+ * @returns {JSX.Element|null} How to decide section or null
+ */
 function HowToDecideSection({ heading, checklist = [], selfAudit, paragraphs = [] }) {
   if (!heading && !checklist.length && !selfAudit && !paragraphs.length) return null;
 
   return (
     <section className="mx-auto max-w-4xl space-y-10 py-12">
-      {heading && (
-        <header className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">
-            Decision Guide
-          </p>
-          <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#111827] sm:text-4xl">
-            {heading}
-          </h2>
-        </header>
-      )}
+      {heading && <SectionHeader label="Decision Guide" title={heading} />}
 
       {paragraphs.length > 0 && (
         <div className="space-y-4">
@@ -378,43 +513,33 @@ function HowToDecideSection({ heading, checklist = [], selfAudit, paragraphs = [
         </div>
       )}
 
-      {checklist.length ? (
+      {checklist.length > 0 && (
         <div className="grid gap-4 sm:grid-cols-2">
-          {checklist.map((item, index) => {
-            const itemText = extractBulletText(item);
-            if (!itemText) return null;
-            return (
-              <div
-                key={index}
-                className="flex items-start gap-4 rounded-xl border border-[#e5e7eb] bg-white p-5 transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-sm sm:p-6"
-              >
-                <span className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-[#3e3ce7]/10 text-sm font-semibold text-[#3e3ce7]">
-                  {index + 1}
-                </span>
-                <p className="flex-1 text-base leading-[1.75] text-[#374151]">
-                  {renderMarkdownBold(itemText)}
-                </p>
-              </div>
-            );
-          })}
+          {checklist.map((item, index) => (
+            <NumberedCard key={index} text={item} index={index} />
+          ))}
         </div>
-      ) : null}
+      )}
 
       {selfAudit && (
         <div className="rounded-xl border-2 border-[#3e3ce7]/20 bg-gradient-to-br from-[#3e3ce7]/5 to-white p-6 sm:p-8">
-          <h3 className="mb-4 text-xl font-semibold text-[#111827]">
-            Self-Audit Questions
-          </h3>
-          <p className="text-base leading-[1.75] text-[#4b5563]">
-            {selfAudit}
-          </p>
+          <h3 className="mb-4 text-xl font-semibold text-[#111827]">Self-Audit Questions</h3>
+          <p className="text-base leading-[1.75] text-[#4b5563]">{selfAudit}</p>
         </div>
       )}
     </section>
   );
 }
 
-// Generic Core Section Component (for sections like "You Should Get", etc.)
+/**
+ * Generic core section for reusable content blocks.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.title - Section title
+ * @param {string[]} props.paragraphs - Paragraph text array
+ * @param {Array} props.bullets - Bullet items array
+ * @returns {JSX.Element|null} Generic section or null
+ */
 function GenericCoreSection({ title, paragraphs = [], bullets = [] }) {
   if (!title && !paragraphs.length && !bullets.length) return null;
 
@@ -440,95 +565,64 @@ function GenericCoreSection({ title, paragraphs = [], bullets = [] }) {
 
       {bullets.length > 0 && (
         <div className="grid gap-4 sm:grid-cols-2">
-          {bullets.map((bullet, index) => {
-            const bulletText = extractBulletText(bullet);
-            if (!bulletText) return null;
-            return (
-              <div
-                key={index}
-                className="flex items-start gap-4 rounded-xl border border-[#e5e7eb] bg-white p-5 transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-sm sm:p-6"
-              >
-                <span className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-[#3e3ce7]/10 text-sm font-semibold text-[#3e3ce7]">
-                  {index + 1}
-                </span>
-                <p className="flex-1 text-base leading-[1.75] text-[#374151]">
-                  {renderMarkdownBold(bulletText)}
-                </p>
-              </div>
-            );
-          })}
+          {bullets.map((bullet, index) => (
+            <NumberedCard key={index} text={bullet} index={index} />
+          ))}
         </div>
       )}
     </section>
   );
 }
 
-// Takeaway Section Component
+/**
+ * Takeaway section component.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.heading - Section heading
+ * @param {Array} props.bullets - Takeaway bullets
+ * @returns {JSX.Element|null} Takeaway section or null
+ */
 function TakeawaySection({ heading, bullets = [] }) {
   if (!heading && !bullets.length) return null;
 
   return (
     <section className="mx-auto max-w-4xl space-y-10 py-12">
-      {heading && (
-        <header className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">
-            Key Takeaways
-          </p>
-          <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#111827] sm:text-4xl">
-            {heading}
-          </h2>
-        </header>
-      )}
+      {heading && <SectionHeader label="Key Takeaways" title={heading} />}
 
       {bullets.length > 0 && (
         <div className="grid gap-4 sm:grid-cols-2">
-          {bullets.map((bullet, index) => {
-            const bulletText = extractBulletText(bullet);
-            if (!bulletText) return null;
-            return (
-              <div
-                key={index}
-                className="flex items-start gap-4 rounded-xl border border-[#e5e7eb] bg-white p-5 transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-sm sm:p-6"
-              >
-                <span className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-[#3e3ce7]/10 text-sm font-semibold text-[#3e3ce7]">
-                  {index + 1}
-                </span>
-                <p className="flex-1 text-base leading-[1.75] text-[#374151]">
-                  {renderMarkdownBold(bulletText)}
-                </p>
-              </div>
-            );
-          })}
+          {bullets.map((bullet, index) => (
+            <NumberedCard key={index} text={bullet} index={index} />
+          ))}
         </div>
       )}
     </section>
   );
 }
 
-// 7. Final Verdict / Summary Section
+/**
+ * Final verdict/summary section.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.heading - Section heading
+ * @param {string} props.summary - Summary text
+ * @param {string} props.verdict - Verdict text
+ * @param {string[]} props.paragraphs - Paragraph text array
+ * @returns {JSX.Element|null} Final verdict section or null
+ */
 function FinalVerdictSection({ heading, summary, verdict, paragraphs = [] }) {
   if (!heading && !summary && !verdict && !paragraphs.length) return null;
 
   return (
     <section className="relative mx-auto max-w-4xl overflow-hidden rounded-2xl border border-[#e5e7eb] bg-gradient-to-br from-[#0C1412] via-[#1a1a2e] to-[#16213e] p-8 text-white shadow-lg sm:p-12">
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
-          backgroundSize: "40px 40px",
-        }}
-      />
-      
+      <BackgroundPattern />
+
       <div className="relative space-y-6">
         {heading && (
-          <h2 className="text-2xl font-bold leading-tight tracking-tight sm:text-3xl">
-            {heading}
-          </h2>
+          <h2 className="text-2xl font-bold leading-tight tracking-tight sm:text-3xl">{heading}</h2>
         )}
         {summary && (
-          <p className="text-lg leading-[1.8] text-white/95 sm:text-xl">
-            {summary}
-          </p>
+          <p className="text-lg leading-[1.8] text-white/95 sm:text-xl">{summary}</p>
         )}
         {paragraphs.length > 0 && (
           <div className="space-y-4">
@@ -541,9 +635,7 @@ function FinalVerdictSection({ heading, summary, verdict, paragraphs = [] }) {
         )}
         {verdict && (
           <div className="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:p-8">
-            <p className="text-base leading-[1.75] text-white/90 sm:text-lg">
-              {verdict}
-            </p>
+            <p className="text-base leading-[1.75] text-white/90 sm:text-lg">{verdict}</p>
           </div>
         )}
       </div>
@@ -551,30 +643,28 @@ function FinalVerdictSection({ heading, summary, verdict, paragraphs = [] }) {
   );
 }
 
-// 8. Call to Action / Reader Engagement Section
+/**
+ * Call to action section.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.heading - Section heading
+ * @param {Array} props.actions - Action items array
+ * @param {string} props.inviteText - Invitation text
+ * @param {Array} props.resources - Resources array
+ * @returns {JSX.Element|null} CTA section or null
+ */
 function CallToActionSection({ heading, actions = [], inviteText, resources = [] }) {
   if (!heading && !actions.length && !inviteText && !resources.length) return null;
 
   return (
     <section className="mx-auto max-w-4xl space-y-10 py-12">
-      {heading && (
-        <header className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">
-            Next Steps
-          </p>
-          <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#111827] sm:text-4xl">
-            {heading}
-          </h2>
-        </header>
-      )}
+      {heading && <SectionHeader label="Next Steps" title={heading} />}
 
       {inviteText && (
-        <p className="text-lg leading-[1.8] text-[#374151] sm:text-xl">
-          {inviteText}
-        </p>
+        <p className="text-lg leading-[1.8] text-[#374151] sm:text-xl">{inviteText}</p>
       )}
 
-      {actions.length ? (
+      {actions.length > 0 && (
         <div className="grid gap-4 sm:grid-cols-2">
           {actions.map((action, index) => {
             const actionText = extractBulletText(action);
@@ -594,16 +684,16 @@ function CallToActionSection({ heading, actions = [], inviteText, resources = []
             );
           })}
         </div>
-      ) : null}
+      )}
 
-      {resources.length ? (
+      {resources.length > 0 && (
         <div className="rounded-xl border border-[#e5e7eb] bg-[#f9fafb] p-6 sm:p-8">
           <h3 className="mb-5 text-xl font-semibold text-[#111827]">
             Further Reading & Resources
           </h3>
           <ul className="space-y-3">
             {resources.map((resource, index) => {
-              const url = resource.url ?? resource.href ?? "#";
+              const url = resource.url ?? resource.href ?? '#';
               const title = resource.title ?? resource.label ?? `Resource ${index + 1}`;
               return (
                 <li key={index}>
@@ -614,7 +704,10 @@ function CallToActionSection({ heading, actions = [], inviteText, resources = []
                     <span className="border-b border-transparent group-hover:border-[#3e3ce7]">
                       {title}
                     </span>
-                    <span className="transition-transform group-hover:translate-x-1" aria-hidden="true">
+                    <span
+                      className="transition-transform group-hover:translate-x-1"
+                      aria-hidden="true"
+                    >
                       →
                     </span>
                   </Link>
@@ -623,12 +716,20 @@ function CallToActionSection({ heading, actions = [], inviteText, resources = []
             })}
           </ul>
         </div>
-      ) : null}
+      )}
     </section>
   );
 }
 
-// 9. Optional Extras / Enhancements Section
+/**
+ * Optional extras section with quotes, facts, and comparison table.
+ *
+ * @param {Object} props - Component props
+ * @param {Array} props.pulloutQuotes - Pullout quotes array
+ * @param {Array} props.didYouKnow - Did you know facts array
+ * @param {Object|Array|null} props.comparisonTable - Comparison table data
+ * @returns {JSX.Element|null} Optional extras section or null
+ */
 function OptionalExtrasSection({ pulloutQuotes = [], didYouKnow = [], comparisonTable }) {
   if (!pulloutQuotes.length && !didYouKnow.length && !comparisonTable) return null;
 
@@ -636,10 +737,10 @@ function OptionalExtrasSection({ pulloutQuotes = [], didYouKnow = [], comparison
 
   return (
     <section className="mx-auto max-w-4xl space-y-10 py-12">
-      {pulloutQuotes.length ? (
+      {pulloutQuotes.length > 0 && (
         <div className="space-y-6">
           {pulloutQuotes.map((quote, index) => {
-            const quoteText = typeof quote === "string" ? quote : quote?.text ?? "";
+            const quoteText = typeof quote === 'string' ? quote : quote?.text ?? '';
             if (!quoteText) return null;
             return (
               <blockquote
@@ -656,13 +757,14 @@ function OptionalExtrasSection({ pulloutQuotes = [], didYouKnow = [], comparison
             );
           })}
         </div>
-      ) : null}
+      )}
 
-      {didYouKnow.length ? (
+      {didYouKnow.length > 0 && (
         <div className="grid gap-5 sm:grid-cols-2">
           {didYouKnow.map((fact, index) => {
-            const factText = typeof fact === "string" ? fact : fact?.text ?? "";
-            const factTitle = typeof fact === "object" ? fact?.title ?? "Did You Know?" : "Did You Know?";
+            const factText = typeof fact === 'string' ? fact : fact?.text ?? '';
+            const factTitle =
+              typeof fact === 'object' ? fact?.title ?? 'Did You Know?' : 'Did You Know?';
             if (!factText) return null;
             return (
               <div
@@ -672,16 +774,14 @@ function OptionalExtrasSection({ pulloutQuotes = [], didYouKnow = [], comparison
                 <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">
                   {factTitle}
                 </h4>
-                <p className="text-sm leading-[1.7] text-[#4b5563] sm:text-base">
-                  {factText}
-                </p>
+                <p className="text-sm leading-[1.7] text-[#4b5563] sm:text-base">{factText}</p>
               </div>
             );
           })}
         </div>
-      ) : null}
+      )}
 
-      {normalizedTable ? (
+      {normalizedTable && (
         <div className="overflow-hidden rounded-xl border border-[#e5e7eb] bg-white shadow-sm">
           <div className="overflow-x-auto">
             <table className="w-full">
@@ -717,112 +817,255 @@ function OptionalExtrasSection({ pulloutQuotes = [], didYouKnow = [], comparison
             </table>
           </div>
         </div>
-      ) : null}
+      )}
     </section>
   );
 }
 
-// Main Component
+/**
+ * FAQ section component.
+ *
+ * @param {Object} props - Component props
+ * @param {Array} props.faqs - FAQ items array
+ * @param {string} props.heading - Section heading
+ * @returns {JSX.Element|null} FAQ section or null
+ */
+function FAQSection({ faqs = [], heading }) {
+  if (!faqs.length) return null;
+
+  return (
+    <section className="mx-auto max-w-4xl space-y-8 py-12">
+      <header className="space-y-3">
+        <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">
+          Common Questions
+        </p>
+        <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#111827] sm:text-4xl">
+          {heading ?? 'Frequently Asked Questions'}
+        </h2>
+      </header>
+      <div className="space-y-3">
+        {faqs.map((faq, index) => {
+          const question = faq?.question ?? faq?.heading ?? faq?.title ?? `FAQ ${index + 1}`;
+          const answer = faq?.answer ?? faq?.response ?? '';
+          const cta =
+            faq?.cta ??
+            (faq?.ctaHref ? { href: faq.ctaHref, label: faq.ctaLabel ?? 'Learn more' } : null);
+
+          const summaryId = `faq-summary-${index}`;
+          const contentId = `faq-panel-${index}`;
+
+          return (
+            <details
+              key={question}
+              className="group rounded-xl border border-[#e5e7eb] bg-white p-5 transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-sm sm:p-6"
+            >
+              <summary
+                id={summaryId}
+                className="flex cursor-pointer items-center justify-between gap-4 text-left text-base font-semibold text-[#111827] transition-colors hover:text-[#3e3ce7] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3e3ce7] focus-visible:ring-offset-2 sm:text-lg"
+              >
+                <span>{question}</span>
+                <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg border border-[#e5e7eb] text-sm text-[#6b7280] transition-all group-open:rotate-45 group-open:border-[#3e3ce7] group-open:text-[#3e3ce7]">
+                  +
+                </span>
+              </summary>
+              {answer && (
+                <div
+                  id={contentId}
+                  role="region"
+                  aria-labelledby={summaryId}
+                  className="mt-4 space-y-4 text-sm leading-[1.75] text-[#4b5563] sm:text-base"
+                >
+                  <p>{answer}</p>
+                  {cta && (
+                    <Link
+                      href={cta.href}
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-[#3e3ce7] transition-colors hover:text-[#111827]"
+                    >
+                      {cta.label}
+                      <span
+                        className="transition-transform group-hover:translate-x-1"
+                        aria-hidden="true"
+                      >
+                        →
+                      </span>
+                    </Link>
+                  )}
+                </div>
+              )}
+            </details>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
+// ============================================================================
+// MAIN COMPONENT
+// ============================================================================
+
+/**
+ * InformationalArticle Component
+ *
+ * Renders comprehensive informational articles with multiple sections including
+ * headlines, opening hooks, definitions, advantages, drawbacks, decision guides,
+ * verdicts, CTAs, FAQs, and more. Supports flexible content structures from
+ * both informational.js and money.js post formats.
+ *
+ * @param {Object} props - Component props
+ * @param {Object} props.post - Post data object
+ * @param {string} props.publishedDate - Formatted publication date
+ * @param {string} [props.heroImage] - Optional hero image URL
+ * @param {Array<Object>} [props.supportingProducts=[]] - Supporting products array
+ * @returns {JSX.Element} Informational article component
+ */
 export default function InformationalArticle({
   post,
   publishedDate,
   heroImage,
   supportingProducts = [],
 }) {
-  // ===== HEADLINE & SUBHEADLINE =====
+  // Extract and normalize headline data
   const headline = safeString(post.h1) ?? safeString(post.title);
   const subheadline = safeString(post.subheadline) ?? safeString(post.subtitle);
 
-  // ===== OPENING / HOOK DATA =====
-  // Support both informational.js and money.js structures
-  const introductionParagraphs = Array.isArray(post.introductionParagraphs)
-    ? post.introductionParagraphs
-    : post.introduction
-      ? [post.introduction]
-      : [];
-  
-  const secondaryParagraphs = Array.isArray(post.secondaryIntroduction)
-    ? post.secondaryIntroduction
-    : post.secondaryIntroduction
-      ? [post.secondaryIntroduction]
-      : [];
-
+  // Normalize introduction paragraphs
+  const introductionParagraphs = normalizeToArray(post.introductionParagraphs);
+  const secondaryParagraphs = normalizeToArray(post.secondaryIntroduction);
   const allIntroductionParagraphs = [...introductionParagraphs, ...secondaryParagraphs];
 
-  const openingContext = safeString(post.openingContext) ?? safeString(post.introduction);
-  const openingHook = safeString(post.introductionHook) ?? safeString(post.hook) ?? safeString(post.snippetAnswer);
-  const openingExpectation = safeString(post.roadmap) ?? safeString(post.introductionRoadmap) ?? safeString(post.expectation);
+  // Extract opening section data
+  const openingContext =
+    safeString(post.openingContext) ?? safeString(post.introduction);
+  const openingHook =
+    safeString(post.introductionHook) ??
+    safeString(post.hook) ??
+    safeString(post.snippetAnswer);
+  const openingExpectation =
+    safeString(post.roadmap) ??
+    safeString(post.introductionRoadmap) ??
+    safeString(post.expectation);
 
-  // ===== WHAT IS IT / HOW IT WORKS =====
-  const whatIsItHeading = safeString(post.whatIsItHeading) ?? "What Is It & How It Works";
-  const whatIsItDefinition = safeString(post.whatIsItDefinition) ?? safeString(post.definition);
-  const whatIsItTypes = Array.isArray(post.types) ? post.types : [];
+  // Extract what is it section data
+  const whatIsItHeading = safeString(post.whatIsItHeading) ?? 'What Is It & How It Works';
+  const whatIsItDefinition =
+    safeString(post.whatIsItDefinition) ?? safeString(post.definition);
+  const whatIsItTypes = normalizeToArray(post.types);
   const whatIsItWhyConsider = safeString(post.whyConsider);
 
-  // ===== CORE HEADING =====
+  // Extract core heading
   const coreHeading = safeString(post.coreHeading);
 
-  // ===== ADVANTAGES / BENEFITS =====
-  // Extract from coreSections (informational.js) or direct fields
-  const prosSection = findSectionByTitle(post.coreSections, ["pros", "benefits", "advantages", "why", "the pros"]);
-  const advantagesHeading = safeString(post.advantagesHeading) ?? prosSection?.title ?? "Advantages & Benefits";
+  // Extract advantages/benefits data
+  const prosSection = findSectionByTitle(post.coreSections, [
+    'pros',
+    'benefits',
+    'advantages',
+    'why',
+    'the pros',
+  ]);
+  const advantagesHeading =
+    safeString(post.advantagesHeading) ??
+    prosSection?.title ??
+    'Advantages & Benefits';
   const advantages = prosSection?.bullets ?? post.advantages ?? post.benefits ?? [];
   const advantagesParagraphs = prosSection?.paragraphs ?? [];
 
-  // ===== DRAWBACKS / CONSIDERATIONS =====
-  const consSection = findSectionByTitle(post.coreSections, ["cons", "drawbacks", "disadvantages", "considerations", "the cons"]);
-  const drawbacksHeading = safeString(post.drawbacksHeading) ?? consSection?.title ?? "Drawbacks & Things to Consider";
+  // Extract drawbacks/considerations data
+  const consSection = findSectionByTitle(post.coreSections, [
+    'cons',
+    'drawbacks',
+    'disadvantages',
+    'considerations',
+    'the cons',
+  ]);
+  const drawbacksHeading =
+    safeString(post.drawbacksHeading) ??
+    consSection?.title ??
+    "Drawbacks & Things to Consider";
   const drawbacks = consSection?.bullets ?? post.drawbacks ?? post.cons ?? [];
   const drawbacksParagraphs = consSection?.paragraphs ?? [];
 
-  // ===== HOW TO DECIDE / CHOOSE =====
-  const decideSection = findSectionByTitle(post.coreSections, ["how to choose", "how to decide", "choose the right", "decision"]);
-  const decideHeading = safeString(post.decideHeading) ?? decideSection?.title ?? "How to Decide & Choose the Right One";
-  const decideChecklist = decideSection?.bullets ?? post.checklist ?? post.decisionFactors ?? [];
-  const decideSelfAudit = safeString(post.selfAudit) ?? safeString(decideSection?.selfAudit);
+  // Extract decision guide data
+  const decideSection = findSectionByTitle(post.coreSections, [
+    'how to choose',
+    'how to decide',
+    'choose the right',
+    'decision',
+  ]);
+  const decideHeading =
+    safeString(post.decideHeading) ??
+    decideSection?.title ??
+    'How to Decide & Choose the Right One';
+  const decideChecklist =
+    decideSection?.bullets ?? post.checklist ?? post.decisionFactors ?? [];
+  const decideSelfAudit =
+    safeString(post.selfAudit) ?? safeString(decideSection?.selfAudit);
   const decideParagraphs = decideSection?.paragraphs ?? [];
 
-  // ===== FINAL VERDICT / SUMMARY =====
-  const verdictSection = findSectionByTitle(post.coreSections, ["bottom line", "final verdict", "summary", "conclusion", "verdict", "the bottom line"]);
-  const verdictHeading = safeString(post.verdictHeading) ?? verdictSection?.title ?? "Final Verdict";
-  const verdictSummary = safeString(post.verdictSummary) ?? safeString(verdictSection?.summary);
-  const verdictParagraphs = Array.isArray(verdictSection?.paragraphs) ? verdictSection.paragraphs : [];
+  // Extract final verdict data
+  const verdictSection = findSectionByTitle(post.coreSections, [
+    'bottom line',
+    'final verdict',
+    'summary',
+    'conclusion',
+    'verdict',
+    'the bottom line',
+  ]);
+  const verdictHeading =
+    safeString(post.verdictHeading) ?? verdictSection?.title ?? 'Final Verdict';
+  const verdictSummary =
+    safeString(post.verdictSummary) ?? safeString(verdictSection?.summary);
+  const verdictParagraphs = normalizeToArray(verdictSection?.paragraphs);
   const verdictText = safeString(post.verdict) ?? safeString(verdictSection?.verdict);
 
-  // ===== YOU SHOULD GET / YOU PROBABLY SHOULDN'T GET =====
-  const shouldGetSection = findSectionByTitle(post.coreSections, ["you should get", "you should", "should get"]);
-  const shouldntGetSection = findSectionByTitle(post.coreSections, ["you probably shouldn't", "you shouldn't", "shouldn't get", "probably shouldn't"]);
+  // Extract should/shouldn't get sections
+  const shouldGetSection = findSectionByTitle(post.coreSections, [
+    'you should get',
+    'you should',
+    'should get',
+  ]);
+  const shouldntGetSection = findSectionByTitle(post.coreSections, [
+    "you probably shouldn't",
+    "you shouldn't",
+    "shouldn't get",
+    "probably shouldn't",
+  ]);
 
-  // ===== CALL TO ACTION =====
-  const ctaSection = findSectionByTitle(post.coreSections, ["next steps", "call to action", "your next", "action"]);
-  const ctaHeading = safeString(post.ctaHeading) ?? ctaSection?.title ?? "Your Next Steps";
+  // Extract CTA data
+  const ctaSection = findSectionByTitle(post.coreSections, [
+    'next steps',
+    'call to action',
+    'your next',
+    'action',
+  ]);
+  const ctaHeading =
+    safeString(post.ctaHeading) ?? ctaSection?.title ?? 'Your Next Steps';
   const ctaActions = ctaSection?.bullets ?? post.ctaActions ?? post.nextSteps ?? [];
-  const ctaInviteText = safeString(post.ctaInviteText) ?? safeString(ctaSection?.inviteText);
+  const ctaInviteText =
+    safeString(post.ctaInviteText) ?? safeString(ctaSection?.inviteText);
   const ctaResources = post.relatedGuides ?? post.resources ?? [];
   const ctaParagraphs = ctaSection?.paragraphs ?? [];
 
-  // ===== TAKEAWAYS =====
+  // Extract takeaways
   const takeawayHeading = safeString(post.takeawayHeading);
   const takeawayBullets = post.takeawayBullets ?? [];
 
-  // ===== OPTIONAL EXTRAS =====
+  // Extract optional extras
   const pulloutQuotes = post.pulloutQuotes ?? [];
   const didYouKnow = post.didYouKnow ?? post.facts ?? [];
   const comparisonTable = post.comparisonTable ?? null;
 
-  // ===== HERO IMAGE =====
+  // Extract hero image data
   const heroImageAlt = safeString(post.heroImageAlt) ?? headline;
   const articleHeroImage =
-    heroImage ??
-    safeString(post.articleHeroImage) ??
-    "/default-og.png";
+    heroImage ?? safeString(post.articleHeroImage) ?? '/default-og.png';
 
-  // ===== TOP PRODUCTS INTRO (for money articles) =====
+  // Extract top products intro
   const topProductsIntro = safeString(post.topProductsIntro);
 
   return (
     <article className="mx-auto max-w-5xl space-y-16 px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-      {/* 1. Headline + Sub-headline */}
       <HeadlineSection
         headline={headline}
         subheadline={subheadline}
@@ -831,7 +1074,6 @@ export default function InformationalArticle({
         readingTime={post.estimatedReadingTime}
       />
 
-      {/* 2. Opening / Hook */}
       <OpeningSection
         hook={openingHook}
         context={openingContext}
@@ -839,7 +1081,6 @@ export default function InformationalArticle({
         introductionParagraphs={allIntroductionParagraphs}
       />
 
-      {/* Hero Image */}
       <figure className="relative mx-auto max-w-4xl overflow-hidden rounded-xl border border-[#e5e7eb] bg-[#f9fafb]">
         <div className="aspect-[4/3] w-full">
           <Image
@@ -854,7 +1095,6 @@ export default function InformationalArticle({
         </div>
       </figure>
 
-      {/* Top Products Intro (for money articles) */}
       {topProductsIntro && (
         <section className="mx-auto max-w-4xl rounded-xl border border-[#e5e7eb] bg-[#f9fafb] p-6 sm:p-8">
           <div className="space-y-4">
@@ -868,7 +1108,6 @@ export default function InformationalArticle({
         </section>
       )}
 
-      {/* 3. What is it / How it works */}
       <WhatIsItSection
         heading={whatIsItHeading}
         definition={whatIsItDefinition}
@@ -876,7 +1115,6 @@ export default function InformationalArticle({
         whyConsider={whatIsItWhyConsider}
       />
 
-      {/* Core Heading */}
       {coreHeading && (
         <section className="mx-auto max-w-4xl py-8">
           <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#111827] sm:text-4xl">
@@ -885,21 +1123,18 @@ export default function InformationalArticle({
         </section>
       )}
 
-      {/* 4. Advantages / Benefits */}
       <AdvantagesSection
         heading={advantagesHeading}
         benefits={advantages}
         paragraphs={advantagesParagraphs}
       />
 
-      {/* 5. Drawbacks / Things to consider */}
       <DrawbacksSection
         heading={drawbacksHeading}
         drawbacks={drawbacks}
         paragraphs={drawbacksParagraphs}
       />
 
-      {/* You Should Get Section */}
       {shouldGetSection && (
         <GenericCoreSection
           title={shouldGetSection.title}
@@ -908,7 +1143,6 @@ export default function InformationalArticle({
         />
       )}
 
-      {/* You Probably Shouldn't Get Section */}
       {shouldntGetSection && (
         <GenericCoreSection
           title={shouldntGetSection.title}
@@ -917,7 +1151,6 @@ export default function InformationalArticle({
         />
       )}
 
-      {/* 6. How to decide / Choose the right one */}
       <HowToDecideSection
         heading={decideHeading}
         checklist={decideChecklist}
@@ -925,7 +1158,6 @@ export default function InformationalArticle({
         paragraphs={decideParagraphs}
       />
 
-      {/* 7. Final Verdict / Summary */}
       <FinalVerdictSection
         heading={verdictHeading}
         summary={verdictSummary}
@@ -933,7 +1165,6 @@ export default function InformationalArticle({
         paragraphs={verdictParagraphs}
       />
 
-      {/* 8. Call to Action / Reader Engagement */}
       <CallToActionSection
         heading={ctaHeading}
         actions={ctaActions}
@@ -941,21 +1172,15 @@ export default function InformationalArticle({
         resources={ctaResources}
       />
 
-      {/* 9. Optional Extras / Enhancements */}
       <OptionalExtrasSection
         pulloutQuotes={pulloutQuotes}
         didYouKnow={didYouKnow}
         comparisonTable={comparisonTable}
       />
 
-      {/* Takeaway Section */}
-      <TakeawaySection
-        heading={takeawayHeading}
-        bullets={takeawayBullets}
-      />
+      <TakeawaySection heading={takeawayHeading} bullets={takeawayBullets} />
 
-      {/* Supporting Products (if any) */}
-      {supportingProducts.length ? (
+      {supportingProducts.length > 0 && (
         <section className="mx-auto max-w-4xl space-y-6 py-12">
           <h2 className="text-2xl font-bold tracking-tight text-[#111827] sm:text-3xl">
             Featured Products
@@ -966,84 +1191,23 @@ export default function InformationalArticle({
                 <h3 className="text-base font-semibold text-[#111827] sm:text-lg">
                   {product.name}
                 </h3>
-                {product.description ? (
+                {product.description && (
                   <p className="text-sm leading-[1.7] text-[#6b7280] sm:text-base">
                     {product.description}
                   </p>
-                ) : null}
+                )}
               </li>
             ))}
           </ul>
         </section>
-      ) : null}
+      )}
 
-      {/* FAQs Section */}
-      {post.contextFAQs?.length ? (
-        <section className="mx-auto max-w-4xl space-y-8 py-12">
-          <header className="space-y-3">
-            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">
-              Common Questions
-            </p>
-            <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#111827] sm:text-4xl">
-              {safeString(post.contextHeading) ?? "Frequently Asked Questions"}
-            </h2>
-          </header>
-          <div className="space-y-3">
-            {post.contextFAQs.map((faq, index) => {
-              const question =
-                faq?.question ??
-                faq?.heading ??
-                faq?.title ??
-                `FAQ ${index + 1}`;
-              const answer = faq?.answer ?? faq?.response ?? "";
-              const cta =
-                faq?.cta ??
-                (faq?.ctaHref
-                  ? { href: faq.ctaHref, label: faq.ctaLabel ?? "Learn more" }
-                  : null);
-
-              const summaryId = `faq-summary-${index}`;
-              const contentId = `faq-panel-${index}`;
-
-              return (
-                <details
-                  key={question}
-                  className="group rounded-xl border border-[#e5e7eb] bg-white p-5 transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-sm sm:p-6"
-                >
-                  <summary
-                    id={summaryId}
-                    className="flex cursor-pointer items-center justify-between gap-4 text-left text-base font-semibold text-[#111827] transition-colors hover:text-[#3e3ce7] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3e3ce7] focus-visible:ring-offset-2 sm:text-lg"
-                  >
-                    <span>{question}</span>
-                    <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg border border-[#e5e7eb] text-sm text-[#6b7280] transition-all group-open:rotate-45 group-open:border-[#3e3ce7] group-open:text-[#3e3ce7]">
-                      +
-                    </span>
-                  </summary>
-                  {answer ? (
-                    <div
-                      id={contentId}
-                      role="region"
-                      aria-labelledby={summaryId}
-                      className="mt-4 space-y-4 text-sm leading-[1.75] text-[#4b5563] sm:text-base"
-                    >
-                      <p>{answer}</p>
-                      {cta ? (
-                        <Link
-                          href={cta.href}
-                          className="inline-flex items-center gap-2 text-sm font-semibold text-[#3e3ce7] transition-colors hover:text-[#111827]"
-                        >
-                          {cta.label}
-                          <span className="transition-transform group-hover:translate-x-1" aria-hidden="true">→</span>
-                        </Link>
-                      ) : null}
-                    </div>
-                  ) : null}
-                </details>
-              );
-            })}
-          </div>
-        </section>
-      ) : null}
+      {post.contextFAQs?.length > 0 && (
+        <FAQSection
+          faqs={post.contextFAQs}
+          heading={safeString(post.contextHeading)}
+        />
+      )}
     </article>
   );
 }

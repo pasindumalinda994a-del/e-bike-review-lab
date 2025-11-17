@@ -47,7 +47,7 @@ const money = [
     // ============================================
     topProductsHeading: "The 10 Best Electric Bikes We Actually Recommend",
     topProductsIntro: "These are the bikes that passed our real-world testing with flying colors. Each one excels in its category—whether that's value, performance, versatility, or pure riding enjoyment. I've ranked them based on overall performance, but the 'best' bike for you depends on how you'll actually use it.",
-    productCtaLabel: "Check Price on Amazon",
+    productCtaLabel: "Check Price",
 
     products: [
       {

@@ -24,7 +24,7 @@ export default function MoneyArticle({ post, publishedDate }) {
   const buyersGuideTitle = post.buyersGuideTitle ?? "Buyer's Guide";
   const productHeading =
     post.topProductsHeading ?? "Detailed Product Reviews";
-  const productCtaLabel = post.productCtaLabel ?? "Check Price on Amazon";
+  const productCtaLabel = post.productCtaLabel ?? "Check Price";
   const articleHeroImage = post.articleHeroImage ?? "/default-og.png";
   const heroImageAlt = post.heroImageAlt ?? post.title ?? post.h1;
 
