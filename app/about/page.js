@@ -35,11 +35,13 @@ export default function AboutPage() {
           </div>
           <div className="relative h-[300px] w-full overflow-hidden rounded-2xl bg-gradient-to-br from-[#3e3ce7]/20 to-[#3e3ce7]/5 order-1 lg:order-2 lg:h-[400px]">
             <Image
-              src="/images/categories/electric-bikes.jpg"
+              src="/images/categories/electric-bikes.webp"
               alt="Electric bikes showcase"
               fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"
               priority
+              quality={85}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0C1412]/40 to-transparent" />
           </div>
@@ -51,10 +53,13 @@ export default function AboutPage() {
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 lg:items-center">
           <div className="relative h-[350px] w-full overflow-hidden rounded-2xl bg-gradient-to-br from-[#3e3ce7]/20 to-[#3e3ce7]/5 lg:h-[450px] order-1">
             <Image
-              src="/images/categories/electric-mountain-bikes.jpg"
+              src="/images/categories/electric-mountain-bikes.webp"
               alt="E-bike testing and reviews"
               fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"
+              loading="lazy"
+              quality={85}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0C1412]/40 to-transparent" />
           </div>

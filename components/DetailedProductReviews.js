@@ -52,7 +52,7 @@ export default function DetailedProductReviews({
 
               <div className="grid grid-cols-1 gap-6 md:grid-cols-12">
                 <div className="md:col-span-4">
-                  <div className="relative overflow-hidden rounded-xl border border-[#e5e7eb] bg-white shadow-sm">
+                  <div className="relative aspect-square overflow-hidden rounded-xl border border-[#e5e7eb] bg-white shadow-sm">
                     {badge ? (
                       <div className="absolute left-0 top-0 z-10 rounded-br-xl bg-gradient-to-r from-[#0C1412]/95 to-[#1a1a2e]/95 px-4 py-2 shadow-lg backdrop-blur-sm">
                         <span className="text-sm font-semibold text-white">{badge}</span>
@@ -61,10 +61,12 @@ export default function DetailedProductReviews({
                     <Image
                       src={product.imageUrl}
                       alt={product.name}
-                      width={320}
-                      height={320}
-                      className="h-auto w-full object-cover"
-                      priority={product === products[0]}
+                      fill
+                      sizes="(min-width: 768px) 33vw, 100vw"
+                      className="object-contain p-4"
+                      priority={index === 0}
+                      loading={index === 0 ? undefined : "lazy"}
+                      quality={85}
                     />
                   </div>
                   {product.affiliateLink ? (

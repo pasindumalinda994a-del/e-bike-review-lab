@@ -9,14 +9,21 @@ export const categories = [
   {
     slug: "electric-bikes",
     name: "Electric Bikes",
-    heroImage: "/images/categories/electric-bikes.jpg",
+    heroImage: "/images/categories/electric-bikes.webp",
     description:
       "Hands-on electric bike reviews covering commuters, folders, cargo rigs, and all-terrain builds to help you choose the perfect ride.",
   },
   {
     slug: "electric-mountain-bikes",
     name: "Electric Mountain Bikes",
-    heroImage: "/images/categories/electric-mountain-bikes.jpg",
+    heroImage: "/images/categories/electric-mountain-bikes.webp",
+    description:
+      "Hands-on electric bike reviews covering commuters, folders, cargo rigs, and all-terrain builds to help you choose the perfect ride.",
+  },
+  {
+    slug: "electric-folding-bikes",
+    name: "Electric Folding Bikes",
+    heroImage: "/images/categories/electric-folding-bikes.webp",
     description:
       "Hands-on electric bike reviews covering commuters, folders, cargo rigs, and all-terrain builds to help you choose the perfect ride.",
   },

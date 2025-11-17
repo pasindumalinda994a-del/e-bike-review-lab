@@ -89,6 +89,7 @@ export default function Hero({
       {/* Background Images - Slider */}
       {slides.map((slide, index) => {
         const isActive = index === activeSlideIndex;
+        const isFirstSlide = index === 0;
         return (
           <div
             key={`${slide.src}-${index}`}
@@ -106,9 +107,11 @@ export default function Hero({
               src={slide.src}
               alt={slide.title || "EBikeReviewLab hero slide"}
               fill
-              priority={index === 0}
+              priority={isFirstSlide}
+              loading={isFirstSlide ? undefined : "lazy"}
               className="object-cover"
               sizes="100vw"
+              quality={85}
             />
           </div>
         );

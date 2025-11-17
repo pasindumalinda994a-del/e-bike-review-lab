@@ -90,9 +90,10 @@ export default function MoneyArticle({ post, publishedDate }) {
             src={articleHeroImage}
             alt={heroImageAlt}
             fill
-            sizes="(min-width: 1024px) 896px, 100vw"
+            sizes="(min-width: 1024px) 896px, (min-width: 768px) 90vw, 100vw"
             className="object-cover"
             priority
+            quality={85}
           />
         </div>
       </figure>

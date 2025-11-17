@@ -39,7 +39,7 @@ export default function HomeShowcase({ latest = [], sidebarPopular = [] }) {
           </h3>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
-          {primaryGridPosts.map((post) => (
+          {primaryGridPosts.map((post, index) => (
             <article
               key={post.slug}
               className="group flex h-full flex-col overflow-hidden "
@@ -53,8 +53,11 @@ export default function HomeShowcase({ latest = [], sidebarPopular = [] }) {
                     src={getCardImage(post)}
                     alt={post.title}
                     fill
-                    sizes="240px"
+                    sizes="(min-width: 640px) 50vw, 100vw"
                     className="object-cover transition duration-500 group-hover:scale-105"
+                    priority={index < 2}
+                    loading={index < 2 ? undefined : "lazy"}
+                    quality={85}
                   />
                 </div>
                 <div className="flex flex-1 flex-col gap-2 p-4">

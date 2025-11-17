@@ -51,7 +51,7 @@ export default function HomeImageGallery({ posts = [] }) {
         </header>
 
         <div className="grid gap-6 md:grid-cols-2">
-          {galleryPosts.map((post) => (
+          {galleryPosts.map((post, index) => (
             <Link
               key={post.slug}
               href={`/${post.categorySlug}/${post.slug}`}
@@ -64,7 +64,9 @@ export default function HomeImageGallery({ posts = [] }) {
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover transition duration-700 hover:scale-105"
-                priority
+                priority={index < 2}
+                loading={index < 2 ? undefined : "lazy"}
+                quality={85}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0C1412]/50 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 space-y-2 text-white">

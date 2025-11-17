@@ -24,6 +24,8 @@ export default function SidebarContent({ popular = [] }) {
                 fill
                 sizes="80px"
                 className="object-cover transition duration-500 group-hover:scale-110"
+                loading="lazy"
+                quality={75}
               />
             </div>
             <div className="flex min-w-0 flex-col justify-center">

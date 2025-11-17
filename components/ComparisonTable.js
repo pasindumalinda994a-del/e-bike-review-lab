@@ -107,9 +107,11 @@ export default function ComparisonTable({ products, comparison }) {
                         <Image
                           src={product.imageUrl}
                           alt={product.name}
-                          width={48}
-                          height={48}
-                          className="h-full w-full object-contain"
+                          fill
+                          sizes="48px"
+                          className="object-contain"
+                          loading="lazy"
+                          quality={75}
                         />
                       </div>
                       <span className="font-medium text-[#0C1412]">

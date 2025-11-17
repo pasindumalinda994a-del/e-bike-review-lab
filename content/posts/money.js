@@ -20,9 +20,9 @@ const money = [
     // ============================================
     // IMAGES
     // ============================================
-    heroImage: "/images/best-electric-bikes/best-electric-bikes-hero2.jpg",
-    cardImage: "/images/best-electric-bikes/best-electric-bikes-hero1.png",
-    articleHeroImage: "/images/best-electric-bikes/best-electric-bikes-hero1.png",
+    heroImage: "/images/best-electric-bikes/best-electric-bikes-hero2.webp",
+    cardImage: "/images/best-electric-bikes/best-electric-bikes-hero1.webp",
+    articleHeroImage: "/images/best-electric-bikes/best-electric-bikes-hero1.webp",
     heroImageAlt: "Best electric bikes lined up for testing in urban setting",
 
     // ============================================
@@ -55,7 +55,7 @@ const money = [
         rank: 1,
         name: "Aventon Level 3 - Best Overall Electric Bike",
         badge: "Around $1,899",
-        imageUrl: "/images/best-electric-bikes/aventon-level-3.png",
+        imageUrl: "/images/best-electric-bikes/aventon-level-3.webp",
         description: "The Level 3 is what happens when a company actually listens to riders instead of just chasing specs. It's got enough power to make hills disappear, a range that won't leave you stranded, and a build quality that feels more premium than its price tag suggests. This is the e-bike I find myself grabbing most often.",
         keyFeatures: [
           "750W rear hub motor with surprising torque for city riding and moderate hills",
@@ -87,7 +87,7 @@ const money = [
         rank: 2,
         name: "Lectric XP4 750 - Best Value Folding Electric Bike",
         badge: "Starting at $1,199",
-        imageUrl: "/images/best-electric-bikes/lectric-XP4-750.png",
+        imageUrl: "/images/best-electric-bikes/lectric-XP4-750.webp",
         description: "For everyone who said 'I'd get an e-bike but I live in a tiny apartment'—here's your answer. The XP4 folds down to something resemblingly manageable, rides surprisingly well for a folder, and costs less than most people spend on their phone. It's not perfect, but at this price point, it doesn't need to be.",
         keyFeatures: [
           "750W rear hub motor that's impressively peppy for a folding bike",
@@ -119,7 +119,7 @@ const money = [
         rank: 3,
         name: "Segway Xafari - Most Feature-Packed Electric Bike",
         badge: "Around $2,499",
-        imageUrl: "/images/best-electric-bikes/segway-xafari.png",
+        imageUrl: "/images/best-electric-bikes/segway-xafari.webp",
         description: "Segway threw everything at this bike—adjustable suspension, cargo capacity, integrated lights, and enough mounting points to make it look like a Swiss Army knife. If you're the type who appreciates having options (and don't mind spending for them), the Xafari delivers features that usually cost a lot more.",
         keyFeatures: [
           "Adjustable air suspension system—seriously, you can fine-tune your ride",
@@ -151,7 +151,7 @@ const money = [
         rank: 4,
         name: "Rad Power Radster Trail - Best E-Bike for Beginners",
         badge: "Around $1,799",
-        imageUrl: "/images/best-electric-bikes/rad-power-radster-trail.png",
+        imageUrl: "/images/best-electric-bikes/rad-power-radster-trail.webp",
         description: "Rad Power nailed the brief here—make an e-bike that doesn't intimidate first-timers but doesn't ride like a compromise. The Radster Trail has intuitive controls, predictable handling, and enough capability to grow with you as you gain confidence. It's the e-bike I'd recommend to my parents.",
         keyFeatures: [
           "750W geared hub motor with smooth, progressive power delivery",
@@ -183,7 +183,7 @@ const money = [
         rank: 5,
         name: "Aventon Aventure.3 - Best Fat Tire Electric Bike",
         badge: "Around $1,999",
-        imageUrl: "/images/best-electric-bikes/aventon-aventure-3.png",
+        imageUrl: "/images/best-electric-bikes/aventon-aventure-3.webp",
         description: "Fat tires aren't just for beach cruising—they're legitimate tools for tackling varied terrain with confidence. The Aventure.3 combines 4-inch tires with enough power to make trail riding or snow commuting actually fun. If your rides involve anything beyond smooth pavement, these tires change everything.",
         keyFeatures: [
           "4-inch fat tires that provide traction on sand, snow, mud, and gravel",
@@ -215,7 +215,7 @@ const money = [
         rank: 6,
         name: "Lectric ONE - Best Compact Commuter E-Bike",
         badge: "Around $1,799",
-        imageUrl: "/images/best-electric-bikes/lectric-ONE.png",
+        imageUrl: "/images/best-electric-bikes/lectric-ONE.webp",
         description: "The ONE is Lectric's answer to premium urban e-bikes, and it's damn near perfect for city riding. It's lighter, nimbler, and more refined than their budget offerings while maintaining the value proposition that made them popular. This is the bike I'd choose for tight city streets and crowded bike lanes.",
         keyFeatures: [
           "Carbon fiber belt drive—quiet, clean, and virtually maintenance-free",
@@ -247,7 +247,7 @@ const money = [
         rank: 7,
         name: "Blix Vika X - Best Premium Folding Electric Bike",
         badge: "Around $2,199",
-        imageUrl: "/images/best-electric-bikes/blix-vika-X.png",
+        imageUrl: "/images/best-electric-bikes/blix-vika-X.webp",
         description: "If the Lectric XP4 is the practical folder, the Vika X is the premium alternative. It rides more like a full-size bike, folds with elegance, and justifies its higher price with quality touches throughout. This is for riders who want a folder but refuse to compromise on ride quality.",
         keyFeatures: [
           "500W motor that's refined rather than aggressive—perfect for city riding",
@@ -279,7 +279,7 @@ const money = [
         rank: 8,
         name: "Aventon Soltera 2.5 - Best Budget Electric Bike",
         badge: "Around $1,199",
-        imageUrl: "/images/best-electric-bikes/aventon-soltera-2.5.png",
+        imageUrl: "/images/best-electric-bikes/aventon-soltera-2.5.webp",
         description: "The Soltera 2.5 is proof that 'budget' doesn't have to mean 'disappointing.' Aventon stripped away the unnecessary features but kept everything that matters—solid motor, decent range, quality frame. This is what you buy when you want an e-bike experience without the e-bike price.",
         keyFeatures: [
           "350W rear hub motor (Class 2, tops out at 20 mph)",
@@ -311,7 +311,7 @@ const money = [
         rank: 9,
         name: "Ride1Up Vorsa - Most Versatile E-Bike for the Money",
         badge: "Around $1,495",
-        imageUrl: "/images/best-electric-bikes/ride1up-vorsa.png",
+        imageUrl: "/images/best-electric-bikes/ride1up-vorsa.webp",
         description: "The Vorsa is that rare bike that doesn't force you to choose between pavement and trails. It's got hybrid geometry, wide tire clearance, and a balanced spec sheet that handles multiple riding scenarios without excelling at any one thing. It's the jack-of-all-trades that's actually good at all trades.",
         keyFeatures: [
           "750W motor with torque sensor for natural pedaling feel",
@@ -343,7 +343,7 @@ const money = [
         rank: 10,
         name: "Rad Power RadRunner Max - Most Utilitarian Electric Bike",
         badge: "Around $1,999",
-        imageUrl: "/images/best-electric-bikes/rad-power-radrunner-max.png",
+        imageUrl: "/images/best-electric-bikes/rad-power-radrunner-max.webp",
         description: "The RadRunner Max is the pickup truck of e-bikes—it's not here to look pretty or win style awards. It's here to haul stuff, carry passengers, and get work done. If you're replacing car trips for errands and kid shuttling, this is the practical choice that won't let you down.",
         keyFeatures: [
           "750W motor with mid-drive option for better balance and hill climbing",

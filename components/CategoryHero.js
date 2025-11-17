@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 // Animated hero used at the top of every category page.
 export default function CategoryHero({ categoryName, image }) {
@@ -20,14 +21,25 @@ export default function CategoryHero({ categoryName, image }) {
 
   return (
     <section className="relative isolate flex h-[70vh] min-h-[520px] w-screen overflow-hidden bg-[#0C1412] text-white md:h-[80vh]">
-      <div
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-[50ms] will-change-transform"
-        style={{
-          backgroundImage: image ? `url("${encodeURI(image)}")` : undefined,
-          transform: `translateY(${scrollY * 0.2}px) scale(1.06)`,
-        }}
-        aria-hidden
-      />
+      {image && (
+        <div
+          className="absolute inset-0 transition-transform duration-[50ms] will-change-transform"
+          style={{
+            transform: `translateY(${scrollY * 0.2}px) scale(1.06)`,
+          }}
+          aria-hidden
+        >
+          <Image
+            src={image}
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover"
+            priority
+            quality={85}
+          />
+        </div>
+      )}
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/75" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-transparent to-black/50" />

@@ -21,9 +21,9 @@ export const newInformationalArticle = {
   // ============================================
   // IMAGES
   // ============================================
-  heroImage: "/images/products/hero6.jpg",
-  cardImage: "/images/products/hero6.jpg",
-  articleHeroImage: "/images/products/hero6.jpg",
+  heroImage: "/default-og.png", // Replace with your article's hero image path
+  cardImage: "/default-og.png", // Replace with your article's card image path
+  articleHeroImage: "/default-og.png", // Replace with your article's hero image path
   heroImageAlt: "Descriptive alt text for the hero image",
   
   // ============================================
