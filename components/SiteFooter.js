@@ -9,7 +9,7 @@ export default function SiteFooter() {
 
   return (
     <footer className="border-t border-white/10 bg-[#0C1412] text-white">
-      <div className="mx-auto grid max-w-6xl gap-10 px-6 py-12 md:grid-cols-4 md:px-8">
+      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:px-6 sm:py-12 md:grid-cols-4 md:gap-10 md:px-8">
         <div className="md:col-span-2">
           <Link href="/" className="inline-flex items-center">
             <Image
@@ -17,10 +17,10 @@ export default function SiteFooter() {
               alt="EBikeReviewLab"
               width={180}
               height={57}
-              className="h-20 w-auto"
+              className="h-16 w-auto sm:h-20"
             />
           </Link>
-          <p className="mt-6 text-sm italic text-[#E8F1EE]/80">
+          <p className="mt-4 text-xs italic leading-relaxed text-[#E8F1EE]/80 sm:mt-6 sm:text-sm">
             EBikeReviewLab is a participant in various affiliate partner programs
             with e-bike manufacturers and retailers, including Aventon, Ride1Up,
             Rad Power Bikes, Blix, and others. These affiliate programs are designed
@@ -31,16 +31,16 @@ export default function SiteFooter() {
           </p>
           <Link
             href="/newsletter"
-            className="mt-6 inline-flex items-center justify-center rounded-xl bg-[#3e3ce7] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#3e3ce7]/90"
+            className="mt-4 inline-flex items-center justify-center rounded-xl bg-[#3e3ce7] px-5 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-[#3e3ce7]/90 sm:mt-6 sm:px-6 sm:py-3 sm:text-sm"
           >
             Get the Insider Brief
           </Link>
         </div>
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-[#E8F1EE]/80">
+          <p className="text-xs font-semibold uppercase tracking-wide text-[#E8F1EE]/80 sm:text-sm">
             Explore
           </p>
-          <ul className="mt-4 space-y-3 text-sm text-[#E8F1EE]">
+          <ul className="mt-3 space-y-2.5 text-xs text-[#E8F1EE] sm:mt-4 sm:space-y-3 sm:text-sm">
             {featuredCategories.map((category) => (
               <li key={category.slug}>
                 <Link
@@ -54,10 +54,10 @@ export default function SiteFooter() {
           </ul>
         </div>
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-[#E8F1EE]/80">
+          <p className="text-xs font-semibold uppercase tracking-wide text-[#E8F1EE]/80 sm:text-sm">
             Company
           </p>
-          <ul className="mt-4 space-y-3 text-sm text-[#E8F1EE]">
+          <ul className="mt-3 space-y-2.5 text-xs text-[#E8F1EE] sm:mt-4 sm:space-y-3 sm:text-sm">
             <li>
               <Link href="/about" className="transition hover:text-[#3e3ce7]">
                 About Us
@@ -82,9 +82,9 @@ export default function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-6 text-xs text-[#E8F1EE]/70 md:flex-row md:px-8">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 py-5 text-[10px] text-[#E8F1EE]/70 sm:px-6 sm:py-6 sm:text-xs md:flex-row md:gap-4 md:px-8">
           <p>© {currentYear} EBikeReviewLab. All rights reserved.</p>
-          <p className="text-xs text-[#E8F1EE]/60">
+          <p className="text-center text-[10px] text-[#E8F1EE]/60 sm:text-xs">
             Curated with care to keep riders informed and ready for the next
             charge.
           </p>

@@ -81,7 +81,7 @@ export default function HomeStoryBanner({
     >
       <div
         ref={containerRef}
-        className={`relative mx-auto w-full overflow-hidden ${video ? 'h-screen' : 'aspect-[2/1] max-w-[1400px]'}`}
+        className={`relative mx-auto w-full overflow-hidden ${video ? 'h-[60vh] min-h-[400px] sm:h-[70vh] sm:min-h-[500px] md:h-screen' : 'aspect-[2/1] max-w-[1400px]'}`}
       >
         {video ? (
           <>

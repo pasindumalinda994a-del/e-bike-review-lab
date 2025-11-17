@@ -65,7 +65,7 @@ export default async function CategoryPage({ params }) {
   const sidebarPopular = sidebarSource;
 
   return (
-    <main className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-6 pb-16 text-[#0C1412] md:px-12">
+    <main className="mx-auto flex w-full max-w-7xl flex-col gap-10 px-4 pb-12 text-[#0C1412] sm:gap-12 sm:px-6 sm:pb-16 md:gap-16 md:px-12">
       <JsonLdSchema data={categorySchemas} />
       <div className="relative left-1/2 right-1/2 w-screen -translate-x-1/2">
         <CategoryHero
@@ -74,7 +74,7 @@ export default async function CategoryPage({ params }) {
         />
       </div>
 
-      <div className="grid gap-12 lg:grid-cols-[minmax(0,3fr)_minmax(0,1.1fr)]">
+      <div className="grid gap-8 lg:grid-cols-[minmax(0,3fr)_minmax(0,1.1fr)] lg:gap-12">
         <CategoryGrid posts={posts} />
         <SidebarContent popular={sidebarPopular} />
       </div>

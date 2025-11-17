@@ -20,7 +20,7 @@ export default function CategoryHero({ categoryName, image }) {
   }, []);
 
   return (
-    <section className="relative isolate flex h-[70vh] min-h-[520px] w-screen overflow-hidden bg-[#0C1412] text-white md:h-[80vh]">
+    <section className="relative isolate flex h-[60vh] min-h-[400px] w-screen overflow-hidden bg-[#0C1412] text-white sm:h-[70vh] sm:min-h-[520px] md:h-[80vh]">
       {image && (
         <div
           className="absolute inset-0 transition-transform duration-[50ms] will-change-transform"
@@ -53,9 +53,9 @@ export default function CategoryHero({ categoryName, image }) {
         aria-hidden
       />
 
-      <div className="relative z-10 flex h-full w-full items-center justify-center px-6 pb-20 pt-28 sm:px-10 md:px-16">
+      <div className="relative z-10 flex h-full w-full items-center justify-center px-4 pb-16 pt-20 sm:px-6 sm:pb-20 sm:pt-28 md:px-10 lg:px-16">
         <h1
-          className={`max-w-3xl text-center text-4xl font-bold leading-[1.05] tracking-tight text-white transition-all duration-700 delay-200 sm:text-5xl md:text-6xl lg:text-7xl ${
+          className={`max-w-3xl text-center text-2xl font-bold leading-[1.05] tracking-tight text-white transition-all duration-700 delay-200 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
           }`}
         >
@@ -64,15 +64,15 @@ export default function CategoryHero({ categoryName, image }) {
       </div>
 
       <div
-        className={`absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center text-xs font-medium uppercase tracking-[0.4em] text-white/60 transition-all duration-700 delay-500 ${
+        className={`absolute bottom-6 left-1/2 flex -translate-x-1/2 flex-col items-center text-[10px] font-medium uppercase tracking-[0.3em] text-white/60 transition-all duration-700 delay-500 sm:bottom-10 sm:text-xs sm:tracking-[0.4em] ${
           isLoaded ? "opacity-100" : "opacity-0"
         }`}
       >
         <span>Scroll to view guides</span>
-        <div className="mt-3 flex flex-col items-center">
-          <span className="h-8 w-px bg-white/30" />
+        <div className="mt-2 flex flex-col items-center sm:mt-3">
+          <span className="h-6 w-px bg-white/30 sm:h-8" />
           <svg
-            className="mt-3 h-4 w-4 animate-bounce"
+            className="mt-2 h-3 w-3 animate-bounce sm:mt-3 sm:h-4 sm:w-4"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

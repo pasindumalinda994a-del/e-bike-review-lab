@@ -126,12 +126,12 @@ export default function Hero({
       />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex h-full w-full max-w-[1400px] items-center justify-start px-8 pb-24 pt-28 sm:px-16 lg:px-24">
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-[1400px] items-center justify-start px-4 pb-20 pt-20 sm:px-8 sm:pb-24 sm:pt-28 md:px-16 lg:px-24">
         <div className="max-w-3xl text-left">
           {/* Article Title - SEO optimized h1 */}
           {activeSlide.title && (
             <h1
-              className={`text-3xl font-bold leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-6xl transition-all duration-700 delay-200 ${
+              className={`text-2xl font-bold leading-[1.08] tracking-tight sm:text-4xl md:text-5xl lg:text-6xl transition-all duration-700 delay-200 ${
                 isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
               }`}
             >
@@ -142,7 +142,7 @@ export default function Hero({
           {/* Article Description */}
           {activeSlide.description && (
             <p
-              className={`mt-6 text-lg leading-relaxed text-white/90 sm:text-xl transition-all duration-700 delay-300 ${
+              className={`mt-4 text-base leading-relaxed text-white/90 sm:mt-6 sm:text-lg md:text-xl transition-all duration-700 delay-300 ${
                 isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
               }`}
             >
@@ -153,7 +153,7 @@ export default function Hero({
           {/* CTA Button */}
           <Link
             href={activeSlide.href}
-            className={`mt-10 inline-flex items-center justify-center rounded-xl bg-[#3e3ce7] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#3e3ce7]/90 focus:outline-none focus:ring-2 focus:ring-[#3e3ce7] focus:ring-offset-2 focus:ring-offset-[#0C1412] ${
+            className={`mt-6 inline-flex items-center justify-center rounded-xl bg-[#3e3ce7] px-5 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-[#3e3ce7]/90 focus:outline-none focus:ring-2 focus:ring-[#3e3ce7] focus:ring-offset-2 focus:ring-offset-[#0C1412] sm:mt-10 sm:px-6 sm:py-3 sm:text-sm ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
             }`}
             aria-label={`Read more about ${activeSlide.title}`}
@@ -167,7 +167,7 @@ export default function Hero({
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="ml-2 h-4 w-4"
+              className="ml-2 h-3.5 w-3.5 sm:h-4 sm:w-4"
               aria-hidden="true"
             >
               <path d="M5 12h14" />
@@ -183,7 +183,7 @@ export default function Hero({
           <button
             type="button"
             onClick={handlePrevious}
-            className="absolute left-8 top-1/2 z-20 flex -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/30 p-3 text-white transition hover:border-[#3e3ce7] hover:bg-black/50 hover:text-[#3e3ce7]"
+            className="absolute left-2 top-1/2 z-20 flex -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/30 p-2 text-white transition hover:border-[#3e3ce7] hover:bg-black/50 hover:text-[#3e3ce7] sm:left-4 sm:p-2.5 md:left-8 md:p-3"
             aria-label="Previous slide"
           >
             <svg
@@ -194,7 +194,7 @@ export default function Hero({
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="h-5 w-5"
+              className="h-4 w-4 sm:h-5 sm:w-5"
             >
               <polyline points="15 18 9 12 15 6" />
             </svg>
@@ -202,7 +202,7 @@ export default function Hero({
           <button
             type="button"
             onClick={handleNext}
-            className="absolute right-8 top-1/2 z-20 flex -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/30 p-3 text-white transition hover:border-[#3e3ce7] hover:bg-black/50 hover:text-[#3e3ce7]"
+            className="absolute right-2 top-1/2 z-20 flex -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/30 p-2 text-white transition hover:border-[#3e3ce7] hover:bg-black/50 hover:text-[#3e3ce7] sm:right-4 sm:p-2.5 md:right-8 md:p-3"
             aria-label="Next slide"
           >
             <svg
@@ -213,7 +213,7 @@ export default function Hero({
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="h-5 w-5"
+              className="h-4 w-4 sm:h-5 sm:w-5"
             >
               <polyline points="9 18 15 12 9 6" />
             </svg>

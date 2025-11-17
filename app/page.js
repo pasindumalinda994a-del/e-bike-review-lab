@@ -58,7 +58,7 @@ export default async function HomePage() {
     : infoPosts.slice(0, 4);
 
   return (
-    <main className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-6 pb-16 text-[#0C1412] md:px-12 lg:px-16">
+    <main className="mx-auto flex w-full max-w-7xl flex-col gap-10 px-4 pb-12 text-[#0C1412] sm:gap-12 sm:px-6 sm:pb-16 md:gap-16 md:px-12 lg:px-16">
       <JsonLdSchema data={buildWebsiteSchema()} />
       {heroPrimary ? (
         <div className="relative left-1/2 right-1/2 w-screen -translate-x-1/2">

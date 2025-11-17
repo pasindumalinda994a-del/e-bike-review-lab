@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
       <body className="flex min-h-screen flex-col bg-[#FFFFFF] text-[#0C1412]">
         <SiteHeader />
         <main className="flex-1">
-          <div className="mx-auto w-full max-w-8xl px-8 md:px-12 lg:px-16">
+          <div className="mx-auto w-full max-w-8xl px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
             {children}
           </div>
         </main>

@@ -27,13 +27,13 @@ export default function HomeShowcase({ latest = [], sidebarPopular = [] }) {
   return (
     <section
       aria-labelledby="home-showcase-grid"
-      className="mx-auto grid w-full max-w-7xl gap-12 px-6 py-16 md:grid-cols-[minmax(0,2.4fr)_minmax(0,1fr)] md:px-12"
+      className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-[minmax(0,2.4fr)_minmax(0,1fr)] md:gap-12 md:px-12"
     >
-      <section aria-labelledby="home-showcase-grid" className="space-y-6 ">
+      <section aria-labelledby="home-showcase-grid" className="space-y-6">
         <div className="flex items-start justify-between gap-4">
           <h3
             id="latest-content"
-            className="text-sm font-semibold uppercase tracking-[0.4em] text-[#0C1412]/70"
+            className="text-xs font-semibold uppercase tracking-[0.4em] text-[#0C1412]/70 sm:text-sm"
           >
             Latest Content
           </h3>

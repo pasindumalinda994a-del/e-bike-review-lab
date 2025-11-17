@@ -35,22 +35,22 @@ export default function HomeImageGallery({ posts = [] }) {
   return (
     <section
       aria-labelledby="field-moments"
-      className="mx-auto w-full max-w-7xl px-6 py-16 md:py-20 lg:px-16"
+      className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:px-16"
     >
-      <div className="space-y-8">
-        <header className="space-y-3 text-center">
+      <div className="space-y-6 sm:space-y-8">
+        <header className="space-y-2 text-center sm:space-y-3">
           <h2
             id="field-moments"
-            className="text-sm font-semibold uppercase tracking-[0.4em] text-[#3e3ce7]"
+            className="text-xs font-semibold uppercase tracking-[0.3em] text-[#3e3ce7] sm:text-sm sm:tracking-[0.4em]"
           >
             Latest Informational Guides
           </h2>
-          <p className="text-3xl font-bold tracking-tight text-[#0C1412]">
+          <p className="text-2xl font-bold tracking-tight text-[#0C1412] sm:text-3xl">
             Fresh Insights for Smarter E-Bike Decisions
           </p>
         </header>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
           {galleryPosts.map((post, index) => (
             <Link
               key={post.slug}

@@ -9,19 +9,19 @@ export default function DetailedProductReviews({
   if (!products?.length) return null;
 
   return (
-    <section className="mx-auto max-w-4xl space-y-12 py-12" aria-labelledby="detailed-reviews">
-      <header className="space-y-3">
-        <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">
+    <section className="mx-auto max-w-4xl space-y-8 py-8 sm:space-y-12 sm:py-12" aria-labelledby="detailed-reviews">
+      <header className="space-y-2 sm:space-y-3">
+        <p className="text-[10px] font-semibold uppercase tracking-[0.15em] text-[#3e3ce7] sm:text-xs">
           Product Reviews
         </p>
         <h2
           id="detailed-reviews"
-          className="text-3xl font-bold leading-tight tracking-tight text-[#111827] sm:text-4xl"
+          className="text-2xl font-bold leading-tight tracking-tight text-[#111827] sm:text-3xl md:text-4xl"
         >
           {heading}
         </h2>
       </header>
-      <div className="space-y-16">
+      <div className="space-y-12 sm:space-y-16">
         {products.map((product, index) => {
           const displayTitle =
             typeof product.rank === 'number'
@@ -44,8 +44,8 @@ export default function DetailedProductReviews({
 
           return (
             <article key={product.id ?? index} id={product.id} className="scroll-mt-24 space-y-8">
-              <div className="flex flex-wrap items-center justify-between gap-4">
-                <h3 className="text-2xl font-bold leading-tight tracking-tight text-[#111827] sm:text-3xl">
+              <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4">
+                <h3 className="text-xl font-bold leading-tight tracking-tight text-[#111827] sm:text-2xl md:text-3xl">
                   {displayTitle}
                 </h3>
               </div>
@@ -54,8 +54,8 @@ export default function DetailedProductReviews({
                 <div className="md:col-span-4">
                   <div className="relative aspect-square overflow-hidden rounded-xl border border-[#e5e7eb] bg-white shadow-sm">
                     {badge ? (
-                      <div className="absolute left-0 top-0 z-10 rounded-br-xl bg-gradient-to-r from-[#0C1412]/95 to-[#1a1a2e]/95 px-4 py-2 shadow-lg backdrop-blur-sm">
-                        <span className="text-sm font-semibold text-white">{badge}</span>
+                      <div className="absolute left-0 top-0 z-10 rounded-br-xl bg-gradient-to-r from-[#0C1412]/95 to-[#1a1a2e]/95 px-3 py-1.5 shadow-lg backdrop-blur-sm sm:px-4 sm:py-2">
+                        <span className="text-xs font-semibold text-white sm:text-sm">{badge}</span>
                       </div>
                     ) : null}
                     <Image
@@ -63,26 +63,26 @@ export default function DetailedProductReviews({
                       alt={product.name}
                       fill
                       sizes="(min-width: 768px) 33vw, 100vw"
-                      className="object-contain p-4"
+                      className="object-contain p-3 sm:p-4"
                       priority={index === 0}
                       loading={index === 0 ? undefined : "lazy"}
                       quality={85}
                     />
                   </div>
                   {product.affiliateLink ? (
-                    <div className="mt-4">
+                    <div className="mt-3 sm:mt-4">
                       <a
                         href={product.affiliateLink}
                         target="_blank"
                         rel="sponsored nofollow noopener"
-                        className="inline-flex items-center justify-center rounded-xl bg-[#3e3ce7] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#3e3ce7]/90"
+                        className="inline-flex w-full items-center justify-center rounded-xl bg-[#3e3ce7] px-5 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-[#3e3ce7]/90 sm:w-auto sm:px-6 sm:py-3 sm:text-sm"
                       >
                         {ctaLabel}
                       </a>
                     </div>
                   ) : null}
                 </div>
-                <div className="space-y-6 md:col-span-8">
+                <div className="space-y-4 md:col-span-8 sm:space-y-6">
                   {product.description ? (
                     <p className="text-base leading-[1.75] text-[#374151] sm:text-lg">
                       {product.description}
