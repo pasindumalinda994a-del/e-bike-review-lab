@@ -1,6 +1,5 @@
 import './globals.css';
 import { Plus_Jakarta_Sans } from 'next/font/google';
-import Script from 'next/script';
 import SiteFooter from '@/components/SiteFooter';
 import SiteHeader from '@/components/SiteHeader';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
@@ -91,13 +90,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={plusJakartaSans.variable}>
       <body className={`${plusJakartaSans.className} flex min-h-screen flex-col bg-white text-[#0C1412]`}>
-        {/* AvantLink Affiliate Verification Script - Must be visible in page source */}
-        {/* Verification URL: https://classic.avantlink.com/affiliate_app_confirm.php?mode=verify-js&application_id=1526285 */}
-        <Script
-          id="avantlink-verification"
-          src="http://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=2bc0b4990742f0b5b37770c9932999e8e29dec03"
-          strategy="beforeInteractive"
-        />
         <SiteHeader />
         <main className="flex-1">
           {children}
