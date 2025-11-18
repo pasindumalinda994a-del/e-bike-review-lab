@@ -71,10 +71,10 @@ export default async function HomePage() {
         </div>
       ) : null}
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 py-12 text-[#0C1412] sm:gap-20 sm:px-6 sm:py-16 md:gap-24 md:px-12 md:py-20 lg:px-16">
-        <HomeShowcase
-          latest={showcaseLatest}
-          sidebarPopular={showcaseSidebar}
-        />
+      <HomeShowcase
+        latest={showcaseLatest}
+        sidebarPopular={showcaseSidebar}
+      />
       </div>
       <div className="my-8 sm:my-12 md:my-16">
         <HomeStoryBanner 
@@ -83,9 +83,9 @@ export default async function HomePage() {
         />
       </div>
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 py-12 text-[#0C1412] sm:gap-20 sm:px-6 sm:py-16 md:gap-24 md:px-12 md:py-20 lg:px-16">
-        <HomeCategories />
-        <HomeImageGallery posts={galleryPosts} />
-        <HomeNewsletter />
+      <HomeCategories />
+      <HomeImageGallery posts={galleryPosts} />
+      <HomeNewsletter />
       </div>
     </main>
   );

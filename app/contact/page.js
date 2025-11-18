@@ -31,15 +31,39 @@ export default function ContactPage() {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
-    // Simulate form submission - Replace with actual API call
-    setTimeout(() => {
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('inquiryType', formData.inquiryType);
+      formDataToSend.append('subject', formData.subject);
+      formDataToSend.append('message', formData.message);
+
+      const response = await fetch('/contact/submit', {
+        method: 'POST',
+        body: formDataToSend,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setIsSubmitting(false);
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', inquiryType: '', message: '' });
+        
+        // Reset success message after 5 seconds
+        setTimeout(() => setSubmitStatus('idle'), 5000);
+      } else {
+        setIsSubmitting(false);
+        setSubmitStatus('error');
+        setTimeout(() => setSubmitStatus('idle'), 5000);
+      }
+    } catch (error) {
+      console.error('Contact form submission error:', error);
       setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', inquiryType: '', message: '' });
-      
-      // Reset success message after 5 seconds
+      setSubmitStatus('error');
       setTimeout(() => setSubmitStatus('idle'), 5000);
-    }, 1500);
+    }
   };
 
   return (
@@ -74,6 +98,18 @@ export default function ContactPage() {
               <div>
                 <p className="font-semibold text-green-900">Message sent successfully!</p>
                 <p className="text-sm text-green-700 mt-1">We'll get back to you within 2 business days.</p>
+              </div>
+            </div>
+          )}
+
+          {submitStatus === 'error' && (
+            <div className="mb-6 rounded-xl bg-red-50 border border-red-200 p-4 flex items-start gap-3">
+              <svg className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div>
+                <p className="font-semibold text-red-900">Something went wrong</p>
+                <p className="text-sm text-red-700 mt-1">Please try again or email us directly at {CONTACT_EMAIL}</p>
               </div>
             </div>
           )}
