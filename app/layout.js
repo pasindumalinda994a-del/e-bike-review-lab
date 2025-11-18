@@ -90,13 +90,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={plusJakartaSans.variable}>
       <body className={`${plusJakartaSans.className} flex min-h-screen flex-col bg-white text-[#0C1412]`}>
-        {/* AvantLink Verification Script - Native script tag for raw HTML visibility */}
-        {/* Changed to HTTPS to prevent mixed-content blocking */}
-        {/* Can be removed after verification */}
-        <script 
-          type="text/javascript" 
-          src="https://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=2bc0b4990742f0b5b37770c9932999e8e29dec03"
-        ></script>
         <SiteHeader />
         <main className="flex-1">
           {children}
