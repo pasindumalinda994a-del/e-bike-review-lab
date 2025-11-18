@@ -2,23 +2,13 @@
 
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 
 /**
- * Google Analytics 4 (GA4) Component
- * 
- * This component handles:
- * - Loading the GA4 script
- * - Tracking page views
- * - Supporting custom event tracking
- * 
- * Usage:
- * Add <GoogleAnalytics /> to your root layout
- * 
- * Environment Variable Required:
- * NEXT_PUBLIC_GA_MEASUREMENT_ID - Your GA4 Measurement ID (e.g., G-XXXXXXXXXX)
+ * Internal component that uses useSearchParams
+ * Must be wrapped in Suspense boundary
  */
-export default function GoogleAnalytics() {
+function GoogleAnalyticsInner() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
@@ -38,6 +28,26 @@ export default function GoogleAnalytics() {
       });
     }
   }, [pathname, searchParams, gaMeasurementId]);
+
+  return null;
+}
+
+/**
+ * Google Analytics 4 (GA4) Component
+ * 
+ * This component handles:
+ * - Loading the GA4 script
+ * - Tracking page views
+ * - Supporting custom event tracking
+ * 
+ * Usage:
+ * Add <GoogleAnalytics /> to your root layout
+ * 
+ * Environment Variable Required:
+ * NEXT_PUBLIC_GA_MEASUREMENT_ID - Your GA4 Measurement ID (e.g., G-XXXXXXXXXX)
+ */
+export default function GoogleAnalytics() {
+  const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
   // Don't render if measurement ID is not provided
   if (!gaMeasurementId) {
@@ -69,6 +79,10 @@ export default function GoogleAnalytics() {
           `,
         }}
       />
+      {/* Track page views - wrapped in Suspense for useSearchParams */}
+      <Suspense fallback={null}>
+        <GoogleAnalyticsInner />
+      </Suspense>
     </>
   );
 }

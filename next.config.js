@@ -19,8 +19,6 @@ const nextConfig = {
     // Enable remote patterns if using external images
     remotePatterns: [],
   },
-  // Optimize production builds
-  swcMinify: true,
   // Enable experimental features for better performance
   experimental: {
     optimizePackageImports: ['lucide-react'],
