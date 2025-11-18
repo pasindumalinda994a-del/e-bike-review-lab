@@ -170,7 +170,7 @@ function NumberedCard({ text, index }) {
   if (!displayText) return null;
 
   return (
-    <div className="flex items-start gap-4 rounded-xl border border-[#e5e7eb] bg-white p-5 transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-sm sm:p-6">
+    <div className="flex items-start gap-4 rounded-2xl border border-[#0C1412]/10 bg-white p-5 shadow-sm transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-md hover:shadow-[#3e3ce7]/10 sm:p-6">
       <span className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-[#3e3ce7]/10 text-sm font-semibold text-[#3e3ce7]">
         {index + 1}
       </span>
@@ -255,7 +255,7 @@ function BenefitCard({ text, type }) {
  */
 function HeadlineSection({ headline, subheadline, category, publishedDate, readingTime }) {
   return (
-    <header className="relative overflow-hidden rounded-2xl border border-[#e5e7eb] bg-gradient-to-br from-[#0C1412] via-[#1a1a2e] to-[#16213e] px-6 py-12 text-white sm:px-8 sm:py-16 lg:px-12 lg:py-20">
+    <header className="relative overflow-hidden rounded-3xl border border-[#0C1412]/10 bg-gradient-to-br from-[#0C1412] via-[#1a1a2e] to-[#16213e] px-6 py-12 text-white shadow-xl sm:px-8 sm:py-16 lg:px-12 lg:py-20">
       <BackgroundPattern />
 
       <div className="relative mx-auto max-w-4xl space-y-6">
@@ -324,7 +324,7 @@ function OpeningSection({ hook, context, expectation, introductionParagraphs = [
       )}
 
       {hook && (
-        <blockquote className="relative border-l-4 border-[#3e3ce7] bg-[#f9fafb] pl-6 pr-4 py-6 sm:pl-8 sm:py-8">
+        <blockquote className="relative border-l-4 border-[#3e3ce7] bg-gradient-to-br from-white to-[#3e3ce7]/5 pl-6 pr-4 py-6 shadow-sm sm:pl-8 sm:py-8">
           <span className="absolute left-0 top-0 text-6xl font-serif leading-none text-[#3e3ce7]/10">
             &ldquo;
           </span>
@@ -335,7 +335,7 @@ function OpeningSection({ hook, context, expectation, introductionParagraphs = [
       )}
 
       {expectation && (
-        <div className="rounded-xl border border-[#e5e7eb] bg-[#f9fafb] p-6 sm:p-8">
+        <div className="rounded-2xl border border-[#0C1412]/10 bg-gradient-to-br from-white to-[#3e3ce7]/5 p-6 shadow-sm sm:p-8">
           <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#3e3ce7]">
             What You&rsquo;ll Learn
           </p>
@@ -365,7 +365,7 @@ function WhatIsItSection({ heading, definition, types, whyConsider }) {
 
       <div className="grid gap-6 md:grid-cols-2">
         {definition && (
-          <div className="group rounded-xl border border-[#e5e7eb] bg-white p-6 transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-md sm:p-8">
+          <div className="group rounded-2xl border border-[#0C1412]/10 bg-white p-6 shadow-sm transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-lg hover:shadow-[#3e3ce7]/10 sm:p-8">
             <div className="mb-4 flex items-center gap-3">
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#3e3ce7]/10 text-sm font-semibold text-[#3e3ce7]">
                 01
@@ -377,7 +377,7 @@ function WhatIsItSection({ heading, definition, types, whyConsider }) {
         )}
 
         {types?.length > 0 && (
-          <div className="group rounded-xl border border-[#e5e7eb] bg-white p-6 transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-md sm:p-8">
+          <div className="group rounded-2xl border border-[#0C1412]/10 bg-white p-6 shadow-sm transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-lg hover:shadow-[#3e3ce7]/10 sm:p-8">
             <div className="mb-4 flex items-center gap-3">
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#3e3ce7]/10 text-sm font-semibold text-[#3e3ce7]">
                 02
@@ -403,7 +403,7 @@ function WhatIsItSection({ heading, definition, types, whyConsider }) {
       </div>
 
       {whyConsider && (
-        <div className="rounded-xl border border-[#e5e7eb] bg-[#f9fafb] p-6 sm:p-8">
+        <div className="rounded-2xl border border-[#0C1412]/10 bg-gradient-to-br from-white to-[#3e3ce7]/5 p-6 shadow-sm sm:p-8">
           <h3 className="mb-4 text-xl font-semibold text-[#111827]">Why People Consider It</h3>
           <p className="text-base leading-[1.75] text-[#4b5563]">{whyConsider}</p>
         </div>
@@ -522,7 +522,7 @@ function HowToDecideSection({ heading, checklist = [], selfAudit, paragraphs = [
       )}
 
       {selfAudit && (
-        <div className="rounded-xl border-2 border-[#3e3ce7]/20 bg-gradient-to-br from-[#3e3ce7]/5 to-white p-6 sm:p-8">
+        <div className="rounded-2xl border-2 border-[#3e3ce7]/20 bg-gradient-to-br from-[#3e3ce7]/5 to-white p-6 shadow-sm sm:p-8">
           <h3 className="mb-4 text-xl font-semibold text-[#111827]">Self-Audit Questions</h3>
           <p className="text-base leading-[1.75] text-[#4b5563]">{selfAudit}</p>
         </div>
@@ -614,7 +614,7 @@ function FinalVerdictSection({ heading, summary, verdict, paragraphs = [] }) {
   if (!heading && !summary && !verdict && !paragraphs.length) return null;
 
   return (
-    <section className="relative mx-auto max-w-4xl overflow-hidden rounded-2xl border border-[#e5e7eb] bg-gradient-to-br from-[#0C1412] via-[#1a1a2e] to-[#16213e] p-8 text-white shadow-lg sm:p-12">
+        <section className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-[#0C1412]/10 bg-gradient-to-br from-[#0C1412] via-[#1a1a2e] to-[#16213e] p-8 text-white shadow-xl sm:p-12">
       <BackgroundPattern />
 
       <div className="relative space-y-6">
@@ -743,10 +743,10 @@ function OptionalExtrasSection({ pulloutQuotes = [], didYouKnow = [], comparison
             const quoteText = typeof quote === 'string' ? quote : quote?.text ?? '';
             if (!quoteText) return null;
             return (
-              <blockquote
-                key={index}
-                className="relative border-l-4 border-[#3e3ce7] bg-[#f9fafb] pl-6 pr-4 py-6 sm:pl-8 sm:py-8"
-              >
+            <blockquote
+              key={index}
+              className="relative border-l-4 border-[#3e3ce7] bg-gradient-to-br from-white to-[#3e3ce7]/5 pl-6 pr-4 py-6 shadow-sm sm:pl-8 sm:py-8"
+            >
                 <span className="absolute left-0 top-0 text-6xl font-serif leading-none text-[#3e3ce7]/10">
                   &ldquo;
                 </span>
@@ -855,10 +855,10 @@ function FAQSection({ faqs = [], heading }) {
           const contentId = `faq-panel-${index}`;
 
           return (
-            <details
-              key={question}
-              className="group rounded-xl border border-[#e5e7eb] bg-white p-5 transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-sm sm:p-6"
-            >
+              <details
+                key={question}
+                className="group rounded-2xl border border-[#0C1412]/10 bg-white p-5 shadow-sm transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-md hover:shadow-[#3e3ce7]/10 sm:p-6"
+              >
               <summary
                 id={summaryId}
                 className="flex cursor-pointer items-center justify-between gap-4 text-left text-base font-semibold text-[#111827] transition-colors hover:text-[#3e3ce7] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3e3ce7] focus-visible:ring-offset-2 sm:text-lg"
@@ -1081,7 +1081,7 @@ export default function InformationalArticle({
         introductionParagraphs={allIntroductionParagraphs}
       />
 
-      <figure className="relative mx-auto max-w-4xl overflow-hidden rounded-xl border border-[#e5e7eb] bg-[#f9fafb]">
+      <figure className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-[#0C1412]/10 bg-white shadow-lg">
         <div className="aspect-[4/3] w-full">
           <Image
             src={articleHeroImage}
@@ -1090,13 +1090,15 @@ export default function InformationalArticle({
             sizes="(min-width: 1024px) 896px, (min-width: 768px) 90vw, 100vw"
             className="object-cover"
             priority
-            quality={85}
+            quality={75}
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//9k="
           />
         </div>
       </figure>
 
       {topProductsIntro && (
-        <section className="mx-auto max-w-4xl rounded-xl border border-[#e5e7eb] bg-[#f9fafb] p-6 sm:p-8">
+        <section className="mx-auto max-w-4xl rounded-2xl border border-[#0C1412]/10 bg-gradient-to-br from-white to-[#3e3ce7]/5 p-6 shadow-sm sm:p-8">
           <div className="space-y-4">
             <span className="inline-flex items-center rounded-full bg-[#3e3ce7]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">
               What to Expect

@@ -29,9 +29,9 @@ export default function MoneyArticle({ post, publishedDate }) {
   const heroImageAlt = post.heroImageAlt ?? post.title ?? post.h1;
 
   return (
-    <article className="mx-auto max-w-5xl space-y-16 px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+    <article className="mx-auto max-w-5xl space-y-16">
       {/* Header - Clean, minimal, impactful */}
-      <header className="relative overflow-hidden rounded-2xl border border-[#e5e7eb] bg-gradient-to-br from-[#0C1412] via-[#1a1a2e] to-[#16213e] px-6 py-12 text-white sm:px-8 sm:py-16 lg:px-12 lg:py-20">
+      <header className="relative overflow-hidden rounded-3xl border border-[#0C1412]/10 bg-gradient-to-br from-[#0C1412] via-[#1a1a2e] to-[#16213e] px-6 py-12 text-white shadow-xl sm:px-8 sm:py-16 lg:px-12 lg:py-20">
         {/* Subtle background pattern */}
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.03]"
@@ -84,7 +84,7 @@ export default function MoneyArticle({ post, publishedDate }) {
       </header>
 
       {/* Hero Image - Clean, minimal frame */}
-      <figure className="relative mx-auto max-w-4xl overflow-hidden rounded-xl border border-[#e5e7eb] bg-[#f9fafb]">
+      <figure className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-[#0C1412]/10 bg-white shadow-lg">
         <div className="aspect-[4/3] w-full">
           <Image
             src={articleHeroImage}
@@ -93,14 +93,16 @@ export default function MoneyArticle({ post, publishedDate }) {
             sizes="(min-width: 1024px) 896px, (min-width: 768px) 90vw, 100vw"
             className="object-cover"
             priority
-            quality={85}
+            quality={75}
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//9k="
           />
         </div>
       </figure>
 
       {/* Top Products Intro - Clean section */}
       {post.topProductsIntro ? (
-        <section className="mx-auto max-w-4xl rounded-xl border border-[#e5e7eb] bg-[#f9fafb] p-6 sm:p-8">
+        <section className="mx-auto max-w-4xl rounded-2xl border border-[#0C1412]/10 bg-gradient-to-br from-white to-[#3e3ce7]/5 p-6 shadow-sm sm:p-8">
           <div className="space-y-4">
             <span className="inline-flex items-center rounded-full bg-[#3e3ce7]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">
               What to Expect
@@ -124,7 +126,7 @@ export default function MoneyArticle({ post, publishedDate }) {
 
       {/* Buyer's Guide Section - Dark gradient matching header */}
       {hasBuyersGuideSections ? (
-        <section className="relative mx-auto max-w-4xl overflow-hidden rounded-2xl border border-[#e5e7eb] bg-gradient-to-br from-[#0C1412] via-[#1a1a2e] to-[#16213e] px-6 py-12 text-white shadow-lg sm:px-8 sm:py-16">
+        <section className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-[#0C1412]/10 bg-gradient-to-br from-[#0C1412] via-[#1a1a2e] to-[#16213e] px-6 py-12 text-white shadow-xl sm:px-8 sm:py-16">
           {/* Subtle background pattern */}
           <div
             className="pointer-events-none absolute inset-0 opacity-[0.03]"
@@ -181,7 +183,7 @@ export default function MoneyArticle({ post, publishedDate }) {
 
       {/* Related Guides - Clean, minimal */}
       {post.relatedGuides?.length ? (
-        <section className="mx-auto max-w-4xl rounded-xl border border-[#e5e7eb] bg-[#f9fafb] p-6 sm:p-8">
+        <section className="mx-auto max-w-4xl rounded-2xl border border-[#0C1412]/10 bg-gradient-to-br from-white to-[#3e3ce7]/5 p-6 shadow-sm sm:p-8">
           <h2 className="mb-6 text-2xl font-bold tracking-tight text-[#111827] sm:text-3xl">
             Learn More About {post.category}
           </h2>

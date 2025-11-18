@@ -58,7 +58,7 @@ export default async function HomePage() {
     : infoPosts.slice(0, 4);
 
   return (
-    <main className="mx-auto flex w-full max-w-7xl flex-col gap-10 px-4 pb-12 text-[#0C1412] sm:gap-12 sm:px-6 sm:pb-16 md:gap-16 md:px-12 lg:px-16">
+    <main className="flex min-h-screen flex-col bg-white">
       <JsonLdSchema data={buildWebsiteSchema()} />
       {heroPrimary ? (
         <div className="relative left-1/2 right-1/2 w-screen -translate-x-1/2">
@@ -70,14 +70,23 @@ export default async function HomePage() {
           />
         </div>
       ) : null}
-      <HomeShowcase
-        latest={showcaseLatest}
-        sidebarPopular={showcaseSidebar}
-      />
-      <HomeStoryBanner video="/videos/ebike-vedio.mp4" />
-      <HomeCategories />
-      <HomeImageGallery posts={galleryPosts} />
-      <HomeNewsletter />
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 py-12 text-[#0C1412] sm:gap-20 sm:px-6 sm:py-16 md:gap-24 md:px-12 md:py-20 lg:px-16">
+        <HomeShowcase
+          latest={showcaseLatest}
+          sidebarPopular={showcaseSidebar}
+        />
+      </div>
+      <div className="my-8 sm:my-12 md:my-16">
+        <HomeStoryBanner 
+          video="/videos/ebike-vedio.mp4"
+          heading="Experience the Future of Electric Biking"
+        />
+      </div>
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 py-12 text-[#0C1412] sm:gap-20 sm:px-6 sm:py-16 md:gap-24 md:px-12 md:py-20 lg:px-16">
+        <HomeCategories />
+        <HomeImageGallery posts={galleryPosts} />
+        <HomeNewsletter />
+      </div>
     </main>
   );
 }

@@ -9,6 +9,7 @@ const FALLBACK_IMAGE = "/default-og.png";
 export default function HomeStoryBanner({
   image = FALLBACK_IMAGE,
   video,
+  heading,
 }) {
   const videoRef = useRef(null);
   const containerRef = useRef(null);
@@ -77,11 +78,11 @@ export default function HomeStoryBanner({
 
   return (
     <section
-      className="relative left-1/2 right-1/2 w-screen -translate-x-1/2 bg-[#0C1412] text-white shadow-[0_30px_60px_rgba(12,20,18,0.35)]"
+      className="relative left-1/2 right-1/2 w-screen -translate-x-1/2 bg-[#0C1412] text-white"
     >
       <div
         ref={containerRef}
-        className={`relative mx-auto w-full overflow-hidden ${video ? 'h-[60vh] min-h-[400px] sm:h-[70vh] sm:min-h-[500px] md:h-screen' : 'aspect-[2/1] max-w-[1400px]'}`}
+        className={`relative mx-auto w-full overflow-hidden rounded-3xl ${video ? 'h-[60vh] min-h-[400px] sm:h-[70vh] sm:min-h-[500px] md:h-[80vh] md:min-h-[600px]' : 'aspect-[2/1] max-w-[1400px]'}`}
       >
         {video ? (
           <>
@@ -130,7 +131,16 @@ export default function HomeStoryBanner({
             priority
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0C1412]/90 via-[#0C1412]/75 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0C1412]/95 via-[#0C1412]/80 to-[#0C1412]/60" />
+        
+        {/* Attractive Heading Overlay */}
+        {heading && (
+          <div className="absolute inset-0 z-10 flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24">
+            <h2 className="max-w-5xl text-center text-4xl font-extrabold leading-[1.1] tracking-[-0.02em] text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+              {heading}
+            </h2>
+          </div>
+        )}
       </div>
     </section>
   );

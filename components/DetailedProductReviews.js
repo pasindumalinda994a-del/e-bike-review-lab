@@ -53,7 +53,7 @@ function ProductImage({ imageUrl, name, badge, isPriority }) {
         className="object-cover"
         priority={isPriority}
         loading={isPriority ? undefined : 'lazy'}
-        quality={85}
+        quality={isPriority ? 75 : 70}
       />
     </div>
   );

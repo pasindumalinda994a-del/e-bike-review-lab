@@ -1,5 +1,5 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Plus_Jakarta_Sans } from 'next/font/google';
 import Script from 'next/script';
 import SiteFooter from '@/components/SiteFooter';
 import SiteHeader from '@/components/SiteHeader';
@@ -12,9 +12,15 @@ import {
   DEFAULT_TWITTER_IMAGE,
 } from '@/lib/seo';
 
-const inter = Inter({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
   display: 'swap',
+  preload: true,
+  variable: '--font-sans',
+  weight: ['300', '400', '500', '600', '700', '800'],
+  // Optimize font loading for mobile
+  adjustFontFallback: true,
+  fallback: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
 });
 
 // Default metadata shared across the entire application.
@@ -71,24 +77,30 @@ export const metadata = {
   },
 };
 
+// Viewport configuration for mobile optimization
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+};
+
 // Wrap the app with header/footer, fonts, and analytics scripts.
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.className}>
-      <body className="flex min-h-screen flex-col bg-[#FFFFFF] text-[#0C1412]">
+    <html lang="en" className={plusJakartaSans.variable}>
+      <body className={`${plusJakartaSans.className} flex min-h-screen flex-col bg-white text-[#0C1412]`}>
         <SiteHeader />
         <main className="flex-1">
-          <div className="mx-auto w-full max-w-8xl px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-            {children}
-          </div>
+          {children}
         </main>
         <SiteFooter />
         <Script
           id="ga4-script"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
         />
-        <Script id="ga4-inline" strategy="afterInteractive">
+        <Script id="ga4-inline" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

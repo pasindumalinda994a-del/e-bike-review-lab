@@ -55,8 +55,8 @@ export default function SiteHeader() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className="bg-[#0C1412] text-white shadow-[0_10px_30px_rgba(12,20,18,0.35)]">
-      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-6 px-4 sm:px-6 md:px-8">
+    <header className="sticky top-0 z-50 bg-[#0C1412] text-white shadow-lg backdrop-blur-sm">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 md:px-12 lg:px-16">
         <Link href="/" className="flex items-center gap-3 z-50">
           <Image
             src="/EbikeLogo.png"
@@ -79,7 +79,7 @@ export default function SiteHeader() {
               Reviews
               <ChevronDown className="h-4 w-4" aria-hidden="true" />
             </button>
-            <div className="pointer-events-none absolute left-0 top-full z-30 hidden min-w-[220px] translate-y-px flex-col overflow-hidden rounded-b-md border border-white/10 bg-[#0C1412] shadow-xl shadow-[rgba(0,0,0,0.35)] transition group-hover:pointer-events-auto group-hover:flex group-focus-within:pointer-events-auto group-focus-within:flex">
+            <div className="pointer-events-none absolute left-0 top-full z-30 hidden min-w-[220px] translate-y-px flex-col overflow-hidden rounded-b-xl border border-white/10 bg-[#0C1412] shadow-xl backdrop-blur-sm transition group-hover:pointer-events-auto group-hover:flex group-focus-within:pointer-events-auto group-focus-within:flex">
               {REVIEW_LINKS.map((link) => (
                 <Link
                   key={link.href}
@@ -101,7 +101,7 @@ export default function SiteHeader() {
               Learn
               <ChevronDown className="h-4 w-4" aria-hidden="true" />
             </button>
-            <div className="pointer-events-none absolute left-0 top-full z-30 hidden min-w-[240px] translate-y-px flex-col overflow-hidden rounded-b-md border border-white/10 bg-[#0C1412] shadow-xl shadow-[rgba(0,0,0,0.35)] transition group-hover:pointer-events-auto group-hover:flex group-focus-within:pointer-events-auto group-focus-within:flex">
+            <div className="pointer-events-none absolute left-0 top-full z-30 hidden min-w-[240px] translate-y-px flex-col overflow-hidden rounded-b-xl border border-white/10 bg-[#0C1412] shadow-xl backdrop-blur-sm transition group-hover:pointer-events-auto group-hover:flex group-focus-within:pointer-events-auto group-focus-within:flex">
               {LEARN_LINKS.map((link) => (
                 <Link
                   key={link.href}
@@ -129,12 +129,12 @@ export default function SiteHeader() {
         </nav>
         
         {/* Desktop CTA */}
-        <Link
-          href="/newsletter"
-          className="hidden items-center justify-center rounded-xl bg-[#3e3ce7] px-4 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-[#3e3ce7]/90 md:inline-flex md:px-6 md:py-3 md:text-sm"
-        >
-          Newsletter Sign Up
-        </Link>
+          <Link
+            href="/newsletter"
+            className="hidden items-center justify-center rounded-full bg-[#3e3ce7] px-5 py-2.5 text-xs font-semibold text-white shadow-lg shadow-[#3e3ce7]/30 transition-all duration-300 hover:bg-[#3e3ce7]/90 hover:shadow-xl hover:shadow-[#3e3ce7]/40 hover:scale-105 md:inline-flex md:px-6 md:py-3 md:text-sm"
+          >
+            Newsletter Sign Up
+          </Link>
 
         {/* Mobile Menu Button */}
         <button
@@ -230,7 +230,7 @@ export default function SiteHeader() {
             <Link
               href="/newsletter"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="mt-4 block w-full rounded-xl bg-[#3e3ce7] px-6 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-[#3e3ce7]/90"
+              className="mt-4 block w-full rounded-full bg-[#3e3ce7] px-6 py-3 text-center text-sm font-semibold text-white shadow-lg shadow-[#3e3ce7]/30 transition-all duration-300 hover:bg-[#3e3ce7]/90 hover:shadow-xl hover:shadow-[#3e3ce7]/40"
             >
               Newsletter Sign Up
             </Link>

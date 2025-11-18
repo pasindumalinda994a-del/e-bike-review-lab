@@ -114,15 +114,17 @@ export default async function CategoryPostPage({ params }) {
   }
 
   return (
-    <>
-      <div className="mx-auto w-full max-w-7xl px-4 py-10 text-[#0C1412] sm:px-6 sm:py-12 md:px-12 md:py-16 lg:px-16">
+    <main className="flex min-h-screen flex-col bg-white">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 py-12 text-[#0C1412] sm:gap-20 sm:px-6 sm:py-16 md:gap-24 md:px-12 md:py-20 lg:px-16">
         <JsonLdSchema data={articleSchema} />
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,3fr)_minmax(0,1.1fr)] lg:gap-12">
-          <div className="space-y-8 sm:space-y-12">{articleContent}</div>
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,3fr)_minmax(0,1.1fr)] lg:gap-16">
+          <div className="space-y-12 sm:space-y-16">{articleContent}</div>
           <SidebarContent popular={sidebarPopular} />
         </div>
       </div>
-      <HomeNewsletter />
-    </>
+      <div className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 sm:py-16 md:px-12 md:py-20 lg:px-16">
+        <HomeNewsletter />
+      </div>
+    </main>
   );
 }

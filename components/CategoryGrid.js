@@ -15,37 +15,61 @@ export default function CategoryGrid({ posts = [] }) {
   }
 
   return (
-    <section aria-label="Category guides" className="py-8 sm:py-12">
-      <div className="grid gap-6 md:grid-cols-2 md:gap-8">
+    <section aria-label="Category guides" className="space-y-8">
+      <div className="flex items-start justify-between gap-4">
+        <h2 className="text-xs font-semibold uppercase tracking-[0.4em] text-[#3e3ce7] sm:text-sm">
+          All Guides
+        </h2>
+      </div>
+      <div className="grid gap-6 md:grid-cols-2">
         {posts.map((post) => (
           <article
             key={post.slug}
-            className="p-4 sm:p-5"
+            className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#0C1412]/10 bg-white shadow-sm transition-all duration-300 hover:border-[#3e3ce7]/20 hover:shadow-xl hover:shadow-[#3e3ce7]/5"
           >
             <Link
               href={`/${post.categorySlug}/${post.slug}`}
-              className="group flex flex-col gap-4 text-left sm:flex-row sm:items-start"
+              className="flex h-full flex-col"
             >
-              <div className="relative w-full overflow-hidden rounded-2xl border border-[#3e3ce7]/15 bg-white aspect-[4/3] shadow-sm sm:max-w-[5rem] lg:max-w-[9rem] sm:mx-0">
+              <div className="relative aspect-[4/3] overflow-hidden bg-[#0C1412]/5">
                 <Image
                   src={getCardImage(post)}
                   alt={post.title}
                   fill
-                  sizes="(min-width: 1024px) 144px, (min-width: 768px) 20vw, 100vw"
-                  className="object-cover transition duration-700 group-hover:scale-105"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
-                  quality={85}
+                  quality={70}
                 />
               </div>
-              <div className="space-y-2 sm:space-y-3 sm:flex-1">
-                <h2 className="text-base font-bold tracking-tight text-[#0C1412] sm:text-lg">
+              <div className="flex flex-1 flex-col gap-3 p-5 sm:p-6">
+                <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#3e3ce7]">
+                  {post.category}
+                </span>
+                <h3 className="text-lg font-bold leading-tight tracking-tight text-[#0C1412] transition-colors duration-300 group-hover:text-[#3e3ce7] sm:text-xl">
                   {post.title}
-                </h2>
-                <p className="text-xs leading-relaxed text-[#0C1412]/75 sm:text-sm">
-                  {post.metaDescription}
-                </p>
-                <span className="inline-flex items-center gap-2 text-xs font-semibold text-[#3e3ce7] transition group-hover:translate-x-1 sm:text-sm">
-                  Read More →
+                </h3>
+                {post.metaDescription && (
+                  <p className="text-sm leading-relaxed text-[#0C1412]/70 line-clamp-3 sm:text-base">
+                    {post.metaDescription}
+                  </p>
+                )}
+                <span className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-[#3e3ce7] transition-transform duration-300 group-hover:translate-x-1">
+                  Read More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-4 w-4"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="M12 5l7 7-7 7" />
+                  </svg>
                 </span>
               </div>
             </Link>

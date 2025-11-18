@@ -27,53 +27,67 @@ export default function HomeShowcase({ latest = [], sidebarPopular = [] }) {
   return (
     <section
       aria-labelledby="home-showcase-grid"
-      className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-[minmax(0,2.4fr)_minmax(0,1fr)] md:gap-12 md:px-12"
+      className="grid w-full gap-12 md:grid-cols-[minmax(0,2.5fr)_minmax(0,1fr)] md:gap-16"
     >
-      <section aria-labelledby="home-showcase-grid" className="space-y-6">
+      <section aria-labelledby="home-showcase-grid" className="space-y-8">
         <div className="flex items-start justify-between gap-4">
           <h3
             id="latest-content"
-            className="text-xs font-semibold uppercase tracking-[0.4em] text-[#0C1412]/70 sm:text-sm"
+            className="text-xs font-semibold uppercase tracking-[0.4em] text-[#3e3ce7] sm:text-sm"
           >
             Latest Content
           </h3>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-2">
           {primaryGridPosts.map((post, index) => (
             <article
               key={post.slug}
-              className="group flex h-full flex-col overflow-hidden "
+              className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#0C1412]/10 bg-white shadow-sm transition-all duration-300 hover:border-[#3e3ce7]/20 hover:shadow-xl hover:shadow-[#3e3ce7]/5"
             >
               <Link
                 href={`/${post.categorySlug}/${post.slug}`}
                 className="flex h-full flex-col"
               >
-                <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-[#3e3ce7]/15 bg-white/10">
+                <div className="relative aspect-[4/3] overflow-hidden bg-[#0C1412]/5">
                   <Image
                     src={getCardImage(post)}
                     alt={post.title}
                     fill
                     sizes="(min-width: 640px) 50vw, 100vw"
-                    className="object-cover transition duration-500 group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                     priority={index < 2}
                     loading={index < 2 ? undefined : "lazy"}
-                    quality={85}
+                    quality={index < 2 ? 75 : 70}
                   />
                 </div>
-                <div className="flex flex-1 flex-col gap-2 p-4">
+                <div className="flex flex-1 flex-col gap-3 p-5 sm:p-6">
                   <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#3e3ce7]">
                     {post.category}
                   </span>
-                  <h3 className="text-base font-semibold leading-tight text-[#0C1412] transition group-hover:text-[#3e3ce7]">
+                  <h3 className="text-lg font-bold leading-tight tracking-tight text-[#0C1412] transition-colors duration-300 group-hover:text-[#3e3ce7] sm:text-xl">
                     {post.title}
                   </h3>
                   {post.metaDescription ? (
-                    <p className="text-sm text-[#0C1412]/70 line-clamp-3">
+                    <p className="text-sm leading-relaxed text-[#0C1412]/70 line-clamp-3 sm:text-base">
                       {post.metaDescription}
                     </p>
                   ) : null}
-                  <span className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-[#3e3ce7]">
-                    Read More →
+                  <span className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-[#3e3ce7] transition-transform duration-300 group-hover:translate-x-1">
+                    Read More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-4 w-4"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="M12 5l7 7-7 7" />
+                    </svg>
                   </span>
                 </div>
               </Link>
