@@ -1,8 +1,8 @@
 import './globals.css';
 import { Plus_Jakarta_Sans } from 'next/font/google';
-import Script from 'next/script';
 import SiteFooter from '@/components/SiteFooter';
 import SiteHeader from '@/components/SiteHeader';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 import {
   SITE_NAME,
   SITE_TAGLINE,
@@ -95,21 +95,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <SiteFooter />
-        <Script
-          id="ga4-script"
-          strategy="lazyOnload"
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
-        />
-        <Script id="ga4-inline" strategy="lazyOnload">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX', {
-              page_path: window.location.pathname,
-            });
-          `}
-        </Script>
+        <GoogleAnalytics />
       </body>
     </html>
   );

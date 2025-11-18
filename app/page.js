@@ -5,6 +5,7 @@ import HomeNewsletter from '@/components/HomeNewsletter';
 import HomeShowcase from '@/components/HomeShowcase';
 import HomeStoryBanner from '@/components/HomeStoryBanner';
 import JsonLdSchema from '@/components/JsonLdSchema';
+import Script from 'next/script';
 import { placements as placementConfig } from '@/content/placements';
 import { getAllBlogPosts, getHomePlacements } from '@/lib/mock-data';
 import { buildWebsiteSchema } from '@/lib/metadata';
@@ -87,6 +88,13 @@ export default async function HomePage() {
       <HomeImageGallery posts={galleryPosts} />
       <HomeNewsletter />
       </div>
+      {/* AvantLink Affiliate Verification Script - Can be removed after verification */}
+      {/* Verification URL: https://classic.avantlink.com/affiliate_app_confirm.php?mode=verify-js&application_id=1526285 */}
+      <Script
+        id="avantlink-verification"
+        src="https://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=2bc0b4990742f0b5b37770c9932999e8e29dec03"
+        strategy="afterInteractive"
+      />
     </main>
   );
 }
