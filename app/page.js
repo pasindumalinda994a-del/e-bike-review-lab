@@ -5,7 +5,6 @@ import HomeNewsletter from '@/components/HomeNewsletter';
 import HomeShowcase from '@/components/HomeShowcase';
 import HomeStoryBanner from '@/components/HomeStoryBanner';
 import JsonLdSchema from '@/components/JsonLdSchema';
-import AvantLinkScript from '@/components/AvantLinkScript';
 import { placements as placementConfig } from '@/content/placements';
 import { getAllBlogPosts, getHomePlacements } from '@/lib/mock-data';
 import { buildWebsiteSchema } from '@/lib/metadata';
@@ -60,8 +59,6 @@ export default async function HomePage() {
 
   return (
     <main className="flex min-h-screen flex-col bg-white">
-      {/* AvantLink Verification Script - Must be on homepage */}
-      <AvantLinkScript />
       <JsonLdSchema data={buildWebsiteSchema()} />
       {heroPrimary ? (
         <div className="relative left-1/2 right-1/2 w-screen -translate-x-1/2">
