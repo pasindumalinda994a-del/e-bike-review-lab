@@ -48,7 +48,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: DEFAULT_OG_IMAGE,
+        url: `${SITE_URL}${DEFAULT_OG_IMAGE}`,
         width: 1200,
         height: 630,
         alt: `${SITE_NAME} default open graph image`,
@@ -60,7 +60,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: SITE_NAME,
     description: DEFAULT_DESCRIPTION,
-    images: [DEFAULT_TWITTER_IMAGE],
+    images: [`${SITE_URL}${DEFAULT_TWITTER_IMAGE}`],
   },
   alternates: {
     canonical: '/',
@@ -75,6 +75,17 @@ export const metadata = {
       'max-image-preview': 'large',
       'max-video-preview': -1,
     },
+  },
+  icons: {
+    icon: [
+      { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
   },
 };
 
