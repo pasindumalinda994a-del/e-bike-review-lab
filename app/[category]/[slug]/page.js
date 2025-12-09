@@ -117,9 +117,11 @@ export default async function CategoryPostPage({ params }) {
     <main className="flex min-h-screen flex-col bg-white">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 py-12 text-[#0C1412] sm:gap-20 sm:px-6 sm:py-16 md:gap-24 md:px-12 md:py-20 lg:px-16">
         <JsonLdSchema data={articleSchema} />
-        <div className="grid gap-12 lg:grid-cols-[minmax(0,3fr)_minmax(0,1.1fr)] lg:gap-16">
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,3fr)_minmax(0,1.1fr)] lg:gap-16 lg:items-start">
           <div className="space-y-12 sm:space-y-16">{articleContent}</div>
-          <SidebarContent popular={sidebarPopular} />
+          <aside className="lg:sticky lg:top-12 lg:self-start lg:max-h-[calc(100vh-3rem)] lg:overflow-y-auto">
+            <SidebarContent popular={sidebarPopular} />
+          </aside>
         </div>
       </div>
       <div className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 sm:py-16 md:px-12 md:py-20 lg:px-16">

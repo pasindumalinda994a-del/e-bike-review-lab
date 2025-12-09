@@ -40,15 +40,17 @@ export default function SidebarContent({ popular = [] }) {
   );
 
   return (
-    <aside className="space-y-6 self-start sm:space-y-8">
-      <section aria-labelledby="popular-content" className="space-y-5 sm:space-y-6">
+    <aside className="flex flex-col self-start">
+      <section aria-labelledby="popular-content" className="flex flex-col">
         <h3
           id="popular-content"
-          className="text-xs font-semibold uppercase tracking-[0.4em] text-[#3e3ce7] sm:text-sm"
+          className="sticky top-0 z-10 bg-white pb-5 text-xs font-semibold uppercase tracking-[0.4em] text-[#3e3ce7] sm:pb-6 sm:text-sm"
         >
           Popular Content
         </h3>
-        {renderList(popular)}
+        <div className="space-y-4 sm:space-y-5">
+          {renderList(popular)}
+        </div>
       </section>
     </aside>
   );

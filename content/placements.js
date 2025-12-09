@@ -18,8 +18,9 @@ export const placements = {
     // Hero carousel slides (featured posts)
     hero: [
       "electric-bikes/best-electric-bikes",
+      "electric-mountain-bikes/best-electric-mountain-bikes",
       "electric-bikes/is-it-worth-getting-electric-bike",
-   
+      "electric-folding-bikes/best-electric-folding-bikes",
     ],
 
     // Main content area under hero
@@ -27,21 +28,24 @@ export const placements = {
       // Four cards in the main grid
       latest: [
         "electric-bikes/best-electric-bikes",
+        "electric-mountain-bikes/best-electric-mountain-bikes",
         "electric-bikes/is-it-worth-getting-electric-bike",
-       
+        "electric-folding-bikes/best-electric-folding-bikes",
       ],
 
       // Sidebar items next to the grid
       sidebar: [
         "electric-bikes/best-electric-bikes",
-        "electric-bikes/is-it-worth-getting-electric-bike",
+        "electric-mountain-bikes/best-electric-mountain-bikes",
+        "electric-folding-bikes/best-electric-folding-bikes",
       ]
     },
 
     // Image gallery section further down the homepage
     gallery: [
-      "electric-bikes/is-it-worth-getting-electric-bike",
- 
+      "electric-bikes/best-electric-bikes",
+      "electric-mountain-bikes/best-electric-mountain-bikes",
+      "electric-folding-bikes/best-electric-folding-bikes",
     ],
   },
 
@@ -52,16 +56,19 @@ export const placements = {
     "electric-bikes": {
       sidebar: [
         "electric-bikes/best-electric-bikes",
-        "electric-bikes/is-it-worth-getting-an-electric-bikes",
-   
+        "electric-bikes/is-it-worth-getting-electric-bike",
       ],
     },
     "electric-mountain-bikes": {
       sidebar: [
-     
+        "electric-mountain-bikes/best-electric-mountain-bikes",
       ],
     },
-   
+    "electric-folding-bikes": {
+      sidebar: [
+        "electric-folding-bikes/best-electric-folding-bikes",
+      ],
+    },
   },
 
   // ============================================================
@@ -71,20 +78,28 @@ export const placements = {
     "electric-bikes/best-electric-bikes": {
       sidebar: [
         "electric-bikes/best-electric-bikes",
+        "electric-mountain-bikes/best-electric-mountain-bikes",
         "electric-bikes/is-it-worth-getting-electric-bike",
-
       ],
     },
     "electric-mountain-bikes/best-electric-mountain-bikes": {
       sidebar: [
-
+        "electric-mountain-bikes/best-electric-mountain-bikes",
+        "electric-bikes/best-electric-bikes",
       ],
     },
     "electric-bikes/is-it-worth-getting-electric-bike": {
       sidebar: [
         "electric-bikes/best-electric-bikes",
+        "electric-mountain-bikes/best-electric-mountain-bikes",
         "electric-bikes/is-it-worth-getting-electric-bike",
-
+      ],
+    },
+    "electric-folding-bikes/best-electric-folding-bikes": {
+      sidebar: [
+        "electric-folding-bikes/best-electric-folding-bikes",
+        "electric-bikes/best-electric-bikes",
+        "electric-mountain-bikes/best-electric-mountain-bikes",
       ],
     },
   },

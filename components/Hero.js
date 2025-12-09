@@ -93,7 +93,7 @@ export default function Hero({
         return (
           <div
             key={`${slide.src}-${index}`}
-            className={`absolute inset-0 transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] will-change-transform ${
+            className={`absolute inset-0 transition-[opacity_700ms_cubic-bezier(0.4,0,0.2,1),transform_50ms_ease-in-out] will-change-transform ${
               isActive ? "opacity-100" : "opacity-0"
             }`}
             style={{

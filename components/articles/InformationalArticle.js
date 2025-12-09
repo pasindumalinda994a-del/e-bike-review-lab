@@ -150,7 +150,7 @@ function SectionHeader({ label, title }) {
       {label && (
         <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">{label}</p>
       )}
-      <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#111827] sm:text-4xl">
+      <h2 className="text-3xl font-bold leading-[1.25] tracking-[-0.01em] text-[#111827] sm:text-4xl">
         {title}
       </h2>
     </header>
@@ -174,7 +174,7 @@ function NumberedCard({ text, index }) {
       <span className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-[#3e3ce7]/10 text-sm font-semibold text-[#3e3ce7]">
         {index + 1}
       </span>
-      <p className="flex-1 text-base leading-[1.75] text-[#374151]">
+      <p className="flex-1 text-base leading-[1.75] tracking-[0.01em] text-[#374151]">
         {renderMarkdownBold(displayText)}
       </p>
     </div>
@@ -231,7 +231,7 @@ function BenefitCard({ text, type }) {
           </svg>
         </span>
       </div>
-      <p className="text-sm leading-[1.7] text-[#374151] sm:text-base">
+      <p className="text-sm leading-[1.7] tracking-[0.01em] text-[#374151] sm:text-base">
         {renderMarkdownBold(displayText)}
       </p>
     </div>
@@ -258,7 +258,7 @@ function HeadlineSection({ headline, subheadline, category, publishedDate, readi
     <header className="relative overflow-hidden rounded-3xl border border-[#0C1412]/10 bg-gradient-to-br from-[#0C1412] via-[#1a1a2e] to-[#16213e] px-6 py-12 text-white shadow-xl sm:px-8 sm:py-16 lg:px-12 lg:py-20">
       <BackgroundPattern />
 
-      <div className="relative mx-auto max-w-4xl space-y-6">
+      <div className="relative mx-auto max-w-5xl space-y-6">
         <div className="flex flex-wrap items-center gap-3 text-xs font-medium tracking-wide text-white/60">
           {category && (
             <>
@@ -279,13 +279,13 @@ function HeadlineSection({ headline, subheadline, category, publishedDate, readi
         </div>
 
         {headline && (
-          <h1 className="text-3xl font-bold leading-[1.2] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="text-3xl font-bold leading-[1.2] tracking-[-0.02em] text-white sm:text-4xl md:text-5xl lg:text-6xl">
             {headline}
           </h1>
         )}
 
         {subheadline && (
-          <p className="text-lg leading-relaxed text-white/85 sm:text-xl md:text-2xl">
+          <p className="text-lg leading-[1.7] tracking-[0.01em] text-white/85 sm:text-xl md:text-2xl">
             {subheadline}
           </p>
         )}
@@ -308,15 +308,15 @@ function OpeningSection({ hook, context, expectation, introductionParagraphs = [
   if (!hook && !context && !expectation && !introductionParagraphs.length) return null;
 
   return (
-    <section className="mx-auto max-w-4xl space-y-8 py-8">
+    <section className="mx-auto max-w-5xl space-y-8 py-8">
       {context && (
-        <p className="text-lg leading-[1.8] text-[#1f2937] sm:text-xl">{context}</p>
+        <p className="text-lg leading-[1.75] tracking-[0.01em] text-[#1f2937] sm:text-xl">{context}</p>
       )}
 
       {introductionParagraphs.length > 0 && (
         <div className="space-y-4">
           {introductionParagraphs.map((paragraph, index) => (
-            <p key={index} className="text-lg leading-[1.8] text-[#1f2937] sm:text-xl">
+            <p key={index} className="text-lg leading-[1.75] tracking-[0.01em] text-[#1f2937] sm:text-xl">
               {paragraph}
             </p>
           ))}
@@ -328,7 +328,7 @@ function OpeningSection({ hook, context, expectation, introductionParagraphs = [
           <span className="absolute left-0 top-0 text-6xl font-serif leading-none text-[#3e3ce7]/10">
             &ldquo;
           </span>
-          <p className="relative text-lg font-medium leading-[1.7] text-[#111827] sm:text-xl">
+          <p className="relative text-lg font-medium leading-[1.7] tracking-[0.01em] text-[#111827] sm:text-xl">
             {hook}
           </p>
         </blockquote>
@@ -339,7 +339,7 @@ function OpeningSection({ hook, context, expectation, introductionParagraphs = [
           <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#3e3ce7]">
             What You&rsquo;ll Learn
           </p>
-          <p className="text-base leading-[1.75] text-[#374151] sm:text-lg">{expectation}</p>
+          <p className="text-base leading-[1.75] tracking-[0.01em] text-[#374151] sm:text-lg">{expectation}</p>
         </div>
       )}
     </section>
@@ -360,7 +360,7 @@ function WhatIsItSection({ heading, definition, types, whyConsider }) {
   if (!definition && !types?.length && !whyConsider) return null;
 
   return (
-    <section className="mx-auto max-w-4xl space-y-12 py-12">
+    <section className="mx-auto max-w-5xl space-y-12 py-12">
       {heading && <SectionHeader label="Understanding" title={heading} />}
 
       <div className="grid gap-6 md:grid-cols-2">
@@ -372,7 +372,7 @@ function WhatIsItSection({ heading, definition, types, whyConsider }) {
               </span>
               <h3 className="text-xl font-semibold text-[#111827]">What It Is</h3>
             </div>
-            <p className="text-base leading-[1.75] text-[#4b5563]">{definition}</p>
+            <p className="text-base leading-[1.75] tracking-[0.01em] text-[#4b5563]">{definition}</p>
           </div>
         )}
 
@@ -391,7 +391,7 @@ function WhatIsItSection({ heading, definition, types, whyConsider }) {
                 return (
                   <li key={index} className="flex items-start gap-3">
                     <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#3e3ce7]" />
-                    <span className="text-base leading-[1.7] text-[#4b5563]">
+                    <span className="text-base leading-[1.7] tracking-[0.01em] text-[#4b5563]">
                       {renderMarkdownBold(typeText)}
                     </span>
                   </li>
@@ -405,7 +405,7 @@ function WhatIsItSection({ heading, definition, types, whyConsider }) {
       {whyConsider && (
         <div className="rounded-2xl border border-[#0C1412]/10 bg-gradient-to-br from-white to-[#3e3ce7]/5 p-6 shadow-sm sm:p-8">
           <h3 className="mb-4 text-xl font-semibold text-[#111827]">Why People Consider It</h3>
-          <p className="text-base leading-[1.75] text-[#4b5563]">{whyConsider}</p>
+          <p className="text-base leading-[1.75] tracking-[0.01em] text-[#4b5563]">{whyConsider}</p>
         </div>
       )}
     </section>
@@ -425,13 +425,13 @@ function AdvantagesSection({ heading, benefits = [], paragraphs = [] }) {
   if (!heading && !benefits.length && !paragraphs.length) return null;
 
   return (
-    <section className="mx-auto max-w-4xl space-y-10 py-12">
+    <section className="mx-auto max-w-5xl space-y-10 py-12">
       {heading && <SectionHeader label="Benefits" title={heading} />}
 
       {paragraphs.length > 0 && (
         <div className="space-y-4">
           {paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-lg leading-[1.8] text-[#1f2937] sm:text-xl">
+            <p key={index} className="text-lg leading-[1.75] tracking-[0.01em] text-[#1f2937] sm:text-xl">
               {renderMarkdownBold(paragraph)}
             </p>
           ))}
@@ -462,13 +462,13 @@ function DrawbacksSection({ heading, drawbacks = [], paragraphs = [] }) {
   if (!heading && !drawbacks.length && !paragraphs.length) return null;
 
   return (
-    <section className="mx-auto max-w-4xl space-y-10 py-12">
+    <section className="mx-auto max-w-5xl space-y-10 py-12">
       {heading && <SectionHeader label="Considerations" title={heading} />}
 
       {paragraphs.length > 0 && (
         <div className="space-y-4">
           {paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-lg leading-[1.8] text-[#1f2937] sm:text-xl">
+            <p key={index} className="text-lg leading-[1.75] tracking-[0.01em] text-[#1f2937] sm:text-xl">
               {renderMarkdownBold(paragraph)}
             </p>
           ))}
@@ -500,13 +500,13 @@ function HowToDecideSection({ heading, checklist = [], selfAudit, paragraphs = [
   if (!heading && !checklist.length && !selfAudit && !paragraphs.length) return null;
 
   return (
-    <section className="mx-auto max-w-4xl space-y-10 py-12">
+    <section className="mx-auto max-w-5xl space-y-10 py-12">
       {heading && <SectionHeader label="Decision Guide" title={heading} />}
 
       {paragraphs.length > 0 && (
         <div className="space-y-4">
           {paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-lg leading-[1.8] text-[#1f2937] sm:text-xl">
+            <p key={index} className="text-lg leading-[1.75] tracking-[0.01em] text-[#1f2937] sm:text-xl">
               {renderMarkdownBold(paragraph)}
             </p>
           ))}
@@ -524,7 +524,7 @@ function HowToDecideSection({ heading, checklist = [], selfAudit, paragraphs = [
       {selfAudit && (
         <div className="rounded-2xl border-2 border-[#3e3ce7]/20 bg-gradient-to-br from-[#3e3ce7]/5 to-white p-6 shadow-sm sm:p-8">
           <h3 className="mb-4 text-xl font-semibold text-[#111827]">Self-Audit Questions</h3>
-          <p className="text-base leading-[1.75] text-[#4b5563]">{selfAudit}</p>
+          <p className="text-base leading-[1.75] tracking-[0.01em] text-[#4b5563]">{selfAudit}</p>
         </div>
       )}
     </section>
@@ -544,10 +544,10 @@ function GenericCoreSection({ title, paragraphs = [], bullets = [] }) {
   if (!title && !paragraphs.length && !bullets.length) return null;
 
   return (
-    <section className="mx-auto max-w-4xl space-y-10 py-12">
-      {title && (
+    <section className="mx-auto max-w-5xl space-y-10 py-12">
+        {title && (
         <header className="space-y-3">
-          <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#111827] sm:text-4xl">
+          <h2 className="text-3xl font-bold leading-[1.25] tracking-[-0.01em] text-[#111827] sm:text-4xl">
             {title}
           </h2>
         </header>
@@ -556,7 +556,7 @@ function GenericCoreSection({ title, paragraphs = [], bullets = [] }) {
       {paragraphs.length > 0 && (
         <div className="space-y-4">
           {paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-lg leading-[1.8] text-[#1f2937] sm:text-xl">
+            <p key={index} className="text-lg leading-[1.75] tracking-[0.01em] text-[#1f2937] sm:text-xl">
               {renderMarkdownBold(paragraph)}
             </p>
           ))}
@@ -586,7 +586,7 @@ function TakeawaySection({ heading, bullets = [] }) {
   if (!heading && !bullets.length) return null;
 
   return (
-    <section className="mx-auto max-w-4xl space-y-10 py-12">
+    <section className="mx-auto max-w-5xl space-y-10 py-12">
       {heading && <SectionHeader label="Key Takeaways" title={heading} />}
 
       {bullets.length > 0 && (
@@ -614,20 +614,20 @@ function FinalVerdictSection({ heading, summary, verdict, paragraphs = [] }) {
   if (!heading && !summary && !verdict && !paragraphs.length) return null;
 
   return (
-        <section className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-[#0C1412]/10 bg-gradient-to-br from-[#0C1412] via-[#1a1a2e] to-[#16213e] p-8 text-white shadow-xl sm:p-12">
+        <section className="relative mx-auto max-w-5xl overflow-hidden rounded-3xl border border-[#0C1412]/10 bg-gradient-to-br from-[#0C1412] via-[#1a1a2e] to-[#16213e] p-8 text-white shadow-xl sm:p-12">
       <BackgroundPattern />
 
       <div className="relative space-y-6">
         {heading && (
-          <h2 className="text-2xl font-bold leading-tight tracking-tight sm:text-3xl">{heading}</h2>
+          <h2 className="text-2xl font-bold leading-[1.25] tracking-[-0.01em] sm:text-3xl">{heading}</h2>
         )}
         {summary && (
-          <p className="text-lg leading-[1.8] text-white/95 sm:text-xl">{summary}</p>
+          <p className="text-lg leading-[1.75] tracking-[0.01em] text-white/95 sm:text-xl">{summary}</p>
         )}
         {paragraphs.length > 0 && (
           <div className="space-y-4">
             {paragraphs.map((paragraph, index) => (
-              <p key={index} className="text-lg leading-[1.8] text-white/95 sm:text-xl">
+              <p key={index} className="text-lg leading-[1.75] tracking-[0.01em] text-white/95 sm:text-xl">
                 {renderMarkdownBold(paragraph)}
               </p>
             ))}
@@ -635,7 +635,7 @@ function FinalVerdictSection({ heading, summary, verdict, paragraphs = [] }) {
         )}
         {verdict && (
           <div className="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:p-8">
-            <p className="text-base leading-[1.75] text-white/90 sm:text-lg">{verdict}</p>
+            <p className="text-base leading-[1.75] tracking-[0.01em] text-white/90 sm:text-lg">{verdict}</p>
           </div>
         )}
       </div>
@@ -657,11 +657,11 @@ function CallToActionSection({ heading, actions = [], inviteText, resources = []
   if (!heading && !actions.length && !inviteText && !resources.length) return null;
 
   return (
-    <section className="mx-auto max-w-4xl space-y-10 py-12">
+    <section className="mx-auto max-w-5xl space-y-10 py-12">
       {heading && <SectionHeader label="Next Steps" title={heading} />}
 
       {inviteText && (
-        <p className="text-lg leading-[1.8] text-[#374151] sm:text-xl">{inviteText}</p>
+        <p className="text-lg leading-[1.75] tracking-[0.01em] text-[#374151] sm:text-xl">{inviteText}</p>
       )}
 
       {actions.length > 0 && (
@@ -677,7 +677,7 @@ function CallToActionSection({ heading, actions = [], inviteText, resources = []
                 <span className="mt-1 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#3e3ce7] text-xs font-semibold text-white">
                   →
                 </span>
-                <p className="flex-1 text-base leading-[1.75] text-[#374151]">
+                <p className="flex-1 text-base leading-[1.75] tracking-[0.01em] text-[#374151]">
                   {renderMarkdownBold(actionText)}
                 </p>
               </div>
@@ -736,7 +736,7 @@ function OptionalExtrasSection({ pulloutQuotes = [], didYouKnow = [], comparison
   const normalizedTable = normalizeComparisonTable(comparisonTable);
 
   return (
-    <section className="mx-auto max-w-4xl space-y-10 py-12">
+    <section className="mx-auto max-w-5xl space-y-10 py-12">
       {pulloutQuotes.length > 0 && (
         <div className="space-y-6">
           {pulloutQuotes.map((quote, index) => {
@@ -750,7 +750,7 @@ function OptionalExtrasSection({ pulloutQuotes = [], didYouKnow = [], comparison
                 <span className="absolute left-0 top-0 text-6xl font-serif leading-none text-[#3e3ce7]/10">
                   &ldquo;
                 </span>
-                <p className="relative text-lg font-medium italic leading-[1.7] text-[#111827] sm:text-xl">
+                <p className="relative text-lg font-medium italic leading-[1.7] tracking-[0.01em] text-[#111827] sm:text-xl">
                   {quoteText}
                 </p>
               </blockquote>
@@ -774,7 +774,7 @@ function OptionalExtrasSection({ pulloutQuotes = [], didYouKnow = [], comparison
                 <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">
                   {factTitle}
                 </h4>
-                <p className="text-sm leading-[1.7] text-[#4b5563] sm:text-base">{factText}</p>
+                <p className="text-sm leading-[1.7] tracking-[0.01em] text-[#4b5563] sm:text-base">{factText}</p>
               </div>
             );
           })}
@@ -806,7 +806,7 @@ function OptionalExtrasSection({ pulloutQuotes = [], didYouKnow = [], comparison
                     {row.map((cell, cellIndex) => (
                       <td
                         key={cellIndex}
-                        className="px-4 py-3 text-sm leading-[1.6] text-[#4b5563] first:pl-6"
+                        className="px-4 py-3 text-sm leading-[1.7] tracking-[0.01em] text-[#4b5563] first:pl-6"
                       >
                         {cell}
                       </td>
@@ -834,12 +834,12 @@ function FAQSection({ faqs = [], heading }) {
   if (!faqs.length) return null;
 
   return (
-    <section className="mx-auto max-w-4xl space-y-8 py-12">
+    <section className="mx-auto max-w-5xl space-y-8 py-12">
       <header className="space-y-3">
         <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">
           Common Questions
         </p>
-        <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#111827] sm:text-4xl">
+        <h2 className="text-3xl font-bold leading-[1.25] tracking-[-0.01em] text-[#111827] sm:text-4xl">
           {heading ?? 'Frequently Asked Questions'}
         </h2>
       </header>
@@ -873,7 +873,7 @@ function FAQSection({ faqs = [], heading }) {
                   id={contentId}
                   role="region"
                   aria-labelledby={summaryId}
-                  className="mt-4 space-y-4 text-sm leading-[1.75] text-[#4b5563] sm:text-base"
+                  className="mt-4 space-y-4 text-sm leading-[1.75] tracking-[0.01em] text-[#4b5563] sm:text-base"
                 >
                   <p>{answer}</p>
                   {cta && (
@@ -1065,7 +1065,7 @@ export default function InformationalArticle({
   const topProductsIntro = safeString(post.topProductsIntro);
 
   return (
-    <article className="mx-auto max-w-5xl space-y-16 px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+    <article className="mx-auto max-w-6xl space-y-16 px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
       <HeadlineSection
         headline={headline}
         subheadline={subheadline}
@@ -1081,7 +1081,7 @@ export default function InformationalArticle({
         introductionParagraphs={allIntroductionParagraphs}
       />
 
-      <figure className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-[#0C1412]/10 bg-white shadow-lg">
+      <figure className="relative mx-auto max-w-5xl overflow-hidden rounded-3xl border border-[#0C1412]/10 bg-white shadow-lg">
         <div className="aspect-[4/3] w-full">
           <Image
             src={articleHeroImage}
@@ -1098,12 +1098,12 @@ export default function InformationalArticle({
       </figure>
 
       {topProductsIntro && (
-        <section className="mx-auto max-w-4xl rounded-2xl border border-[#0C1412]/10 bg-gradient-to-br from-white to-[#3e3ce7]/5 p-6 shadow-sm sm:p-8">
+        <section className="mx-auto max-w-5xl rounded-2xl border border-[#0C1412]/10 bg-gradient-to-br from-white to-[#3e3ce7]/5 p-6 shadow-sm sm:p-8">
           <div className="space-y-4">
             <span className="inline-flex items-center rounded-full bg-[#3e3ce7]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-[#3e3ce7]">
               What to Expect
             </span>
-            <p className="text-base leading-[1.75] text-[#374151] sm:text-lg">
+            <p className="text-base leading-[1.75] tracking-[0.01em] text-[#374151] sm:text-lg">
               {topProductsIntro}
             </p>
           </div>
@@ -1118,8 +1118,8 @@ export default function InformationalArticle({
       />
 
       {coreHeading && (
-        <section className="mx-auto max-w-4xl py-8">
-          <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#111827] sm:text-4xl">
+        <section className="mx-auto max-w-5xl py-8">
+          <h2 className="text-3xl font-bold leading-[1.25] tracking-[-0.01em] text-[#111827] sm:text-4xl">
             {coreHeading}
           </h2>
         </section>
@@ -1183,8 +1183,8 @@ export default function InformationalArticle({
       <TakeawaySection heading={takeawayHeading} bullets={takeawayBullets} />
 
       {supportingProducts.length > 0 && (
-        <section className="mx-auto max-w-4xl space-y-6 py-12">
-          <h2 className="text-2xl font-bold tracking-tight text-[#111827] sm:text-3xl">
+        <section className="mx-auto max-w-5xl space-y-6 py-12">
+          <h2 className="text-2xl font-bold leading-[1.25] tracking-[-0.01em] text-[#111827] sm:text-3xl">
             Featured Products
           </h2>
           <ul className="grid gap-4 rounded-xl border border-[#e5e7eb] bg-white p-6 shadow-sm sm:grid-cols-2 sm:p-8">
@@ -1194,7 +1194,7 @@ export default function InformationalArticle({
                   {product.name}
                 </h3>
                 {product.description && (
-                  <p className="text-sm leading-[1.7] text-[#6b7280] sm:text-base">
+                  <p className="text-sm leading-[1.7] tracking-[0.01em] text-[#6b7280] sm:text-base">
                     {product.description}
                   </p>
                 )}

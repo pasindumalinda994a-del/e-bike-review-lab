@@ -13,6 +13,12 @@
   --font-sans: var(--font-sans);
 }
 
+html {
+  /* Enable smooth scrolling for better Lenis integration */
+  scroll-behavior: auto; /* Let Lenis handle smooth scrolling */
+  overflow-x: hidden;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -21,6 +27,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  /* Improve scroll performance */
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Typography optimization for blog readability */

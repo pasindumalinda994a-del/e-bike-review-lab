@@ -1,9 +1,9 @@
 import './globals.css';
-import { Plus_Jakarta_Sans } from 'next/font/google';
-import Script from 'next/script';
+import { Poppins } from 'next/font/google';
 import SiteFooter from '@/components/SiteFooter';
 import SiteHeader from '@/components/SiteHeader';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
+import SmoothScroll from '@/components/SmoothScroll';
 import {
   SITE_NAME,
   SITE_TAGLINE,
@@ -13,7 +13,7 @@ import {
   DEFAULT_TWITTER_IMAGE,
 } from '@/lib/seo';
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
   preload: true,
@@ -89,19 +89,16 @@ export const viewport = {
 // Wrap the app with header/footer, fonts, and analytics scripts.
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={plusJakartaSans.variable}>
-      <body className={`${plusJakartaSans.className} flex min-h-screen flex-col bg-white text-[#0C1412]`}>
-        <SiteHeader />
-        <main className="flex-1">
-          {children}
-        </main>
-        <SiteFooter />
-        <GoogleAnalytics />
-        {/* AvantLink Affiliate Verification Script */}
-        <Script
-          src="http://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=2bc0b4990742f0b5b37770c9932999e8e29dec03"
-          strategy="afterInteractive"
-        />
+    <html lang="en" className={poppins.variable}>
+      <body className={`${poppins.className} flex min-h-screen flex-col bg-white text-[#0C1412]`}>
+        <SmoothScroll>
+          <SiteHeader />
+          <main className="flex-1">
+            {children}
+          </main>
+          <SiteFooter />
+          <GoogleAnalytics />
+        </SmoothScroll>
       </body>
     </html>
   );

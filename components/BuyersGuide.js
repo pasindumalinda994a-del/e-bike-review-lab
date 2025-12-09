@@ -1,6 +1,17 @@
-// Simple section for long-form buyer guidance copy.
-export default function BuyersGuide({ content }) {
-  if (!content) return null;
+/**
+ * BuyersGuide Component
+ * 
+ * Simple section for long-form buyer guidance copy.
+ * All content comes from money.js - no hardcoded defaults.
+ * 
+ * @param {Object} props - Component props
+ * @param {string} props.content - Guide content text
+ * @param {string} props.title - H2 heading (required - no default)
+ * @param {string} props.label - Badge label above heading (optional)
+ */
+export default function BuyersGuide({ content, title, label }) {
+  // Don't render if required fields are missing
+  if (!content || !title) return null;
 
   return (
     <section
@@ -17,11 +28,13 @@ export default function BuyersGuide({ content }) {
       />
       <div className="relative mx-auto max-w-3xl space-y-6 text-white">
         <div className="space-y-4">
-          <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-white/90">
-            Buyer&apos;s Guide
-          </span>
+          {label && (
+            <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-white/90">
+              {label}
+            </span>
+          )}
           <h2 id="buyers-guide" className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-            Smart Shopping Tips Before You Checkout
+            {title}
           </h2>
         </div>
         <p className="text-base leading-[1.75] text-white/90 whitespace-pre-line sm:text-lg">{content}</p>
