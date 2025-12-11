@@ -27,8 +27,13 @@ export const categories = [
     description:
       "Hands-on electric bike reviews covering commuters, folders, cargo rigs, and all-terrain builds to help you choose the perfect ride.",
   },
-  
-
+  {
+    slug: "electric-road-bikes",
+    name: "Electric Road Bikes",
+    heroImage: "/images/categories/electric-road-bikes.webp",
+    description:
+      "Comprehensive reviews of electric road bikes for performance riders, commuters, and cycling enthusiasts seeking lightweight e-road bike options.",
+  },
 ];
 
 /**

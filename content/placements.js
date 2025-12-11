@@ -21,6 +21,7 @@ export const placements = {
       "electric-mountain-bikes/best-electric-mountain-bikes",
       "electric-bikes/is-it-worth-getting-electric-bike",
       "electric-folding-bikes/best-electric-folding-bikes",
+      "electric-road-bikes/best-electric-road-bikes",
     ],
 
     // Main content area under hero
@@ -31,6 +32,7 @@ export const placements = {
         "electric-mountain-bikes/best-electric-mountain-bikes",
         "electric-bikes/is-it-worth-getting-electric-bike",
         "electric-folding-bikes/best-electric-folding-bikes",
+        "electric-road-bikes/best-electric-road-bikes",
       ],
 
       // Sidebar items next to the grid
@@ -38,6 +40,7 @@ export const placements = {
         "electric-bikes/best-electric-bikes",
         "electric-mountain-bikes/best-electric-mountain-bikes",
         "electric-folding-bikes/best-electric-folding-bikes",
+        "electric-road-bikes/best-electric-road-bikes",
       ]
     },
 
@@ -46,6 +49,7 @@ export const placements = {
       "electric-bikes/best-electric-bikes",
       "electric-mountain-bikes/best-electric-mountain-bikes",
       "electric-folding-bikes/best-electric-folding-bikes",
+      "electric-road-bikes/best-electric-road-bikes",
     ],
   },
 
@@ -67,6 +71,11 @@ export const placements = {
     "electric-folding-bikes": {
       sidebar: [
         "electric-folding-bikes/best-electric-folding-bikes",
+      ],
+    },
+    "electric-road-bikes": {
+      sidebar: [
+        "electric-road-bikes/best-electric-road-bikes",
       ],
     },
   },
@@ -100,6 +109,14 @@ export const placements = {
         "electric-folding-bikes/best-electric-folding-bikes",
         "electric-bikes/best-electric-bikes",
         "electric-mountain-bikes/best-electric-mountain-bikes",
+      ],
+    },
+    "electric-road-bikes/best-electric-road-bikes": {
+      sidebar: [
+        "electric-road-bikes/best-electric-road-bikes",
+        "electric-bikes/best-electric-bikes",
+        "electric-mountain-bikes/best-electric-mountain-bikes",
+        "electric-folding-bikes/best-electric-folding-bikes",
       ],
     },
   },
