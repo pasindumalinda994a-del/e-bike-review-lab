@@ -34,6 +34,13 @@ export const categories = [
     description:
       "Comprehensive reviews of electric road bikes for performance riders, commuters, and cycling enthusiasts seeking lightweight e-road bike options.",
   },
+  {
+    slug: "electric-cargo-bikes",
+    name: "Electric Cargo Bikes",
+    heroImage: "/images/categories/electric-cargo-bikes.webp",
+    description:
+      "In-depth reviews of electric cargo bikes for families, businesses, and anyone looking to replace car trips with a powerful hauler.",
+  },
 ];
 
 /**
