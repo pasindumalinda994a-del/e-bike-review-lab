@@ -41,6 +41,20 @@ export const categories = [
     description:
       "In-depth reviews of electric cargo bikes for families, businesses, and anyone looking to replace car trips with a powerful hauler.",
   },
+  {
+    slug: "electric-city-bikes",
+    name: "Electric City Bikes",
+    heroImage: "/images/categories/electric-city-bikes.webp",
+    description:
+      "Comprehensive reviews of electric city bikes for urban commuters, daily riders, and anyone seeking the perfect e-bike for navigating city streets.",
+  },
+  {
+    slug: "electric-fat-bikes",
+    name: "Electric Fat Bikes",
+    heroImage: "/images/categories/electric-fat-bikes.webp",
+    description:
+      "In-depth reviews of electric fat bikes for all-terrain adventures, winter riding, and off-road enthusiasts seeking maximum traction and capability.",
+  },
 ];
 
 /**

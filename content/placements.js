@@ -23,6 +23,8 @@ export const placements = {
       "electric-folding-bikes/best-electric-folding-bikes",
       "electric-road-bikes/best-electric-road-bikes",
       "electric-cargo-bikes/best-electric-cargo-bikes",
+      "electric-city-bikes/best-electric-city-bikes",
+      "electric-fat-bikes/best-electric-fat-bikes",
     ],
 
     // Main content area under hero
@@ -35,6 +37,8 @@ export const placements = {
         "electric-folding-bikes/best-electric-folding-bikes",
         "electric-road-bikes/best-electric-road-bikes",
         "electric-cargo-bikes/best-electric-cargo-bikes",
+        "electric-city-bikes/best-electric-city-bikes",
+        "electric-fat-bikes/best-electric-fat-bikes",
       ],
 
       // Sidebar items next to the grid
@@ -44,6 +48,8 @@ export const placements = {
         "electric-folding-bikes/best-electric-folding-bikes",
         "electric-road-bikes/best-electric-road-bikes",
         "electric-cargo-bikes/best-electric-cargo-bikes",
+        "electric-city-bikes/best-electric-city-bikes",
+        "electric-fat-bikes/best-electric-fat-bikes",
       ]
     },
 
@@ -54,6 +60,8 @@ export const placements = {
       "electric-folding-bikes/best-electric-folding-bikes",
       "electric-road-bikes/best-electric-road-bikes",
       "electric-cargo-bikes/best-electric-cargo-bikes",
+      "electric-city-bikes/best-electric-city-bikes",
+      "electric-fat-bikes/best-electric-fat-bikes",
     ],
   },
 
@@ -85,6 +93,16 @@ export const placements = {
     "electric-cargo-bikes": {
       sidebar: [
         "electric-cargo-bikes/best-electric-cargo-bikes",
+      ],
+    },
+    "electric-city-bikes": {
+      sidebar: [
+        "electric-city-bikes/best-electric-city-bikes",
+      ],
+    },
+    "electric-fat-bikes": {
+      sidebar: [
+        "electric-fat-bikes/best-electric-fat-bikes",
       ],
     },
   },
@@ -133,6 +151,22 @@ export const placements = {
         "electric-cargo-bikes/best-electric-cargo-bikes",
         "electric-bikes/best-electric-bikes",
         "electric-mountain-bikes/best-electric-mountain-bikes",
+        "electric-folding-bikes/best-electric-folding-bikes",
+      ],
+    },
+    "electric-city-bikes/best-electric-city-bikes": {
+      sidebar: [
+        "electric-city-bikes/best-electric-city-bikes",
+        "electric-bikes/best-electric-bikes",
+        "electric-mountain-bikes/best-electric-mountain-bikes",
+        "electric-folding-bikes/best-electric-folding-bikes",
+      ],
+    },
+    "electric-fat-bikes/best-electric-fat-bikes": {
+      sidebar: [
+        "electric-fat-bikes/best-electric-fat-bikes",
+        "electric-mountain-bikes/best-electric-mountain-bikes",
+        "electric-bikes/best-electric-bikes",
         "electric-folding-bikes/best-electric-folding-bikes",
       ],
     },
