@@ -44,6 +44,9 @@ export default function SiteHeader() {
 
   // Close mobile menu when clicking outside
   useEffect(() => {
+    // Only run on client side after hydration
+    if (typeof window === 'undefined') return;
+    
     if (isMobileMenuOpen) {
       document.body.style.overflow = 'hidden';
     } else {

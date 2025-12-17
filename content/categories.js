@@ -55,6 +55,20 @@ export const categories = [
     description:
       "In-depth reviews of electric fat bikes for all-terrain adventures, winter riding, and off-road enthusiasts seeking maximum traction and capability.",
   },
+  {
+    slug: "electric-cruiser-bikes",
+    name: "Electric Cruiser Bikes",
+    heroImage: "/images/categories/electric-cruiser-bikes.webp",
+    description:
+      "Comprehensive reviews of electric cruiser bikes for beach rides, leisure cycling, and comfortable commuting with relaxed, upright riding positions.",
+  },
+  {
+    slug: "electric-hybrid-bikes",
+    name: "Electric Hybrid Bikes",
+    heroImage: "/images/categories/electric-hybrid-bikes.webp",
+    description:
+      "Expert reviews of electric hybrid bikes combining road bike efficiency with mountain bike versatility for commuting, fitness, and adventure riding.",
+  },
 ];
 
 /**
