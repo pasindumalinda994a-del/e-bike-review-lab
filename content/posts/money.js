@@ -3330,7 +3330,7 @@ const money = [
         name: "Tern GSD Gen 3 – Best Overall",
         avgRating: 4.8,
         badge: "Starting at $4,999",
-        imageUrl: "/images/products/tern-gsd.webp",
+        imageUrl: "/images/electric-bikes/tern-gsd.webp",
         
         description: "After hauling two kids and a week's groceries up San Francisco's steepest hills, the Tern GSD proved why it's the gold standard. The third-generation model addresses every complaint I had about compact cargo bikes—it's stable under heavy loads, fits riders from 4'11\" to 6'7\", and feels more planted than bikes twice its length.",
         
@@ -3382,7 +3382,7 @@ const money = [
         name: "Lectric XPedition 2.0 – Best Value",
         avgRating: 4.6,
         badge: "Starting at $1,399",
-        imageUrl: "/images/products/lectric-xpedition.webp",
+        imageUrl: "/images/electric-bikes/lectric-xpedition-2.0.webp",
         
         description: "The XPedition 2.0 delivers shocking performance for $1,399. After testing cargo bikes costing three times as much, I kept coming back to this thought: for most families, this is all the bike they'll ever need.",
         
