@@ -1,6 +1,14 @@
-// Combine the two content buckets so the rest of the app can loop everything.
+// Combine all content buckets so the rest of the app can loop everything.
 import { moneyArticles } from "./money";
 import { informationalArticles } from "./informational";
+import { productArticles } from "./product";
 
-export const allPosts = [...moneyArticles, ...informationalArticles];
+// Order matters for things like "latest" sorting when timestamps match.
+// Money + informational are your main pillars; product reviews slot in alongside.
+export const allPosts = [
+  ...moneyArticles,
+  ...informationalArticles,
+  ...productArticles,
+];
+
 

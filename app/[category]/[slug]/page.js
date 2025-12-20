@@ -7,6 +7,7 @@ import {
 } from "@/lib/mock-data";
 import MoneyArticle from "@/components/articles/MoneyArticle";
 import InformationalArticle from "@/components/articles/InformationalArticle";
+import ProductArticle from "@/components/articles/ProductArticle";
 import SidebarContent from "@/components/SidebarContent";
 import JsonLdSchema from "@/components/JsonLdSchema";
 import HomeNewsletter from "@/components/HomeNewsletter";
@@ -109,7 +110,12 @@ export default async function CategoryPostPage({ params }) {
         supportingProducts={supportingProducts}
       />
     );
+  } else if (post.contentType === "product") {
+    articleContent = (
+      <ProductArticle post={post} publishedDate={publishedDate} />
+    );
   } else {
+    // Default to money article layout for roundup/commercial posts
     articleContent = <MoneyArticle post={post} publishedDate={publishedDate} />;
   }
 
