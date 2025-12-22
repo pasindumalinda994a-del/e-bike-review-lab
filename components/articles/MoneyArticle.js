@@ -183,7 +183,7 @@ export default function MoneyArticle({ post, publishedDate }) {
                     fill
                     sizes="(min-width: 1024px) 768px, (min-width: 768px) 90vw, 100vw"
                     className="object-cover"
-                    quality={85}
+                    quality={75}
                     priority={false}
                     loading="lazy"
                   />

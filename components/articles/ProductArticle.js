@@ -607,7 +607,7 @@ function ImageSection({ heading, description, image, alt }) {
             fill
             sizes="(min-width: 1024px) 896px, (min-width: 768px) 90vw, 100vw"
             className="object-cover"
-            quality={80}
+            quality={75}
           />
         </div>
         {description && (

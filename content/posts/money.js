@@ -3373,7 +3373,7 @@ const money = [
         ],
         
         affiliateLink: "https://www.ternbicycles.com/en/bikes/473/gsd",
-        reviewLink: null
+        reviewLink: "/electric-cargo-bikes/tern-gsd-gen-3-review"
       },
       
       {
@@ -3425,7 +3425,7 @@ const money = [
         ],
         
         affiliateLink: "https://lectricebikes.com/products/xpedition-long-range-dual-battery",
-        reviewLink: null
+        reviewLink: "/electric-cargo-bikes/lectric-xpedition-2-review"
       },
       
       {
@@ -3477,7 +3477,7 @@ const money = [
         ],
         
         affiliateLink: "https://www.aventon.com/products/abound-sr-ebike",
-        reviewLink: null
+        reviewLink: "/electric-cargo-bikes/aventon-abound-sr-review"
       },
       
       {
@@ -3530,7 +3530,7 @@ const money = [
         ],
         
         affiliateLink: "https://www.specialized.com/us/en/haul-lt/p/277758",
-        reviewLink: null
+        reviewLink: "/electric-cargo-bikes/specialized-globe-haul-lt-review"
       },
       
       {
@@ -3583,7 +3583,7 @@ const money = [
         ],
         
         affiliateLink: "https://urbanarrow.com/en-na/familynext",
-        reviewLink: null
+        reviewLink: "/electric-cargo-bikes/urban-arrow-family-review"
       },
       
       {
@@ -3636,7 +3636,7 @@ const money = [
         ],
         
         affiliateLink: "https://www.r-m.de/en-gb/bikes/carrie/",
-        reviewLink: null
+        reviewLink: "/electric-cargo-bikes/riese-muller-carrie-review"
       },
       
       {
@@ -3689,7 +3689,7 @@ const money = [
         ],
         
         affiliateLink: "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9",
-        reviewLink: null
+        reviewLink: "/electric-cargo-bikes/tern-quick-haul-long-d9-review"
       },
       
       {
@@ -3742,7 +3742,7 @@ const money = [
         ],
         
         affiliateLink: "https://www.r-m.de/en-us/bikes/packster2-70/",
-        reviewLink: null
+        reviewLink: "/electric-cargo-bikes/riese-muller-packster-70-review"
       },
       
       {
@@ -3795,7 +3795,7 @@ const money = [
         ],
         
         affiliateLink: "https://www.r-m.de/en-en/bikes/multitinker2/",
-        reviewLink: null
+        reviewLink: "/electric-cargo-bikes/riese-muller-multitinker2-review"
       },
       
       {
@@ -3849,7 +3849,7 @@ const money = [
         ],
         
         affiliateLink: "https://www.cube.eu/uk-en/e-bikes/transport/cargo-hybrid",
-        reviewLink: null
+        reviewLink: "/electric-cargo-bikes/cube-cargo-hybrid-review"
       }
     ],
     

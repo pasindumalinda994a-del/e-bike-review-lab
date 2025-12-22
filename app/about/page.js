@@ -41,7 +41,7 @@ export default function AboutPage() {
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"
               priority
-              quality={85}
+              quality={75}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0C1412]/40 to-transparent" />
           </div>
@@ -59,7 +59,7 @@ export default function AboutPage() {
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"
               loading="lazy"
-              quality={85}
+              quality={75}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0C1412]/40 to-transparent" />
           </div>
