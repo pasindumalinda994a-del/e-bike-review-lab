@@ -1,5 +1,4 @@
 import './globals.css';
-import { Poppins } from 'next/font/google';
 import SiteFooter from '@/components/SiteFooter';
 import SiteHeader from '@/components/SiteHeader';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
@@ -12,17 +11,6 @@ import {
   DEFAULT_OG_IMAGE,
   DEFAULT_TWITTER_IMAGE,
 } from '@/lib/seo';
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  display: 'swap',
-  preload: true,
-  variable: '--font-sans',
-  weight: ['300', '400', '500', '600', '700', '800'],
-  // Optimize font loading for mobile
-  adjustFontFallback: true,
-  fallback: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-});
 
 // Default metadata shared across the entire application.
 export const metadata = {
@@ -100,8 +88,8 @@ export const viewport = {
 // Wrap the app with header/footer, fonts, and analytics scripts.
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={poppins.variable}>
-      <body className={`${poppins.className} flex min-h-screen flex-col bg-white text-[#0C1412]`} suppressHydrationWarning>
+    <html lang="en">
+      <body className="flex min-h-screen flex-col bg-white text-[#0C1412]" suppressHydrationWarning>
         <SmoothScroll>
           <SiteHeader />
           <main className="flex-1">
