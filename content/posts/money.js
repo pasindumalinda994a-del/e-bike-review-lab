@@ -103,7 +103,7 @@ const money = [
           "Exceptional value with GPS security features competitors charge $1,000+ extra for",
           "Smooth, responsive torque sensor feels natural compared to cadence-only systems",
           "Realistic 65+ mile range handles week-long commuting between charges",
-          "Arrives 95% assembled with fenders, rack, lights—truly ready to commute"
+          "Arrives 95% assembled with fenders, rack, lights. Truly ready to commute"
         ],
         cons: [
           "67-pound weight makes stair climbing or car-mounting challenging",
@@ -124,7 +124,7 @@ const money = [
         description: "I hauled my two kids, a week's worth of groceries, and 40 pounds of camping gear up a 12% grade, and this thing didn't even struggle. For less than half what premium cargo bikes cost, the XPedition 2.0 delivers torque sensor pedaling, serious carrying capacity, and enough battery options to match any hauling needs. It's the cargo bike that makes car-free family life actually affordable.",
         keyFeatures: [
           "Motor: 750W rear hub (1,310W peak) with 85Nm torque",
-          "Battery: Three options—624Wh, 1,248Wh, or 1,680Wh",
+          "Battery: Three options: 624Wh, 1,248Wh, or 1,680Wh",
           "Payload: 450 lbs total capacity (300 lbs on rear rack)",
           "Weight: 75 lbs (single battery) to 85 lbs (dual)",
           "Best For: Families replacing car trips and cargo hauling"
@@ -293,7 +293,7 @@ const money = [
         avgRating: 4.4,
         badge: "Starting at $3,650",
         imageUrl: "/images/electric-bikes/brompton-electric-g-line.webp",
-        description: "The Brompton folds down small enough to fit under your desk or in a train luggage rack—and that's its superpower. I commuted for a month combining this with public transit, and the ability to fold it in 20 seconds changed everything. Yes, it's expensive and has a smaller battery than full-size e-bikes, but if you need genuine portability? Nothing else comes close.",
+        description: "The Brompton folds down small enough to fit under your desk or in a train luggage rack, and that's its superpower. I commuted for a month combining this with public transit, and the ability to fold it in 20 seconds changed everything. Yes, it's expensive and has a smaller battery than full-size e-bikes, but if you need genuine portability? Nothing else comes close.",
         keyFeatures: [
           "Motor: Front hub 250W (EU) / 300W (US) with 42Nm torque",
           "Battery: 300Wh or 400Wh removable battery options",
@@ -309,13 +309,13 @@ const money = [
           { category: "Value", rating: 6, weight: 10 }
         ],
         performanceNotes: [
-          "My typical use case: ride 3 miles to the train station, fold the bike in about 20 seconds, roll it onto the train like a suitcase, then ride 2 miles from the destination station to work. This routine revealed both the Brompton's brilliance and its limitations. The fold is genuinely impressive—no other e-bike I tested came close to this level of compactness. On the bike itself, the 16-inch wheels and upright riding position feel different from standard bikes, but I adapted quickly. The 300Wh battery got me about 20-25 miles per charge, which covered my daily needs but wouldn't handle longer rides.",
+          "My typical use case: ride 3 miles to the train station, fold the bike in about 20 seconds, roll it onto the train like a suitcase, then ride 2 miles from the destination station to work. This routine revealed both the Brompton's brilliance and its limitations. The fold is genuinely impressive. No other e-bike I tested came close to this level of compactness. On the bike itself, the 16-inch wheels and upright riding position feel different from standard bikes, but I adapted quickly. The 300Wh battery got me about 20-25 miles per charge, which covered my daily needs but wouldn't handle longer rides.",
 
           "Build quality justifies some of the premium price. The folding mechanism feels solid and precise even after hundreds of fold/unfold cycles. Everything is over-engineered in that very British way, so nothing rattles and nothing flexes weirdly. The front hub motor provides smooth assist, though it's not as powerful as rear hub systems. On steeper hills, I found myself pedaling harder than I would on more powerful e-bikes. But the trade-off for genuine portability? Totally worth it if that's what you need."
         ],
         whoItsBestFor: "Urban professionals combining bike and public transit, apartment dwellers with zero storage space, and anyone who needs to carry their e-bike up stairs or store it in small spaces. The compact fold also works great for RV and boat owners. Not ideal for long-distance commuters (limited range), riders wanting maximum motor power, or anyone on a tight budget. If portability isn't your top priority, you can get more bike for less money elsewhere.",
         pros: [
-          "Unmatched portability—folds smaller than any electric bike on the market",
+          "Unmatched portability. Folds smaller than any electric bike on the market",
           "Premium build quality with precise engineering throughout",
           "Light enough (37 lbs) to carry up stairs or onto trains",
           "Removable battery lets you charge at your desk"
@@ -353,13 +353,13 @@ const money = [
           { category: "Power", rating: 6, weight: 10 }
         ],
         performanceNotes: [
-          "The first time I picked this up, I actually double-checked that the battery was installed—it's that light. For my urban testing, I rode it through San Francisco's hills, and here's the reality: moderate hills are fine, steep ones require serious pedaling. The 350W motor isn't going to carry you effortlessly up 15% grades. But that's missing the point. This bike excels at flat-to-rolling terrain where its nimble handling and light weight shine. I averaged 19 mph on my commute, faster than most e-bikes simply because I wasn't lugging around 60+ pounds.",
+          "The first time I picked this up, I actually double-checked that the battery was installed. It's that light. For my urban testing, I rode it through San Francisco's hills, and here's the reality: moderate hills are fine, steep ones require serious pedaling. The 350W motor isn't going to carry you effortlessly up 15% grades. But that's missing the point. This bike excels at flat-to-rolling terrain where its nimble handling and light weight shine. I averaged 19 mph on my commute, faster than most e-bikes simply because I wasn't lugging around 60+ pounds.",
 
-          "Battery life was the wildcard. On assist level 3 (highest), I got about 20 miles. Dial it down to level 1, and I stretched it to 35 miles. The removable battery is a game-changer for apartment dwellers—just pop it off and charge it at your desk. After 400 miles, I appreciate this bike for what it is: not a car replacement for hauling cargo, but a genuinely lightweight urban runabout that doesn't feel like you're pedaling a refrigerator. The single-speed drivetrain initially worried me, but the motor compensates enough that I rarely wished for gears."
+          "Battery life was the wildcard. On assist level 3 (highest), I got about 20 miles. Dial it down to level 1, and I stretched it to 35 miles. The removable battery is a game-changer for apartment dwellers. Just pop it off and charge it at your desk. After 400 miles, I appreciate this bike for what it is: not a car replacement for hauling cargo, but a genuinely lightweight urban runabout that doesn't feel like you're pedaling a refrigerator. The single-speed drivetrain initially worried me, but the motor compensates enough that I rarely wished for gears."
         ],
         whoItsBestFor: "Urban riders with moderate terrain who prioritize weight and simplicity over maximum power and range. Perfect for apartment dwellers who need to carry their bike upstairs, riders using public transit who want something manageable, or anyone tired of wrestling with 60-pound e-bikes. Not suitable for hilly areas, long-distance commuting, or riders who want maximum motor assistance. If you view an e-bike as a light boost rather than a full replacement for pedaling, you'll love this.",
         pros: [
-          "Exceptionally lightweight at 36 lbs—easier to manage than most e-bikes",
+          "Exceptionally lightweight at 36 lbs. Easier to manage than most e-bikes",
           "Nimble handling makes city riding and storage effortless",
           "Removable battery allows convenient upstairs charging",
           "Outstanding value at $1,295 for build quality and performance"
@@ -443,7 +443,7 @@ const money = [
         performanceNotes: [
           "The handling is what separates this from cheaper cargo bikes. Even fully loaded with two kids (about 180 combined pounds), the GSD feels stable and predictable. The 20-inch wheels lower the center of gravity compared to 26-inch alternatives, making it easier to manage at slow speeds and stops. I regularly navigated crowded city streets and tight parking situations, and this thing turns on a dime for a cargo bike. The Bosch Cargo Line motor is tuned specifically for heavy loads, and it shows. Starting from stops with 200+ pounds? Smooth and confident every time.",
 
-          "Build quality is exceptional. After six weeks of daily use including rough pavement and curb drops, nothing's loosened or developed squeaks. The quick-release accessories are genuinely thoughtful—I swapped between kid seats and panniers in under two minutes. The Clubhouse+ fort accessory turned the rear into a weatherproof enclosure my kids loved. With the dual battery setup, I got 80+ miles of range with moderate loads. The parking mode that locks the rear wheel is perfect for loading kids without the bike rolling away."
+          "Build quality is exceptional. After six weeks of daily use including rough pavement and curb drops, nothing's loosened or developed squeaks. The quick-release accessories are genuinely thoughtful. I swapped between kid seats and panniers in under two minutes. The Clubhouse+ fort accessory turned the rear into a weatherproof enclosure my kids loved. With the dual battery setup, I got 80+ miles of range with moderate loads. The parking mode that locks the rear wheel is perfect for loading kids without the bike rolling away."
         ],
         whoItsBestFor: "Families doing serious car replacement with an e-bike who want the absolute best handling and quality. Perfect for urban parents hauling multiple kids daily, small business owners doing deliveries, or anyone treating their cargo bike as primary transportation. The modularity means it adapts as needs change: kid seats now, cargo bags later. Not ideal for budget-conscious buyers (the Lectric does 80% of this for 25% of the price) or anyone wanting a bike that's easy to store (it's still big even when accessories are removed).",
         pros: [
@@ -454,7 +454,7 @@ const money = [
         ],
         cons: [
           "Premium pricing starts at $5,499 (nearly 4x the Lectric)",
-          "Accessories add up quickly—full family setup costs $7,000+",
+          "Accessories add up quickly. Full family setup costs $7,000+",
           "Still large and heavy even without cargo (70+ lbs)",
           "20-inch wheels can feel harsh on very rough surfaces"
         ],
@@ -498,7 +498,7 @@ const money = [
         ],
         cons: [
           "Cadence sensor feels less natural than torque-sensor systems",
-          "Heavy at 64 lbs—not truly portable when folded",
+          "Heavy at 64 lbs. Not truly portable when folded",
           "Folding mechanism develops minor rattles over time",
           "Less refined overall than premium folding options"
         ],
@@ -628,7 +628,7 @@ const money = [
           "Budget range (400-500Wh): 20-35 real-world miles, good for short commutes under 15 miles daily",
           "Mid-range (600-750Wh): 35-55 miles realistic, handles most commutes and weekend rides without range anxiety",
           "Premium (800Wh+): 60-80 miles achievable, perfect for long distance, cargo hauling, or extended trail rides",
-          "Pro tip: Removable batteries let you charge indoors or swap in a spare—worth prioritizing for apartment dwellers"
+          "Pro tip: Removable batteries let you charge indoors or swap in a spare. Worth prioritizing for apartment dwellers"
         ]
       },
       {
@@ -701,7 +701,7 @@ const money = [
       {
         question: "What maintenance do electric bikes need?",
         answer: [
-          "E-bikes need the same maintenance as regular bikes (brake adjustments, chain lubrication, tire pressure) plus minimal electrical system care. The motor and battery are sealed units requiring zero maintenance—you'll never need to open them. I spend maybe 15 minutes monthly on basic maintenance: clean the chain, check tire pressure, inspect brake pads. Every few months, I verify all bolts are tight since the motor's torque can loosen things over time.",
+          "E-bikes need the same maintenance as regular bikes (brake adjustments, chain lubrication, tire pressure) plus minimal electrical system care. The motor and battery are sealed units requiring zero maintenance. You'll never need to open them. I spend maybe 15 minutes monthly on basic maintenance: clean the chain, check tire pressure, inspect brake pads. Every few months, I verify all bolts are tight since the motor's torque can loosen things over time.",
 
           "Battery care is the big one: avoid storing in extreme temperatures (especially heat), charge regularly rather than letting it fully drain, and expect 500-1,000 charge cycles before capacity drops noticeably (that's 3-5 years for most riders). Most quality e-bikes have 2-year warranties covering electrical components. I've had zero issues with any of the name-brand bikes in this guide after hundreds of miles each. Budget brands are riskier, so pay for quality here."
         ]
@@ -1053,7 +1053,7 @@ const money = [
         badge: "From $6,499",
         imageUrl: "/images/electric-bikes/giant-reign-advanced-e+.webp",
 
-        description: "Giant often flies under the radar, but the Reign Advanced E+ punches way above its price point. For $6,499, you get a carbon frame, Yamaha-developed SyncDrive Pro 3 motor with 90Nm of torque, and 800W peak power. That's significantly less than competitors with similar specs. After riding it extensively, the value proposition is real—this bike competes with models costing $3,000 more.",
+        description: "Giant often flies under the radar, but the Reign Advanced E+ punches way above its price point. For $6,499, you get a carbon frame, Yamaha-developed SyncDrive Pro 3 motor with 90Nm of torque, and 800W peak power. That's significantly less than competitors with similar specs. After riding it extensively, the value proposition is real. This bike competes with models costing $3,000 more.",
 
         keyFeatures: [
           "Motor: Yamaha SyncDrive Pro 3, 90Nm torque / 800W peak",
@@ -1074,7 +1074,7 @@ const money = [
         performanceNotes: [
           "The SyncDrive Pro 3 motor surprised me. It's smooth, powerful, and efficient; the 48V system runs cooler and sips battery more conservatively than 36V competitors. On a demanding 30-mile loop with 4,000 feet of climbing, I finished with battery to spare. The motor's peak 800W output genuinely delivers when you need it on steep punches or technical sections. The RideControl Go Lux display integrated into the top tube is brilliant: big, readable, and packed with info including tire pressure monitoring (yes, really).",
 
-          "With 170mm of rear travel and a beefy 180mm fork up front, the Reign E+ is built for aggressive riding. It stays composed on fast, rough descents and soaks up big hits without drama. The geometry is adjustable via a 3-position flip chip, which I appreciate—most bikes give you two settings, Giant gives you three. My only real complaint is weight distribution. The bulky downtube housing that massive battery makes the bike feel front-heavy at slow speeds. Once you're moving, it's fine, but tight switchbacks require more effort than lighter competitors."
+          "With 170mm of rear travel and a beefy 180mm fork up front, the Reign E+ is built for aggressive riding. It stays composed on fast, rough descents and soaks up big hits without drama. The geometry is adjustable via a 3-position flip chip, which I appreciate. Most bikes give you two settings, Giant gives you three. My only real complaint is weight distribution. The bulky downtube housing that massive battery makes the bike feel front-heavy at slow speeds. Once you're moving, it's fine, but tight switchbacks require more effort than lighter competitors."
         ],
 
         whoItsBestFor: "This bike is perfect for riders who want premium performance without paying Specialized or Santa Cruz prices. Ideal for aggressive trail riders and enduro enthusiasts who need serious travel and don't mind the weight. Great for taller or heavier riders who benefit from the robust frame. If you're a lighter rider who prioritizes playfulness, or you primarily ride mellow trails, you'd be happier with something more nimble.",
@@ -1129,7 +1129,7 @@ const money = [
           "What I really appreciate is how quiet this bike stays. YT did excellent work with their cable routing and frame protection, and there's minimal rattle even on super rough terrain. The non-removable battery is a minor inconvenience but allowed YT to save about 2 pounds compared to removable systems. You'll need to plug it in where the bike sits, which might be annoying if you don't have convenient garage access. The Kiox 400C display is sleek and works well, though I wish it had better navigation features."
         ],
 
-        whoItsBestFor: "Ideal for mechanically-inclined riders who are comfortable assembling a bike and handling their own maintenance. Perfect for aggressive riders who want a gravity-focused e-MTB without paying boutique prices. Great for riders who live near good trails and can test-ride friends' bikes since you can't demo before buying. Skip this if you want the security of local dealer support or aren't confident with bike mechanics—paying extra for a bike shop assembled option might be worth it.",
+        whoItsBestFor: "Ideal for mechanically-inclined riders who are comfortable assembling a bike and handling their own maintenance. Perfect for aggressive riders who want a gravity-focused e-MTB without paying boutique prices. Great for riders who live near good trails and can test-ride friends' bikes since you can't demo before buying. Skip this if you want the security of local dealer support or aren't confident with bike mechanics. Paying extra for a bike shop assembled option might be worth it.",
 
         pros: [
           "Excellent value for a high-spec carbon e-MTB",
@@ -1235,7 +1235,7 @@ const money = [
           "Performance-wise, the Timp Peak is a solid trail bike without trying to be everything to everyone. The 140mm of rear travel and 150mm fork handle technical terrain confidently while still feeling efficient on climbs. The bike climbs well, though the Brose motor doesn't have the raw punch of Bosch or the new DJI system. What impressed me was how planted and stable the bike felt; the custom geometry really works. The 720Wh battery provides solid range, and I averaged 25-30 miles with 3,000+ feet of climbing before needing a charge. One downside: lead times can be 6-8 weeks since each bike is built to order."
         ],
 
-        whoItsBestFor: "Perfect for riders who've struggled to find a stock geometry that fits properly, particularly those who are very tall, very short, or have unusual proportions. Ideal if you have specific fit requirements due to injury or flexibility limitations. Great for riders who want something unique and are willing to wait for a custom build. Skip this if you want to test-ride before buying or need a bike immediately—the custom process takes time.",
+        whoItsBestFor: "Perfect for riders who've struggled to find a stock geometry that fits properly, particularly those who are very tall, very short, or have unusual proportions. Ideal if you have specific fit requirements due to injury or flexibility limitations. Great for riders who want something unique and are willing to wait for a custom build. Skip this if you want to test-ride before buying or need a bike immediately. The custom process takes time.",
 
         pros: [
           "Custom geometry ensures perfect fit for your body",
@@ -1285,7 +1285,7 @@ const money = [
         performanceNotes: [
           "The Moterra SL feels fundamentally different from full-power e-MTBs. At 38 pounds, it's light enough to bunny hop, manual, and throw around like a regular trail bike. The motor provides a subtle boost that's most noticeable on climbs, and it takes the edge off steep sections without completely eliminating the work. Think of it as making B-level climbs feel like C-level climbs rather than turning everything into a flat road. On moderate 10-15% grades, the assist is perfect. On 20%+ technical climbs, you'll be working hard and wishing for more power.",
 
-          "The smaller 360Wh battery drains faster than you'd expect given the lower power output. On my typical 18-mile rides with 2,500 feet of climbing, I'd finish with 5-10% remaining. Add the 180Wh range extender (which fits in a bottle cage) and you're good for longer adventures. Descending is where this bike shines—the low weight makes it playful and responsive. You can ride it more like a regular mountain bike, loading the front wheel through corners and popping off small features. The carbon frame is nicely finished and the spec is solid for the price."
+          "The smaller 360Wh battery drains faster than you'd expect given the lower power output. On my typical 18-mile rides with 2,500 feet of climbing, I'd finish with 5-10% remaining. Add the 180Wh range extender (which fits in a bottle cage) and you're good for longer adventures. Descending is where this bike shines. The low weight makes it playful and responsive. You can ride it more like a regular mountain bike, loading the front wheel through corners and popping off small features. The carbon frame is nicely finished and the spec is solid for the price."
         ],
 
         whoItsBestFor: "Ideal for strong riders who want a bike that still requires effort but extends their range or allows them to session trails more. Perfect for riders who value low weight and playful handling over raw power. Great for those riding with non-e-bike friends since the motor won't leave them behind. Skip this if you live in steep mountain terrain, have fitness limitations, or want the full e-MTB experience, you'll be frustrated by the limited power.",
@@ -1338,7 +1338,7 @@ const money = [
         performanceNotes: [
           "The Ramblas is honest about what it is, an entry-level e-MTB that prioritizes accessibility over performance. The 750W hub motor provides decent power, though it feels different from mid-drive systems. On climbs, you'll notice the weight hanging off the rear wheel, especially on loose terrain where the rear tire can spin. The bike handles mellow to moderate trails just fine. I rode it on local XC loops and gravel paths where it was perfectly adequate. Battery life is surprisingly good; the efficient hub motor and large 720Wh pack delivered 30+ mile rides with power to spare.",
 
-          "Where the budget shows is in the components. The mechanical disc brakes require more hand strength than hydraulic systems and need frequent adjustment. The Shimano Altus 9-speed drivetrain works but shifts slower than modern 11 or 12-speed systems. The fork is basic—it soaks up small bumps but feels harsh on bigger hits. That said, for someone new to e-MTBs or mountain biking in general, these limitations aren't deal-breakers. You're getting a functional electric mountain bike for under three grand. Upgrade the brakes to hydraulic ($200-300) and you'll have a solid entry-level rig."
+          "Where the budget shows is in the components. The mechanical disc brakes require more hand strength than hydraulic systems and need frequent adjustment. The Shimano Altus 9-speed drivetrain works but shifts slower than modern 11 or 12-speed systems. The fork is basic. It soaks up small bumps but feels harsh on bigger hits. That said, for someone new to e-MTBs or mountain biking in general, these limitations aren't deal-breakers. You're getting a functional electric mountain bike for under three grand. Upgrade the brakes to hydraulic ($200-300) and you'll have a solid entry-level rig."
         ],
 
         whoItsBestFor: "Perfect for riders new to electric mountain biking who want to test the waters without huge investment. Ideal for casual riders focused on mellow trails, gravel paths, and XC riding. Great for commuters who occasionally want to hit easy trails on weekends. Skip this if you're an experienced mountain biker, ride technical terrain regularly, or want a bike you won't immediately want to upgrade, spend more upfront for better components.",
@@ -1449,7 +1449,7 @@ const money = [
       {
         title: "Mid-Drive vs Hub Motors: What Actually Matters",
         paragraphs: [
-          "Think of a mid-drive motor like having an extra set of super-strong legs that work with your bike's gears. The motor sits at the cranks, so when you shift into an easier gear, the motor also gets that mechanical advantage. This makes mid-drives way more efficient on steep climbs and technical terrain. Hub motors, on the other hand, sit in the rear wheel and just spin that wheel faster—they don't benefit from your gearing changes.",
+          "Think of a mid-drive motor like having an extra set of super-strong legs that work with your bike's gears. The motor sits at the cranks, so when you shift into an easier gear, the motor also gets that mechanical advantage. This makes mid-drives way more efficient on steep climbs and technical terrain. Hub motors, on the other hand, sit in the rear wheel and just spin that wheel faster. They don't benefit from your gearing changes.",
 
           "In real-world terms, mid-drives feel more natural and give you better traction on climbs since the weight sits lower and more centered on the bike. Hub motors work fine for mellow terrain but struggle on steep technical sections where that rear wheel can spin out. They're also less efficient, meaning shorter range. Every bike in my top nine uses a mid-drive system. The only hub motor made the list (Aventon Ramblas) because it's incredibly cheap, not because hub motors are better."
         ],
@@ -1466,7 +1466,7 @@ const money = [
         paragraphs: [
           "Battery capacity is measured in watt-hours (Wh), and it works exactly like a gas tank; bigger means you can go farther. But just like with cars, how far you actually get depends on how you drive. Running full Turbo mode on steep climbs drains batteries fast. Using Eco mode on mellow terrain extends range dramatically. Most riders find that 600-800Wh provides enough juice for typical 2-4 hour rides with 2,000-4,000 feet of climbing.",
 
-          "During testing, I found that batteries in the 700-800Wh range give you real freedom to ride how you want without constant range anxiety. Smaller batteries like the 360Wh units in lightweight e-MTBs require more planning and potentially a range extender. Bigger is better, but only if you need it—those extra watt-hours add weight and cost. Figure out your typical ride length and elevation gain, then choose accordingly."
+          "During testing, I found that batteries in the 700-800Wh range give you real freedom to ride how you want without constant range anxiety. Smaller batteries like the 360Wh units in lightweight e-MTBs require more planning and potentially a range extender. Bigger is better, but only if you need it. Those extra watt-hours add weight and cost. Figure out your typical ride length and elevation gain, then choose accordingly."
         ],
         bullets: [
           "600-800Wh is the sweet spot for most all-day riding",
@@ -1494,7 +1494,7 @@ const money = [
       {
         title: "Motor Power: More Isn't Always Better",
         paragraphs: [
-          "Motor power gets measured in torque (Nm) and wattage. Higher numbers mean more climbing grunt, but the most powerful motor isn't necessarily the best choice. The DJI Avinox system pumps out 120Nm peak torque—that's genuinely shocking power. But it's also louder and drains batteries faster. Bosch's 85Nm systems feel more refined and efficient, even if they're not as brutally powerful.",
+          "Motor power gets measured in torque (Nm) and wattage. Higher numbers mean more climbing grunt, but the most powerful motor isn't necessarily the best choice. The DJI Avinox system pumps out 120Nm peak torque. That's genuinely shocking power. But it's also louder and drains batteries faster. Bosch's 85Nm systems feel more refined and efficient, even if they're not as brutally powerful.",
 
           "What matters more than peak numbers is power delivery characteristics. Does the motor feel smooth and natural, or does it surge on and off? Is it quiet or does it whine under load? After testing motors from Bosch, Shimano, Brose, Yamaha, and DJI, I'd take the smooth refinement of Bosch or the silence of Brose over raw peak power. Unless you're regularly climbing 20%+ grades, you don't need the most powerful motor available."
         ],
@@ -1509,9 +1509,9 @@ const money = [
       {
         title: "Budget Planning: What to Expect at Different Price Points",
         paragraphs: [
-          "Under $3,000: You're looking at entry-level hardtails with hub motors or lower-spec mid-drives. Components will be basic—mechanical brakes, budget suspension, fewer gears. Fine for casual riding on mellow trails. The Aventon Ramblas is your only real option here. $3,000-$5,000: This range doesn't really exist for quality e-MTBs. You're better off saving more or buying used.",
+          "Under $3,000: You're looking at entry-level hardtails with hub motors or lower-spec mid-drives. Components will be basic: mechanical brakes, budget suspension, fewer gears. Fine for casual riding on mellow trails. The Aventon Ramblas is your only real option here. $3,000-$5,000: This range doesn't really exist for quality e-MTBs. You're better off saving more or buying used.",
 
-          "$5,000-$7,000: Now we're talking. You'll get aluminum-frame full-suspension bikes with quality mid-drive motors, 700-800Wh batteries, and decent components. This is the value sweet spot. The Giant Reign E+ and Ari Timp Peak live here. $7,000-$10,000: Premium territory with carbon frames, top-tier suspension, and the latest motor systems. The Specialized Levo, Trek Rail, and YT Decoy compete here. $10,000+: Boutique brands with the absolute best of everything. Diminishing returns kick in hard above $10k—you're paying for refinement and brand prestige more than capability."
+          "$5,000-$7,000: Now we're talking. You'll get aluminum-frame full-suspension bikes with quality mid-drive motors, 700-800Wh batteries, and decent components. This is the value sweet spot. The Giant Reign E+ and Ari Timp Peak live here. $7,000-$10,000: Premium territory with carbon frames, top-tier suspension, and the latest motor systems. The Specialized Levo, Trek Rail, and YT Decoy compete here. $10,000+: Boutique brands with the absolute best of everything. Diminishing returns kick in hard above $10k. You're paying for refinement and brand prestige more than capability."
         ],
         bullets: [
           "Budget $6,000-8,000 for the best value and performance balance",
@@ -1532,7 +1532,7 @@ const money = [
           "Lightweight e-MTBs (35-40 lbs): Better handling, less assist, requires fitness",
           "Full-power e-MTBs (48-55 lbs): Maximum assist, less nimble but more capable",
           "Weight matters more when the bike is stopped than when riding",
-          "Consider how you'll load/transport the bike—heavier bikes are harder to lift onto racks"
+          "Consider how you'll load/transport the bike. Heavier bikes are harder to lift onto racks"
         ]
       },
 
@@ -1545,9 +1545,9 @@ const money = [
         ],
         bullets: [
           "Don't prioritize motor specs over proper fit and comfort",
-          "Test ride multiple bikes before committing—feel matters",
+          "Test ride multiple bikes before committing. Feel matters",
           "Budget for ongoing maintenance and possibly a second battery",
-          "Buy more bike than you think you need—you'll grow into it",
+          "Buy more bike than you think you need. You'll grow into it",
           "Consider the dealer network for warranty support and service"
         ]
       }
@@ -1574,7 +1574,7 @@ const money = [
         answer: [
           "E-MTBs need all the same maintenance as regular mountain bikes plus a bit extra. The motor systems themselves are pretty bulletproof; they're sealed units that rarely need service beyond occasional software updates. What wears faster is everything else. The extra weight and power means chains stretch quicker (expect to replace every 500-800 miles vs 1,000+ on acoustic bikes), brake pads wear faster, and tires take more abuse.",
 
-          "Keep the battery charged between 20-80% for longest lifespan—fully draining or leaving it at 100% for extended periods reduces battery life over time. Clean the bike regularly, especially around the motor area where mud buildup can cause issues. Most manufacturers recommend a full service check every 12 months or 50 hours of riding. Budget $200-400 annually for maintenance if you ride regularly. The good news? Modern e-MTB systems are way more reliable than early generations—most riders go years without major issues."
+          "Keep the battery charged between 20-80% for longest lifespan. Fully draining or leaving it at 100% for extended periods reduces battery life over time. Clean the bike regularly, especially around the motor area where mud buildup can cause issues. Most manufacturers recommend a full service check every 12 months or 50 hours of riding. Budget $200-400 annually for maintenance if you ride regularly. The good news? Modern e-MTB systems are way more reliable than early generations. Most riders go years without major issues."
         ]
       },
 
@@ -1592,7 +1592,7 @@ const money = [
         answer: [
           "Class 1 e-bikes provide pedal-assist only (motor only works when you're pedaling) up to 20mph. These have the widest trail access and are what most serious e-MTBs aim for. Class 2 adds a throttle that works without pedaling, still limited to 20mph. Class 3 is pedal-assist up to 28mph, typically for road/commuter bikes. Most trail systems only allow Class 1, which is why the vast majority of e-MTBs are built to that standard.",
 
-          "In practical terms, you won't feel limited by the 20mph cutoff on trails. I rarely hit 20mph on technical singletrack anyway—you're too busy navigating rocks and roots. The assist cuts out right when you'd naturally start coasting on descents. The only time you'll notice the limit is on fire roads or smooth flowy trails where you could easily go faster. But for technical mountain biking, Class 1 restrictions aren't actually restrictive."
+          "In practical terms, you won't feel limited by the 20mph cutoff on trails. I rarely hit 20mph on technical singletrack anyway. You're too busy navigating rocks and roots. The assist cuts out right when you'd naturally start coasting on descents. The only time you'll notice the limit is on fire roads or smooth flowy trails where you could easily go faster. But for technical mountain biking, Class 1 restrictions aren't actually restrictive."
         ]
       },
 
@@ -1610,7 +1610,7 @@ const money = [
         answer: [
           "Buying used e-MTBs is trickier than used acoustic bikes because you're also buying a used battery, and batteries degrade over time. A bike that's 2-3 years old might have lost 20-30% of its original battery capacity, and replacement batteries cost $600-1,000. That said, you can find solid deals on used e-MTBs if you know what to look for. Check the battery cycle count if possible (some systems track this), ask about the bike's riding history, and ideally test ride to verify the battery holds a charge.",
 
-          "I'd be comfortable buying a used e-MTB that's 1-2 years old with light use, especially if it's been stored properly (climate-controlled, battery kept charged between 20-80%). Avoid bikes older than 3 years unless they're heavily discounted—older motor systems lack the refinement of current generation units, and you're betting on a degraded battery. New bikes also come with warranties, which matters for expensive motor and battery systems. If you're spending $3,000+ on a used bike, consider whether spending $2,000 more for new makes sense for the peace of mind and warranty coverage."
+          "I'd be comfortable buying a used e-MTB that's 1-2 years old with light use, especially if it's been stored properly (climate-controlled, battery kept charged between 20-80%). Avoid bikes older than 3 years unless they're heavily discounted. Older motor systems lack the refinement of current generation units, and you're betting on a degraded battery. New bikes also come with warranties, which matters for expensive motor and battery systems. If you're spending $3,000+ on a used bike, consider whether spending $2,000 more for new makes sense for the peace of mind and warranty coverage."
         ]
       },
 
@@ -1626,7 +1626,7 @@ const money = [
       {
         question: "Can women ride the same e-MTBs as men or do they need women-specific models?",
         answer: [
-          "Most e-MTBs are unisex and work great for riders of any gender in the right size. Bike fit is about body proportions, not gender—some women fit men's bikes perfectly, and some men are better served by women's specific geometry. That said, women's specific models typically offer different sizing runs (XS and S sizes are more common), slightly narrower handlebars, women-specific saddles, and sometimes geometry with shorter reach and higher stack for shorter torsos.",
+          "Most e-MTBs are unisex and work great for riders of any gender in the right size. Bike fit is about body proportions, not gender. Some women fit men's bikes perfectly, and some men are better served by women's specific geometry. That said, women's specific models typically offer different sizing runs (XS and S sizes are more common), slightly narrower handlebars, women-specific saddles, and sometimes geometry with shorter reach and higher stack for shorter torsos.",
 
           "The Santa Cruz Vala is the only women's-specific e-MTB in my top picks, and it's essentially the Bullit with geometry tweaks for smaller riders. Several riders I know who are 5'6\" and under prefer the Vala's fit regardless of gender. My advice: focus on finding the right size and geometry for your body rather than worrying about gender-specific marketing. Test ride multiple bikes, pay attention to reach and standover height, and choose based on what feels comfortable. If you're between 4'10\" and 5'5\", definitely consider women's specific models as they'll likely fit better right out of the box."
         ]
@@ -1693,7 +1693,7 @@ const money = [
     introductionParagraphs: [
       "Here's a question I hear constantly: Can you actually get a quality electric bike that folds small enough to fit in your apartment closet, the back of your RV, or even under your office desk? The short answer? Absolutely. But this is important, not all folding e-bikes deliver on their promises. I've spent the past eight weeks testing ten of the most popular models on real commutes, grocery runs, and weekend adventures to separate the genuinely useful from the overpriced disappointments.",
       "My testing wasn't gentle. Each bike hauled me up San Francisco's notorious hills, squeezed into my Honda Fit's trunk dozens of times, and endured everything from smooth bike paths to potholed city streets. I'm 6'1\" and 195 pounds, so if a folding bike claims it fits taller riders, I made sure to put that to the test. Some bikes impressed me with their thoughtful engineering. Others? Well, let's just say the marketing photos looked better than the reality.",
-      "What you'll find here isn't recycled manufacturer specs or vague 'best of' claims. I'm sharing exactly which bikes earned their spot on this list and which ones I'd skip—along with honest reasons why. Whether you're squeezing into a Manhattan studio, exploring campgrounds in your RV, or just tired of sweating through your work shirt on the commute, one of these ten folders will work for you. Let's find which one."
+      "What you'll find here isn't recycled manufacturer specs or vague 'best of' claims. I'm sharing exactly which bikes earned their spot on this list and which ones I'd skip, along with honest reasons why. Whether you're squeezing into a Manhattan studio, exploring campgrounds in your RV, or just tired of sweating through your work shirt on the commute, one of these ten folders will work for you. Let's find which one."
     ],
 
     secondaryIntroduction: [],
@@ -1739,9 +1739,9 @@ const money = [
         ],
         performanceNotes: [
           "The torque sensor, something you'd normally see on $2000+ bikes, makes the XP4 ride like a natural extension of your pedaling. During my 12-mile morning commute through hilly terrain, the motor kicked in smoothly as I increased pressure on the pedals, never feeling jerky or unpredictable. The custom color display is bright enough to read in direct sunlight, and those integrated turn signals actually made drivers notice me changing lanes. One surprise: the hydraulic brakes stopped consistently even after weeks of daily use, something cheaper folders struggle with.",
-          "Real talk about range: Lectric claims 50 miles, and I hit 48 miles using mostly Eco and Tour modes on relatively flat ground. Push it to Sport+ or Turbo modes constantly, and you're looking at closer to 30 miles. That 330-pound capacity proved itself when I loaded up the rear rack with two grocery bags and a backpack—the bike stayed stable and responsive. The folding mechanism takes about 20 seconds once you get the hang of it, though lifting 69 pounds into my car trunk solo definitely made me wish I'd hit the gym more often."
+          "Real talk about range: Lectric claims 50 miles, and I hit 48 miles using mostly Eco and Tour modes on relatively flat ground. Push it to Sport+ or Turbo modes constantly, and you're looking at closer to 30 miles. That 330-pound capacity proved itself when I loaded up the rear rack with two grocery bags and a backpack. The bike stayed stable and responsive. The folding mechanism takes about 20 seconds once you get the hang of it, though lifting 69 pounds into my car trunk solo definitely made me wish I'd hit the gym more often."
         ],
-        whoItsBestFor: "Perfect for apartment dwellers who need something compact but don't want to sacrifice performance, RV owners looking for their first serious e-bike investment, or anyone who's tired of cheap bikes that promise the world and deliver mediocrity. The torque sensor alone makes this feel like a premium ride. If you're over 6'3\" though, test ride first—the reach might feel a bit cramped.",
+        whoItsBestFor: "Perfect for apartment dwellers who need something compact but don't want to sacrifice performance, RV owners looking for their first serious e-bike investment, or anyone who's tired of cheap bikes that promise the world and deliver mediocrity. The torque sensor alone makes this feel like a premium ride. If you're over 6'3\" though, test ride first. The reach might feel a bit cramped.",
         pros: [
           "Torque sensor provides natural, responsive pedaling assist",
           "Integrated turn signals and custom color display",
@@ -1782,7 +1782,7 @@ const money = [
         ],
         performanceNotes: [
           "That 750W motor is no joke. On my standard hill test, a 15% grade that chews up weaker bikes, the Portola maintained 18 mph using throttle only. The 8-speed Shimano drivetrain gives you enough gearing to actually pedal at 28 mph without your legs spinning uselessly, something cheaper 7-speed setups struggle with. And here's the kicker: those hydraulic brakes from an unfamiliar brand (Gemma) outperformed my expectations, stopping 20 feet 8 inches from 20 mph, beating our testing average by over a foot.",
-          "At 59 pounds, this is the lightest folder I tested that still delivers serious power. I could actually maneuver it solo into my Subaru without throwing out my back. The step-through frame sits low at 18.2 inches, making mounting easy even with a loaded rear rack. The one compromise? Battery life. That 13.4Ah battery delivered around 35 miles in mixed riding—solid but not spectacular. The basic display shows what you need without bells and whistles. Some riders will miss torque sensing, but the cadence sensor works fine for most situations."
+          "At 59 pounds, this is the lightest folder I tested that still delivers serious power. I could actually maneuver it solo into my Subaru without throwing out my back. The step-through frame sits low at 18.2 inches, making mounting easy even with a loaded rear rack. The one compromise? Battery life. That 13.4Ah battery delivered around 35 miles in mixed riding. Solid but not spectacular. The basic display shows what you need without bells and whistles. Some riders will miss torque sensing, but the cadence sensor works fine for most situations."
         ],
         whoItsBestFor: "Ideal for riders who prioritize raw power and portability over fancy tech features. If you're under 6 feet tall, need something light enough to carry upstairs daily, or simply want the most bike for under $1000, the Portola delivers. Also great as a first e-bike that won't feel limiting as your skills improve.",
         pros: [
@@ -1911,7 +1911,7 @@ const money = [
         ],
         performanceNotes: [
           "There's no flex, no creaks, no reminders that this frame folds; it rides like a premium full-size bike that happens to fold. The Bosch motor is whisper-quiet, incredibly efficient, and delivers power so smoothly you barely notice the assist kicking in. During a 45-mile test ride, I averaged nearly 70 miles of range using mostly Tour mode. The Purion display is minimal but effective, and those Magura hydraulic brakes stopped precisely every single time with barely any finger pressure needed.",
-          "The 10-speed Shimano Deore drivetrain handles hills effortlessly, and the adjustable Andros stem let me dial in the perfect riding position in seconds. Build quality is outstanding—every component feels chosen for longevity rather than cost-cutting. The integrated lights (front and rear), fenders, and sturdy rear rack come standard. That rack accepts Yepp child seats without adapters, turning this into a genuine family hauler. The 10-second fold is smooth and secure, with no wobbles or sketchy feelings."
+          "The 10-speed Shimano Deore drivetrain handles hills effortlessly, and the adjustable Andros stem let me dial in the perfect riding position in seconds. Build quality is outstanding. Every component feels chosen for longevity rather than cost-cutting. The integrated lights (front and rear), fenders, and sturdy rear rack come standard. That rack accepts Yepp child seats without adapters, turning this into a genuine family hauler. The 10-second fold is smooth and secure, with no wobbles or sketchy feelings."
         ],
         whoItsBestFor: "Perfect for serious commuters ready to replace their car with an e-bike, families needing a folder that can carry kids safely, or riders who appreciate German engineering and don't mind paying for the best. The frame fits riders from 4'10\" to 6'5\" thanks to incredible adjustability. If you can afford it and plan to ride frequently, the Vektron will still feel premium years from now.",
         pros: [
@@ -1953,8 +1953,8 @@ const money = [
           { category: "Value", rating: 5, weight: 15 }
         ],
         performanceNotes: [
-          "At 34 pounds total, the P Line Electric is light enough to carry up subway stairs without breaking a sweat. The fold is Brompton's legendary design, 10 seconds to a package that rolls like a suitcase and tucks under a restaurant table. That titanium and steel frame feels incredibly solid for something so light. The 16-inch wheels and compact geometry make this nimble in tight spaces, perfect for weaving through crowded city streets. The 250W motor provides gentle, refined assist up to 15.5 mph—think sophisticated European scooter, not American power bike.",
-          "The battery bag is brilliantly designed—it detaches completely, so you can leave the bike locked outside while charging the battery at your desk. Range varied wildly in my testing: 42 miles on flat ground using mostly Eco mode, but closer to 25 miles with hilly terrain and frequent stops. The 4-speed gearing is adequate for city riding but feels limited on long climbs. Those rim brakes are lighter than disc brakes but require more hand force to stop—not my favorite choice for an e-bike."
+          "At 34 pounds total, the P Line Electric is light enough to carry up subway stairs without breaking a sweat. The fold is Brompton's legendary design, 10 seconds to a package that rolls like a suitcase and tucks under a restaurant table. That titanium and steel frame feels incredibly solid for something so light. The 16-inch wheels and compact geometry make this nimble in tight spaces, perfect for weaving through crowded city streets. The 250W motor provides gentle, refined assist up to 15.5 mph. Think sophisticated European scooter, not American power bike.",
+          "The battery bag is brilliantly designed. It detaches completely, so you can leave the bike locked outside while charging the battery at your desk. Range varied wildly in my testing: 42 miles on flat ground using mostly Eco mode, but closer to 25 miles with hilly terrain and frequent stops. The 4-speed gearing is adequate for city riding but feels limited on long climbs. Those rim brakes are lighter than disc brakes but require more hand force to stop. Not my favorite choice for an e-bike."
         ],
         whoItsBestFor: "Ideal for urban professionals who take public transit, live in apartments with no bike storage, or travel frequently and want to bring their bike along. The compact fold and light weight make this unbeatable for portability. Not recommended for hilly areas, longer commutes over 15 miles, or riders wanting American-style power and speed.",
         pros: [
@@ -2237,80 +2237,80 @@ const money = [
       {
         title: "Understanding Folding E-Bike Basics",
         paragraphs: [
-          "Folding e-bikes aren't just regular bikes with hinges slapped on. The best ones balance three competing priorities: ride quality, portability, and durability. Think of it like designing a laptop—you want power, light weight, and battery life, but improving one usually compromises another. Folders use smaller wheels (16-20 inches typically) which make them compact but also more susceptible to rough pavement. The frame needs reinforcement at fold points, adding weight that counteracts portability gains.",
-          "Motor placement matters more on folders than regular e-bikes. Rear hub motors (most common) keep weight balanced but make wheel removal tricky. Mid-drive motors provide better hill climbing but cost more and add complexity. Front hub motors are rare but offer simplicity. Battery capacity directly trades off with weight—bigger batteries mean longer range but heavier bikes. The sweet spot for most riders is 500-700Wh, providing 30-50 miles without excessive weight."
+          "Folding e-bikes aren't just regular bikes with hinges slapped on. The best ones balance three competing priorities: ride quality, portability, and durability. Think of it like designing a laptop. You want power, light weight, and battery life, but improving one usually compromises another. Folders use smaller wheels (16-20 inches typically) which make them compact but also more susceptible to rough pavement. The frame needs reinforcement at fold points, adding weight that counteracts portability gains.",
+          "Motor placement matters more on folders than regular e-bikes. Rear hub motors (most common) keep weight balanced but make wheel removal tricky. Mid-drive motors provide better hill climbing but cost more and add complexity. Front hub motors are rare but offer simplicity. Battery capacity directly trades off with weight. Bigger batteries mean longer range but heavier bikes. The sweet spot for most riders is 500-700Wh, providing 30-50 miles without excessive weight."
         ],
         bullets: [
-          "Wheel size affects both portability and ride quality—smaller folds tighter but feels rougher",
+          "Wheel size affects both portability and ride quality. Smaller folds tighter but feels rougher",
           "Weight under 60 lbs is manageable for most people; over 70 lbs needs two people or vehicle ramps",
           "Fold time varies from 10 seconds (premium models) to 45 seconds (budget bikes)",
-          "Payload capacity ranges from 240-450 lbs—check if it includes rider weight"
+          "Payload capacity ranges from 240-450 lbs. Check if it includes rider weight"
         ]
       },
       {
         title: "Motor Power: What the Numbers Really Mean",
         paragraphs: [
-          "Here's something manufacturers won't tell you: that 750W motor isn't actually twice as powerful as a 500W motor. Wattage measures continuous power, but what you feel when accelerating is peak power and torque. A well-designed 500W motor with high torque can outperform a cheap 750W motor on hills. European brands often use 250W motors (legal limit there) that feel adequate because they optimize torque delivery—the Bosch Performance Line proves this brilliantly.",
-          "Torque sensors versus cadence sensors make the biggest difference in how natural a bike feels. Torque sensors measure how hard you're pedaling and match your effort—feels like riding a regular bike with superpowers. Cadence sensors just detect that you're pedaling and provide constant assist—less natural but perfectly fine for relaxed riding and cheaper to implement. Most budget folders ($1000-$1500) use cadence sensors, while premium models ($2000+) include torque sensing."
+          "Here's something manufacturers won't tell you: that 750W motor isn't actually twice as powerful as a 500W motor. Wattage measures continuous power, but what you feel when accelerating is peak power and torque. A well-designed 500W motor with high torque can outperform a cheap 750W motor on hills. European brands often use 250W motors (legal limit there) that feel adequate because they optimize torque delivery. The Bosch Performance Line proves this brilliantly.",
+          "Torque sensors versus cadence sensors make the biggest difference in how natural a bike feels. Torque sensors measure how hard you're pedaling and match your effort. It feels like riding a regular bike with superpowers. Cadence sensors just detect that you're pedaling and provide constant assist. Less natural but perfectly fine for relaxed riding and cheaper to implement. Most budget folders ($1000-$1500) use cadence sensors, while premium models ($2000+) include torque sensing."
         ],
         bullets: [
-          "500-750W is the sweet spot for U.S. riders—adequate power without excessive battery drain",
-          "Torque (measured in Nm) matters more than wattage for hill climbing—aim for 50+ Nm",
+          "500-750W is the sweet spot for U.S. riders. Adequate power without excessive battery drain",
+          "Torque (measured in Nm) matters more than wattage for hill climbing. Aim for 50+ Nm",
           "Geared hub motors provide better torque than direct drive but need more maintenance",
-          "Test ride both sensor types if possible—your preference might surprise you"
+          "Test ride both sensor types if possible. Your preference might surprise you"
         ]
       },
       {
         title: "Battery Life and Range Reality Check",
         paragraphs: [
-          "Manufacturer range claims are like EPA fuel economy—technically achievable but wildly optimistic for real-world use. When a brand claims 60 miles, expect 40-45 miles in mixed riding. That number assumes: flat terrain, no wind, 160-pound rider, moderate assist levels, perfect temperature, and consistent pedaling. Add hills, headwinds, a heavier rider, or high assist modes, and range drops 30-50%. Cold weather below 40°F can cut battery capacity by 20-30%.",
-          "Battery capacity in watt-hours (Wh) gives you the real story. A 500Wh battery typically delivers 25-40 miles in varied conditions. 700Wh stretches that to 35-55 miles. Beyond 750Wh, you're adding significant weight for diminishing returns unless you're doing 50+ mile rides. Most folders use 48V systems (good balance of efficiency and power), though some premium models use 36V (more refined but less powerful). Always check if the battery is removable—integrated batteries mean bringing the entire bike indoors to charge."
+          "Manufacturer range claims are like EPA fuel economy. Technically achievable but wildly optimistic for real-world use. When a brand claims 60 miles, expect 40-45 miles in mixed riding. That number assumes: flat terrain, no wind, 160-pound rider, moderate assist levels, perfect temperature, and consistent pedaling. Add hills, headwinds, a heavier rider, or high assist modes, and range drops 30-50%. Cold weather below 40°F can cut battery capacity by 20-30%.",
+          "Battery capacity in watt-hours (Wh) gives you the real story. A 500Wh battery typically delivers 25-40 miles in varied conditions. 700Wh stretches that to 35-55 miles. Beyond 750Wh, you're adding significant weight for diminishing returns unless you're doing 50+ mile rides. Most folders use 48V systems (good balance of efficiency and power), though some premium models use 36V (more refined but less powerful). Always check if the battery is removable. Integrated batteries mean bringing the entire bike indoors to charge."
         ],
         bullets: [
           "Multiply manufacturer range claims by 0.7 for realistic expectations",
           "500-700Wh capacity handles most commutes and errands comfortably",
           "Removable batteries let you charge inside while the bike stays locked up",
-          "Battery replacement costs $300-$800—factor this into long-term ownership"
+          "Battery replacement costs $300-$800. Factor this into long-term ownership"
         ]
       },
       {
         title: "The Portability vs. Performance Trade-Off",
         paragraphs: [
-          "Every pound you save in weight costs you something—smaller battery, weaker motor, cheaper components, or less sturdy frame. The Brompton at 34 pounds is gloriously portable but maxes out at 15 mph with limited range. The Heybike Mars at 73 pounds hauls serious cargo but requires two people to lift into most vehicles. Most riders find the sweet spot around 55-65 pounds—manageable but not effortless.",
-          "The fold mechanism itself matters enormously. Brompton's design is legendary because it results in a stable, rollable package that fits anywhere. Cheaper folders often create awkward shapes that tip over or catch on doorframes. The best folders secure with magnets or catches that prevent accidental unfolding. Budget at least a week to build muscle memory—early fold attempts will take 60+ seconds and feel clumsy. After practice, you'll nail it in 15-20 seconds."
+          "Every pound you save in weight costs you something. Smaller battery, weaker motor, cheaper components, or less sturdy frame. The Brompton at 34 pounds is gloriously portable but maxes out at 15 mph with limited range. The Heybike Mars at 73 pounds hauls serious cargo but requires two people to lift into most vehicles. Most riders find the sweet spot around 55-65 pounds. Manageable but not effortless.",
+          "The fold mechanism itself matters enormously. Brompton's design is legendary because it results in a stable, rollable package that fits anywhere. Cheaper folders often create awkward shapes that tip over or catch on doorframes. The best folders secure with magnets or catches that prevent accidental unfolding. Budget at least a week to build muscle memory. Early fold attempts will take 60+ seconds and feel clumsy. After practice, you'll nail it in 15-20 seconds."
         ],
         bullets: [
           "Under 50 lbs: truly portable but expect compromises in power/range/build quality",
-          "50-65 lbs: balanced—manageable for most people with decent performance",
+          "50-65 lbs: balanced. Manageable for most people with decent performance",
           "65-75 lbs: heavy but often feature-rich; plan on folding and rolling, not carrying",
-          "Test the fold in person before buying—some designs are far more intuitive than others"
+          "Test the fold in person before buying. Some designs are far more intuitive than others"
         ]
       },
       {
         title: "Budget Ranges and What to Expect",
         paragraphs: [
-          "Under $1500, you're looking at solid entry-level folders that cut corners intelligently. Expect cadence sensors instead of torque, basic displays, mechanical or hybrid brakes, and simpler components. The Lectric XP4 ($999) and Ride1Up Portola ($995) prove you can get genuine quality here if brands prioritize the right features. Avoid unknown brands below $800—quality control and customer service fall apart at those price points.",
+          "Under $1500, you're looking at solid entry-level folders that cut corners intelligently. Expect cadence sensors instead of torque, basic displays, mechanical or hybrid brakes, and simpler components. The Lectric XP4 ($999) and Ride1Up Portola ($995) prove you can get genuine quality here if brands prioritize the right features. Avoid unknown brands below $800. Quality control and customer service fall apart at those price points.",
           "$1500-$2500 brings meaningful upgrades: torque sensors, better displays, hydraulic brakes, longer range, and premium components. The Velotric Fold 1 Plus ($1,499) and Aventon Sinch 2.5 ($1,799) offer advanced features without the luxury pricing. Above $3000, you're paying for refinement, brand prestige, weight savings, or cutting-edge tech. The Tern Vektron ($3,699) justifies its price with Bosch motors and impeccable build quality. The Brompton ($4,700) charges a premium for iconic design and extreme portability. The Urtopia Carbon Fold ($2,999) bets on innovation."
         ],
         bullets: [
-          "Budget ($800-$1200): Basic but functional—great for testing if you'll actually use a folder",
-          "Mid-range ($1200-$2000): Best value—premium features without luxury pricing",
+          "Budget ($800-$1200): Basic but functional. Great for testing if you'll actually use a folder",
+          "Mid-range ($1200-$2000): Best value. Premium features without luxury pricing",
           "Premium ($2000-$3500): Refined experience with high-quality components throughout",
-          "Ultra-premium ($3500+): Niche benefits—extreme portability, prestige brands, or innovation"
+          "Ultra-premium ($3500+): Niche benefits. Extreme portability, prestige brands, or innovation"
         ]
       },
       {
         title: "Common Mistakes That Cost Buyers Money",
         paragraphs: [
-          "The biggest mistake? Buying the lightest, cheapest folder and expecting it to replace a car for serious commuting. I've seen dozens of riders upgrade within six months because they underestimated how much they'd actually use their folder. If you're commuting 10+ miles daily, invest in the $1500-$2000 range from the start—the improved comfort and reliability pay for themselves quickly. On the flip side, don't overbuy if you're only riding occasionally—that $4700 Brompton is magnificent but overkill for weekend grocery runs.",
-          "Second mistake: ignoring total weight and thinking 'foldable equals portable.' A 75-pound folder that requires two people to lift defeats the entire purpose if you're in a third-floor walk-up. Test the folded package in your actual storage space and vehicle before buying. Third mistake: assuming all motors and batteries are equal—cheap components fail faster and cost more to replace. Stick with known motor brands (Bafang, Bosch, Shimano) and batteries from reputable manufacturers (Samsung, LG, Panasonic cells)."
+          "The biggest mistake? Buying the lightest, cheapest folder and expecting it to replace a car for serious commuting. I've seen dozens of riders upgrade within six months because they underestimated how much they'd actually use their folder. If you're commuting 10+ miles daily, invest in the $1500-$2000 range from the start. The improved comfort and reliability pay for themselves quickly. On the flip side, don't overbuy if you're only riding occasionally. That $4700 Brompton is magnificent but overkill for weekend grocery runs.",
+          "Second mistake: ignoring total weight and thinking 'foldable equals portable.' A 75-pound folder that requires two people to lift defeats the entire purpose if you're in a third-floor walk-up. Test the folded package in your actual storage space and vehicle before buying. Third mistake: assuming all motors and batteries are equal. Cheap components fail faster and cost more to replace. Stick with known motor brands (Bafang, Bosch, Shimano) and batteries from reputable manufacturers (Samsung, LG, Panasonic cells)."
         ],
         bullets: [
-          "Don't cheap out if you'll ride daily—false economy leads to expensive upgrades",
-          "Test the fold and lift in person—specs don't reveal how awkward it feels",
+          "Don't cheap out if you'll ride daily. False economy leads to expensive upgrades",
+          "Test the fold and lift in person. Specs don't reveal how awkward it feels",
           "Check local service options before buying obscure brands",
           "Factor in replacement battery costs ($300-$800) when comparing prices",
-          "Verify weight limit includes rider + cargo—some brands list confusing specs"
+          "Verify weight limit includes rider + cargo. Some brands list confusing specs"
         ]
       }
     ],
@@ -2326,14 +2326,14 @@ const money = [
         question: "What's the best electric folding bike for under $1000?",
         answer: [
           "The Lectric XP4 at $999 is hands-down the best value under $1000. You're getting a torque sensor (usually found on bikes twice this price), hydraulic brakes, 50-mile range, and UL certification for safety. The Ride1Up Portola at $995 is the close runner-up with its powerful 750W motor and light weight. Both offer premium features at budget prices.",
-          "If you can stretch your budget to $1200-$1500, the jump in quality is worth it. But in the sub-$1000 category, those two bikes dominate for good reason—they cut costs on aesthetics and brand prestige while keeping the components that actually matter for riding quality."
+          "If you can stretch your budget to $1200-$1500, the jump in quality is worth it. But in the sub-$1000 category, those two bikes dominate for good reason. They cut costs on aesthetics and brand prestige while keeping the components that actually matter for riding quality."
         ]
       },
       {
         question: "Can heavy riders (250+ lbs) use folding e-bikes safely?",
         answer: [
           "Absolutely, but payload capacity matters more than you'd think. The Velotric Fold 1 Plus handles up to 450 pounds total (rider + cargo + bike), making it the strongest folder I tested. The Heybike Mars 3.0 (350 lbs), Rad Power RadExpand Plus (275 lbs), and Lectric XP4 (330 lbs) also accommodate larger riders comfortably. These bikes have reinforced frames and stronger wheels designed for heavier loads.",
-          "Don't just check the total weight limit—also verify that the motor has enough torque for hills. A 250-pound rider needs at least 50-60 Nm of torque for comfortable climbing. The bikes I mentioned all clear that bar. Avoid budget folders under $800 with suspiciously high weight claims—the frame reinforcements and stronger components needed for heavy riders cost money that ultra-cheap bikes don't invest."
+          "Don't just check the total weight limit. Also verify that the motor has enough torque for hills. A 250-pound rider needs at least 50-60 Nm of torque for comfortable climbing. The bikes I mentioned all clear that bar. Avoid budget folders under $800 with suspiciously high weight claims. The frame reinforcements and stronger components needed for heavy riders cost money that ultra-cheap bikes don't invest."
         ]
       },
       {
@@ -2347,35 +2347,35 @@ const money = [
         question: "Are folding e-bikes good for tall riders over 6 feet?",
         answer: [
           "It depends on the specific model. The Tern Vektron S10 fits riders up to 6'5\" thanks to its Andros adjustable stem and thoughtful geometry. The Heybike Mars 3.0 accommodates riders up to 6'4\" comfortably. The Lectric XP4 works for most riders up to 6'3\", though taller folks might want the seat post fully extended. The Aventon Sinch 2.5 officially maxes out at 6'2\".",
-          "Avoid the Brompton P Line Electric if you're over 6 feet—those small 16-inch wheels and compact geometry feel cramped for taller riders. Test ride before buying if you're 6'2\" or above. Look for folders with extended seat post travel (at least 12 inches of adjustment) and adjustable stems. Also check standover height—some folders have high top tubes that make mounting awkward for long-legged riders."
+          "Avoid the Brompton P Line Electric if you're over 6 feet. Those small 16-inch wheels and compact geometry feel cramped for taller riders. Test ride before buying if you're 6'2\" or above. Look for folders with extended seat post travel (at least 12 inches of adjustment) and adjustable stems. Also check standover height. Some folders have high top tubes that make mounting awkward for long-legged riders."
         ]
       },
       {
         question: "Can I take a folding e-bike on trains and buses?",
         answer: [
           "Rules vary dramatically by transit system, but folders generally have better luck than regular bikes. Many systems allow folded bikes during all hours while restricting regular bikes to off-peak times. The key is fold size and weight. The Brompton P Line Electric at 34 pounds and compact fold passes as luggage on most systems. Heavier folders over 65 pounds might violate size or weight restrictions.",
-          "Check your specific transit agency's rules—some require bikes to be in bags when folded, others don't. Amtrak allows folded bikes as carry-on luggage if they fit in overhead bins or under seats. Airlines treat folders as checked luggage (fees apply), though the Brompton's compact size sometimes fits as carry-on. European and Asian transit systems are generally more bike-friendly than U.S. systems."
+          "Check your specific transit agency's rules. Some require bikes to be in bags when folded, others don't. Amtrak allows folded bikes as carry-on luggage if they fit in overhead bins or under seats. Airlines treat folders as checked luggage (fees apply), though the Brompton's compact size sometimes fits as carry-on. European and Asian transit systems are generally more bike-friendly than U.S. systems."
         ]
       },
       {
         question: "What maintenance do folding e-bikes need?",
         answer: [
-          "Basic maintenance is similar to regular bikes: clean and lube the chain every 100-200 miles, check tire pressure weekly, and inspect brake pads monthly. The fold mechanism needs attention—wipe down hinges and apply a drop of dry lube every few weeks to prevent grit buildup. Tighten fold point bolts every month or two since vibrations can loosen them.",
+          "Basic maintenance is similar to regular bikes: clean and lube the chain every 100-200 miles, check tire pressure weekly, and inspect brake pads monthly. The fold mechanism needs attention. Wipe down hinges and apply a drop of dry lube every few weeks to prevent grit buildup. Tighten fold point bolts every month or two since vibrations can loosen them.",
           "E-bike specific maintenance includes: checking battery connections for corrosion, updating firmware occasionally (some brands require this), and inspecting electrical connectors after riding in rain. Most riders spend $100-$200 yearly on maintenance if doing basic tasks yourself, or $300-$500 using bike shops. Budget folders often need more frequent adjustments than premium models due to lower-quality components."
         ]
       },
       {
         question: "Are folding e-bikes worth the compromises compared to regular e-bikes?",
         answer: [
-          "If you genuinely need portability—limited storage space, multimodal commuting, RV travel—then yes, the compromises are worth it. A good folder like the Lectric XP4 or Aventon Sinch 2.5 rides almost as well as a regular e-bike while fitting in your closet. But if you have garage space and never need to transport your bike, a non-folding e-bike gives you better ride quality, longer range, and lower weight for the same money.",
-          "The key question: will you actually fold it regularly? If the answer is yes, folders are brilliant. If you'll fold it twice a year, you're paying for portability you don't need. I've seen many riders buy folders 'just in case' and regret the handling compromises. Be honest about your actual use case—it'll save you money and frustration."
+          "If you genuinely need portability like limited storage space, multimodal commuting, or RV travel, then yes, the compromises are worth it. A good folder like the Lectric XP4 or Aventon Sinch 2.5 rides almost as well as a regular e-bike while fitting in your closet. But if you have garage space and never need to transport your bike, a non-folding e-bike gives you better ride quality, longer range, and lower weight for the same money.",
+          "The key question: will you actually fold it regularly? If the answer is yes, folders are brilliant. If you'll fold it twice a year, you're paying for portability you don't need. I've seen many riders buy folders 'just in case' and regret the handling compromises. Be honest about your actual use case. It'll save you money and frustration."
         ]
       },
       {
         question: "What's the most reliable folding e-bike brand?",
         answer: [
           "Tern and Brompton lead for pure reliability, with decades of folding bike expertise and exceptional build quality. You'll pay premium prices ($3500-$4700) but get bikes that last 10+ years with proper maintenance. In the value category, Lectric and Rad Power have established strong reputations for customer service and component reliability. Both brands have been around long enough to prove they'll support their products.",
-          "Avoid unknown brands on Amazon that appear and disappear—they might be cheap, but good luck getting warranty support or replacement parts in year two. Stick with brands that have been in business at least 3-5 years and have accessible North American customer service. Check reviews specifically mentioning long-term ownership (1+ years) rather than initial impressions."
+          "Avoid unknown brands on Amazon that appear and disappear. They might be cheap, but good luck getting warranty support or replacement parts in year two. Stick with brands that have been in business at least 3-5 years and have accessible North American customer service. Check reviews specifically mentioning long-term ownership (1+ years) rather than initial impressions."
         ]
       }
     ],
@@ -2497,7 +2497,7 @@ const money = [
           "Lightest e-road bike tested at 9.9kg and it feels nimble and responsive like a regular race bike",
           "Motor so quiet and smooth that even bike snobs won't complain about the 'unnatural' assist",
           "Dura-Ace Di2 with Zipp wheels means you're not compromising on components",
-          "Sleek integration—integrated lights, hidden battery, clean cockpit"
+          "Sleek integration. Integrated lights, hidden battery, clean cockpit"
         ],
 
         cons: [
@@ -2570,7 +2570,7 @@ const money = [
         badge: "Around $8,499",
         imageUrl: "/images/electric-bikes/trek-domane+-slr-6.webp",
 
-        description: "The Domane+ SLR 6 is what happens when Trek takes their legendary IsoSpeed comfort technology and pairs it with TQ's excellent HPR50 motor. After a 95-mile ride that would've destroyed my back on a traditional race bike, I felt fresh enough to go out for dinner. The compliance built into this frame is remarkable—it genuinely smooths out rough roads without feeling soft or imprecise.",
+        description: "The Domane+ SLR 6 is what happens when Trek takes their legendary IsoSpeed comfort technology and pairs it with TQ's excellent HPR50 motor. After a 95-mile ride that would've destroyed my back on a traditional race bike, I felt fresh enough to go out for dinner. The compliance built into this frame is remarkable. It genuinely smooths out rough roads without feeling soft or imprecise.",
 
         keyFeatures: [
           "Motor: TQ HPR50 (300W, 50Nm torque)",
@@ -2591,10 +2591,10 @@ const money = [
         performanceNotes: [
           "Trek's IsoSpeed decoupler at the seat tube junction is pure magic on rough roads. I tested this specifically on a particularly brutal stretch of broken pavement near my house, and the Domane absorbed impacts that had me wincing on other bikes. The TQ HPR50 motor (more powerful than the HPR40 on the Scott) provides 300W and feels even smoother than the HPR40, if that's possible. In my range testing, I got 68 miles in eco mode, 52 miles in mid, and 38 miles in high mode across rolling terrain. The 360Wh battery outperformed the Scott's 290Wh meaningfully on longer rides.",
 
-          "The Shimano 105 groupset works flawlessly—Trek didn't cheap out on components to hit the price point. Those Bontrager Aeolus Pro 37 carbon wheels are legitimately good, tubeless-ready, and stiff enough for sprints. The geometry is slightly more relaxed than the Scott (higher stack, shorter reach), which some will love and racers might find too upright. On group rides, I sometimes wished for sharper handling. But after 6+ hour rides, my neck and shoulders thanked Trek for the comfort-first approach."
+          "The Shimano 105 groupset works flawlessly. Trek didn't cheap out on components to hit the price point. Those Bontrager Aeolus Pro 37 carbon wheels are legitimately good, tubeless-ready, and stiff enough for sprints. The geometry is slightly more relaxed than the Scott (higher stack, shorter reach), which some will love and racers might find too upright. On group rides, I sometimes wished for sharper handling. But after 6+ hour rides, my neck and shoulders thanked Trek for the comfort-first approach."
         ],
 
-        whoItsBestFor: "This is the bike for riders who love going long. If you're planning supported centuries, gran fondos, or all-day adventures, the Domane's comfort will make those miles feel shorter. It's also perfect for riders dealing with back, neck, or hand pain who've been told they need to give up road cycling. I rode 95 miles in a single day during testing—my longest e-bike ride ever—and could've kept going. Older riders (50+) consistently tell me this is their favorite bike from my test fleet.",
+        whoItsBestFor: "This is the bike for riders who love going long. If you're planning supported centuries, gran fondos, or all-day adventures, the Domane's comfort will make those miles feel shorter. It's also perfect for riders dealing with back, neck, or hand pain who've been told they need to give up road cycling. I rode 95 miles in a single day during testing, my longest e-bike ride ever, and could've kept going. Older riders (50+) consistently tell me this is their favorite bike from my test fleet.",
 
         pros: [
           "IsoSpeed compliance is unmatched and it's the smoothest-riding bike in the test",
@@ -2606,7 +2606,7 @@ const money = [
 
         cons: [
           "$8,499 is expensive for a 105-equipped bike",
-          "Handling feels less sharp than racier bikes—some will find it too relaxed",
+          "Handling feels less sharp than racier bikes. Some will find it too relaxed",
           "Heavier than the Scott at 27.3 lbs"
         ],
 
@@ -2643,10 +2643,10 @@ const money = [
         performanceNotes: [
           "Here's what surprised me about hub motors: they're way better than I expected. The SyncDrive Move Plus delivers power so smoothly that I often forgot it was there. On climbs, the 30Nm feels adequate rather than overwhelming, but that's perfect for maintaining a natural pedaling rhythm. Giant claims this setup is equivalent to 75Nm with a mid-drive, and while I'm skeptical of that math, the real-world performance is genuinely impressive. I tested range extensively: 82 miles in eco, 61 miles in normal mode, and 44 miles in sport, so the 400Wh battery is generous.",
 
-          "The D-Fuse seatpost and handlebars add compliance without feeling flexy, though rough roads still transmit more vibration than the Trek. SRAM AXS wireless shifting is a premium touch at this price point—shifts are crisp and the lack of cables looks clean. The weight is this bike's main weakness: at 50.7 lbs, it's noticeably heavier than mid-drive competitors. You'll feel this weight when lifting it onto car racks or carrying it upstairs. But once rolling, the weight disappears. No motor drag when coasting is a huge advantage of hub drive."
+          "The D-Fuse seatpost and handlebars add compliance without feeling flexy, though rough roads still transmit more vibration than the Trek. SRAM AXS wireless shifting is a premium touch at this price point. Shifts are crisp and the lack of cables looks clean. The weight is this bike's main weakness: at 50.7 lbs, it's noticeably heavier than mid-drive competitors. You'll feel this weight when lifting it onto car racks or carrying it upstairs. But once rolling, the weight disappears. No motor drag when coasting is a huge advantage of hub drive."
         ],
 
-        whoItsBestFor: "Buy the Giant if you want premium features without the premium price tag. At $6,499, it costs half what the Scott does, yet delivers 90% of the experience. This is perfect for riders who plan to ride 2-3 times weekly, don't need absolute cutting-edge tech, and would rather spend the savings on a cycling vacation. It's also ideal for new e-road bike buyers who aren't sure they'll love the category—the lower buy-in makes it less risky.",
+        whoItsBestFor: "Buy the Giant if you want premium features without the premium price tag. At $6,499, it costs half what the Scott does, yet delivers 90% of the experience. This is perfect for riders who plan to ride 2-3 times weekly, don't need absolute cutting-edge tech, and would rather spend the savings on a cycling vacation. It's also ideal for new e-road bike buyers who aren't sure they'll love the category. The lower buy-in makes it less risky.",
 
         pros: [
           "Incredible value at $6,499 and the best bang-for-buck ratio tested",
@@ -2695,13 +2695,13 @@ const money = [
         performanceNotes: [
           "Bosch's motor reputation is well-deserved. After 600+ miles of testing, zero issues; it just works. The 55Nm torque handles steep city hills easily, and the 600W peak output launches you through intersections confidently. I commuted daily for three weeks on the Synapse Neo, and the integrated lights (front and rear) are legitimately bright enough for urban riding. No more dealing with dead USB light batteries. The Shimano Ultegra Di2 shifts perfectly even in pouring rain, though I wish it came with hydraulic disc brakes at this price.",
 
-          "Range was solid: 54 miles in eco, 42 miles in tour mode, 32 miles in turbo—enough for most commutes without daily charging. The Kiox 500 display is easy to read even in direct sun, and the Bosch Flow app provides detailed ride metrics. What makes this bike special isn't any single standout feature—it's how all the practical touches add up. Mudguards fit perfectly. The kickstand mount means you can park anywhere. The Series 2 carbon is comfortable enough for daily rides without being plush."
+          "Range was solid: 54 miles in eco, 42 miles in tour mode, 32 miles in turbo. Enough for most commutes without daily charging. The Kiox 500 display is easy to read even in direct sun, and the Bosch Flow app provides detailed ride metrics. What makes this bike special isn't any single standout feature. It's how all the practical touches add up. Mudguards fit perfectly. The kickstand mount means you can park anywhere. The Series 2 carbon is comfortable enough for daily rides without being plush."
         ],
 
         whoItsBestFor: "Choose the Synapse Neo if you're replacing car trips with bike trips. This bike is built for riders who need reliable transportation, not weekend warriors chasing Strava KOMs. It's perfect for the urban professional commuting 8-12 miles each way, the person running errands around town, or anyone who wants one bike that handles both recreation and utility. The integrated accessories save you hundreds in aftermarket additions.",
 
         pros: [
-          "Integrated lights powered by main battery—incredibly practical",
+          "Integrated lights powered by main battery. Incredibly practical",
           "Bosch Performance Line Sprint is powerful, reliable, and proven",
           "Mounts for fenders, racks, and kickstand make this truly utilitarian",
           "Shimano Ultegra Di2 is nearly bulletproof in daily use",
@@ -2747,10 +2747,10 @@ const money = [
         performanceNotes: [
           "The Redshift suspension stem is surprisingly effective, providing 20mm of travel that takes the edge off rough gravel without feeling squishy on pavement. I was skeptical at first (suspension stems often feel weird), but after 40 miles of mixed surfaces, my hands were noticeably less fatigued than on rigid bikes. The TQ HPR50 motor is the same unit Trek uses, delivering smooth, quiet power that feels natural. On gravel climbs, the 50Nm torque is adequate, though I sometimes wished for more grunt when things got steep and loose.",
 
-          "SRAM Force XPLR AXS is the perfect gravel-specific drivetrain—the wide-range cassette (10-44t) handles everything from highway cruising to 20% dirt climbs. The 1x setup simplifies things, and the wireless shifting is reliable even when covered in dust. BMC's Tuned Compliance Concept adds vertical compliance without sacrificing lateral stiffness. At 12.9kg (28.4 lbs), it's competitive weight-wise. The 35mm Pirelli tires are fast-rolling on pavement and confidence-inspiring on gravel, though they're not ideal for either surface specifically."
+          "SRAM Force XPLR AXS is the perfect gravel-specific drivetrain. The wide-range cassette (10-44t) handles everything from highway cruising to 20% dirt climbs. The 1x setup simplifies things, and the wireless shifting is reliable even when covered in dust. BMC's Tuned Compliance Concept adds vertical compliance without sacrificing lateral stiffness. At 12.9kg (28.4 lbs), it's competitive weight-wise. The 35mm Pirelli tires are fast-rolling on pavement and confidence-inspiring on gravel, though they're not ideal for either surface specifically."
         ],
 
-        whoItsBestFor: "Buy the Roadmachine AMP X ONE if you can't decide whether you're a road cyclist or gravel rider—because you're probably both. This bike excels at long mixed-surface rides: think 60 miles where 45 are paved, 10 are hard-packed gravel, and 5 are chunky dirt. It's also perfect for riders in areas with poor road infrastructure who need a bike that handles chip-seal, rough pavement, and occasional dirt detours without drama.",
+        whoItsBestFor: "Buy the Roadmachine AMP X ONE if you can't decide whether you're a road cyclist or gravel rider, because you're probably both. This bike excels at long mixed-surface rides: think 60 miles where 45 are paved, 10 are hard-packed gravel, and 5 are chunky dirt. It's also perfect for riders in areas with poor road infrastructure who need a bike that handles chip-seal, rough pavement, and occasional dirt detours without drama.",
 
         pros: [
           "Redshift suspension stem actually works and offers noticeable comfort improvement",
@@ -2799,21 +2799,21 @@ const money = [
         performanceNotes: [
           "The Mahle X20 motor delivers assistance so subtly that you'll sometimes wonder if it's even working. That's intentional. On flat roads at 20mph, it provides just enough help to maintain speed effortlessly. On climbs, the 55Nm feels adequate for moderate grades but gets overwhelmed on steep pitches above 12%. This is by design; Orbea built the Gain for riders who want a boost, not a replacement for fitness. Battery range was decent: 68 miles in eco and 52 miles in sport mode. The 353Wh battery is smaller than most, but sufficient for most rides.",
 
-          "What impressed me most is how normal this bike feels. At 28.7 lbs, it's light enough to hang on my wall hook without grunting. The Shimano 105 mechanical groupset (12-speed) shifts smoothly, and hydraulic disc brakes provide confident stopping. The OMR carbon frame has a comfortable, endurance-oriented geometry that doesn't beat you up. Orbea's aesthetic is understated—this doesn't scream \"e-bike\" like some competitors. The Mahle app interface is simple, maybe too simple compared to Bosch or Specialized."
+          "What impressed me most is how normal this bike feels. At 28.7 lbs, it's light enough to hang on my wall hook without grunting. The Shimano 105 mechanical groupset (12-speed) shifts smoothly, and hydraulic disc brakes provide confident stopping. The OMR carbon frame has a comfortable, endurance-oriented geometry that doesn't beat you up. Orbea's aesthetic is understated. This doesn't scream \"e-bike\" like some competitors. The Mahle app interface is simple, maybe too simple compared to Bosch or Specialized."
         ],
 
-        whoItsBestFor: "Choose the Gain M30 if you're a traditional road cyclist who feels conflicted about going electric. This bike won't make you lazy—the motor is subtle enough that you're still doing most of the work. It's perfect for riders recovering from injury who need just enough help to maintain fitness, or older cyclists who want to keep riding with faster groups. The $5,600 price point makes it accessible compared to premium options, though you're sacrificing power and tech for that natural feel.",
+        whoItsBestFor: "Choose the Gain M30 if you're a traditional road cyclist who feels conflicted about going electric. This bike won't make you lazy. The motor is subtle enough that you're still doing most of the work. It's perfect for riders recovering from injury who need just enough help to maintain fitness, or older cyclists who want to keep riding with faster groups. The $5,600 price point makes it accessible compared to premium options, though you're sacrificing power and tech for that natural feel.",
 
         pros: [
           "At 28.7 lbs, one of the lightest e-road bikes available",
-          "Mahle X20 motor feels incredibly natural—barely noticeable assist",
+          "Mahle X20 motor feels incredibly natural. Barely noticeable assist",
           "Rear hub means zero motor drag when coasting or unpowered",
           "Understated design doesn't broadcast 'e-bike' aesthetics",
           "Strong value at $5,600 with quality components"
         ],
 
         cons: [
-          "55Nm motor struggles on steep climbs—not for mountainous terrain",
+          "55Nm motor struggles on steep climbs. Not for mountainous terrain",
           "Shimano 105 mechanical shifting feels dated compared to electronic options",
           "Limited tech features and basic app integration"
         ],
@@ -2830,7 +2830,7 @@ const money = [
         badge: "Around $9,500",
         imageUrl: "/images/electric-bikes/wilier-filante-hybrid.webp",
 
-        description: "Wilier took their aerodynamic Filante race frame and integrated the Mahle X35+ ebikemotion system. The result? An e-road bike that prioritizes speed and aerodynamics over comfort. During testing, this bike was consistently the fastest on flat sections—the aero frame design makes a real difference when you're pushing the 28mph assist limit.",
+        description: "Wilier took their aerodynamic Filante race frame and integrated the Mahle X35+ ebikemotion system. The result? An e-road bike that prioritizes speed and aerodynamics over comfort. During testing, this bike was consistently the fastest on flat sections. The aero frame design makes a real difference when you're pushing the 28mph assist limit.",
 
         keyFeatures: [
           "Motor: Mahle X35+ rear hub (250W, 40Nm)",
@@ -2851,13 +2851,13 @@ const money = [
         performanceNotes: [
           "The Filante Hybrid is built for one thing: going fast on smooth roads. The aggressive race geometry (73° head angle, low stack) puts you in an aerodynamic position that's efficient but not comfortable for all-day rides. I tested this bike extensively on flat sections, and it consistently held 24-26mph with moderate effort; the aero frame saves watts. Wilier claims the frame design provides savings equivalent to 10-15 watts at racing speeds, and my Garmin power meter data backs this up. The Mahle X35+ motor provides smooth assistance up to 28mph, then disengages cleanly.",
 
-          "The 250Wh battery is small—I got 45 miles on flat terrain in eco mode, 32 miles in normal mode. You'll want the range extender for longer rides. Shimano Ultegra Di2 shifts crisply, and the hydraulic disc brakes are powerful. Those Vision Team 35 carbon wheels are legitimately fast. Where this bike falters: rough roads expose the stiff frame harshly, and steep climbs reveal the motor's modest 40Nm torque. This isn't a do-everything bike—it's a specialized tool for specific conditions."
+          "The 250Wh battery is small. I got 45 miles on flat terrain in eco mode, 32 miles in normal mode. You'll want the range extender for longer rides. Shimano Ultegra Di2 shifts crisply, and the hydraulic disc brakes are powerful. Those Vision Team 35 carbon wheels are legitimately fast. Where this bike falters: rough roads expose the stiff frame harshly, and steep climbs reveal the motor's modest 40Nm torque. This isn't a do-everything bike. It's a specialized tool for specific conditions."
         ],
 
         whoItsBestFor: "Buy the Filante Hybrid if you prioritize speed above everything else. This bike is perfect for flat-terrain riders, criterium racers who want electric training options, or anyone chasing fast group rides where holding 25+ mph matters. It's also ideal for time trial enthusiasts or triathletes wanting an e-bike for training. The aggressive position and stiff frame mean this isn't for casual riders or anyone with flexibility issues.",
 
         pros: [
-          "Genuinely aerodynamic frame design—noticeably faster on flats",
+          "Genuinely aerodynamic frame design. Noticeably faster on flats",
           "Lightweight at 26.2 lbs for an e-bike with quality components",
           "Shimano Ultegra Di2 provides race-level performance",
           "Sleek Italian design and excellent build quality",
@@ -2883,7 +2883,7 @@ const money = [
         badge: "Starting at $6,999",
         imageUrl: "/images/electric-bikes/cervélo-rouvida.webp",
 
-        description: "Cervélo's first gravel e-bike combines their legendary engineering with Fazua's refined Ride 60 motor system. The Rouvida handles everything from smooth pavement to chunky gravel with equal confidence. What makes it special is the removable battery system—you can literally ride this as a regular bike when you don't need assistance.",
+        description: "Cervélo's first gravel e-bike combines their legendary engineering with Fazua's refined Ride 60 motor system. The Rouvida handles everything from smooth pavement to chunky gravel with equal confidence. What makes it special is the removable battery system. You can literally ride this as a regular bike when you don't need assistance.",
 
         keyFeatures: [
           "Motor: Fazua Ride 60 (430W peak, 60Nm)",
@@ -2904,10 +2904,10 @@ const money = [
         performanceNotes: [
           "The Fazua Ride 60 motor is remarkably refined. With 60Nm of torque, it handles steep gravel climbs confidently; I tested this on 15% grades with loose surface and never felt underpowered. The 430W peak output provides punchy acceleration when you need it. What's genuinely clever is that the battery pack slides out in 30 seconds, reducing weight by 7.7 lbs. Without the battery, this rides like a regular (albeit slightly heavy) gravel bike. With it installed, you get 55 miles of mixed-terrain riding in eco mode and 40 miles in normal mode.",
 
-          "Cervélo's geometry is spot-on for mixed riding—stable on rough descents, responsive enough for singletrack. The SRAM Rival AXS drivetrain (1x with 10-44t cassette) covers the range you need without complication. I ran 45mm tires for most testing, which felt ideal for 70/30 pavement/gravel splits. The carbon frame is stiff where it matters, compliant where it counts. My only gripe: at $6,999, you're getting Rival instead of Force, though honestly Rival AXS performs admirably."
+          "Cervélo's geometry is spot-on for mixed riding. Stable on rough descents, responsive enough for singletrack. The SRAM Rival AXS drivetrain (1x with 10-44t cassette) covers the range you need without complication. I ran 45mm tires for most testing, which felt ideal for 70/30 pavement/gravel splits. The carbon frame is stiff where it matters, compliant where it counts. My only gripe: at $6,999, you're getting Rival instead of Force, though honestly Rival AXS performs admirably."
         ],
 
-        whoItsBestFor: "The Rouvida makes sense for riders who want flexibility. Some days you want electric assistance for long gravel adventures. Other days you're meeting fast friends who'd give you grief about the motor. Pop the battery out and ride it unpowered—problem solved. It's also perfect for riders who live in hilly areas but occasionally visit flat regions where assist isn't needed. The removable battery means you're not carrying dead weight when you don't need it.",
+        whoItsBestFor: "The Rouvida makes sense for riders who want flexibility. Some days you want electric assistance for long gravel adventures. Other days you're meeting fast friends who'd give you grief about the motor. Pop the battery out and ride it unpowered. Problem solved. It's also perfect for riders who live in hilly areas but occasionally visit flat regions where assist isn't needed. The removable battery means you're not carrying dead weight when you don't need it.",
 
         pros: [
           "Removable 430Wh battery system provides unique flexibility",
@@ -2919,7 +2919,7 @@ const money = [
 
         cons: [
           "Without battery, bike still weighs more than non-electric gravel bikes",
-          "Fazua system is less common—dealer support may be limited",
+          "Fazua system is less common. Dealer support may be limited",
           "Some will prefer the spec to include Force AXS at $6,999"
         ],
 
@@ -2956,7 +2956,7 @@ const money = [
         performanceNotes: [
           "The Shimano EP801 motor is a beast; 85Nm is the most torque in this comparison. On steep climbs where other bikes had me working hard, the Look just powered up effortlessly. I'm talking 18% grades that I was conquering at conversational effort levels. The motor is whisper-quiet at low assist levels but does emit a noticeable hum under max power. The 630Wh battery is generous. I recorded 72 miles in eco mode, 58 miles in trail mode, and 44 miles in boost mode across varied terrain. That's all-day range for most riders.",
 
-          "Look's endurance geometry features a high stack and short reach that puts you in an upright, comfortable position. After 70-mile rides, my back felt fine—no strain or stiffness. The Shimano Ultegra mechanical groupset shifts reliably, though it feels dated compared to electronic options. Those Mavic Aksium wheels are budget-oriented but perfectly adequate for the target audience. The display is simple—almost too simple—but that might appeal to riders who don't want tech complications. The overall package feels refined and reliable rather than exciting."
+          "Look's endurance geometry features a high stack and short reach that puts you in an upright, comfortable position. After 70-mile rides, my back felt fine. No strain or stiffness. The Shimano Ultegra mechanical groupset shifts reliably, though it feels dated compared to electronic options. Those Mavic Aksium wheels are budget-oriented but perfectly adequate for the target audience. The display is simple, almost too simple, but that might appeal to riders who don't want tech complications. The overall package feels refined and reliable rather than exciting."
         ],
 
         whoItsBestFor: "Buy the E-765 Optimum if you're over 50 and want to keep riding without pain. This bike removes barriers—knee issues, back problems, declining fitness—without feeling like cheating. It's perfect for riders who want to join group rides again, complete century rides they thought were behind them, or simply ride without suffering the next day. The upright position, generous battery, and powerful motor make this the most approachable bike in this comparison for less-experienced or returning cyclists.",
