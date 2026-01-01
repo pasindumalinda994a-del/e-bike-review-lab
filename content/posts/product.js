@@ -7081,8 +7081,8 @@ const products = [
     // ============================================
     id: "trek-rail-8-gen5",
     slug: "trek-rail-8-gen5-review",
-    categorySlug: "electric-mountain-bikes",
-    category: "Electric Mountain Bikes",
+    categorySlug: "electric-bikes",
+    category: "Electric Bikes",
     contentType: "product",
     
     // ============================================
