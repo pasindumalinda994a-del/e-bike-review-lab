@@ -96,13 +96,13 @@ export default function ProductArticle({ post, publishedDate }) {
           {(introduction.thesis || introduction.paragraphs?.length) && (
             <div className="space-y-4 rounded-xl border border-white/10 bg-white/5 p-6 text-base leading-[1.75] tracking-[0.01em] text-white/90 backdrop-blur-sm sm:p-8 sm:text-lg">
               {introduction.thesis && (
-                <p className="text-lg font-semibold sm:text-xl">
+                <p className="text-justify text-lg font-semibold sm:text-xl">
                   {introduction.thesis}
                 </p>
               )}
               {Array.isArray(introduction.paragraphs) &&
                 introduction.paragraphs.map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
+                  <p key={index} className="text-justify">{paragraph}</p>
                 ))}
             </div>
           )}
@@ -237,7 +237,7 @@ export default function ProductArticle({ post, publishedDate }) {
                       {group.bullets.map((bullet, bulletIndex) => (
                         <li key={bulletIndex} className="flex gap-2">
                           <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#3e3ce7]" />
-                          <span>{renderMarkdownBold(bullet)}</span>
+                          <span className="text-justify">{renderMarkdownBold(bullet)}</span>
                         </li>
                       ))}
                     </ul>
@@ -289,7 +289,7 @@ export default function ProductArticle({ post, publishedDate }) {
             title="Who This Product Is Best For"
           />
           <div className="rounded-2xl border-2 border-[#3e3ce7]/20 bg-gradient-to-br from-[#3e3ce7]/5 to-white p-6 shadow-sm sm:p-8">
-            <p className="text-base leading-[1.75] tracking-[0.01em] text-[#4b5563] sm:text-lg">
+            <p className="text-justify text-base leading-[1.75] tracking-[0.01em] text-[#4b5563] sm:text-lg">
               {whoItsBestFor.text}
             </p>
           </div>
@@ -351,7 +351,7 @@ export default function ProductArticle({ post, publishedDate }) {
                   {conclusion.paragraphs.map((paragraph, index) => (
                     <p
                       key={index}
-                      className="text-lg leading-[1.75] tracking-[0.01em] text-white/95 sm:text-xl"
+                      className="text-justify text-lg leading-[1.75] tracking-[0.01em] text-white/95 sm:text-xl"
                     >
                       {renderMarkdownBold(paragraph)}
                     </p>
@@ -360,7 +360,7 @@ export default function ProductArticle({ post, publishedDate }) {
               )}
             {conclusion.verdict && (
               <div className="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:p-8">
-                <p className="text-base leading-[1.75] tracking-[0.01em] text-white/90 sm:text-lg">
+                <p className="text-justify text-base leading-[1.75] tracking-[0.01em] text-white/90 sm:text-lg">
                   {conclusion.verdict}
                 </p>
               </div>
@@ -449,10 +449,10 @@ export default function ProductArticle({ post, publishedDate }) {
                     >
                       {Array.isArray(answer) ? (
                         answer.map((paragraph, pIndex) => (
-                          <p key={pIndex}>{paragraph}</p>
+                          <p key={pIndex} className="text-justify">{paragraph}</p>
                         ))
                       ) : (
-                        <p>{answer}</p>
+                        <p className="text-justify">{answer}</p>
                       )}
                     </div>
                   )}
@@ -496,7 +496,7 @@ export default function ProductArticle({ post, publishedDate }) {
                         {link.text}
                       </p>
                       {link.description && (
-                        <p className="mt-1 text-sm text-[#6b7280]">
+                        <p className="text-justify mt-1 text-sm text-[#6b7280]">
                           {link.description}
                         </p>
                       )}
@@ -611,7 +611,7 @@ function ImageSection({ heading, description, image, alt }) {
           />
         </div>
         {description && (
-          <figcaption className="border-t border-[#e5e7eb] bg-[#f9fafb] px-4 py-3 text-sm leading-relaxed text-[#4b5563] sm:px-5 sm:py-4">
+          <figcaption className="text-justify border-t border-[#e5e7eb] bg-[#f9fafb] px-4 py-3 text-sm leading-relaxed text-[#4b5563] sm:px-5 sm:py-4">
             {description}
           </figcaption>
         )}
@@ -631,7 +631,7 @@ function ContentSection({ label, title, paragraphs }) {
           {paragraphs.map((paragraph, index) => (
             <p
               key={index}
-              className="text-lg leading-[1.75] tracking-[0.01em] text-[#1f2937] sm:text-xl"
+              className="text-justify text-lg leading-[1.75] tracking-[0.01em] text-[#1f2937] sm:text-xl"
             >
               {renderMarkdownBold(paragraph)}
             </p>
@@ -680,7 +680,7 @@ function BenefitCard({ text, type }) {
           </svg>
         </span>
       </div>
-      <p className="text-sm leading-[1.7] tracking-[0.01em] text-[#374151] sm:text-base">
+      <p className="text-justify text-sm leading-[1.7] tracking-[0.01em] text-[#374151] sm:text-base">
         {renderMarkdownBold(text)}
       </p>
     </div>

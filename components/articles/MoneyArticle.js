@@ -78,10 +78,10 @@ export default function MoneyArticle({ post, publishedDate }) {
           {introductionParagraphs.length || secondaryParagraphs.length ? (
             <div className="space-y-4 rounded-xl border border-white/10 bg-white/5 p-6 text-base leading-[1.75] tracking-[0.01em] text-white/90 backdrop-blur-sm sm:p-8 sm:text-lg">
               {introductionParagraphs.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
+                <p key={index} className="text-justify">{paragraph}</p>
               ))}
               {secondaryParagraphs.map((paragraph, index) => (
-                <p key={`secondary-${index}`}>{paragraph}</p>
+                <p key={`secondary-${index}`} className="text-justify">{paragraph}</p>
               ))}
             </div>
           ) : null}
@@ -124,7 +124,7 @@ export default function MoneyArticle({ post, publishedDate }) {
                 {post.topProductsIntroHeading}
               </h2>
             )}
-            <p className="text-base leading-[1.75] tracking-[0.01em] text-[#1f2937] sm:text-lg">
+            <p className="text-justify text-base leading-[1.75] tracking-[0.01em] text-[#1f2937] sm:text-lg">
               {post.topProductsIntro}
             </p>
           </div>
@@ -206,14 +206,14 @@ export default function MoneyArticle({ post, publishedDate }) {
                   </h3>
                   <div className="space-y-4">
                     {section.paragraphs?.map((paragraph, index) => (
-                      <p key={index} className="text-base leading-[1.75] tracking-[0.01em] text-white/90 sm:text-lg">
+                      <p key={index} className="text-justify text-base leading-[1.75] tracking-[0.01em] text-white/90 sm:text-lg">
                         {paragraph}
                       </p>
                     ))}
                     {section.bullets?.length ? (
                       <ul className="ml-6 space-y-3 text-base leading-[1.75] tracking-[0.01em] text-white/90 sm:text-lg">
                         {section.bullets.map((bullet, index) => (
-                          <li key={index} className="relative pl-6 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-white/70 before:content-['']">
+                          <li key={index} className="text-justify relative pl-6 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-white/70 before:content-['']">
                             {bullet}
                           </li>
                         ))}
@@ -291,10 +291,10 @@ export default function MoneyArticle({ post, publishedDate }) {
                     >
                       {Array.isArray(answer) ? (
                         answer.map((paragraph, pIndex) => (
-                          <p key={pIndex}>{paragraph}</p>
+                          <p key={pIndex} className="text-justify">{paragraph}</p>
                         ))
                       ) : (
-                        <p>{answer}</p>
+                        <p className="text-justify">{answer}</p>
                       )}
                     </div>
                   )}
@@ -338,7 +338,7 @@ export default function MoneyArticle({ post, publishedDate }) {
                         {link.text}
                       </span>
                       {link.description && (
-                        <p className="mt-1 text-sm leading-[1.7] tracking-[0.01em] text-[#6b7280]">{link.description}</p>
+                        <p className="text-justify mt-1 text-sm leading-[1.7] tracking-[0.01em] text-[#6b7280]">{link.description}</p>
                       )}
                     </div>
                   </Link>
