@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import gsap from 'gsap';
 import JsonLdSchema from '@/components/JsonLdSchema';
 import { buildContactPageSchema } from '@/lib/metadata';
 
@@ -14,16 +15,24 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
-    inquiryType: '',
     message: '',
+    agreeToTerms: false,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState('idle');
+  
+  // Refs for button animation
+  const submitButtonRef = useRef(null);
+  const submitTopTextRef = useRef(null);
+  const submitBottomTextRef = useRef(null);
+  const isInitialMount = useRef(true);
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    const { name, value, type, checked } = e.target;
+    setFormData((prev) => ({ 
+      ...prev, 
+      [name]: type === 'checkbox' ? checked : value 
+    }));
   };
 
   const handleSubmit = async (e) => {
@@ -35,8 +44,6 @@ export default function ContactPage() {
       const formDataToSend = new FormData();
       formDataToSend.append('name', formData.name);
       formDataToSend.append('email', formData.email);
-      formDataToSend.append('inquiryType', formData.inquiryType);
-      formDataToSend.append('subject', formData.subject);
       formDataToSend.append('message', formData.message);
 
       const response = await fetch('/contact/submit', {
@@ -49,7 +56,7 @@ export default function ContactPage() {
       if (result.success) {
         setIsSubmitting(false);
         setSubmitStatus('success');
-        setFormData({ name: '', email: '', subject: '', inquiryType: '', message: '' });
+        setFormData({ name: '', email: '', message: '', agreeToTerms: false });
         
         // Reset success message after 5 seconds
         setTimeout(() => setSubmitStatus('idle'), 5000);
@@ -66,29 +73,108 @@ export default function ContactPage() {
     }
   };
 
+  // GSAP animation for submit button
+  useEffect(() => {
+    const submitButton = submitButtonRef.current;
+    const submitTopText = submitTopTextRef.current;
+    const submitBottomText = submitBottomTextRef.current;
+
+    if (!submitButton || !submitTopText || !submitBottomText) return;
+
+    // Set initial state
+    if (isInitialMount.current) {
+      gsap.set(submitTopText, { y: 0, opacity: 1 });
+      gsap.set(submitBottomText, { y: "200%", opacity: 1 });
+      isInitialMount.current = false;
+    }
+
+    let submitHoverTl = null;
+
+    const handleSubmitMouseEnter = () => {
+      if (submitHoverTl) submitHoverTl.kill();
+      submitHoverTl = gsap.timeline();
+      submitHoverTl.to(submitTopText, {
+        y: "-200%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      submitHoverTl.to(submitBottomText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    const handleSubmitMouseLeave = () => {
+      if (submitHoverTl) submitHoverTl.kill();
+      submitHoverTl = gsap.timeline();
+      submitHoverTl.to(submitBottomText, {
+        y: "200%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      submitHoverTl.to(submitTopText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    const handleSubmitClick = () => {
+      if (submitHoverTl) submitHoverTl.kill();
+      submitHoverTl = gsap.timeline();
+      submitHoverTl.to(submitTopText, {
+        y: "-200%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      submitHoverTl.to(submitBottomText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    // Add event listeners
+    submitButton.addEventListener("mouseenter", handleSubmitMouseEnter);
+    submitButton.addEventListener("mouseleave", handleSubmitMouseLeave);
+    submitButton.addEventListener("click", handleSubmitClick);
+
+    // Cleanup
+    return () => {
+      submitButton.removeEventListener("mouseenter", handleSubmitMouseEnter);
+      submitButton.removeEventListener("mouseleave", handleSubmitMouseLeave);
+      submitButton.removeEventListener("click", handleSubmitClick);
+      if (submitHoverTl) submitHoverTl.kill();
+    };
+  }, []);
+
   return (
     <main className="mx-auto w-full max-w-6xl px-6 py-12 text-[#0C1412] md:px-12 lg:px-16 lg:py-20">
       <JsonLdSchema data={contactSchema} />
       
       {/* Header Section */}
       <header className="mb-12 text-center lg:mb-16">
-        <div className="inline-block mb-4">
-          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#3e3ce7] bg-[#3e3ce7]/10 px-4 py-2 rounded-full">
-            Get In Touch
-          </span>
-        </div>
-        <h1 className="text-4xl font-bold tracking-tight text-[#0C1412] md:text-5xl lg:text-6xl mb-4">
-          Contact Us
+        <h1 className="mx-auto max-w-3xl text-2xl font-bold tracking-tight text-[#000000] md:text-3xl lg:text-4xl mb-4">
+          We're Here to Help You Grow.
         </h1>
-        <p className="mx-auto max-w-2xl text-base leading-relaxed text-[#0C1412]/80 md:text-lg">
-          We love hearing from dedicated e-bike riders, brand partners, and readers.
-          Send us a message and the right teammate will get back within two business days.
+        <p className="mx-auto text-sm leading-normal text-black sm:text-base text-center max-w-2xl mb-2">
+          Have questions, ideas, or collaboration proposals?
+        </p>
+        <p className="mx-auto text-sm leading-normal text-black sm:text-base text-center max-w-2xl">
+          Reach out and let's connect.
         </p>
       </header>
 
       {/* Contact Form */}
-      <section className="mx-auto max-w-3xl">
-        <div className="rounded-3xl border border-[#3e3ce7]/15 bg-white p-8 shadow-[0_25px_50px_rgba(12,20,18,0.1)] md:p-10 lg:p-12">
+      <section className="mx-auto max-w-2xl">
+        <div className="rounded-lg bg-white p-8 md:p-10">
 
           {submitStatus === 'success' && (
             <div className="mb-6 rounded-xl bg-green-50 border border-green-200 p-4 flex items-start gap-3">
@@ -117,8 +203,8 @@ export default function ContactPage() {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name Field */}
             <div>
-              <label htmlFor="name" className="block text-sm font-semibold text-[#0C1412] mb-2">
-                Full Name <span className="text-red-500">*</span>
+              <label htmlFor="name" className="block text-sm font-medium text-[#0C1412] mb-2">
+                Name
               </label>
               <input
                 id="name"
@@ -127,15 +213,15 @@ export default function ContactPage() {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="John Doe"
-                className="w-full rounded-xl border border-[#3e3ce7]/30 bg-white px-4 py-3 text-base text-[#0C1412] placeholder:text-[#0C1412]/40 transition-all focus:border-[#3e3ce7] focus:outline-none focus:ring-2 focus:ring-[#3e3ce7]/30"
+                placeholder="Jane Smith"
+                className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 text-base text-[#0C1412] placeholder:text-gray-400 transition-all focus:border-gray-400 focus:outline-none focus:bg-white"
               />
             </div>
 
             {/* Email Field */}
             <div>
-              <label htmlFor="email" className="block text-sm font-semibold text-[#0C1412] mb-2">
-                Email Address <span className="text-red-500">*</span>
+              <label htmlFor="email" className="block text-sm font-medium text-[#0C1412] mb-2">
+                Email
               </label>
               <input
                 id="email"
@@ -144,55 +230,15 @@ export default function ContactPage() {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="john@example.com"
-                className="w-full rounded-xl border border-[#3e3ce7]/30 bg-white px-4 py-3 text-base text-[#0C1412] placeholder:text-[#0C1412]/40 transition-all focus:border-[#3e3ce7] focus:outline-none focus:ring-2 focus:ring-[#3e3ce7]/30"
-              />
-            </div>
-
-            {/* Inquiry Type Field */}
-            <div>
-              <label htmlFor="inquiryType" className="block text-sm font-semibold text-[#0C1412] mb-2">
-                Inquiry Type <span className="text-red-500">*</span>
-              </label>
-              <select
-                id="inquiryType"
-                name="inquiryType"
-                required
-                value={formData.inquiryType}
-                onChange={handleChange}
-                className="w-full rounded-xl border border-[#3e3ce7]/30 bg-white px-4 py-3 text-base text-[#0C1412] transition-all focus:border-[#3e3ce7] focus:outline-none focus:ring-2 focus:ring-[#3e3ce7]/30 appearance-none cursor-pointer"
-              >
-                <option value="">Select an option</option>
-                <option value="general">General Inquiry</option>
-                <option value="partnership">Partnership Request</option>
-                <option value="editorial">Editorial Question</option>
-                <option value="support">Support</option>
-                <option value="feedback">Feedback</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            {/* Subject Field */}
-            <div>
-              <label htmlFor="subject" className="block text-sm font-semibold text-[#0C1412] mb-2">
-                Subject <span className="text-red-500">*</span>
-              </label>
-              <input
-                id="subject"
-                name="subject"
-                type="text"
-                required
-                value={formData.subject}
-                onChange={handleChange}
-                placeholder="Brief subject line"
-                className="w-full rounded-xl border border-[#3e3ce7]/30 bg-white px-4 py-3 text-base text-[#0C1412] placeholder:text-[#0C1412]/40 transition-all focus:border-[#3e3ce7] focus:outline-none focus:ring-2 focus:ring-[#3e3ce7]/30"
+                placeholder="jane@framer.com"
+                className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 text-base text-[#0C1412] placeholder:text-gray-400 transition-all focus:border-gray-400 focus:outline-none focus:bg-white"
               />
             </div>
 
             {/* Message Field */}
             <div>
-              <label htmlFor="message" className="block text-sm font-semibold text-[#0C1412] mb-2">
-                Message <span className="text-red-500">*</span>
+              <label htmlFor="message" className="block text-sm font-medium text-[#0C1412] mb-2">
+                Message
               </label>
               <textarea
                 id="message"
@@ -201,34 +247,56 @@ export default function ContactPage() {
                 rows={6}
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Tell us how we can help..."
-                className="w-full rounded-xl border border-[#3e3ce7]/30 bg-white px-4 py-3 text-base text-[#0C1412] placeholder:text-[#0C1412]/40 transition-all resize-none focus:border-[#3e3ce7] focus:outline-none focus:ring-2 focus:ring-[#3e3ce7]/30"
+                placeholder="Your message"
+                className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 text-base text-[#0C1412] placeholder:text-gray-400 transition-all resize-y focus:border-gray-400 focus:outline-none focus:bg-white"
               />
             </div>
 
             {/* Submit Button */}
             <button
+              ref={submitButtonRef}
               type="submit"
-              disabled={isSubmitting}
-              className="w-full inline-flex items-center justify-center rounded-xl bg-[#3e3ce7] px-6 py-4 text-base font-semibold text-white transition-all hover:bg-[#3e3ce7]/90 focus:outline-none focus:ring-2 focus:ring-[#3e3ce7] focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              disabled={isSubmitting || !formData.agreeToTerms}
+              className="inline-flex items-center justify-center gap-2 bg-black text-white px-5 py-2.5 rounded-md font-normal text-base relative overflow-hidden focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 disabled:bg-black disabled:opacity-70 disabled:cursor-not-allowed min-w-[140px]"
             >
-              {isSubmitting ? (
-                <>
-                  <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                  </svg>
-                  Sending...
-                </>
-              ) : (
-                <>
-                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                  </svg>
-                  Send Message
-                </>
-              )}
+              <span className="flex items-center relative">
+                {isSubmitting ? (
+                  'Submitting...'
+                ) : (
+                  <>
+                    <span ref={submitTopTextRef} className="block">
+                      Submit
+                    </span>
+                    <span ref={submitBottomTextRef} className="block absolute top-0 left-0 w-full">
+                      Submit
+                    </span>
+                  </>
+                )}
+              </span>
             </button>
+
+            {/* Terms and Privacy Checkbox */}
+            <div className="flex items-start gap-3">
+              <input
+                id="agreeToTerms"
+                name="agreeToTerms"
+                type="checkbox"
+                required
+                checked={formData.agreeToTerms}
+                onChange={handleChange}
+                className="mt-1 h-4 w-4 rounded border-gray-300 text-black focus:ring-2 focus:ring-black"
+              />
+              <label htmlFor="agreeToTerms" className="text-sm text-[#0C1412] leading-relaxed">
+                By clicking the Subscribe button, you acknowledge that you have read and agree to our{' '}
+                <a href="/privacy-policy" className="text-black underline hover:no-underline">
+                  Privacy Policy
+                </a>
+                {' '}and{' '}
+                <a href="/terms-of-use" className="text-black underline hover:no-underline">
+                  Terms Of Use
+                </a>
+              </label>
+            </div>
           </form>
         </div>
       </section>

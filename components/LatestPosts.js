@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 "use client";
 
 import Image from "next/image";
@@ -5,7 +6,7 @@ import Link from "next/link";
 import { useRef } from "react";
 import { gsap } from "gsap";
 
-// Get card image for category cards.
+// Get card image for post cards.
 function getCardImage(post) {
   return post?.cardImage ?? post?.heroImage ?? "/default-og.png";
 }
@@ -99,40 +100,78 @@ function formatDateAndAuthor(dateString, post) {
   }
 }
 
-// Category grid used on category landing pages with LatestPosts style.
-export default function CategoryGrid({ posts = [] }) {
-  if (!posts.length) {
-    return null;
-  }
+/**
+ * LatestPosts
+ *
+ * Highly customizable 3‑column latest posts grid.
+ * The component is intentionally class‑driven so you can easily
+ * override spacing, typography, colors, and layout from the parent.
+ *
+ * @param {Object} props
+ * @param {Array<Object>} props.posts - Array of post objects.
+ * @param {string} [props.heading='Latest posts'] - Section heading text.
+ * @param {number} [props.maxPosts=6] - Maximum number of posts to render.
+ * @param {string} [props.containerClassName] - Extra classes for the outer container.
+ * @param {string} [props.gridClassName] - Extra classes for the grid wrapper.
+ * @param {string} [props.cardClassName] - Extra classes applied to each card.
+ */
+export default function LatestPosts({
+  posts = [],
+  heading = "Latest posts",
+  maxPosts = 6,
+  containerClassName = "",
+  gridClassName = "",
+  cardClassName = "",
+}) {
+  const items = Array.isArray(posts) ? posts.slice(0, maxPosts) : [];
+
+  if (!items.length) return null;
 
   return (
-    <section aria-label="Category guides" className="mx-auto flex w-full max-w-[1440px] flex-col px-4 pt-8 pb-12 text-[#0C1412] sm:px-6 sm:pt-10 sm:pb-16 md:px-12 md:pt-12 md:pb-20 lg:px-16">
+    <section
+      aria-labelledby="latest-posts-heading"
+      className={`mx-auto flex w-full max-w-[1440px] flex-col px-4 py-12 text-[#0C1412] sm:px-6 sm:py-16 md:px-12 md:py-20 lg:px-16 ${containerClassName}`}
+    >
       <div className="mx-auto w-full max-w-7xl">
-        <div className="grid grid-cols-1 gap-2 sm:gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post, index) => {
+      <header className="mb-6 sm:mb-8">
+        <h2
+          id="latest-posts-heading"
+          className="font-inter text-2xl font-normal text-[#000000] sm:text-xl md:text-4xl tracking-[1.5em] leading-[2.5em]"
+        >
+          {heading}
+        </h2>
+      </header>
+
+      {/* 3‑column responsive grid */}
+      <div
+        className={`grid grid-cols-1 gap-2 sm:gap-4 md:grid-cols-2 lg:grid-cols-3 ${gridClassName}`}
+      >
+        {items.map((post, index) => {
+          const href =
+            post?.href ??
+            (post?.categorySlug && post?.slug
+              ? `/${post.categorySlug}/${post.slug}`
+              : "#");
+
           const description =
             post?.metaDescription ?? post?.introduction ?? post?.excerpt ?? "";
 
           return (
             <article
-              key={post.slug}
-              className="group flex h-full flex-col overflow-hidden rounded-lg bg-white"
+              key={post?.slug ?? post?.id ?? index}
+              className={`group flex h-full flex-col overflow-hidden rounded-lg bg-white ${cardClassName}`}
             >
-              <Link
-                href={`/${post.categorySlug}/${post.slug}`}
-                className="flex h-full flex-col"
-              >
+              <Link href={href} className="flex h-full flex-col">
                 {/* Image: 16:9 ratio with fully rounded corners */}
                 <div className="relative w-full overflow-hidden rounded-xl bg-[#0C1412]/5">
                   <div className="relative aspect-video w-full">
                     <AnimatedImage
                       src={getCardImage(post)}
-                      alt={post.title ?? "Category guide"}
+                      alt={post?.title ?? "Latest post"}
                       sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                       className="object-cover"
                       priority={index < 3}
                       quality={70}
-                      loading={index < 3 ? undefined : "lazy"}
                     />
                   </div>
 
@@ -153,7 +192,7 @@ export default function CategoryGrid({ posts = [] }) {
                   </p>
 
                   <h3 className="line-clamp-2 text-lg font-bold leading-tight text-[#000000] sm:text-base md:text-lg lg:text-lg xl:text-xl group-hover:underline">
-                    {post.title}
+                    {post?.title}
                   </h3>
 
                   {description ? (
@@ -161,14 +200,17 @@ export default function CategoryGrid({ posts = [] }) {
                       {description}
                     </p>
                   ) : null}
+
+                 
                 </div>
               </Link>
             </article>
           );
         })}
-        </div>
+      </div>
       </div>
     </section>
   );
 }
+
 

@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 import { categories } from "@/content/categories";
 
 // Global footer with navigation, resources, and contact details.
@@ -7,20 +11,112 @@ export default function SiteFooter() {
   const currentYear = new Date().getFullYear();
   const featuredCategories = categories.slice(0, 8);
 
+  // Refs for button animations
+  const newsletterLinkRef = useRef(null);
+  const newsletterTopTextRef = useRef(null);
+  const newsletterBottomTextRef = useRef(null);
+  const isInitialMount = useRef(true);
+
+  // GSAP animations for newsletter button
+  useEffect(() => {
+    const newsletterLink = newsletterLinkRef.current;
+    const newsletterTopText = newsletterTopTextRef.current;
+    const newsletterBottomText = newsletterBottomTextRef.current;
+
+    if (!newsletterLink || !newsletterTopText || !newsletterBottomText) return;
+
+    // Set initial state
+    if (isInitialMount.current) {
+      gsap.set(newsletterTopText, { y: 0, opacity: 1 });
+      gsap.set(newsletterBottomText, { y: "-100%", opacity: 1 });
+      isInitialMount.current = false;
+    }
+
+    let newsletterHoverTl = null;
+
+    // Newsletter link animations
+    const handleNewsletterMouseEnter = () => {
+      if (newsletterHoverTl) newsletterHoverTl.kill();
+      newsletterHoverTl = gsap.timeline();
+      newsletterHoverTl.to(newsletterTopText, {
+        y: "-200%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      newsletterHoverTl.to(newsletterBottomText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    const handleNewsletterMouseLeave = () => {
+      if (newsletterHoverTl) newsletterHoverTl.kill();
+      newsletterHoverTl = gsap.timeline();
+      newsletterHoverTl.to(newsletterBottomText, {
+        y: "200%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      newsletterHoverTl.to(newsletterTopText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    const handleNewsletterClick = () => {
+      if (newsletterHoverTl) newsletterHoverTl.kill();
+      newsletterHoverTl = gsap.timeline();
+      newsletterHoverTl.to(newsletterTopText, {
+        y: "-100%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      newsletterHoverTl.to(newsletterBottomText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    // Add event listeners
+    newsletterLink.addEventListener("mouseenter", handleNewsletterMouseEnter);
+    newsletterLink.addEventListener("mouseleave", handleNewsletterMouseLeave);
+    newsletterLink.addEventListener("click", handleNewsletterClick);
+
+    // Cleanup
+    return () => {
+      newsletterLink.removeEventListener("mouseenter", handleNewsletterMouseEnter);
+      newsletterLink.removeEventListener("mouseleave", handleNewsletterMouseLeave);
+      newsletterLink.removeEventListener("click", handleNewsletterClick);
+
+      if (newsletterHoverTl) newsletterHoverTl.kill();
+    };
+  }, []);
+
   return (
-    <footer className="border-t border-white/10 bg-[#0C1412] text-white">
-      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-4 md:gap-12 md:px-12 md:py-20 lg:px-16">
-        <div className="md:col-span-2">
+    <footer className=" bg-white ">
+      {/* Top section */}
+      <div className="mx-auto flex max-w-[1440px] flex-col gap-10 px-4 py-10 sm:px-6 sm:py-12 md:flex-row md:items-start md:justify-between md:px-12 lg:px-16">
+        {/* Brand + description + CTA */}
+        <div className="max-w-xl space-y-5 md:max-w-2xl">
           <Link href="/" className="inline-flex items-center">
             <Image
-              src="/EbikeLogo.png"
+              src="/EBRLLogo.png"
               alt="EBikeReviewLab"
-              width={180}
-              height={57}
-              className="h-16 w-auto sm:h-20"
+              width={190}
+              height={60}
+              className="h-12 w-auto sm:h-14 md:h-16"
             />
           </Link>
-          <p className="mt-4 text-xs italic leading-relaxed text-[#E8F1EE]/80 sm:mt-6 sm:text-sm">
+          <p className="text-sm leading-relaxed text-black sm:text-base">
             EBikeReviewLab is a participant in various affiliate partner programs
             with e-bike manufacturers and retailers, including Aventon, Ride1Up,
             Rad Power Bikes, Blix, and others. These affiliate programs are designed
@@ -30,61 +126,88 @@ export default function SiteFooter() {
             commissions help fund our product testing and editorial coverage.
           </p>
           <Link
+            ref={newsletterLinkRef}
             href="/newsletter"
-            className="mt-4 inline-flex items-center justify-center rounded-full bg-[#3e3ce7] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#3e3ce7]/30 transition-all duration-300 hover:bg-[#3e3ce7]/90 hover:shadow-xl hover:shadow-[#3e3ce7]/40 hover:scale-105 sm:mt-6 sm:px-7 sm:py-3.5 sm:text-base"
+            className="inline-flex items-center justify-start rounded-md bg-[#0C1412] px-5 py-2.5 text-base font-normal text-white relative overflow-hidden transition hover:bg-black"
           >
-            Get the Insider Brief
+            <span className="block relative">
+              <span ref={newsletterTopTextRef} className="block">
+                Get the Insider Brief
+              </span>
+              <span ref={newsletterBottomTextRef} className="block absolute top-0 left-0 w-full">
+                Get the Insider Brief
+              </span>
+            </span>
           </Link>
         </div>
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-wide text-[#E8F1EE]/80 sm:text-sm">
-            Explore
-          </p>
-          <ul className="mt-3 space-y-2.5 text-xs text-[#E8F1EE] sm:mt-4 sm:space-y-3 sm:text-sm">
-            {featuredCategories.map((category) => (
-              <li key={category.slug}>
+        {/* Link columns */}
+        <div className="flex w-full flex-col gap-8 text-sm text-black sm:flex-row sm:justify-end md:w-auto md:gap-16">
+          <div>
+            <p className="text-xs font-semibold tracking-[0.2em] text-black sm:text-sm">
+              Explore
+            </p>
+            <ul className="mt-3 space-y-2.5 sm:mt-4">
+              {featuredCategories.map((category) => (
+                <li key={category.slug}>
+                  <Link
+                    href={`/${category.slug}`}
+                    className="transition-colors "
+                  >
+                    {category.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-semibold tracking-[0.2em] text-black sm:text-sm">
+              Company
+            </p>
+            <ul className="mt-3 space-y-2.5 sm:mt-4 text-black">
+              <li>
                 <Link
-                  href={`/${category.slug}`}
-                  className="transition hover:text-[#3e3ce7]"
+                  href="/about"
+                  className="transition-colors "
                 >
-                  {category.name}
+                  About Us
                 </Link>
               </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-wide text-[#E8F1EE]/80 sm:text-sm">
-            Company
-          </p>
-          <ul className="mt-3 space-y-2.5 text-xs text-[#E8F1EE] sm:mt-4 sm:space-y-3 sm:text-sm">
-            <li>
-              <Link href="/about" className="transition hover:text-[#3e3ce7]">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="transition hover:text-[#3e3ce7]">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link href="/privacy" className="transition hover:text-[#3e3ce7]">
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link href="/terms" className="transition hover:text-[#3e3ce7]">
-                Terms &amp; Conditions
-              </Link>
-            </li>
-          </ul>
+              <li>
+                <Link
+                  href="/contact"
+                  className="transition-colors 0"
+                >
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/privacy"
+                  className="transition-colors hover:text-neutral-900"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/terms"
+                  className="transition-colors hover:text-neutral-900"
+                >
+                  Terms &amp; Conditions
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 text-xs text-[#E8F1EE]/70 sm:px-6 sm:py-8 sm:text-sm md:flex-row md:gap-6 md:px-12 lg:px-16">
-          <p>© {currentYear} EBikeReviewLab. All rights reserved.</p>
-          <p className="text-center text-[10px] text-[#E8F1EE]/60 sm:text-xs">
+
+      {/* Bottom bar */}
+      <div className="border-t border-neutral-200">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-neutral-500 sm:flex-row sm:px-6 sm:py-6 sm:text-sm md:px-12 lg:px-16">
+          <p className="order-2 text-center sm:order-1 sm:text-left">
+            © {currentYear} EBikeReviewLab. All rights reserved.
+          </p>
+          <p className="order-1 text-[10px] text-neutral-400 sm:order-2 sm:text-xs">
             Curated with care to keep riders informed and ready for the next
             charge.
           </p>

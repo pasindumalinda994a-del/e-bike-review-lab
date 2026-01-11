@@ -2,13 +2,10 @@ import { notFound } from "next/navigation";
 import {
   getAllBlogPosts,
   getPostByCategoryAndSlug,
-  getPostsByCategory,
-  getPostPlacements,
 } from "@/lib/mock-data";
 import MoneyArticle from "@/components/articles/MoneyArticle";
 import InformationalArticle from "@/components/articles/InformationalArticle";
 import ProductArticle from "@/components/articles/ProductArticle";
-import SidebarContent from "@/components/SidebarContent";
 import JsonLdSchema from "@/components/JsonLdSchema";
 import HomeNewsletter from "@/components/HomeNewsletter";
 import { buildArticleMetadata, buildArticleSchemas, buildArticleSeo } from "@/lib/seo-helpers";
@@ -69,36 +66,6 @@ export default async function CategoryPostPage({ params }) {
 
   const articleSchema = buildArticleSchemas(post, { seo });
 
-  const categoryPosts = await getPostsByCategory(category);
-  const relatedPosts = categoryPosts.filter((item) => item.slug !== slug);
-  const postPlacements = await getPostPlacements(category, slug);
-  // No mapping needed - components use cardImage directly
-
-  const dedupeBySlug = (items) => {
-    const seen = new Set();
-    return items.filter((item) => {
-      if (!item?.slug) {
-        return false;
-      }
-      if (seen.has(item.slug)) {
-        return false;
-      }
-      seen.add(item.slug);
-      return true;
-    });
-  };
-
-  const fallbackSidebarCandidates = dedupeBySlug([
-    ...postPlacements.related,
-    ...relatedPosts,
-  ]);
-
-  const sidebarSource = postPlacements.sidebar.length
-    ? postPlacements.sidebar
-    : fallbackSidebarCandidates;
-
-  const sidebarPopular = dedupeBySlug(sidebarSource).slice(0, 6);
-
   let articleContent;
   if (post.contentType === "information") {
     const supportingProducts = post.products?.slice(0, 3) ?? [];
@@ -120,19 +87,10 @@ export default async function CategoryPostPage({ params }) {
   }
 
   return (
-    <main className="flex min-h-screen flex-col bg-white">
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 py-12 text-[#0C1412] sm:gap-20 sm:px-6 sm:py-16 md:gap-24 md:px-12 md:py-20 lg:px-16">
-        <JsonLdSchema data={articleSchema} />
-        <div className="grid gap-12 lg:grid-cols-[minmax(0,3fr)_minmax(0,1.1fr)] lg:gap-16 lg:items-start">
-          <div className="space-y-12 sm:space-y-16">{articleContent}</div>
-          <aside className="lg:sticky lg:top-12 lg:self-start lg:max-h-[calc(100vh-3rem)] lg:overflow-y-auto">
-            <SidebarContent popular={sidebarPopular} />
-          </aside>
-        </div>
-      </div>
-      <div className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 sm:py-16 md:px-12 md:py-20 lg:px-16">
-        <HomeNewsletter />
-      </div>
+    <main>
+      <JsonLdSchema data={articleSchema} />
+      {articleContent}
+      <HomeNewsletter />
     </main>
   );
 }

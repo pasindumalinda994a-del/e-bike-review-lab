@@ -5,6 +5,7 @@ import HomeNewsletter from '@/components/HomeNewsletter';
 import HomeShowcase from '@/components/HomeShowcase';
 import HomeStoryBanner from '@/components/HomeStoryBanner';
 import JsonLdSchema from '@/components/JsonLdSchema';
+import LatestPosts from '@/components/LatestPosts';
 import { placements as placementConfig } from '@/content/placements';
 import { getAllBlogPosts, getHomePlacements } from '@/lib/mock-data';
 import { buildWebsiteSchema } from '@/lib/metadata';
@@ -34,59 +35,54 @@ export default async function HomePage() {
     title: post.h1,
     description: post.introduction ?? post.metaDescription ?? '',
     href: `/${post.categorySlug}/${post.slug}`,
+    date: post.publishedAt,
+    author: post.author,
+    category: post.category,
+    sponsored: post.sponsored,
   }));
   const heroImages = heroPosts.map(getHeroImage);
 
-  const defaultLatest = moneyPosts.slice(0, 4);
-  const defaultSidebar = moneyPosts.slice(4, 8);
+  const defaultHighlight = moneyPosts[0] ?? null;
+  const defaultSidebar = moneyPosts.slice(1, 4);
 
   const homeShowcaseConfig = placementConfig.home?.showcase ?? {};
 
-  const hasCustomLatest = Object.prototype.hasOwnProperty.call(homeShowcaseConfig, 'latest');
+  const hasCustomHighlight = Object.prototype.hasOwnProperty.call(homeShowcaseConfig, 'highlight');
   const hasCustomSidebar = Object.prototype.hasOwnProperty.call(homeShowcaseConfig, 'sidebar');
 
-  const showcaseLatest = hasCustomLatest
-    ? homePlacements.showcase.latest ?? []
-    : defaultLatest;
+  const showcaseHighlight = hasCustomHighlight
+    ? homePlacements.showcase.highlight
+    : defaultHighlight;
 
   const showcaseSidebar = hasCustomSidebar
     ? homePlacements.showcase.sidebar ?? []
-    : (defaultSidebar.length ? defaultSidebar : defaultLatest);
+    : defaultSidebar;
 
   const galleryPosts = homePlacements.gallery.length
     ? homePlacements.gallery
     : infoPosts.slice(0, 4);
 
   return (
-    <main className="flex min-h-screen flex-col bg-white">
+    <main className="flex min-h-screen flex-col bg-[#F5F5F5]">
       <JsonLdSchema data={buildWebsiteSchema()} />
       {heroPrimary ? (
-        <div className="relative left-1/2 right-1/2 w-screen -translate-x-1/2">
-          <Hero
-            title={homeSeo.heroHeading}
-            description={homeSeo.heroSubheading}
-            images={heroImages.length ? heroImages : [getHeroImage(heroPrimary)]}
-            slideContent={heroSlideContent}
-          />
-        </div>
-      ) : null}
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 py-12 text-[#0C1412] sm:gap-20 sm:px-6 sm:py-16 md:gap-24 md:px-12 md:py-20 lg:px-16">
-      <HomeShowcase
-        latest={showcaseLatest}
-        sidebarPopular={showcaseSidebar}
-      />
-      </div>
-      <div className="my-8 sm:my-12 md:my-16">
-        <HomeStoryBanner 
-          video="/videos/ebike-vedio.mp4"
-          heading="Experience the Future of Electric Biking"
+        <Hero
+          title={homeSeo.heroHeading}
+          description={homeSeo.heroSubheading}
+          images={heroImages.length ? heroImages : [getHeroImage(heroPrimary)]}
+          slideContent={heroSlideContent}
         />
-      </div>
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 py-12 text-[#0C1412] sm:gap-20 sm:px-6 sm:py-16 md:gap-24 md:px-12 md:py-20 lg:px-16">
+      ) : null}
+      <HomeShowcase
+        highlight={showcaseHighlight}
+        sidebar={showcaseSidebar}
+      />
       <HomeCategories />
-      <HomeImageGallery posts={galleryPosts} />
+      <LatestPosts
+        posts={moneyPosts}
+        heading="Latest posts"
+      />
       <HomeNewsletter />
-      </div>
     </main>
   );
 }

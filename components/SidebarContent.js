@@ -1,57 +1,93 @@
 import Link from "next/link";
 import Image from "next/image";
+import { categories } from "../content/categories";
+import { getSidebarFeaturedPosts } from "../lib/mock-data";
+import FeaturedPostsCarousel from "./FeaturedPostsCarousel";
 
-// Generic list of curated posts for sidebar usage.
-export default function SidebarContent({ popular = [] }) {
-  if (!popular.length) {
-    return null;
-  }
-
-  const getCardImage = (post) => post?.cardImage ?? "/default-og.png";
-
-  const renderList = (items) => (
-    <ul className="space-y-4 sm:space-y-5">
-      {items.map((post) => (
-        <li key={post.slug}>
-          <Link
-            href={`/${post.categorySlug}/${post.slug}`}
-            className="group flex gap-3 rounded-xl border border-[#0C1412]/10 bg-white p-3 shadow-sm transition-all duration-300 hover:border-[#3e3ce7]/30 hover:shadow-md hover:shadow-[#3e3ce7]/10 hover:-translate-y-0.5 sm:gap-4 sm:rounded-2xl sm:p-4"
-          >
-            <div className="relative aspect-[4/3] w-20 flex-shrink-0 overflow-hidden rounded-lg bg-[#0C1412]/5 sm:w-24">
-              <Image
-                src={getCardImage(post)}
-                alt={post.title}
-                fill
-                sizes="(max-width: 640px) 80px, 96px"
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                loading="lazy"
-                quality={75}
-              />
-            </div>
-            <div className="flex min-w-0 flex-1 flex-col justify-center">
-              <span className="line-clamp-3 text-sm font-semibold leading-snug tracking-tight text-[#0C1412] transition-colors duration-300 group-hover:text-[#3e3ce7] sm:text-base">
-                {post.title}
-              </span>
-            </div>
-          </Link>
-        </li>
-      ))}
-    </ul>
-  );
+// About sidebar card component matching the design
+export default async function SidebarContent() {
+  // Get featured posts from placements
+  const featuredPosts = await getSidebarFeaturedPosts();
 
   return (
-    <aside className="flex flex-col self-start">
-      <section aria-labelledby="popular-content" className="flex flex-col">
-        <h3
-          id="popular-content"
-          className="sticky top-0 z-10 bg-white pb-5 text-xs font-semibold uppercase tracking-[0.4em] text-[#3e3ce7] sm:pb-6 sm:text-sm"
-        >
-          Popular Content
+    <aside className="flex flex-col self-start space-y-6">
+      <div className="rounded-lg bg-white p-6">
+        {/* ABOUT Heading */}
+        <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-gray-700">
+          ABOUT
         </h3>
-        <div className="space-y-4 sm:space-y-5">
-          {renderList(popular)}
+
+        {/* Logo and Brand Name */}
+        <div className="mb-6">
+          {/* Logo */}
+          <div className="relative h-12 w-auto">
+            <Image
+              src="/EBRLLogo.png"
+              alt="EBikeReviewLab Logo"
+              width={150}
+              height={48}
+              className="object-contain h-auto w-auto max-h-12"
+              priority
+            />
+          </div>
         </div>
-      </section>
+
+        {/* Description Text */}
+        <p className="mb-6 text-sm leading-relaxed text-black">
+          EBikeReviewLab is a dedicated electric bike review website created to help riders find the best e-bikes for commuting, city riding, fitness, and everyday use. We provide clear, reliable information that helps people make confident buying decisions in a fast-growing and competitive e-bike market.
+        </p>
+
+        
+      </div>
+
+      {/* Featured Posts Section */}
+      <div className="rounded-lg bg-white p-6">
+        <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-gray-700">
+          FEATURED POSTS
+        </h3>
+
+        {/* Featured Posts Carousel */}
+        {featuredPosts.length > 0 ? (
+          <FeaturedPostsCarousel posts={featuredPosts} />
+        ) : null}
+      </div>
+
+      {/* Explore Topics Section */}
+      <div className="rounded-lg bg-white p-8">
+        <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-gray-700">
+          EXPLORE TOPICS
+        </h3>
+
+        {/* Topics List */}
+        <div className="space-y-5">
+          {categories.map((category) => (
+            <Link
+              key={category.slug}
+              href={`/${category.slug}`}
+              className="group flex gap-3"
+            >
+              <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-lg">
+                <Image
+                  src={category.heroImage}
+                  alt={category.name}
+                  fill
+                  sizes="96px"
+                  className="object-cover transition-transform group-hover:scale-105"
+                  quality={75}
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h4 className="text-base font-light text-black mb-1">
+                  {category.name}
+                </h4>
+                <p className="text-base text-gray-600 leading-relaxed line-clamp-2">
+                  {category.description}
+                </p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
     </aside>
   );
 }

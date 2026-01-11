@@ -1,86 +1,59 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-// Animated hero used at the top of every category page.
-export default function CategoryHero({ categoryName, image }) {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setIsLoaded(true), 150);
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      clearTimeout(timer);
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+// Category hero with breadcrumb navigation, square image, and title/description layout.
+export default function CategoryHero({ categoryName, image, description }) {
   return (
-    <section className="relative isolate flex h-[60vh] min-h-[400px] w-screen overflow-hidden bg-[#0C1412] text-white sm:h-[70vh] sm:min-h-[520px] md:h-[80vh]">
-      {image && (
-        <div
-          className="absolute inset-0 transition-transform duration-[50ms] will-change-transform"
-          style={{
-            transform: `translateY(${scrollY * 0.3}px) scale(1.12)`,
-          }}
-          aria-hidden
-        >
-          <Image
-            src={image}
-            alt=""
-            fill
-            sizes="100vw"
-            className="object-cover"
-            priority
-            quality={75}
-          />
-        </div>
-      )}
+    <section className="mx-auto flex w-full max-w-[1440px] flex-col px-4 pt-12 pb-0 text-[#0C1412] sm:px-6 sm:pt-16 sm:pb-2 md:px-12 md:pt-20 md:pb-4 lg:px-16 bg-[#F5F5F5]">
+      <div className="mx-auto w-full max-w-7xl">
+        {/* Breadcrumb Navigation */}
+        <nav className="mb-6 sm:mb-8" aria-label="Breadcrumb">
+          <ol className="flex items-center gap-2 text-sm text-[#666666]">
+            <li>
+              <Link
+                href="/"
+                className="transition-colors hover:text-[#0C1412]"
+              >
+                Home
+              </Link>
+            </li>
+            <li className="text-[#999999]">/</li>
+            <li className="text-[#0C1412] font-medium" aria-current="page">
+              {categoryName}
+            </li>
+          </ol>
+        </nav>
 
-      {/* Overlay Gradients */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/80" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/40" />
-      <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#050505]/90 via-[#0F1412]/50 to-transparent"
-        aria-hidden
-      />
+        {/* Main Content: Image and Text */}
+        <div className="flex flex-row gap-4 sm:gap-8 md:gap-10">
+          {/* Square Image Container */}
+          {image && (
+            <div className="relative aspect-square w-[130px] flex-shrink-0 overflow-hidden rounded-lg bg-[#E5E5E5] sm:w-[100px] md:w-[130px] lg:w-[160px]">
+              <Image
+                src={image}
+                alt={categoryName}
+                fill
+                sizes="(max-width: 640px) 130px, (max-width: 768px) 100px, (max-width: 1024px) 130px, 160px"
+                className="object-cover"
+                priority
+                quality={75}
+              />
+            </div>
+          )}
 
-      <div className="relative z-10 flex h-full w-full items-center justify-center px-4 pb-16 pt-20 sm:px-6 sm:pb-20 sm:pt-28 md:px-10 lg:px-16">
-        <h1
-          className={`max-w-4xl text-center text-3xl font-extrabold leading-[1.1] tracking-[-0.02em] text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)] transition-all duration-700 delay-200 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl ${
-            isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-          }`}
-        >
-          {categoryName}
-        </h1>
-      </div>
-
-      <div
-        className={`absolute bottom-6 left-1/2 flex -translate-x-1/2 flex-col items-center text-[10px] font-medium uppercase tracking-[0.3em] text-white/70 transition-all duration-700 delay-500 sm:bottom-10 sm:text-xs sm:tracking-[0.4em] ${
-          isLoaded ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <span>Scroll to view guides</span>
-        <div className="mt-2 flex flex-col items-center sm:mt-3">
-          <span className="h-6 w-px bg-white/40 sm:h-8" />
-          <svg
-            className="mt-2 h-3 w-3 animate-bounce sm:mt-3 sm:h-4 sm:w-4"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            aria-hidden
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
-            />
-          </svg>
+          {/* Title and Description */}
+          <div className="flex flex-col justify-center max-w-md">
+            <h1 className="mb-4 text-xl font-bold leading-tight text-[#0C1412] sm:text-2xl md:text-3xl lg:text-4xl">
+              {categoryName}
+            </h1>
+            {description && (
+              <p className="text-base leading-relaxed text-[#666666] sm:text-base md:text-md">
+                {description}
+              </p>
+            )}
+          </div>
         </div>
       </div>
     </section>

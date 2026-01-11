@@ -1,3 +1,7 @@
+"use client";
+
+import AnimatedButton from '@/components/AnimatedButton';
+
 /**
  * Renders star rating display.
  *
@@ -116,18 +120,19 @@ export default function ComparisonTable({ products, comparison }) {
 
   return (
     <section className="my-8 sm:my-12" aria-labelledby="comparison-table">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <h2 id="comparison-table" className="text-2xl font-bold text-[#0C1412] sm:text-3xl">
-          {comparisonTitle}
-        </h2>
-        {comparisonDescription && (
-          <p className="text-sm text-[#374151] sm:text-base">
-            {comparisonDescription}
-          </p>
-        )}
-      </div>
-      <div className="mt-4 sm:mt-5 overflow-x-auto rounded-2xl border border-[#3e3ce7]/20 shadow-[0_20px_35px_rgba(12,20,18,0.35)] -mx-4 sm:mx-0">
-        <table className="min-w-full divide-y divide-[#3e3ce7]/10 bg-white">
+      <div className="max-w-4xl">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <h2 id="comparison-table" className="text-2xl font-bold text-[#0C1412] sm:text-3xl text-left">
+            {comparisonTitle}
+          </h2>
+          {comparisonDescription && (
+            <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
+              {comparisonDescription}
+            </p>
+          )}
+        </div>
+        <div className="mt-4 sm:mt-5 overflow-x-auto rounded-lg">
+        <table className="min-w-full bg-white">
           <caption className="sr-only">
             {comparisonDescription || `Comparison table: ${comparisonTitle}`}
           </caption>
@@ -159,7 +164,7 @@ export default function ComparisonTable({ products, comparison }) {
               </th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-[#3e3ce7]/10">
+          <tbody>
             {comparisonData.map((row) => {
               // Get rating from row data first, then fallback to products array
               const product = productMap.get(row.model);
@@ -188,14 +193,14 @@ export default function ComparisonTable({ products, comparison }) {
                   </td>
                   <td className="py-3 px-4 sm:py-4 sm:px-6">
                     {row.affiliateLink && ctaLabel && (
-                      <a
+                      <AnimatedButton
                         href={row.affiliateLink}
-                        target="_blank"
+                        external
                         rel="sponsored nofollow noopener"
-                        className="inline-flex items-center justify-center rounded-full bg-[#3e3ce7] px-5 py-2.5 text-xs font-semibold text-white shadow-lg shadow-[#3e3ce7]/30 transition-all duration-300 hover:bg-[#3e3ce7]/90 hover:shadow-xl hover:shadow-[#3e3ce7]/40 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#3e3ce7] focus:ring-offset-2 sm:px-6 sm:py-3 sm:text-sm"
+                        className="text-xs sm:text-sm"
                       >
                         {ctaLabel}
-                      </a>
+                      </AnimatedButton>
                     )}
                   </td>
                 </tr>
@@ -203,6 +208,7 @@ export default function ComparisonTable({ products, comparison }) {
             })}
           </tbody>
         </table>
+        </div>
       </div>
     </section>
   );

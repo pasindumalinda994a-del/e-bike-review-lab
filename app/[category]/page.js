@@ -2,13 +2,11 @@ import CategoryGrid from '@/components/CategoryGrid';
 import CategoryHero from '@/components/CategoryHero';
 import HomeNewsletter from '@/components/HomeNewsletter';
 import JsonLdSchema from '@/components/JsonLdSchema';
-import SidebarContent from '@/components/SidebarContent';
 import { notFound } from 'next/navigation';
 import {
   getAllCategories,
   getPostsByCategory,
   getCategoryMeta,
-  getCategoryPlacements,
 } from '@/lib/mock-data';
 import { buildCategoryMetadata, buildCategorySchemas, buildCategorySeo } from '@/lib/seo-helpers';
 
@@ -47,7 +45,6 @@ export default async function CategoryPage({ params }) {
   const { category } = await params;
   const posts = await getPostsByCategory(category);
   const categoryMeta = await getCategoryMeta(category);
-  const categoryPlacements = await getCategoryPlacements(category);
   const seo = buildCategorySeo({ categorySlug: category, categoryMeta, posts });
 
   if (!posts.length) {
@@ -59,29 +56,18 @@ export default async function CategoryPage({ params }) {
     { seo },
   );
 
-  const sidebarSource = categoryPlacements.sidebar.length
-    ? categoryPlacements.sidebar
-    : posts.slice(0, 4);
-  const sidebarPopular = sidebarSource;
-
   return (
-    <main className="flex min-h-screen flex-col bg-white">
+    <main>
       <JsonLdSchema data={categorySchemas} />
-      <div className="relative left-1/2 right-1/2 w-screen -translate-x-1/2">
-        <CategoryHero
-          categoryName={seo.heroHeading}
-          image={seo.heroImage}
-        />
-      </div>
+      <CategoryHero
+        categoryName={seo.heroHeading}
+        image={seo.heroImage}
+        description={categoryMeta?.description}
+      />
 
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 py-12 text-[#0C1412] sm:gap-20 sm:px-6 sm:py-16 md:gap-24 md:px-12 md:py-20 lg:px-16">
-        <div className="grid gap-12 lg:grid-cols-[minmax(0,3fr)_minmax(0,1.1fr)] lg:gap-16">
-          <CategoryGrid posts={posts} />
-          <SidebarContent popular={sidebarPopular} />
-        </div>
+      <CategoryGrid posts={posts} />
 
-        <HomeNewsletter />
-      </div>
+      <HomeNewsletter />
     </main>
   );
 }

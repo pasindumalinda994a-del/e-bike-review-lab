@@ -66,7 +66,6 @@ const money = [
     // ============================================
     topProductsHeading: "The 10 Best Electric Bikes I've Actually Tested",
     topProductsIntro: "After months of testing everything from budget commuters to premium mountain e-bikes, these ten stood out. I ranked them based on real-world performance, value for money, and how well they match specific rider needs. You'll notice I didn't just crown one \"best overall\" because honestly, the right bike depends entirely on what you're using it for. A cargo hauler for grocery runs needs completely different features than a mountain bike built for technical trails.",
-    topProductsIntroLabel: "What to Expect",
     topProductsIntroHeading: "How I Tested These Bikes",
     productCtaLabel: "Check Current Price",
 
@@ -584,7 +583,6 @@ const money = [
     // 8. BUYER'S GUIDE
     // ============================================
     buyersGuideTitle: "Complete Buyer's Guide: Everything You Need Before Buying",
-    buyersGuideLabel: "Buyer's Guide",
     buyersGuideImage: "/images/guild/electric-bikes.webp",
     buyersGuideImageAlt: "Electric bike components including motor, battery, and drivetrain explained",
 
@@ -679,7 +677,6 @@ const money = [
     // 9. FAQ SECTION
     // ============================================
     faqTitle: "Your Electric Bike Questions Answered",
-    faqLabel: "FAQ",
 
     faq: [
       {
@@ -1709,7 +1706,6 @@ const money = [
     // ============================================
     topProductsHeading: "The 10 Best Electric Folding Bikes I Actually Tested",
     topProductsIntro: "Ranking folding e-bikes isn't about specs alone; it's about real-world usability. I evaluated each bike on five critical factors: how easily it folds and carries, whether it fits riders of different heights, actual battery performance versus manufacturer claims, ride quality on varied terrain, and whether the price matches the experience. The winners here excel in multiple categories while offering genuine value for their price point.",
-    topProductsIntroLabel: "What to Expect",
     topProductsIntroHeading: "How We Ranked These Bikes",
     productCtaLabel: "Check Current Price",
 
@@ -2229,7 +2225,6 @@ const money = [
     // 8. BUYER'S GUIDE
     // ============================================
     buyersGuideTitle: "Complete Buyer's Guide: Everything You Need to Know",
-    buyersGuideLabel: "Buyer's Guide",
     buyersGuideImage: "/images/guild/electric-folding-bikes.webp",
     buyersGuideImageAlt: "Electric folding bike features and components labeled for buyers",
 
@@ -2319,7 +2314,6 @@ const money = [
     // 9. FAQ SECTION
     // ============================================
     faqTitle: "Frequently Asked Questions",
-    faqLabel: "FAQ",
 
     faq: [
       {
@@ -3319,7 +3313,6 @@ const money = [
     // ============================================
     topProductsHeading: "The 10 Best Electric Cargo Bikes I've Actually Tested",
     topProductsIntro: "I ranked these bikes based on real-world performance over hundreds of test miles. My criteria? How they handle when fully loaded, whether they actually hit their advertised range, build quality, and whether they make you want to ride them every day. The top spots went to bikes that excel at their intended purpose, not just bikes with impressive spec sheets.",
-    topProductsIntroLabel: "What to Expect",
     topProductsIntroHeading: "How I Tested These Bikes",
     productCtaLabel: "Check Current Price",
     
@@ -3930,7 +3923,6 @@ const money = [
     // 8. BUYER'S GUIDE
     // ============================================
     buyersGuideTitle: "Complete Buyer's Guide: Everything You Need Before You Buy",
-    buyersGuideLabel: "Buyer's Guide",
     buyersGuideImage: "/images/products/cargo-bikes-buyers-guide.webp",
     buyersGuideImageAlt: "Diagram showing different electric cargo bike styles and configurations",
     
@@ -4026,7 +4018,6 @@ const money = [
     // 9. FAQ SECTION
     // ============================================
     faqTitle: "Frequently Asked Questions",
-    faqLabel: "FAQ",
     
     faq: [
       {
@@ -4784,7 +4775,6 @@ const money = [
     // 8. BUYER'S GUIDE
     // ============================================
     buyersGuideTitle: "Complete Buyer's Guide: Everything You Need to Know Before Buying",
-    buyersGuideLabel: "Buyer's Guide",
     buyersGuideImage: "/images/products/city-bikes-guide.webp",
     buyersGuideImageAlt: "Electric city bike components and key features explained visually",
     
@@ -4884,7 +4874,6 @@ const money = [
     // 9. FAQ SECTION
     // ============================================
     faqTitle: "Frequently Asked Questions About Electric City Bikes",
-    faqLabel: "FAQ",
     
     faq: [
       {
@@ -5039,7 +5028,6 @@ const money = [
     // ============================================
     topProductsHeading: "The 10 Best Electric Fat Bikes I've Actually Put Through Hell",
     topProductsIntro: "Every bike here earned its spot through real testing, not manufacturer promises. I ranked them based on actual performance across different terrains, value for money, and who they're best suited for. Some excel at winter commuting, others dominate technical trails. None of them are perfect for everyone, which is exactly why this list exists.",
-    topProductsIntroLabel: "What to Expect",
     topProductsIntroHeading: "How I Ranked These Bikes",
     productCtaLabel: "Check Current Price",
     
@@ -5670,7 +5658,6 @@ const money = [
     // 8. BUYER'S GUIDE
     // ============================================
     buyersGuideTitle: "Complete Buyer's Guide: Everything You Need Before Buying",
-    buyersGuideLabel: "Buyer's Guide",
     buyersGuideImage: "/images/products/buyers-guide-fat-bike.webp",
     buyersGuideImageAlt: "Close-up comparison of electric fat bike components and tire tread",
     
@@ -5764,7 +5751,6 @@ const money = [
     // 9. FAQ SECTION
     // ============================================
     faqTitle: "Frequently Asked Questions",
-    faqLabel: "FAQ",
     
     faq: [
       {
@@ -6515,7 +6501,6 @@ const money = [
     // 8. BUYER'S GUIDE
     // ============================================
     buyersGuideTitle: "Complete Buyer's Guide: Everything About Electric Cruiser Bikes",
-    buyersGuideLabel: "Buyer's Guide",
     buyersGuideImage: "/images/products/cruiser-ebike-guide.webp",
     buyersGuideImageAlt: "Electric cruiser bike buyer's guide infographic",
     
@@ -6628,7 +6613,6 @@ const money = [
     // 9. FAQ SECTION
     // ============================================
     faqTitle: "Frequently Asked Questions",
-    faqLabel: "FAQ",
     
     faq: [
       {

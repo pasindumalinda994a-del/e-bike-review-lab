@@ -1,5 +1,8 @@
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
+import AnimatedButton from '@/components/AnimatedButton';
 
 /**
  * Normalizes a value to an array format.
@@ -45,13 +48,13 @@ function ProductBadge({ badge }) {
  */
 function CoverImage({ imageUrl, name, badge, isPriority }) {
   return (
-    <div className="relative -mx-4 h-[300px] overflow-hidden rounded-2xl sm:-mx-6 sm:h-[420px] md:h-[500px] lg:h-[580px]">
+    <div className="relative w-full overflow-hidden rounded-lg aspect-[16/9]">
       <ProductBadge badge={badge} />
       <Image
         src={imageUrl}
         alt={name}
         fill
-        sizes="(min-width: 1024px) 1024px, 100vw"
+        sizes="(min-width: 1024px) 896px, (min-width: 768px) 90vw, 100vw"
         className="object-cover"
         priority={isPriority}
         loading={isPriority ? undefined : 'lazy'}
@@ -75,7 +78,7 @@ function CoverImage({ imageUrl, name, badge, isPriority }) {
  */
 function ProductImage({ imageUrl, name, badge, isPriority }) {
   return (
-    <div className="relative aspect-square overflow-hidden rounded-xl border border-[#e5e7eb] bg-white shadow-sm">
+    <div className="relative aspect-square overflow-hidden rounded-lg border border-[#e5e7eb] bg-white shadow-sm">
       <ProductBadge badge={badge} />
       <Image
         src={imageUrl}
@@ -102,8 +105,8 @@ function ReviewChart({ metrics }) {
   if (!metrics || !Array.isArray(metrics) || metrics.length === 0) return null;
 
   return (
-    <div className="mt-4 space-y-2.5 rounded-xl border border-[#0C1412]/20 bg-gradient-to-br from-[#0C1412] via-[#1a1a2e] to-[#16213e] p-3.5 shadow-lg sm:p-4">
-      <h3 className="text-sm font-semibold text-white sm:text-base">Performance Ratings</h3>
+    <div className="space-y-2.5 rounded-lg bg-white p-3.5 sm:p-4">
+      <h4 className="text-sm font-semibold text-[#0C1412] sm:text-base">Performance Ratings</h4>
       <div className="space-y-3">
         {metrics.map((metric, index) => {
           const { category, rating, weight } = metric;
@@ -113,19 +116,19 @@ function ReviewChart({ metrics }) {
           return (
             <div key={index} className="space-y-1.5">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-semibold text-white/90 sm:text-sm">
+                <span className="text-xs font-semibold text-[#0C1412] sm:text-sm">
                   {category}
                   {weightPercent && (
-                    <span className="ml-2 text-[10px] font-normal text-white/60 sm:text-xs">
+                    <span className="ml-2 text-[10px] font-normal text-[#1f2937] sm:text-xs">
                       ({weightPercent})
                     </span>
                   )}
                 </span>
-                <span className="text-xs font-semibold text-white sm:text-sm">{rating.toFixed(1)}</span>
+                <span className="text-xs font-semibold text-[#0C1412] sm:text-sm">{rating.toFixed(1)}</span>
               </div>
-              <div className="relative h-2.5 w-full overflow-hidden rounded-full bg-white/10">
+              <div className="relative h-2.5 w-full overflow-hidden rounded-full bg-gray-200">
                 <div
-                  className="h-full rounded-full bg-gradient-to-r from-emerald-500 to-green-500 transition-all duration-500"
+                  className="h-full rounded-full bg-gradient-to-r from-[#0C1412] to-[#1a1a2e] transition-all duration-500"
                   style={{ width: `${percentage}%` }}
                 />
               </div>
@@ -197,12 +200,12 @@ function KeyFeaturesTable({ product }) {
   if (!specs.length) return null;
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-[#3e3ce7]/20 bg-white shadow-[0_20px_35px_rgba(12,20,18,0.15)] transition-shadow hover:shadow-[0_25px_40px_rgba(12,20,18,0.2)]">
-      <table className="min-w-full divide-y divide-[#3e3ce7]/10">
+    <div className="overflow-hidden rounded-lg bg-white">
+      <table className="min-w-full">
         <caption className="sr-only">
           Key features and specifications for {model}
         </caption>
-        <thead className="bg-gradient-to-r from-[#0C1412] via-[#1a1a2e] to-[#16213e]">
+        <thead className="bg-black">
           <tr>
             <th
               scope="col"
@@ -218,17 +221,16 @@ function KeyFeaturesTable({ product }) {
             </th>
           </tr>
         </thead>
-        <tbody className="divide-y divide-[#3e3ce7]/10 bg-white">
+        <tbody className="bg-white">
           {specs.map((spec, index) => (
             <tr
               key={index}
-              className="group transition-all duration-200 hover:bg-gradient-to-r hover:from-[#3e3ce7]/5 hover:to-[#3e3ce7]/10 hover:shadow-sm"
             >
               <td className="py-3.5 px-4 sm:py-4 sm:px-6">
                 <span className="text-sm font-semibold text-[#0C1412] sm:text-base">{spec.label}</span>
               </td>
               <td className="py-3.5 px-4 sm:py-4 sm:px-6">
-                <span className="text-sm leading-relaxed text-[#1f2937] transition-colors group-hover:text-[#0C1412] sm:text-base">
+                <span className="text-base leading-[1.75] text-[#1f2937] tracking-[0.01em] sm:text-lg">
                   {spec.value}
                 </span>
               </td>
@@ -251,60 +253,17 @@ function KeyFeaturesTable({ product }) {
 function ProsConsSection({ items, type }) {
   if (!items?.length) return null;
 
-  const config = {
-    pros: {
-      title: 'Pros',
-      iconColor: 'text-green-600',
-      bgColor: 'bg-green-100',
-      bulletColor: 'bg-green-600',
-      hoverBorder: 'hover:border-green-200',
-      hoverBg: 'hover:bg-green-50/50',
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M5 13l4 4L19 7"
-        />
-      ),
-    },
-    cons: {
-      title: 'Cons',
-      iconColor: 'text-amber-600',
-      bgColor: 'bg-amber-100',
-      bulletColor: 'bg-amber-600',
-      hoverBorder: 'hover:border-amber-200',
-      hoverBg: 'hover:bg-amber-50/50',
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
-        />
-      ),
-    },
-  };
-
-  const { title, iconColor, bgColor, bulletColor, hoverBorder, hoverBg, icon } = config[type];
+  const bulletColor = 'bg-black';
 
   return (
     <div
-      className={`group rounded-xl border border-[#e5e7eb] bg-white p-6 transition-all duration-300 ${hoverBorder} ${hoverBg} hover:shadow-md sm:p-7`}
+      className={`rounded-xl bg-white p-6 sm:p-7`}
     >
-      <div className="mb-5 flex items-center gap-3">
-        <span className={`flex h-9 w-9 items-center justify-center rounded-lg ${bgColor} ${iconColor}`}>
-          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            {icon}
-          </svg>
-        </span>
-        <span className="text-lg font-bold text-[#0C1412] sm:text-xl">{title}</span>
-      </div>
       <ul className="space-y-3.5">
         {items.map((item, index) => (
           <li key={index} className="flex items-start gap-3.5">
             <span className={`mt-2 h-2 w-2 flex-shrink-0 rounded-full ${bulletColor}`} />
-            <span className="text-base leading-[1.85] text-[#1f2937] sm:text-lg sm:leading-[1.9]">
+            <span className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
               {item}
             </span>
           </li>
@@ -332,40 +291,47 @@ function ProductReviewCard({ product, index, ctaLabel }) {
   // Get reviewLink from money.js - if null, link to product anchor on same page
   const reviewLink = product.reviewLink || (product.id ? `#${product.id}` : null);
 
-  // Parse product name into two parts (before and after " - ")
+  // Parse product name into two parts (before and after " - " or " – ")
   const productName = product.name || '';
-  const nameParts = productName.includes(' - ') ? productName.split(' - ') : [productName, ''];
+  let nameParts = [productName, ''];
+
+  // Support both hyphen-minus and en dash separators used in money.js
+  if (productName.includes(' – ')) {
+    nameParts = productName.split(' – ');
+  } else if (productName.includes(' - ')) {
+    nameParts = productName.split(' - ');
+  }
   const productNamePart1 = nameParts[0]?.trim() || '';
   const productNamePart2 = nameParts[1]?.trim() || '';
   const rankPrefix = typeof product.rank === 'number' ? `${product.rank}. ` : '';
 
   return (
     <article id={product.id} className="scroll-mt-24 pb-16 sm:pb-20 md:pb-24">
-      {/* Header Section: Title */}
-      <header className="mb-6 space-y-4 sm:mb-8">
+      {/* Header Section: Title - constrained width */}
+      <header className="max-w-4xl mb-6 space-y-4 sm:mb-8">
         {/* Descriptive Subtitle Badge */}
         {productNamePart2 && (
           <div className="inline-block">
-            <span className="inline-flex items-center gap-2 rounded-full border border-[#3e3ce7]/20 bg-gradient-to-r from-[#3e3ce7]/8 via-[#6366f1]/10 to-[#3e3ce7]/8 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#3e3ce7] shadow-sm shadow-[#3e3ce7]/10 backdrop-blur-sm transition-all duration-300 hover:border-[#3e3ce7]/30 hover:from-[#3e3ce7]/12 hover:via-[#6366f1]/15 hover:to-[#3e3ce7]/12 hover:shadow-md hover:shadow-[#3e3ce7]/20 sm:text-xs sm:px-4 sm:py-2">
+            <span className="inline-flex items-center gap-2 rounded-lg bg-white px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-black sm:text-xs sm:px-4 sm:py-2">
               {productNamePart2}
             </span>
           </div>
         )}
-        {/* SEO: Product Name as H2 - Each product review is an H2 heading per SEO requirements */}
-        <h2 className="flex flex-wrap items-baseline gap-2 leading-tight tracking-tight">
+        {/* SEO: Product Name as H3 - Section heading is H2, products are H3 for proper hierarchy */}
+        <h3 className="flex flex-wrap items-baseline gap-2 leading-tight tracking-tight text-left">
           {rankPrefix && (
-            <span className="text-3xl font-bold text-[#0C1412] sm:text-4xl md:text-5xl">
+            <span className="text-2xl font-bold text-[#0C1412] sm:text-3xl md:text-4xl">
               {rankPrefix}
             </span>
           )}
-          <span className="text-3xl font-extrabold text-[#0C1412] sm:text-4xl md:text-5xl">
+          <span className="text-2xl font-extrabold text-[#0C1412] sm:text-3xl md:text-4xl">
             {productNamePart1}
           </span>
-        </h2>
+        </h3>
       </header>
 
       {/* Cover Image: Full-width hero image */}
-      <div className="mb-8 sm:mb-12">
+      <div className="mb-8 sm:mb-12 max-w-4xl">
         <CoverImage
           imageUrl={product.imageUrl}
           name={product.name}
@@ -374,47 +340,50 @@ function ProductReviewCard({ product, index, ctaLabel }) {
         />
       </div>
 
-      {/* Main Content Area: Optimized for long-form reading */}
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-6">
-        {/* Sidebar: Sticky on desktop with review chart and CTAs - Left side */}
+      {/* Main Content Area: Optimized for long-form reading - constrained width */}
+      <div className="max-w-4xl grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-6">
+        {/* Sidebar: Review chart and CTAs - Left side */}
         <aside className="lg:col-span-4 lg:order-first">
-          <div className="lg:sticky lg:top-8 space-y-6">
+          <div className="space-y-6">
             {/* Review Chart */}
             <ReviewChart metrics={product.performanceRatings} />
 
             {/* Action Buttons */}
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-row flex-wrap gap-3 items-start sm:flex-col">
               {reviewLink && (
-                <Link
+                <AnimatedButton
                   href={reviewLink}
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-[#3e3ce7] bg-transparent px-6 py-3 text-sm font-semibold text-[#3e3ce7] shadow-md shadow-[#3e3ce7]/20 transition-all duration-300 hover:bg-[#3e3ce7] hover:text-white hover:shadow-lg hover:shadow-[#3e3ce7]/30 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#3e3ce7] focus:ring-offset-2 sm:px-6 sm:py-3.5 sm:text-base"
+                  variant="outlined"
+                  className="w-auto text-sm sm:text-base sm:w-full"
                 >
-                  Read Full Review
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-4 w-4"
-                    aria-hidden="true"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="M12 5l7 7-7 7" />
-                  </svg>
-                </Link>
+                  <span className="flex items-center gap-2">
+                    Read Full Review
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-4 w-4"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="M12 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </AnimatedButton>
               )}
               {product.affiliateLink && (
-                <a
+                <AnimatedButton
                   href={product.affiliateLink}
-                  target="_blank"
+                  external
                   rel="sponsored nofollow noopener"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-[#3e3ce7] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#3e3ce7]/30 transition-all duration-300 hover:bg-[#3e3ce7]/90 hover:shadow-xl hover:shadow-[#3e3ce7]/40 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#3e3ce7] focus:ring-offset-2 sm:px-6 sm:py-3.5 sm:text-base"
+                  className="w-auto text-sm sm:text-base sm:w-full"
                 >
                   {ctaLabel}
-                </a>
+                </AnimatedButton>
               )}
             </div>
           </div>
@@ -426,7 +395,7 @@ function ProductReviewCard({ product, index, ctaLabel }) {
             {/* Description */}
             {product.description && (
               <div className="space-y-4">
-                <p className="text-justify text-lg leading-[1.85] text-[#1f2937] sm:text-xl sm:leading-[1.9]">
+                <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
                   {product.description}
                 </p>
               </div>
@@ -434,19 +403,19 @@ function ProductReviewCard({ product, index, ctaLabel }) {
 
             {/* Key Features */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold text-[#0C1412] sm:text-2xl">Key Features</h3>
+              <h4 className="text-xl font-bold text-[#0C1412] sm:text-2xl text-left">Key Features</h4>
               <KeyFeaturesTable product={product} />
             </div>
 
             {/* Performance Notes */}
             {performanceNotes.length > 0 && (
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-[#0C1412] sm:text-2xl">Performance Notes</h3>
+                <h4 className="text-xl font-bold text-[#0C1412] sm:text-2xl text-left">Performance Notes</h4>
                 <div className="space-y-4">
                   {performanceNotes.map((note, noteIndex) => (
                     <p
                       key={noteIndex}
-                      className="text-justify text-lg leading-[1.85] text-[#1f2937] sm:text-xl sm:leading-[1.9]"
+                      className="text-base leading-normal text-black sm:text-base tracking-wide text-left"
                     >
                       {note}
                     </p>
@@ -458,8 +427,8 @@ function ProductReviewCard({ product, index, ctaLabel }) {
             {/* Best For */}
             {bestFor && (
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-[#0C1412] sm:text-2xl">Who It&apos;s Best For</h3>
-                <p className="text-justify text-lg leading-[1.85] text-[#1f2937] sm:text-xl sm:leading-[1.9]">
+                <h4 className="text-xl font-bold text-[#0C1412] sm:text-2xl text-left">Who It&apos;s Best For</h4>
+                <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
                   {bestFor}
                 </p>
               </div>
@@ -468,11 +437,11 @@ function ProductReviewCard({ product, index, ctaLabel }) {
             {/* Pros and Cons */}
             <div className="space-y-8 pt-4 sm:space-y-10">
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-[#0C1412] sm:text-2xl">Pros</h3>
+                <h4 className="text-xl font-bold text-[#0C1412] sm:text-2xl text-left">Pros</h4>
                 <ProsConsSection items={product.pros} type="pros" />
               </div>
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-[#0C1412] sm:text-2xl">Cons</h3>
+                <h4 className="text-xl font-bold text-[#0C1412] sm:text-2xl text-left">Cons</h4>
                 <ProsConsSection items={product.cons} type="cons" />
               </div>
             </div>
@@ -508,19 +477,19 @@ export default function DetailedProductReviews({
 
   return (
     <section
-      className="mx-auto max-w-7xl space-y-12 px-4 py-12 sm:space-y-16 sm:px-6 sm:py-16 md:px-8 lg:py-20"
+      className="flex w-full max-w-none flex-col space-y-12 py-12 sm:space-y-16 sm:py-16 lg:py-20"
       aria-labelledby="detailed-reviews"
     >
-      <header className="mx-auto max-w-4xl space-y-3 sm:space-y-4">
+      <header className="max-w-4xl space-y-3 sm:space-y-4">
         <h2
           id="detailed-reviews"
-          className="text-3xl font-bold leading-tight tracking-tight text-[#0C1412] sm:text-4xl md:text-5xl"
+          className="text-2xl font-bold leading-[1.25] tracking-[-0.01em] text-[#0C1412] sm:text-3xl text-left"
         >
           {heading}
         </h2>
       </header>
 
-      <div className="mx-auto max-w-6xl space-y-16 sm:space-y-20 md:space-y-24">
+      <div className="max-w-4xl space-y-16 sm:space-y-20 md:space-y-24">
         {products.map((product, index) => (
           <ProductReviewCard
             key={product.id ?? index}

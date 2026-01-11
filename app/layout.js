@@ -89,7 +89,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen flex-col bg-white text-[#0C1412]" suppressHydrationWarning>
+      <body className="flex min-h-screen flex-col bg-[#F5F5F5] text-[#0C1412]" suppressHydrationWarning>
         <SmoothScroll>
           <SiteHeader />
           <main className="flex-1">

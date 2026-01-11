@@ -29,33 +29,16 @@ export const placements = {
       "electric-hybrid-bikes/best-electric-hybrid-bikes",
     ],
 
-    // Main content area under hero
+    // Main content area under hero - Today's highlight section
     showcase: {
-      // Four cards in the main grid
-      latest: [
-        "electric-bikes/best-electric-bikes",
-        "electric-mountain-bikes/best-electric-mountain-bikes",
-        "electric-bikes/is-it-worth-getting-electric-bike",
-        "electric-folding-bikes/best-electric-folding-bikes",
-        "electric-road-bikes/best-electric-road-bikes",
-        "electric-cargo-bikes/best-electric-cargo-bikes",
-        "electric-city-bikes/best-electric-city-bikes",
-        "electric-fat-bikes/best-electric-fat-bikes",
-        "electric-cruiser-bikes/best-electric-cruiser-bikes",
-        "electric-hybrid-bikes/best-electric-hybrid-bikes",
-      ],
+      // Featured highlight article (large card on left)
+      highlight: "electric-bikes/best-electric-bikes",
 
-      // Sidebar items next to the grid
+      // Three smaller articles in right sidebar
       sidebar: [
-        "electric-bikes/best-electric-bikes",
         "electric-mountain-bikes/best-electric-mountain-bikes",
         "electric-folding-bikes/best-electric-folding-bikes",
         "electric-road-bikes/best-electric-road-bikes",
-        "electric-cargo-bikes/best-electric-cargo-bikes",
-        "electric-city-bikes/best-electric-city-bikes",
-        "electric-fat-bikes/best-electric-fat-bikes",
-        "electric-cruiser-bikes/best-electric-cruiser-bikes",
-        "electric-hybrid-bikes/best-electric-hybrid-bikes",
       ]
     },
 
@@ -123,6 +106,20 @@ export const placements = {
         "electric-hybrid-bikes/best-electric-hybrid-bikes",
       ],
     },
+  },
+
+  // ============================================================
+  // SIDEBAR FEATURED POSTS
+  // ============================================================
+  sidebar: {
+    // Featured posts displayed in sidebar across all pages
+    featuredPosts: [
+      "electric-bikes/best-electric-bikes",
+      "electric-mountain-bikes/best-electric-mountain-bikes",
+      "electric-folding-bikes/best-electric-folding-bikes",
+      "electric-road-bikes/best-electric-road-bikes",
+      "electric-cargo-bikes/best-electric-cargo-bikes",
+    ],
   },
 
   // ============================================================
@@ -272,6 +269,14 @@ export function isHeroPost(categorySlug, postSlug) {
 }
 
 /**
+ * Get sidebar featured posts
+ * @returns {string[]} Array of post identifiers for sidebar featured posts
+ */
+export function getSidebarFeaturedPosts() {
+  return placements.sidebar?.featuredPosts ?? [];
+}
+
+/**
  * Get all unique post keys from all placements
  * @returns {Set<string>} Set of all post keys used in placements
  */
@@ -282,7 +287,11 @@ export function getAllPlacementKeys() {
   const home = placements.home ?? {};
   [...(home.hero ?? []), ...(home.gallery ?? [])].forEach((key) => keys.add(key.toLowerCase()));
   const showcase = home.showcase ?? {};
-  [...(showcase.latest ?? []), ...(showcase.sidebar ?? [])].forEach((key) => keys.add(key.toLowerCase()));
+  if (showcase.highlight) keys.add(showcase.highlight.toLowerCase());
+  [...(showcase.sidebar ?? [])].forEach((key) => keys.add(key.toLowerCase()));
+
+  // Sidebar featured posts
+  [...(placements.sidebar?.featuredPosts ?? [])].forEach((key) => keys.add(key.toLowerCase()));
 
   // Category sidebars
   Object.values(placements.categories ?? {}).forEach((config) => {

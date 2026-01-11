@@ -2,8 +2,9 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronDown, Menu, X } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { ChevronDown, X, ArrowRight } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import gsap from 'gsap';
 import { categories } from '@/content/categories';
 
 // Build header navigation links straight from the categories list.
@@ -41,6 +42,29 @@ export default function SiteHeader() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isReviewsOpen, setIsReviewsOpen] = useState(false);
   const [isLearnOpen, setIsLearnOpen] = useState(false);
+  
+  // Refs for nav elements
+  const reviewsButtonRef = useRef(null);
+  const reviewsTopTextRef = useRef(null);
+  const reviewsBottomTextRef = useRef(null);
+  
+  const learnButtonRef = useRef(null);
+  const learnTopTextRef = useRef(null);
+  const learnBottomTextRef = useRef(null);
+  
+  const aboutLinkRef = useRef(null);
+  const aboutTopTextRef = useRef(null);
+  const aboutBottomTextRef = useRef(null);
+  
+  const contactLinkRef = useRef(null);
+  const contactTopTextRef = useRef(null);
+  const contactBottomTextRef = useRef(null);
+  
+  const ctaLinkRef = useRef(null);
+  const ctaTopTextRef = useRef(null);
+  const ctaBottomTextRef = useRef(null);
+  
+  const isInitialMount = useRef(true);
 
   // Close mobile menu when clicking outside
   useEffect(() => {
@@ -57,114 +81,526 @@ export default function SiteHeader() {
     };
   }, [isMobileMenuOpen]);
 
+  // GSAP animations for nav links
+  useEffect(() => {
+    const reviewsButton = reviewsButtonRef.current;
+    const reviewsTopText = reviewsTopTextRef.current;
+    const reviewsBottomText = reviewsBottomTextRef.current;
+    
+    const learnButton = learnButtonRef.current;
+    const learnTopText = learnTopTextRef.current;
+    const learnBottomText = learnBottomTextRef.current;
+    
+    const aboutLink = aboutLinkRef.current;
+    const aboutTopText = aboutTopTextRef.current;
+    const aboutBottomText = aboutBottomTextRef.current;
+    
+    const contactLink = contactLinkRef.current;
+    const contactTopText = contactTopTextRef.current;
+    const contactBottomText = contactBottomTextRef.current;
+    
+    const ctaLink = ctaLinkRef.current;
+    const ctaTopText = ctaTopTextRef.current;
+    const ctaBottomText = ctaBottomTextRef.current;
+
+    if (!reviewsButton || !reviewsTopText || !reviewsBottomText ||
+        !learnButton || !learnTopText || !learnBottomText ||
+        !aboutLink || !aboutTopText || !aboutBottomText ||
+        !contactLink || !contactTopText || !contactBottomText ||
+        !ctaLink || !ctaTopText || !ctaBottomText) return;
+
+    // Set initial state
+    if (isInitialMount.current) {
+      gsap.set([reviewsTopText, learnTopText, aboutTopText, contactTopText, ctaTopText], { y: 0, opacity: 1 });
+      gsap.set([reviewsBottomText, learnBottomText, aboutBottomText, contactBottomText, ctaBottomText], { y: "-100%", opacity: 1 });
+      isInitialMount.current = false;
+    }
+
+    let reviewsHoverTl = null;
+    let learnHoverTl = null;
+    let aboutHoverTl = null;
+    let contactHoverTl = null;
+    let ctaHoverTl = null;
+
+    // Reviews button animations
+    const handleReviewsMouseEnter = () => {
+      if (reviewsHoverTl) reviewsHoverTl.kill();
+      reviewsHoverTl = gsap.timeline();
+      reviewsHoverTl.to(reviewsTopText, {
+        y: "-100%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      reviewsHoverTl.to(reviewsBottomText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    const handleReviewsMouseLeave = () => {
+      if (reviewsHoverTl) reviewsHoverTl.kill();
+      reviewsHoverTl = gsap.timeline();
+      reviewsHoverTl.to(reviewsBottomText, {
+        y: "100%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      reviewsHoverTl.to(reviewsTopText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    const handleReviewsClick = () => {
+      if (reviewsHoverTl) reviewsHoverTl.kill();
+      reviewsHoverTl = gsap.timeline();
+      reviewsHoverTl.to(reviewsTopText, {
+        y: "-100%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      reviewsHoverTl.to(reviewsBottomText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    // Learn button animations
+    const handleLearnMouseEnter = () => {
+      if (learnHoverTl) learnHoverTl.kill();
+      learnHoverTl = gsap.timeline();
+      learnHoverTl.to(learnTopText, {
+        y: "-100%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      learnHoverTl.to(learnBottomText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    const handleLearnMouseLeave = () => {
+      if (learnHoverTl) learnHoverTl.kill();
+      learnHoverTl = gsap.timeline();
+      learnHoverTl.to(learnBottomText, {
+        y: "100%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      learnHoverTl.to(learnTopText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    const handleLearnClick = () => {
+      if (learnHoverTl) learnHoverTl.kill();
+      learnHoverTl = gsap.timeline();
+      learnHoverTl.to(learnTopText, {
+        y: "-100%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      learnHoverTl.to(learnBottomText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    // About link animations
+    const handleAboutMouseEnter = () => {
+      if (aboutHoverTl) aboutHoverTl.kill();
+      aboutHoverTl = gsap.timeline();
+      aboutHoverTl.to(aboutTopText, {
+        y: "-100%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      aboutHoverTl.to(aboutBottomText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    const handleAboutMouseLeave = () => {
+      if (aboutHoverTl) aboutHoverTl.kill();
+      aboutHoverTl = gsap.timeline();
+      aboutHoverTl.to(aboutBottomText, {
+        y: "100%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      aboutHoverTl.to(aboutTopText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    const handleAboutClick = () => {
+      if (aboutHoverTl) aboutHoverTl.kill();
+      aboutHoverTl = gsap.timeline();
+      aboutHoverTl.to(aboutTopText, {
+        y: "-100%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      aboutHoverTl.to(aboutBottomText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    // Contact link animations
+    const handleContactMouseEnter = () => {
+      if (contactHoverTl) contactHoverTl.kill();
+      contactHoverTl = gsap.timeline();
+      contactHoverTl.to(contactTopText, {
+        y: "-100%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      contactHoverTl.to(contactBottomText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    const handleContactMouseLeave = () => {
+      if (contactHoverTl) contactHoverTl.kill();
+      contactHoverTl = gsap.timeline();
+      contactHoverTl.to(contactBottomText, {
+        y: "100%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      contactHoverTl.to(contactTopText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    const handleContactClick = () => {
+      if (contactHoverTl) contactHoverTl.kill();
+      contactHoverTl = gsap.timeline();
+      contactHoverTl.to(contactTopText, {
+        y: "-100%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      contactHoverTl.to(contactBottomText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    // CTA link animations
+    const handleCtaMouseEnter = () => {
+      if (ctaHoverTl) ctaHoverTl.kill();
+      ctaHoverTl = gsap.timeline();
+      ctaHoverTl.to(ctaTopText, {
+        y: "-200%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      ctaHoverTl.to(ctaBottomText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    const handleCtaMouseLeave = () => {
+      if (ctaHoverTl) ctaHoverTl.kill();
+      ctaHoverTl = gsap.timeline();
+      ctaHoverTl.to(ctaBottomText, {
+        y: "200%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      ctaHoverTl.to(ctaTopText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    const handleCtaClick = () => {
+      if (ctaHoverTl) ctaHoverTl.kill();
+      ctaHoverTl = gsap.timeline();
+      ctaHoverTl.to(ctaTopText, {
+        y: "-200%",
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      });
+      ctaHoverTl.to(ctaBottomText, {
+        y: 0,
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.inOut",
+      }, "<0.1");
+    };
+
+    // Add event listeners
+    reviewsButton.addEventListener("mouseenter", handleReviewsMouseEnter);
+    reviewsButton.addEventListener("mouseleave", handleReviewsMouseLeave);
+    reviewsButton.addEventListener("click", handleReviewsClick);
+
+    learnButton.addEventListener("mouseenter", handleLearnMouseEnter);
+    learnButton.addEventListener("mouseleave", handleLearnMouseLeave);
+    learnButton.addEventListener("click", handleLearnClick);
+
+    aboutLink.addEventListener("mouseenter", handleAboutMouseEnter);
+    aboutLink.addEventListener("mouseleave", handleAboutMouseLeave);
+    aboutLink.addEventListener("click", handleAboutClick);
+
+    contactLink.addEventListener("mouseenter", handleContactMouseEnter);
+    contactLink.addEventListener("mouseleave", handleContactMouseLeave);
+    contactLink.addEventListener("click", handleContactClick);
+
+    ctaLink.addEventListener("mouseenter", handleCtaMouseEnter);
+    ctaLink.addEventListener("mouseleave", handleCtaMouseLeave);
+    ctaLink.addEventListener("click", handleCtaClick);
+
+    // Cleanup
+    return () => {
+      reviewsButton.removeEventListener("mouseenter", handleReviewsMouseEnter);
+      reviewsButton.removeEventListener("mouseleave", handleReviewsMouseLeave);
+      reviewsButton.removeEventListener("click", handleReviewsClick);
+
+      learnButton.removeEventListener("mouseenter", handleLearnMouseEnter);
+      learnButton.removeEventListener("mouseleave", handleLearnMouseLeave);
+      learnButton.removeEventListener("click", handleLearnClick);
+
+      aboutLink.removeEventListener("mouseenter", handleAboutMouseEnter);
+      aboutLink.removeEventListener("mouseleave", handleAboutMouseLeave);
+      aboutLink.removeEventListener("click", handleAboutClick);
+
+      contactLink.removeEventListener("mouseenter", handleContactMouseEnter);
+      contactLink.removeEventListener("mouseleave", handleContactMouseLeave);
+      contactLink.removeEventListener("click", handleContactClick);
+
+      ctaLink.removeEventListener("mouseenter", handleCtaMouseEnter);
+      ctaLink.removeEventListener("mouseleave", handleCtaMouseLeave);
+      ctaLink.removeEventListener("click", handleCtaClick);
+
+      if (reviewsHoverTl) reviewsHoverTl.kill();
+      if (learnHoverTl) learnHoverTl.kill();
+      if (aboutHoverTl) aboutHoverTl.kill();
+      if (contactHoverTl) contactHoverTl.kill();
+      if (ctaHoverTl) ctaHoverTl.kill();
+    };
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 bg-[#0C1412] text-white shadow-lg backdrop-blur-sm">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 md:px-12 lg:px-16">
-        <Link href="/" className="flex items-center gap-3 z-50">
-          <Image
-            src="/EbikeLogo.png"
-            alt="EBikeReviewLab"
-            width={200}
-            height={60}
-            priority
-            className="h-10 w-auto sm:h-12"
-          />
-        </Link>
-        
-        {/* Desktop Navigation */}
-        <nav className="hidden h-full items-stretch gap-2 text-sm font-semibold tracking-wide md:flex">
-          <div className="group relative flex h-full items-center">
-            <button
-              type="button"
-              className="flex h-full items-center gap-2 px-3 transition hover:bg-[#3e3ce7] hover:shadow-[inset_0_-2px_0_0_#ffffff] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3e3ce7]"
-              aria-haspopup="true"
-            >
-              Reviews
-              <ChevronDown className="h-4 w-4" aria-hidden="true" />
-            </button>
-            <div className="pointer-events-none absolute left-0 top-full z-30 hidden min-w-[220px] translate-y-px flex-col overflow-hidden rounded-b-xl border border-white/10 bg-[#0C1412] shadow-xl backdrop-blur-sm transition group-hover:pointer-events-auto group-hover:flex group-focus-within:pointer-events-auto group-focus-within:flex">
-              {REVIEW_LINKS.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="px-4 py-3 text-sm text-white transition hover:bg-[#3e3ce7] hover:text-white"
-                >
-                  {link.label}
-                </Link>
-              ))}
+    <header className="z-50 py-2">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col px-4 sm:px-6 md:px-12 lg:px-16">
+        <div className="mx-auto w-full max-w-7xl">
+          <div className="bg-[#f5f5f5] hover:bg-white rounded-lg flex items-center justify-between px-3 md:px-6 py-3">
+          <div className="flex items-center gap-8">
+            {/* Logo */}
+            <Link href="/" className="flex items-center z-50">
+              <Image
+                src="/EBRLLogo.png"
+                alt="EBRL"
+                width={120}
+                height={40}
+                priority
+                className="h-auto w-auto"
+              />
+            </Link>
+            
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center gap-2">
+            <div className="group relative flex items-center">
+              <button
+                ref={reviewsButtonRef}
+                type="button"
+                className="text-black text-sm font-semibold focus:outline-none px-3 relative inline-flex items-center overflow-hidden"
+                aria-haspopup="true"
+              >
+                <span className="block relative">
+                  <span ref={reviewsTopTextRef} className="block">
+                    Reviews
+                  </span>
+                  <span ref={reviewsBottomTextRef} className="block absolute top-0 left-0 w-full">
+                    Reviews
+                  </span>
+                </span>
+              </button>
+              <div className="pointer-events-none absolute left-0 top-full z-30 hidden min-w-[220px] translate-y-7 flex-col overflow-hidden rounded-lg bg-white shadow-xl transition group-hover:pointer-events-auto group-hover:flex group-focus-within:pointer-events-auto group-focus-within:flex">
+                {REVIEW_LINKS.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="px-4 py-3 text-sm text-black"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
 
-          <div className="group relative flex h-full items-center">
-            <button
-              type="button"
-              className="flex h-full items-center gap-2 px-3 transition hover:bg-[#3e3ce7] hover:shadow-[inset_0_-2px_0_0_#ffffff] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3e3ce7]"
-              aria-haspopup="true"
-            >
-              Learn
-              <ChevronDown className="h-4 w-4" aria-hidden="true" />
-            </button>
-            <div className="pointer-events-none absolute left-0 top-full z-30 hidden min-w-[240px] translate-y-px flex-col overflow-hidden rounded-b-xl border border-white/10 bg-[#0C1412] shadow-xl backdrop-blur-sm transition group-hover:pointer-events-auto group-hover:flex group-focus-within:pointer-events-auto group-focus-within:flex">
-              {LEARN_LINKS.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="px-4 py-3 text-sm text-white transition hover:bg-[#3e3ce7] hover:text-white"
-                >
-                  {link.label}
-                </Link>
-              ))}
+            <div className="group relative flex items-center">
+              <button
+                ref={learnButtonRef}
+                type="button"
+                className="text-black text-sm font-semibold focus:outline-none px-3 relative inline-flex items-center overflow-hidden"
+                aria-haspopup="true"
+              >
+                <span className="block relative">
+                  <span ref={learnTopTextRef} className="block">
+                    Learn
+                  </span>
+                  <span ref={learnBottomTextRef} className="block absolute top-0 left-0 w-full">
+                    Learn
+                  </span>
+                </span>
+              </button>
+              <div className="pointer-events-none absolute left-0 top-full z-30 hidden min-w-[240px] translate-y-7 flex-col overflow-hidden rounded-lg bg-white shadow-xl transition group-hover:pointer-events-auto group-hover:flex group-focus-within:pointer-events-auto group-focus-within:flex">
+                {LEARN_LINKS.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="px-4 py-3 text-sm text-black"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
 
+            <Link
+              ref={aboutLinkRef}
+              href="/about"
+              className="text-black text-sm font-semibold px-3 relative inline-flex items-center overflow-hidden"
+            >
+              <span className="block relative">
+                <span ref={aboutTopTextRef} className="block">
+                  About Us
+                </span>
+                <span ref={aboutBottomTextRef} className="block absolute top-0 left-0 w-full">
+                  About Us
+                </span>
+              </span>
+            </Link>
+            <Link
+              ref={contactLinkRef}
+              href="/contact"
+              className="text-black text-sm font-semibold px-3 relative inline-flex items-center overflow-hidden"
+            >
+              <span className="block relative">
+                <span ref={contactTopTextRef} className="block">
+                  Contact Us
+                </span>
+                <span ref={contactBottomTextRef} className="block absolute top-0 left-0 w-full">
+                  Contact Us
+                </span>
+              </span>
+            </Link>
+            </nav>
+          </div>
+          
+          {/* Desktop CTA */}
           <Link
-            href="/about"
-            className="flex h-full items-center px-3 transition hover:bg-[#3e3ce7] hover:shadow-[inset_0_-2px_0_0_#ffffff]"
-          >
-            About Us
-          </Link>
-          <Link
+            ref={ctaLinkRef}
             href="/contact"
-            className="flex h-full items-center px-3 transition hover:bg-[#3e3ce7] hover:shadow-[inset_0_-2px_0_0_#ffffff]"
+            className="hidden md:inline-flex items-center justify-center gap-2 bg-black text-white px-5 py-2.5 rounded-md font-normal text-base relative overflow-hidden"
           >
-            Contact Us
-          </Link>
-        </nav>
-        
-        {/* Desktop CTA */}
-          <Link
-            href="/newsletter"
-            className="hidden items-center justify-center rounded-full bg-[#3e3ce7] px-5 py-2.5 text-xs font-semibold text-white shadow-lg shadow-[#3e3ce7]/30 transition-all duration-300 hover:bg-[#3e3ce7]/90 hover:shadow-xl hover:shadow-[#3e3ce7]/40 hover:scale-105 md:inline-flex md:px-6 md:py-3 md:text-sm"
-          >
-            Newsletter Sign Up
+            <span className="flex items-center gap-2 relative">
+              <span ref={ctaTopTextRef} className="flex items-center gap-2">
+                Let's Talk
+                <ArrowRight className="h-4 w-4" />
+              </span>
+              <span ref={ctaBottomTextRef} className="flex items-center gap-2 absolute top-0 left-0 w-full">
+                Let's Talk
+                <ArrowRight className="h-4 w-4" />
+              </span>
+            </span>
           </Link>
 
-        {/* Mobile Menu Button */}
-        <button
-          type="button"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="flex h-10 w-10 items-center justify-center rounded-lg text-white transition-colors hover:bg-[#3e3ce7] focus:outline-none focus:ring-2 focus:ring-[#3e3ce7] md:hidden z-50"
-          aria-label="Toggle menu"
-          aria-expanded={isMobileMenuOpen}
-        >
-          {isMobileMenuOpen ? (
-            <X className="h-6 w-6" />
-          ) : (
-            <Menu className="h-6 w-6" />
-          )}
-        </button>
+          {/* Mobile Menu Button */}
+          <button
+            type="button"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="flex h-10 w-10 items-center justify-center rounded-lg text-black focus:outline-none md:hidden z-50"
+            aria-label="Toggle menu"
+            aria-expanded={isMobileMenuOpen}
+          >
+            {isMobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M2 8h20M2 16h20"
+                />
+              </svg>
+            )}
+          </button>
+        </div>
+        </div>
       </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 top-20 z-40 overflow-y-auto bg-[#0C1412] md:hidden">
+        <div className="fixed left-0 right-0 top-[88px] z-40 h-auto max-h-[calc(100vh-88px)] overflow-y-auto bg-[#f5f5f5] md:hidden">
           <nav className="mx-auto max-w-6xl px-4 py-6 space-y-4">
             {/* Mobile Reviews Dropdown */}
             <div className="space-y-2">
               <button
                 type="button"
                 onClick={() => setIsReviewsOpen(!isReviewsOpen)}
-                className="flex w-full items-center justify-between rounded-lg px-4 py-3 text-base font-semibold text-white transition-colors hover:bg-[#3e3ce7]"
+                className="flex w-full items-center justify-between rounded-lg px-4 py-3 text-base font-semibold text-black"
               >
                 Reviews
                 <ChevronDown
@@ -172,13 +608,13 @@ export default function SiteHeader() {
                 />
               </button>
               {isReviewsOpen && (
-                <div className="ml-4 space-y-1 border-l-2 border-white/10 pl-4">
+                <div className="ml-4 space-y-1 border-l-2 border-gray-200 pl-4">
                   {REVIEW_LINKS.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="block rounded-lg px-4 py-2 text-sm text-white/90 transition-colors hover:bg-[#3e3ce7] hover:text-white"
+                      className="block rounded-lg px-4 py-2 text-sm font-semibold text-black"
                     >
                       {link.label}
                     </Link>
@@ -192,7 +628,7 @@ export default function SiteHeader() {
               <button
                 type="button"
                 onClick={() => setIsLearnOpen(!isLearnOpen)}
-                className="flex w-full items-center justify-between rounded-lg px-4 py-3 text-base font-semibold text-white transition-colors hover:bg-[#3e3ce7]"
+                className="flex w-full items-center justify-between rounded-lg px-4 py-3 text-base font-semibold text-black"
               >
                 Learn
                 <ChevronDown
@@ -200,13 +636,13 @@ export default function SiteHeader() {
                 />
               </button>
               {isLearnOpen && (
-                <div className="ml-4 space-y-1 border-l-2 border-white/10 pl-4">
+                <div className="ml-4 space-y-1 border-l-2 border-gray-200 pl-4">
                   {LEARN_LINKS.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="block rounded-lg px-4 py-2 text-sm text-white/90 transition-colors hover:bg-[#3e3ce7] hover:text-white"
+                      className="block rounded-lg px-4 py-2 text-sm font-semibold text-black"
                     >
                       {link.label}
                     </Link>
@@ -219,23 +655,24 @@ export default function SiteHeader() {
             <Link
               href="/about"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block rounded-lg px-4 py-3 text-base font-semibold text-white transition-colors hover:bg-[#3e3ce7]"
+              className="block rounded-lg px-4 py-3 text-base font-semibold text-black"
             >
               About Us
             </Link>
             <Link
               href="/contact"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block rounded-lg px-4 py-3 text-base font-semibold text-white transition-colors hover:bg-[#3e3ce7]"
+              className="block rounded-lg px-4 py-3 text-base font-semibold text-black"
             >
               Contact Us
             </Link>
             <Link
-              href="/newsletter"
+              href="/contact"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="mt-4 block w-full rounded-full bg-[#3e3ce7] px-6 py-3 text-center text-sm font-semibold text-white shadow-lg shadow-[#3e3ce7]/30 transition-all duration-300 hover:bg-[#3e3ce7]/90 hover:shadow-xl hover:shadow-[#3e3ce7]/40"
+              className="mt-4 inline-flex items-center justify-start gap-2 bg-black text-white px-6 py-3 rounded-lg text-base font-normal"
             >
-              Newsletter Sign Up
+              Let's Talk
+              <ArrowRight className="h-4 w-4" />
             </Link>
           </nav>
         </div>
