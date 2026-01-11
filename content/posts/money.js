@@ -59,7 +59,7 @@ const money = [
     // 5. PUBLICATION INFO
     // ============================================
     estimatedReadingTime: 14,
-    publishedAt: "2026-01-20T00:00:00Z",
+    publishedAt: "2025-12-21T00:00:00Z",
 
     // ============================================
     // 6. PRODUCTS SECTION
@@ -820,7 +820,7 @@ const money = [
     // 5. PUBLICATION INFO
     // ============================================
     estimatedReadingTime: 14,
-    publishedAt: "2026-01-15T00:00:00Z",
+    publishedAt: "2025-12-25T00:00:00Z",
 
     // ============================================
     // 6. PRODUCTS SECTION
@@ -1699,7 +1699,7 @@ const money = [
     // 5. PUBLICATION INFO
     // ============================================
     estimatedReadingTime: 14,
-    publishedAt: "2026-01-15T00:00:00Z",
+    publishedAt: "2025-12-27T00:00:00Z",
 
     // ============================================
     // 6. PRODUCTS SECTION
@@ -2441,7 +2441,7 @@ const money = [
     // 5. PUBLICATION INFO
     // ============================================
     estimatedReadingTime: 14,
-    publishedAt: "2026-01-15T00:00:00Z",
+    publishedAt: "2025-12-29T00:00:00Z",
 
     // ============================================
     // 6. PRODUCTS SECTION
@@ -3306,7 +3306,7 @@ const money = [
     // 5. PUBLICATION INFO
     // ============================================
     estimatedReadingTime: 14,
-    publishedAt: "2026-01-15T00:00:00Z",
+    publishedAt: "2025-12-31T00:00:00Z",
     
     // ============================================
     // 6. PRODUCTS SECTION
@@ -4158,7 +4158,7 @@ const money = [
     // 5. PUBLICATION INFO
     // ============================================
     estimatedReadingTime: 14,
-    publishedAt: "2026-01-15T00:00:00Z",
+    publishedAt: "2026-01-02T00:00:00Z",
     
     // ============================================
     // 6. PRODUCTS SECTION
@@ -5021,7 +5021,7 @@ const money = [
     // 5. PUBLICATION INFO
     // ============================================
     estimatedReadingTime: 14,
-    publishedAt: "2026-01-15T00:00:00Z",
+    publishedAt: "2026-01-04T00:00:00Z",
     
     // ============================================
     // 6. PRODUCTS SECTION
@@ -5886,7 +5886,7 @@ const money = [
     // 5. PUBLICATION INFO
     // ============================================
     estimatedReadingTime: 14,
-    publishedAt: "2026-01-15T00:00:00Z",
+    publishedAt: "2026-01-06T00:00:00Z",
     
     // ============================================
     // 6. PRODUCTS SECTION
@@ -6763,7 +6763,7 @@ const money = [
     // 5. PUBLICATION INFO
     // ============================================
     estimatedReadingTime: 14,
-    publishedAt: "2026-01-15T00:00:00Z",
+    publishedAt: "2026-01-08T00:00:00Z",
     
     // ============================================
     // 6. PRODUCTS SECTION
