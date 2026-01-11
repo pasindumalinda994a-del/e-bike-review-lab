@@ -106,7 +106,7 @@ function ReviewChart({ metrics }) {
 
   return (
     <div className="space-y-2.5 rounded-lg bg-white p-3.5 sm:p-4">
-      <h4 className="text-sm font-semibold text-[#0C1412] sm:text-base">Performance Ratings</h4>
+      <h4 className="text-base font-semibold text-[#0C1412] sm:text-lg">Performance Ratings</h4>
       <div className="space-y-3">
         {metrics.map((metric, index) => {
           const { category, rating, weight } = metric;
@@ -116,15 +116,15 @@ function ReviewChart({ metrics }) {
           return (
             <div key={index} className="space-y-1.5">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-semibold text-[#0C1412] sm:text-sm">
+                <span className="text-sm font-semibold text-[#0C1412] sm:text-base">
                   {category}
                   {weightPercent && (
-                    <span className="ml-2 text-[10px] font-normal text-[#1f2937] sm:text-xs">
+                    <span className="ml-2 text-xs font-normal text-[#1f2937] sm:text-sm">
                       ({weightPercent})
                     </span>
                   )}
                 </span>
-                <span className="text-xs font-semibold text-[#0C1412] sm:text-sm">{rating.toFixed(1)}</span>
+                <span className="text-sm font-semibold text-[#0C1412] sm:text-base">{rating.toFixed(1)}</span>
               </div>
               <div className="relative h-2.5 w-full overflow-hidden rounded-full bg-gray-200">
                 <div

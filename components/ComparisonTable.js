@@ -69,7 +69,7 @@ function StarRating({ rating }) {
           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
         </svg>
       ))}
-      <span className="ml-1 text-xs font-medium text-[#1f2937] sm:text-sm">{numericRating.toFixed(1)}</span>
+      <span className="ml-1 text-sm font-medium text-[#1f2937] sm:text-base">{numericRating.toFixed(1)}</span>
     </div>
   );
 }
@@ -173,25 +173,25 @@ export default function ComparisonTable({ products, comparison }) {
               return (
                 <tr key={row.model} className="transition-colors hover:bg-[#3e3ce7]/5">
                   <td className="py-3 px-4 sm:py-4 sm:px-6">
-                    <div className="text-sm font-semibold text-[#0C1412] sm:text-base">
+                    <div className="text-base font-semibold text-[#0C1412] sm:text-lg">
                       {row.model}
                     </div>
                   </td>
                   <td className="py-3 px-4 sm:py-4 sm:px-6">
-                    <span className="text-sm font-semibold text-[#1f2937] sm:text-base">{row.price}</span>
+                    <span className="text-base font-semibold text-[#1f2937] sm:text-lg">{row.price}</span>
                   </td>
                   <td className="py-3 px-4 sm:py-4 sm:px-6">
                     {rating ? (
                       <StarRating rating={rating} />
                     ) : (
                       noRatingText && (
-                        <span className="text-xs font-medium text-[#6b7280] sm:text-sm">
+                        <span className="text-sm font-medium text-[#6b7280] sm:text-base">
                           {noRatingText}
                         </span>
                       )
                     )}
                   </td>
-                  <td className="py-3 px-4 sm:py-4 sm:px-6">
+                  <td className="py-3 px-4 text-center sm:py-4 sm:px-6">
                     {row.affiliateLink && ctaLabel && (
                       <AnimatedButton
                         href={row.affiliateLink}

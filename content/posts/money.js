@@ -39,7 +39,7 @@ const money = [
     // ============================================
     heroImage: "/images/hero/electric-bikes.jpg",
     cardImage: "/images/card/electric-bikes.webp",
-    articleHeroImage: "/images/card/electric-bikes.webp",
+    articleHeroImage: "/images/hero/electric-bikes.jpg",
     heroImageAlt: "Collection of the best electric bikes tested in 2026 including commuter and mountain e-bikes",
 
     // ============================================
@@ -76,7 +76,7 @@ const money = [
         name: "Aventon Level 3 – Best Commuter Overall",
         avgRating: 4.8,
         badge: "Around $1,899",
-        imageUrl: "/images/electric-bikes/aventon-level-3.webp",
+        imageUrl: "/images/electric-bikes/Aventon Level 3.webp",
         description: "After commuting on this bike five days a week for two months, I'm convinced Aventon cracked the code on what urban riders actually need. The torque sensor responds instantly to pedaling pressure, the 720Wh battery got me through entire weeks without charging, and those GPS security features saved my butt when someone tried rolling it away from a coffee shop. Best bang-for-buck commuter I've tested, hands down.",
         keyFeatures: [
           "Motor: 500W rear hub (864W peak) with 60Nm torque",
@@ -119,7 +119,7 @@ const money = [
         name: "Lectric XPedition 2.0 – Best Cargo Bike Value",
         avgRating: 4.7,
         badge: "Starting at $1,399",
-        imageUrl: "/images/electric-bikes/lectric-xpedition-2.0.webp",
+        imageUrl: "/images/electric-bikes/Lectric Xpedition 2.0.webp",
         description: "I hauled my two kids, a week's worth of groceries, and 40 pounds of camping gear up a 12% grade, and this thing didn't even struggle. For less than half what premium cargo bikes cost, the XPedition 2.0 delivers torque sensor pedaling, serious carrying capacity, and enough battery options to match any hauling needs. It's the cargo bike that makes car-free family life actually affordable.",
         keyFeatures: [
           "Motor: 750W rear hub (1,310W peak) with 85Nm torque",
@@ -162,7 +162,7 @@ const money = [
         name: "Specialized Turbo Levo – Best Mountain E-Bike",
         avgRating: 4.8,
         badge: "Starting at $5,800",
-        imageUrl: "/images/electric-bikes/specialized-turbo-levo.webp",
+        imageUrl: "/images/electric-bikes/Specialized Turbo Levo.webp",
         description: "This bike rides so much like a regular mountain bike that I kept forgetting the motor was there, until I hit climbs that would normally wreck me, and I just...kept going. Specialized nailed the balance between power and natural feel. After thrashing this on everything from smooth flow trails to rocky technical descents, it's earned its reputation as the benchmark trail e-MTB.",
         keyFeatures: [
           "Motor: Specialized 2.2 with 90Nm torque, 700Wh battery",
@@ -205,7 +205,7 @@ const money = [
         name: "Trek Rail+ 8 Gen 5 – Best Enduro E-MTB",
         avgRating: 4.6,
         badge: "Around $8,999",
-        imageUrl: "/images/electric-bikes/trek-rail+-8-gen 5.webp",
+        imageUrl: "/images/electric-bikes/Trek Rail+ 8 Gen 5.webp",
         description: "When you need a bike that eats steep descents for breakfast and still climbs like gravity's optional, the Rail+ delivers. The new Gen 5 Bosch motor pushed me up 2,000-foot climbs I'd never attempt on a regular bike, then provided rock-solid stability on the way down. It's brutally capable, maybe too much bike for casual trail riders, but perfect if you're chasing gnarly terrain.",
         keyFeatures: [
           "Motor: Bosch Performance CX Gen 5 with 100Nm torque (85Nm stock)",
@@ -248,7 +248,7 @@ const money = [
         name: "Velotric Discover 2 – Best Budget Option",
         avgRating: 4.5,
         badge: "Around $1,499",
-        imageUrl: "/images/electric-bikes/velotric-discover-2.webp",
+        imageUrl: "/images/electric-bikes/Velotric Discover 2.webp",
         description: "For riders dipping their toes into e-bikes without dropping serious cash, the Discover 2 surprised me with how much bike you get for under $1,500. Yeah, you're sacrificing some premium features, but the fundamentals like motor power, battery capacity, and build quality are solid enough for daily use. It's the smart choice if you want to test whether e-bike commuting works for your life before investing more.",
         keyFeatures: [
           "Motor: 500W rear hub with 65Nm torque",
@@ -291,7 +291,7 @@ const money = [
         name: "Brompton Electric G-Line – Best Folding Option",
         avgRating: 4.4,
         badge: "Starting at $3,650",
-        imageUrl: "/images/electric-bikes/brompton-electric-g-line.webp",
+        imageUrl: "/images/electric-bikes/Brompton Electric G-Line.webp",
         description: "The Brompton folds down small enough to fit under your desk or in a train luggage rack, and that's its superpower. I commuted for a month combining this with public transit, and the ability to fold it in 20 seconds changed everything. Yes, it's expensive and has a smaller battery than full-size e-bikes, but if you need genuine portability? Nothing else comes close.",
         keyFeatures: [
           "Motor: Front hub 250W (EU) / 300W (US) with 42Nm torque",
@@ -335,7 +335,7 @@ const money = [
         name: "Ride1Up Roadster V3 – Best Lightweight E-Bike",
         avgRating: 4.5,
         badge: "Around $1,295",
-        imageUrl: "/images/electric-bikes/ride1up-roadster-v3.webp",
+        imageUrl: "/images/electric-bikes/Ride1up Roadster V3.webp",
         description: "At just 36 pounds, this feels almost like riding a regular bike with a secret power boost. The Roadster ditches heavy batteries and big motors for a minimalist approach that works surprisingly well for urban riding. I averaged 30+ miles per charge, and the lightweight build meant I could actually carry it up my apartment stairs without cursing. It's not for everyone, but for city riders wanting something nimble? It's a revelation.",
         keyFeatures: [
           "Motor: 350W rear hub with 40Nm torque",
@@ -379,7 +379,7 @@ const money = [
         name: "Canyon Grizl:ON – Best Gravel E-Bike",
         avgRating: 4.6,
         badge: "Starting at $4,499",
-        imageUrl: "/images/electric-bikes/canyon-grizl_on.webp",
+        imageUrl: "/images/electric-bikes/Canyon Grizl_ON.webp",
         description: "When pavement ends and gravel begins, most e-bikes start to feel out of their element. The Grizl:ON thrives there. I spent weekends exploring fire roads and mixed-surface routes, and this bike's combination of efficient pedaling and capable handling made 60-mile gravel epics feel achievable. It's a specialized tool, and if adventure riding is your thing? Nothing else on this list works better.",
         keyFeatures: [
           "Motor: Bosch Performance Line CX with 75Nm torque",
@@ -423,7 +423,7 @@ const money = [
         name: "Tern GSD – Best Premium Cargo Hauler",
         avgRating: 4.7,
         badge: "Starting at $5,499",
-        imageUrl: "/images/electric-bikes/tern-gsd.webp",
+        imageUrl: "/images/electric-bikes/Tern GSD.webp",
         description: "The GSD is what happens when a cargo bike company obsesses over every detail. After hauling kids, groceries, and gear for six weeks, I'm convinced this is the most refined cargo e-bike available. Yeah, it costs way more than the Lectric XPedition, but the quality, handling, and thoughtful design features justify the premium if cargo hauling is your primary use case.",
         keyFeatures: [
           "Motor: Bosch Cargo Line with 85Nm torque",
@@ -467,7 +467,7 @@ const money = [
         name: "Lectric XP 4.0 – Best Compact Budget Option",
         avgRating: 4.4,
         badge: "Starting at $1,099",
-        imageUrl: "/images/electric-bikes/lectric-xp-4.0.webp",
+        imageUrl: "/images/electric-bikes/Lectric XP 4.0.webp",
         description: "For barely over a grand, the XP 4.0 delivers a surprisingly capable folding e-bike that actually handles daily use. I tested this as my backup commuter for a month, and while it's not going to blow your mind with premium features, it nails the fundamentals. If you're budget-constrained and need something that folds for storage but still feels like a real bike? This is your answer.",
         keyFeatures: [
           "Motor: 500W rear hub with cadence sensor",
