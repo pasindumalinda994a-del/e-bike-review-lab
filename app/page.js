@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import Hero from '@/components/Hero';
 import HomeCategories from '@/components/HomeCategories';
 import HomeImageGallery from '@/components/HomeImageGallery';
@@ -83,6 +84,11 @@ export default async function HomePage() {
         heading="Latest posts"
       />
       <HomeNewsletter />
+      {/* AvantLink Affiliate Application Verification Script */}
+      <Script
+        src="http://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=94bef1bb9fa08893d424b0d04bc2f2c362540193"
+        strategy="afterInteractive"
+      />
     </main>
   );
 }
