@@ -3284,7 +3284,7 @@ const money = [
     // ============================================
     heroImage: "/images/products/cargo-bikes-hero1.webp",
     cardImage: "/images/card/electric-cargo-bikes.png",
-    articleHeroImage: "/images/card/electric-cargo-bikes.png",
+    articleHeroImage: "/images/hero/electric-cargo-bikes.webp",
     heroImageAlt: "Family using electric cargo bike to transport kids and groceries through city streets",
     buyersGuideImage: "/images/products/cargo-bikes-buyers-guide.webp",
     buyersGuideImageAlt: "Comparison of different electric cargo bike styles and configurations",
@@ -3323,7 +3323,7 @@ const money = [
         name: "Tern GSD Gen 3 – Best Overall",
         avgRating: 4.8,
         badge: "Starting at $4,999",
-        imageUrl: "/images/electric-bikes/tern-gsd.webp",
+        imageUrl: "/images/electric-bikes/Tern GSD.webp",
         
         description: "After hauling two kids and a week's groceries up San Francisco's steepest hills, the Tern GSD proved why it's the gold standard. The third-generation model addresses every complaint I had about compact cargo bikes; it's stable under heavy loads, fits riders from 4'11\" to 6'7\", and feels more planted than bikes twice its length.",
         
@@ -3375,7 +3375,7 @@ const money = [
         name: "Lectric XPedition 2.0 – Best Value",
         avgRating: 4.6,
         badge: "Starting at $1,399",
-        imageUrl: "/images/electric-bikes/lectric-xpedition-2.0.webp",
+        imageUrl: "/images/electric-bikes/Lectric XPedition 2.0.webp",
         
         description: "The XPedition 2.0 delivers shocking performance for $1,399. After testing cargo bikes costing three times as much, I kept coming back to this thought: for most families, this is all the bike they'll ever need.",
         
@@ -3427,7 +3427,7 @@ const money = [
         name: "Aventon Abound SR – Best Tech Features",
         avgRating: 4.7,
         badge: "Around $2,199",
-        imageUrl: "/images/products/aventon-abound-sr.webp",
+        imageUrl: "/images/electric-bikes/Aventon Abound SR.webp",
         
         description: "The Abound SR feels like it arrived from 2030. Between the GPS tracking, remote locking, and auto-locking kickstand, this bike offers security and connectivity features I've never seen at this price point.",
         
@@ -3479,7 +3479,7 @@ const money = [
         name: "Specialized Globe Haul LT – Best Long-Tail",
         avgRating: 4.7,
         badge: "Around $3,500",
-        imageUrl: "/images/products/specialized-haul-lt.webp",
+        imageUrl: "/images/electric-bikes/Specialized Globe Haul LT.webp",
         
         description: "The Haul LT's extended rear end gives you maximum cargo flexibility. Need to carry two kids AND four bags of groceries? This bike says \"no problem\" when others max out.",
         
@@ -3532,7 +3532,7 @@ const money = [
         name: "Urban Arrow Family – Best Front-Loader",
         avgRating: 4.8,
         badge: "Starting at $5,999",
-        imageUrl: "/images/products/urban-arrow-family.webp",
+        imageUrl: "/images/electric-bikes/Urban Arrow Family.webp",
         
         description: "Front-loading cargo bikes divide opinion, but after 400 miles with the Urban Arrow Family, I'm a convert. Having your kids up front transforms the experience; you can actually talk to them, and they get a vastly better view than staring at your back.",
         
@@ -3585,7 +3585,7 @@ const money = [
         name: "Riese & Müller Carrie – Best Premium Performance",
         avgRating: 4.9,
         badge: "Starting at $6,999",
-        imageUrl: "/images/products/riese-muller-packster-70.webp",
+        imageUrl: "/images/electric-bikes/Riese & Müller Carrie.webp",
         
         description: "German engineering at its finest. The Carrie brings refinement, power, and attention to detail that justify its premium price if you want the best and don't mind paying for it.",
         
@@ -3638,7 +3638,7 @@ const money = [
         name: "Tern Quick Haul Long D9 – Best Compact Option",
         avgRating: 4.5,
         badge: "Around $3,499",
-        imageUrl: "/images/products/tern-quick-haul-long.webp",
+        imageUrl: "/images/electric-bikes/Tern Quick Haul Long D9.webp",
         
         description: "The Quick Haul Long splits the difference between regular bikes and full cargo bikes. It's perfect for people who occasionally need cargo capacity but prioritize a bike that rides normally most of the time.",
         
@@ -3691,7 +3691,7 @@ const money = [
         name: "Riese & Müller Packster 70 – Best Family Hauler",
         avgRating: 4.8,
         badge: "Starting at $7,499",
-        imageUrl: "/images/products/riese-muller-packster-70.webp",
+        imageUrl: "/images/electric-bikes/Riese & Müller Packster 70.webp",
         
         description: "The Packster 70's massive front box can swallow three kids, four bags of groceries, and a golden retriever, all at once. It's overkill for most people, but if you need maximum child-hauling capacity, nothing else comes close.",
         
@@ -3744,7 +3744,7 @@ const money = [
         name: "Riese & Müller Multitinker – Best for Business",
         avgRating: 4.7,
         badge: "Starting at $6,499",
-        imageUrl: "/images/products/riese-muller-multitinker.webp",
+        imageUrl: "/images/electric-bikes/Riese & Müller Multitinker.webp",
         
         description: "The Multitinker is purpose-built for commercial use. After watching delivery riders test it for two months, I'm convinced this is the best cargo bike for businesses serious about ditching delivery vans.",
         
@@ -3797,7 +3797,7 @@ const money = [
         name: "Cube Cargo Hybrid – Best Entry-Level Option",
         avgRating: 4.4,
         badge: "Starting at $3,299",
-        imageUrl: "/images/products/cube-cargo-hybrid.webp",
+        imageUrl: "/images/electric-bikes/Cube Cargo Hybrid.webp",
         
         description: "The Cube Cargo Hybrid offers solid performance and build quality at an accessible price. It won't wow you with premium features, but it handles daily cargo tasks reliably without breaking the bank.",
         
