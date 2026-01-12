@@ -16,6 +16,7 @@ import gsap from 'gsap';
  * @param {boolean} [props.external] - Whether link opens in new tab
  * @param {string} [props.rel] - Link rel attribute
  * @param {string} [props.variant] - Button variant: 'filled' (default) or 'outlined'
+ * @param {Function} [props.onClick] - Optional click handler
  */
 export default function AnimatedButton({ 
   href, 
@@ -23,7 +24,8 @@ export default function AnimatedButton({
   className = '', 
   external = false,
   rel = '',
-  variant = 'filled'
+  variant = 'filled',
+  onClick
 }) {
   const buttonRef = useRef(null);
   const topTextRef = useRef(null);
@@ -80,7 +82,7 @@ export default function AnimatedButton({
       }, "<0.1");
     };
 
-    const handleClick = () => {
+    const handleClick = (e) => {
       if (hoverTl) hoverTl.kill();
       hoverTl = gsap.timeline();
       hoverTl.to(topText, {
@@ -95,6 +97,11 @@ export default function AnimatedButton({
         duration: 0.2,
         ease: "power2.inOut",
       }, "<0.1");
+      
+      // Call optional onClick handler
+      if (onClick) {
+        onClick(e);
+      }
     };
 
     button.addEventListener("mouseenter", handleMouseEnter);

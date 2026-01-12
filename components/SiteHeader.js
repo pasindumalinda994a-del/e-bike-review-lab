@@ -6,6 +6,7 @@ import { ChevronDown, X, ArrowRight } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { categories } from '@/content/categories';
+import AnimatedButton from '@/components/AnimatedButton';
 
 // Build header navigation links straight from the categories list.
 const REVIEW_LINKS = categories.map((category) => ({
@@ -60,10 +61,6 @@ export default function SiteHeader() {
   const contactTopTextRef = useRef(null);
   const contactBottomTextRef = useRef(null);
   
-  const ctaLinkRef = useRef(null);
-  const ctaTopTextRef = useRef(null);
-  const ctaBottomTextRef = useRef(null);
-  
   const isInitialMount = useRef(true);
 
   // Close mobile menu when clicking outside
@@ -98,21 +95,16 @@ export default function SiteHeader() {
     const contactLink = contactLinkRef.current;
     const contactTopText = contactTopTextRef.current;
     const contactBottomText = contactBottomTextRef.current;
-    
-    const ctaLink = ctaLinkRef.current;
-    const ctaTopText = ctaTopTextRef.current;
-    const ctaBottomText = ctaBottomTextRef.current;
 
     if (!reviewsButton || !reviewsTopText || !reviewsBottomText ||
         !learnButton || !learnTopText || !learnBottomText ||
         !aboutLink || !aboutTopText || !aboutBottomText ||
-        !contactLink || !contactTopText || !contactBottomText ||
-        !ctaLink || !ctaTopText || !ctaBottomText) return;
+        !contactLink || !contactTopText || !contactBottomText) return;
 
     // Set initial state
     if (isInitialMount.current) {
-      gsap.set([reviewsTopText, learnTopText, aboutTopText, contactTopText, ctaTopText], { y: 0, opacity: 1 });
-      gsap.set([reviewsBottomText, learnBottomText, aboutBottomText, contactBottomText, ctaBottomText], { y: "-100%", opacity: 1 });
+      gsap.set([reviewsTopText, learnTopText, aboutTopText, contactTopText], { y: 0, opacity: 1 });
+      gsap.set([reviewsBottomText, learnBottomText, aboutBottomText, contactBottomText], { y: "-100%", opacity: 1 });
       isInitialMount.current = false;
     }
 
@@ -120,7 +112,6 @@ export default function SiteHeader() {
     let learnHoverTl = null;
     let aboutHoverTl = null;
     let contactHoverTl = null;
-    let ctaHoverTl = null;
 
     // Reviews button animations
     const handleReviewsMouseEnter = () => {
@@ -330,58 +321,6 @@ export default function SiteHeader() {
       }, "<0.1");
     };
 
-    // CTA link animations
-    const handleCtaMouseEnter = () => {
-      if (ctaHoverTl) ctaHoverTl.kill();
-      ctaHoverTl = gsap.timeline();
-      ctaHoverTl.to(ctaTopText, {
-        y: "-200%",
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      });
-      ctaHoverTl.to(ctaBottomText, {
-        y: 0,
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      }, "<0.1");
-    };
-
-    const handleCtaMouseLeave = () => {
-      if (ctaHoverTl) ctaHoverTl.kill();
-      ctaHoverTl = gsap.timeline();
-      ctaHoverTl.to(ctaBottomText, {
-        y: "200%",
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      });
-      ctaHoverTl.to(ctaTopText, {
-        y: 0,
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      }, "<0.1");
-    };
-
-    const handleCtaClick = () => {
-      if (ctaHoverTl) ctaHoverTl.kill();
-      ctaHoverTl = gsap.timeline();
-      ctaHoverTl.to(ctaTopText, {
-        y: "-200%",
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      });
-      ctaHoverTl.to(ctaBottomText, {
-        y: 0,
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      }, "<0.1");
-    };
-
     // Add event listeners
     reviewsButton.addEventListener("mouseenter", handleReviewsMouseEnter);
     reviewsButton.addEventListener("mouseleave", handleReviewsMouseLeave);
@@ -398,10 +337,6 @@ export default function SiteHeader() {
     contactLink.addEventListener("mouseenter", handleContactMouseEnter);
     contactLink.addEventListener("mouseleave", handleContactMouseLeave);
     contactLink.addEventListener("click", handleContactClick);
-
-    ctaLink.addEventListener("mouseenter", handleCtaMouseEnter);
-    ctaLink.addEventListener("mouseleave", handleCtaMouseLeave);
-    ctaLink.addEventListener("click", handleCtaClick);
 
     // Cleanup
     return () => {
@@ -421,15 +356,10 @@ export default function SiteHeader() {
       contactLink.removeEventListener("mouseleave", handleContactMouseLeave);
       contactLink.removeEventListener("click", handleContactClick);
 
-      ctaLink.removeEventListener("mouseenter", handleCtaMouseEnter);
-      ctaLink.removeEventListener("mouseleave", handleCtaMouseLeave);
-      ctaLink.removeEventListener("click", handleCtaClick);
-
       if (reviewsHoverTl) reviewsHoverTl.kill();
       if (learnHoverTl) learnHoverTl.kill();
       if (aboutHoverTl) aboutHoverTl.kill();
       if (contactHoverTl) contactHoverTl.kill();
-      if (ctaHoverTl) ctaHoverTl.kill();
     };
   }, []);
 
@@ -543,22 +473,15 @@ export default function SiteHeader() {
           </div>
           
           {/* Desktop CTA */}
-          <Link
-            ref={ctaLinkRef}
-            href="/contact"
-            className="hidden md:inline-flex items-center justify-center gap-2 bg-black text-white px-5 py-2.5 rounded-md font-normal text-base relative overflow-hidden"
-          >
-            <span className="flex items-center gap-2 relative">
-              <span ref={ctaTopTextRef} className="flex items-center gap-2">
-                Let's Talk
-                <ArrowRight className="h-4 w-4" />
-              </span>
-              <span ref={ctaBottomTextRef} className="flex items-center gap-2 absolute top-0 left-0 w-full">
-                Let's Talk
-                <ArrowRight className="h-4 w-4" />
-              </span>
-            </span>
-          </Link>
+          <div className="hidden md:block">
+            <AnimatedButton
+              href="/contact"
+              className="items-center gap-2"
+            >
+              Let's Talk
+              <ArrowRight className="h-4 w-4" />
+            </AnimatedButton>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -666,14 +589,14 @@ export default function SiteHeader() {
             >
               Contact Us
             </Link>
-            <Link
+            <AnimatedButton
               href="/contact"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="mt-4 inline-flex items-center justify-start gap-2 bg-black text-white px-6 py-3 rounded-lg text-base font-normal"
+              className="mt-4 items-center justify-start gap-2 px-6 py-3"
             >
               Let's Talk
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </AnimatedButton>
           </nav>
         </div>
       )}

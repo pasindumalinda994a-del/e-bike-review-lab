@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
+import AnimatedButton from "@/components/AnimatedButton";
 
 // Email capture form for the homepage.
 export default function HomeNewsletter() {
@@ -14,95 +15,6 @@ export default function HomeNewsletter() {
   // Refs for button animations
   const submitButtonRef = useRef(null);
   const arrowIconRef = useRef(null);
-  const youtubeLinkRef = useRef(null);
-  const youtubeTopTextRef = useRef(null);
-  const youtubeBottomTextRef = useRef(null);
-  
-  const isInitialMount = useRef(true);
-
-  // GSAP animations for buttons
-  useEffect(() => {
-    const youtubeLink = youtubeLinkRef.current;
-    const youtubeTopText = youtubeTopTextRef.current;
-    const youtubeBottomText = youtubeBottomTextRef.current;
-
-    if (!youtubeLink || !youtubeTopText || !youtubeBottomText) return;
-
-    // Set initial state
-    if (isInitialMount.current) {
-      gsap.set(youtubeTopText, { y: 0, opacity: 1 });
-      gsap.set(youtubeBottomText, { y: "-100%", opacity: 1 });
-      isInitialMount.current = false;
-    }
-
-    let youtubeHoverTl = null;
-
-    // YouTube link animations
-    const handleYoutubeMouseEnter = () => {
-      if (youtubeHoverTl) youtubeHoverTl.kill();
-      youtubeHoverTl = gsap.timeline();
-      youtubeHoverTl.to(youtubeTopText, {
-        y: "-200%",
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      });
-      youtubeHoverTl.to(youtubeBottomText, {
-        y: 0,
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      }, "<0.1");
-    };
-
-    const handleYoutubeMouseLeave = () => {
-      if (youtubeHoverTl) youtubeHoverTl.kill();
-      youtubeHoverTl = gsap.timeline();
-      youtubeHoverTl.to(youtubeBottomText, {
-        y: "200%",
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      });
-      youtubeHoverTl.to(youtubeTopText, {
-        y: 0,
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      }, "<0.1");
-    };
-
-    const handleYoutubeClick = () => {
-      if (youtubeHoverTl) youtubeHoverTl.kill();
-      youtubeHoverTl = gsap.timeline();
-      youtubeHoverTl.to(youtubeTopText, {
-        y: "-100%",
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      });
-      youtubeHoverTl.to(youtubeBottomText, {
-        y: 0,
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      }, "<0.1");
-    };
-
-    // Add event listeners
-    youtubeLink.addEventListener("mouseenter", handleYoutubeMouseEnter);
-    youtubeLink.addEventListener("mouseleave", handleYoutubeMouseLeave);
-    youtubeLink.addEventListener("click", handleYoutubeClick);
-
-    // Cleanup
-    return () => {
-      youtubeLink.removeEventListener("mouseenter", handleYoutubeMouseEnter);
-      youtubeLink.removeEventListener("mouseleave", handleYoutubeMouseLeave);
-      youtubeLink.removeEventListener("click", handleYoutubeClick);
-
-      if (youtubeHoverTl) youtubeHoverTl.kill();
-    };
-  }, []);
 
   // GSAP animation for arrow icon rotation on hover
   useEffect(() => {
@@ -353,22 +265,14 @@ export default function HomeNewsletter() {
               </div>
             </div>
             <div className="mt-6">
-              <Link
-                ref={youtubeLinkRef}
+              <AnimatedButton
                 href="https://www.youtube.com"
-                target="_blank"
+                external={true}
                 rel="noreferrer"
-                className="inline-flex items-center justify-start rounded-md bg-[#0C1412] px-5 py-2.5 text-base font-normal text-white relative overflow-hidden"
+                className="items-center justify-start"
               >
-                <span className="block relative">
-                  <span ref={youtubeTopTextRef} className="block">
-                    @ebikereviewlab
-                  </span>
-                  <span ref={youtubeBottomTextRef} className="block absolute top-0 left-0 w-full">
-                    @ebikereviewlab
-                  </span>
-                </span>
-              </Link>
+                @ebikereviewlab
+              </AnimatedButton>
             </div>
           </div>
 
