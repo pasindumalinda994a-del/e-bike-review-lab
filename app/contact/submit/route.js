@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { addContactToSheet } from '@/lib/google-sheets';
+import { sendContactEmail } from '@/lib/email';
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -9,12 +10,10 @@ export async function POST(request) {
     
     const name = formData.get('name')?.toString().trim() || '';
     const email = formData.get('email')?.toString().trim() || '';
-    const inquiryType = formData.get('inquiryType')?.toString().trim() || '';
-    const subject = formData.get('subject')?.toString().trim() || '';
     const message = formData.get('message')?.toString().trim() || '';
 
     // Validate required fields
-    if (!name || !email || !inquiryType || !subject || !message) {
+    if (!name || !email || !message) {
       return NextResponse.json(
         { success: false, error: 'All fields are required' },
         { status: 400 }
@@ -30,48 +29,64 @@ export async function POST(request) {
       );
     }
 
-    // Try to add to Google Sheets
+    // Send email notification
+    let emailSent = false;
+    try {
+      await sendContactEmail({
+        name,
+        email: normalizedEmail,
+        message,
+      });
+      emailSent = true;
+      console.info('[contact] email sent successfully');
+    } catch (error) {
+      console.error('[contact] error sending email:', error);
+      // Continue to try Google Sheets as backup
+    }
+
+    // Try to add to Google Sheets (optional backup)
     try {
       const result = await addContactToSheet({
         name,
         email: normalizedEmail,
-        inquiryType,
-        subject,
+        inquiryType: 'General Inquiry',
+        subject: `Contact from ${name}`,
         message,
       });
       
       console.info('[contact] new submission added to Google Sheets:', {
         email: normalizedEmail,
-        inquiryType,
         result,
       });
-
-      return NextResponse.json(
-        { success: true, message: 'Your message has been sent successfully!' },
-        { status: 200 }
-      );
     } catch (error) {
-      // Log error but still show success to user (fail gracefully)
+      // Log error but don't fail the request
       console.error('[contact] error adding to Google Sheets:', error);
       
-      // If it's a configuration error, log it but don't expose to user
-      if (error.message?.includes('not configured') || error.message?.includes('credentials')) {
-        console.error('[contact] Google Sheets not properly configured. Please check environment variables.');
+      // If email also failed, this is a problem
+      if (!emailSent) {
+        console.error('[contact] Both email and Google Sheets failed. Please check configuration.');
       }
-      
-      // Still return success to user (fail gracefully)
-      // In production, you might want to send an email notification as backup
+    }
+
+    // Return success if email was sent (primary method)
+    if (emailSent) {
       return NextResponse.json(
         { success: true, message: 'Your message has been sent successfully!' },
         { status: 200 }
       );
     }
-  } catch (error) {
-    console.error('[contact] unexpected error:', error);
-    // Fail gracefully - still return success
+
+    // If email failed but we want to be graceful, still return success
+    // In production, you might want to return an error here
     return NextResponse.json(
       { success: true, message: 'Your message has been sent successfully!' },
       { status: 200 }
+    );
+  } catch (error) {
+    console.error('[contact] unexpected error:', error);
+    return NextResponse.json(
+      { success: false, error: 'An error occurred while processing your request' },
+      { status: 500 }
     );
   }
 }

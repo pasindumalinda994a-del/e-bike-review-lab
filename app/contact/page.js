@@ -5,7 +5,7 @@ import gsap from 'gsap';
 import JsonLdSchema from '@/components/JsonLdSchema';
 import { buildContactPageSchema } from '@/lib/metadata';
 
-const CONTACT_EMAIL = 'hello@ebikereviewlab.com';
+const CONTACT_EMAIL = 'pasindumalinda994a@gmail.com';
 
 // Note: Metadata should be handled in a layout or parent component for client components
 // This is a client component for form interactivity
