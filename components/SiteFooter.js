@@ -2,104 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
 import { categories } from "@/content/categories";
+import AnimatedButton from "@/components/AnimatedButton";
 
 // Global footer with navigation, resources, and contact details.
 export default function SiteFooter() {
   const currentYear = new Date().getFullYear();
   const featuredCategories = categories.slice(0, 8);
-
-  // Refs for button animations
-  const newsletterLinkRef = useRef(null);
-  const newsletterTopTextRef = useRef(null);
-  const newsletterBottomTextRef = useRef(null);
-  const isInitialMount = useRef(true);
-
-  // GSAP animations for newsletter button
-  useEffect(() => {
-    const newsletterLink = newsletterLinkRef.current;
-    const newsletterTopText = newsletterTopTextRef.current;
-    const newsletterBottomText = newsletterBottomTextRef.current;
-
-    if (!newsletterLink || !newsletterTopText || !newsletterBottomText) return;
-
-    // Set initial state
-    if (isInitialMount.current) {
-      gsap.set(newsletterTopText, { y: 0, opacity: 1 });
-      gsap.set(newsletterBottomText, { y: "-100%", opacity: 1 });
-      isInitialMount.current = false;
-    }
-
-    let newsletterHoverTl = null;
-
-    // Newsletter link animations
-    const handleNewsletterMouseEnter = () => {
-      if (newsletterHoverTl) newsletterHoverTl.kill();
-      newsletterHoverTl = gsap.timeline();
-      newsletterHoverTl.to(newsletterTopText, {
-        y: "-200%",
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      });
-      newsletterHoverTl.to(newsletterBottomText, {
-        y: 0,
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      }, "<0.1");
-    };
-
-    const handleNewsletterMouseLeave = () => {
-      if (newsletterHoverTl) newsletterHoverTl.kill();
-      newsletterHoverTl = gsap.timeline();
-      newsletterHoverTl.to(newsletterBottomText, {
-        y: "200%",
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      });
-      newsletterHoverTl.to(newsletterTopText, {
-        y: 0,
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      }, "<0.1");
-    };
-
-    const handleNewsletterClick = () => {
-      if (newsletterHoverTl) newsletterHoverTl.kill();
-      newsletterHoverTl = gsap.timeline();
-      newsletterHoverTl.to(newsletterTopText, {
-        y: "-100%",
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      });
-      newsletterHoverTl.to(newsletterBottomText, {
-        y: 0,
-        opacity: 1,
-        duration: 0.2,
-        ease: "power2.inOut",
-      }, "<0.1");
-    };
-
-    // Add event listeners
-    newsletterLink.addEventListener("mouseenter", handleNewsletterMouseEnter);
-    newsletterLink.addEventListener("mouseleave", handleNewsletterMouseLeave);
-    newsletterLink.addEventListener("click", handleNewsletterClick);
-
-    // Cleanup
-    return () => {
-      newsletterLink.removeEventListener("mouseenter", handleNewsletterMouseEnter);
-      newsletterLink.removeEventListener("mouseleave", handleNewsletterMouseLeave);
-      newsletterLink.removeEventListener("click", handleNewsletterClick);
-
-      if (newsletterHoverTl) newsletterHoverTl.kill();
-    };
-  }, []);
 
   return (
     <footer className=" bg-white ">
@@ -125,20 +34,12 @@ export default function SiteFooter() {
             links, we may earn a commission at no additional cost to you. These
             commissions help fund our product testing and editorial coverage.
           </p>
-          <Link
-            ref={newsletterLinkRef}
+          <AnimatedButton
             href="/newsletter"
-            className="inline-flex items-center justify-start rounded-md bg-[#0C1412] px-5 py-2.5 text-base font-normal text-white relative overflow-hidden transition hover:bg-black"
+            className="mt-2"
           >
-            <span className="block relative">
-              <span ref={newsletterTopTextRef} className="block">
-                Get the Insider Brief
-              </span>
-              <span ref={newsletterBottomTextRef} className="block absolute top-0 left-0 w-full">
-                Get the Insider Brief
-              </span>
-            </span>
-          </Link>
+            Get the Insider Brief
+          </AnimatedButton>
         </div>
         {/* Link columns */}
         <div className="flex w-full flex-col gap-8 text-sm text-black sm:flex-row sm:justify-end md:w-auto md:gap-16">
