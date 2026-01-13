@@ -116,22 +116,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/product/Tern GSD Gen 3.webp",
-    cardImage: "/images/product/Tern GSD Gen 3.webp",
-    articleHeroImage: "/images/product/Tern GSD Gen 3.webp",
+    heroImage: "/images/electric-bikes/Tern GSD.webp",
+    cardImage: "/images/electric-bikes/Tern GSD.webp",
+    articleHeroImage: "/images/electric-bikes/Tern GSD.webp",
     heroImageAlt: "Tern GSD Gen 3 electric cargo bike loaded with two child seats and panniers on urban street",
     
     imagePrimary: {
       heading: "Hydroformed Frame Engineering: Built for Serious Loads",
       description: "The Gen 3's redesigned hydroformed aluminum frame isn't just stronger. It's fundamentally re-engineered for the 463-lb gross vehicle weight rating. After loading this bike with two kids, groceries, and gear week after week, I can confirm the frame's confidence-inspiring stability even on steep hills. The new geometry distributes weight lower and more centrally than Gen 2, which you notice immediately when cornering or braking hard with a full load.",
-      image: "/images/product/Tern GSD Gen 3.webp",
+      image: "/images/electric-bikes/Tern GSD.webp",
       alt: "Close-up of Tern GSD Gen 3 hydroformed frame with dual battery mounts and reinforced cargo area"
     },
     
     imageSecondary: {
       heading: "Atlas G Rack: The 220-Pound Workhorse",
       description: "That beefy rear rack isn't just for show. It's rated to carry 220 pounds, which I pushed to the limit hauling two 60-pound kids plus panniers stuffed with groceries. The powder-coated finish has held up remarkably well after 6 weeks of daily abuse, showing only minor scratches despite countless loading and unloading cycles. The integrated Stow Decks fold to five angles and proved invaluable for securing odd-shaped cargo and giving passengers stable foot positions.",
-      image: "/images/product/Tern GSD Gen 3.webp",
+      image: "/images/electric-bikes/Tern GSD.webp",
       alt: "Tern GSD Gen 3 Atlas G rear rack with Stow Decks extended and loaded panniers"
     },
     
@@ -437,22 +437,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/product/Lectric XPedition 2.0.webp",
-    cardImage: "/images/product/Lectric XPedition 2.0.webp",
-    articleHeroImage: "/images/product/Lectric XPedition 2.0.webp",
+    heroImage: "/images/electric-bikes/Lectric XPedition 2.0.webp",
+    cardImage: "/images/electric-bikes/Lectric XPedition 2.0.webp",
+    articleHeroImage: "/images/electric-bikes/Lectric XPedition 2.0.webp",
     heroImageAlt: "Lectric XPedition 2.0 electric cargo bike loaded with cargo panniers on urban street",
     
     imagePrimary: {
       heading: "Dual Battery Configuration & Long-Range Capability",
       description: "The XPedition 2.0's dual battery setup isn't just about range. It's about confidence. During my testing, the dual 14Ah batteries delivered consistent power even when hauling two kids plus groceries up Seattle's notorious hills. The batteries nest cleanly into the frame, keeping the center of gravity low and the bike surprisingly balanced even when fully loaded. I appreciated how the system automatically switches between batteries, giving you genuinely usable 60+ mile range under normal cargo loads.",
-      image: "/images/product/Lectric XPedition 2.0.webp",
+      image: "/images/electric-bikes/Lectric XPedition 2.0.webp",
       alt: "Lectric XPedition 2.0 dual battery configuration integrated into step-through frame"
     },
     
     imageSecondary: {
       heading: "Cargo Capacity & Accessory Ecosystem",
       description: "What makes the XPedition 2.0 genuinely practical is its modular cargo approach. The rear rack handles 300 lbs on its own, and I've tested it with everything from two kids in the seats to a full Costco run. The Lectric accessory lineup (panniers, running boards, kid seats) actually fits properly without requiring modification. I spent a week using the optional cargo bags for deliveries, and the quick-release mounting system meant I could transform from kid-hauler to cargo mule in under two minutes.",
-      image: "/images/product/Lectric XPedition 2.0.webp",
+      image: "/images/electric-bikes/Lectric XPedition 2.0.webp",
       alt: "Lectric XPedition 2.0 rear cargo rack loaded with panniers and passenger accessories"
     },
     
@@ -739,22 +739,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/product/Aventon Abound SR.webp",
-    cardImage: "/images/product/Aventon Abound SR.webp",
-    articleHeroImage: "/images/product/Aventon Abound SR.webp",
+    heroImage: "/images/electric-bikes/Aventon Abound SR.webp",
+    cardImage: "/images/electric-bikes/Aventon Abound SR.webp",
+    articleHeroImage: "/images/electric-bikes/Aventon Abound SR.webp",
     heroImageAlt: "Aventon Abound SR electric cargo bike with rear rack and BMX-style handlebars in cobalt blue",
     
     imagePrimary: {
       heading: "Advanced Security Features in Action",
       description: "The Abound SR's Aventon Control Unit (ACU) brings premium security to the affordable cargo bike segment. During testing, I used the 4G GPS tracking almost daily. It's surprisingly accurate and updates every few minutes through the app. The electronically locking kickstand is brilliant for loading cargo, preventing the bike from rolling away while you're wrestling grocery bags onto the rack. I also tested the geofencing alerts, which worked flawlessly when I deliberately moved the bike outside my set boundary.",
-      image: "/images/product/Aventon Abound SR.webp",
+      image: "/images/electric-bikes/Aventon Abound SR.webp",
       alt: "Aventon Abound SR display showing ACU smart module and security features"
     },
     
     imageSecondary: {
       heading: "Compact Design Meets Serious Capability",
       description: "The short-tail design proved more versatile than I expected. At just 45 inches wheelbase versus 60+ inches for long-tail cargo bikes, the SR navigates tight urban spaces with surprising agility. The 20-inch wheels and 3-inch tires give it a low center of gravity that makes the bike feel planted even with 100+ pounds on the rear rack. I tested it through narrow bike lanes, tight parking spots, and crowded paths, places where traditional cargo bikes struggle.",
-      image: "/images/product/Aventon Abound SR.webp",
+      image: "/images/electric-bikes/Aventon Abound SR.webp",
       alt: "Aventon Abound SR loaded with cargo showing compact dimensions and rear rack"
     },
     
@@ -1058,22 +1058,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/product/Specialized Globe Haul LT.webp",
-    cardImage: "/images/product/Specialized Globe Haul LT.webp",
-    articleHeroImage: "/images/product/Specialized Globe Haul LT.webp",
+    heroImage: "/images/electric-bikes/Specialized Globe Haul LT.webp",
+    cardImage: "/images/electric-bikes/Specialized Globe Haul LT.webp",
+    articleHeroImage: "/images/electric-bikes/Specialized Globe Haul LT.webp",
     heroImageAlt: "Specialized Globe Haul LT electric cargo bike with extended rear rack and white mountains colorway",
     
     imagePrimary: {
       heading: "Extended Longtail Design for Maximum Capacity",
       description: "The Haul LT's 31-inch rear rack dwarfs its ST sibling, offering double the mounting points and space for three kids or massive cargo loads. That extra-wide kickstand becomes essential when you're loading 176 pounds on the back. Trust me, you'll appreciate this design decision every single day.",
-      image: "/images/product/Specialized Globe Haul LT.webp",
+      image: "/images/electric-bikes/Specialized Globe Haul LT.webp",
       alt: "Specialized Globe Haul LT extended longtail rear rack with cargo mounting system"
     },
     
     imageSecondary: {
       heading: "Hub Motor Power Plant",
       description: "The 700-watt rear hub motor pumps out serious torque for a hub drive, 90Nm to be exact. While it won't multiply torque through gears like mid-drives, this beast delivers intuitive power that makes 28mph feel effortless even with two kids aboard. On my regular 12% grade test hill, I'm still hitting 12mph loaded, which is roughly double what I could manage on a regular bike with a trailer.",
-      image: "/images/product/Specialized Globe Haul LT.webp",
+      image: "/images/electric-bikes/Specialized Globe Haul LT.webp",
       alt: "Specialized Globe Haul LT 700W rear hub motor with disc brake"
     },
     
@@ -1368,21 +1368,21 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/product/Urban Arrow Family.webp",
-    cardImage: "/images/product/Urban Arrow Family.webp",
-    articleHeroImage: "/images/product/Urban Arrow Family.webp",
+    heroImage: "/images/electric-bikes/Urban Arrow Family.webp",
+    cardImage: "/images/electric-bikes/Urban Arrow Family.webp",
+    articleHeroImage: "/images/electric-bikes/Urban Arrow Family.webp",
     heroImageAlt: "Urban Arrow Family electric cargo bike with EPP foam box and two children in front cargo area",
     
     imagePrimary: {
       heading: "EPP Foam Box Design",
       description: "The cargo box is constructed from expanded polypropylene foam, the same material used in bicycle helmets. During testing, this proved incredibly durable while remaining lightweight. The foam construction survived 6 months of daily kid-hauling, grocery runs, and occasional bumps without cracks. Unlike plastic boxes on some competitors, the EPP material absorbs impacts rather than cracking, and the slightly textured surface prevents slipping.",
-      image: "/images/product/Urban Arrow Family.webp",
+      image: "/images/electric-bikes/Urban Arrow Family.webp",
       alt: "Urban Arrow Family EPP foam cargo box showing deep interior and helmet-grade construction"
     },
     imageSecondary: {
       heading: "Front-Loading Visibility Advantage",
       description: "Having kids directly in front transformed our daily rides. Unlike longtail cargo bikes where you're constantly checking mirrors, I could see my two kids' reactions, point out interesting sights, and engage in conversations. During 6 months of testing, this became the biggest unexpected benefit; the kids stayed more entertained and I felt more connected to them throughout our commutes.",
-      image: "/images/product/Urban Arrow Family.webp",
+      image: "/images/electric-bikes/Urban Arrow Family.webp",
       alt: "Front view of Urban Arrow Family showing children's perspective and visibility for rider"
     },
     
@@ -1679,22 +1679,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/product/Riese & Müller Carrie.webp",
-    cardImage: "/images/product/Riese & Müller Carrie.webp",
-    articleHeroImage: "/images/product/Riese & Müller Carrie.webp",
+    heroImage: "/images/electric-bikes/Riese & Müller Carrie.webp",
+    cardImage: "/images/electric-bikes/Riese & Müller Carrie.webp",
+    articleHeroImage: "/images/electric-bikes/Riese & Müller Carrie.webp",
     heroImageAlt: "Riese & Müller Carrie electric cargo bike with Flex Box deployed in urban setting",
     
     imagePrimary: {
       heading: "The Genius Flex Box: Compact When Closed, Spacious When Open",
       description: "The Carrie's defining feature is its innovative Flex Box that collapses to just 18 inches (46cm) wide (narrower than most handlebars), then expands to 29.5 inches (75cm) for carrying kids or cargo. After four weeks of testing, I found the locking mechanism intuitive once you get the hang of it. Two side levers release the panels, which click firmly into deployed or collapsed positions. When closed, it still holds a standard beverage crate; when open, it accommodated three large grocery bags, my backpack, and a case of drinks without issue. The lockable design means you can leave it curbside with confidence, something I tested repeatedly during coffee shop stops.",
-      image: "/images/product/Riese & Müller Carrie.webp",
+      image: "/images/electric-bikes/Riese & Müller Carrie.webp",
       alt: "Riese & Müller Carrie Flex Box shown in both collapsed and expanded configurations"
     },
     
     imageSecondary: {
       heading: "Urban Agility That Actually Matches Regular Bikes",
       description: "At 209cm (6.8 feet) total length, the Carrie is Riese & Müller's most compact front-loader, 35cm shorter than their Transporter 65. This wasn't just marketing speak. During testing in downtown Seattle, I squeezed through bike lane bollards that would've blocked traditional long johns, navigated spiral parking garage ramps without drama, and fit into standard bike racks at the grocery store. The 43cm-wide Basic Box (46cm with Flex Box closed) keeps the front profile remarkably narrow. Combined with 20-inch wheels and responsive steering, the Carrie handles more like an oversized city bike than a cargo hauler, until you load it up, which we'll discuss in the performance section.",
-      image: "/images/product/Riese & Müller Carrie.webp",
+      image: "/images/electric-bikes/Riese & Müller Carrie.webp",
       alt: "Riese & Müller Carrie electric cargo bike parked in tight urban space showing compact footprint"
     },
     
@@ -1984,22 +1984,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/product/Tern Quick Haul Long D9.webp",
-    cardImage: "/images/product/Tern Quick Haul Long D9.webp",
-    articleHeroImage: "/images/product/Tern Quick Haul Long D9.webp",
+    heroImage: "/images/electric-bikes/Tern Quick Haul Long D9.webp",
+    cardImage: "/images/electric-bikes/Tern Quick Haul Long D9.webp",
+    articleHeroImage: "/images/electric-bikes/Tern Quick Haul Long D9.webp",
     heroImageAlt: "Tern Quick Haul Long D9 electric cargo bike with rear rack and compact longtail design",
     
     imagePrimary: {
       heading: "Vertical Storage & Compact Design",
       description: "One surprise that changed how I view this bike: it actually stands upright for storage. In my cramped garage between two cars, the Quick Haul Long parks vertically and takes up about the same space as a large potted plant. The Speedlifter stem drops without tools, handlebars rotate, and suddenly you've got a cargo bike that fits where normal bikes won't. After three weeks of daily storage, this feature alone justified the premium price for my living situation.",
-      image: "/images/product/Tern Quick Haul Long D9.webp",
+      image: "/images/electric-bikes/Tern Quick Haul Long D9.webp",
       alt: "Tern Quick Haul Long D9 standing vertically for compact storage"
     },
     
     imageSecondary: {
       heading: "Atlas Kickstand in Action",
       description: "The Atlas kickstand isn't just marketing; it's genuinely burly. I tested it repeatedly with both kids loaded (about 120 lb combined), and the bike stayed rock-solid while they climbed on and off. The stainless steel thru-axle design eliminates that nervous wobble you get with standard kickstands on loaded bikes. Worth noting: it does require more force to deploy than cheaper kickstands, which my 7-year-old found challenging at first.",
-      image: "/images/product/Tern Quick Haul Long D9.webp",
+      image: "/images/electric-bikes/Tern Quick Haul Long D9.webp",
       alt: "Tern Quick Haul Long D9 Atlas kickstand supporting loaded cargo bike"
     },
     
@@ -2282,22 +2282,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/product/Riese & Müller Packster 70.webp",
-    cardImage: "/images/product/Riese & Müller Packster 70.webp",
-    articleHeroImage: "/images/product/Riese & Müller Packster 70.webp",
+    heroImage: "/images/electric-bikes/Riese & Müller Packster 70.webp",
+    cardImage: "/images/electric-bikes/Riese & Müller Packster 70.webp",
+    articleHeroImage: "/images/electric-bikes/Riese & Müller Packster 70.webp",
     heroImageAlt: "Riese & Müller Packster 70 electric cargo bike with front loading box and Bosch motor system",
     
     imagePrimary: {
       heading: "Front Box Design and Cargo Capacity",
       description: "The 70cm x 60cm EPP cargo box is where the Packster 70 really shines. I loaded everything from three kids to 90 pounds of groceries, and the reinforced, recyclable construction held up beautifully. The low center of gravity makes loading easier than other longtails I've tested. No awkward bending or lifting required. That box can handle 240 liters standard, or up to 375 liters with the optional high walls.",
-      image: "/images/product/Riese & Müller Packster 70.webp",
+      image: "/images/electric-bikes/Riese & Müller Packster 70.webp",
       alt: "Riese & Müller Packster 70 front cargo box with child seats and weather protection"
     },
     
     imageSecondary: {
       heading: "Cable-Controlled Steering System",
       description: "The cable steering initially felt strange coming from traditional bikes, but after two days it clicked. The tight turning radius is seriously tight; you can U-turn in a narrow bike lane, which makes urban navigation a breeze. In tight parking garages and crowded bike paths, this system proved its worth repeatedly. There's minimal maintenance compared to traditional linkage systems, and the precision remained consistent even after 300+ miles.",
-      image: "/images/product/Riese & Müller Packster 70.webp",
+      image: "/images/electric-bikes/Riese & Müller Packster 70.webp",
       alt: "Close-up of Riese & Müller Packster 70 cable steering mechanism and front wheel assembly"
     },
     
@@ -2585,22 +2585,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/product/Riese & Müller Multitinker.webp",
-    cardImage: "/images/product/Riese & Müller Multitinker.webp",
-    articleHeroImage: "/images/product/Riese & Müller Multitinker.webp",
+    heroImage: "/images/electric-bikes/Riese & Müller Multitinker.webp",
+    cardImage: "/images/electric-bikes/Riese & Müller Multitinker.webp",
+    articleHeroImage: "/images/electric-bikes/Riese & Müller Multitinker.webp",
     heroImageAlt: "Riese & Müller Multitinker2 electric cargo bike with 20-inch wheels and extended rear rack for child transport",
     
     imagePrimary: {
       heading: "Compact Frame, Maximum Cargo Capacity",
       description: "The Multitinker2's clever design uses 20-inch wheels to keep the overall length at just 193 cm, similar to a standard bike, while maintaining a massive 140 lb cargo capacity on the rear rack. This low center of gravity makes loaded riding surprisingly stable, even with two kids aboard. The integrated frame bag adds convenient storage for smaller items without adding bulk.",
-      image: "/images/product/Riese & Müller Multitinker.webp",
+      image: "/images/electric-bikes/Riese & Müller Multitinker.webp",
       alt: "Riese & Müller Multitinker2 extended rear cargo rack showing 140 lb capacity and child seat mounting points"
     },
     
     imageSecondary: {
       heading: "Bosch Smart System Integration",
       description: "The Multitinker2 features Bosch's latest Generation 5 Smart System with up to 100Nm of torque from the Cargo Line motor. The 625Wh PowerTube battery sits low in the frame, contributing to the bike's exceptional stability. Optional Kiox 300 display provides fitness tracking, navigation, and connectivity features including GPS tracking for theft protection.",
-      image: "/images/product/Riese & Müller Multitinker.webp",
+      image: "/images/electric-bikes/Riese & Müller Multitinker.webp",
       alt: "Riese & Müller Multitinker2 Bosch Smart System display and integrated battery"
     },
     
@@ -2890,22 +2890,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/product/Cube Cargo Hybrid.webp",
-    cardImage: "/images/product/Cube Cargo Hybrid.webp",
-    articleHeroImage: "/images/product/Cube Cargo Hybrid.webp",
+    heroImage: "/images/electric-bikes/Cube Cargo Hybrid.webp",
+    cardImage: "/images/electric-bikes/Cube Cargo Hybrid.webp",
+    articleHeroImage: "/images/electric-bikes/Cube Cargo Hybrid.webp",
     heroImageAlt: "Cube Cargo Hybrid electric cargo bike with front box loaded in urban setting",
     
     imagePrimary: {
       heading: "200-Liter Front Box Design",
       description: "The EPP foam cargo box is the heart of this bike. At 200 liters, it's massive enough for two kids side-by-side (with optional seats) or significant grocery hauls. The box sits low between the wheels, keeping weight centered for surprisingly nimble handling despite the bike's 100-pound weight. Multiple drain holes at the bottom make cleanup easy after rainy rides.",
-      image: "/images/product/Cube Cargo Hybrid.webp",
+      image: "/images/electric-bikes/Cube Cargo Hybrid.webp",
       alt: "Cube Cargo Hybrid 200-liter EPP foam front cargo box with safety features"
     },
     
     imageSecondary: {
       heading: "Bosch Cargo Line Motor Performance",
       description: "The fourth-generation Bosch Cargo Line motor delivers 85Nm of torque—critical when you're hauling 60kg of cargo up hills. Mounted low at the base of the seat tube, it keeps the center of gravity stable. I tested this extensively on 8% grades with full loads, and the motor never felt strained. It's noticeably quieter than older Bosch units too.",
-      image: "/images/product/Cube Cargo Hybrid.webp",
+      image: "/images/electric-bikes/Cube Cargo Hybrid.webp",
       alt: "Bosch Cargo Line motor mounted on Cube Cargo Hybrid electric cargo bike"
     },
     
@@ -6153,22 +6153,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-bikes/aventon-level-3.webp",
-    cardImage: "/images/electric-bikes/aventon-level-3.webp",
-    articleHeroImage: "/images/electric-bikes/aventon-level-3.webp",
+    heroImage: "/images/electric-bikes/Aventon Level 3.webp",
+    cardImage: "/images/electric-bikes/Aventon Level 3.webp",
+    articleHeroImage: "/images/electric-bikes/Aventon Level 3.webp",
     heroImageAlt: "Aventon Level 3 commuter e-bike with GPS tracking and ACU security system in matte black",
     
     imagePrimary: {
       heading: "ACU Security System & GPS Tracking",
       description: "The Aventon Control Unit (ACU) is the standout feature here. During three weeks of daily testing in downtown areas, I used the GPS tracking through the Aventon app constantly. The real-time location updates worked flawlessly, and the integrated rear wheel lock gave me genuine peace of mind when locking up at coffee shops or running quick errands.",
-      image: "/images/electric-bikes/aventon-level-3-acu.webp",
+      image: "/images/electric-bikes/Aventon Level 3.webp",
       alt: "Aventon Level 3 display showing ACU security features and GPS tracking interface"
     },
     
     imageSecondary: {
       heading: "Sensor Switch: Torque or Cadence",
       description: "This might be my favorite feature. The ability to swap between torque and cadence sensors means you're essentially getting two bikes in one. I spent the first week on torque sensor mode for that natural pedal feel, then switched to cadence for more relaxed cruising. The difference is night and day, and being able to toggle between them through the app is brilliant.",
-      image: "/images/electric-bikes/aventon-level-3-sensor.webp",
+      image: "/images/electric-bikes/Aventon Level 3.webp",
       alt: "Close-up of Aventon Level 3 sensor switch system with torque and cadence options"
     },
     
@@ -6473,22 +6473,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-bikes/lectric-xpedition-2.webp",
-    cardImage: "/images/electric-bikes/lectric-xpedition-2.webp",
-    articleHeroImage: "/images/electric-bikes/lectric-xpedition-2.webp",
+    heroImage: "/images/electric-bikes/Lectric XPedition 2.0.webp",
+    cardImage: "/images/electric-bikes/Lectric XPedition 2.0.webp",
+    articleHeroImage: "/images/electric-bikes/Lectric XPedition 2.0.webp",
     heroImageAlt: "Lectric XPedition 2.0 cargo e-bike in Raindrop Blue with loaded rear cargo rack",
     
     imagePrimary: {
       heading: "Hauling Two Kids Through Urban Streets",
       description: "During three weeks of daily testing, I carried my kids to school five days a week using the Orbitor rack system. The low center of gravity from 20-inch wheels made handling surprisingly nimble even with 180 pounds of combined payload. The extended rear rack provides genuine room for two child seats without the cramped feeling I experienced on shorter cargo bikes.",
-      image: "/images/electric-bikes/lectric-xpedition-2-kids.webp",
+      image: "/images/electric-bikes/Lectric XPedition 2.0.webp",
       alt: "Lectric XPedition 2.0 carrying two children on rear cargo rack with safety bars"
     },
     
     imageSecondary: {
       heading: "Torque Sensor Makes the Difference",
       description: "The new torque sensor paired with Lectric's PWR+ programming completely transforms how this bike feels compared to cadence-only systems. On my daily 14-mile commute with 40 pounds of groceries, the power delivery felt smooth and natural rather than the jerky on/off sensation common in budget cargo bikes. Hills that required throttle assistance on similar bikes became manageable with moderate pedaling effort.",
-      image: "/images/electric-bikes/lectric-xpedition-2-torque.webp",
+      image: "/images/electric-bikes/Lectric XPedition 2.0.webp",
       alt: "Close-up of Lectric XPedition 2.0 torque sensor and motor system"
     },
     
@@ -6784,21 +6784,21 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-bikes/specialized-turbo-levo.webp",
-    cardImage: "/images/electric-bikes/specialized-turbo-levo.webp",
-    articleHeroImage: "/images/electric-bikes/specialized-turbo-levo.webp",
+    heroImage: "/images/electric-bikes/Specialized Turbo Levo.webp",
+    cardImage: "/images/electric-bikes/Specialized Turbo Levo.webp",
+    articleHeroImage: "/images/electric-bikes/Specialized Turbo Levo.webp",
     heroImageAlt: "Specialized Turbo Levo electric mountain bike on rocky technical trail",
     
     imagePrimary: {
       heading: "GENIE Suspension System in Action",
       description: "The FOX suspension paired with Specialized's GENIE shock technology delivered exceptional performance across varied terrain during testing. This system auto-adjusts damping based on pedaling input, giving you full suspension performance when descending while preventing bob when climbing. After 150+ miles of technical trails, this setup impressed with how planted and controlled the Levo felt through chunk while maintaining efficiency on climbs.",
-      image: "/images/electric-bikes/specialized-turbo-levo-suspension.webp",
+      image: "/images/electric-bikes/Specialized Turbo Levo.webp",
       alt: "Specialized Turbo Levo GENIE suspension system detail showing FOX shock"
     },
     imageSecondary: {
       heading: "MasterMind Display and Battery Access",
       description: "The 2.2-inch color MasterMind display integrates cleanly into the top tube and provides crystal-clear ride data at a glance. Battery access is refreshingly simple—just a hex key removes the side door for quick swaps. During testing, I appreciated the modular approach: the 840Wh battery for long days, but you can drop to 600Wh to save weight or add a 280Wh range extender for marathon rides totaling 1,120Wh capacity.",
-      image: "/images/electric-bikes/specialized-turbo-levo-display.webp",
+      image: "/images/electric-bikes/Specialized Turbo Levo.webp",
       alt: "Specialized Turbo Levo MasterMind color display and battery access door"
     },
     
@@ -7096,22 +7096,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-mountain-bikes/trek-rail-8-gen5.webp",
-    cardImage: "/images/electric-mountain-bikes/trek-rail-8-gen5.webp",
-    articleHeroImage: "/images/electric-mountain-bikes/trek-rail-8-gen5.webp",
+    heroImage: "/images/electric-bikes/Trek Rail+ 8 Gen 5.webp",
+    cardImage: "/images/electric-bikes/Trek Rail+ 8 Gen 5.webp",
+    articleHeroImage: "/images/electric-bikes/Trek Rail+ 8 Gen 5.webp",
     heroImageAlt: "Trek Rail+ 8 Gen 5 electric mountain bike on rocky trail showing mullet wheel setup and RockShox suspension",
     
     imagePrimary: {
       heading: "Adjustable Geometry for Any Trail",
       description: "The Rail+ 8 Gen 5 features Trek's Mino Link adjustable geometry system and compatibility with angle-adjust headset cups. This lets you dial in the perfect setup whether you're climbing technical ascents or pointing it down gnarly descents. I spent time in both High and Low positions, and the difference in handling is immediately noticeable.",
-      image: "/images/electric-mountain-bikes/trek-rail-8-gen5-geometry.webp",
+      image: "/images/electric-bikes/Trek Rail+ 8 Gen 5.webp",
       alt: "Trek Rail+ 8 Gen 5 Mino Link geometry adjustment system showing frame pivot"
     },
     
     imageSecondary: {
       heading: "Removable 800Wh Battery System",
       description: "Trek's new RIB 2.0 (Removable Integrated Battery) system addresses the rattling issues from previous generations. The battery drops out from underneath using a 6mm hex key, making it easier to charge separately or remove for travel. The optional tension bolt keeps everything secure on rough terrain.",
-      image: "/images/electric-mountain-bikes/trek-rail-8-gen5-battery.webp",
+      image: "/images/electric-bikes/Trek Rail+ 8 Gen 5.webp",
       alt: "Trek Rail+ 8 Gen 5 showing Bosch 800Wh battery removal system"
     },
     
@@ -7393,9 +7393,9 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-bikes/velotric-discover-2.webp",
-    cardImage: "/images/electric-bikes/velotric-discover-2.webp",
-    articleHeroImage: "/images/electric-bikes/velotric-discover-2.webp",
+    heroImage: "/images/electric-bikes/Velotric Discover 2.webp",
+    cardImage: "/images/electric-bikes/Velotric Discover 2.webp",
+    articleHeroImage: "/images/electric-bikes/Velotric Discover 2.webp",
     heroImageAlt: "Velotric Discover 2 electric bike with step-through frame in cherry crimson color",
     
     // ============================================
@@ -7688,9 +7688,9 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-bikes/brompton-electric-g-line.webp",
-    cardImage: "/images/electric-bikes/brompton-electric-g-line.webp",
-    articleHeroImage: "/images/electric-bikes/brompton-electric-g-line.webp",
+    heroImage: "/images/electric-bikes/Brompton Electric G-Line.webp",
+    cardImage: "/images/electric-bikes/Brompton Electric G-Line.webp",
+    articleHeroImage: "/images/electric-bikes/Brompton Electric G-Line.webp",
     heroImageAlt: "Brompton Electric G-Line folding e-bike with 20-inch wheels in urban setting",
     
     // ============================================
@@ -7967,9 +7967,9 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-bikes/ride1up-roadster-v3.webp",
-    cardImage: "/images/electric-bikes/ride1up-roadster-v3.webp",
-    articleHeroImage: "/images/electric-bikes/ride1up-roadster-v3.webp",
+    heroImage: "/images/electric-bikes/Ride1Up Roadster V3.webp",
+    cardImage: "/images/electric-bikes/Ride1Up Roadster V3.webp",
+    articleHeroImage: "/images/electric-bikes/Ride1Up Roadster V3.webp",
     heroImageAlt: "Ride1Up Roadster V3 electric bike with gumwall tires and minimalist design",
     
     // ============================================
@@ -8233,22 +8233,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-bikes/canyon-grizl-on.webp",
-    cardImage: "/images/electric-bikes/canyon-grizl-on.webp",
-    articleHeroImage: "/images/electric-bikes/canyon-grizl-on.webp",
+    heroImage: "/images/electric-bikes/Canyon Grizl_ON.webp",
+    cardImage: "/images/electric-bikes/Canyon Grizl_ON.webp",
+    articleHeroImage: "/images/electric-bikes/Canyon Grizl_ON.webp",
     heroImageAlt: "Canyon Grizl:ON electric gravel bike with RockShox suspension and integrated lighting",
     
     imagePrimary: {
       heading: "Integrated Canyon x Lupine Lighting System",
       description: "The built-in lighting is genuinely clever. Front Lupine Nano SL pumps out 700-1000 lumens, while the signature SightStay rear lights glow from within the seat stays themselves. Both run off the main battery, meaning you're never caught without lights on unexpected evening rides. In my testing through Pacific Northwest winter darkness, the front beam proved bright enough for unlit gravel paths while staying road-legal compliant.",
-      image: "/images/electric-bikes/canyon-grizl-on-lights.webp",
+      image: "/images/electric-bikes/Canyon Grizl_ON.webp",
       alt: "Canyon Grizl:ON integrated Lupine lighting system detail showing seat stay lights"
     },
     
     imageSecondary: {
       heading: "RockShox Rudy Suspension Fork",
       description: "That 40mm of RockShox travel up front transforms rough surfaces. I tested this extensively on chunky forest service roads and cracked urban pavement—the fork soaks up everything from washboard gravel to potholes without feeling mushy. Combined with Canyon's VCLS leaf-spring seatpost, you get compliance that actually matters on 4-hour gravel rides. The suspension doesn't just improve comfort; it keeps your hands from going numb on extended rough sections.",
-      image: "/images/electric-bikes/canyon-grizl-on-suspension.webp",
+      image: "/images/electric-bikes/Canyon Grizl_ON.webp",
       alt: "RockShox Rudy Ultimate XPLR 40mm suspension fork on Canyon Grizl:ON"
     },
     
@@ -8535,22 +8535,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-bikes/tern-gsd.webp",
-    cardImage: "/images/electric-bikes/tern-gsd.webp",
-    articleHeroImage: "/images/electric-bikes/tern-gsd.webp",
+    heroImage: "/images/electric-bikes/Tern GSD.webp",
+    cardImage: "/images/electric-bikes/Tern GSD.webp",
+    articleHeroImage: "/images/electric-bikes/Tern GSD.webp",
     heroImageAlt: "Tern GSD cargo e-bike with two child seats loaded on rear rack",
     
     imagePrimary: {
       heading: "Compact Design, Full-Size Capability",
       description: "Despite its impressive 210kg (463 lb) cargo capacity, the GSD can be parked vertically in a space no bigger than a grocery bag. This is what sets it apart from bulky traditional cargo bikes—you can actually store it indoors, making it practical for urban living where space is premium. I've rolled mine into elevators, through narrow hallways, and even behind my couch when needed.",
-      image: "/images/electric-bikes/tern-gsd-vertical.webp",
+      image: "/images/electric-bikes/Tern GSD.webp",
       alt: "Tern GSD parked vertically in compact storage position indoors"
     },
     
     imageSecondary: {
       heading: "Built for Real-World Loads",
       description: "The reinforced Atlas G Rack handles up to 100kg (220 lb) on the rear alone, with a scratch-resistant powder-coated finish that's held up through six months of daily abuse. I've hauled everything from two kids with backpacks to full Costco runs, and the stability never wavers. The patent-pending Stow Decks fold down at five angles to support passengers' feet or cargo, then tuck away when not needed.",
-      image: "/images/electric-bikes/tern-gsd-loaded.webp",
+      image: "/images/electric-bikes/Tern GSD.webp",
       alt: "Tern GSD Atlas G Rack loaded with groceries and cargo bags"
     },
     
@@ -8846,21 +8846,21 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-bikes/lectric-xp-4.webp",
-    cardImage: "/images/electric-bikes/lectric-xp-4.webp",
-    articleHeroImage: "/images/electric-bikes/lectric-xp-4.webp",
+    heroImage: "/images/electric-bikes/Lectric XP 4.0.webp",
+    cardImage: "/images/electric-bikes/Lectric XP 4.0.webp",
+    articleHeroImage: "/images/electric-bikes/Lectric XP 4.0.webp",
     heroImageAlt: "Lectric XP 4.0 folding electric bike in Tempest Grey with fat tires and step-through frame",
     
     imagePrimary: {
       heading: "Folding Design Meets Full-Sized Performance",
       description: "The XP 4.0's improved folding mechanism collapses to 37\"L x 17\"W x 29\"H in under a minute. While the 69-pound weight (with battery) isn't featherlight, the compact fold means it fits in most car trunks, RVs, and storage closets without needing a bike rack. The redesigned frame geometry eliminates the stretched-out feeling of previous models, making it surprisingly comfortable for riders from 4'10\" to 6'3\".",
-      image: "/images/electric-bikes/lectric-xp-4-folded.webp",
+      image: "/images/electric-bikes/Lectric XP 4.0.webp",
       alt: "Lectric XP 4.0 folded showing compact 37-inch length and storage-friendly design"
     },
     imageSecondary: {
       heading: "Color TFT Display and Hydraulic Brake System",
       description: "The vibrant 3.5-inch color display is a massive upgrade from previous models, showing speed, battery percentage, pedal assist level, and even USB-C charging capability. Below, you can see the custom Star Union 602 hydraulic disc brakes that achieved the best stopping distance (15 feet 3 inches) ever recorded in standardized testing among all e-bikes. These aren't generic off-the-shelf brakes—Lectric designed them specifically for the XP 4.0.",
-      image: "/images/electric-bikes/lectric-xp-4-display-brakes.webp",
+      image: "/images/electric-bikes/Lectric XP 4.0.webp",
       alt: "Lectric XP 4.0 color TFT display and custom hydraulic disc brake system closeup"
     },
     

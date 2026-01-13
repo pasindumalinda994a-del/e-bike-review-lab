@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import SidebarContent from "@/components/SidebarContent";
+import AnimatedButton from "@/components/AnimatedButton";
 
 /**
  * ProductArticle Component
@@ -46,36 +47,58 @@ export default function ProductArticle({ post, publishedDate }) {
   const badge = safeString(post.badge);
   const ctaLabel = safeString(post.ctaLabel) ?? "Check Current Price";
 
+  // Format date for display below hero image
+  const dateObj = post.publishedAt ? new Date(post.publishedAt) : publishedDate ? new Date(publishedDate) : null;
+  const formattedDate = dateObj
+    ? dateObj.toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+      }).toUpperCase()
+    : publishedDate || '';
+
   return (
-    <article className="mx-auto flex w-full max-w-[1440px] flex-col space-y-16 px-4 sm:px-6 md:px-12 lg:px-16">
+    <article className="mx-auto flex w-full max-w-[1440px] flex-col space-y-4 px-4 sm:px-6 md:px-12 lg:px-16">
       {/* Header - Clean, minimal, impactful */}
-      <header className="py-12 sm:py-16 lg:py-20">
+      <header className="pt-12 pb-2 sm:pt-16 sm:pb-4 lg:pt-20 lg:pb-4">
         <div className="space-y-6">
           {/* Text content wrapper - constrained width */}
           <div className="max-w-4xl">
-            {/* Meta information - minimal and clean */}
-            <div className="flex flex-wrap items-center gap-3 text-xs font-medium tracking-wide text-[#0C1412]/60">
-              {post.category && (
-                <>
-                  <span className="inline-flex items-center gap-2">
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#0C1412]/40" aria-hidden="true" />
-                    {post.category}
-                  </span>
-                  <span className="text-[#0C1412]/20" aria-hidden="true">•</span>
-                </>
-              )}
-              {publishedDate && (
-                <time dateTime={post.publishedAt ? new Date(post.publishedAt).toISOString() : undefined}>
-                  {publishedDate}
-                </time>
-              )}
-              {post.estimatedReadingTime && (
-                <>
-                  <span className="text-[#0C1412]/20" aria-hidden="true">•</span>
-                  <span>{post.estimatedReadingTime} min read</span>
-                </>
-              )}
-            </div>
+            {/* Breadcrumb Navigation */}
+            <nav className="mb-6 sm:mb-8" aria-label="Breadcrumb">
+              <ol className="flex items-center gap-2 text-sm text-[#666666]">
+                <li>
+                  <Link
+                    href="/"
+                    className="transition-colors hover:text-[#0C1412]"
+                  >
+                    Home
+                  </Link>
+                </li>
+                {post.categorySlug && post.category && (
+                  <>
+                    <li className="text-[#999999]">/</li>
+                    <li>
+                      <Link
+                        href={`/${post.categorySlug}`}
+                        className="transition-colors hover:text-[#0C1412]"
+                      >
+                        {post.category}
+                      </Link>
+                    </li>
+                  </>
+                )}
+                {headline && (
+                  <>
+                    <li className="text-[#999999]">/</li>
+                    <li className="text-[#0C1412] font-medium" aria-current="page">
+                      {headline}
+                    </li>
+                  </>
+                )}
+              </ol>
+            </nav>
+
 
             {/* SEO: H1 - Only ONE per page, different from SEO title, includes keyword variation */}
             {headline && (
@@ -83,37 +106,86 @@ export default function ProductArticle({ post, publishedDate }) {
                 {headline}
               </h1>
             )}
+          </div>
 
-            {/* Hero Image - Main image container below title */}
-            {articleHeroImage && (
-              <figure className="relative overflow-hidden rounded-2xl mt-6 sm:mt-8">
-                <div className="aspect-[21/9] w-full">
-                  <Image
-                    src={articleHeroImage}
-                    alt={heroImageAlt}
-                    fill
-                    sizes="(min-width: 1024px) 1024px, (min-width: 768px) 90vw, 100vw"
-                    className="object-cover"
-                    priority
-                    quality={75}
-                    placeholder="blur"
-                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//9k="
-                  />
+          {/* Hero Image - Main image container below title - Full width */}
+          {articleHeroImage && (
+            <figure className="relative overflow-hidden rounded-2xl mt-6 sm:mt-8">
+              <div className="aspect-[21/9] w-full">
+                <Image
+                  src={articleHeroImage}
+                  alt={heroImageAlt}
+                  fill
+                  sizes="(min-width: 1024px) 1024px, (min-width: 768px) 90vw, 100vw"
+                  className="object-cover"
+                  priority
+                  quality={75}
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//9k="
+                />
+              </div>
+              {badge && (
+                <div className="absolute left-0 top-0 z-10 rounded-br-xl bg-[#0C1412]/95 px-3 py-1.5 shadow-lg backdrop-blur-sm sm:px-4 sm:py-2">
+                  <span className="text-xs font-semibold text-white sm:text-sm">{badge}</span>
                 </div>
-                {badge && (
-                  <div className="absolute left-0 top-0 z-10 rounded-br-xl bg-[#0C1412]/95 px-3 py-1.5 shadow-lg backdrop-blur-sm sm:px-4 sm:py-2">
-                    <span className="text-xs font-semibold text-white sm:text-sm">{badge}</span>
-                  </div>
-                )}
-                {heroImageAlt && (
-                  <figcaption className="sr-only">{heroImageAlt}</figcaption>
-                )}
-              </figure>
-            )}
+              )}
+              {heroImageAlt && (
+                <figcaption className="sr-only">{heroImageAlt}</figcaption>
+              )}
+            </figure>
+          )}
 
-            {/* Introduction thesis and paragraphs - Below hero image */}
-            {(introduction.thesis || introduction.paragraphs?.length) && (
-              <div className="mt-4 sm:mt-5 space-y-4">
+          {/* Category Label and Date - Below hero image */}
+          {(post.category || publishedDate || post.publishedAt) && (
+            <div className="flex flex-wrap items-center gap-4 mt-4 sm:mt-6">
+              {/* Category Label */}
+              {post.category && (
+                <span className="inline-flex items-center justify-center px-4 py-2 bg-black text-white text-xs font-semibold tracking-wide uppercase rounded-lg">
+                  {post.category}
+                </span>
+              )}
+              
+              {/* Date with Calendar Icon */}
+              {(publishedDate || post.publishedAt) && (
+                <div className="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-5 w-5 text-[#0C1412]"
+                    aria-hidden="true"
+                  >
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                  <time
+                    dateTime={dateObj ? dateObj.toISOString() : undefined}
+                    className="text-sm font-medium text-[#0C1412]"
+                  >
+                    {formattedDate}
+                  </time>
+                </div>
+              )}
+            </div>
+          )}
+
+        </div>
+      </header>
+
+      {/* Main Content Grid - All sections below hero image with sidebar on right */}
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-8">
+        {/* Left Column - All content sections */}
+        <div className="space-y-16 lg:col-span-8">
+          {/* Introduction thesis and paragraphs - First section in grid */}
+          {(introduction.thesis || introduction.paragraphs?.length) && (
+            <section className="pt-0 sm:pt-2">
+              <div className="max-w-4xl space-y-4">
                 {introduction.thesis && (
                   <p className="text-base leading-relaxed text-[#0C1412]/80 sm:text-lg text-left font-semibold">
                     {introduction.thesis}
@@ -124,24 +196,17 @@ export default function ProductArticle({ post, publishedDate }) {
                     <p key={index} className="text-sm leading-normal text-black sm:text-base tracking-wide text-left">{paragraph}</p>
                   ))}
               </div>
-            )}
-          </div>
-        </div>
-      </header>
-
-      {/* Main Content Grid - All sections below hero image with sidebar on right */}
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-8">
-        {/* Left Column - All content sections */}
-        <div className="space-y-16 lg:col-span-8">
+            </section>
+          )}
 
           {/* Affiliate Link Button */}
           {affiliateLink && (
             <div className="pt-6 sm:pt-8">
-              <a
+              <AnimatedButton
                 href={affiliateLink}
-                target="_blank"
+                external={true}
                 rel="sponsored nofollow noopener"
-                className="group inline-flex items-center justify-start gap-2 rounded-full bg-[#3e3ce7] px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-[#3e3ce7]/30 transition-all duration-300 hover:bg-[#3e3ce7]/90 hover:shadow-xl hover:shadow-[#3e3ce7]/40 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[#3e3ce7] focus:ring-offset-2 sm:px-8 sm:py-4 sm:text-lg"
+                className="justify-start rounded-full bg-[#3e3ce7] px-6 py-3.5 text-base font-semibold text-white focus:ring-2 focus:ring-[#3e3ce7] focus:ring-offset-2 sm:px-8 sm:py-4 sm:text-lg"
               >
                 {ctaLabel}
                 <svg
@@ -152,12 +217,12 @@ export default function ProductArticle({ post, publishedDate }) {
                   strokeWidth="2.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="h-5 w-5 transition-transform group-hover:translate-x-1"
+                  className="h-5 w-5"
                 >
                   <path d="M5 12h14" />
                   <path d="M12 5l7 7-7 7" />
                 </svg>
-              </a>
+              </AnimatedButton>
             </div>
           )}
 
@@ -531,11 +596,11 @@ export default function ProductArticle({ post, publishedDate }) {
                 )}
                 {affiliateLink && (
                   <div className="pt-4">
-                    <a
+                    <AnimatedButton
                       href={affiliateLink}
-                      target="_blank"
+                      external={true}
                       rel="sponsored nofollow noopener"
-                      className="group inline-flex items-center justify-start gap-2 rounded-full bg-[#3e3ce7] px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-[#3e3ce7]/30 transition-all duration-300 hover:bg-[#3e3ce7]/90 hover:shadow-xl hover:shadow-[#3e3ce7]/40 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[#3e3ce7] focus:ring-offset-2 sm:px-8 sm:py-4 sm:text-lg"
+                      className="justify-start rounded-full bg-[#3e3ce7] px-6 py-3.5 text-base font-semibold text-white focus:ring-2 focus:ring-[#3e3ce7] focus:ring-offset-2 sm:px-8 sm:py-4 sm:text-lg"
                     >
                       {ctaLabel}
                       <svg
@@ -546,12 +611,12 @@ export default function ProductArticle({ post, publishedDate }) {
                         strokeWidth="2.5"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="h-5 w-5 transition-transform group-hover:translate-x-1"
+                        className="h-5 w-5"
                       >
                         <path d="M5 12h14" />
                         <path d="M12 5l7 7-7 7" />
                       </svg>
-                    </a>
+                    </AnimatedButton>
                   </div>
                 )}
               </div>
