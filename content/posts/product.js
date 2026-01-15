@@ -3200,22 +3200,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-city-bikes/aventon-level-3.webp",
-    cardImage: "/images/electric-city-bikes/aventon-level-3.webp",
-    articleHeroImage: "/images/electric-city-bikes/aventon-level-3.webp",
+    heroImage: "/images/electric-bikes/Aventon Level 3.webp",
+    cardImage: "/images/electric-bikes/Aventon Level 3.webp",
+    articleHeroImage: "/images/electric-bikes/Aventon Level 3.webp",
     heroImageAlt: "Aventon Level 3 electric city bike with integrated security features and rear rack",
     
     imagePrimary: {
       heading: "GPS Tracking & Anti-Theft Security System",
       description: "The Level 3's ACU (Aventon Control Unit) includes GPS tracking, integrated rear wheel lock, motion detection, and alarm system. During testing, I accidentally triggered the motion sensor while loading groceries—the alarm activated within 2 seconds and sent an immediate push notification to my phone. The app lets you set geofencing boundaries and remotely disable the motor if stolen, adding serious peace of mind for urban parking.",
-      image: "/images/electric-city-bikes/aventon-level-3-security.webp",
+      image: "/images/electric-bikes/Aventon Level 3.webp",
       alt: "Aventon Level 3 security system with GPS tracking and integrated wheel lock"
     },
     
     imageSecondary: {
       heading: "Sensor Switch: Two Riding Styles in One Bike",
       description: "One of the Level 3's standout features is Sensor Switch—you can toggle between torque sensor (natural, pedal-responsive feel) and cadence sensor (cruise-friendly, predictable power) directly from the display. I spent two weeks on each setting. Torque mode feels intuitive for mixed terrain and gives better battery efficiency (I saw about 8 miles more range). Cadence mode is perfect for consistent flat commutes where you want steady assist without thinking about pedal pressure.",
-      image: "/images/electric-city-bikes/aventon-level-3-sensor.webp",
+      image: "/images/electric-bikes/Aventon Level 3.webp",
       alt: "Aventon Level 3 display showing sensor switch feature between torque and cadence modes"
     },
     
@@ -3496,22 +3496,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-city-bikes/lectric-xp4-750w.webp",
-    cardImage: "/images/electric-city-bikes/lectric-xp4-750w.webp",
-    articleHeroImage: "/images/electric-city-bikes/lectric-xp4-750w.webp",
+    heroImage: "/images/electric-bikes/Lectric XP 4.0.webp",
+    cardImage: "/images/electric-bikes/Lectric XP 4.0.webp",
+    articleHeroImage: "/images/electric-bikes/Lectric XP 4.0.webp",
     heroImageAlt: "Lectric XP 4 750W folding electric bike in Tempest Grey showing compact design and rear rack",
     
     imagePrimary: {
       heading: "Folded for Storage and Transport",
       description: "One standout feature I actually use weekly: the XP 4 folds down to 37x17x29 inches in under a minute. I've stuffed mine in my Honda Civic's trunk three times already for weekend trips. The quick-release pedals make this process way less annoying than my old XP 3.0. Sure, at 71 pounds it's not exactly light, but the folding mechanism is solid and hasn't loosened up after repeated use.",
-      image: "/images/electric-city-bikes/lectric-xp4-folded.webp",
+      image: "/images/electric-bikes/Lectric XP 4.0.webp",
       alt: "Lectric XP 4 750W folded compact showing storage dimensions"
     },
     
     imageSecondary: {
       heading: "TFT Display and Controls",
       description: "The new color TFT display is a huge upgrade from the old LCD screen. During testing, I found myself actually checking my wattage output and cadence—something I never bothered with before. The USB-C port has saved my phone twice on longer rides. One quirk: the battery indicator drops in 10% increments rather than true percentages, so you're getting basically a fancy version of the old bar readout. Not a dealbreaker, but slightly misleading.",
-      image: "/images/electric-city-bikes/lectric-xp4-display.webp",
+      image: "/images/electric-bikes/Lectric XP 4.0.webp",
       alt: "Lectric XP 4 750W color TFT display showing speed and power metrics"
     },
     
@@ -3780,22 +3780,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-city-bikes/velotric-discover-2.webp",
-    cardImage: "/images/electric-city-bikes/velotric-discover-2.webp",
-    articleHeroImage: "/images/electric-city-bikes/velotric-discover-2.webp",
+    heroImage: "/images/electric-bikes/Velotric Discover 2.webp",
+    cardImage: "/images/electric-bikes/Velotric Discover 2.webp",
+    articleHeroImage: "/images/electric-bikes/Velotric Discover 2.webp",
     heroImageAlt: "Velotric Discover 2 electric city bike with step-through frame and suspension fork",
     
     imagePrimary: {
       heading: "Comfort-First Design with Step-Through Frame",
       description: "The Discover 2's ultra-low 15-inch step-through design makes mounting effortless for riders of all heights. Combined with the adjustable stem and swept-back handlebars, you can dial in an upright, comfortable position that reduces strain on longer city rides. I found this particularly helpful during my daily commutes when wearing business clothes or carrying a backpack.",
-      image: "/images/electric-city-bikes/velotric-discover-2-frame.webp",
+      image: "/images/electric-bikes/Velotric Discover 2.webp",
       alt: "Velotric Discover 2 low step-through frame design showing easy mounting access"
     },
     
     imageSecondary: {
       heading: "Advanced Display and Smart Features",
       description: "The 3.5-inch full-color display is one of the brightest I've tested, remaining readable even in direct sunlight. Beyond standard ride metrics, it gives you access to the bike's extensive customization options. The Bluetooth connectivity unlocks even more features through the Velotric app, including the ability to switch between torque and cadence sensors without tools.",
-      image: "/images/electric-city-bikes/velotric-discover-2-display.webp",
+      image: "/images/electric-bikes/Velotric Discover 2.webp",
       alt: "Velotric Discover 2 color display showing ride information and settings"
     },
     
@@ -4096,22 +4096,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-city-bikes/tenways-cgo600-pro.webp",
-    cardImage: "/images/electric-city-bikes/tenways-cgo600-pro.webp",
-    articleHeroImage: "/images/electric-city-bikes/tenways-cgo600-pro.webp",
+    heroImage: "/images/electric-bikes/Tenways CGO600 Pro.webp",
+    cardImage: "/images/electric-bikes/Tenways CGO600 Pro.webp",
+    articleHeroImage: "/images/electric-bikes/Tenways CGO600 Pro.webp",
     heroImageAlt: "Tenways CGO600 Pro electric city bike in avocado green with Gates belt drive and minimalist design",
   
     imagePrimary: {
       heading: "Stealthy Design That Doesn't Scream E-Bike",
       description: "The CGO600 Pro's clean lines and hidden battery make it nearly impossible to distinguish from a traditional bike. The frame-integrated battery, concealed cables, and minimal branding create a premium aesthetic that turns heads for the right reasons. During my testing period, multiple people asked if it was custom-built because it looks that good.",
-      image: "/images/electric-city-bikes/tenways-cgo600-pro-detail.webp",
+      image: "/images/electric-bikes/Tenways CGO600 Pro.webp",
       alt: "Tenways CGO600 Pro showing integrated battery design and clean cable routing"
     },
   
     imageSecondary: {
       heading: "Gates Carbon Belt Drive for Virtually Silent Operation",
       description: "The CGO600 Pro features a Gates Carbon belt drive instead of a traditional chain, which means zero grease, minimal maintenance, and whisper-quiet operation. This belt is rated for 19,000 miles before replacement, and in my six weeks of testing, it required absolutely zero attention while delivering smooth, consistent power transfer.",
-      image: "/images/electric-city-bikes/tenways-cgo600-pro-belt.webp",
+      image: "/images/electric-bikes/Tenways CGO600 Pro.webp",
       alt: "Close-up of Gates Carbon belt drive system on Tenways CGO600 Pro"
     },
   
@@ -4412,21 +4412,21 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-city-bikes/ride1up-roadster-v3.webp",
-    cardImage: "/images/electric-city-bikes/ride1up-roadster-v3.webp",
-    articleHeroImage: "/images/electric-city-bikes/ride1up-roadster-v3.webp",
+    heroImage: "/images/electric-bikes/Ride1Up Roadster V3.webp",
+    cardImage: "/images/electric-bikes/Ride1Up Roadster V3.webp",
+    articleHeroImage: "/images/electric-bikes/Ride1Up Roadster V3.webp",
     heroImageAlt: "Ride1Up Roadster V3 electric city bike in mint green with chain drivetrain",
     
     imagePrimary: {
       heading: "Lightweight Frame Meets Premium Components",
       description: "At just 40 pounds, the Roadster V3's aluminum frame houses a 500W hub motor, lockable Samsung battery, and either a Microshift 9-speed drivetrain or Dayco belt drive. The integrated design keeps cables hidden and electronics protected, while maintaining the clean aesthetic of a traditional road bike. This weight advantage makes it practical for apartment stairs and tight storage spaces.",
-      image: "/images/electric-city-bikes/roadster-v3-frame-detail.webp",
+      image: "/images/electric-bikes/Ride1Up Roadster V3.webp",
       alt: "Ride1Up Roadster V3 aluminum frame showing integrated battery and hidden cable routing"
     },
     imageSecondary: {
       heading: "Intui-Drive Torque Sensor Technology",
       description: "The V3's Intui-Drive torque sensor system delivers power that matches your pedaling effort rather than just detecting rotation. Developed by engineers behind Bosch eBike systems, this technology provides instant, smooth assistance that feels more like riding a traditional bike with supercharged legs. The system works with a 500W Mivice hub motor producing 50Nm of torque, creating a responsive ride experience that cadence sensors can't replicate.",
-      image: "/images/electric-city-bikes/roadster-v3-torque-sensor.webp",
+      image: "/images/electric-bikes/Ride1Up Roadster V3.webp",
       alt: "Intui-Drive torque sensor system on Ride1Up Roadster V3 electric bike"
     },
     
@@ -4712,22 +4712,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-city-bikes/specialized-turbo-vado-4.webp",
-    cardImage: "/images/electric-city-bikes/specialized-turbo-vado-4.webp",
-    articleHeroImage: "/images/electric-city-bikes/specialized-turbo-vado-4.webp",
+    heroImage: "/images/electric-bikes/Specialized Turbo Vado 4.0.webp",
+    cardImage: "/images/electric-bikes/Specialized Turbo Vado 4.0.webp",
+    articleHeroImage: "/images/electric-bikes/Specialized Turbo Vado 4.0.webp",
     heroImageAlt: "Specialized Turbo Vado 4.0 electric city bike in urban setting showing step-through frame design",
     
     imagePrimary: {
       heading: "Integrated Display and Controls",
       description: "The Vado 4.0's handlebar setup features Specialized's Mission Control display integrated cleanly into the top tube. During testing, I found the display readable in direct sunlight, though the button placement took a few rides to memorize. The system shows battery percentage, speed, and assist level without cluttering your view, which is a thoughtful touch for city riding where you're constantly checking traffic.",
-      image: "/images/electric-city-bikes/specialized-turbo-vado-4-display.webp",
+      image: "/images/electric-bikes/Specialized Turbo Vado 4.0.webp",
       alt: "Close-up of Specialized Turbo Vado 4.0 integrated display and control system"
     },
     
     imageSecondary: {
       heading: "Step-Through Frame in Action",
       description: "The low step-through design proved its worth repeatedly during my testing period. Whether I was wearing work clothes, stopping at traffic lights every two blocks, or making quick grocery runs, the easy mount/dismount became something I genuinely appreciated. This photo shows the frame geometry that makes urban stops effortless, with no awkward leg swinging over a high top tube when you're carrying a messenger bag.",
-      image: "/images/electric-city-bikes/specialized-turbo-vado-4-frame.webp",
+      image: "/images/electric-bikes/Specialized Turbo Vado 4.0.webp",
       alt: "Specialized Turbo Vado 4.0 step-through frame design showing easy mounting access"
     },
     
@@ -5009,22 +5009,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-city-bikes/radster-road.webp",
-    cardImage: "/images/electric-city-bikes/radster-road.webp",
-    articleHeroImage: "/images/electric-city-bikes/radster-road.webp",
+    heroImage: "/images/electric-bikes/Rad Power RadSter Road.webp",
+    cardImage: "/images/electric-bikes/Rad Power RadSter Road.webp",
+    articleHeroImage: "/images/electric-bikes/Rad Power RadSter Road.webp",
     heroImageAlt: "Rad Power RadSter Road electric city bike with 29-inch wheels and Bay Blue finish",
     
     imagePrimary: {
       heading: "Stability at Speed: Those 29-Inch Wheels",
       description: "The RadSter Road's large wheels aren't just for show. After weeks of testing at Class 3 speeds through busy downtown streets, I found the 29-inch wheel setup provides exceptional stability that smaller wheels simply can't match. Even at 28 mph, the bike tracks straight and feels planted—crucial when you're sharing lanes with cars during rush hour.",
-      image: "/images/electric-city-bikes/radster-road-wheels.webp",
+      image: "/images/electric-bikes/Rad Power RadSter Road.webp",
       alt: "RadSter Road 29-inch Kenda Kwick tires with reflective sidewalls for urban safety"
     },
     
     imageSecondary: {
       heading: "Safe Shield Battery: Rad's Safety Breakthrough",
       description: "This semi-integrated 720Wh battery represents a major safety upgrade for Rad Power. Each cell is encapsulated in heat-resistant resin to prevent thermal runaway, which is the kind of thinking that should be standard industry-wide. The battery removes easily with a key for indoor charging, and UL certification gives real peace of mind that you're not parking a fire hazard in your apartment.",
-      image: "/images/electric-city-bikes/radster-road-battery.webp",
+      image: "/images/electric-bikes/Rad Power RadSter Road.webp",
       alt: "Safe Shield battery pack with UL certification on RadSter Road frame"
     },
     
@@ -5292,8 +5292,8 @@ const products = [
     // ============================================
     id: "tern-quick-haul-p9",
     slug: "tern-quick-haul-p9-review",
-    categorySlug: "electric-cargo-bikes",
-    category: "Electric Cargo Bikes",
+    categorySlug: "electric-city-bikes",
+    category: "Electric City Bikes",
     contentType: "product",
     
     // ============================================
@@ -5307,22 +5307,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-cargo-bikes/tern-quick-haul-p9.webp",
-    cardImage: "/images/electric-cargo-bikes/tern-quick-haul-p9.webp",
-    articleHeroImage: "/images/electric-cargo-bikes/tern-quick-haul-p9.webp",
+    heroImage: "/images/electric-bikes/Tern Quick Haul P9.webp",
+    cardImage: "/images/electric-bikes/Tern Quick Haul P9.webp",
+    articleHeroImage: "/images/electric-bikes/Tern Quick Haul P9.webp",
     heroImageAlt: "Tern Quick Haul P9 compact cargo e-bike with extended rear rack in urban setting",
     
     imagePrimary: {
       heading: "Compact Design Meets Real Cargo Capacity",
       description: "The Quick Haul's genius lies in its footprint. At 116cm wheelbase, it's actually shorter than many standard city bikes, yet that extended rear deck can hold 110 pounds. I've squeezed this into elevators, apartment hallways, and bike racks where full-size cargo bikes wouldn't stand a chance. The vertical parking feature means you can roll it upright like a suitcase, taking up about as much floor space as a potted plant.",
-      image: "/images/electric-cargo-bikes/tern-quick-haul-p9-compact.webp",
+      image: "/images/electric-bikes/Tern Quick Haul P9.webp",
       alt: "Tern Quick Haul P9 shown in vertical parking position demonstrating compact storage"
     },
     
     imageSecondary: {
       heading: "Bosch Performance Line: The Power Behind the Haul",
       description: "That Bosch Performance motor mounted low in the frame delivers 65Nm of torque with smooth, predictable power delivery. On my regular 8% grade test hill fully loaded with 40 pounds of groceries, the motor never struggled or felt strained. The mid-drive placement keeps the center of gravity low, which matters way more when you're carrying cargo than most people realize.",
-      image: "/images/electric-cargo-bikes/tern-quick-haul-p9-motor.webp",
+      image: "/images/electric-bikes/Tern Quick Haul P9.webp",
       alt: "Close-up of Bosch Performance motor system on Tern Quick Haul P9"
     },
     
@@ -5339,7 +5339,7 @@ const products = [
     // 5. INTRODUCTION (Hook + Context + Verdict)
     // ============================================
     introduction: {
-      heading: "Introduction: The Cargo Bike That Actually Fits in Your Life",
+      heading: "Introduction: The Cargo Bike That Actuawebplly Fits in Your Life",
       thesis: "After 6 weeks and over 300 miles hauling everything from toddlers to lumber, the Tern Quick Haul P9 has proven itself as the rare cargo bike that doesn't force you to choose between capability and practicality.",
       paragraphs: [
         "Here's what sold me in week one: I carried my 35-pound son and a week's worth of groceries up my neighborhood's steepest hill without breaking a sweat, then rolled the entire bike into my apartment elevator without scratching the walls or blocking the door. That's the Quick Haul's entire value proposition in one ride.",
@@ -5597,22 +5597,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-city-bikes/priority-current-plus.webp",
-    cardImage: "/images/electric-city-bikes/priority-current-plus.webp",
-    articleHeroImage: "/images/electric-city-bikes/priority-current-plus.webp",
+    heroImage: "/images/electric-bikes/Priority Current+.webp",
+    cardImage: "/images/electric-bikes/Priority Current+.webp",
+    articleHeroImage: "/images/electric-bikes/Priority Current+.webp",
     heroImageAlt: "Priority Current Plus electric city bike with Gates belt drive and 720Wh battery",
     
     imagePrimary: {
       heading: "Belt Drive System: Zero Maintenance Design",
       description: "The Gates Carbon Drive belt is Priority's signature feature and honestly one of the main reasons I kept reaching for this bike over others in my garage. No grease stains on my work pants, no rust after rainy commutes, and zero chain maintenance for three straight weeks of testing. The belt stayed whisper-quiet even after puddle-splashing through downtown.",
-      image: "/images/electric-city-bikes/priority-current-plus-drivetrain.webp",
+      image: "/images/electric-bikes/Priority Current+.webp",
       alt: "Close up of Priority Current Plus Gates Carbon Drive belt system"
     },
     
     imageSecondary: {
       heading: "Throttle Control Meets Pedal Assist",
       description: "That left-hand thumb throttle became my secret weapon at intersections. After two weeks of daily use, I found myself instinctively reaching for it when pulling away from stoplights alongside cars. The combination of five pedal assist levels plus on-demand throttle gives you complete control over how much effort you want to put in on any given ride.",
-      image: "/images/electric-city-bikes/priority-current-plus-throttle.webp",
+      image: "/images/electric-bikes/Priority Current+.webp",
       alt: "Priority Current Plus throttle and handlebar controls with pedal assist display"
     },
     
@@ -5883,22 +5883,22 @@ const products = [
     h1: "Velotric Breeze 1 Review: Real-World Urban Commuting Test",
     metaDescription: "Velotric Breeze 1 review: tested for 4 weeks in city traffic. Specs, range, performance, pros/cons. Is this lightweight e-bike worth $1,299?",
     
-    heroImage: "/images/electric-city-bikes/velotric-breeze-1.webp",
-    cardImage: "/images/electric-city-bikes/velotric-breeze-1.webp",
-    articleHeroImage: "/images/electric-city-bikes/velotric-breeze-1.webp",
+    heroImage: "/images/electric-bikes/Velotric Breeze 1.webp",
+    cardImage: "/images/electric-bikes/Velotric Breeze 1.webp",
+    articleHeroImage: "/images/electric-bikes/Velotric Breeze 1.webp",
     heroImageAlt: "Velotric Breeze 1 electric city bike parked on urban street with rider",
     
     imagePrimary: {
       heading: "Step-Through Frame Design",
       description: "The Breeze 1's low step-through frame makes mounting incredibly easy, especially at stoplights. I'm 5'9\" and could flat-foot both feet comfortably at stops. The geometry feels stable without being bulky, and the frame welds are clean. At 49 lbs, it's light enough that I could lift it up three stairs to my apartment without struggling, something I genuinely appreciate twice daily.",
-      image: "/images/electric-city-bikes/velotric-breeze-1-frame.webp",
+      image: "/images/electric-bikes/Velotric Breeze 1.webp",
       alt: "Velotric Breeze 1 step-through frame showing low standover height"
     },
     
     imageSecondary: {
       heading: "Integrated Battery Design",
       description: "The battery tucks neatly into the downtube with a sleek cover that doesn't scream \"e-bike.\" From 10 feet away, most people don't realize it's electric until they see me accelerating. The 374Wh battery is removable with a key, which I use weekly to charge at my desk rather than outside. It weighs about 5 lbs and slides in and out smoothly after you get the hang of the angle.",
-      image: "/images/electric-city-bikes/velotric-breeze-1-battery.webp",
+      image: "/images/electric-bikes/Velotric Breeze 1.webp",
       alt: "Velotric Breeze 1 integrated battery compartment on downtube"
     },
     

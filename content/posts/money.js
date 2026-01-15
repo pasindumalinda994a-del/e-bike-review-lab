@@ -4176,7 +4176,7 @@ const money = [
         name: "Aventon Level 3 – Best Overall",
         avgRating: 4.8,
         badge: "Around $1,999",
-        imageUrl: "/images/products/aventon-level-3.webp",
+        imageUrl: "/images/electric-bikes/Aventon Level 3.webp",
         
         description: "The Level 3 dominated my testing with its combination of smart features, comfort, and real-world performance. What sealed the deal? The integrated GPS tracking and remote lock gave me actual peace of mind when parking downtown, and the torque sensor made riding feel natural rather than robotic. After 250+ miles, this is the bike I keep reaching for.",
         
@@ -4228,7 +4228,7 @@ const money = [
         name: "Lectric XP 4 (750W) – Best Folding Option",
         avgRating: 4.7,
         badge: "Starting at $1,299",
-        imageUrl: "/images/products/lectric-xp4.webp",
+        imageUrl: "/images/electric-bikes/Lectric XP 4.0.webp",
         
         description: "For apartment dwellers or anyone who needs a bike that folds, the XP 4 is in a league of its own. I kept this one in my 600-square-foot apartment for three weeks. It folds to about the size of a large suitcase. What surprised me? It rides like a full-size bike despite the 20-inch wheels, and the 750W motor has more grunt than bikes twice the price.",
         
@@ -4280,7 +4280,7 @@ const money = [
         name: "Velotric Discover 2 – Best Customization",
         avgRating: 4.6,
         badge: "Around $1,599",
-        imageUrl: "/images/products/velotric-discover-2.webp",
+        imageUrl: "/images/electric-bikes/Velotric Discover 2.webp",
         
         description: "The Discover 2 is for riders who like to tinker. Between the app and the display, you can customize this bike's behavior more than any other I tested. Want your acceleration smoother? Dial it in. Prefer more top-end speed? Unlock Class 3. Like torque sensing for exercise? Switch to that. Prefer cadence sensing for easier cruising? Done. It's like having three bikes in one.",
         
@@ -4332,7 +4332,7 @@ const money = [
         name: "Tenways CGO600 Pro – Best Lightweight",
         avgRating: 4.5,
         badge: "Starting at $1,599",
-        imageUrl: "/images/products/tenways-cgo600.webp",
+        imageUrl: "/images/electric-bikes/Tenways CGO600 Pro.webp",
         
         description: "At 37 lbs, the CGO600 Pro feels more like a traditional bike than an e-bike, which is exactly the point. The Gates Carbon belt drive runs whisper-quiet and needs zero maintenance (no greasy chain to deal with). If you live in a walk-up apartment or need to carry your bike up stairs, this solves that problem while still delivering smooth, responsive power.",
         
@@ -4385,7 +4385,7 @@ const money = [
         name: "Ride1Up Roadster V2 – Best Budget",
         avgRating: 4.4,
         badge: "Around $1,095",
-        imageUrl: "/images/products/ride1up-roadster.webp",
+        imageUrl: "/images/electric-bikes/Ride1Up Roadster V2.webp",
         
         description: "The Roadster V2 is proof you don't need to spend two grand for a solid commuter e-bike. At $1,095, it delivers clean aesthetics, reliable performance, and enough range for most daily commutes. Sure, it skips some premium features, but the core experience of getting from A to B efficiently is totally dialed in.",
         
@@ -4438,7 +4438,7 @@ const money = [
         name: "Specialized Turbo Vado 4.0 – Premium Choice",
         avgRating: 4.7,
         badge: "Starting at $3,750",
-        imageUrl: "/images/products/specialized-vado.webp",
+        imageUrl: "/images/electric-bikes/Specialized Turbo Vado 4.0.webp",
         
         description: "The Vado 4.0 is what happens when a legacy bike company builds an e-bike without compromise. Everything from the custom motor to the frame geometry feels dialed to perfection. Yes, it's expensive, but after 200 miles, I understood why Specialized can command this price. The refinement is palpable.",
         
@@ -4491,7 +4491,7 @@ const money = [
         name: "Rad Power RadSter Road – Best Retro Style",
         avgRating: 4.5,
         badge: "Around $1,699",
-        imageUrl: "/images/products/rad-radster.webp",
+        imageUrl: "/images/electric-bikes/Rad Power RadSter Road.webp",
         
         description: "The RadSter nails the vintage cafe racer aesthetic while packing modern e-bike tech underneath. This is for riders who care about style as much as function. The upright seating position and swept-back bars create a relaxed cruise vibe, but the 750W motor means you're not sacrificing performance for looks.",
         
@@ -4544,7 +4544,7 @@ const money = [
         name: "Tern Quick Haul P9 – Best Cargo Hybrid",
         avgRating: 4.6,
         badge: "Around $2,399",
-        imageUrl: "/images/products/tern-quick-haul.webp",
+        imageUrl: "/images/electric-bikes/Tern Quick Haul P9.webp",
         
         description: "The Quick Haul bridges the gap between city bike and cargo bike. It's shorter than a standard bike but can carry 150 lbs of cargo, making it perfect for grocery runs or kid hauling without the bulk of a full cargo bike. The compact size makes it more maneuverable in traffic and easier to store than traditional cargo bikes.",
         
@@ -4597,7 +4597,7 @@ const money = [
         name: "Priority Current+ – Best Low-Maintenance",
         avgRating: 4.5,
         badge: "Starting at $3,199",
-        imageUrl: "/images/products/priority-current.webp",
+        imageUrl: "/images/electric-bikes/Priority Current+.webp",
         
         description: "The Current+ is engineered for riders who want to ride, not wrench. The Gates Carbon belt drive, Enviolo CVT hub, and hydraulic disc brakes create a nearly maintenance-free package. After six weeks of testing in all conditions, including salty winter roads, I didn't touch a single component. Just ride, charge, repeat.",
         
@@ -4650,7 +4650,7 @@ const money = [
         name: "Velotric Breeze 1 – Best Step-Through Value",
         avgRating: 4.4,
         badge: "Around $1,199",
-        imageUrl: "/images/products/velotric-breeze.webp",
+        imageUrl: "/images/electric-bikes/Velotric Breeze 1.webp",
         
         description: "The Breeze 1 delivers step-through convenience at an entry-level price without feeling cheap. The low standover height makes mounting effortless, perfect if mobility is a concern or you're wearing work clothes. For riders intimidated by traditional bike frames or those returning to cycling after years away, this removes barriers to entry.",
         
