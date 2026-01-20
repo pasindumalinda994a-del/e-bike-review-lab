@@ -106,6 +106,30 @@ export default function ProductArticle({ post, publishedDate }) {
                 {headline}
               </h1>
             )}
+
+            {/* Meta Description - Below title */}
+            {post.metaDescription && (
+              <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left mt-4 sm:mt-5">
+                {post.metaDescription}
+              </p>
+            )}
+          </div>
+
+          {/* Profile Image and Username - Above hero image */}
+          <div className="flex items-center gap-3 mt-6 sm:mt-8">
+            <div className="relative h-10 w-10 sm:h-12 sm:w-12 flex-shrink-0">
+              <Image
+                src="/EBRLLogo.png"
+                alt="E-Bike Review Lab"
+                fill
+                sizes="48px"
+                className="rounded-full object-cover"
+                quality={75}
+              />
+            </div>
+            <span className="text-sm sm:text-base font-medium text-[#0C1412]">
+              @ebikereviewlab
+            </span>
           </div>
 
           {/* Hero Image - Main image container below title - Full width */}
@@ -193,20 +217,20 @@ export default function ProductArticle({ post, publishedDate }) {
                 )}
                 {Array.isArray(introduction.paragraphs) &&
                   introduction.paragraphs.map((paragraph, index) => (
-                    <p key={index} className="text-sm leading-normal text-black sm:text-base tracking-wide text-left">{paragraph}</p>
+                  <p key={index} className="text-base leading-normal text-black sm:text-base tracking-wide text-left">{paragraph}</p>
                   ))}
               </div>
             </section>
           )}
 
-          {/* Affiliate Link Button */}
+          {/* Affiliate Link Button - match money article CTA style */}
           {affiliateLink && (
             <div className="pt-6 sm:pt-8">
               <AnimatedButton
                 href={affiliateLink}
                 external={true}
                 rel="sponsored nofollow noopener"
-                className="justify-start rounded-full bg-[#3e3ce7] px-6 py-3.5 text-base font-semibold text-white focus:ring-2 focus:ring-[#3e3ce7] focus:ring-offset-2 sm:px-8 sm:py-4 sm:text-lg"
+                className="w-auto text-sm sm:text-base sm:w-full"
               >
                 {ctaLabel}
                 <svg
@@ -241,7 +265,7 @@ export default function ProductArticle({ post, publishedDate }) {
                 {Array.isArray(introduction.paragraphs) && introduction.paragraphs.length > 0 && (
                   <div className="space-y-4">
                     {introduction.paragraphs.map((paragraph, index) => (
-                      <p key={index} className="text-sm leading-normal text-black sm:text-base tracking-wide text-left">
+                      <p key={index} className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
                         {renderMarkdownBold(paragraph)}
                       </p>
                     ))}
@@ -264,7 +288,7 @@ export default function ProductArticle({ post, publishedDate }) {
                   </h2>
                 )}
                 {Array.isArray(specs.items) && specs.items.length > 0 && (
-                  <dl className="grid gap-4 rounded-lg border border-[#e5e7eb] bg-white p-6 text-sm text-[#111827] sm:grid-cols-2 sm:p-8 sm:text-base">
+                  <dl className="grid gap-4 rounded-lg bg-white p-6 text-sm text-[#111827] sm:grid-cols-2 sm:p-8 sm:text-base">
                     {specs.items.map((item, index) => {
                       if (!item?.label && !item?.value) return null;
                       return (
@@ -315,7 +339,7 @@ export default function ProductArticle({ post, publishedDate }) {
                   )}
                 </figure>
                 {imagePrimary.description && (
-                  <p className="text-sm leading-normal text-black sm:text-base tracking-wide text-left">
+                  <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
                     {imagePrimary.description}
                   </p>
                 )}
@@ -338,7 +362,7 @@ export default function ProductArticle({ post, publishedDate }) {
                 {Array.isArray(designAndBuild.paragraphs) && designAndBuild.paragraphs.length > 0 && (
                   <div className="space-y-4">
                     {designAndBuild.paragraphs.map((paragraph, index) => (
-                      <p key={index} className="text-sm leading-normal text-black sm:text-base tracking-wide text-left">
+                      <p key={index} className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
                         {renderMarkdownBold(paragraph)}
                       </p>
                     ))}
@@ -361,11 +385,11 @@ export default function ProductArticle({ post, publishedDate }) {
                   </h2>
                 )}
                 {Array.isArray(features.groups) && features.groups.length > 0 && (
-                  <div className="grid gap-5 md:grid-cols-2">
+                  <div className="space-y-5">
                     {features.groups.map((group, index) => (
                       <div
                         key={group?.title || index}
-                        className="rounded-lg border border-[#e5e7eb] bg-white p-6 sm:p-7"
+                        className="rounded-lg bg-white p-6 sm:p-7"
                       >
                         {group?.title && (
                           <h3 className="mb-3 text-lg font-semibold text-[#0C1412] sm:text-xl text-left">
@@ -404,7 +428,7 @@ export default function ProductArticle({ post, publishedDate }) {
                 {Array.isArray(performance.paragraphs) && performance.paragraphs.length > 0 && (
                   <div className="space-y-4">
                     {performance.paragraphs.map((paragraph, index) => (
-                      <p key={index} className="text-sm leading-normal text-black sm:text-base tracking-wide text-left">
+                      <p key={index} className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
                         {renderMarkdownBold(paragraph)}
                       </p>
                     ))}
@@ -441,7 +465,7 @@ export default function ProductArticle({ post, publishedDate }) {
                   )}
                 </figure>
                 {imageSecondary.description && (
-                  <p className="text-sm leading-normal text-black sm:text-base tracking-wide text-left">
+                  <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
                     {imageSecondary.description}
                   </p>
                 )}
@@ -464,7 +488,7 @@ export default function ProductArticle({ post, publishedDate }) {
                 {Array.isArray(userExperience.paragraphs) && userExperience.paragraphs.length > 0 && (
                   <div className="space-y-4">
                     {userExperience.paragraphs.map((paragraph, index) => (
-                      <p key={index} className="text-sm leading-normal text-black sm:text-base tracking-wide text-left">
+                      <p key={index} className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
                         {renderMarkdownBold(paragraph)}
                       </p>
                     ))}
@@ -489,7 +513,7 @@ export default function ProductArticle({ post, publishedDate }) {
                 {Array.isArray(comparisons.paragraphs) && comparisons.paragraphs.length > 0 && (
                   <div className="space-y-4">
                     {comparisons.paragraphs.map((paragraph, index) => (
-                      <p key={index} className="text-sm leading-normal text-black sm:text-base tracking-wide text-left">
+                      <p key={index} className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
                         {renderMarkdownBold(paragraph)}
                       </p>
                     ))}
@@ -509,7 +533,7 @@ export default function ProductArticle({ post, publishedDate }) {
                 >
                   Who This Product Is Best For
                 </h2>
-                <p className="text-sm leading-normal text-black sm:text-base tracking-wide text-left">
+                <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
                   {whoItsBestFor.text}
                 </p>
               </div>
@@ -531,28 +555,32 @@ export default function ProductArticle({ post, publishedDate }) {
 
                 <div className="grid gap-6 md:grid-cols-2">
                   {Array.isArray(prosCons.pros) && prosCons.pros.length > 0 && (
-                    <div className="space-y-4">
-                      <h4 className="text-sm font-semibold uppercase tracking-[0.15em] text-green-700 text-left">
+                    <div className="rounded-lg bg-white p-6 sm:p-7">
+                      <h4 className="mb-4 text-sm font-semibold uppercase tracking-[0.15em] text-green-700 text-left">
                         Pros
                       </h4>
-                      <div className="space-y-3">
+                      <ul className="space-y-3 text-left">
                         {prosCons.pros.map((text, index) => (
-                          <BenefitCard key={index} text={text} type="benefit" />
+                          <li key={index} className="text-sm leading-normal text-black sm:text-base tracking-wide relative pl-6 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-black before:content-['']">
+                            {renderMarkdownBold(text)}
+                          </li>
                         ))}
-                      </div>
+                      </ul>
                     </div>
                   )}
 
                   {Array.isArray(prosCons.cons) && prosCons.cons.length > 0 && (
-                    <div className="space-y-4">
-                      <h4 className="text-sm font-semibold uppercase tracking-[0.15em] text-amber-700 text-left">
+                    <div className="rounded-lg bg-white p-6 sm:p-7">
+                      <h4 className="mb-4 text-sm font-semibold uppercase tracking-[0.15em] text-amber-700 text-left">
                         Cons
                       </h4>
-                      <div className="space-y-3">
+                      <ul className="space-y-3 text-left">
                         {prosCons.cons.map((text, index) => (
-                          <BenefitCard key={index} text={text} type="drawback" />
+                          <li key={index} className="text-sm leading-normal text-black sm:text-base tracking-wide relative pl-6 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-black before:content-['']">
+                            {renderMarkdownBold(text)}
+                          </li>
                         ))}
-                      </div>
+                      </ul>
                     </div>
                   )}
                 </div>
@@ -588,8 +616,8 @@ export default function ProductArticle({ post, publishedDate }) {
                     </div>
                   )}
                 {conclusion.verdict && (
-                  <div className="rounded-lg border border-[#e5e7eb] bg-white p-6 sm:p-8">
-                    <p className="text-sm leading-normal text-black sm:text-base tracking-wide text-left">
+                    <div className="rounded-lg bg-white p-6 sm:p-8">
+                    <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
                       {conclusion.verdict}
                     </p>
                   </div>
@@ -600,7 +628,7 @@ export default function ProductArticle({ post, publishedDate }) {
                       href={affiliateLink}
                       external={true}
                       rel="sponsored nofollow noopener"
-                      className="justify-start rounded-full bg-[#3e3ce7] px-6 py-3.5 text-base font-semibold text-white focus:ring-2 focus:ring-[#3e3ce7] focus:ring-offset-2 sm:px-8 sm:py-4 sm:text-lg"
+                      className="w-auto text-sm sm:text-base sm:w-full"
                     >
                       {ctaLabel}
                       <svg
@@ -677,10 +705,10 @@ export default function ProductArticle({ post, publishedDate }) {
                         >
                           {Array.isArray(answer) ? (
                             answer.map((paragraph, pIndex) => (
-                              <p key={pIndex} className="text-sm leading-normal text-black sm:text-base tracking-wide text-left">{paragraph}</p>
+                              <p key={pIndex} className="text-base leading-normal text-black sm:text-base tracking-wide text-left">{paragraph}</p>
                             ))
                           ) : (
-                            <p className="text-sm leading-normal text-black sm:text-base tracking-wide text-left">{answer}</p>
+                            <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left">{answer}</p>
                           )}
                         </div>
                       )}
@@ -728,7 +756,7 @@ export default function ProductArticle({ post, publishedDate }) {
                               {link.text}
                             </span>
                             {link.description && (
-                              <p className="mt-1 text-sm leading-normal text-black sm:text-base tracking-wide text-left">{link.description}</p>
+                              <p className="mt-1 text-base leading-normal text-black sm:text-base tracking-wide text-left">{link.description}</p>
                             )}
                           </div>
                         </Link>
@@ -885,7 +913,7 @@ function BenefitCard({ text, type }) {
 
   return (
     <div className="rounded-lg border border-[#e5e7eb] bg-white p-4 sm:p-5">
-      <p className="text-sm leading-normal text-black sm:text-base tracking-wide text-left">
+      <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
         {renderMarkdownBold(text)}
       </p>
     </div>
