@@ -243,7 +243,7 @@ export default function HomeNewsletter() {
         {/* Bottom grid */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {/* YouTube card */}
-          <div className="flex flex-col justify-between rounded-3xl bg-white border border-[#0C1412]/10 p-6 shadow-sm">
+          <div className="flex flex-col justify-between rounded-xl bg-white p-6">
             <div className="space-y-4">
               <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#0C1412] text-white">
                 <svg
