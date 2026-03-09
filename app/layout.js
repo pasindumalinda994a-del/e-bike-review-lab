@@ -75,6 +75,9 @@ export const metadata = {
     ],
     shortcut: '/favicon.ico',
   },
+  other: {
+    'google-adsense-account': 'ca-pub-7694034398037540',
+  },
 };
 
 // Viewport configuration for mobile optimization
