@@ -12034,22 +12034,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-mountain-bikes/specialized-turbo-levo-4.webp",
-    cardImage: "/images/electric-mountain-bikes/specialized-turbo-levo-4.webp",
-    articleHeroImage: "/images/electric-mountain-bikes/specialized-turbo-levo-4.webp",
+    heroImage: "/images/electric-bikes/mountain/Specialized%20Turbo%20Levo%204.webp",
+    cardImage: "/images/electric-bikes/mountain/Specialized%20Turbo%20Levo%204.webp",
+    articleHeroImage: "/images/electric-bikes/mountain/Specialized%20Turbo%20Levo%204.webp",
     heroImageAlt: "Specialized Turbo Levo 4 full suspension electric mountain bike on technical trail",
     
     imagePrimary: {
       heading: "Full Suspension Trail Capability",
       description: "The Levo 4's 150mm front and rear travel handles aggressive descents and technical terrain. During testing on rocky Colorado trails, the suspension soaked up impacts while maintaining pedaling efficiency on climbs. The geometry keeps you planted on steep descents without feeling sluggish on flatter sections.",
-      image: "/images/electric-mountain-bikes/specialized-turbo-levo-4-suspension.webp",
+      image: "/images/electric-bikes/mountain/Specialized%20Turbo%20Levo%204.webp",
       alt: "Specialized Turbo Levo 4 full suspension system on mountain trail"
     },
     
     imageSecondary: {
       heading: "Motor and Battery Integration",
       description: "Specialized's custom motor sits low in the frame for a balanced feel that mimics traditional mountain bikes. The 700Wh battery provides genuine all-day range on most trail rides. I tested multiple 20+ mile rides with over 3,000 feet of climbing and still had 20-30% battery remaining, which is impressive for a full power e-MTB.",
-      image: "/images/electric-mountain-bikes/specialized-turbo-levo-4-motor.webp",
+      image: "/images/electric-bikes/mountain/Specialized%20Turbo%20Levo%204.webp",
       alt: "Specialized Turbo Levo 4 motor and battery integration detail"
     },
     
@@ -12329,22 +12329,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-mountain-bikes/trek-rail-5.webp",
-    cardImage: "/images/electric-mountain-bikes/trek-rail-5.webp",
-    articleHeroImage: "/images/electric-mountain-bikes/trek-rail-5.webp",
+    heroImage: "/images/electric-bikes/mountain/Trek%20Rail.webp",
+    cardImage: "/images/electric-bikes/mountain/Trek%20Rail.webp",
+    articleHeroImage: "/images/electric-bikes/mountain/Trek%20Rail.webp",
     heroImageAlt: "Trek Rail+ 5 Gen 5 electric mountain bike with aluminum frame and Bosch motor on trail",
     
     imagePrimary: {
       heading: "160mm Travel Full Suspension Platform",
       description: "The Rail+ 5's RockShox Psylo Gold fork and rear suspension deliver confidence-inspiring bump absorption on technical terrain. During my testing on rocky Colorado trails, the 160mm front and rear travel handled 3-foot drops and chunk without complaint. The Active Braking Pivot design keeps the suspension active under braking, which proved critical on steep, loose descents where I needed both traction and stopping power simultaneously.",
-      image: "/images/electric-mountain-bikes/trek-rail-5-suspension.webp",
+      image: "/images/electric-bikes/mountain/Trek%20Rail.webp",
       alt: "Trek Rail+ 5 suspension system showing RockShox fork and Trek ABP rear design"
     },
     
     imageSecondary: {
       heading: "Bosch Performance Line CX Gen 5 Motor Integration",
       description: "Trek's Alpha Platinum Aluminum frame integrates the Bosch Performance Line CX Gen 5 motor seamlessly, with the massive 800Wh PowerTube battery tucked into the downtube. The removable battery system (RIB 2.0) makes charging flexible. After three weeks of testing, I appreciated being able to pop the battery out and charge it inside rather than wheeling the 52-pound bike to an outlet.",
-      image: "/images/electric-mountain-bikes/trek-rail-5-motor.webp",
+      image: "/images/electric-bikes/mountain/Trek%20Rail.webp",
       alt: "Close-up of Bosch Gen 5 motor and integrated battery on Trek Rail+ 5 frame"
     },
     
@@ -12616,21 +12616,21 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-mountain-bikes/amflow-pl-carbon.webp",
-    cardImage: "/images/electric-mountain-bikes/amflow-pl-carbon.webp",
-    articleHeroImage: "/images/electric-mountain-bikes/amflow-pl-carbon.webp",
+    heroImage: "/images/electric-bikes/mountain/Amflow%20PL%20Carbon.webp",
+    cardImage: "/images/electric-bikes/mountain/Amflow%20PL%20Carbon.webp",
+    articleHeroImage: "/images/electric-bikes/mountain/Amflow%20PL%20Carbon.webp",
     heroImageAlt: "Amflow PL Carbon electric mountain bike with DJI Avinox motor on mountain trail",
     
     imagePrimary: {
       heading: "Integrated OLED Display and Wireless Controls",
       description: "The Amflow PL Carbon features an industry-first built-in 2-inch OLED touchscreen integrated directly into the frame. This touch-sensitive display works even with gloves and in rain, showing real-time ride data like speed, cadence, battery percentage, and estimated range. The wireless left and right controllers give you complete control without cluttering your cockpit with wires.",
-      image: "/images/electric-mountain-bikes/amflow-pl-carbon-display.webp",
+      image: "/images/electric-bikes/mountain/Amflow%20PL%20Carbon.webp",
       alt: "Amflow PL Carbon integrated OLED touchscreen display showing ride data"
     },
     imageSecondary: {
       heading: "DJI Avinox M1 Motor: Power-to-Weight Champion",
       description: "The compact DJI Avinox M1 drive unit delivers 105Nm continuous torque and peaks at 120Nm for 30-second bursts, all while being lighter and smaller than any competing full-power motor. The polymer compound planetary gearset reduces noise during operation, though it's noticeably louder than Bosch or Shimano systems when climbing steep grades.",
-      image: "/images/electric-mountain-bikes/amflow-pl-carbon-motor.webp",
+      image: "/images/electric-bikes/mountain/Amflow%20PL%20Carbon.webp",
       alt: "DJI Avinox M1 motor cutaway showing lightweight polymer gears on Amflow PL Carbon"
     },
     
@@ -12936,21 +12936,21 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-mountain-bikes/santa-cruz-vala.webp",
-    cardImage: "/images/electric-mountain-bikes/santa-cruz-vala.webp",
-    articleHeroImage: "/images/electric-mountain-bikes/santa-cruz-vala.webp",
+    heroImage: "/images/electric-bikes/mountain/Santa%20Cruz%20Vala.webp",
+    cardImage: "/images/electric-bikes/mountain/Santa%20Cruz%20Vala.webp",
+    articleHeroImage: "/images/electric-bikes/mountain/Santa%20Cruz%20Vala.webp",
     heroImageAlt: "Santa Cruz Vala electric mountain bike with Bosch Performance CX motor on trail",
     
     imagePrimary: {
       heading: "Four-Bar Suspension Design",
       description: "The Vala marks Santa Cruz's first departure from VPP suspension, using a Horst-link four-bar design that packages the Bosch motor more efficiently. The one-piece bridged rocker link adds stiffness where it counts, and adjustable flip chips let you fine-tune geometry and progression from 26% to 29%.",
-      image: "/images/electric-mountain-bikes/santa-cruz-vala-suspension.webp",
+      image: "/images/electric-bikes/mountain/Santa%20Cruz%20Vala.webp",
       alt: "Santa Cruz Vala four-bar suspension linkage and Bosch CX motor detail"
     },
     imageSecondary: {
       heading: "MX Wheel Configuration",
       description: "The mixed-wheel setup pairs a 29-inch front wheel for traction and rollover with a 27.5-inch rear for agility and late-corner adjustments. Combined with 160mm front and 150mm rear travel, this configuration delivers confidence on technical descents while maintaining playful handling characteristics.",
-      image: "/images/electric-mountain-bikes/santa-cruz-vala-wheels.webp",
+      image: "/images/electric-bikes/mountain/Santa%20Cruz%20Vala.webp",
       alt: "Santa Cruz Vala mixed wheel configuration detail"
     },
     
@@ -13226,22 +13226,22 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-mountain-bikes/giant-reign-advanced-e-plus.webp",
-  cardImage: "/images/electric-mountain-bikes/giant-reign-advanced-e-plus.webp",
-  articleHeroImage: "/images/electric-mountain-bikes/giant-reign-advanced-e-plus.webp",
+  heroImage: "/images/electric-bikes/mountain/Giant%20Reign%20Advanced%20E.webp",
+  cardImage: "/images/electric-bikes/mountain/Giant%20Reign%20Advanced%20E.webp",
+  articleHeroImage: "/images/electric-bikes/mountain/Giant%20Reign%20Advanced%20E.webp",
   heroImageAlt: "Giant Reign Advanced E+ electric mountain bike on rocky mountain trail",
   
   imagePrimary: {
     heading: "Carbon Frame Construction and Integration",
     description: "The Advanced-grade composite frame uses Giant's Maestro suspension platform with 160mm travel front and rear. What impressed me most during testing was how cleanly the motor and battery integrate into the frame. You'd barely know it's an e-bike at first glance. The carbon layup feels stiff under power but compliant enough to smooth out trail chatter on long descents.",
-    image: "/images/electric-mountain-bikes/giant-reign-advanced-e-plus-frame.webp",
+    image: "/images/electric-bikes/mountain/Giant%20Reign%20Advanced%20E.webp",
     alt: "Giant Reign Advanced E+ carbon frame showing motor integration"
   },
   
   imageSecondary: {
     heading: "Enduro Geometry Meets Electric Assist",
     description: "The slack 64-degree head angle and low bottom bracket give this bike serious downhill confidence. After three weeks on everything from flow trails to technical rock gardens, the geometry feels dialed for aggressive riding. The longer wheelbase (1,277mm on my size large) provides stability at speed, though it takes some getting used to in tight switchbacks compared to lighter analog bikes.",
-    image: "/images/electric-mountain-bikes/giant-reign-advanced-e-plus-geometry.webp",
+    image: "/images/electric-bikes/mountain/Giant%20Reign%20Advanced%20E.webp",
     alt: "Giant Reign Advanced E+ showing enduro geometry on steep descent"
   },
   
@@ -13541,22 +13541,22 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-mountain-bikes/yt-decoy-sn.webp",
-  cardImage: "/images/electric-mountain-bikes/yt-decoy-sn.webp",
-  articleHeroImage: "/images/electric-mountain-bikes/yt-decoy-sn.webp",
+  heroImage: "/images/electric-bikes/mountain/YT%20Decoy.webp",
+  cardImage: "/images/electric-bikes/mountain/YT%20Decoy.webp",
+  articleHeroImage: "/images/electric-bikes/mountain/YT%20Decoy.webp",
   heroImageAlt: "YT Decoy SN electric mountain bike on technical mountain trail",
   
   imagePrimary: {
     heading: "Downhill Performance Where It Matters",
     description: "The Decoy SN's 170mm front and 165mm rear travel geometry comes alive on steep, technical descents. After months of testing on everything from bike park runs to alpine singletrack, the suspension platform handles big hits with confidence while maintaining enough pop for playful riding. The mid-support motor placement keeps weight centered, which you'll notice immediately when railing corners or picking lines through rock gardens.",
-    image: "/images/electric-mountain-bikes/yt-decoy-sn-trail.webp",
+    image: "/images/electric-bikes/mountain/YT%20Decoy.webp",
     alt: "YT Decoy SN electric mountain bike navigating rocky descent"
   },
   
   imageSecondary: {
     heading: "Build Quality and Component Choices",
     description: "YT's direct-to-consumer model shows in the spec sheet. The Decoy SN comes with components you'd typically see on bikes costing $2,000 more from traditional brands. I've been testing the Core 4 build with Fox 38 Performance Elite fork, Fox Float X shock, and SRAM Code RSC brakes. The carbon frame layup feels stiff where it counts but compliant enough to reduce chatter on rough trails. After six months and probably 50+ rides, I've only needed basic maintenance.",
-    image: "/images/electric-mountain-bikes/yt-decoy-sn-components.webp",
+    image: "/images/electric-bikes/mountain/YT%20Decoy.webp",
     alt: "YT Decoy SN component detail showing Fox suspension and SRAM drivetrain"
   },
   
@@ -13855,22 +13855,22 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-mountain-bikes/commencal-meta-power-sx.webp",
-  cardImage: "/images/electric-mountain-bikes/commencal-meta-power-sx.webp",
-  articleHeroImage: "/images/electric-mountain-bikes/commencal-meta-power-sx.webp",
+  heroImage: "/images/electric-bikes/mountain/Commencal%20Meta%20Power%20SX.webp",
+  cardImage: "/images/electric-bikes/mountain/Commencal%20Meta%20Power%20SX.webp",
+  articleHeroImage: "/images/electric-bikes/mountain/Commencal%20Meta%20Power%20SX.webp",
   heroImageAlt: "Commencal Meta Power SX full suspension electric mountain bike on technical enduro trail",
   
   imagePrimary: {
     heading: "Built for Aggressive Terrain",
     description: "The Meta Power SX features 170mm of travel up front and 165mm in the rear, paired with a slack 63.5-degree head angle. I pushed this geometry hard on steep, chunky descents in Moab, and the bike's confidence at speed became immediately obvious. The low bottom bracket and long wheelbase create incredible stability when things get rowdy, though it does require commitment in tight switchbacks.",
-    image: "/images/electric-mountain-bikes/commencal-meta-power-sx-terrain.webp",
+    image: "/images/electric-bikes/mountain/Commencal%20Meta%20Power%20SX.webp",
     alt: "Commencal Meta Power SX navigating rocky technical descent showing full suspension travel"
   },
   
   imageSecondary: {
     heading: "Shimano EP8 Integration",
     description: "Commencal spec'd the Shimano EP8 motor here, and the integration is genuinely impressive. The motor sits low in the frame, keeping the center of gravity planted. After three weeks of testing across 200+ miles of trail, the EP8's 85Nm torque delivery feels natural and responsive. The battery is a 630Wh unit that's been giving me 2,500 to 3,500 feet of climbing per charge, depending on assist level and terrain.",
-    image: "/images/electric-mountain-bikes/commencal-meta-power-sx-motor.webp",
+    image: "/images/electric-bikes/mountain/Commencal%20Meta%20Power%20SX.webp",
     alt: "Close-up of Shimano EP8 motor integration on Commencal Meta Power SX frame"
   },
   
@@ -14155,22 +14155,22 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-mountain-bikes/ari-timp-peak-2.webp",
-  cardImage: "/images/electric-mountain-bikes/ari-timp-peak-2.webp",
-  articleHeroImage: "/images/electric-mountain-bikes/ari-timp-peak-2.webp",
+  heroImage: "/images/electric-bikes/mountain/Ari%20Timp%20Peak.webp",
+  cardImage: "/images/electric-bikes/mountain/Ari%20Timp%20Peak.webp",
+  articleHeroImage: "/images/electric-bikes/mountain/Ari%20Timp%20Peak.webp",
   heroImageAlt: "Ari Timp Peak 2.0 electric mountain bike on mountain trail showing carbon frame and Bosch motor",
   
   imagePrimary: {
     heading: "Adjustable Geometry in Action",
     description: "The four-way flip chips let you dial in head angle from 63.6 to 64.4 degrees and switch between 29er or mullet setups. I tested both configurations across two weeks of riding, and the difference is noticeable. The slacker setting adds stability at speed, while the steeper angle makes tight switchbacks easier. It's genuinely useful, not just marketing fluff.",
-    image: "/images/electric-mountain-bikes/ari-timp-peak-2-geometry.webp",
+    image: "/images/electric-bikes/mountain/Ari%20Timp%20Peak.webp",
     alt: "Ari Timp Peak 2.0 geometry flip chip showing adjustment options for head angle and chainstay length"
   },
   
   imageSecondary: {
     heading: "Battery Integration Done Right",
     description: "The 800Wh battery sits low in the downtube, and here's what matters: you can swap it without removing the motor. I tested this repeatedly, and it takes about 90 seconds to drop the old battery and click in a fresh one. The optional 250Wh range extender fits into the main triangle, though it does limit water bottle placement on smaller frame sizes.",
-    image: "/images/electric-mountain-bikes/ari-timp-peak-2-battery.webp",
+    image: "/images/electric-bikes/mountain/Ari%20Timp%20Peak.webp",
     alt: "Ari Timp Peak 2.0 integrated Bosch PowerTube battery and optional range extender mounting"
   },
   
@@ -14455,22 +14455,22 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-mountain-bikes/cannondale-moterra-sl.webp",
-  cardImage: "/images/electric-mountain-bikes/cannondale-moterra-sl.webp",
-  articleHeroImage: "/images/electric-mountain-bikes/cannondale-moterra-sl.webp",
+  heroImage: "/images/electric-bikes/mountain/Cannondale%20Moterra%20SL.webp",
+  cardImage: "/images/electric-bikes/mountain/Cannondale%20Moterra%20SL.webp",
+  articleHeroImage: "/images/electric-bikes/mountain/Cannondale%20Moterra%20SL.webp",
   heroImageAlt: "Cannondale Moterra SL electric mountain bike on rocky trail showing lightweight carbon frame and mixed wheel setup",
   
   imagePrimary: {
     heading: "FlexPivot Technology in Action",
     description: "The Moterra SL's distinctive FlexPivot rear suspension eliminates traditional bearings in favor of a carefully engineered flexible carbon section. During testing, this design proved incredibly responsive on technical terrain while cutting significant weight compared to conventional pivots. You can see the sleek chainstay design that makes this possible, borrowed from Cannondale's World Cup XC racing bikes.",
-    image: "/images/electric-mountain-bikes/cannondale-moterra-sl-flexpivot.webp",
+    image: "/images/electric-bikes/mountain/Cannondale%20Moterra%20SL.webp",
     alt: "Close-up of Cannondale Moterra SL FlexPivot carbon chainstay showing unique bearing-free suspension design"
   },
   
   imageSecondary: {
     heading: "Custom High-Density Battery Pack",
     description: "Cannondale's custom 601Wh battery achieves one of the highest energy densities available, weighing just 3.1kg including the wiring harness. During my testing period, this translated to consistently impressive range, typically 35-40 miles with 4,000+ feet of climbing before needing a charge. The integrated design keeps weight low but does mean you can't swap batteries mid-ride or charge it off the bike.",
-    image: "/images/electric-mountain-bikes/cannondale-moterra-sl-battery.webp",
+    image: "/images/electric-bikes/mountain/Cannondale%20Moterra%20SL.webp",
     alt: "Cannondale Moterra SL integrated battery compartment in carbon downtube"
   },
   
@@ -14764,22 +14764,22 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-mountain-bikes/aventon-ramblas.webp",
-  cardImage: "/images/electric-mountain-bikes/aventon-ramblas.webp",
-  articleHeroImage: "/images/electric-mountain-bikes/aventon-ramblas.webp",
+  heroImage: "/images/electric-bikes/mountain/Aventon%20Ramblas.webp",
+  cardImage: "/images/electric-bikes/mountain/Aventon%20Ramblas.webp",
+  articleHeroImage: "/images/electric-bikes/mountain/Aventon%20Ramblas.webp",
   heroImageAlt: "Aventon Ramblas electric mountain bike on rugged trail with RockShox suspension and mid-drive motor",
   
   imagePrimary: {
     heading: "Mid-Drive Power on Technical Climbs",
     description: "The A100 motor's 100Nm of torque becomes immediately apparent on steep single-track climbs. During testing on a 12% grade rutted trail, the Ramblas maintained consistent power delivery even when I dropped to a near-crawl to navigate rocky sections. The motor sits low and centered, keeping the bike balanced through technical terrain in ways that hub motors simply can't match.",
-    image: "/images/electric-mountain-bikes/aventon-ramblas-climbing.webp",
+    image: "/images/electric-bikes/mountain/Aventon%20Ramblas.webp",
     alt: "Aventon Ramblas climbing steep mountain trail showing mid-drive motor placement"
   },
   
   imageSecondary: {
     heading: "Trail-Ready Components Meet Budget Reality",
     description: "The RockShox 35 Silver fork and SRAM DB8 4-piston brakes represent components you'd typically find on bikes costing $1,000 more. After 5 weeks of testing including rocky descents and emergency stops on loose gravel, the braking power and fork performance exceeded expectations for this price point. The 130mm travel handled everything except the gnarliest rock gardens I could find.",
-    image: "/images/electric-mountain-bikes/aventon-ramblas-components.webp",
+    image: "/images/electric-bikes/mountain/Aventon%20Ramblas.webp",
     alt: "Close-up of Aventon Ramblas RockShox fork and SRAM hydraulic disc brakes"
   },
   

@@ -838,7 +838,7 @@ const money = [
         name: "Specialized Turbo Levo 4 – Best Overall",
         avgRating: 4.8,
         badge: "From $8,600",
-        imageUrl: "/images/electric-bikes/specialized-turbo-levo-4.webp",
+        imageUrl: "/images/electric-bikes/mountain/Specialized%20Turbo%20Levo%204.webp",
 
         description: "The Turbo Levo 4 earned the top spot because it simply does everything well. Specialized nailed the power delivery with their new 3.1 motor, it's smooth, responsive, and genuinely feels like a natural extension of your pedaling rather than a crude on/off switch. After weeks of testing, what impressed me most was how this bike never feels out of place, whether you're grinding up technical switchbacks or charging down bike park runs.",
 
@@ -890,7 +890,7 @@ const money = [
         name: "Trek Rail+ – Best for Aggressive Riding",
         avgRating: 4.7,
         badge: "Starting at $7,299",
-        imageUrl: "/images/electric-bikes/trek-rail+.webp",
+        imageUrl: "/images/electric-bikes/mountain/Trek%20Rail.webp",
 
         description: "The Rail+ is Trek's answer to riders who want a shuttle-replacement bike that crushes descents. With Bosch's latest CX Gen 5 motor and a massive 800Wh battery, this thing flattens climbs and has enough range for multiple big descents. What sets it apart is the burly suspension setup and aggressive geometry, this bike wants to go downhill fast.",
 
@@ -942,7 +942,7 @@ const money = [
         name: "Amflow PL Carbon – Most Powerful Motor",
         avgRating: 4.6,
         badge: "Starting at $7,499",
-        imageUrl: "/images/electric-bikes/amflow-pl-carbon.webp",
+        imageUrl: "/images/electric-bikes/mountain/Amflow%20PL%20Carbon.webp",
 
         description: "Here's where things get interesting. The Amflow PL Carbon, powered by DJI's new Avinox motor system, delivers genuinely shocking power: 105Nm continuous torque that can spike to 120Nm in boost mode. This is the strongest motor I've tested, period. And somehow Amflow managed to keep the complete bike weight under 44 pounds. That power-to-weight ratio changes the game.",
 
@@ -995,7 +995,7 @@ const money = [
         name: "Santa Cruz Vala – Most Refined Trail Bike",
         avgRating: 4.7,
         badge: "From $10,999",
-        imageUrl: "/images/electric-bikes/santa-cruz-vala.webp",
+        imageUrl: "/images/electric-bikes/mountain/Santa%20Cruz%20Vala.webp",
 
         description: "The Vala represents Santa Cruz's first departure from their signature VPP suspension in an e-bike, switching to a four-bar Horst Link design. Why does this matter? Better suspension performance, especially when climbing and braking. Combined with Bosch's new CX Gen 5 motor and Santa Cruz's legendary build quality, you get a bike that feels special the moment you throw a leg over.",
 
@@ -1048,7 +1048,7 @@ const money = [
         name: "Giant Reign Advanced E+ – Best Value Premium",
         avgRating: 4.6,
         badge: "From $6,499",
-        imageUrl: "/images/electric-bikes/giant-reign-advanced-e+.webp",
+        imageUrl: "/images/electric-bikes/mountain/Giant%20Reign%20Advanced%20E.webp",
 
         description: "Giant often flies under the radar, but the Reign Advanced E+ punches way above its price point. For $6,499, you get a carbon frame, Yamaha-developed SyncDrive Pro 3 motor with 90Nm of torque, and 800W peak power. That's significantly less than competitors with similar specs. After riding it extensively, the value proposition is real. This bike competes with models costing $3,000 more.",
 
@@ -1100,7 +1100,7 @@ const money = [
         name: "YT Decoy – Best Direct-to-Consumer Option",
         avgRating: 4.5,
         badge: "From $7,499",
-        imageUrl: "/images/electric-bikes/yt-decoy.webp",
+        imageUrl: "/images/electric-bikes/mountain/YT%20Decoy.webp",
 
         description: "YT Industries built their reputation on offering race-worthy bikes at direct-to-consumer prices, and the Decoy continues that tradition. You're getting a carbon frame, Bosch CX Gen 5 motor, 800Wh battery, and Fox suspension for under $8,000. The catch? It ships in a box and you handle assembly. But for riders comfortable with basic bike maintenance, the savings are substantial.",
 
@@ -1153,7 +1153,7 @@ const money = [
         name: "Commencal Meta Power SX – Best for Bike Park",
         avgRating: 4.5,
         badge: "Starting at $9,500",
-        imageUrl: "/images/electric-bikes/commencal-meta-power-sx.webp",
+        imageUrl: "/images/electric-bikes/mountain/Commencal%20Meta%20Power%20SX.webp",
 
         description: "Commencal's DNA is pure downhill racing, and it shows in the Meta Power SX. This is a 180mm-travel monster with Bosch's CX Gen 5 motor that's built for one thing: charging hard. If your dream ride involves shuttle laps or bike park sessions where the climb is just a means to another descent, this aluminum beast delivers the goods.",
 
@@ -1206,7 +1206,7 @@ const money = [
         name: "Ari Timp Peak – Best Custom-Fit Option",
         avgRating: 4.6,
         badge: "From $6,499",
-        imageUrl: "/images/electric-bikes/ari-timp-peak.webp",
+        imageUrl: "/images/electric-bikes/mountain/Ari%20Timp%20Peak.webp",
 
         description: "Ari is a smaller brand doing something really interesting: they build bikes to your exact specifications and body measurements. The Timp Peak is their full-suspension e-MTB, and what makes it special is that every frame gets custom-tuned based on your weight, riding style, and preferences. It's like getting a tailored suit instead of off-the-rack.",
 
@@ -1259,7 +1259,7 @@ const money = [
         name: "Cannondale Moterra SL – Best Lightweight Option",
         avgRating: 4.4,
         badge: "From $5,600",
-        imageUrl: "/images/electric-bikes/cannondale-moterra-sl.webp",
+        imageUrl: "/images/electric-bikes/mountain/Cannondale%20Moterra%20SL.webp",
 
         description: "The Moterra SL represents a different approach to e-MTBs: less power, less weight, more like riding a regular mountain bike with a helpful boost. At just 38 pounds, this is one of the lightest full-suspension e-MTBs available. Cannondale's custom SL motor produces only 50Nm of torque, about half of full-power bikes, but the reduced weight makes it feel surprisingly capable.",
 
@@ -1312,7 +1312,7 @@ const money = [
         name: "Aventon Ramblas – Best Budget Entry Point",
         avgRating: 4.3,
         badge: "Starting at $2,899",
-        imageUrl: "/images/electric-bikes/aventon-ramblas.webp",
+        imageUrl: "/images/electric-bikes/mountain/Aventon%20Ramblas.webp",
 
         description: "At $2,899, the Ramblas is by far the most affordable bike on this list. It's a hardtail with a hub motor and mechanical brakes, definitely more basic than the competition. But here's the thing: it's actually pretty fun and gets you on the trails for less than half what you'd pay for the next cheapest option. Aventon made smart compromises to hit this price point.",
 
