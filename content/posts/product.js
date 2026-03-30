@@ -15077,22 +15077,22 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-folding-bikes/lectric-xp4.webp",
-  cardImage: "/images/electric-folding-bikes/lectric-xp4.webp",
-  articleHeroImage: "/images/electric-folding-bikes/lectric-xp4.webp",
+  heroImage: "/images/electric-bikes/folding/Lectric%20XP4.webp",
+  cardImage: "/images/electric-bikes/folding/Lectric%20XP4.webp",
+  articleHeroImage: "/images/electric-bikes/folding/Lectric%20XP4.webp",
   heroImageAlt: "Lectric XP4 folding electric bike shown fully assembled with fat tires and step-through frame",
   
   imagePrimary: {
     heading: "Compact Folding Design for Easy Storage",
     description: "The XP4 folds down to roughly 36 x 20 x 25 inches in about 20 seconds. I've been storing mine in my apartment hallway, and it takes up less space than my road bike used to. The folding mechanism feels solid after three weeks of daily folding and unfolding. The quick-release latches work smoothly, though they did need a slight adjustment after the first week to maintain tension.",
-    image: "/images/electric-folding-bikes/lectric-xp4-folded.webp",
+    image: "/images/electric-bikes/folding/Lectric%20XP4.webp",
     alt: "Lectric XP4 in folded position showing compact dimensions for apartment storage"
   },
   
   imageSecondary: {
     heading: "Fat Tires Handle Urban Obstacles",
     description: "Those 4-inch wide tires aren't just for looks. During testing, they soaked up potholes, curbs, and rough pavement way better than I expected from a budget folding bike. I deliberately rode over expansion joints and cracked sidewalks that would rattle my teeth on a regular bike, and the XP4 just rolled right over them. The downside? They add noticeable rolling resistance on smooth roads, which cuts into range.",
-    image: "/images/electric-folding-bikes/lectric-xp4-tires.webp",
+    image: "/images/electric-bikes/folding/Lectric%20XP4.webp",
     alt: "Close-up of Lectric XP4 fat tires showing tread pattern and width"
   },
   
@@ -15391,21 +15391,21 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-folding-bikes/ride1up-portola.webp",
-  cardImage: "/images/electric-folding-bikes/ride1up-portola.webp",
-  articleHeroImage: "/images/electric-folding-bikes/ride1up-portola.webp",
+  heroImage: "/images/electric-bikes/folding/Ride1Up%20Portola.webp",
+  cardImage: "/images/electric-bikes/folding/Ride1Up%20Portola.webp",
+  articleHeroImage: "/images/electric-bikes/folding/Ride1Up%20Portola.webp",
   heroImageAlt: "Ride1Up Portola folding electric bike in Sea Turquoise color with step-through frame",
   
   imagePrimary: {
     heading: "Compact Folding Design for Urban Storage",
     description: "The Portola folds down to roughly 36 inches long by 30 inches tall, making it manageable for apartment storage or car transport. I've stuffed it in my sedan's trunk multiple times without removing the battery. The folding mechanism uses a secure two-point locking lever at the frame hinge, plus collapsing handlebars and pedals. A built-in strap wraps around the fork to keep everything together when you're moving it around. Just don't expect to carry this 59-pound bike up multiple flights of stairs daily.",
-    image: "/images/electric-folding-bikes/ride1up-portola-folded.webp",
+    image: "/images/electric-bikes/folding/Ride1Up%20Portola.webp",
     alt: "Ride1Up Portola folded compact for storage showing frame hinge and securing strap"
   },
   imageSecondary: {
     heading: "Step-Through Frame Accessibility",
     description: "That 15-inch standover height makes mounting effortless for shorter riders and anyone who struggles with traditional bike frames. The low entry point combined with the adjustable seat (29 to 38 inches) genuinely accommodates riders from about 4'10\" to around 6 feet comfortably. Taller folks exist in a gray zone where you can ride it, but leg extension gets tight. I'm 5'9\" and needed the seat post maxed out.",
-    image: "/images/electric-folding-bikes/ride1up-portola-stepthrough.webp",
+    image: "/images/electric-bikes/folding/Ride1Up%20Portola.webp",
     alt: "Ride1Up Portola step-through frame showing low 15-inch standover height"
   },
   
@@ -15714,21 +15714,21 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-folding-bikes/velotric-fold-1-plus.webp",
-  cardImage: "/images/electric-folding-bikes/velotric-fold-1-plus.webp",
-  articleHeroImage: "/images/electric-folding-bikes/velotric-fold-1-plus.webp",
+  heroImage: "/images/electric-bikes/folding/Velotric%20Fold%201%20Plus.webp",
+  cardImage: "/images/electric-bikes/folding/Velotric%20Fold%201%20Plus.webp",
+  articleHeroImage: "/images/electric-bikes/folding/Velotric%20Fold%201%20Plus.webp",
   heroImageAlt: "Velotric Fold 1 Plus folding electric bike shown in Mango color with 20-inch fat tires",
 
   imagePrimary: {
     heading: "Compact Folded Size",
     description: "One thing that impressed me during testing was how genuinely compact this bike gets when folded. At roughly 38 inches long, it fit in my Honda CR-V's trunk with room to spare. The included Velcro strap keeps everything secure, and the welded stand means you're not resting the frame on concrete. Three steps to fold, maybe 30 seconds total once you've done it a few times.",
-    image: "/images/electric-folding-bikes/velotric-fold-1-plus-folded.webp",
+    image: "/images/electric-bikes/folding/Velotric%20Fold%201%20Plus.webp",
     alt: "Velotric Fold 1 Plus shown fully folded with dimensions of 37.8 by 19.7 by 33.5 inches"
   },
   imageSecondary: {
     heading: "Real-World Hill Performance",
     description: "I tested this on some genuinely steep climbs in my neighborhood, including one sustained 8% grade that's about a half-mile long. With the motor in Boost mode and torque sensor engaged, the Fold 1 Plus powered up consistently without hesitation. At 175 pounds plus a backpack with groceries, I never felt the motor struggling. That 75Nm torque rating isn't just marketing.",
-    image: "/images/electric-folding-bikes/velotric-fold-1-plus-climbing.webp",
+    image: "/images/electric-bikes/folding/Velotric%20Fold%201%20Plus.webp",
     alt: "Velotric Fold 1 Plus climbing steep hill showing motor performance"
   },
 
@@ -16015,22 +16015,22 @@ const products = [
   h1: "Aventon Sinch 2.5 Review: Real-World Tested Folding E-Bike",
   metaDescription: "Aventon Sinch 2.5 review: tested for 3 weeks in NYC. Fat tire folding e-bike with 750W motor, 55-mile range. Specs, pros, cons, and who should buy.",
 
-  heroImage: "/images/electric-folding-bikes/aventon-sinch-2-5.webp",
-  cardImage: "/images/electric-folding-bikes/aventon-sinch-2-5.webp",
-  articleHeroImage: "/images/electric-folding-bikes/aventon-sinch-2-5.webp",
+  heroImage: "/images/electric-bikes/folding/Aventon%20Sinch%202.5.webp",
+  cardImage: "/images/electric-bikes/folding/Aventon%20Sinch%202.5.webp",
+  articleHeroImage: "/images/electric-bikes/folding/Aventon%20Sinch%202.5.webp",
   heroImageAlt: "Aventon Sinch 2.5 fat tire folding electric bike shown in urban setting",
 
   imagePrimary: {
     heading: "Folded Compact for Storage",
     description: "The Sinch 2.5 folds down surprisingly small for a fat tire bike. I've been storing it in my 650-square-foot Brooklyn apartment without issue. Takes about 20 seconds to fold completely, and the integrated magnet keeps the frame halves together when folded. At 73 pounds, it's heavy to carry upstairs, but once folded it fits easily in a closet or against a wall. The fat tires do add width when folded compared to standard folding bikes, but the vertical clearance is impressive.",
-    image: "/images/electric-folding-bikes/aventon-sinch-2-5-folded.webp",
+    image: "/images/electric-bikes/folding/Aventon%20Sinch%202.5.webp",
     alt: "Aventon Sinch 2.5 folded compact showing storage size"
   },
 
   imageSecondary: {
     heading: "Fat Tires Handle Everything",
     description: "Those 4-inch fat tires aren't just for show. I've ridden over cracked pavement, potholes, gravel paths, and even some light dirt trails without any issues. The tires absorb impacts that would rattle your teeth on a standard e-bike. Air pressure matters here though. I keep them at 20 PSI for city riding, which gives a cushy ride without feeling sluggish. Bump it up to 25-30 PSI and you get better efficiency on smooth pavement.",
-    image: "/images/electric-folding-bikes/aventon-sinch-2-5-fat-tires.webp",
+    image: "/images/electric-bikes/folding/Aventon%20Sinch%202.5.webp",
     alt: "Close-up of Aventon Sinch 2.5 4-inch fat tires on urban terrain"
   },
 
@@ -16281,22 +16281,22 @@ const products = [
   h1: "Tern Vektron S10 Review: Real-World Testing & Performance",
   metaDescription: "Tern Vektron S10 review: tested for 4 weeks in urban conditions. Folding capability, cargo capacity, Bosch motor performance, pros, cons & who should buy.",
 
-  heroImage: "/images/electric-folding-bikes/tern-vektron-s10.webp",
-  cardImage: "/images/electric-folding-bikes/tern-vektron-s10.webp",
-  articleHeroImage: "/images/electric-folding-bikes/tern-vektron-s10.webp",
+  heroImage: "/images/electric-bikes/folding/Tern%20Vektron%20S10.webp",
+  cardImage: "/images/electric-bikes/folding/Tern%20Vektron%20S10.webp",
+  articleHeroImage: "/images/electric-bikes/folding/Tern%20Vektron%20S10.webp",
   heroImageAlt: "Tern Vektron S10 folding electric bike shown in compact folded position with Bosch motor visible",
 
   imagePrimary: {
     heading: "Compact Storage Meets Cargo Capability",
     description: "The Vektron S10's party trick is fitting serious cargo capability into a package that folds small enough for apartment hallways. I've loaded it with 60 pounds of groceries, folded it in under 20 seconds, and wheeled it into my third-floor walkup. The rear rack accepts Tern's proprietary accessories, transforming this compact folder into a surprisingly capable cargo hauler. During testing, I regularly carried everything from laptop bags to weekend camping gear without the bike feeling unstable or overwhelmed.",
-    image: "/images/electric-folding-bikes/tern-vektron-s10-folded.webp",
+    image: "/images/electric-bikes/folding/Tern%20Vektron%20S10.webp",
     alt: "Tern Vektron S10 in folded configuration next to standard doorway showing compact dimensions"
   },
 
   imageSecondary: {
     heading: "Bosch Performance Line Motor in Action",
     description: "The centerpiece of the Vektron S10 is its Bosch Performance Line motor, positioned at the bottom bracket where it belongs. I tested this on San Francisco hills with various cargo loads, and the motor's 65 Nm of torque handles steep grades without drama. What impressed me most was the natural pedaling feel. Unlike some hub motors that feel disconnected, the Bosch system amplifies your effort smoothly across all four assist levels. On my regular 8-mile commute with moderate hills, I averaged 35-40 miles of range per charge, even in the higher Turbo mode.",
-    image: "/images/electric-folding-bikes/tern-vektron-s10-motor.webp",
+    image: "/images/electric-bikes/folding/Tern%20Vektron%20S10.webp",
     alt: "Close-up of Tern Vektron S10 Bosch Performance Line motor and drive system"
   },
 
@@ -16532,22 +16532,22 @@ const products = [
   h1: "Brompton P Line Electric Review: Testing the Titanium Folder",
   metaDescription: "Brompton P Line Electric review: tested folding speed, ride quality, and real-world range. Honest pros, cons, and who should spend $5K+ on this premium folder.",
 
-  heroImage: "/images/electric-folding-bikes/brompton-p-line-electric.webp",
-  cardImage: "/images/electric-folding-bikes/brompton-p-line-electric.webp",
-  articleHeroImage: "/images/electric-folding-bikes/brompton-p-line-electric.webp",
+  heroImage: "/images/electric-bikes/folding/Brompton%20P%20Line%20Electric.webp",
+  cardImage: "/images/electric-bikes/folding/Brompton%20P%20Line%20Electric.webp",
+  articleHeroImage: "/images/electric-bikes/folding/Brompton%20P%20Line%20Electric.webp",
   heroImageAlt: "Brompton P Line Electric folding bike in titanium finish leaning against urban storefront",
 
   imagePrimary: {
     heading: "The Fold: Under 20 Seconds Every Time",
     description: "After folding this bike probably 200 times over six weeks, I can confirm Brompton's claims aren't exaggerated. The P Line Electric folds to roughly 23 x 22 x 11 inches in about 15 seconds once you've got the sequence down. That's small enough to roll onto subway cars during rush hour without dirty looks, and it's fit under my desk at work without blocking the walkway. The titanium rear frame adds rigidity without the weight penalty of steel.",
-    image: "/images/electric-folding-bikes/brompton-p-line-electric-folded.webp",
+    image: "/images/electric-bikes/folding/Brompton%20P%20Line%20Electric.webp",
     alt: "Brompton P Line Electric in fully folded configuration showing compact 23x22x11 inch dimensions"
   },
 
   imageSecondary: {
     heading: "Riding Position and Comfort",
     description: "The upright geometry feels odd for the first couple rides if you're used to traditional bikes. You sit very vertical, almost like a beach cruiser, which puts zero strain on your back but feels twitchy until you adjust. The small 16-inch wheels amplify every crack and pothole, so this isn't a plush ride by any measure. But paired with the electric assist, it makes navigating tight city spaces incredibly agile in ways a full-size bike can't match.",
-    image: "/images/electric-folding-bikes/brompton-p-line-electric-riding.webp",
+    image: "/images/electric-bikes/folding/Brompton%20P%20Line%20Electric.webp",
     alt: "Rider demonstrating upright riding position on Brompton P Line Electric through urban environment"
   },
 
@@ -16801,22 +16801,22 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-folding-bikes/radexpand-plus.webp",
-  cardImage: "/images/electric-folding-bikes/radexpand-plus.webp",
-  articleHeroImage: "/images/electric-folding-bikes/radexpand-plus.webp",
+  heroImage: "/images/electric-bikes/folding/Rad%20Power%20RadExpand%20Plus.webp",
+  cardImage: "/images/electric-bikes/folding/Rad%20Power%20RadExpand%20Plus.webp",
+  articleHeroImage: "/images/electric-bikes/folding/Rad%20Power%20RadExpand%20Plus.webp",
   heroImageAlt: "Rad Power RadExpand Plus electric folding bike with rear cargo rack in folded position",
 
   imagePrimary: {
     heading: "Folding Mechanism in Action",
     description: "The RadExpand Plus folds in about 30 seconds using a simple three-step process. I've folded and unfolded this bike at least 40 times during testing, and the mechanism feels solid despite some initial stiffness. The folded dimensions (32\" x 25\" x 17\") fit easily in my Honda Civic trunk, though it's heavier than most folders at 62 pounds.",
-    image: "/images/electric-folding-bikes/radexpand-plus-folded.webp",
+    image: "/images/electric-bikes/folding/Rad%20Power%20RadExpand%20Plus.webp",
     alt: "RadExpand Plus folded compact for storage showing three-step folding mechanism"
   },
 
   imageSecondary: {
     heading: "Cargo Capability Testing",
     description: "The integrated rear rack is where this bike really shines. During testing, I regularly hauled 40-50 pounds of groceries, and the bike handled it without any noticeable performance drop. The rack is rated for 60 pounds, and combined with the 275-pound total weight capacity, this thing can carry serious loads that would overwhelm most folding e-bikes.",
-    image: "/images/electric-folding-bikes/radexpand-plus-cargo.webp",
+    image: "/images/electric-bikes/folding/Rad%20Power%20RadExpand%20Plus.webp",
     alt: "RadExpand Plus rear cargo rack loaded with groceries and panniers"
   },
 
@@ -17088,22 +17088,22 @@ const products = [
   h1: "Heybike Mars 3.0 Review: 3 Weeks Testing This Compact Commuter",
   metaDescription: "Heybike Mars 3.0 review after 3 weeks of daily testing. Real-world range, folding mechanism, 500W motor performance, pros, cons, and who should buy it.",
 
-  heroImage: "/images/electric-folding-bikes/heybike-mars-3-0.webp",
-  cardImage: "/images/electric-folding-bikes/heybike-mars-3-0.webp",
-  articleHeroImage: "/images/electric-folding-bikes/heybike-mars-3-0.webp",
+  heroImage: "/images/electric-bikes/folding/Heybike%20Mars%203.0.webp",
+  cardImage: "/images/electric-bikes/folding/Heybike%20Mars%203.0.webp",
+  articleHeroImage: "/images/electric-bikes/folding/Heybike%20Mars%203.0.webp",
   heroImageAlt: "Heybike Mars 3.0 folding electric bike shown in compact folded position",
 
   imagePrimary: {
     heading: "Compact Folding Design in Action",
     description: "The Mars 3.0's folding mechanism is genuinely practical. I timed myself multiple times, and consistently folded it in under 20 seconds once I got the hang of it. The frame locks securely with audible clicks that give you confidence it won't collapse mid-ride. When folded, it measures roughly 35 x 28 x 18 inches, which fits in most car trunks and can squeeze into apartment corners. The built-in carry handle makes it manageable, though at 77 pounds, you won't want to carry it far.",
-    image: "/images/electric-folding-bikes/heybike-mars-3-0-folded.webp",
+    image: "/images/electric-bikes/folding/Heybike%20Mars%203.0.webp",
     alt: "Heybike Mars 3.0 in folded configuration showing compact dimensions"
   },
 
   imageSecondary: {
     heading: "Fat Tire Performance on Urban Terrain",
     description: "Those chunky 20 x 4-inch tires aren't just for looks. During testing on Philadelphia's notorious pothole-riddled streets, they absorbed impacts that would rattle your teeth on a standard commuter bike. I rode over curbs, through construction zones, and across cobblestone sections in Old City without getting bounced around. The downside? They add rolling resistance on smooth pavement and make the bike heavier than slim-tire folders, but the comfort trade-off is worth it for mixed urban terrain.",
-    image: "/images/electric-folding-bikes/heybike-mars-3-0-tires.webp",
+    image: "/images/electric-bikes/folding/Heybike%20Mars%203.0.webp",
     alt: "Close-up of Heybike Mars 3.0 fat tires on urban pavement"
   },
 
@@ -17343,22 +17343,22 @@ const products = [
   h1: "Blix Vika X Review: Testing the Smart Folding E-Bike",
   metaDescription: "Blix Vika X review: tested auto-shifting, torque sensor, 39-64 mile range. Full specs, real pros/cons, who should buy this $1,799 folder.",
 
-  heroImage: "/images/electric-folding-bikes/blix-vika-x.webp",
-  cardImage: "/images/electric-folding-bikes/blix-vika-x.webp",
-  articleHeroImage: "/images/electric-folding-bikes/blix-vika-x.webp",
+  heroImage: "/images/electric-bikes/folding/Blix%20Vika%20X.webp",
+  cardImage: "/images/electric-bikes/folding/Blix%20Vika%20X.webp",
+  articleHeroImage: "/images/electric-bikes/folding/Blix%20Vika%20X.webp",
   heroImageAlt: "Blix Vika X folding e-bike in slate grey with 20-inch wheels and integrated rear rack",
 
   imagePrimary: {
     heading: "Compact Folding Design for Real-World Storage",
     description: "The Vika X collapses to just 36x21x29 inches in about 15 seconds. I've been storing mine in my apartment hallway and tossing it in my Honda Civic trunk for weekend trips. The integrated magnets hold it together securely when folded, which is a nice touch compared to other folders I've tested that need straps or bungees.",
-    image: "/images/electric-folding-bikes/blix-vika-x-folded.webp",
+    image: "/images/electric-bikes/folding/Blix%20Vika%20X.webp",
     alt: "Blix Vika X folded to compact size showing magnetic frame attachment"
   },
 
   imageSecondary: {
     heading: "Auto-Shift System in Action",
     description: "The electronic shifting system is genuinely different from typical folding e-bikes. Instead of cables, an electronic signal triggers gear changes based on your cadence and speed. It's still in beta and has some quirks (shifts can lag on steep hills), but when it works smoothly, you really do forget about shifting entirely.",
-    image: "/images/electric-folding-bikes/blix-vika-x-display.webp",
+    image: "/images/electric-bikes/folding/Blix%20Vika%20X.webp",
     alt: "Blix Vika X color display showing auto-shift mode and pedal assist level"
   },
 
@@ -17620,21 +17620,21 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-folding-bikes/urtopia-carbon-fold.webp",
-  cardImage: "/images/electric-folding-bikes/urtopia-carbon-fold.webp",
-  articleHeroImage: "/images/electric-folding-bikes/urtopia-carbon-fold.webp",
+  heroImage: "/images/electric-bikes/folding/Urtopia%20Carbon%20Fold.webp",
+  cardImage: "/images/electric-bikes/folding/Urtopia%20Carbon%20Fold.webp",
+  articleHeroImage: "/images/electric-bikes/folding/Urtopia%20Carbon%20Fold.webp",
   heroImageAlt: "Urtopia Carbon Fold electric bike in saffron yellow, full carbon fiber frame shown folded and compact",
 
   imagePrimary: {
     heading: "Folded Configuration and Portability",
     description: "The Carbon Fold collapses to roughly the size of a carry-on suitcase in about 30 seconds. I measured it at 31 inches long by 27 inches tall when folded, which fits in most car trunks with room to spare. The integrated magnets keep the folded bike secure during transport without needing straps or additional clips.",
-    image: "/images/electric-folding-bikes/urtopia-carbon-fold-folded.webp",
+    image: "/images/electric-bikes/folding/Urtopia%20Carbon%20Fold.webp",
     alt: "Urtopia Carbon Fold shown in compact folded state next to car trunk"
   },
   imageSecondary: {
     heading: "Carbon Fiber Construction Details",
     description: "The full carbon fiber frame and handlebar construction is immediately noticeable when lifting the bike. At 29 pounds, it's significantly lighter than aluminum folding bikes I've tested in the 45-50 pound range. The carbon weave is visible on closer inspection, and the frame feels rigid without any flex during hard acceleration or climbing.",
-    image: "/images/electric-folding-bikes/urtopia-carbon-fold-carbon-detail.webp",
+    image: "/images/electric-bikes/folding/Urtopia%20Carbon%20Fold.webp",
     alt: "Close-up of Urtopia Carbon Fold carbon fiber frame construction and weave pattern"
   },
 

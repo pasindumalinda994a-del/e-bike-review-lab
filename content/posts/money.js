@@ -1716,7 +1716,7 @@ const money = [
         name: "Lectric XP4 (500W) – Best Overall Value",
         avgRating: 4.7,
         badge: "Starting at $999",
-        imageUrl: "/images/electric-bikes/lectric-xp4.webp",
+        imageUrl: "/images/electric-bikes/folding/Lectric%20XP4.webp",
         description: "The XP4 earned the top spot by doing something remarkable: delivering premium features at a budget price without cutting corners where it matters. After logging over 200 miles on this thing, from daily commutes to weekend grocery hauls, it consistently outperformed bikes costing twice as much.",
         keyFeatures: [
           "Motor: 500W rear hub (1092W peak) with torque sensor",
@@ -1759,7 +1759,7 @@ const money = [
         name: "Ride1Up Portola – Best Budget Pick",
         avgRating: 4.6,
         badge: "Starting at $995",
-        imageUrl: "/images/electric-bikes/ride1up-portola.webp",
+        imageUrl: "/images/electric-bikes/folding/Ride1Up%20Portola.webp",
         description: "The Portola punches way above its $995 price tag with a 750W motor and hydraulic brakes, features you'd expect on bikes costing hundreds more. It's the folder I grab when I want power without overthinking it.",
         keyFeatures: [
           "Motor: 750W rear hub (peak unlisted) with cadence sensor",
@@ -1802,7 +1802,7 @@ const money = [
         name: "Velotric Fold 1 Plus – Best Tech Features",
         avgRating: 4.7,
         badge: "$1,499",
-        imageUrl: "/images/electric-bikes/velotric-fold-1-plus.webp",
+        imageUrl: "/images/electric-bikes/folding/Velotric%20Fold%201%20Plus.webp",
         description: "The Fold 1 Plus is what happens when a company actually listens to rider feedback and builds tech features that genuinely improve the experience. SensorSwap, Find My integration, and 15 customizable assist levels make this the smartest folder I tested.",
         keyFeatures: [
           "Motor: 750W rear hub (1050W peak) with SensorSwap technology",
@@ -1845,7 +1845,7 @@ const money = [
         name: "Aventon Sinch 2.5 – Best for Stability",
         avgRating: 4.6,
         badge: "$1,799",
-        imageUrl: "/images/electric-bikes/aventon-sinch-2.5.webp",
+        imageUrl: "/images/electric-bikes/folding/Aventon%20Sinch%202.5.webp",
         description: "Those 4-inch fat tires aren't just for show; they transform how stable and confident this folder feels on varied terrain. The Sinch 2.5 rides more like a full-size bike than any other folder I tested.",
         keyFeatures: [
           "Motor: 500W rear hub (750W peak) with torque sensor",
@@ -1888,7 +1888,7 @@ const money = [
         name: "Tern Vektron S10 – Best Premium Folder",
         avgRating: 4.8,
         badge: "Around $3,699",
-        imageUrl: "/images/electric-bikes/tern-vektron-s10.webp",
+        imageUrl: "/images/electric-bikes/folding/Tern%20Vektron%20S10.webp",
         description: "The Vektron S10 costs serious money, but it's the only folder I tested that made me forget I was riding a folding bike. That Bosch Performance Line motor and impeccable build quality justify the investment if your budget allows.",
         keyFeatures: [
           "Motor: Bosch Performance Line (250W, 65Nm torque)",
@@ -1931,7 +1931,7 @@ const money = [
         name: "Brompton P Line Electric – Most Portable",
         avgRating: 4.5,
         badge: "Starting at $4,700",
-        imageUrl: "/images/electric-bikes/brompton-p-line-electric.webp",
+        imageUrl: "/images/electric-bikes/folding/Brompton%20P%20Line%20Electric.webp",
         description: "The Brompton folds smaller than anything else I tested and weighs just 34 pounds with the battery. If true portability matters more than power or range, this British icon delivers elegance in a compact package.",
         keyFeatures: [
           "Motor: 250W front hub motor",
@@ -1976,7 +1976,7 @@ const money = [
         name: "Rad Power RadExpand Plus – Best for Heavy Riders",
         avgRating: 4.4,
         badge: "$1,899",
-        imageUrl: "/images/electric-bikes/rad-power-radexpand-plus.webp",
+        imageUrl: "/images/electric-bikes/folding/Rad%20Power%20RadExpand%20Plus.webp",
         description: "The RadExpand Plus doesn't pretend to be the lightest or fanciest folder. Instead, it delivers solid performance with a 275-pound weight limit that accommodates larger riders and heavier cargo loads.",
         keyFeatures: [
           "Motor: 750W geared hub motor",
@@ -2020,7 +2020,7 @@ const money = [
         name: "Heybike Mars 3.0 – Best Cargo Capacity",
         avgRating: 4.3,
         badge: "Around $1,399",
-        imageUrl: "/images/electric-bikes/heybike-mars-3.0.webp",
+        imageUrl: "/images/electric-bikes/folding/Heybike%20Mars%203.0.webp",
         description: "The Mars 3.0 surprised me with its spacious design and impressive cargo-carrying capabilities. While not the most refined folder, it delivers practical utility at a reasonable price.",
         keyFeatures: [
           "Motor: 750W rear hub motor",
@@ -2064,7 +2064,7 @@ const money = [
         name: "Blix Vika X – Best for Casual Riders",
         avgRating: 4.4,
         badge: "Starting at $1,799",
-        imageUrl: "/images/electric-bikes/blix-vika-x.webp",
+        imageUrl: "/images/electric-bikes/folding/Blix%20Vika%20X.webp",
         description: "The Vika X trades raw power for a refined, comfortable riding experience. If you're not racing anyone or climbing mountains, this Swedish-designed folder delivers relaxed, enjoyable rides with thoughtful touches.",
         keyFeatures: [
           "Motor: 500W rear hub motor",
@@ -2108,7 +2108,7 @@ const money = [
         name: "Urtopia Carbon Fold – Most Innovative",
         avgRating: 4.2,
         badge: "$2,999",
-        imageUrl: "/images/electric-bikes/urtopia-carbon-fold.webp",
+        imageUrl: "/images/electric-bikes/folding/Urtopia%20Carbon%20Fold.webp",
         description: "The Carbon Fold feels like a concept bike that actually made it to production. Carbon fiber frame, fingerprint unlock, ChatGPT integration, this folder pushes boundaries even if it doesn't nail everything perfectly.",
         keyFeatures: [
           "Motor: 250W rear hub motor (U.S. version available)",
