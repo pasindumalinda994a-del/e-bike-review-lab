@@ -17908,21 +17908,21 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-road-bikes/scott-fastlane-premium.webp",
-  cardImage: "/images/electric-road-bikes/scott-fastlane-premium.webp",
-  articleHeroImage: "/images/electric-road-bikes/scott-fastlane-premium.webp",
+  heroImage: "/images/electric-bikes/road/Scott Fastlane Premium.webp",
+  cardImage: "/images/electric-bikes/road/Scott Fastlane Premium.webp",
+  articleHeroImage: "/images/electric-bikes/road/Scott Fastlane Premium.webp",
   heroImageAlt: "Scott Fastlane Premium electric road bike in Chrome Silver, side profile showing stealth TQ motor integration",
 
   imagePrimary: {
     heading: "TQ HPR40 Motor Integration",
     description: "The TQ HPR40 mid-drive unit sits tucked between the cranks with virtually no visual footprint. Scott designed the downtube to stay slim enough that even road cycling regulars often can't spot the battery on first glance. This is the core reason the Fastlane Premium stands apart from every other electric road bike on the market right now.",
-    image: "/images/electric-road-bikes/scott-fastlane-premium-motor-detail.webp",
+    image: "/images/electric-bikes/road/Scott Fastlane Premium.webp",
     alt: "Close-up of Scott Fastlane Premium TQ HPR40 mid-drive motor unit integrated into the carbon downtube"
   },
   imageSecondary: {
     heading: "Zipp 353 NSW Carbon Wheels and Dura-Ace Di2 Cockpit",
     description: "The Premium build ships with Zipp 353 NSW tubeless-ready carbon wheels and a full Shimano Dura-Ace Di2 electronic groupset. The one-piece Syncros IC-R100-SL carbon cockpit keeps the front end clean. Everything here is spec'd to race, not just commute. This is where the Premium separates itself from the Fastlane 10 and 20 builds below it.",
-    image: "/images/electric-road-bikes/scott-fastlane-premium-cockpit.webp",
+    image: "/images/electric-bikes/road/Scott Fastlane Premium.webp",
     alt: "Scott Fastlane Premium cockpit with Syncros carbon integrated bar and stem, Shimano Dura-Ace Di2 shifters"
   },
 
@@ -18195,22 +18195,22 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-road-bikes/specialized-turbo-creo-2-comp.webp",
-  cardImage: "/images/electric-road-bikes/specialized-turbo-creo-2-comp.webp",
-  articleHeroImage: "/images/electric-road-bikes/specialized-turbo-creo-2-comp.webp",
+  heroImage: "/images/electric-bikes/road/Specialized Turbo Creo 2 Comp.webp",
+  cardImage: "/images/electric-bikes/road/Specialized Turbo Creo 2 Comp.webp",
+  articleHeroImage: "/images/electric-bikes/road/Specialized Turbo Creo 2 Comp.webp",
   heroImageAlt: "Specialized Turbo Creo 2 Comp electric road bike in red and white colorway",
 
   imagePrimary: {
     heading: "Carbon Frame Construction & Integration",
     description: "The full carbon fiber frame with fully integrated motor and battery system keeps the Creo 2 Comp looking and handling like a traditional road bike. No bulky external components to add weight or drag. The clean integration means you won't feel self-conscious rolling up to group rides.",
-    image: "/images/electric-road-bikes/specialized-turbo-creo-2-comp-frame.webp",
+    image: "/images/electric-bikes/road/Specialized Turbo Creo 2 Comp.webp",
     alt: "Close-up of Specialized Turbo Creo 2 Comp carbon frame showing integrated motor housing"
   },
 
   imageSecondary: {
     heading: "SRAM Apex AXS Wireless Shifting",
     description: "The wireless electronic shifting paired with a 1x12 drivetrain makes gear changes effortless and precise. During my testing, I especially appreciated the simple setup with no finicky derailleur adjustments needed. The single chainring up front keeps things clean, though you do sacrifice some range compared to traditional 2x setups.",
-    image: "/images/electric-road-bikes/specialized-turbo-creo-2-comp-drivetrain.webp",
+    image: "/images/electric-bikes/road/Specialized Turbo Creo 2 Comp.webp",
     alt: "SRAM Apex AXS wireless shifters and drivetrain on Specialized Turbo Creo 2 Comp"
   },
 
@@ -18496,21 +18496,21 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-road-bikes/trek-domane-plus-slr-6.webp",
-  cardImage: "/images/electric-road-bikes/trek-domane-plus-slr-6.webp",
-  articleHeroImage: "/images/electric-road-bikes/trek-domane-plus-slr-6.webp",
+  heroImage: "/images/electric-bikes/road/Trek Domane+ SLR 6.webp",
+  cardImage: "/images/electric-bikes/road/Trek Domane+ SLR 6.webp",
+  articleHeroImage: "/images/electric-bikes/road/Trek Domane+ SLR 6.webp",
   heroImageAlt: "Trek Domane+ SLR 6 electric road bike with TQ motor and carbon frame",
 
   imagePrimary: {
     heading: "Discreet Motor Integration",
     description: "The TQ HPR50 motor tucks completely inside the downtube, making the Domane+ nearly indistinguishable from a traditional road bike. At 12.85kg, it's light enough to handle like a non-assisted bike when you're not using power.",
-    image: "/images/electric-road-bikes/trek-domane-plus-slr-6-motor.webp",
+    image: "/images/electric-bikes/road/Trek Domane+ SLR 6.webp",
     alt: "Trek Domane+ SLR 6 showing integrated TQ motor in downtube"
   },
   imageSecondary: {
     heading: "IsoSpeed Comfort System",
     description: "Trek's signature IsoSpeed decoupler at the seat tube provides measurable vibration damping without sacrificing pedaling efficiency. Combined with clearance for 40mm tires, this creates an exceptionally smooth ride on rough pavement.",
-    image: "/images/electric-road-bikes/trek-domane-plus-slr-6-isospeed.webp",
+    image: "/images/electric-bikes/road/Trek Domane+ SLR 6.webp",
     alt: "Trek Domane+ SLR 6 IsoSpeed rear suspension detail"
   },
 
@@ -18815,21 +18815,21 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-road-bikes/giant-defy-advanced-e-elite.webp",
-  cardImage: "/images/electric-road-bikes/giant-defy-advanced-e-elite.webp",
-  articleHeroImage: "/images/electric-road-bikes/giant-defy-advanced-e-elite.webp",
+  heroImage: "/images/electric-bikes/road/Giant Defy Advanced E+ Elite.webp",
+  cardImage: "/images/electric-bikes/road/Giant Defy Advanced E+ Elite.webp",
+  articleHeroImage: "/images/electric-bikes/road/Giant Defy Advanced E+ Elite.webp",
   heroImageAlt: "Giant Defy Advanced E+ Elite lightweight carbon electric road bike",
 
   imagePrimary: {
     heading: "Carbon Frame Integration",
     description: "The Defy Advanced E+ Elite hides its electric assist system remarkably well within its carbon composite frame. The SyncDrive Core motor housing is seamlessly integrated into the downtube, maintaining the classic road bike aesthetic that Giant is known for. You'd be hard-pressed to identify this as an e-bike from 10 feet away, which matters more than you'd think when rolling up to group rides.",
-    image: "/images/electric-road-bikes/giant-defy-advanced-e-elite-frame.webp",
+    image: "/images/electric-bikes/road/Giant Defy Advanced E+ Elite.webp",
     alt: "Giant Defy Advanced E+ Elite carbon frame showing integrated motor housing"
   },
   imageSecondary: {
     heading: "RideControl Integration",
     description: "Giant's RideControl Ergo controller sits where you'd expect a traditional bike computer, keeping the cockpit clean and uncluttered. The three-button interface is intuitive enough to adjust power levels without looking down, even while sprinting out of corners. Battery level and assist mode display clearly on the compact screen, though I found myself relying more on feel than the display after the first week.",
-    image: "/images/electric-road-bikes/giant-defy-advanced-e-elite-cockpit.webp",
+    image: "/images/electric-bikes/road/Giant Defy Advanced E+ Elite.webp",
     alt: "Giant Defy Advanced E+ Elite handlebar with RideControl display and shifters"
   },
 
@@ -19129,21 +19129,21 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-road-bikes/cannondale-synapse-neo.webp",
-  cardImage: "/images/electric-road-bikes/cannondale-synapse-neo.webp",
-  articleHeroImage: "/images/electric-road-bikes/cannondale-synapse-neo.webp",
+  heroImage: "/images/electric-bikes/road/Cannondale Synapse Neo.webp",
+  cardImage: "/images/electric-bikes/road/Cannondale Synapse Neo.webp",
+  articleHeroImage: "/images/electric-bikes/road/Cannondale Synapse Neo.webp",
   heroImageAlt: "Cannondale Synapse Neo electric road bike with carbon frame and integrated motor system",
 
   imagePrimary: {
     heading: "Integrated Motor Design",
     description: "The Synapse Neo features Cannondale's proprietary motor system that's remarkably well-hidden. During my testing, multiple riders asked if it was actually electric until I showed them the downtube battery. The integration is that clean. The motor sits low in the frame, keeping the bike's center of gravity nearly identical to the non-electric Synapse, which makes handling feel natural and responsive rather than front-heavy like some e-road bikes.",
-    image: "/images/electric-road-bikes/cannondale-synapse-neo-motor.webp",
+    image: "/images/electric-bikes/road/Cannondale Synapse Neo.webp",
     alt: "Close-up of Cannondale Synapse Neo integrated motor system in carbon frame"
   },
   imageSecondary: {
     heading: "Carbon Frame Construction",
     description: "Cannondale's SmartForm carbon layup on the Synapse Neo manages to maintain a road bike aesthetic while housing the motor and battery. I've ridden this alongside traditional road bikes in group rides, and the visual difference is minimal. The frame geometry keeps the endurance-focused position that made the standard Synapse popular, but with added stiffness around the motor mount. After 400+ miles of testing, I haven't noticed any flex or creaking that sometimes plagues e-bike frames.",
-    image: "/images/electric-road-bikes/cannondale-synapse-neo-frame.webp",
+    image: "/images/electric-bikes/road/Cannondale Synapse Neo.webp",
     alt: "Cannondale Synapse Neo carbon frame detail showing endurance geometry"
   },
 
@@ -19411,22 +19411,22 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-road-bikes/bmc-roadmachine-01-amp-x-one.webp",
-  cardImage: "/images/electric-road-bikes/bmc-roadmachine-01-amp-x-one.webp",
-  articleHeroImage: "/images/electric-road-bikes/bmc-roadmachine-01-amp-x-one.webp",
+  heroImage: "/images/electric-bikes/road/BMC Roadmachine 01 AMP X ONE.webp",
+  cardImage: "/images/electric-bikes/road/BMC Roadmachine 01 AMP X ONE.webp",
+  articleHeroImage: "/images/electric-bikes/road/BMC Roadmachine 01 AMP X ONE.webp",
   heroImageAlt: "BMC Roadmachine 01 AMP X ONE electric road bike with TQ motor in rhino grey finish",
 
   imagePrimary: {
     heading: "TQ Motor Integration and Clean Lines",
     description: "The TQ HPR50 motor sits almost invisibly around the bottom bracket, creating one of the cleanest electric road bike designs on the market. From the drive side, you'd never know there's a motor in there. The 2-inch display nestles into the top tube, and the integrated rear light connects directly to the battery for worry-free illumination on every ride.",
-    image: "/images/electric-road-bikes/bmc-roadmachine-motor-detail.webp",
+    image: "/images/electric-bikes/road/BMC Roadmachine 01 AMP X ONE.webp",
     alt: "Close-up of BMC Roadmachine TQ HPR50 motor integration showing compact design"
   },
 
   imageSecondary: {
     heading: "Built for Mixed Surface Riding",
     description: "With clearance for up to 38mm tires and equipped with 35mm Pirelli Cinturato Gravel rubber, the Roadmachine 01 AMP X ONE handles everything from smooth pavement to chunky gravel roads. The relaxed endurance geometry keeps you comfortable on century rides, while the short chainstays maintain the nimble handling BMC is known for.",
-    image: "/images/electric-road-bikes/bmc-roadmachine-gravel-riding.webp",
+    image: "/images/electric-bikes/road/BMC Roadmachine 01 AMP X ONE.webp",
     alt: "BMC Roadmachine 01 AMP X ONE on mixed gravel and paved terrain"
   },
 
@@ -19738,22 +19738,22 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-road-bikes/orbea-gain-m30.webp",
-  cardImage: "/images/electric-road-bikes/orbea-gain-m30.webp",
-  articleHeroImage: "/images/electric-road-bikes/orbea-gain-m30.webp",
+  heroImage: "/images/electric-bikes/road/Orbea Gain M30.webp",
+  cardImage: "/images/electric-bikes/road/Orbea Gain M30.webp",
+  articleHeroImage: "/images/electric-bikes/road/Orbea Gain M30.webp",
   heroImageAlt: "Orbea Gain M30 electric road bike in black finish with carbon frame",
 
   imagePrimary: {
     heading: "Stealthy Integration That Doesn't Scream E-Bike",
     description: "The Gain M30's motor and battery system are so well integrated that most riders won't notice you're on an electric road bike. The downtube houses the 250Wh battery seamlessly, and the rear hub motor keeps the weight centered low. I've rolled up to group rides where nobody realized I was on an e-bike until I mentioned it. This subtlety matters if you want the assist without the stigma some road cycling communities still attach to electric bikes.",
-    image: "/images/electric-road-bikes/orbea-gain-m30-detail.webp",
+    image: "/images/electric-bikes/road/Orbea Gain M30.webp",
     alt: "Close up of Orbea Gain M30 integrated battery and motor system"
   },
 
   imageSecondary: {
     heading: "Climbing Performance Where This Bike Shines",
     description: "On repeated climbs of a local 6% grade that stretches for 2.3 miles, the Gain M30's assist transformed what's normally a grind into something manageable. The Ebikemotion X35 system delivers smooth, natural-feeling power that doesn't overwhelm the riding experience. You're still working, but the motor takes the edge off steep sections. For riders coming back from injury or looking to keep up with faster groups, this balanced approach makes sense.",
-    image: "/images/electric-road-bikes/orbea-gain-m30-climbing.webp",
+    image: "/images/electric-bikes/road/Orbea Gain M30.webp",
     alt: "Orbea Gain M30 being ridden uphill on mountain road"
   },
 
@@ -20027,22 +20027,22 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-road-bikes/wilier-filante-hybrid.webp",
-  cardImage: "/images/electric-road-bikes/wilier-filante-hybrid.webp",
-  articleHeroImage: "/images/electric-road-bikes/wilier-filante-hybrid.webp",
+  heroImage: "/images/electric-bikes/road/Wilier Filante Hybrid.webp",
+  cardImage: "/images/electric-bikes/road/Wilier Filante Hybrid.webp",
+  articleHeroImage: "/images/electric-bikes/road/Wilier Filante Hybrid.webp",
   heroImageAlt: "Wilier Filante Hybrid electric road bike in silver finish with integrated battery system",
 
   imagePrimary: {
     heading: "Stealth Integration Meets Performance",
     description: "The Filante Hybrid's fully integrated battery and motor system is one of the cleanest I've tested in an e-road bike. From 10 feet away, most riders can't tell it's electric. The downtube houses the 250Wh battery completely flush with the frame, and the Ebikemotion X35+ rear hub motor adds just 3.5kg to the total weight. After riding with several cycling clubs, I can confirm that the aesthetic integration doesn't sacrifice the aggressive geometry that makes this feel like a proper race bike.",
-    image: "/images/electric-road-bikes/wilier-filante-hybrid-detail.webp",
+    image: "/images/electric-bikes/road/Wilier Filante Hybrid.webp",
     alt: "Close-up of Wilier Filante Hybrid integrated downtube battery and minimal cable routing"
   },
 
   imageSecondary: {
     heading: "Real-World Group Ride Performance",
     description: "I spent three weeks testing the Filante Hybrid on my regular Saturday morning group rides through Virginia's rolling hills. What surprised me most was how the assist felt during pace line rotations and sprint efforts. Unlike some e-road bikes that deliver choppy power, the X35+ motor provides smooth, predictable assistance that matches your cadence. On sustained 6-8% climbs where the group averages 18-20 mph, the Eco mode kept me in the pack without feeling like I was cheating, while Sport mode let me attack the KOM segments I'd been eyeing for months.",
-    image: "/images/electric-road-bikes/wilier-filante-hybrid-action.webp",
+    image: "/images/electric-bikes/road/Wilier Filante Hybrid.webp",
     alt: "Wilier Filante Hybrid being ridden on hilly road during group ride"
   },
 
@@ -20327,22 +20327,22 @@ const products = [
   h1: "Cervélo Rouvida Review: Testing Cervélo's First E-Road Bike",
   metaDescription: "Cervélo Rouvida review: tested performance, battery range, handling. Premium electric road bike pros, cons, and who should buy it.",
 
-  heroImage: "/images/electric-road-bikes/cervelo-rouvida.webp",
-  cardImage: "/images/electric-road-bikes/cervelo-rouvida.webp",
-  articleHeroImage: "/images/electric-road-bikes/cervelo-rouvida.webp",
+  heroImage: "/images/electric-bikes/road/Cervelo Rouvida.webp",
+  cardImage: "/images/electric-bikes/road/Cervelo Rouvida.webp",
+  articleHeroImage: "/images/electric-bikes/road/Cervelo Rouvida.webp",
   heroImageAlt: "Cervélo Rouvida electric road bike in stealth black finish during road testing",
 
   imagePrimary: {
     heading: "Integrated Motor Design Philosophy",
     description: "The Rouvida's TQ HPR50 motor integration is genuinely impressive. Cervélo hid the 50Nm motor so well that multiple riders at coffee stops didn't realize it was electric until I pointed it out. The downtube houses the 360Wh battery with zero external bulges, maintaining those signature Cervélo aero lines. Weight distribution feels balanced at 28.7 lbs complete, which matters when you're carving corners at 25+ mph.",
-    image: "/images/electric-road-bikes/cervelo-rouvida-motor-detail.webp",
+    image: "/images/electric-bikes/road/Cervelo Rouvida.webp",
     alt: "Close-up of Cervélo Rouvida's integrated TQ HPR50 motor system and hidden battery"
   },
 
   imageSecondary: {
     heading: "Real-World Group Ride Performance",
     description: "I tested the Rouvida extensively on my Wednesday night fast group ride, a 40-mile loop with 2,800 feet of climbing. The bike handles paceline dynamics beautifully. Cervélo's geometry keeps you planted during high-speed descents while the motor assist lets you hang with stronger riders on climbs without blowing up. The color-coded handlebar remote is intuitive enough to adjust power mid-pull without losing focus on the wheel ahead.",
-    image: "/images/electric-road-bikes/cervelo-rouvida-group-ride.webp",
+    image: "/images/electric-bikes/road/Cervelo Rouvida.webp",
     alt: "Cervélo Rouvida electric road bike during fast group ride testing"
   },
 
@@ -20596,21 +20596,21 @@ const products = [
   h1: "Look E-765 Optimum Review: Testing the Ultimate Lightweight Electric Road Bike",
   metaDescription: "Look E-765 Optimum review: tested this 24.9 lb e-road bike over 500+ miles. Specs, performance, price ($8,499), pros and cons from real-world riding.",
 
-  heroImage: "/images/electric-road-bikes/look-e-765-optimum.webp",
-  cardImage: "/images/electric-road-bikes/look-e-765-optimum.webp",
-  articleHeroImage: "/images/electric-road-bikes/look-e-765-optimum.webp",
+  heroImage: "/images/electric-bikes/road/Look E-765 Optimum.webp",
+  cardImage: "/images/electric-bikes/road/Look E-765 Optimum.webp",
+  articleHeroImage: "/images/electric-bikes/road/Look E-765 Optimum.webp",
   heroImageAlt: "Look E-765 Optimum electric road bike in matte black carbon finish",
 
   imagePrimary: {
     heading: "Integrated Motor and Battery Design",
     description: "The Fazua Evation motor system completely disappears into the downtube, making this one of the few e-road bikes that genuinely looks like a traditional racing bike. At 24.9 pounds with the motor installed (21.8 without), it's lighter than most carbon road bikes were a decade ago. The battery sits flush in the downtube with zero external bulk.",
-    image: "/images/electric-road-bikes/look-e-765-optimum-motor.webp",
+    image: "/images/electric-bikes/road/Look E-765 Optimum.webp",
     alt: "Look E-765 Optimum downtube showing integrated Fazua motor system"
   },
   imageSecondary: {
     heading: "Real World Group Ride Performance",
     description: "I've taken this bike on everything from casual coffee rides to aggressive Tuesday night hammerfests. The assist is so subtle that riding partners often don't realize you're on an e-bike until you mention it. The 250W motor provides just enough boost to hang with stronger riders on climbs without feeling like you're cheating, making it perfect for riders who want to stay in the group without getting dropped on hills.",
-    image: "/images/electric-road-bikes/look-e-765-optimum-riding.webp",
+    image: "/images/electric-bikes/road/Look E-765 Optimum.webp",
     alt: "Look E-765 Optimum being ridden on group ride with traditional road bikes"
   },
 

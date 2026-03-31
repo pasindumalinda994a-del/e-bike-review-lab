@@ -2459,7 +2459,7 @@ const money = [
         name: "Scott Fastlane Premium – Best Overall",
         avgRating: 4.8,
         badge: "Around $11,099",
-        imageUrl: "/images/electric-bikes/scott-fastlane-premium.webp",
+        imageUrl: "/images/electric-bikes/road/Scott Fastlane Premium.webp",
 
         description: "The Scott Fastlane Premium earned top honors for one simple reason: it makes you forget you're riding an e-bike. At 9.9kg (21.8 lbs), it's lighter than many regular carbon road bikes, yet packs the sophisticated TQ HPR40 motor that delivers assistance so seamlessly, you'll think you've suddenly gotten fitter. During a 60-mile mixed-terrain ride, I genuinely forgot to check the battery level until mile 45, that's how natural and efficient this system feels.",
 
@@ -2510,7 +2510,7 @@ const money = [
         name: "Specialized Turbo Creo 2 Comp – Best for Gravel & Road",
         avgRating: 4.7,
         badge: "Starting at $7,500",
-        imageUrl: "/images/electric-bikes/specialized-turbo-creo-2-comp.webp",
+        imageUrl: "/images/electric-bikes/road/Specialized Turbo Creo 2 Comp.webp",
 
         description: "If you're the type who can't decide between road and gravel, the Creo 2 is your answer. Specialized built this as a true do-it-all bike, and after testing it on everything from smooth asphalt to chunky forest service roads, I'm convinced it's the most versatile e-bike here. The new SL 1.2 motor delivers 320W and 50Nm, which is 43% more torque than the previous generation, making climbs feel almost effortless.",
 
@@ -2562,7 +2562,7 @@ const money = [
         name: "Trek Domane+ SLR 6 – Most Comfortable",
         avgRating: 4.6,
         badge: "Around $8,499",
-        imageUrl: "/images/electric-bikes/trek-domane+-slr-6.webp",
+        imageUrl: "/images/electric-bikes/road/Trek Domane+ SLR 6.webp",
 
         description: "The Domane+ SLR 6 is what happens when Trek takes their legendary IsoSpeed comfort technology and pairs it with TQ's excellent HPR50 motor. After a 95-mile ride that would've destroyed my back on a traditional race bike, I felt fresh enough to go out for dinner. The compliance built into this frame is remarkable. It genuinely smooths out rough roads without feeling soft or imprecise.",
 
@@ -2614,7 +2614,7 @@ const money = [
         name: "Giant Defy Advanced E+ Elite – Best Value",
         avgRating: 4.5,
         badge: "Starting at $6,499",
-        imageUrl: "/images/electric-bikes/giant-defy-advanced-e+-elite.webp",
+        imageUrl: "/images/electric-bikes/road/Giant Defy Advanced E+ Elite.webp",
 
         description: "Giant's new SyncDrive Move Plus rear hub motor is a game-changer for value-focused buyers. While mid-drive motors get all the hype, this hub system delivers incredibly natural power delivery at a price that undercuts most competitors by $2,000-3,000. I was genuinely shocked by how well this bike rides; it punches way above its price point.",
 
@@ -2666,7 +2666,7 @@ const money = [
         name: "Cannondale Synapse Neo – Best for Daily Use",
         avgRating: 4.5,
         badge: "Around $8,499",
-        imageUrl: "/images/electric-bikes/cannondale-synapse-neo.webp",
+        imageUrl: "/images/electric-bikes/road/Cannondale Synapse Neo.webp",
 
         description: "The Synapse Neo nails the practical details that matter for everyday riding. Built-in lights powered by the main battery? Clever. Fender mounts and kickstand? Practical. The Bosch Performance Line Sprint motor? Proven and reliable. This is the bike I'd actually choose for daily commuting and errands, even though faster bikes exist.",
 
@@ -2718,7 +2718,7 @@ const money = [
         name: "BMC Roadmachine 01 AMP X ONE – Best for Mixed Terrain",
         avgRating: 4.4,
         badge: "Around $9,000",
-        imageUrl: "/images/electric-bikes/bmc-roadmachine-01-amp-x-one.webp",
+        imageUrl: "/images/electric-bikes/road/BMC Roadmachine 01 AMP X ONE.webp",
 
         description: "BMC took the TQ HPR50 motor and built a bike specifically for riders who blur the lines between road and gravel. The Roadmachine AMP X ONE comes with 35mm Pirelli Cinturato Gravel tires and a suspension stem that actually makes a difference on rough surfaces. After testing it on both paved roads and chunky gravel, this bike impressed me with its capability.",
 
@@ -2770,7 +2770,7 @@ const money = [
         name: "Orbea Gain M30 – Best Lightweight Option",
         avgRating: 4.3,
         badge: "Around $5,600",
-        imageUrl: "/images/electric-bikes/orbea-gain-m30.webp",
+        imageUrl: "/images/electric-bikes/road/Orbea Gain M30.webp",
 
         description: "The Orbea Gain M30 takes a different approach: minimal motor, minimal battery, minimal weight. With its Mahle X20 rear hub motor and just 353Wh battery, this bike feels closer to a regular road bike than anything else I tested. If you want subtle assistance rather than electric power, the Gain is your bike.",
 
@@ -2822,7 +2822,7 @@ const money = [
         name: "Wilier Filante Hybrid – Best for Speed",
         avgRating: 4.3,
         badge: "Around $9,500",
-        imageUrl: "/images/electric-bikes/wilier-filante-hybrid.webp",
+        imageUrl: "/images/electric-bikes/road/Wilier Filante Hybrid.webp",
 
         description: "Wilier took their aerodynamic Filante race frame and integrated the Mahle X35+ ebikemotion system. The result? An e-road bike that prioritizes speed and aerodynamics over comfort. During testing, this bike was consistently the fastest on flat sections. The aero frame design makes a real difference when you're pushing the 28mph assist limit.",
 
@@ -2875,7 +2875,7 @@ const money = [
         name: "Cervélo Rouvida – Best All-Arounder",
         avgRating: 4.2,
         badge: "Starting at $6,999",
-        imageUrl: "/images/electric-bikes/cervélo-rouvida.webp",
+        imageUrl: "/images/electric-bikes/road/Cervelo Rouvida.webp",
 
         description: "Cervélo's first gravel e-bike combines their legendary engineering with Fazua's refined Ride 60 motor system. The Rouvida handles everything from smooth pavement to chunky gravel with equal confidence. What makes it special is the removable battery system. You can literally ride this as a regular bike when you don't need assistance.",
 
@@ -2927,7 +2927,7 @@ const money = [
         name: "Look E-765 Optimum – Best for Riders Over 50",
         avgRating: 4.2,
         badge: "Around $7,699",
-        imageUrl: "/images/electric-bikes/look-e-765-optimum.webp",
+        imageUrl: "/images/electric-bikes/road/Look E-765 Optimum.webp",
 
         description: "Look designed the E-765 Optimum specifically for endurance riders who prioritize comfort and reliability over cutting-edge tech. With Shimano's proven EP801 motor and a geometry that prioritizes comfort, this bike is perfect for riders rediscovering long-distance cycling or dealing with age-related physical limitations.",
 
