@@ -20841,21 +20841,21 @@ const products = [
     h1: "Aventon Aventure 3 Review: Real-World Testing on Trail & Street",
     metaDescription: "Aventon Aventure 3 review: tested on snow, sand, and city streets. Honest pros, cons, range tests, and who should buy this $1,899 fat tire e-bike.",
 
-    heroImage: "/images/electric-fat-bikes/aventon-aventure-3.webp",
-    cardImage: "/images/electric-fat-bikes/aventon-aventure-3.webp",
-    articleHeroImage: "/images/electric-fat-bikes/aventon-aventure-3.webp",
+    heroImage: "/images/electric-bikes/fat/Aventon Aventure 3.webp",
+    cardImage: "/images/electric-bikes/fat/Aventon Aventure 3.webp",
+    articleHeroImage: "/images/electric-bikes/fat/Aventon Aventure 3.webp",
     heroImageAlt: "Aventon Aventure 3 electric fat bike with 4-inch tires on mountain trail",
 
     imagePrimary: {
       heading: "Off-Road Performance",
       description: "The 4-inch Kenda Juggernaut tires handle loose terrain surprisingly well. I tested the Aventure 3 on sandy lakefront paths and snowy winter trails, and the wider contact patch provided noticeably better traction than standard e-bikes. The fat tires also soak up trail chatter effectively, though the rigid frame means you'll still feel bigger impacts without rear suspension.",
-      image: "/images/electric-fat-bikes/aventon-aventure-3-offroad.webp",
+      image: "/images/electric-bikes/fat/Aventon Aventure 3.webp",
       alt: "Aventon Aventure 3 riding through sandy beach terrain showing fat tire traction"
     },
     imageSecondary: {
       heading: "Cargo Hauling Capacity",
       description: "With a 400 lb total weight capacity and integrated rear rack, the Aventure 3 handles cargo duty better than expected. The sturdy rear rack supports panniers or a trunk bag, and I regularly carried 30-40 lbs of groceries without affecting ride quality. The step-through frame option makes loading and mounting easier when you're carrying supplies or wearing heavy winter gear.",
-      image: "/images/electric-fat-bikes/aventon-aventure-3-cargo.webp",
+      image: "/images/electric-bikes/fat/Aventon Aventure 3.webp",
       alt: "Aventon Aventure 3 rear cargo rack loaded with panniers and bags"
     },
 
@@ -21094,21 +21094,21 @@ const products = [
     h1: "Velotric Nomad 2 Review: Winter-Ready Fat Tire Beast",
     metaDescription: "Velotric Nomad 2 review: tested 450+ miles through snow, trails, and commutes. Real specs, performance data, honest pros/cons. Best fat tire e-bike under $2K?",
 
-    heroImage: "/images/electric-fat-bikes/velotric-nomad-2.webp",
-    cardImage: "/images/electric-fat-bikes/velotric-nomad-2.webp",
-    articleHeroImage: "/images/electric-fat-bikes/velotric-nomad-2.webp",
+    heroImage: "/images/electric-bikes/fat/Velotric Nomad 2.webp",
+    cardImage: "/images/electric-bikes/fat/Velotric Nomad 2.webp",
+    articleHeroImage: "/images/electric-bikes/fat/Velotric Nomad 2.webp",
     heroImageAlt: "Velotric Nomad 2 electric fat tire bike on snowy trail showing 4-inch Kenda tires and integrated rear rack",
 
     imagePrimary: {
       heading: "Snow Performance Testing",
       description: "After three months of winter testing including rides through 6+ inches of powder, the Nomad 2's 4-inch Kenda tires proved genuinely capable. At 8-10 PSI, the bike floated over snow that would stop regular bikes. This shot from a local bike path shows the kind of unplowed conditions where the Nomad 2 really shines. The 750W motor never bogged down even on snow-covered climbs.",
-      image: "/images/electric-fat-bikes/velotric-nomad-2-snow.webp",
+      image: "/images/electric-bikes/fat/Velotric Nomad 2.webp",
       alt: "Velotric Nomad 2 riding through deep snow on winter bike path with tracks showing tire flotation"
     },
     imageSecondary: {
       heading: "Build Quality and Frame Details",
       description: "The 6061 aluminum frame features clean welds and internal cable routing that matters way more in winter than most riders expect. No exposed cables collecting ice and grime. The integrated rear rack mounts are substantial enough to handle 40+ lbs of cargo without flex. After 450 miles through salt, snow, and mud, the frame finish held up impressively with only minor scratches from trail brush contact.",
-      image: "/images/electric-fat-bikes/velotric-nomad-2-frame.webp",
+      image: "/images/electric-bikes/fat/Velotric Nomad 2.webp",
       alt: "Close-up of Velotric Nomad 2 aluminum frame showing internal cable routing and integrated rack mounts"
     },
 
@@ -21367,21 +21367,21 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-fat-bikes/lectric-xpeak-2.webp",
-    cardImage: "/images/electric-fat-bikes/lectric-xpeak-2.webp",
-    articleHeroImage: "/images/electric-fat-bikes/lectric-xpeak-2.webp",
+    heroImage: "/images/electric-bikes/fat/Lectric XPeak 2.0.webp",
+    cardImage: "/images/electric-bikes/fat/Lectric XPeak 2.0.webp",
+    articleHeroImage: "/images/electric-bikes/fat/Lectric XPeak 2.0.webp",
     heroImageAlt: "Lectric XPeak 2.0 electric fat bike on an off-road trail",
 
     imagePrimary: {
       heading: "RST Renegade Suspension Fork",
       description: "The XPeak 2.0 ships with an RST Renegade adjustable suspension fork offering up to 80mm of travel. On rocky singletrack and rooted forest paths, this fork genuinely absorbs chatter rather than passing it to your hands. It's a legitimate upgrade over rigid fork competitors at this price point, and you can feel the difference immediately after a few miles of technical terrain.",
-      image: "/images/electric-fat-bikes/lectric-xpeak-2-fork.webp",
+      image: "/images/electric-bikes/fat/Lectric XPeak 2.0.webp",
       alt: "Lectric XPeak 2.0 RST Renegade suspension fork close-up"
     },
     imageSecondary: {
       heading: "Torque Sensor and Integrated Battery",
       description: "The 48V 15Ah battery sits semi-integrated into the down tube behind a color-matched panel, keeping the profile clean. Below it, the torque sensor is the real star of the show. Unlike the cadence sensors found on most budget fat ebikes, the torque sensor reads how hard you're pushing on the pedals and adjusts motor output accordingly, making the ride feel far more natural and controlled.",
-      image: "/images/electric-fat-bikes/lectric-xpeak-2-battery.webp",
+      image: "/images/electric-bikes/fat/Lectric XPeak 2.0.webp",
       alt: "Lectric XPeak 2.0 semi-integrated battery and torque sensor"
     },
 
@@ -21671,21 +21671,21 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-fat-bikes/wired-freedom.webp",
-    cardImage: "/images/electric-fat-bikes/wired-freedom.webp",
-    articleHeroImage: "/images/electric-fat-bikes/wired-freedom.webp",
+    heroImage: "/images/electric-bikes/fat/Wired Freedom.webp",
+    cardImage: "/images/electric-bikes/fat/Wired Freedom.webp",
+    articleHeroImage: "/images/electric-bikes/fat/Wired Freedom.webp",
     heroImageAlt: "Wired Freedom 60V electric fat bike in blue with 26x4 fat tires and full suspension frame",
 
     imagePrimary: {
       heading: "Dual Battery System and Motor Power",
       description: "The Freedom's 60V dual-battery setup is one of its most impressive features. A 20Ah front battery and 15Ah rear battery combine for 2,100Wh total capacity, which is genuinely rare at this price. The Samsung 21700 cells give you confidence in long-term reliability, and the split placement keeps the weight distribution manageable for a 115-lb bike.",
-      image: "/images/electric-fat-bikes/wired-freedom-battery.webp",
+      image: "/images/electric-bikes/fat/Wired Freedom.webp",
       alt: "Wired Freedom 60V dual battery system with Samsung 21700 cells"
     },
     imageSecondary: {
       heading: "Full Suspension and Fat Tire Setup",
       description: "The RST Guide fork and DNM AO-8RC rear shock combo works surprisingly well on rough terrain. Paired with Kenda Krusade 26x4 fat tires, the Freedom absorbs trail chop and loose surfaces without constant correction. This is a full suspension electric fat bike at a price where most competitors offer hardtails.",
-      image: "/images/electric-fat-bikes/wired-freedom-suspension.webp",
+      image: "/images/electric-bikes/fat/Wired Freedom.webp",
       alt: "Wired Freedom full suspension fat tire electric bike on trail"
     },
 
@@ -21979,21 +21979,21 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-fat-bikes/ride1up-revv-1-drt.webp",
-    cardImage: "/images/electric-fat-bikes/ride1up-revv-1-drt.webp",
-    articleHeroImage: "/images/electric-fat-bikes/ride1up-revv-1-drt.webp",
+    heroImage: "/images/electric-bikes/fat/Ride1Up Revv 1 DRT.webp",
+    cardImage: "/images/electric-bikes/fat/Ride1Up Revv 1 DRT.webp",
+    articleHeroImage: "/images/electric-bikes/fat/Ride1Up Revv 1 DRT.webp",
     heroImageAlt: "Ride1Up Revv 1 DRT electric fat bike on off-road trail showing full suspension and knobby tires",
 
     imagePrimary: {
       heading: "Double-Crown Fork and Full Suspension",
       description: "The Revv 1 DRT's 150mm double-crown front fork is the standout visual feature. It's borrowed directly from the dirt bike world and gives the bike an aggressive, purposeful stance. The DNM rear shock soaks up bumps at speed, and together this suspension package genuinely separates the DRT from most electric fat bikes in this price range.",
-      image: "/images/electric-fat-bikes/ride1up-revv-1-drt-suspension.webp",
+      image: "/images/electric-bikes/fat/Ride1Up Revv 1 DRT.webp",
       alt: "Ride1Up Revv 1 DRT double-crown front fork and rear suspension closeup"
     },
     imageSecondary: {
       heading: "Molle Panel and Tactical Storage",
       description: "The removable metal alloy molle plate on the DRT's frame is a genuinely clever touch. It lets hunters, anglers, and backcountry riders attach gear pouches, holsters, and accessories using standard MOLLE webbing. It's functional, not just cosmetic, and it's one of the details that makes this bike feel purpose-built rather than generic.",
-      image: "/images/electric-fat-bikes/ride1up-revv-1-drt-molle.webp",
+      image: "/images/electric-bikes/fat/Ride1Up Revv 1 DRT.webp",
       alt: "Ride1Up Revv 1 DRT molle panel for tactical gear attachment"
     },
 
@@ -22279,21 +22279,21 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-fat-bikes/himiway-d5.webp",
-    cardImage: "/images/electric-fat-bikes/himiway-d5.webp",
-    articleHeroImage: "/images/electric-fat-bikes/himiway-d5.webp",
+    heroImage: "/images/electric-bikes/fat/Himiway D5.webp",
+    cardImage: "/images/electric-bikes/fat/Himiway D5.webp",
+    articleHeroImage: "/images/electric-bikes/fat/Himiway D5.webp",
     heroImageAlt: "Himiway D5 2.0 electric fat bike in Space Grey with full suspension and Maxxis 26x4.0 tires",
 
     imagePrimary: {
       heading: "Full Suspension on Rough Trails",
       description: "The D5 2.0's RST hydraulic fork (100mm travel) and 130mm rear suspension work together to absorb roots, rocks, and gravel. After riding a 19-mile C&O Canal stretch with heavy stone sections, I barely noticed the surface changes under me. That front lockout is genuinely useful on pavement too.",
-      image: "/images/electric-fat-bikes/himiway-d5-suspension.webp",
+      image: "/images/electric-bikes/fat/Himiway D5.webp",
       alt: "Himiway D5 2.0 full suspension fork detail on trail"
     },
     imageSecondary: {
       heading: "Maxxis Minion Tires Up Close",
       description: "The Maxxis Minion FBF/FBR 26x4.0 tubeless-ready tires are the real star of this bike's off-road credibility. They're the same tires you'd find on bikes costing twice as much. Wide knobby tread bites into loose dirt and sand, and the 4-inch width floats over soft surfaces where a narrower tire would sink.",
-      image: "/images/electric-fat-bikes/himiway-d5-tires.webp",
+      image: "/images/electric-bikes/fat/Himiway D5.webp",
       alt: "Maxxis Minion 26x4.0 fat tires on Himiway D5 2.0"
     },
 
@@ -22597,21 +22597,21 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-fat-bikes/mokwheel-basalt-2-0.webp",
-  cardImage: "/images/electric-fat-bikes/mokwheel-basalt-2-0.webp",
-  articleHeroImage: "/images/electric-fat-bikes/mokwheel-basalt-2-0.webp",
+  heroImage: "/images/electric-bikes/fat/Mokwheel Basalt 2.0.webp",
+  cardImage: "/images/electric-bikes/fat/Mokwheel Basalt 2.0.webp",
+  articleHeroImage: "/images/electric-bikes/fat/Mokwheel Basalt 2.0.webp",
   heroImageAlt: "Mokwheel Basalt 2.0 electric fat bike in Phantom Black on mixed terrain",
 
   imagePrimary: {
     heading: "1100W Peak Motor and 110mm Suspension Fork",
     description: "The Basalt 2.0's combination of a 1100W peak hub motor and 110mm adjustable suspension fork is what really sets it apart from cheaper fat tire e-bikes. On loose gravel or broken pavement, that fork makes a noticeable difference. Most rivals at this price point run rigid forks or token 80mm travel units that bottom out the moment you hit a real bump.",
-    image: "/images/electric-fat-bikes/mokwheel-basalt-2-0-motor-fork.webp",
+    image: "/images/electric-bikes/fat/Mokwheel Basalt 2.0.webp",
     alt: "110mm suspension fork and 750W motor on Mokwheel Basalt 2.0 electric fat bike"
   },
   imageSecondary: {
     heading: "Detachable HD Display and Integrated Turn Signals",
     description: "The Basalt 2.0's removable backlit LCD display is more useful than it first sounds. Pull it off when you park and the bike powers down, which doubles as a basic theft deterrent. The integrated LED turn signals are frame-mounted rather than bolt-on, which keeps the aesthetics clean and makes them noticeably more visible than cheap handlebar blinkers. Both upgrades are real improvements over the original Basalt.",
-    image: "/images/electric-fat-bikes/mokwheel-basalt-2-0-display-signals.webp",
+    image: "/images/electric-bikes/fat/Mokwheel Basalt 2.0.webp",
     alt: "Detachable LCD display and integrated LED turn signals on Mokwheel Basalt 2.0 e-bike"
   },
 
@@ -22895,21 +22895,21 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-fat-bikes/quietkat-apex-pro.webp",
-  cardImage: "/images/electric-fat-bikes/quietkat-apex-pro.webp",
-  articleHeroImage: "/images/electric-fat-bikes/quietkat-apex-pro.webp",
+  heroImage: "/images/electric-bikes/fat/QuietKat Apex Pro.webp",
+  cardImage: "/images/electric-bikes/fat/QuietKat Apex Pro.webp",
+  articleHeroImage: "/images/electric-bikes/fat/QuietKat Apex Pro.webp",
   heroImageAlt: "QuietKat Apex Pro electric fat bike in gunmetal color on backcountry trail",
 
   imagePrimary: {
     heading: "1000W Mid-Drive Motor and VPO Technology",
     description: "The heart of the Apex Pro is its 1000W mid-drive motor paired with QuietKat's proprietary VPO (Variable Power Output) system. This lets riders dial in exactly how much assist they want across Class 1, 2, 3, and Unlimited modes. Positioned centrally in the frame, the mid-drive keeps weight low and centered, which makes a noticeable difference when picking through tight singletrack or loaded-down logging roads.",
-    image: "/images/electric-fat-bikes/quietkat-apex-pro-motor.webp",
+    image: "/images/electric-bikes/fat/QuietKat Apex Pro.webp",
     alt: "QuietKat Apex Pro 1000W VPO mid-drive motor close-up"
   },
   imageSecondary: {
     heading: "24x4 All-Terrain Fat Tires and KKE Air Fork",
     description: "The 24-inch by 4-inch fat tires paired with a 140mm KKE inverted air fork are what give the Apex Pro its signature ability to float over terrain that would stop most bikes cold. Whether that's a sandy wash, a snow-packed forest road, or a muddy creek crossing, the tire volume and fork compliance work together to keep the front end planted and predictable. The inverted design also adds visual heft that matches the bike's overall purpose-built look.",
-    image: "/images/electric-fat-bikes/quietkat-apex-pro-tires-fork.webp",
+    image: "/images/electric-bikes/fat/QuietKat Apex Pro.webp",
     alt: "QuietKat Apex Pro fat tires and KKE inverted suspension fork detail"
   },
 
@@ -23200,21 +23200,21 @@ const products = [
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-fat-bikes/radrover-6-plus.webp",
-  cardImage: "/images/electric-fat-bikes/radrover-6-plus.webp",
-  articleHeroImage: "/images/electric-fat-bikes/radrover-6-plus.webp",
+  heroImage: "/images/electric-bikes/fat/Rad Power RadRover 6 Plus.webp",
+  cardImage: "/images/electric-bikes/fat/Rad Power RadRover 6 Plus.webp",
+  articleHeroImage: "/images/electric-bikes/fat/Rad Power RadRover 6 Plus.webp",
   heroImageAlt: "Rad Power RadRover 6 Plus electric fat bike on a trail with 4-inch tires visible",
 
   imagePrimary: {
     heading: "4-Inch Fat Tires on Varied Terrain",
     description: "The RadRover 6 Plus ships with Kenda 26x4-inch fat tires that grip gravel, sand, packed dirt, and wet pavement with surprising confidence. On a soggy trail section I'd normally avoid on a standard e-bike, the tires stayed planted and the ride felt controlled rather than sketchy. The width also doubles as natural suspension on rough surfaces.",
-    image: "/images/electric-fat-bikes/radrover-6-plus-tires-trail.webp",
+    image: "/images/electric-bikes/fat/Rad Power RadRover 6 Plus.webp",
     alt: "RadRover 6 Plus fat tires gripping a gravel trail"
   },
   imageSecondary: {
     heading: "Integrated Display and Controls",
     description: "The backlit LCD display sits center-bar and reads clearly in sunlight, showing speed, battery level, pedal assist level, and trip data. The thumb throttle and assist controls fall naturally under your right hand. After one ride I stopped thinking about the controls entirely, which is exactly what you want from an interface on a bike you're riding in tricky conditions.",
-    image: "/images/electric-fat-bikes/radrover-6-plus-display.webp",
+    image: "/images/electric-bikes/fat/Rad Power RadRover 6 Plus.webp",
     alt: "RadRover 6 Plus LCD display and handlebar controls close-up"
   },
 
@@ -23495,21 +23495,21 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-fat-bikes/specialized-turbo-tero-x-5.webp",
-    cardImage: "/images/electric-fat-bikes/specialized-turbo-tero-x-5.webp",
-    articleHeroImage: "/images/electric-fat-bikes/specialized-turbo-tero-x-5.webp",
+    heroImage: "/images/electric-bikes/fat/Specialized Tero X 5.0.webp",
+    cardImage: "/images/electric-bikes/fat/Specialized Tero X 5.0.webp",
+    articleHeroImage: "/images/electric-bikes/fat/Specialized Tero X 5.0.webp",
     heroImageAlt: "Specialized Turbo Tero X 5.0 electric fat bike on a rocky trail",
 
     imagePrimary: {
       heading: "Mullet Wheel Setup and Full Suspension",
       description: "The Tero X 5.0 runs a 29-inch front wheel paired with a 27.5-inch rear in medium through XL sizes. It's a mullet configuration borrowed straight from trail mountain biking, and it genuinely changes how this bike handles obstacles. The RockShox 35 Silver fork up front and Deluxe Select R shock out back provide 130mm and 120mm of travel respectively.",
-      image: "/images/electric-fat-bikes/specialized-turbo-tero-x-5-suspension.webp",
+      image: "/images/electric-bikes/fat/Specialized Tero X 5.0.webp",
       alt: "Specialized Turbo Tero X 5.0 mullet wheel setup and RockShox suspension detail"
     },
     imageSecondary: {
       heading: "MasterMind Display and Integrated Lighting",
       description: "The color MasterMind TCD display sits center-bar and gives you power level, range estimate, speed, and battery percentage at a glance. The Lezyne Super E600 headlight puts out 600 lumens, bright enough for pre-dawn gravel rides. Rear lighting integrates with the braking system for extra visibility.",
-      image: "/images/electric-fat-bikes/specialized-turbo-tero-x-5-display.webp",
+      image: "/images/electric-bikes/fat/Specialized Tero X 5.0.webp",
       alt: "Specialized Turbo Tero X 5.0 MasterMind display and integrated Lezyne headlight"
     },
 

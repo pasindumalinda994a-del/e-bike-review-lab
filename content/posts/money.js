@@ -5038,7 +5038,7 @@ const money = [
         name: "Aventon Aventure 3 – Best Overall",
         avgRating: 4.8,
         badge: "Around $1,999",
-        imageUrl: "/images/products/aventon-aventure-3.webp",
+        imageUrl: "/images/electric-bikes/fat/Aventon Aventure 3.webp",
         
         description: "The Aventure 3 takes the crown because it nails the fundamentals while adding smart features that actually matter. After 200+ miles of testing, this bike proved why Aventon dominates the fat tire market. It's the rare combination of power, tech, and reliability that doesn't make you choose between them.",
         
@@ -5092,7 +5092,7 @@ const money = [
         name: "Velotric Nomad 2 – Most Customizable",
         avgRating: 4.7,
         badge: "Starting at $1,999",
-        imageUrl: "/images/products/velotric-nomad-2.webp",
+        imageUrl: "/images/electric-bikes/fat/Velotric Nomad 2.webp",
         
         description: "The Nomad 2 wins on versatility. Being able to switch between torque and cadence sensors mid-ride isn't just a party trick. It fundamentally changes how you can use this bike. Add full suspension comfort and Apple ecosystem integration, and you've got a fat bike that adapts to you instead of forcing you to adapt to it.",
         
@@ -5146,7 +5146,7 @@ const money = [
         name: "Lectric XPeak 2.0 – Best Value",
         avgRating: 4.6,
         badge: "Starting at $1,399",
-        imageUrl: "/images/products/lectric-xpeak-2.webp",
+        imageUrl: "/images/electric-bikes/fat/Lectric XPeak 2.0.webp",
         
         description: "The XPeak 2.0 proves expensive doesn't always mean better. At $1,399, it undercuts competitors by $600 while matching or exceeding their core capabilities. The new torque sensor upgrade transformed this from a good budget bike into a legitimately great option that happens to cost less.",
         
@@ -5201,7 +5201,7 @@ const money = [
         name: "Wired Freedom – Full Suspension Champion",
         avgRating: 4.5,
         badge: "Around $2,499",
-        imageUrl: "/images/products/wired-freedom.webp",
+        imageUrl: "/images/electric-bikes/fat/Wired Freedom.webp",
         
         description: "The Freedom brings genuine full suspension to fat bikes at a price that won't make you cry. If you're serious about technical trails and want comfort that rivals mountain bikes, this delivers. It's the only bike here where I genuinely forgot I was riding a 80-pound machine.",
         
@@ -5256,7 +5256,7 @@ const money = [
         name: "Ride1Up Revv 1 DRT – Lightweight Performer",
         avgRating: 4.4,
         badge: "Starting at $1,895",
-        imageUrl: "/images/products/ride1up-revv-1-drt.webp",
+        imageUrl: "/images/electric-bikes/fat/Ride1Up Revv 1 DRT.webp",
         
         description: "At 68 pounds, the Revv 1 DRT is shockingly light for a fat bike. That weight reduction translates to better handling and easier transportation without sacrificing essential features. It's proof that fat bikes don't have to be monsters.",
         
@@ -5311,7 +5311,7 @@ const money = [
         name: "Himiway D5 – Budget Powerhouse",
         avgRating: 4.3,
         badge: "Around $1,699",
-        imageUrl: "/images/products/himiway-d5.webp",
+        imageUrl: "/images/electric-bikes/fat/Himiway D5.webp",
         
         description: "The D5 delivers surprising power and features at a price that undercuts most serious competition. It's not perfect, but for riders prioritizing raw capability over refinement, Himiway nailed the value proposition.",
         
@@ -5366,7 +5366,7 @@ const money = [
         name: "Mokwheel Basalt 2.0 – Cargo-Capable Cruiser",
         avgRating: 4.2,
         badge: "Starting at $1,799",
-        imageUrl: "/images/products/mokwheel-basalt.webp",
+        imageUrl: "/images/electric-bikes/fat/Mokwheel Basalt 2.0.webp",
         
         description: "The Basalt 2.0 bridges the gap between fat bike and cargo bike. If you need to haul gear, kids, or groceries without buying a dedicated cargo bike, Mokwheel designed something genuinely useful.",
         
@@ -5421,7 +5421,7 @@ const money = [
         name: "QuietKat Apex Pro – Hunter's Choice",
         avgRating: 4.4,
         badge: "Around $4,499",
-        imageUrl: "/images/products/quietkat-apex-pro.webp",
+        imageUrl: "/images/electric-bikes/fat/QuietKat Apex Pro.webp",
         
         description: "The Apex Pro is purpose-built for serious outdoor enthusiasts. Yes, it's expensive. But if you're hunting in the backcountry or need a bike that won't quit in extreme conditions, QuietKat justifies the premium with features you won't find elsewhere.",
         
@@ -5476,7 +5476,7 @@ const money = [
         name: "Rad Power RadRover 6 Plus – Trusted Brand",
         avgRating: 4.1,
         badge: "Around $1,999",
-        imageUrl: "/images/products/rad-radster-trail.webp",
+        imageUrl: "/images/electric-bikes/fat/Rad Power RadRover 6 Plus.webp",
         
         description: "Rad Power built its reputation on reliable, no-nonsense ebikes. The RadRover 6 Plus delivers exactly that: solid performance, proven reliability, and a support network that actually helps when things go wrong.",
         
@@ -5531,7 +5531,7 @@ const money = [
         name: "Specialized Turbo Tero X 5.0 – Premium Pedigree",
         avgRating: 4.6,
         badge: "Starting at $5,500",
-        imageUrl: "/images/products/specialized-haul-st.webp",
+        imageUrl: "/images/electric-bikes/fat/Specialized Tero X 5.0.webp",
         
         description: "Specialized brings decades of bike engineering expertise to the fat bike category. The Tero X 5.0 delivers premium performance at a premium price. It's exceptional, but only if you're willing to pay for perfection.",
         
