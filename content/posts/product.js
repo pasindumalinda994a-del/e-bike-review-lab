@@ -9155,22 +9155,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-cruiser-bikes/specialized-turbo-como-4-igh.webp",
-    cardImage: "/images/electric-cruiser-bikes/specialized-turbo-como-4-igh.webp",
-    articleHeroImage: "/images/electric-cruiser-bikes/specialized-turbo-como-4-igh.webp",
+    heroImage: "/images/electric-bikes/cruiser/Specialized Turbo Como 4.0 IGH.webp",
+    cardImage: "/images/electric-bikes/cruiser/Specialized Turbo Como 4.0 IGH.webp",
+    articleHeroImage: "/images/electric-bikes/cruiser/Specialized Turbo Como 4.0 IGH.webp",
     heroImageAlt: "Specialized Turbo Como 4.0 IGH electric cruiser bike with step-through frame and belt drive system",
     
     imagePrimary: {
       heading: "Belt Drive System and Step-Through Design",
       description: "The Como 4.0 IGH features a Gates Carbon Drive belt system paired with enviolo's continuously variable transmission. This maintenance-free setup eliminates chain noise and grease while providing infinite gear ratios. The low step-through frame makes mounting effortless for riders of all abilities.",
-      image: "/images/electric-cruiser-bikes/specialized-turbo-como-4-igh-drivetrain.webp",
+      image: "/images/electric-bikes/cruiser/Specialized Turbo Como 4.0 IGH.webp",
       alt: "Close-up of Specialized Como 4.0 IGH Gates Carbon belt drive and enviolo hub"
     },
     
     imageSecondary: {
       heading: "MasterMind Display and Integrated Components",
       description: "The MasterMind TCD display provides clear ride data and connects seamlessly to the Mission Control app. Integrated fenders, lights, and a sturdy rear rack come standard, making this a true ready-to-ride package. The 710Wh battery integrates cleanly into the downtube while remaining removable for charging.",
-      image: "/images/electric-cruiser-bikes/specialized-turbo-como-4-igh-cockpit.webp",
+      image: "/images/electric-bikes/cruiser/Specialized Turbo Como 4.0 IGH.webp",
       alt: "Specialized Como 4.0 IGH cockpit showing MasterMind display and upright riding position"
     },
     
@@ -9451,22 +9451,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-cruiser-bikes/aventon-pace-500-3-step-through.webp",
-    cardImage: "/images/electric-cruiser-bikes/aventon-pace-500-3-step-through.webp",
-    articleHeroImage: "/images/electric-cruiser-bikes/aventon-pace-500-3-step-through.webp",
+    heroImage: "/images/electric-bikes/cruiser/Aventon Pace 500.3 Step-Through.webp",
+    cardImage: "/images/electric-bikes/cruiser/Aventon Pace 500.3 Step-Through.webp",
+    articleHeroImage: "/images/electric-bikes/cruiser/Aventon Pace 500.3 Step-Through.webp",
     heroImageAlt: "Aventon Pace 500.3 Step-Through electric cruiser bike in Ghost White, side profile showing step-through frame and swept-back handlebars",
     
     imagePrimary: {
       heading: "Torque Sensor Makes All the Difference",
       description: "The biggest upgrade on the Pace 500.3 is the switch from cadence to torque sensing. After three weeks of daily riding, this changes everything about how the bike feels. Instead of that on/off surge you get with cadence sensors, power delivery matches your pedaling effort naturally. Push harder on climbs and the motor amplifies that effort proportionally. Ease up on flats and the assist backs off smoothly.",
-      image: "/images/electric-cruiser-bikes/aventon-pace-500-3-torque-sensor.webp",
+      image: "/images/electric-bikes/cruiser/Aventon Pace 500.3 Step-Through.webp",
       alt: "Close-up of Aventon Pace 500.3 torque sensor system and motor housing"
     },
     
     imageSecondary: {
       heading: "Step-Through Frame for Easy Access",
       description: "The low step-through frame on the Pace 500.3 sits just 16 inches off the ground at its lowest point. I'm 5'7\" and found getting on and off completely effortless, even when carrying groceries in the rear basket. This design really shines for riders with limited mobility or anyone who stops frequently around town. The swept-back handlebars and cushioned saddle create a relaxed, upright position that eliminated the lower back soreness I'd experienced on more aggressive bike geometries.",
-      image: "/images/electric-cruiser-bikes/aventon-pace-500-3-step-through-frame.webp",
+      image: "/images/electric-bikes/cruiser/Aventon Pace 500.3 Step-Through.webp",
       alt: "Aventon Pace 500.3 step-through frame showing low entrance point and upright riding position"
     },
     
@@ -9757,22 +9757,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-cruiser-bikes/electra-townie-path-go-10d.webp",
-    cardImage: "/images/electric-cruiser-bikes/electra-townie-path-go-10d.webp",
-    articleHeroImage: "/images/electric-cruiser-bikes/electra-townie-path-go-10d.webp",
+    heroImage: "/images/electric-bikes/cruiser/Electra Townie Path Go! 10D.webp",
+    cardImage: "/images/electric-bikes/cruiser/Electra Townie Path Go! 10D.webp",
+    articleHeroImage: "/images/electric-bikes/cruiser/Electra Townie Path Go! 10D.webp",
     heroImageAlt: "Electra Townie Path Go! 10D electric cruiser bike with step-through frame and Bosch motor",
     
     imagePrimary: {
       heading: "Flat Foot Technology in Action",
       description: "The signature upright riding position puts both feet flat on the ground at stops, making this one of the most confidence-inspiring e-bikes I've tested. That swept-back handlebar and forward pedal position eliminate back strain on longer rides. I spent 45 minutes cruising boardwalks without any discomfort.",
-      image: "/images/electric-cruiser-bikes/electra-townie-path-go-10d-riding.webp",
+      image: "/images/electric-bikes/cruiser/Electra Townie Path Go! 10D.webp",
       alt: "Rider demonstrating Electra Flat Foot Technology on Townie Path Go! 10D"
     },
     
     imageSecondary: {
       heading: "Bosch SmartphoneHub Display",
       description: "This isn't your typical bike computer. The SmartphoneHub charges your phone while displaying GPS navigation, speed, battery level, and assistance mode. After two weeks of testing, I appreciated how it doubles as a navigation system, which is perfect for exploring new bike paths without draining your phone battery.",
-      image: "/images/electric-cruiser-bikes/electra-townie-path-go-10d-display.webp",
+      image: "/images/electric-bikes/cruiser/Electra Townie Path Go! 10D.webp",
       alt: "Bosch SmartphoneHub controller mounted on Electra Townie Path Go! 10D handlebar"
     },
     
@@ -10066,22 +10066,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-cruiser-bikes/electric-bike-company-model-c.webp",
-    cardImage: "/images/electric-cruiser-bikes/electric-bike-company-model-c.webp",
-    articleHeroImage: "/images/electric-cruiser-bikes/electric-bike-company-model-c.webp",
+    heroImage: "/images/electric-bikes/cruiser/Electric Bike Company Model C.webp",
+    cardImage: "/images/electric-bikes/cruiser/Electric Bike Company Model C.webp",
+    articleHeroImage: "/images/electric-bikes/cruiser/Electric Bike Company Model C.webp",
     heroImageAlt: "Electric Bike Company Model C retro cruiser e-bike with classic beach cruiser design and step-through frame",
     
     imagePrimary: {
       heading: "Classic Cruiser Design With Modern Electric Power",
       description: "The Model C captures that timeless beach cruiser aesthetic with its swept-back handlebars, comfortable upright riding position, and vintage-inspired color options. The integrated battery maintains the clean lines while the rear hub motor delivers smooth, quiet assistance. It's a design that turns heads at the beach and blends seamlessly into boardwalk scenery.",
-      image: "/images/electric-cruiser-bikes/electric-bike-company-model-c-side.webp",
+      image: "/images/electric-bikes/cruiser/Electric Bike Company Model C.webp",
       alt: "Side view of Electric Bike Company Model C showing classic cruiser geometry and integrated battery design"
     },
     
     imageSecondary: {
       heading: "Step-Through Frame for Easy Mounting",
       description: "The low step-through frame makes getting on and off effortless, which I appreciated after beach stops and at traffic lights. This design particularly benefits riders with limited mobility, those wearing dresses or skirts, or anyone who values easy accessibility. The frame maintains structural integrity while offering one of the lowest standover heights in the cruiser e-bike category.",
-      image: "/images/electric-cruiser-bikes/electric-bike-company-model-c-frame.webp",
+      image: "/images/electric-bikes/cruiser/Electric Bike Company Model C.webp",
       alt: "Electric Bike Company Model C step-through frame showing low standover height for easy mounting"
     },
     
@@ -10332,22 +10332,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-cruiser-bikes/murf-fat-murf.webp",
-    cardImage: "/images/electric-cruiser-bikes/murf-fat-murf.webp",
-    articleHeroImage: "/images/electric-cruiser-bikes/murf-fat-murf.webp",
+    heroImage: "/images/electric-bikes/cruiser/Murf Fat Murf.webp",
+    cardImage: "/images/electric-bikes/cruiser/Murf Fat Murf.webp",
+    articleHeroImage: "/images/electric-bikes/cruiser/Murf Fat Murf.webp",
     heroImageAlt: "Murf Fat Murf electric beach cruiser bike with vintage styling and fat tires",
     
     imagePrimary: {
       heading: "Fat Tire Performance on Sand and Pavement",
       description: "The 4-inch fat tires are the standout feature here. I tested the Fat Murf on everything from packed beach sand to cracked city pavement, and these balloon tires absorb bumps like nothing I've experienced on a cruiser. The low-pressure riding gives you that classic beach bike float, but with electric power backing you up. You can actually ride this thing on soft sand without immediately bogging down, though I wouldn't call it a dedicated sand machine.",
-      image: "/images/electric-cruiser-bikes/murf-fat-murf-tires.webp",
+      image: "/images/electric-bikes/cruiser/Murf Fat Murf.webp",
       alt: "Close-up of Murf Fat Murf 4-inch fat tires on beach terrain"
     },
     
     imageSecondary: {
       heading: "Retro Styling That Actually Works",
       description: "The vintage motorcycle-inspired design isn't just for show. That banana seat is genuinely comfortable for rides up to about 45 minutes (longer and you'll want more padding). The springer fork gives you legitimate suspension travel while maintaining that classic aesthetic. I've gotten more compliments on this bike in three weeks than any other e-bike I've tested. It turns heads at every stoplight, which matters if you care about style alongside function.",
-      image: "/images/electric-cruiser-bikes/murf-fat-murf-styling.webp",
+      image: "/images/electric-bikes/cruiser/Murf Fat Murf.webp",
       alt: "Murf Fat Murf electric cruiser showing retro banana seat and springer fork design"
     },
     
@@ -10619,22 +10619,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-cruiser-bikes/priority-ecoast.webp",
-    cardImage: "/images/electric-cruiser-bikes/priority-ecoast.webp",
-    articleHeroImage: "/images/electric-cruiser-bikes/priority-ecoast.webp",
+    heroImage: "/images/electric-bikes/cruiser/Priority eCoast.webp",
+    cardImage: "/images/electric-bikes/cruiser/Priority eCoast.webp",
+    articleHeroImage: "/images/electric-bikes/cruiser/Priority eCoast.webp",
     heroImageAlt: "Priority eCoast electric cruiser bike with belt drive system on beach boardwalk",
     
     imagePrimary: {
       heading: "The Gates Carbon Belt Drive System",
       description: "The standout feature of the eCoast is its maintenance-free Gates carbon belt drive. Unlike traditional chains that need regular cleaning and lubrication, this belt system stays clean in sandy beach environments and requires zero maintenance. After three weeks of coastal riding, including exposure to salt air and sand, the belt showed no wear and operated silently.",
-      image: "/images/electric-cruiser-bikes/priority-ecoast-belt-drive.webp",
+      image: "/images/electric-bikes/cruiser/Priority eCoast.webp",
       alt: "Close-up of Priority eCoast Gates carbon belt drive system"
     },
     
     imageSecondary: {
       heading: "Enviolo Auto-Shifting in Action",
       description: "The Enviolo automatic continuously variable transmission adjusts gearing seamlessly as you ride. I tested this extensively on varied terrain from flat boardwalks to gentle hills, and the auto-shifting responded smoothly without the clunky gear changes of traditional derailleurs. You can also switch to manual mode for more control, though I found auto mode handled 90% of situations perfectly.",
-      image: "/images/electric-cruiser-bikes/priority-ecoast-hub.webp",
+      image: "/images/electric-bikes/cruiser/Priority eCoast.webp",
       alt: "Priority eCoast Enviolo automatic shifting hub close-up"
     },
     
@@ -10910,22 +10910,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-cruiser-bikes/ride1up-cruiser.webp",
-    cardImage: "/images/electric-cruiser-bikes/ride1up-cruiser.webp",
-    articleHeroImage: "/images/electric-cruiser-bikes/ride1up-cruiser.webp",
+    heroImage: "/images/electric-bikes/cruiser/Ride1Up Cruiser.webp",
+    cardImage: "/images/electric-bikes/cruiser/Ride1Up Cruiser.webp",
+    articleHeroImage: "/images/electric-bikes/cruiser/Ride1Up Cruiser.webp",
     heroImageAlt: "Ride1Up Cruiser electric beach cruiser bike with step-through frame in blue",
     
     imagePrimary: {
       heading: "Classic Beach Cruiser Design Meets Modern E-Bike Tech",
       description: "The Ride1Up Cruiser's retro-styled frame hides modern components surprisingly well. The swept-back handlebars and wide saddle create that classic beach cruiser posture, while the integrated battery keeps things clean. I tested both the step-through and step-over versions, and the low standover height makes mounting effortless, especially after beach stops where you're barefoot or wearing sandals.",
-      image: "/images/electric-cruiser-bikes/ride1up-cruiser-detail.webp",
+      image: "/images/electric-bikes/cruiser/Ride1Up Cruiser.webp",
       alt: "Close-up of Ride1Up Cruiser showing step-through frame design and integrated battery"
     },
     
     imageSecondary: {
       heading: "Fat Tires Handle Sand and Pavement Equally Well",
       description: "Those 26x4 inch Kenda Krusade tires aren't just for looks. During testing, I rode from hard-packed beach paths onto loose sand multiple times, and the wide footprint provided surprising stability. On pavement, they're cushy and forgiving over cracks and bumps, though you'll notice more rolling resistance compared to thinner tires. The trade-off? You can actually ride this thing on the beach without immediately sinking.",
-      image: "/images/electric-cruiser-bikes/ride1up-cruiser-detail-2.webp",
+      image: "/images/electric-bikes/cruiser/Ride1Up Cruiser.webp",
       alt: "Ride1Up Cruiser fat tires on beach path showing tread pattern"
     },
     
@@ -11199,22 +11199,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-cruiser-bikes/himiway-premium-all-terrain.webp",
-    cardImage: "/images/electric-cruiser-bikes/himiway-premium-all-terrain.webp",
-    articleHeroImage: "/images/electric-cruiser-bikes/himiway-premium-all-terrain.webp",
+    heroImage: "/images/electric-bikes/cruiser/Himiway Premium All-Terrain.webp",
+    cardImage: "/images/electric-bikes/cruiser/Himiway Premium All-Terrain.webp",
+    articleHeroImage: "/images/electric-bikes/cruiser/Himiway Premium All-Terrain.webp",
     heroImageAlt: "Himiway Premium All-Terrain electric cruiser bike with step-through frame and fat tires on beach boardwalk",
     
     imagePrimary: {
       heading: "Step-Through Design Meets Fat Tire Capability",
       description: "The Premium All-Terrain's low step-through frame makes mounting effortless, even for riders with limited mobility. Combined with 4-inch fat tires, this cruiser handles everything from soft sand to broken pavement without sacrificing the easy-on, easy-off design that makes it ideal for casual rides and quick stops.",
-      image: "/images/electric-cruiser-bikes/himiway-premium-step-through.webp",
+      image: "/images/electric-bikes/cruiser/Himiway Premium All-Terrain.webp",
       alt: "Himiway Premium All-Terrain step-through frame design with rider demonstrating easy mounting"
     },
     
     imageSecondary: {
       heading: "Comfort-Focused Cockpit and Riding Position",
       description: "The upright riding position keeps your back straight and shoulders relaxed, while the wide, cushioned saddle and swept-back handlebars eliminate wrist strain. After multiple 10+ mile rides, I found this setup genuinely comfortable in a way most e-bikes aren't. The LCD display sits at eye level without requiring you to look down, and all controls fall naturally to hand.",
-      image: "/images/electric-cruiser-bikes/himiway-premium-cockpit.webp",
+      image: "/images/electric-bikes/cruiser/Himiway Premium All-Terrain.webp",
       alt: "Himiway Premium All-Terrain handlebar setup showing upright riding position and display"
     },
     
@@ -11491,22 +11491,22 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-cruiser-bikes/blix-sol-x.webp",
-    cardImage: "/images/electric-cruiser-bikes/blix-sol-x.webp",
-    articleHeroImage: "/images/electric-cruiser-bikes/blix-sol-x.webp",
+    heroImage: "/images/electric-bikes/cruiser/Blix Sol X.webp",
+    cardImage: "/images/electric-bikes/cruiser/Blix Sol X.webp",
+    articleHeroImage: "/images/electric-bikes/cruiser/Blix Sol X.webp",
     heroImageAlt: "Blix Sol X electric beach cruiser bike with swept-back handlebars and retro styling",
     
     imagePrimary: {
       heading: "Upright Riding Position and Step-Through Frame",
       description: "The Sol X's low step-through design and swept-back handlebars create an incredibly relaxed riding position that feels natural from the first pedal stroke. I'm 5'10\" and found the geometry perfectly suited for leisurely rides without any back or neck strain, even after 90-minute beach cruises. The upright posture gives excellent visibility in traffic and makes mounting/dismounting effortless.",
-      image: "/images/electric-cruiser-bikes/blix-sol-x-riding-position.webp",
+      image: "/images/electric-bikes/cruiser/Blix Sol X.webp",
       alt: "Rider demonstrating upright, comfortable riding position on Blix Sol X cruiser"
     },
     
     imageSecondary: {
       heading: "Fat Tire Capability and Beach Performance",
       description: "Those 3-inch Schwalbe Big Ben tires aren't just for show. I tested the Sol X on everything from packed beach sand to gravel paths and cracked city pavement, and the cushioning effect is remarkable. The wide contact patch provides genuine stability that less confident riders will appreciate, and I never once felt sketchy cornering on loose surfaces at moderate speeds.",
-      image: "/images/electric-cruiser-bikes/blix-sol-x-fat-tires.webp",
+      image: "/images/electric-bikes/cruiser/Blix Sol X.webp",
       alt: "Blix Sol X fat tires on beach boardwalk showing wide contact patch"
     },
     
@@ -11776,22 +11776,22 @@ const products = [
     h1: "Pedego Interceptor Platinum Review: Tested for Comfort & Style",
     metaDescription: "Pedego Interceptor Platinum review: tested comfort, range, performance. Pros, cons, and who should buy this premium electric beach cruiser in 2025.",
     
-    heroImage: "/images/electric-cruiser-bikes/pedego-interceptor-platinum.webp",
-    cardImage: "/images/electric-cruiser-bikes/pedego-interceptor-platinum.webp",
-    articleHeroImage: "/images/electric-cruiser-bikes/pedego-interceptor-platinum.webp",
+    heroImage: "/images/electric-bikes/cruiser/Pedego Interceptor Platinum.webp",
+    cardImage: "/images/electric-bikes/cruiser/Pedego Interceptor Platinum.webp",
+    articleHeroImage: "/images/electric-bikes/cruiser/Pedego Interceptor Platinum.webp",
     heroImageAlt: "Pedego Interceptor Platinum electric cruiser bike in classic beach cruiser style with wide swept-back handlebars",
     
     imagePrimary: {
       heading: "Classic Cruiser Design with Modern Electric Power",
       description: "The Interceptor Platinum's vintage-inspired frame combines timeless beach cruiser aesthetics with integrated battery technology. The swept-back handlebars and plush saddle create an upright riding position that's perfect for leisurely rides along boardwalks or through neighborhoods. Available in multiple eye-catching colors with chrome accents that give it that classic American cruiser look.",
-      image: "/images/electric-cruiser-bikes/pedego-interceptor-platinum-side.webp",
+      image: "/images/electric-bikes/cruiser/Pedego Interceptor Platinum.webp",
       alt: "Side view of Pedego Interceptor Platinum showing swept-back handlebars and integrated battery design"
     },
     
     imageSecondary: {
       heading: "Comfortable Riding Position for All-Day Comfort",
       description: "The upright geometry puts zero strain on your back, shoulders, or wrists during rides. I tested this positioning during multiple 2-hour rides and never experienced the hand numbness or lower back fatigue that's common on traditional bikes. The wide, cushioned saddle and ergonomic grips make this one of the most comfortable e-bikes I've tested, especially for riders over 50 or those with joint concerns.",
-      image: "/images/electric-cruiser-bikes/pedego-interceptor-platinum-riding.webp",
+      image: "/images/electric-bikes/cruiser/Pedego Interceptor Platinum.webp",
       alt: "Rider demonstrating upright comfortable position on Pedego Interceptor Platinum"
     },
     

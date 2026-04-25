@@ -5904,7 +5904,7 @@ const money = [
         name: "Specialized Turbo Como 4.0 IGH – Best Overall",
         avgRating: 4.8,
         badge: "Around $2,999",
-        imageUrl: "/images/products/specialized-turbo-como.webp",
+        imageUrl: "/images/electric-bikes/cruiser/Specialized Turbo Como 4.0 IGH.webp",
         
         description: "The Specialized Como 4.0 IGH earned top honors because it gets the fundamentals right in ways that matter for everyday riders. The enviolo stepless shifting means you're never hunting for the right gear. Just twist and go. After 200+ miles, what impressed me most was how the MasterMind system actually learns your riding style and adjusts power delivery to match.",
         
@@ -5956,7 +5956,7 @@ const money = [
         name: "Aventon Pace 500.3 Step-Through – Best Value",
         avgRating: 4.7,
         badge: "Around $1,699",
-        imageUrl: "/images/products/aventon-pace-500-3.webp",
+        imageUrl: "/images/electric-bikes/cruiser/Aventon Pace 500.3 Step-Through.webp",
         
         description: "The Pace 500.3 delivers premium features at a mid-range price that's honestly hard to beat. The torque sensor alone puts it ahead of most budget cruisers, and those integrated turn signals? Game-changer for urban riding.",
         
@@ -6008,7 +6008,7 @@ const money = [
         name: "Electra Townie Path Go! 10D – Best for Women",
         avgRating: 4.6,
         badge: "Around $3,500",
-        imageUrl: "/images/products/electra-townie-path-go.webp",
+        imageUrl: "/images/electric-bikes/cruiser/Electra Townie Path Go! 10D.webp",
         
         description: "Electra's Flat Foot Technology is the real deal. I could touch the ground flat-footed while seated, which gave me instant confidence. Combined with the relaxed geometry and 10-speed Shimano drivetrain, this is the most approachable cruiser for nervous riders.",
         
@@ -6060,7 +6060,7 @@ const money = [
         name: "Electric Bike Company Model C – Most Customizable",
         avgRating: 4.7,
         badge: "Starting at $1,999",
-        imageUrl: "/images/products/ebc-model-c.webp",
+        imageUrl: "/images/electric-bikes/cruiser/Electric Bike Company Model C.webp",
         
         description: "Want to build your dream cruiser? The Model C offers mind-boggling customization. I'm talking 24+ paint colors, multiple battery sizes, fork options, drivetrain choices, and even handlebar styles. Plus, it arrives fully assembled and ready to ride.",
         
@@ -6112,7 +6112,7 @@ const money = [
         name: "Murf Fat Murf – Best for Beach & Off-Road",
         avgRating: 4.5,
         badge: "Around $1,899",
-        imageUrl: "/images/products/murf-fat-murf.webp",
+        imageUrl: "/images/electric-bikes/cruiser/Murf Fat Murf.webp",
         
         description: "Those massive 4-inch fat tires aren't just for show. They turned sand, gravel, and sketchy trails into legitimate cruising territory. If your rides involve actual beaches or unpaved paths, the Fat Murf handles terrain other cruisers can't touch.",
         
@@ -6164,7 +6164,7 @@ const money = [
         name: "Priority eCoast – Best Low-Maintenance",
         avgRating: 4.6,
         badge: "Around $2,799",
-        imageUrl: "/images/products/priority-ecoast.webp",
+        imageUrl: "/images/electric-bikes/cruiser/Priority eCoast.webp",
         
         description: "Belt drive plus internal hub gearing equals a cruiser that stays clean and works perfectly for years with minimal attention. If you hate bike maintenance, the eCoast's Gates Carbon belt and NuVinci hub eliminate the two biggest headaches.",
         
@@ -6216,7 +6216,7 @@ const money = [
         name: "Ride1Up Cruiser – Best Budget Pick",
         avgRating: 4.4,
         badge: "Around $1,295",
-        imageUrl: "/images/products/ride1up-cruiser.webp",
+        imageUrl: "/images/electric-bikes/cruiser/Ride1Up Cruiser.webp",
         
         description: "At just $1,295, the Ride1Up Cruiser delivers surprisingly good performance for the price. Sure, it lacks premium features, but if you need basic cruiser functionality on a tight budget, this bike works.",
         
@@ -6270,7 +6270,7 @@ const money = [
         name: "Himiway Premium All-Terrain – Best for Heavy Loads",
         avgRating: 4.5,
         badge: "Around $1,999",
-        imageUrl: "/images/products/himiway-cruiser.webp",
+        imageUrl: "/images/electric-bikes/cruiser/Himiway Premium All-Terrain.webp",
         
         description: "The Himiway's 400-lb capacity and cargo-ready design make it the go-to for riders needing serious hauling capability. I loaded this thing with 80 lbs of groceries plus my 210-lb frame, and it didn't flinch.",
         
@@ -6323,7 +6323,7 @@ const money = [
         name: "Blix Sol X – Best for Tall Riders",
         avgRating: 4.5,
         badge: "Around $1,899",
-        imageUrl: "/images/products/blix-sol-x.webp",
+        imageUrl: "/images/electric-bikes/cruiser/Blix Sol X.webp",
         
         description: "As a 6'2\" rider, I appreciated the Sol X's larger frame and higher standover height. This cruiser actually fits taller riders properly instead of feeling cramped like many step-throughs.",
         
@@ -6376,7 +6376,7 @@ const money = [
         name: "Pedego Interceptor Platinum – Best Dealer Network",
         avgRating: 4.6,
         badge: "Around $3,595",
-        imageUrl: "/images/products/pedego-interceptor.webp",
+        imageUrl: "/images/electric-bikes/cruiser/Pedego Interceptor Platinum.webp",
         
         description: "Pedego's 200+ dealer locations mean you can actually test ride before buying and get local service after. The Interceptor itself is a solid cruiser, but the dealer support is what really sets it apart.",
         
