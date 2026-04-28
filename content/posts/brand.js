@@ -36,7 +36,7 @@ const chathamRevPlus2Article = {
   estimatedReadingTime: 12,
   publishedAt: "2026-04-28T00:00:00Z",
   affiliateLink:
-    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fproducts%2Fchatham-rev-plus-electric-beach-cruiser-bike-step-through",
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fproducts%2Fchatham-rev-plus-electric-beach-cruiser-bike-step-through&ctc=ebikereviewlab",
   ctaLabel: "Check Latest Price",
 
   // ============================================
