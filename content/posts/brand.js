@@ -368,13 +368,13 @@ const chathamRevPlus2Article = {
   // ============================================
   // 19. VIDEO REVIEW
   // ============================================
-  videoReview: {
-    heading: "Video Review",
-    title: "Retrospec Chatham Rev+ 2 Video Review",
-    embedUrl: "https://www.youtube.com/embed/wBeiSwd9UPg",
-    description:
-      "This rider review covers real-world performance on coastal paths, motor feel across assist levels, and an honest take on comfort for longer rides. Worth watching alongside this written review for a first-hand look at the riding experience.",
-  },
+  // videoReview: {
+  //   heading: "Video Review",
+  //   title: "Retrospec Chatham Rev+ 2 Video Review",
+  //   embedUrl: "https://www.youtube.com/embed/wBeiSwd9UPg",
+  //   description:
+  //     "This rider review covers real-world performance on coastal paths, motor feel across assist levels, and an honest take on comfort for longer rides. Worth watching alongside this written review for a first-hand look at the riding experience.",
+  // },
 };
 
 const brands = [chathamRevPlus2Article];
