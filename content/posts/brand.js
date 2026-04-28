@@ -6,7 +6,7 @@ const chathamRevPlus2Article = {
   id: "retrospec-chatham-rev-plus-2-step-through",
   slug: "retrospec-chatham-rev-plus-2-review",
   categorySlug: "retrospec-electric-bikes",
-  category: "Retrospec Electric Bikes",
+  category: "Retrospec",
   contentType: "brand",
 
   // ============================================

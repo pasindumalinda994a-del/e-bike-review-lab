@@ -71,8 +71,8 @@ export const categories = [
   },
   {
     slug: "retrospec-electric-bikes",
-    name: "Retrospec Electric Bikes",
-    heroImage: "/images/electric-bikes/chatham-rev-plus-2-step-through-card.webp",
+    name: "Retrospec",
+    heroImage: "/images/categories/Retrospec.png",
     description:
       "In-depth Retrospec e-bike reviews: beach cruisers, commuters, and value-focused builds tested for real-world range, comfort, and reliability.",
   },

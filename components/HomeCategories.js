@@ -5,9 +5,17 @@ import Link from "next/link";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { categories } from "@/content/categories";
+import { brandArticles } from "@/content/posts/brand";
 
 // Icon-based grid to quickly jump into the main categories.
 export default function HomeCategories() {
+  const brandCategorySlugs = new Set(
+    brandArticles.map((article) => article.categorySlug)
+  );
+  const categoryOnlyItems = categories.filter(
+    (category) => !brandCategorySlugs.has(category.slug)
+  );
+
   const scopeRef = useRef(null);
   const prefersReducedMotionRef = useRef(false);
 
@@ -203,7 +211,7 @@ export default function HomeCategories() {
         </header>
 
         <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-4 md:grid-cols-4 justify-items-center">
-          {categories.map((category, idx) => {
+          {categoryOnlyItems.map((category, idx) => {
             const href = `/${category.slug}`;
             return (
               <li key={href} className="w-full">

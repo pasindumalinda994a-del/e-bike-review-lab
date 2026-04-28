@@ -6,10 +6,21 @@ import { ChevronDown, X, ArrowRight } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { categories } from '@/content/categories';
+import { brandArticles } from '@/content/posts/brand';
 import AnimatedButton from '@/components/AnimatedButton';
 
-// Build header navigation links straight from the categories list.
-const REVIEW_LINKS = categories.map((category) => ({
+const brandCategorySlugs = new Set(brandArticles.map((article) => article.categorySlug));
+
+// Build Reviews > Brand links to brand category pages.
+const BRAND_REVIEW_LINKS = brandArticles.map((article) => ({
+  href: `/${article.categorySlug}`,
+  label: article.category,
+}));
+
+// Build Reviews > Categories links from category pages.
+const CATEGORY_REVIEW_LINKS = categories
+  .filter((category) => !brandCategorySlugs.has(category.slug))
+  .map((category) => ({
   href: `/${category.slug}`,
   label: category.name,
 }));
@@ -37,6 +48,24 @@ const LEARN_LINKS = [
     label: "Best Electric Cargo Bikes 2025",
   },
 ];
+
+function DropdownAnimatedLink({ href, label }) {
+  return (
+    <Link
+      href={href}
+      className="group/dropdown-link block w-full overflow-hidden rounded-sm py-1.5 text-sm font-semibold leading-5 text-black"
+    >
+      <span className="relative block pr-2">
+        <span className="block transition-transform duration-200 ease-out group-hover/dropdown-link:-translate-y-[130%]">
+          {label}
+        </span>
+        <span className="absolute left-0 top-0 block w-full translate-y-[130%] transition-transform duration-200 ease-out group-hover/dropdown-link:translate-y-0">
+          {label}
+        </span>
+      </span>
+    </Link>
+  );
+}
 
 // Top navigation with logo, dynamic category links, and a CTA button.
 export default function SiteHeader() {
@@ -399,16 +428,23 @@ export default function SiteHeader() {
                   </span>
                 </span>
               </button>
-              <div className="pointer-events-none absolute left-0 top-full z-30 hidden min-w-[220px] translate-y-7 flex-col overflow-hidden rounded-lg bg-white shadow-xl transition group-hover:pointer-events-auto group-hover:flex group-focus-within:pointer-events-auto group-focus-within:flex">
-                {REVIEW_LINKS.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="px-4 py-3 text-sm text-black"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+              <div className="pointer-events-none invisible absolute left-0 top-full z-30 flex min-w-[520px] translate-y-5 overflow-hidden rounded-lg bg-white opacity-0 shadow-xl transition-all duration-200 ease-out group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-7 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:translate-y-7 group-focus-within:opacity-100">
+                <div className="min-w-[260px] space-y-0.5 border-r border-neutral-100 px-4 py-4">
+                  <div className="pb-2 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                    Categories
+                  </div>
+                  {CATEGORY_REVIEW_LINKS.map((link) => (
+                    <DropdownAnimatedLink key={link.href} href={link.href} label={link.label} />
+                  ))}
+                </div>
+                <div className="min-w-[220px] space-y-0.5 px-4 py-4">
+                  <div className="pb-2 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                    Brand
+                  </div>
+                  {BRAND_REVIEW_LINKS.map((link) => (
+                    <DropdownAnimatedLink key={link.href} href={link.href} label={link.label} />
+                  ))}
+                </div>
               </div>
             </div>
 
@@ -532,7 +568,23 @@ export default function SiteHeader() {
               </button>
               {isReviewsOpen && (
                 <div className="ml-4 space-y-1 border-l-2 border-gray-200 pl-4">
-                  {REVIEW_LINKS.map((link) => (
+                  <p className="px-4 py-1 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                    Brand
+                  </p>
+                  {BRAND_REVIEW_LINKS.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block rounded-lg px-4 py-2 text-sm font-semibold text-black"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                  <p className="mt-2 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                    Categories
+                  </p>
+                  {CATEGORY_REVIEW_LINKS.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}

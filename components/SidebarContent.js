@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { categories } from "../content/categories";
+import { brandArticles } from "../content/posts/brand";
 import { getSidebarFeaturedPosts } from "../lib/mock-data";
 import FeaturedPostsCarousel from "./FeaturedPostsCarousel";
 
@@ -8,6 +9,15 @@ import FeaturedPostsCarousel from "./FeaturedPostsCarousel";
 export default async function SidebarContent() {
   // Get featured posts from placements
   const featuredPosts = await getSidebarFeaturedPosts();
+  const brandCategorySlugs = new Set(
+    brandArticles.map((article) => article.categorySlug)
+  );
+  const categoryImageBySlug = new Map(
+    categories.map((category) => [category.slug, category.heroImage])
+  );
+  const categoryOnlyItems = categories.filter(
+    (category) => !brandCategorySlugs.has(category.slug)
+  );
 
   return (
     <aside className="flex flex-col self-start space-y-6">
@@ -55,12 +65,43 @@ export default async function SidebarContent() {
       {/* Explore Topics Section */}
       <div className="rounded-lg bg-white p-8">
         <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-gray-700">
-          EXPLORE TOPICS
+          REVIEWS BY BRAND
+        </h3>
+
+        <div className="mb-8 space-y-3">
+          {brandArticles.map((article) => (
+            <Link
+              key={article.slug}
+              href={`/${article.categorySlug}`}
+              className="group flex items-center gap-3 rounded-lg"
+            >
+              <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-md bg-gray-100">
+                <Image
+                  src={
+                    categoryImageBySlug.get(article.categorySlug) ??
+                    "/images/categories/Electric Bikes.webp"
+                  }
+                  alt={article.category}
+                  fill
+                  sizes="48px"
+                  className="object-cover transition-transform group-hover:scale-105"
+                  quality={75}
+                />
+              </div>
+              <span className="text-sm text-black transition-colors group-hover:text-gray-600">
+                {article.category}
+              </span>
+            </Link>
+          ))}
+        </div>
+
+        <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-gray-700">
+          REVIEWS BY CATEGORIES
         </h3>
 
         {/* Topics List */}
         <div className="space-y-5">
-          {categories.map((category) => (
+          {categoryOnlyItems.map((category) => (
             <Link
               key={category.slug}
               href={`/${category.slug}`}

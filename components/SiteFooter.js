@@ -3,12 +3,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { categories } from "@/content/categories";
+import { brandArticles } from "@/content/posts/brand";
 import AnimatedButton from "@/components/AnimatedButton";
 
 // Global footer with navigation, resources, and contact details.
 export default function SiteFooter() {
   const currentYear = new Date().getFullYear();
-  const featuredCategories = categories.slice(0, 10);
+  const brandCategorySlugs = new Set(brandArticles.map((article) => article.categorySlug));
+  const featuredBrands = brandArticles.map((article) => ({
+    href: `/${article.categorySlug}`,
+    label: article.category,
+  }));
+  const featuredCategories = categories
+    .filter((category) => !brandCategorySlugs.has(category.slug))
+    .slice(0, 10);
 
   return (
     <footer className=" bg-white ">
@@ -45,7 +53,21 @@ export default function SiteFooter() {
         <div className="flex w-full flex-col gap-8 text-sm text-black sm:flex-row sm:justify-end md:w-auto md:gap-16">
           <div>
             <p className="text-xs font-semibold tracking-[0.2em] text-black sm:text-sm">
-              Explore
+              Reviews by Brand
+            </p>
+            <ul className="mt-3 space-y-2.5 sm:mt-4">
+              {featuredBrands.map((brand) => (
+                <li key={brand.href}>
+                  <Link href={brand.href} className="transition-colors ">
+                    {brand.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-semibold tracking-[0.2em] text-black sm:text-sm">
+              Reviews by Categories
             </p>
             <ul className="mt-3 space-y-2.5 sm:mt-4">
               {featuredCategories.map((category) => (
