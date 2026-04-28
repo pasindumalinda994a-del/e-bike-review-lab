@@ -69,6 +69,13 @@ export const categories = [
     description:
       "Expert reviews of electric hybrid bikes combining road bike efficiency with mountain bike versatility for commuting, fitness, and adventure riding.",
   },
+  {
+    slug: "retrospec-electric-bikes",
+    name: "Retrospec Electric Bikes",
+    heroImage: "/images/electric-bikes/chatham-rev-plus-2-step-through-card.webp",
+    description:
+      "In-depth Retrospec e-bike reviews: beach cruisers, commuters, and value-focused builds tested for real-world range, comfort, and reliability.",
+  },
 ];
 
 /**

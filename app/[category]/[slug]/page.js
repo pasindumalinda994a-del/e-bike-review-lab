@@ -6,6 +6,7 @@ import {
 import MoneyArticle from "@/components/articles/MoneyArticle";
 import InformationalArticle from "@/components/articles/InformationalArticle";
 import ProductArticle from "@/components/articles/ProductArticle";
+import BrandArticle from "@/components/articles/BrandArticle";
 import JsonLdSchema from "@/components/JsonLdSchema";
 import HomeNewsletter from "@/components/HomeNewsletter";
 import { buildArticleMetadata, buildArticleSchemas, buildArticleSeo } from "@/lib/seo-helpers";
@@ -80,6 +81,10 @@ export default async function CategoryPostPage({ params }) {
   } else if (post.contentType === "product") {
     articleContent = (
       <ProductArticle post={post} publishedDate={publishedDate} />
+    );
+  } else if (post.contentType === "brand") {
+    articleContent = (
+      <BrandArticle post={post} publishedDate={publishedDate} />
     );
   } else {
     // Default to money article layout for roundup/commercial posts

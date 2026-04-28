@@ -8,7 +8,7 @@ import AnimatedButton from "@/components/AnimatedButton";
 // Global footer with navigation, resources, and contact details.
 export default function SiteFooter() {
   const currentYear = new Date().getFullYear();
-  const featuredCategories = categories.slice(0, 8);
+  const featuredCategories = categories.slice(0, 10);
 
   return (
     <footer className=" bg-white ">
