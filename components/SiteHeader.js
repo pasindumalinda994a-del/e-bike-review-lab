@@ -9,13 +9,23 @@ import { categories } from '@/content/categories';
 import { brandArticles } from '@/content/posts/brand';
 import AnimatedButton from '@/components/AnimatedButton';
 
-const brandCategorySlugs = new Set(brandArticles.map((article) => article.categorySlug));
+const brandPageSlugs = brandArticles.map(
+  (article) => article.brandCategorySlug ?? article.categorySlug,
+);
+const brandCategorySlugs = new Set(brandPageSlugs);
 
 // Build Reviews > Brand links to brand category pages.
-const BRAND_REVIEW_LINKS = brandArticles.map((article) => ({
-  href: `/${article.categorySlug}`,
-  label: article.category,
-}));
+const BRAND_REVIEW_LINKS = Array.from(
+  new Map(
+    brandArticles.map((article) => [
+      article.brandCategorySlug ?? article.categorySlug,
+      {
+        href: `/${article.brandCategorySlug ?? article.categorySlug}`,
+        label: article.brandCategory ?? article.category,
+      },
+    ]),
+  ).values(),
+);
 
 // Build Reviews > Categories links from category pages.
 const CATEGORY_REVIEW_LINKS = categories

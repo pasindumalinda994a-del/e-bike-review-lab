@@ -9,11 +9,21 @@ import AnimatedButton from "@/components/AnimatedButton";
 // Global footer with navigation, resources, and contact details.
 export default function SiteFooter() {
   const currentYear = new Date().getFullYear();
-  const brandCategorySlugs = new Set(brandArticles.map((article) => article.categorySlug));
-  const featuredBrands = brandArticles.map((article) => ({
-    href: `/${article.categorySlug}`,
-    label: article.category,
-  }));
+  const brandPageSlugs = brandArticles.map(
+    (article) => article.brandCategorySlug ?? article.categorySlug,
+  );
+  const brandCategorySlugs = new Set(brandPageSlugs);
+  const featuredBrands = Array.from(
+    new Map(
+      brandArticles.map((article) => [
+        article.brandCategorySlug ?? article.categorySlug,
+        {
+          href: `/${article.brandCategorySlug ?? article.categorySlug}`,
+          label: article.brandCategory ?? article.category,
+        },
+      ]),
+    ).values(),
+  );
   const featuredCategories = categories
     .filter((category) => !brandCategorySlugs.has(category.slug))
     .slice(0, 10);

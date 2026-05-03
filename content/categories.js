@@ -70,7 +70,7 @@ export const categories = [
       "Expert reviews of electric hybrid bikes combining road bike efficiency with mountain bike versatility for commuting, fitness, and adventure riding.",
   },
   {
-    slug: "retrospec-bikes",
+    slug: "retrospec",
     name: "Retrospec",
     heroImage: "/images/categories/Retrospec.png",
     description:

@@ -9,8 +9,19 @@ import FeaturedPostsCarousel from "./FeaturedPostsCarousel";
 export default async function SidebarContent() {
   // Get featured posts from placements
   const featuredPosts = await getSidebarFeaturedPosts();
+  const brandPageSlugs = brandArticles.map(
+    (article) => article.brandCategorySlug ?? article.categorySlug,
+  );
   const brandCategorySlugs = new Set(
-    brandArticles.map((article) => article.categorySlug)
+    brandPageSlugs,
+  );
+  const uniqueBrandItems = Array.from(
+    new Map(
+      brandArticles.map((article) => [
+        article.brandCategorySlug ?? article.categorySlug,
+        article,
+      ]),
+    ).values(),
   );
   const categoryImageBySlug = new Map(
     categories.map((category) => [category.slug, category.heroImage])
@@ -69,19 +80,21 @@ export default async function SidebarContent() {
         </h3>
 
         <div className="mb-8 space-y-3">
-          {brandArticles.map((article) => (
+          {uniqueBrandItems.map((article) => (
             <Link
               key={article.slug}
-              href={`/${article.categorySlug}`}
+              href={`/${article.brandCategorySlug ?? article.categorySlug}`}
               className="group flex items-center gap-3 rounded-lg"
             >
               <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-md bg-gray-100">
                 <Image
                   src={
-                    categoryImageBySlug.get(article.categorySlug) ??
+                    categoryImageBySlug.get(
+                      article.brandCategorySlug ?? article.categorySlug,
+                    ) ??
                     "/images/categories/Electric Bikes.webp"
                   }
-                  alt={article.category}
+                  alt={article.brandCategory ?? article.category}
                   fill
                   sizes="48px"
                   className="object-cover transition-transform group-hover:scale-105"
@@ -89,7 +102,7 @@ export default async function SidebarContent() {
                 />
               </div>
               <span className="text-sm text-black transition-colors group-hover:text-gray-600">
-                {article.category}
+                {article.brandCategory ?? article.category}
               </span>
             </Link>
           ))}

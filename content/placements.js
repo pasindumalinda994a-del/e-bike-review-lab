@@ -106,9 +106,9 @@ export const placements = {
         "electric-hybrid-bikes/best-electric-hybrid-bikes",
       ],
     },
-    "retrospec-electric-bikes": {
+    retrospec: {
       sidebar: [
-        "retrospec-electric-bikes/retrospec-chatham-rev-plus-2-review",
+        "electric-cruiser-bikes/retrospec-chatham-rev-plus-2-review",
         "electric-bikes/best-electric-bikes",
         "electric-cruiser-bikes/best-electric-cruiser-bikes",
       ],
@@ -208,9 +208,9 @@ export const placements = {
         "electric-road-bikes/best-electric-road-bikes",
       ],
     },
-    "retrospec-electric-bikes/retrospec-chatham-rev-plus-2-review": {
+    "electric-cruiser-bikes/retrospec-chatham-rev-plus-2-review": {
       sidebar: [
-        "retrospec-electric-bikes/retrospec-chatham-rev-plus-2-review",
+        "electric-cruiser-bikes/retrospec-chatham-rev-plus-2-review",
         "electric-bikes/best-electric-bikes",
         "electric-cruiser-bikes/best-electric-cruiser-bikes",
         "electric-city-bikes/best-electric-city-bikes",

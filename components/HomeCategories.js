@@ -9,8 +9,11 @@ import { brandArticles } from "@/content/posts/brand";
 
 // Icon-based grid to quickly jump into the main categories.
 export default function HomeCategories() {
+  const brandPageSlugs = brandArticles.map(
+    (article) => article.brandCategorySlug ?? article.categorySlug,
+  );
   const brandCategorySlugs = new Set(
-    brandArticles.map((article) => article.categorySlug)
+    brandPageSlugs,
   );
   const categoryOnlyItems = categories.filter(
     (category) => !brandCategorySlugs.has(category.slug)
