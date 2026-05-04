@@ -416,9 +416,9 @@ const chathamRev3Article = {
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-bikes/chatham-rev-3.webp",
-  cardImage: "/images/electric-bikes/chatham-rev-3.webp",
-  articleHeroImage: "/images/electric-bikes/chatham-rev-3.webp",
+  heroImage: "/images/brand/retrospec/Chatham Rev 3 Beach Cruiser Electric Bike.webp",
+  cardImage: "/images/brand/retrospec/Chatham Rev 3 Beach Cruiser Electric Bike.webp",
+  articleHeroImage: "/images/brand/retrospec/Chatham Rev 3 Beach Cruiser Electric Bike.webp",
   heroImageAlt:
     "Retrospec Chatham Rev 3 beach cruiser electric bike in Matte Olive Drab on a white background",
 
@@ -541,7 +541,7 @@ const chathamRev3Article = {
       "Cable routing is external, which is standard at this price point but does mean more visual clutter on the frame. The full chain cover is a nice touch. It keeps your pants clean and protects the drivetrain from salt air. Overall build quality feels appropriate for the price rather than premium, but nothing rattled, creaked, or felt loose after extended testing.",
     ],
     image: {
-      image: "/images/electric-bikes/chatham-rev-3-frame.webp",
+      image: "/images/brand/retrospec/Chatham Rev 3 Beach Cruiser Electric Bike Design.webp",
       alt: "Close-up of the Retrospec Chatham Rev 3 electric beach cruiser frame and swingback handlebars",
       description: "Steel frame and swingback handlebars create that classic cruiser silhouette",
     },
@@ -558,7 +558,7 @@ const chathamRev3Article = {
       "Hills are where the 350W motor starts showing its limits. Moderate grades (say, 5-6%) are manageable on assist level 5 with active pedaling, but you'll slow down. On a steep climb in the 10%+ range, you're working hard regardless of assist level. For flat coastal communities, boardwalks, and bike paths, this motor is exactly right. For hilly neighborhoods, you'll want to look at a 500W option like the Chatham Rev+ 2 that Retrospec also sells.",
     ],
     image: {
-      image: "/images/electric-bikes/chatham-rev-3-motor.webp",
+      image: "/images/brand/retrospec/Chatham Rev 3 Beach Cruiser Electric BikeMotor.webp",
       alt: "350W hub motor on the Retrospec Chatham Rev 3 beach cruiser electric bike rear wheel",
       description:
         "The 350W geared hub motor is quiet and delivers smooth, consistent power on flat terrain",
@@ -576,7 +576,7 @@ const chathamRev3Article = {
       "For most riders doing 10-20 mile weekend rides, battery anxiety won't be an issue. If you're planning a longer 25+ mile coastal route, charge to full before you go and stick to lower assist levels for the first half. The battery indicator on the LED display gives you a rough read on remaining charge. It's not a precise percentage, more of a multi-bar indicator, but it does the job.",
     ],
     image: {
-      image: "/images/electric-bikes/chatham-rev-3-battery.webp",
+      image: "/images/brand/retrospec/Chatham Rev 3 Beach Cruiser Electric Bike Battery.webp",
       alt: "Frame-mounted 36V battery on the Retrospec Chatham Rev 3 electric beach cruiser",
       description:
         "The 36V/360Wh battery can be removed for indoor charging, a practical detail on a bike aimed at apartment dwellers",
@@ -594,8 +594,9 @@ const chathamRev3Article = {
       'After 45-60 minutes in the saddle, the comfort cruiser saddle held up better than most budget bike seats. Wider saddles suit the upright riding position, and this one doesn\'t have the thin, hard racing-saddle feel that shows up on a lot of e-bikes at this price. My only note: taller riders near the 6\'4" limit may want to raise the seatpost close to its maximum to open up leg extension.',
     ],
     image: {
-      image: "/images/electric-bikes/chatham-rev-3-ride.webp",
-      alt: "Person riding the Retrospec Chatham Rev 3 beach cruiser electric bike on a coastal bike path",
+      image:
+        "/images/brand/retrospec/Chatham Rev 3 Beach Cruiser Electric Bike Comfort.webp",
+      alt: "Retrospec Chatham Rev 3 beach cruiser comfort setup: wide saddle, upright cockpit, and 26x3 cruiser tires",
       description:
         "Upright riding position and wide tires make this an effortlessly comfortable cruiser for flat-terrain adventures",
     },
@@ -612,8 +613,9 @@ const chathamRev3Article = {
       "The 40 Lux integrated headlight is genuinely bright enough for dawn and dusk riding. The taillight runs on AA batteries, which is slightly annoying in principle, but in practice you'll rarely think about it. The lock-on comfort grips are grippy and don't rotate or slip under load. Non-slip platform pedals are straightforward and work fine. And the included all-in-one multi-tool (hex wrenches, open wrenches, spoke wrench) is a practical addition that shows Retrospec actually thought about ownership, not just the sale.",
     ],
     image: {
-      image: "/images/electric-bikes/chatham-rev-3-brakes.webp",
-      alt: "Tektro mechanical disc brake with anti-vibration rotor on the Chatham Rev 3 electric beach cruiser",
+      image:
+        "/images/brand/retrospec/Chatham Rev 3 Beach Cruiser Electric Bike Brake.webp",
+      alt: "Close-up of Tektro mechanical disc brake and 180mm anti-vibration rotor on the Retrospec Chatham Rev 3",
       description:
         "Tektro disc brakes with 180mm anti-vibration rotors stop confidently in all weather conditions",
     },
@@ -630,8 +632,9 @@ const chathamRev3Article = {
       "Out of the box, assembly is straightforward. The included multi-tool handles most of what you need. Retrospec provides a detailed assembly PDF and an owner's manual, plus a separate LED display guide. First-time e-bike owners should plan about 45-60 minutes for assembly and initial setup. Nothing about this bike should intimidate someone who's never assembled one before.",
     ],
     image: {
-      image: "/images/electric-bikes/chatham-rev-3-display.webp",
-      alt: "LED display on the Retrospec Chatham Rev 3 showing battery level and pedal assist mode",
+      image:
+        "/images/brand/retrospec/Chatham Rev 3 Beach Cruiser Electric Bike Screen.webp",
+      alt: "Left-mounted Ananda LED display on the Retrospec Chatham Rev 3 showing speed, battery bars, and PAS level",
       description: "The left-mounted Ananda LED display shows the essentials without overcomplicating things",
     },
   },
