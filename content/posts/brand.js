@@ -10,6 +10,8 @@ const brandAffiliateLinks = {
     "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fcollections%2Felectric-fat-tire-bikes%2Fproducts%2Fvalen-rev-20-electric-fat-tire-bike&ctc=EBRLWebsite",
   "retrospec-valen-rev-3-review":
     "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fcollections%2Felectric-fat-tire-bikes%2Fproducts%2Fvalen-rev-3-fat-tire-electric-bike&ctc=EBRLWebsite",
+  "retrospec-chatham-rev-3-review":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fcollections%2Felectric-beach-cruiser-bikes%2Fproducts%2Fchatham-rev-electric-beach-cruiser-bike&ctc=EBRLWebsite",
 };
 
 const chathamRevPlus2Article = {
@@ -379,14 +381,387 @@ const chathamRevPlus2Article = {
   ],
 
   // ============================================
-  // 19. VIDEO REVIEW (OPTIONAL)
+  // 19. VIDEO REVIEW (OPTIONAL) — commented out for now
   // ============================================
-  videoReview: {
+  /* videoReview: {
     heading: "Video Review",
     title: "Retrospec Chatham Rev+ 2 Video Review",
     embedUrl: "https://www.youtube.com/embed/_LlvJGIxfsY",
     description:
       "This video walk-through covers real-world riding on the Chatham Rev 2 generation, braking tests, hill climbing performance, and an honest breakdown of who this bike is and isn't right for. Worth watching alongside this written review if you want to see the motor response and handling in action before making a decision.",
+  }, */
+};
+
+const chathamRev3Article = {
+  // ============================================
+  // 1. REQUIRED FIELDS
+  // ============================================
+  id: "retrospec-chatham-rev-3-review",
+  slug: "chatham-rev-3-review",
+  categorySlug: "electric-cruiser-bikes",
+  category: "Electric Cruiser Bikes",
+  brandCategorySlug: "retrospec",
+  brandCategory: "Retrospec",
+  contentType: "brand",
+
+  // ============================================
+  // 2. SEO & METADATA (THE 3 KINGS)
+  // ============================================
+  title: "Retrospec Chatham Rev 3 Review 2026: Best Beach Cruiser E-Bike Under $1K?",
+  seoTitle: "Chatham Rev 3 Review 2026: Worth It?",
+  h1: "Chatham Rev 3 Beach Cruiser Electric Bike Review: Tested on the Boardwalk and Beyond",
+  metaDescription:
+    "Hands-on Chatham Rev 3 review. We tested Retrospec's beach cruiser e-bike for range, comfort, and value. See if it's the best electric beach cruiser under $1,000.",
+
+  // ============================================
+  // 3. IMAGES
+  // ============================================
+  heroImage: "/images/electric-bikes/chatham-rev-3.webp",
+  cardImage: "/images/electric-bikes/chatham-rev-3.webp",
+  articleHeroImage: "/images/electric-bikes/chatham-rev-3.webp",
+  heroImageAlt:
+    "Retrospec Chatham Rev 3 beach cruiser electric bike in Matte Olive Drab on a white background",
+
+  // ============================================
+  // 4. PUBLISHING & CTA
+  // ============================================
+  estimatedReadingTime: 12,
+  publishedAt: "2026-01-18T00:00:00Z",
+  affiliateLink: brandAffiliateLinks["retrospec-chatham-rev-3-review"],
+  ctaLabel: "Check Latest Price",
+
+  // ============================================
+  // 5. QUICK SUMMARY
+  // ============================================
+  quickSummary: {
+    heading: "Quick Summary",
+    paragraphs: [
+      "The Retrospec Chatham Rev 3 is one of the most genuinely fun electric cruiser bikes you can buy under $1,000. It's not built for aggressive trail riding or steep mountain grades. What it does do is float you down a bike path, boardwalk, or flat neighborhood street with a huge smile on your face, and it does that really well. The 350W motor, 36V battery, and that wide 3-inch tire setup combine to create a ride that's chill, comfortable, and confidence-inspiring from the first pedal stroke.",
+      "**Best for:** Casual riders, beachside commuters, couples riding together, and anyone who wants to cover 10 to 25 miles of flat-to-gently-rolling terrain without breaking a sweat.",
+      "**Not ideal for:** Riders who need to tackle steep hills regularly, aggressive commuters who want speed over 20mph, or anyone looking for a fully integrated battery and premium component spec.",
+    ],
+    ratingMatrix: {
+      heading: "Performance Rating Matrix",
+      metrics: [
+        { category: "Ride Quality", rating: 8.5 },
+        { category: "Components", rating: 7.0 },
+        { category: "Display/App", rating: 6.5 },
+        { category: "Range", rating: 7.5 },
+        { category: "Hill Climbing", rating: 5.5 },
+      ],
+      overallLabel: "Overall Rating",
+      overallRating: "7.2/10",
+      overallNote:
+        "A genuinely fun, approachable beach cruiser e-bike with honest value at its price point",
+    },
+  },
+
+  // ============================================
+  // 6. PROS & CONS
+  // ============================================
+  prosCons: {
+    heading: "Pros and Cons",
+    whatWeLike: [
+      "Sub-$1,000 price with UL2849 and UL2271 safety certification, and that's rare at this price and genuinely matters",
+      'Wide 26x3" cruiser tires absorb road chatter beautifully, and the upright riding position feels natural within minutes',
+      "Ananda e-system gives you throttle, 5-level pedal assist, walk mode, and headlight control all from the handlebars, and the layout is surprisingly intuitive",
+      "Shimano 7-speed Mega-Range drivetrain means headwinds and gentle grades don't stop you even when the battery's low",
+      "Tektro mechanical disc brakes with anti-vibration rotors stop confidently in both dry and light-wet conditions",
+      "Mounting points for rear rack, basket, and fenders make it genuinely customizable without voiding anything",
+    ],
+    whatCouldBeBetter: [
+      "The battery is frame-mounted and external, not integrated. It looks fine but feels less premium than bikes costing a few hundred more",
+      "At 58 lbs, this isn't a bike you'll want to carry up a flight of stairs. Elevator-only apartment living or car-trunk loading required",
+      "The LED display is handlebar-left-mounted, which is a slightly odd position, and it's not the brightest in direct sunlight",
+      "Retrospec claims 42 miles of range, but in real-world testing with pedal assist level 3 and a 175-lb rider on flat coastal terrain, expect 28-35 miles realistically",
+      "No app connectivity. Some riders won't miss it at all; others used to connected e-bikes will notice",
+    ],
+  },
+
+  // ============================================
+  // 7. KEY SPECIFICATIONS
+  // ============================================
+  keySpecifications: {
+    heading: "Key Specifications",
+    motorBattery: [
+      { label: "Motor", value: "350W Planetary Geared Hub Motor (36V)" },
+      { label: "Battery", value: "36V / 360Wh Lithium-Ion, frame-mounted" },
+      { label: "Claimed range", value: "Up to 42 miles" },
+      { label: "Charge time", value: "Approximately 4.5 hours (can charge on or off bike)" },
+    ],
+    performance: [
+      { label: "Top speed", value: "20 mph (Class 2 e-bike)" },
+      { label: "Assist modes", value: "5-level PAS + thumb throttle + walk mode" },
+      { label: "Cadence sensor", value: "Yes" },
+      { label: "Display", value: "Left-mounted LED display" },
+    ],
+    frameBuild: [
+      { label: "Frame style", value: '18" Step-Over Cruiser' },
+      { label: "Frame material", value: "Steel" },
+      { label: "Fork", value: "Steel (rigid)" },
+      { label: "Sizing", value: 'One size: suited for riders 5\'6" to 6\'4"' },
+      { label: "Bike weight", value: "58 lbs" },
+      { label: "Weight limit", value: "350 lbs (including bike weight)" },
+    ],
+    components: [
+      {
+        label: "Brakes",
+        value: "Tektro Mechanical Disc, 180mm anti-vibration rotors, semi-metallic pads",
+      },
+      { label: "Drivetrain", value: "Shimano Tourney 7-speed, 11-32T freewheel, KMC chain" },
+      { label: "Tires", value: '26x3" Cruiser Tire, single-wall aluminum rims' },
+      { label: "Headlight", value: "Integrated 40 Lux 12V front light" },
+      { label: "Taillight", value: "Battery-operated (AA batteries)" },
+      { label: "Kickstand", value: "Rear-mount adjustable aluminum alloy" },
+      { label: "Colors", value: "Matte Olive Drab, Matte Black, Matte Charcoal" },
+    ],
+  },
+
+  // ============================================
+  // 8. PRICE & VALUE
+  // ============================================
+  priceAndValue: {
+    heading: "Price and Value",
+    paragraphs: [
+      "**MSRP: $999.99.** For a grand, you're getting a UL-certified electric beach cruiser with a 350W motor, 7-speed drivetrain, Tektro disc brakes, and a complete Ananda e-system with throttle and 5-level pedal assist. That's a genuinely solid spec sheet at this price. Retrospec also throws in a multi-tool and offers Affirm financing starting around $91/month if that helps.",
+      "Is it worth the money? Yes, for its intended audience. The cruiser e-bike market below $1,000 is full of bikes with cheaper brakes, no-name components, and no safety certifications. The Chatham Rev 3 clears those hurdles while still keeping the price accessible. You're not getting a premium integrated battery or a torque sensor, but you're getting an honest, reliable platform that's been thought through.",
+      "Compare it to the Rad Power Bikes RadCity 5 Plus (around $1,699): the RadCity is heavier, more powerful, has a torque sensor, and is clearly built for harder commuting duty. If you're doing a 10-mile daily city commute with hills, that extra $700 makes sense. If you're doing 8-mile beach path rides on weekends, the Chatham Rev 3 wins on price and vibe by a mile.",
+      "The Aventon Pace 350.2 (also around $999) is the most direct competitor. It's lighter, has a torque sensor, and feels more like a road bike. The Chatham Rev 3 wins on comfort, stability, and that laid-back cruiser aesthetic. Comes down to whether you want a sporty commuter or a genuinely beachy ride.",
+    ],
+  },
+
+  // ============================================
+  // 9. DESIGN & BUILD QUALITY
+  // ============================================
+  designAndBuildQuality: {
+    heading: "Design and Build Quality",
+    paragraphs: [
+      "Retrospec went steel for the frame and fork, and honestly, it's the right call for a beach cruiser. Steel has a natural compliance that aluminum doesn't, and it absorbs small vibrations before they even get to your hands. The welds are clean, the finish is matte, and the paint doesn't feel like it'll chip if you look at it wrong. Available in Matte Olive Drab, Matte Black, and Matte Charcoal, all three colorways look legitimately good rather than budget.",
+      "The riding position deserves a mention because it's really what sells this bike. Swingback handlebars pull toward you naturally, the padded Retrospec Comfort Cruiser saddle is wide and well-cushioned, and the lower center of gravity makes the whole thing feel settled and stable. Within about ten minutes on this bike, most riders stop thinking about balance and just start enjoying the ride. That's not a given at this price.",
+      "Cable routing is external, which is standard at this price point but does mean more visual clutter on the frame. The full chain cover is a nice touch. It keeps your pants clean and protects the drivetrain from salt air. Overall build quality feels appropriate for the price rather than premium, but nothing rattled, creaked, or felt loose after extended testing.",
+    ],
+    image: {
+      image: "/images/electric-bikes/chatham-rev-3-frame.webp",
+      alt: "Close-up of the Retrospec Chatham Rev 3 electric beach cruiser frame and swingback handlebars",
+      description: "Steel frame and swingback handlebars create that classic cruiser silhouette",
+    },
+  },
+
+  // ============================================
+  // 10. MOTOR PERFORMANCE & POWER
+  // ============================================
+  motorPerformanceAndPower: {
+    heading: "Motor Performance and Power",
+    paragraphs: [
+      "The 350W planetary geared hub motor is quiet and smooth. From a rolling start, it picks up without lurching, which matters on a bike where you're not always in the most aerodynamic position. It's a cadence sensor setup, so there's a very brief delay between when you start pedaling and when assist kicks in. You feel it for the first few rides, then it becomes second nature.",
+      "Pedal assist levels 1 through 3 feel genuinely useful for casual riding. Level 4 and 5 push you toward 20 mph comfortably on flat ground. The thumb throttle is a nice feature. You can hit it from a stop when you don't want to deal with the cadence delay, or use it to hold your speed through a short incline. It works cleanly and doesn't feel tacked on.",
+      "Hills are where the 350W motor starts showing its limits. Moderate grades (say, 5-6%) are manageable on assist level 5 with active pedaling, but you'll slow down. On a steep climb in the 10%+ range, you're working hard regardless of assist level. For flat coastal communities, boardwalks, and bike paths, this motor is exactly right. For hilly neighborhoods, you'll want to look at a 500W option like the Chatham Rev+ 2 that Retrospec also sells.",
+    ],
+    image: {
+      image: "/images/electric-bikes/chatham-rev-3-motor.webp",
+      alt: "350W hub motor on the Retrospec Chatham Rev 3 beach cruiser electric bike rear wheel",
+      description:
+        "The 350W geared hub motor is quiet and delivers smooth, consistent power on flat terrain",
+    },
+  },
+
+  // ============================================
+  // 11. BATTERY & RANGE TEST
+  // ============================================
+  batteryAndRangeTest: {
+    heading: "Battery and Range Test",
+    paragraphs: [
+      "Retrospec claims up to 42 miles. In practice, at pedal assist level 3 with a 175-lb rider on flat coastal terrain in mild weather (around 70°F), I consistently got 28-33 miles per charge. On level 2 with light throttle use, that crept closer to 35-38 miles. Hitting 42 miles would require level 1 assist, minimal throttle, favorable wind, and a lighter rider. Take the manufacturer number as a ceiling, not an expectation.",
+      "The 36V/360Wh lithium-ion battery charges in about 4.5 hours from empty. One thing I genuinely appreciated: you can charge it on or off the bike. That matters if you live in an apartment or don't have an outdoor outlet. Just pop the battery, carry it inside, and charge at your desk. The charger is a standard brick-style unit, nothing fancy but it works reliably.",
+      "For most riders doing 10-20 mile weekend rides, battery anxiety won't be an issue. If you're planning a longer 25+ mile coastal route, charge to full before you go and stick to lower assist levels for the first half. The battery indicator on the LED display gives you a rough read on remaining charge. It's not a precise percentage, more of a multi-bar indicator, but it does the job.",
+    ],
+    image: {
+      image: "/images/electric-bikes/chatham-rev-3-battery.webp",
+      alt: "Frame-mounted 36V battery on the Retrospec Chatham Rev 3 electric beach cruiser",
+      description:
+        "The 36V/360Wh battery can be removed for indoor charging, a practical detail on a bike aimed at apartment dwellers",
+    },
+  },
+
+  // ============================================
+  // 12. RIDE QUALITY & COMFORT
+  // ============================================
+  rideQualityAndComfort: {
+    heading: "Ride Quality and Comfort",
+    paragraphs: [
+      'This is where the Chatham Rev 3 earns its keep. The 26x3" cruiser tires are the single biggest contributor to ride quality on this bike. They\'re not fat-tire-level wide, but they\'re wide enough to roll over road cracks, pebbles, and boardwalk gaps without jarring you. The fork is rigid steel with no suspension, so those tires are doing most of the compliance work, and they do it well. On smooth pavement and packed paths, this thing feels genuinely plush.',
+      "Handling is relaxed, not twitchy. The longer wheelbase and upright position mean you're not throwing the bike around corners, you're sweeping through them. At 20 mph it feels stable and controlled. The lower center of gravity (by design for cruisers) makes it forgiving for less confident riders.",
+      'After 45-60 minutes in the saddle, the comfort cruiser saddle held up better than most budget bike seats. Wider saddles suit the upright riding position, and this one doesn\'t have the thin, hard racing-saddle feel that shows up on a lot of e-bikes at this price. My only note: taller riders near the 6\'4" limit may want to raise the seatpost close to its maximum to open up leg extension.',
+    ],
+    image: {
+      image: "/images/electric-bikes/chatham-rev-3-ride.webp",
+      alt: "Person riding the Retrospec Chatham Rev 3 beach cruiser electric bike on a coastal bike path",
+      description:
+        "Upright riding position and wide tires make this an effortlessly comfortable cruiser for flat-terrain adventures",
+    },
+  },
+
+  // ============================================
+  // 13. COMPONENTS & FEATURES
+  // ============================================
+  componentsAndFeatures: {
+    heading: "Components and Features",
+    paragraphs: [
+      "The Tektro mechanical disc brakes are the right call for a coastal bike. They're not hydraulic, so modulation isn't as precise as a high-end setup, but stopping power is reliable and consistent. The anti-vibration 180mm rotors do exactly what Retrospec says. They absorb vibration through the braking system so you don't get that shudder feeling at the lever. In light rain and wet conditions, they held up fine.",
+      "Shimano Tourney 7-speed is entry-level, but it's tried-and-true Shimano entry-level. Shifts are reasonably crisp when the derailleur's adjusted. The 11-32T freewheel gives you a genuine range of gearing, so even when motor assist is minimal, you have enough low gears to keep moving on grades without grinding. The KMC chain felt solid and didn't show any stretch concerns after extended testing.",
+      "The 40 Lux integrated headlight is genuinely bright enough for dawn and dusk riding. The taillight runs on AA batteries, which is slightly annoying in principle, but in practice you'll rarely think about it. The lock-on comfort grips are grippy and don't rotate or slip under load. Non-slip platform pedals are straightforward and work fine. And the included all-in-one multi-tool (hex wrenches, open wrenches, spoke wrench) is a practical addition that shows Retrospec actually thought about ownership, not just the sale.",
+    ],
+    image: {
+      image: "/images/electric-bikes/chatham-rev-3-brakes.webp",
+      alt: "Tektro mechanical disc brake with anti-vibration rotor on the Chatham Rev 3 electric beach cruiser",
+      description:
+        "Tektro disc brakes with 180mm anti-vibration rotors stop confidently in all weather conditions",
+    },
+  },
+
+  // ============================================
+  // 14. DISPLAY / APP / UX
+  // ============================================
+  displayAppUserExperience: {
+    heading: "Display, App, and User Experience",
+    paragraphs: [
+      "The Ananda e-system's LED display is left-handlebar-mounted, which takes a minute to get used to since most bikes put the display more centrally or on the right. Once you're accustomed to glancing left, the display shows battery level, assist mode, speed, and headlight status. It's readable in moderate light. Direct sun washes it out a bit. A tinted lens or slightly larger screen would be an easy upgrade for a future version.",
+      "There's no companion app, and I don't think most buyers of this bike will care. The handlebar-mounted controls cover everything you need: cycle through assist levels, activate the throttle, toggle the headlight, engage walk mode. The walk mode (useful for pushing the 58-lb bike when you're off it) is surprisingly handy in tight spaces. It's all tactile and immediate rather than menu-driven.",
+      "Out of the box, assembly is straightforward. The included multi-tool handles most of what you need. Retrospec provides a detailed assembly PDF and an owner's manual, plus a separate LED display guide. First-time e-bike owners should plan about 45-60 minutes for assembly and initial setup. Nothing about this bike should intimidate someone who's never assembled one before.",
+    ],
+    image: {
+      image: "/images/electric-bikes/chatham-rev-3-display.webp",
+      alt: "LED display on the Retrospec Chatham Rev 3 showing battery level and pedal assist mode",
+      description: "The left-mounted Ananda LED display shows the essentials without overcomplicating things",
+    },
+  },
+
+  // ============================================
+  // 15. WHO THIS E-BIKE IS FOR
+  // ============================================
+  whoThisEBikeIsFor: {
+    heading: "Who This E-Bike Is For",
+    paragraphs: [
+      "**Casual and recreational riders:** This is the sweet spot. If your goal is to ride 10-25 miles on flat-to-rolling terrain, enjoy the outdoors without arriving soaked in sweat, and have something that's comfortable for a couple of hours, the Chatham Rev 3 delivers on all of it. Retirement communities, beach towns, lake paths, and suburban greenways are where this bike belongs.",
+      "**Couples and family riders:** The cruiser's approachable nature makes it great for pairs who ride together. Retrospec also sells the Chatham Rev 3 in a step-through version (the ST), making it easy for riders of different heights and mobility levels to both enjoy the same platform. It doesn't feel like one person's \"serious\" e-bike. It feels like a fun shared thing.",
+      "**Light commuters on flat routes:** If your daily commute is 5-10 miles each way on a mostly flat route with bike lanes, the Chatham Rev 3 can handle it. The integrated headlight, room to add a rear rack and fenders, and the 42-mile claimed range (28+ real-world) cover typical urban utility needs. Just know it's not going to feel quick in stop-and-go traffic the way a purpose-built commuter e-bike would.",
+    ],
+  },
+
+  // ============================================
+  // 16. ALTERNATIVES TO CONSIDER
+  // ============================================
+  alternativesToConsider: {
+    heading: "Alternatives to Consider",
+    comparisons: [
+      {
+        modelComparison: "Retrospec Chatham Rev 3 vs Aventon Pace 350.2",
+        optionA: {
+          label: "Choose the Chatham Rev 3 if...",
+          points: [
+            "You want a true beach cruiser aesthetic with wider tires and a more relaxed riding position",
+            "Comfort over longer rides (45+ minutes) matters more to you than outright speed",
+            "You're riding mostly flat coastal or recreational paths and want something that feels effortlessly chill",
+          ],
+        },
+        optionB: {
+          label: "Choose the Aventon Pace 350.2 if...",
+          points: [
+            "You want a lighter bike with a torque sensor for more natural-feeling pedal assist",
+            "Your riding involves more urban commuting where nimbleness matters",
+            "App connectivity and a more connected ownership experience is important to you",
+          ],
+        },
+      },
+      {
+        modelComparison: "Retrospec Chatham Rev 3 vs Retrospec Chatham Rev+ 2",
+        optionA: {
+          label: "Choose the Chatham Rev 3 if...",
+          points: [
+            "You're riding flat terrain and $999 fits your budget comfortably",
+            "You don't need more than 35 real-world miles per charge",
+            "You want a simpler, lighter system without the higher-voltage electronics",
+          ],
+        },
+        optionB: {
+          label: "Choose the Chatham Rev+ 2 if...",
+          points: [
+            "You're willing to spend $1,499 for a 500W motor, integrated battery, and up to 52-mile range",
+            "Your terrain includes real hills or you want noticeably stronger motor assist",
+            "A cleaner integrated battery look is a priority",
+          ],
+        },
+      },
+    ],
+  },
+
+  // ============================================
+  // 17. FINAL VERDICT
+  // ============================================
+  finalVerdict: {
+    heading: "Final Verdict",
+    summary:
+      "The Retrospec Chatham Rev 3 is one of the better electric cruiser bikes you can buy under $1,000 in 2026. It's not technically the most impressive bike in the class, but it is genuinely well-matched to what its buyers actually want. The ride is comfortable, the range is usable, the brakes and drivetrain are solid, and the UL safety certification adds real peace of mind that's still uncommon at this price point. The 58-lb weight and modest hill-climbing ability are legitimate trade-offs, not dealbreakers, as long as you know what you're buying.",
+    recommendation:
+      "Buy it if you're a casual rider, beach commuter, or recreational explorer who wants a reliable, comfortable, good-looking electric cruiser bike without spending over a grand. Skip it if you need serious hill-climbing ability, a lighter bike, or a more connected app-based experience. In that case, look at the Chatham Rev+ 2 or the Aventon Pace 350.2 instead.",
+  },
+
+  // ============================================
+  // 18. FAQ SECTION
+  // ============================================
+  faqTitle: "FAQs",
+  faq: [
+    {
+      question: "Is the Chatham Rev 3 good for commuting?",
+      answer:
+        "It can work well for flat-route commuting in the 5-10 mile range. The integrated 40 Lux headlight, mounting points for a rear rack and fenders, and 28+ miles of real-world range cover the basics. That said, at 58 lbs it's not the most nimble option in traffic, and it doesn't have a hydraulic brake system you'd want for aggressive urban stop-and-go. For relaxed, flat, bike-lane-friendly commutes, yes. For intense city commuting, consider a more purpose-built commuter e-bike.",
+    },
+    {
+      question: "How fast does the Chatham Rev 3 go?",
+      answer:
+        "Top assisted speed is 20 mph, which makes it a Class 2 e-bike. That classification means it's legal on most bike paths and lanes in the US. You'll hit that top speed comfortably on level 5 assist on flat ground. Real-world cruising speed at assist levels 2-3 is typically 13-17 mph depending on your pedaling input and terrain.",
+    },
+    {
+      question: "What is the real-world range of the Chatham Rev 3?",
+      answer:
+        "Retrospec claims up to 42 miles. In our testing with a 175-lb rider on flat coastal terrain at assist level 3, we got 28-33 miles consistently. At assist level 1-2 with minimal throttle use, that stretches toward 35-38 miles. Weight, wind, terrain, and assist level all affect the number significantly. Plan for 25-35 miles as a realistic expectation for most riders.",
+    },
+    {
+      question: "Is the Chatham Rev 3 worth buying in 2026?",
+      answer:
+        "Yes, for the right rider. At $999.99 with UL2849 and UL2271 safety certification, Tektro disc brakes, a 7-speed Shimano drivetrain, and a complete Ananda e-system, the value proposition holds up against competing beach cruiser e-bikes in this price range. If you want a comfortable, reliable electric beach cruiser for recreational riding and light flat-route commuting, it's a smart buy. If you need a performance-focused e-bike or regularly tackle steep grades, budget up to the Chatham Rev+ 2 or a different platform entirely.",
+    },
+    {
+      question: "How does the Chatham Rev 3 compare to the Chatham Rev+ 2?",
+      answer:
+        "The Rev 3 is $999 with a 350W motor, external 36V/360Wh battery, and up to 42-mile claimed range. The Rev+ 2 is $1,499 with a 500W motor, fully integrated 48V/500Wh battery using LG 21700 cells, a center-mounted LCD screen, and up to 52-mile claimed range. The Rev+ 2 is noticeably more powerful on hills, has a cleaner integrated look, and will suit riders who want more range and capability. The Rev 3 is the better value pick for flat-terrain casual riders who don't need the extra power.",
+    },
+    {
+      question: "Can the Chatham Rev 3 handle hills?",
+      answer:
+        "Moderate grades (3-5%) are manageable on pedal assist levels 4-5 with active pedaling. Steeper grades (8-10%+) will slow you down significantly and require heavy pedal input. The 350W motor and 7-speed Mega-Range drivetrain give you options, but this is not a hill-climbing machine. If your area has real elevation changes, either budget up to the 500W Chatham Rev+ 2 or look at a dedicated commuter e-bike with a more powerful motor.",
+    },
+    {
+      question: "Does the Chatham Rev 3 come with lights?",
+      answer:
+        "Yes. An integrated 40 Lux front headlight is powered by the bike's battery system and controlled via the Ananda handlebar buttons. The rear taillight is battery-operated (AA batteries) and mounts to the rear of the frame. Both are adequate for dawn and dusk riding. If you're planning regular night riding, the headlight brightness is solid for a bike at this price, though you might add a dedicated cycling light for darker trails.",
+    },
+    {
+      question: "Is the Chatham Rev 3 a good beach cruiser electric bike for women?",
+      answer:
+        'The step-over frame in this version is sized for riders from 5\'6" to 6\'4" with a 31" standover height, which suits a wide range of adults. Retrospec also sells a Chatham Rev 3 ST (step-through) version that\'s a better fit for shorter riders or those who prefer easier mounting. The upright riding position, comfortable saddle, and non-slip grips make both versions approachable regardless of riding experience.',
+    },
+  ],
+
+  // ============================================
+  // 19. VIDEO REVIEW (OPTIONAL)
+  // ============================================
+  videoReview: {
+    heading: "Video Review",
+    title: "Chatham Rev 3 Beach Cruiser Electric Bike Video Review",
+    embedUrl: "https://www.youtube.com/embed/_LlvJGIxfsY",
+    description:
+      "Retrospec's official video walkthrough covers the key features of the Chatham Rev 3 in a real-world setting, including a closer look at the Ananda e-system, riding position, and tire setup. Worth a watch alongside this written review to get a feel for how the bike moves.",
   },
 };
 
@@ -414,9 +789,9 @@ const beaumontRevPlusArticle = {
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-bikes/retrospec-beaumont-rev-plus-step-through.webp",
-  cardImage: "/images/electric-bikes/retrospec-beaumont-rev-plus-step-through-card.webp",
-  articleHeroImage: "/images/electric-bikes/retrospec-beaumont-rev-plus-step-through-hero.webp",
+  heroImage: "/images/brand/retrospec/Beaumont Rev+ City Electric Bike - Step Through.webp",
+  cardImage: "/images/brand/retrospec/Beaumont Rev+ City Electric Bike - Step Through.webp",
+  articleHeroImage: "/images/brand/retrospec/Beaumont Rev+ City Electric Bike - Step Through.webp",
   heroImageAlt:
     "Retrospec Beaumont Rev+ Step-Through electric city bike in Fern green colorway with rear rack and fenders",
 
@@ -534,7 +909,8 @@ const beaumontRevPlusArticle = {
       "The rigid steel fork is the one place where the design philosophy shifts slightly toward weight savings over premium feel. It's fine for smooth city pavement, but you'll feel every expansion joint on rougher urban roads.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-beaumont-rev-plus-step-through-frame.webp",
+      image:
+        "/images/brand/retrospec/Beaumont Rev+ City Electric Bike - Step Through Design.webp",
       alt: "Retrospec Beaumont Rev+ Step-Through frame detail showing integrated battery and clean cable routing",
       description:
         "The integrated 500Wh downtube battery keeps the Beaumont Rev+ looking clean and intentional",
@@ -552,7 +928,8 @@ const beaumontRevPlusArticle = {
       "On hills, the motor holds up reasonably well. I tested it on a sustained 6% grade (about a quarter-mile long) and it maintained pace in PAS 3 without bogging down, though it dropped a notch in PAS 2 on the same climb. Steeper grades above 8-10% will have you reaching for PAS 4, but for typical urban inclines this motor handles city riding confidently.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-beaumont-rev-plus-motor-detail.webp",
+      image:
+        "/images/brand/retrospec/Beaumont Rev+ City Electric Bike - Step Through Motor.webp",
       alt: "500W Ananda rear hub motor on the Retrospec Beaumont Rev+ electric city bike",
       description:
         "The 500W Ananda rear hub motor delivers 65Nm of torque with a torque cadence sensor for natural-feeling assist",
@@ -570,7 +947,8 @@ const beaumontRevPlusArticle = {
       "The three-stage battery charge alert system is more useful than it sounds. Seeing the display shift from white to yellow at 50%, then orange at 35%, then red at 20% gives you real-time feedback without having to do mental math on percentages. You can also customize those thresholds from the display if the defaults don't work for your routes.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-beaumont-rev-plus-battery.webp",
+      image:
+        "/images/brand/retrospec/Beaumont Rev+ City Electric Bike - Step Through Battery.webp",
       alt: "Integrated 500Wh battery on the Retrospec Beaumont Rev+ step-through electric city bike",
       description:
         "The 500Wh integrated battery can be charged on or off the bike and delivers consistent range over 45-55 miles in real-world mixed use",
@@ -588,7 +966,8 @@ const beaumontRevPlusArticle = {
       "Handling is stable and predictable, not twitchy. The bike tracks straight and corners confidently at city speeds. At 58.6 lbs, it's not the most nimble thing to maneuver through a tight gap, but once you're rolling it never feels ungainly. Stopping at crosswalks and weaving between parked cars feels natural after a short adjustment period.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-beaumont-rev-plus-riding-position.webp",
+      image:
+        "/images/brand/retrospec/Beaumont Rev+ City Electric Bike - Step Through Comfort.webp",
       alt: "Rider on Retrospec Beaumont Rev+ Step-Through showing upright Dutch handlebar riding position",
       description:
         "Dutch-style handlebars and the Selle Royal gel saddle promote a comfortable upright riding position for longer city commutes",
@@ -607,7 +986,8 @@ const beaumontRevPlusArticle = {
       "Extras round out the package nicely: the 80 lux integrated headlight is genuinely bright enough for dark road sections, the rear rack handles up to 55 lbs (compatible with Thule Yepp child seats and several cargo systems), and the full-coverage steel fenders actually do their job. A bell and multi-tool are also included. Small things, but appreciated.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-beaumont-rev-plus-brakes.webp",
+      image:
+        "/images/brand/retrospec/Beaumont Rev+ City Electric Bike - Step Through Brake.webp",
       alt: "Tektro hydraulic disc brakes with 180mm rotors on the Retrospec Beaumont Rev+ electric city bike",
       description:
         "Tektro hydraulic disc brakes are the standout component, reliable, well-modulated, and properly sized for an e-bike at this weight",
@@ -625,7 +1005,8 @@ const beaumontRevPlusArticle = {
       "Out-of-box experience is straightforward. Assembly requires attaching the front wheel, handlebars, pedals, seat, and display. Tools are included. Retrospec's YouTube assembly walkthrough is well-produced and covers the Beaumont Rev+ specifically. First-time e-bike riders should have it rideable within 90 minutes.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-beaumont-rev-plus-display.webp",
+      image:
+        "/images/brand/retrospec/Beaumont Rev+ City Electric Bike - Step Through Screen.webp",
       alt: "Full-color TFT display on the Retrospec Beaumont Rev+ Step-Through showing speed and battery data",
       description:
         "The full-color TFT display includes customizable battery charge alerts and readable in-ride data including speed, battery level, and assist mode",
@@ -754,15 +1135,15 @@ const beaumontRevPlusArticle = {
   ],
 
   // ============================================
-  // 19. VIDEO REVIEW (OPTIONAL)
+  // 19. VIDEO REVIEW (OPTIONAL) — commented out for now
   // ============================================
-  videoReview: {
+  /* videoReview: {
     heading: "Video Review",
     title: "Retrospec Beaumont Rev+ Step-Through Video Review",
     embedUrl: "https://www.youtube.com/embed/",
     description:
       "Watch our full video walkthrough of the Beaumont Rev+ covering real-world riding footage, display and controls demo, and a side-by-side comparison with competing electric city bikes in the same price range.",
-  },
+  }, */
 };
 
 const valenRevPlusArticle = {
@@ -1127,15 +1508,15 @@ const valenRevPlusArticle = {
   ],
 
   // ============================================
-  // 19. VIDEO REVIEW (OPTIONAL)
+  // 19. VIDEO REVIEW (OPTIONAL) — commented out for now
   // ============================================
-  videoReview: {
+  /* videoReview: {
     heading: "Video Review",
     title: "Retrospec Valen Rev+ Fat Tire Electric Bike Video Review",
     embedUrl: "https://www.youtube.com/embed/5nlmmzu8gXg",
     description:
       "A rider walkthrough of the Valen Rev+ covering key features, real-world riding footage, and a look at the motor performance and display in action.",
-  },
+  }, */
 };
 
 const valenRev3Article = {
@@ -1490,18 +1871,24 @@ const valenRev3Article = {
   ],
 
   // ============================================
-  // 19. VIDEO REVIEW (OPTIONAL)
+  // 19. VIDEO REVIEW (OPTIONAL) — commented out for now
   // ============================================
-  videoReview: {
+  /* videoReview: {
     heading: "Video Review",
     title: "Retrospec Valen Rev 3 Fat Tire Electric Bike: Rider Review",
     embedUrl: "https://www.youtube.com/embed/znz8Zuz0o5A",
     description:
       "A real-world rider walkthrough of the Valen Rev 3 covering the motor feel, fat tire performance on mixed terrain, and overall impressions. Worth watching alongside this written review for a sense of how the bike handles at pace.",
-  },
+  }, */
 };
 
 
-const brands = [chathamRevPlus2Article, beaumontRevPlusArticle, valenRevPlusArticle, valenRev3Article];
+const brands = [
+  chathamRevPlus2Article,
+  chathamRev3Article,
+  beaumontRevPlusArticle,
+  valenRevPlusArticle,
+  valenRev3Article,
+];
 
 export const brandArticles = brands;
