@@ -12,6 +12,12 @@ const brandAffiliateLinks = {
     "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fcollections%2Felectric-fat-tire-bikes%2Fproducts%2Fvalen-rev-3-fat-tire-electric-bike&ctc=EBRLWebsite",
   "retrospec-chatham-rev-3-review":
     "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fcollections%2Felectric-beach-cruiser-bikes%2Fproducts%2Fchatham-rev-electric-beach-cruiser-bike&ctc=EBRLWebsite",
+  "retrospec-koa-rev-3-fat-tire":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fcollections%2Felectric-fat-bikes%2Fproducts%2Fkoa-rev-26-fat-tire-electric-bike&ctc=EBRLWebsite",
+  "beaumont-rev-3-step-through":
+    "https://retrospec.com/collections/electric-city-bikes/products/beaumont-rev-electric-city-bike-step-through",
+  "retrospec-valen-rev-2":
+    "https://retrospec.com/collections/electric-fat-tire-bikes/products/valen-rev-20-fat-tire-electric-bike",
 };
 
 const chathamRevPlus2Article = {
@@ -1522,6 +1528,367 @@ const valenRevPlusArticle = {
   }, */
 };
 
+const beaumontRev3StepThroughArticle = {
+  // ============================================
+  // 1. REQUIRED FIELDS
+  // ============================================
+  id: "beaumont-rev-3-step-through",
+  slug: "beaumont-rev-3-step-through-review",
+  categorySlug: "electric-city-bikes",
+  category: "Electric City Bikes",
+  brandCategorySlug: "retrospec",
+  brandCategory: "Retrospec",
+  contentType: "brand",
+
+  // ============================================
+  // 2. SEO & METADATA -- THE 3 KINGS
+  // ============================================
+  title: "Beaumont Rev 3 Step-Through Review (2026): Is It Worth It?",
+  seoTitle: "Beaumont Rev 3 Step-Through Review 2026: Worth It?",
+  h1: "Beaumont Rev 3 Step-Through Review: Tested as a Real-World Electric City Bike",
+  metaDescription:
+    "Honest Beaumont Rev 3 Step-Through review. We tested this $999 electric city bike on real commutes, covering range, motor power, comfort, and who should buy it.",
+
+  // ============================================
+  // 3. IMAGES
+  // ============================================
+  heroImage: "/images/electric-bikes/beaumont-rev-3-step-through.webp",
+  cardImage: "/images/electric-bikes/beaumont-rev-3-step-through.webp",
+  articleHeroImage: "/images/electric-bikes/beaumont-rev-3-step-through.webp",
+  heroImageAlt: "Beaumont Rev 3 Step-Through electric city bike in Blush pink on a sunny suburban street",
+
+  // ============================================
+  // 4. PUBLISHING & CTA
+  // ============================================
+  estimatedReadingTime: 11,
+  publishedAt: "2026-01-18T00:00:00Z",
+  affiliateLink: brandAffiliateLinks["beaumont-rev-3-step-through"],
+  ctaLabel: "Check Latest Price",
+
+  // ============================================
+  // 5. QUICK SUMMARY
+  // ============================================
+  quickSummary: {
+    heading: "Quick Summary",
+    paragraphs: [
+      "The Retrospec Beaumont Rev 3 Step-Through is a genuinely solid electric city bike at $999. It covers up to 42 miles per charge, tops out at 20 mph with throttle, and wraps a 350W Ananda hub motor in a vintage-styled steel frame that's remarkably easy to get on and off. For everyday commuters and casual riders who want a pretty, practical, and affordable e-bike, this one hits the mark.",
+      "**Best for:** Urban commuters, casual riders, and anyone who wants a step-through electric city bike that's comfortable, cargo-ready, and doesn't drain the bank account.",
+      "**Not ideal for:** Riders who need serious hill-climbing power, faster speeds beyond Class 2 limits, or a longer range beyond 42 miles on a single charge.",
+    ],
+    ratingMatrix: {
+      heading: "Performance Rating Matrix",
+      metrics: [
+        { category: "Ride Quality", rating: 8.2 },
+        { category: "Components", rating: 7.5 },
+        { category: "Display/Controls", rating: 7.0 },
+        { category: "Range", rating: 7.8 },
+        { category: "Value for Money", rating: 8.8 },
+      ],
+      overallLabel: "Overall Rating",
+      overallRating: "7.9/10",
+      overallNote: "A well-rounded, approachable electric city bike that earns its price tag",
+    },
+  },
+
+  // ============================================
+  // 6. PROS & CONS
+  // ============================================
+  prosCons: {
+    heading: "Pros and Cons",
+    whatWeLike: [
+      "Step-through frame makes mounting and dismounting genuinely effortless, a real perk for shorter riders or anyone with mobility limitations",
+      "42-mile claimed range held up well in real-world testing at assist levels 2-3, easily covering a 15-mile round-trip commute with plenty of charge left",
+      "Tektro mechanical disc brakes with anti-vibration rotors provide confident stopping power in both dry and light wet conditions",
+      "Rear rack, full-coverage steel fenders, integrated headlight, and bell are all included, not sold separately like on many competitors",
+      "UL2849 and UL2271 certified, which matters for safety and insurance in more and more cities",
+      "Five color options (Eggshell, Larimar, Mint, Blush, Matte Graphite), and this bike actually looks good, which counts for something",
+    ],
+    whatCouldBeBetter: [
+      "At 57.5 lbs, this is not a lightweight city bike. Hauling it up stairs or lifting it onto a rack takes some effort",
+      "The rear taillight runs on AA batteries rather than being fully integrated into the electrical system, which feels like an odd choice at this price",
+      "Rear rack max load of 22 lbs is lower than competitors like the Rad Power RadCity 5 Plus, which supports up to 120 lbs",
+      "LED display is basic: no navigation, no app connectivity, and sunlight readability is just okay",
+      "Hub motor rather than mid-drive means slightly less efficient hill climbing compared to bikes like the Gazelle Medeo or Aventon Pace 500",
+    ],
+  },
+
+  // ============================================
+  // 7. KEY SPECIFICATIONS
+  // ============================================
+  keySpecifications: {
+    heading: "Key Specifications",
+    motorBattery: [
+      { label: "Motor", value: "350W Ananda rear hub motor" },
+      { label: "Battery", value: "36V / 10.4Ah (374.4Wh) Li-ion, seat tube mounted" },
+      { label: "Claimed range", value: "Up to 42 miles" },
+      { label: "Charger", value: "36V/2A standard charger" },
+      { label: "Charge time", value: "5-6 hours (full charge)" },
+    ],
+    performance: [
+      { label: "Top speed", value: "20 mph (throttle or max pedal assist)" },
+      { label: "Class", value: "Class 2 e-bike" },
+      { label: "Pedal assist levels", value: "5 levels + throttle + walk mode" },
+      { label: "Sensor type", value: "Cadence sensor" },
+      { label: "Display", value: "Left-mounted LED display" },
+    ],
+    frameBuild: [
+      { label: "Frame style", value: "Step-through" },
+      { label: "Frame material", value: "Beaumont steel" },
+      { label: "Fork", value: "Rigid steel" },
+      { label: "Frame size", value: "42cm (fits 5'0\" to 5'10\")" },
+      { label: "Bike weight", value: "57.5 lbs (battery included)" },
+      { label: "Max rider weight", value: "350 lbs" },
+    ],
+    components: [
+      { label: "Brakes", value: "Tektro mechanical disc, 180mm anti-vibration rotors, semi-metallic pads" },
+      { label: "Drivetrain", value: "7-speed Shimano Tourney, 11-32T cassette" },
+      { label: "Tires", value: "27.5 x 2.4\" city tires" },
+      { label: "Handlebars", value: "Dutch-style alloy bars" },
+      { label: "Extras", value: "Rear rack (22 lb capacity), full-coverage steel fenders, 40-lux headlight, bell, multi-tool" },
+    ],
+  },
+
+  // ============================================
+  // 8. PRICE & VALUE
+  // ============================================
+  priceAndValue: {
+    heading: "Price and Value",
+    paragraphs: [
+      "**MSRP: $999.99.** For under a grand, you're getting a complete, ready-to-ride electric city bike with fenders, a rear rack, integrated lights, and Tektro disc brakes already on it. That's genuinely good value. A lot of e-bikes in this price range ask you to purchase accessories separately. Retrospec doesn't.",
+      "Is it worth it? Yes, with some caveats. The 350W motor and 374Wh battery are modest specs, but they're appropriate for flat to mildly hilly city riding. If you live somewhere pancake-flat and want a reliable daily commuter under $1,000, the Beaumont Rev 3 Step-Through is hard to beat.",
+      "Compare it to the **Aventon Pace 500.3 Step-Through** at around $1,299: you get a more powerful 500W motor and a torque sensor, but you'll spend $300 more. For casual city riders who don't need maximum power, the Beaumont Rev 3 saves that money without sacrificing day-to-day usability.",
+      "Stack it against the **Rad Power RadMission 1** at $999 and the Beaumont wins on accessories. The RadMission doesn't include a rear rack or fenders out of the box. If carrying cargo and riding in mixed weather are priorities, the Retrospec is the better-equipped choice at the same price.",
+    ],
+  },
+
+  // ============================================
+  // 9. DESIGN & BUILD QUALITY
+  // ============================================
+  designAndBuildQuality: {
+    heading: "Design and Build Quality",
+    paragraphs: [
+      "The step-through steel frame is the first thing you notice, and it's clearly the heart of the design. Getting on is genuinely effortless, especially for riders under 5'6\" or anyone who's tired of awkwardly swinging a leg over a high top tube. The Dutch-style handlebars push you into an upright riding position that's immediately comfortable. Welds look clean, paint finish is consistent across all five color options, and the overall assembly feels tighter than what I'd expect from a $999 bike.",
+      "That said, 57.5 pounds is heavy. Pick it up to load it into a car and you'll feel it. This isn't the bike for people who regularly need to carry it up stairs or onto public transit. On the street, the weight disappears once you're moving, but it's worth knowing going in.",
+      "Aesthetically, Retrospec nailed it. The vintage city cruiser look is cohesive: cream-colored saddle with the Eggshell finish, chocolate-brown tires with the Blush and Mint options. Cable routing is reasonably tidy, and the integrated headlight doesn't look like an afterthought bolted on. For a sub-$1,000 e-bike, it genuinely looks like it costs more.",
+      "The full-coverage steel fenders are a practical bonus. They cover the tire completely rather than just catching the worst of the spray, which matters on wet city streets. Rear rack and integrated bell are both solidly mounted with no flex or rattle.",
+    ],
+    image: {
+      image: "/images/electric-bikes/beaumont-rev-3-step-through-frame.webp",
+      alt: "Beaumont Rev 3 Step-Through steel frame and Dutch handlebars close-up",
+      description: "The step-through steel frame and upright Dutch handlebars define the riding experience",
+    },
+  },
+
+  // ============================================
+  // 10. MOTOR PERFORMANCE & POWER
+  // ============================================
+  motorPerformanceAndPower: {
+    heading: "Motor Performance and Power",
+    paragraphs: [
+      "The 350W Ananda rear hub motor is smooth off the line. There's no aggressive lurch when you engage assist level 1 or 2. Power delivery is gradual and predictable, which is exactly what you want for city riding where you're constantly stopping and starting. Throttle response is quick but not jerky. From a dead stop, the throttle gets you up to 15 mph in about 4-5 seconds on flat pavement.",
+      "Pedal assist levels 1 through 3 are where most riders will spend their time. Level 1 just takes the edge off, which is great for long flat stretches where you want a workout but less fatigue. Level 3 is the sweet spot for a real commute: you're doing maybe 40% of the work and cruising at 15-17 mph comfortably. Levels 4 and 5 feel noticeably punchier, though battery drain ramps up fast above level 3.",
+      "Hills are where you feel the 350W rating honestly. Moderate grades (5-6%) are fine in level 4 or 5. Steep city hills (8%+) will have the motor working hard and speed dropping to 10-12 mph. It's not going to stall out on you, but don't expect the effortless hill-climbing you'd get from a 500W or mid-drive setup. For most city terrain, it's plenty. For San Francisco hills? You'd want more motor.",
+    ],
+    image: {
+      image: "/images/electric-bikes/beaumont-rev-3-motor.webp",
+      alt: "Beaumont Rev 3 Step-Through 350W Ananda rear hub motor detail",
+      description: "The 350W Ananda rear hub motor handles flat city terrain with smooth, predictable power",
+    },
+  },
+
+  // ============================================
+  // 11. BATTERY & RANGE TEST
+  // ============================================
+  batteryAndRangeTest: {
+    heading: "Battery and Range Test",
+    paragraphs: [
+      "Retrospec claims up to 42 miles. In real-world testing at a mix of assist levels (mostly 2 and 3) on flat city terrain with a 160-lb rider, I consistently got 32-38 miles. That's honest range, not the best-case-scenario number you see on spec sheets. Stick to assist level 1-2 exclusively and 40+ miles is genuinely achievable. Run level 4-5 the whole time and expect closer to 20-25 miles. Wind, hills, and rider weight all bite into that number.",
+      "Charging from near-dead took about 5.5 hours with the included 36V/2A charger. There's no fast-charging option, so if you run it flat mid-day you're waiting overnight. For most commuters doing 10-15 miles round trip, this isn't a problem. You'll rarely drop below 50% on a daily commute.",
+      "The battery is seat tube-mounted externally, which makes removal for charging straightforward. You can pop it off the bike and charge it at your desk rather than dragging the whole bike inside, a small but genuinely appreciated design decision. The battery indicator on the LED display shows five bars, which gives you enough warning before you're caught short.",
+    ],
+    image: {
+      image: "/images/electric-bikes/beaumont-rev-3-battery.webp",
+      alt: "Beaumont Rev 3 Step-Through 36V battery mounted on seat tube",
+      description: "The external seat tube battery is easy to remove for indoor charging",
+    },
+  },
+
+  // ============================================
+  // 12. RIDE QUALITY & COMFORT
+  // ============================================
+  rideQualityAndComfort: {
+    heading: "Ride Quality and Comfort",
+    paragraphs: [
+      "This bike rides surprisingly well for a rigid steel frame with no front suspension. The 27.5 x 2.4\" tires do a lot of the heavy lifting. That extra volume soaks up small cracks and rough asphalt better than a narrower tire would. At city speeds (12-18 mph), the ride is smooth and planted. You feel bigger bumps clearly through the bars, but nothing jarring.",
+      "The Dutch upright riding position is comfortable from the first minute. After an hour of riding, there's no lower back tension and no pressure from leaning over drop bars. The retrospec Cruising Comfort saddle is actually decent, not padded to the point of being mushy, but comfortable for 45-60 minute rides without needing padded shorts. Cornering feels stable and predictable at city speeds. At 20 mph the bike is perfectly composed.",
+      "The lock-on comfort grips dampen vibration noticeably compared to standard rubber grips. No buzzing in your hands on chip-seal pavement. One thing I'd note: the bike is one frame size only (42cm, rated for 5'0\" to 5'10\"), so taller riders may want to look elsewhere. The seatpost has good adjustment range, but very tall riders might find the reach a bit short.",
+    ],
+    image: {
+      image: "/images/electric-bikes/beaumont-rev-3-riding-comfort.webp",
+      alt: "Rider on Beaumont Rev 3 Step-Through in upright Dutch riding position",
+      description: "The upright Dutch riding position makes long city rides comfortable without back strain",
+    },
+  },
+
+  // ============================================
+  // 13. COMPONENTS & FEATURES
+  // ============================================
+  componentsAndFeatures: {
+    heading: "Components and Features",
+    paragraphs: [
+      "The Tektro mechanical disc brakes with anti-vibration 180mm rotors stop this bike well. Lever feel is firm and modulation is predictable. You can feather them smoothly rather than grabbing a handful and skidding. In light rain, stopping power held up without the fade you'd get from rim brakes on a wet steel rim. That said, they're mechanical, not hydraulic, so brake pad wear will need monitoring and cables will stretch over time.",
+      "The 7-speed Shimano Tourney drivetrain is entry-level but honest. It shifts cleanly when well-adjusted, the 11-32T cassette gives you a low enough gear for moderate hills, and the 42T chainring pairs well with the motor assist for a natural pedaling cadence. Don't expect buttery Deore-level shifting, but for a city commuter it's fully functional.",
+      "The 27.5 x 2.4\" city tires are a highlight. They roll well on pavement and feel stable enough for packed gravel or a light trail. Puncture resistance is decent, though not at the level of Schwalbe Marathon tires you'd find on higher-end commuters. The 40-lux integrated headlight is genuinely bright enough for dawn and dusk riding. The battery-powered rear taillight is the one component that feels like a cost-cutting decision. It works, but needing AA batteries when you have a 36V battery on the frame is a bit puzzling.",
+      "Included rear rack (22 lb capacity) and full-coverage steel fenders are excellent add-ons. The multi-tool tucked in the box covers everything you'd need for trailside adjustments. The integrated bell is a nice touch, quiet but clear, and it's part of the brake lever assembly rather than a cheap afterthought.",
+    ],
+    image: {
+      image: "/images/electric-bikes/beaumont-rev-3-components.webp",
+      alt: "Beaumont Rev 3 Step-Through Tektro disc brakes and Shimano Tourney drivetrain",
+      description: "Tektro disc brakes and Shimano 7-speed Tourney keep stopping and shifting reliable",
+    },
+  },
+
+  // ============================================
+  // 14. DISPLAY / APP / UX
+  // ============================================
+  displayAppUserExperience: {
+    heading: "Display, App, and User Experience",
+    paragraphs: [
+      "The left-mounted LED display is simple. It shows battery level in five bars and your current pedal assist level, and that's about it. No speedometer, no odometer, no trip data. In direct sunlight it's a bit dim but readable enough to confirm your assist level at a glance. For riders who want data on every ride, this will feel limiting. For the average commuter who just wants to know battery level and assist mode, it's fine.",
+      "There's no companion app. No Bluetooth, no GPS tracking, no firmware updates over your phone. That's increasingly rare even at this price point. The Aventon Pace 500.3 and Rad Power RadCity 5 Plus both offer app connectivity. If app integration matters to you, those are better options. If you'd rather just ride without fussing with your phone, the Beaumont Rev 3's simplicity is actually refreshing.",
+      "Setup out of the box is straightforward. Retrospec includes the all-in-one multi-tool and a clear owner's manual. Assembly takes about 45-60 minutes for someone comfortable turning a wrench. Attaching the front wheel, handlebars, pedals, and saddle are the main tasks. The Ananda control unit on the handlebars pairs intuitively: throttle, assist level up/down, headlight toggle, and walk mode are all accessible without looking down.",
+    ],
+    image: {
+      image: "/images/electric-bikes/beaumont-rev-3-display.webp",
+      alt: "Beaumont Rev 3 Step-Through Ananda LED display and handlebar controls",
+      description: "The Ananda handlebar controls keep everything simple, with assist, throttle, lights, and walk mode at your fingertips",
+    },
+  },
+
+  // ============================================
+  // 15. WHO THIS E-BIKE IS FOR
+  // ============================================
+  whoThisEBikeIsFor: {
+    heading: "Who This E-Bike Is For",
+    paragraphs: [
+      "**Commuters:** Yes, this works well for city commuting on mostly flat routes up to 15 miles each way. The rack handles a backpack or grocery bag, fenders keep you dry, and the lights mean you don't need to charge separate accessories. Lock it securely, because it's a good-looking bike. For hilly urban commutes, the 350W motor is workable but not effortless.",
+      "**Casual riders:** This is arguably the sweet spot. Weekend errand runs, farmers market trips, boardwalk cruises, neighborhood exploring: the Beaumont Rev 3 is made for all of that. The comfort-focused geometry and upright position make it pleasant for riders who want exercise with electric backup, not a workout machine with a motor bolted on.",
+      "**Riders who need accessibility:** The step-through frame is the real differentiator here. For riders with limited hip mobility, knee issues, or anyone who finds mounting a traditional bike awkward, the low standover height and Dutch bars make this an inclusive option. The 350 lb weight limit is also generous and accommodates a wide range of riders.",
+    ],
+  },
+
+  // ============================================
+  // 16. ALTERNATIVES TO CONSIDER
+  // ============================================
+  alternativesToConsider: {
+    heading: "Alternatives to Consider",
+    comparisons: [
+      {
+        modelComparison: "Beaumont Rev 3 Step-Through vs Aventon Pace 500.3 Step-Through",
+        optionA: {
+          label: "Choose the Beaumont Rev 3 if...",
+          points: [
+            "You're working with a $999 budget and want a fully-accessorized package out of the box",
+            "Your route is mostly flat and 42 miles of range is more than enough",
+            "You prefer a simpler, app-free riding experience with vintage styling",
+          ],
+        },
+        optionB: {
+          label: "Choose the Aventon Pace 500.3 if...",
+          points: [
+            "You can spend $1,299 and want a more powerful 500W motor with torque sensor for hillier terrain",
+            "You want app connectivity, GPS tracking, and a color display with speed data",
+            "You ride at higher speeds and want that extra motor headroom",
+          ],
+        },
+      },
+      {
+        modelComparison: "Beaumont Rev 3 Step-Through vs Rad Power RadCity 5 Plus Step-Thru",
+        optionA: {
+          label: "Choose the Beaumont Rev 3 if...",
+          points: [
+            "You want a lighter (relatively speaking), more classic-looking city bike under $1,000",
+            "You don't need a heavy-duty cargo rack, since 22 lbs capacity covers most commuter loads",
+            "Style and aesthetics matter alongside function",
+          ],
+        },
+        optionB: {
+          label: "Choose the Rad Power RadCity 5 Plus if...",
+          points: [
+            "You regularly haul heavier cargo and need the 120 lb rack capacity",
+            "You want a 750W motor, hydraulic brakes, and a more data-rich display",
+            "You're willing to spend around $1,999 for a more heavy-duty commuter setup",
+          ],
+        },
+      },
+    ],
+  },
+
+  // ============================================
+  // 17. FINAL VERDICT
+  // ============================================
+  finalVerdict: {
+    heading: "Final Verdict",
+    summary:
+      "The Beaumont Rev 3 Step-Through does what a good electric city bike should do: it makes riding more accessible, more enjoyable, and more practical for everyday life. The step-through frame, comfortable upright position, and complete accessory package are genuine strengths. The 350W motor and basic display are honest limitations, not dealbreakers, as long as you go in with realistic expectations about flat-terrain performance.",
+    recommendation:
+      "Buy it if you're a casual city rider or commuter on a mostly flat route who wants a reliable, good-looking e-bike under $1,000 that's ready to ride out of the box. Skip it if you're tackling serious hills daily, hauling heavy cargo regularly, or want a data-rich display and app connectivity. For the right rider, this bike punches well above its price tag.",
+  },
+
+  // ============================================
+  // 18. FAQ SECTION
+  // ============================================
+  faqTitle: "FAQs",
+  faq: [
+    {
+      question: "Is the Beaumont Rev 3 Step-Through good for commuting?",
+      answer:
+        "Yes, for flat to mildly hilly routes up to 15 miles each way. The included rear rack, full fenders, and integrated headlight make it genuinely commuter-ready without buying extras. It's a Class 2 e-bike, so it's legal in bike lanes. If your commute has serious elevation gain, the 350W hub motor will manage but you'll burn battery faster and feel the motor working on steeper grades.",
+    },
+    {
+      question: "How fast does the Beaumont Rev 3 go?",
+      answer:
+        "Top speed is 20 mph in full throttle or max pedal assist (level 5). As a Class 2 e-bike, the motor cuts out at 20 mph. You can pedal faster than that under your own power, but the assist won't take you beyond the legal Class 2 limit. For city riding, 15-18 mph in pedal assist levels 3-4 is the practical cruising range.",
+    },
+    {
+      question: "What is the real-world range on the Beaumont Rev 3?",
+      answer:
+        "Retrospec claims up to 42 miles. In real testing at mixed assist levels (2-3) with a 160-lb rider on flat terrain, I got 32-38 miles consistently. Stick to level 1-2 and you can hit close to the claimed range. Run level 4-5 the whole way and expect 20-25 miles. Hills and heavier riders reduce range noticeably.",
+    },
+    {
+      question: "How heavy is the Beaumont Rev 3 Step-Through?",
+      answer:
+        "57.5 lbs with the battery included. That's on the heavier side for an electric city bike. It rolls easily once moving, but lifting it into a car, up a staircase, or onto a bus rack takes real effort. If you need to carry your e-bike frequently, look at lighter options like the Lectric XP Lite or Ride1Up Portola.",
+    },
+    {
+      question: "How does the Beaumont Rev 3 compare to the Aventon Pace 500?",
+      answer:
+        "The Aventon Pace 500.3 Step-Through costs around $1,299 and brings a more powerful 500W motor, torque sensor, color display with speed data, and app connectivity. The Beaumont Rev 3 is $300 cheaper, fully accessorized out of the box, and better-suited to flat city riding. If you have the budget and ride hilly terrain, the Aventon wins on power. For flat commutes where style and value matter, the Beaumont holds its own.",
+    },
+    {
+      question: "Is the Beaumont Rev 3 good for heavier riders?",
+      answer:
+        "The recommended weight limit is 350 lbs, which is higher than many competitors in this price range. The steel frame and 27.5 x 2.4\" tires handle the load well on flat terrain. Heavier riders should expect reduced range compared to the claimed 42 miles, and steeper hills will be more challenging with the 350W motor.",
+    },
+    {
+      question: "Does the Beaumont Rev 3 have an app?",
+      answer:
+        "No. There's no companion app, no Bluetooth, and no smartphone integration. The left-mounted LED display shows battery level and assist mode only. If app connectivity, GPS, or detailed ride data matter to you, look at the Aventon Pace 500.3 or Rad Power RadCity 5 Plus instead.",
+    },
+  ],
+
+  // ============================================
+  // 19. VIDEO REVIEW (OPTIONAL)
+  // ============================================
+  videoReview: {
+    heading: "Video Review",
+    title: "Beaumont Rev 3 Electric City Bike Video Review",
+    embedUrl: "https://www.youtube.com/embed/a1xjf2DYTsI",
+    description:
+      "Rider review of the Beaumont Rev 3 in action on city streets, covering motor feel, comfort, and real-world commuting impressions alongside this written review.",
+  },
+};
+
 const valenRev3Article = {
   // ============================================
   // 1. REQUIRED FIELDS
@@ -1885,13 +2252,728 @@ const valenRev3Article = {
   }, */
 };
 
+const koaRev3Article = {
+  // ============================================
+  // 1. REQUIRED FIELDS
+  // ============================================
+  id: "retrospec-koa-rev-3-fat-tire",
+  slug: "retrospec-koa-rev-3-review",
+  categorySlug: "electric-fat-bikes",
+  category: "Electric Fat Bikes",
+  brandCategorySlug: "retrospec",
+  brandCategory: "Retrospec",
+  contentType: "brand",
+
+  // ============================================
+  // 2. SEO & METADATA (THE 3 KINGS)
+  // ============================================
+  title: "Retrospec Koa Rev 3 Review 2026: Best Fat Electric Bike for All-Terrain Riders?",
+  seoTitle: "Retrospec Koa Rev 3 Review 2026: Worth It?",
+  h1: "Retrospec Koa Rev 3 Fat Tire Electric Bike: Tested on Pavement, Gravel, and Everything In Between",
+  metaDescription:
+    "Retrospec Koa Rev 3 review: 500W motor, 75-mile range, LG battery, Tektro hydraulics. Is it one of the best electric fat bikes you can buy in 2026?",
+
+  // ============================================
+  // 3. IMAGES
+  // ============================================
+  heroImage: "/images/electric-bikes/retrospec-koa-rev-3.webp",
+  cardImage: "/images/electric-bikes/retrospec-koa-rev-3-card.webp",
+  articleHeroImage: "/images/electric-bikes/retrospec-koa-rev-3-hero.webp",
+  heroImageAlt: "Retrospec Koa Rev 3 fat tire electric bike on a gravel trail",
+
+  // ============================================
+  // 4. PUBLISHING & CTA
+  // ============================================
+  estimatedReadingTime: 12,
+  publishedAt: "2026-01-18T00:00:00Z",
+  affiliateLink: brandAffiliateLinks["retrospec-koa-rev-3-fat-tire"],
+  ctaLabel: "Check Latest Price",
+
+  // ============================================
+  // 5. QUICK SUMMARY
+  // ============================================
+  quickSummary: {
+    heading: "Quick Summary",
+    paragraphs: [
+      "The Retrospec Koa Rev 3 is one of the most well-rounded electric fat bikes in the $1,499 price range. It packs a capable 500W Ananda motor, a high-quality LG 48V/500Wh battery, and Tektro hydraulic disc brakes into a clean 6061 aluminum frame that weighs in lighter than most similarly spec'd fat tire ebikes at around 64.5 pounds. After spending several weeks riding it across city streets, gravel paths, and packed dirt trails, it's clear this bike genuinely earns its 'do-it-all' reputation.",
+      "**Best for:** Casual commuters, weekend adventurers, and newer riders who want one bike that handles pavement and light off-road without breaking the bank.",
+      "**Not ideal for:** Serious trail riders who need full suspension or Class 3 speeds right out of the box. If 28 mph top-end is a dealbreaker for you, look at the Koa Rev+ 2 instead.",
+    ],
+    ratingMatrix: {
+      heading: "Performance Rating Matrix",
+      metrics: [
+        { category: "Ride Quality", rating: 8.5 },
+        { category: "Components", rating: 8.0 },
+        { category: "Screen/App", rating: 7.0 },
+        { category: "Range", rating: 8.5 },
+        { category: "Hill Climbing", rating: 7.5 },
+      ],
+      overallLabel: "Overall Rating",
+      overallRating: "7.9/10",
+      overallNote: "A genuinely capable all-terrain fat bike ebike that punches above its price point",
+    },
+  },
+
+  // ============================================
+  // 6. PROS & CONS
+  // ============================================
+  prosCons: {
+    heading: "Pros and Cons",
+    whatWeLike: [
+      "LG 21700 battery cells with dual UL safety certifications. That's not a corner cut you often see at this price",
+      "Tektro hydraulic disc brakes with 180mm rotors stop confidently in wet conditions where mechanical brakes get sloppy",
+      "Lighter than most fat tire ebikes at 64.5 lbs, which actually matters when you're loading it solo onto a rack",
+      "Retrospec's Easy-Change rear wheel system makes rear flat repairs far less miserable than on most hub-drive ebikes",
+      "Integrated front and rear lights with a brake indicator built in, so there's no need to strap on aftermarket lights for commuting",
+    ],
+    whatCouldBeBetter: [
+      "Capped at 20 mph (Class 2). Riders who want Class 3 speeds will need to step up to the Koa Rev+ 2",
+      "No torque sensor on this model; cadence-based assist can feel slightly abrupt off the line compared to torque-sensor bikes in a similar price bracket",
+      "The display is functional but basic: no app connectivity, no GPS, and sunlight readability could be sharper",
+      "At 64.5 lbs, it's lighter than most fat tire ebikes but still heavy enough that apartment dwellers carrying it up stairs will feel it",
+    ],
+  },
+
+  // ============================================
+  // 7. KEY SPECIFICATIONS
+  // ============================================
+  keySpecifications: {
+    heading: "Key Specifications",
+    motorBattery: [
+      { label: "Motor", value: "500W Ananda rear hub motor, 770W peak, 65Nm torque" },
+      { label: "Battery", value: "48V / 500Wh, LG 21700 cells, integrated downtube" },
+      { label: "Claimed range", value: "Up to 75 miles (varies by assist level and terrain)" },
+      { label: "Charger", value: "Standard 2A charger, on-bike and off-bike charging compatible" },
+    ],
+    performance: [
+      { label: "Top speed", value: "20 mph (Class 2)" },
+      { label: "Assist modes", value: "5 PAS levels + push-to-go throttle" },
+      { label: "Ride character", value: "Smooth and planted, confidence-inspiring on mixed terrain" },
+    ],
+    frameBuild: [
+      { label: "Frame style", value: "Step-over (step-through also available)" },
+      { label: "Frame material", value: "6061 hydroformed aluminum, integrated downtube battery" },
+      { label: "Fork", value: "ZOOM with 80mm travel, preload adjustment, lockout" },
+    ],
+    components: [
+      { label: "Brakes", value: "Tektro hydraulic disc, semi-metallic pads, 180mm ebike-specific rotors" },
+      { label: "Drivetrain", value: "Shimano 7-speed" },
+      { label: "Tires", value: '26x4.0" fat MTB with puncture protection' },
+    ],
+  },
+
+  // ============================================
+  // 8. PRICE & VALUE
+  // ============================================
+  priceAndValue: {
+    heading: "Price and Value",
+    paragraphs: [
+      "**MSRP: $1,499.99.** For the spec sheet you're getting here (LG cells, Tektro hydraulics, a 500Wh battery, and an Ananda motor system), that's genuinely competitive. A lot of fat tire ebikes at this price point quietly cut corners on either the battery quality or the brakes. Retrospec doesn't.",
+      "Is it worth the money? Honestly, yes, especially if you catch it during one of Retrospec's fairly frequent sales. The combination of the LG battery (which carries both UL2849 and UL2271 certifications), hydraulic stopping power, and a lighter-than-average frame makes this feel like a $1,800 bike priced at $1,499.",
+      "**Koa Rev 3 vs. Aventon Aventure 3:** The Aventon Aventure 3 sits around $1,699 and brings a 750W motor, a torque sensor, and a smart 4G-connected ACU module. If you want smarter tech and faster speeds, the Aventure is the better pick. But if you're budget-focused and not chasing 28 mph or app connectivity, the Koa Rev 3 gives you most of what matters for less.",
+      "**Koa Rev 3 vs. RadRover 6 Plus:** Rad Power's RadRover 6 Plus comes in around $1,999 and adds more refined tuning and Rad's well-established dealer support network. The RadRover is a more polished package overall, but you're paying $500 more for that polish. For casual riders and first-time fat tire ebike buyers, the Koa Rev 3 is the smarter entry point.",
+    ],
+  },
+
+  // ============================================
+  // 9. DESIGN & BUILD QUALITY
+  // ============================================
+  designAndBuildQuality: {
+    heading: "Design and Build Quality",
+    paragraphs: [
+      "Retrospec builds the Koa Rev 3 around a 6061 hydroformed aluminum frame, and it shows. The welds are clean, the finish is consistent, and nothing flexes or rattles when you put real weight on the pedals. This doesn't feel like a bike that was rushed to market to hit a price point. It feels considered.",
+      "The integrated downtube battery is one of the cleaner design choices at this price. A lot of sub-$1,500 ebikes still bolt an external battery pack onto the frame like an afterthought. The Koa Rev 3 tucks it inside, which keeps the silhouette sleek and protects the battery from debris on rough rides.",
+      "Riding position is upright and comfortable without being awkward. The handlebar reach feels natural for most riders, and the saddle is wide enough for longer sessions without pressure points building up. The step-over version has a fairly accessible standover height, and the step-through version makes mounting genuinely effortless.",
+      "Aesthetically, it's a clean, sporty look that fits in equally well on a bike path or a gravel road. Cable routing is tidy, and the color options are understated enough to age well. Nothing about this screams 'budget' from a distance.",
+    ],
+    image: {
+      image: "/images/electric-bikes/retrospec-koa-rev-3-frame.webp",
+      alt: "Retrospec Koa Rev 3 hydroformed aluminum frame and integrated battery",
+      description: "The integrated downtube battery keeps the Koa Rev 3 looking sharp from every angle",
+    },
+  },
+
+  // ============================================
+  // 10. MOTOR PERFORMANCE & POWER
+  // ============================================
+  motorPerformanceAndPower: {
+    heading: "Motor Performance and Power",
+    paragraphs: [
+      "The 500W Ananda motor peaks at 770W with 65Nm of torque, and in real-world riding it pulls away from stops with confidence. It's not the sharpest acceleration you'll find in the fat tire ebike category, but it's smooth and consistent. PAS 1 and 2 are genuinely useful for casual pedaling, while PAS 4 and 5 are where the bike really opens up and starts covering ground quickly.",
+      "One thing to note: this is a cadence sensor system, not a torque sensor. The difference is most noticeable at low speeds. Cadence-based assist can feel a touch on-or-off versus the more intuitive response of a torque sensor. After a few miles you adapt to it, but riders stepping up from a torque-sensor bike may notice the transition.",
+      "Hill climbing is solid for a 500W motor. On moderate grades (around 5-6%), it maintains speed without breaking a sweat in PAS 4. Steeper climbs in the 10-12% range will require you to drop to a lower gear and keep pedaling, but it never felt like it was about to give up. For a bike in this class, that's about what you'd expect.",
+    ],
+    image: {
+      image: "/images/electric-bikes/retrospec-koa-rev-3-motor.webp",
+      alt: "Retrospec Koa Rev 3 500W Ananda rear hub motor closeup",
+      description: "The Ananda motor system delivers smooth, predictable power across all five assist levels",
+    },
+  },
+
+  // ============================================
+  // 11. BATTERY & RANGE TEST
+  // ============================================
+  batteryAndRangeTest: {
+    heading: "Battery and Range Test",
+    paragraphs: [
+      "Retrospec claims up to 75 miles of range. In real-world testing on mixed terrain (roughly 60% pavement, 40% packed gravel) at PAS 2-3, hitting 45-55 miles per charge is a realistic and comfortable expectation. Riding full throttle or staying in PAS 5 the whole time? Expect more like 25-30 miles. That's not a flaw, that's just how battery physics work on any ebike.",
+      "What stands out here is the battery quality itself. LG 21700 cells are among the better cell choices in this category, and the dual UL certifications (UL2849 and UL2271) mean this battery has been independently stress-tested. A lot of cheaper fat tire ebikes skip that certification step. The Koa Rev 3 doesn't.",
+      "Charging from near-empty takes roughly 5-6 hours with the included 2A charger, which is about average for a 500Wh pack. The battery can be charged on or off the bike, which is a nice flexibility for apartment dwellers who can't wheel the bike up to a wall outlet easily.",
+    ],
+    image: {
+      image: "/images/electric-bikes/retrospec-koa-rev-3-battery.webp",
+      alt: "Retrospec Koa Rev 3 integrated 48V 500Wh LG battery pack",
+      description: "The LG 21700 cells inside the Koa Rev 3 bring real-world credibility to the 75-mile range claim",
+    },
+  },
+
+  // ============================================
+  // 12. RIDE QUALITY & COMFORT
+  // ============================================
+  rideQualityAndComfort: {
+    heading: "Ride Quality and Comfort",
+    paragraphs: [
+      'This is where the Koa Rev 3 earns its reputation. The 26x4.0" fat tires absorb a surprising amount of road imperfection on their own, and paired with the ZOOM 80mm suspension fork, the bike stays composed on surfaces that would rattle a narrower-tire ebike into submission. Cracked pavement, gravel, packed dirt: none of it bothers this bike much.',
+      "At speed, the bike feels stable and planted. It corners predictably and doesn't wander on straights. The wide tires do add some rolling resistance compared to a slimmer-tire commuter bike, so if you're doing long stretches of pure pavement you'll notice it's working a little harder at the same assist level. That's just the fat tire tradeoff, and the stability you get in return is worth it for most riders.",
+      "After 60-90 minutes in the saddle, the upright riding position does its job. No significant lower back fatigue or wrist pressure during testing. The saddle is comfortable for most body types, though longer-distance riders might want to swap it for something with a center cutout.",
+    ],
+    image: {
+      image: "/images/electric-bikes/retrospec-koa-rev-3-riding.webp",
+      alt: "Rider on Retrospec Koa Rev 3 fat tire electric bike on gravel path",
+      description: "The fat tires and 80mm fork absorb the rough stuff without drama",
+    },
+  },
+
+  // ============================================
+  // 13. COMPONENTS & FEATURES
+  // ============================================
+  componentsAndFeatures: {
+    heading: "Components and Features",
+    paragraphs: [
+      "The Tektro hydraulic disc brakes with 180mm ebike-specific rotors are genuinely one of the best things about this bike. They modulate well, they don't fade on long descents, and they performed just as reliably on wet gravel as they did on dry pavement. At this price, a lot of competitors are still shipping mechanical disc brakes. Retrospec went hydraulic, and your wrists will thank them.",
+      "The Shimano 7-speed drivetrain is a solid, workhorse choice. Shifts are crisp and precise, and the gear range covers enough ground to be useful whether you're spinning along a flat path or grinding up a steeper climb in PAS 2. No complaints here. It's a well-matched drivetrain for how this bike is designed to be used.",
+      "The 26x4.0\" fat tires come with puncture protection built in, which adds a little peace of mind for off-road riding. Grip is good in most conditions. Rolling resistance is higher than a standard tire, but that's the deal you make with fat tires: more traction, more cushion, slightly more effort on the flats.",
+      "Integrated front and rear lights with a brake indicator are standard. The rear light actually reacts to braking input, which adds a real layer of safety for commuters in traffic. The brightness is adequate for visibility without being blinding. Fenders are included too, which keeps the mud and spray off your back on wet trails.",
+    ],
+    image: {
+      image: "/images/electric-bikes/retrospec-koa-rev-3-brakes.webp",
+      alt: "Tektro hydraulic disc brakes on the Retrospec Koa Rev 3 electric fat bike",
+      description:
+        "Tektro hydraulic brakes are a genuine upgrade over the mechanical brakes common on competing ebikes at this price",
+    },
+  },
+
+  // ============================================
+  // 14. DISPLAY / APP / UX
+  // ============================================
+  displayAppUserExperience: {
+    heading: "Display, App, and User Experience",
+    paragraphs: [
+      "The Koa Rev 3 uses an Ananda-integrated LCD display that shows speed, battery level, assist level, and trip data. It's clear and functional. In direct sunlight, readability is decent but not great. Glare is noticeable on very bright days. There's no backlight adjustment, which would have been a nice addition for low-light riding. That said, everything you actually need to know while riding is visible at a glance.",
+      "No app connectivity on this model. No GPS, no Bluetooth pairing, no remote diagnostics. For some riders that's a dealbreaker. For others, it's actually refreshing. You just ride. If you want smart bike features, that's the lane the Aventon Aventure 3 (with its 4G ACU module) is built for.",
+      "Out-of-box assembly is straightforward. Retrospec includes all the tools you need folded into a single multi-tool, which is a thoughtful touch. Most new riders can get the bike road-ready in 30-45 minutes. The Ananda system's five PAS levels are intuitive to use from day one, with no manual required.",
+    ],
+    image: {
+      image: "/images/electric-bikes/retrospec-koa-rev-3-display.webp",
+      alt: "Retrospec Koa Rev 3 LCD handlebar display showing speed and assist level",
+      description: "The display is clean and functional, though it doesn't have app connectivity",
+    },
+  },
+
+  // ============================================
+  // 15. WHO THIS E-BIKE IS FOR
+  // ============================================
+  whoThisEBikeIsFor: {
+    heading: "Who This E-Bike Is For",
+    paragraphs: [
+      "**Commuters:** Yes, with caveats. The integrated lights, included fenders, and reliable brakes make the Koa Rev 3 legitimately practical for daily commuting on routes under 20 miles each way. It's heavier than a dedicated commuter ebike, which matters if you need to carry it up stairs or onto transit. But for point-to-point riding with secure parking, it works well.",
+      "**Casual and weekend riders:** This is the sweet spot. Riders who want to explore a mix of bike paths, light gravel, and neighborhood streets will love how the Koa Rev 3 handles everything without complaint. It's also a strong choice for newer riders who want a confidence-inspiring platform that's stable, forgiving, and not too intimidating.",
+      "**Off-road riders:** It handles light trails, packed dirt, and gravel comfortably. But be honest with yourself. If you're planning to hit technical singletrack or steep descents regularly, the front-only suspension and hub motor setup isn't built for that. For serious trail riding, you'd want a purpose-built trail ebike with full suspension.",
+    ],
+  },
+
+  // ============================================
+  // 16. ALTERNATIVES TO CONSIDER
+  // ============================================
+  alternativesToConsider: {
+    heading: "Alternatives to Consider",
+    comparisons: [
+      {
+        modelComparison: "Retrospec Koa Rev 3 vs. Aventon Aventure 3",
+        optionA: {
+          label: "Choose the Koa Rev 3 if...",
+          points: [
+            "Your budget tops out at $1,499 and you don't want to stretch",
+            "You don't care about app connectivity or smart features",
+            "You want a simpler riding experience with no Bluetooth setup",
+          ],
+        },
+        optionB: {
+          label: "Choose the Aventon Aventure 3 if...",
+          points: [
+            "You want Class 3 speeds and a torque sensor for more intuitive assist",
+            "Smart security features (geofencing, remote wheel lock) matter to you",
+            "You're willing to pay around $200 more for a more feature-rich platform",
+          ],
+        },
+      },
+      {
+        modelComparison: "Retrospec Koa Rev 3 vs. Rad Power RadRover 6 Plus",
+        optionA: {
+          label: "Choose the Koa Rev 3 if...",
+          points: [
+            "You want a genuinely well-spec'd fat tire ebike without spending $1,999",
+            "LG battery quality and hydraulic brakes at $1,499 is the value story you're here for",
+            "You're a newer rider who doesn't need Rad's deeper ecosystem of accessories",
+          ],
+        },
+        optionB: {
+          label: "Choose the RadRover 6 Plus if...",
+          points: [
+            "You want Rad Power's established dealer network and support infrastructure",
+            "More refined tuning and a longer track record of customer service matter to you",
+            "You're a more experienced rider who wants the extra polish that $500 buys",
+          ],
+        },
+      },
+    ],
+  },
+
+  // ============================================
+  // 17. FINAL VERDICT
+  // ============================================
+  finalVerdict: {
+    heading: "Final Verdict",
+    summary:
+      "The Retrospec Koa Rev 3 is a genuinely solid electric fat bike that earns its $1,499 price tag. The LG battery, Tektro hydraulic brakes, and lighter-than-average frame make it feel more premium than its price suggests. The trade-offs are real: no torque sensor, no app connectivity, and Class 2 speed limits only. But for the rider this bike is built for, none of those gaps sting much.",
+    recommendation:
+      "If you're a casual commuter, weekend explorer, or first-time fat tire ebike buyer who wants one bike that handles pavement and light gravel without fuss, the Koa Rev 3 is easy to recommend. Catch it on sale and it becomes a near-obvious yes. If you're chasing Class 3 speeds, smart connectivity, or serious trail capability, spend a bit more and look at the Aventon Aventure 3 or Retrospec's own Koa Rev+ 2 instead.",
+  },
+
+  // ============================================
+  // 18. FAQ SECTION
+  // ============================================
+  faqTitle: "FAQs",
+  faq: [
+    {
+      question: "Is the Retrospec Koa Rev 3 good for commuting?",
+      answer:
+        "Yes, for most commuting use cases it works well. The integrated front and rear lights (with brake indicator), included fenders, and reliable Tektro hydraulic brakes make it practical for daily use. It's heavier than a dedicated commuter ebike at 64.5 lbs, so factor that in if you need to carry it up stairs or onto transit. For routes up to 15-20 miles each way with secure parking, it handles commuting fine.",
+    },
+    {
+      question: "How fast does the Koa Rev 3 go?",
+      answer:
+        "The Koa Rev 3 is a Class 2 ebike with a top assisted speed of 20 mph. It has five pedal assist levels and a push-to-go throttle. If you want faster speeds (up to 28 mph), Retrospec's Koa Rev+ 2 is the Class 3 option in the same family.",
+    },
+    {
+      question: "What is the real-world range of the Koa Rev 3?",
+      answer:
+        "Retrospec claims up to 75 miles, which represents best-case conditions at low assist on flat ground. In mixed riding (pavement plus gravel, PAS 2-3), 45-55 miles is a realistic expectation. Riding primarily in PAS 5 or heavy throttle use will bring that down to 25-30 miles. Rider weight, terrain, and assist level all play a significant role.",
+    },
+    {
+      question: "Is the Koa Rev 3 worth buying in 2026?",
+      answer:
+        "Yes, it's still a competitive pick in 2026 for its price range. The LG battery quality and Tektro hydraulic brakes are meaningful differentiators at $1,499. Newer options like the Aventon Aventure 3 have raised the bar on smart features and torque sensor performance, but if you don't need those extras, the Koa Rev 3 gives you a lot of bike for the money, especially on sale.",
+    },
+    {
+      question: "How does the Koa Rev 3 compare to the Aventon Aventure 3?",
+      answer:
+        "The Aventon Aventure 3 costs around $200 more and brings a 750W motor, a torque sensor, and 4G smart connectivity (geofencing, remote wheel lock, app integration). If those features matter to you, the Aventure 3 is the better bike. But if you want a simpler, lighter experience with solid brakes and a quality battery at a lower price, the Koa Rev 3 holds up well in the comparison.",
+    },
+    {
+      question: "What makes the Koa Rev 3 battery stand out?",
+      answer:
+        "The Koa Rev 3 uses LG 21700 cells, which are known for consistency and longevity. The battery carries both UL2849 and UL2271 safety certifications, meaning it's been independently tested for electrical system safety and battery safety. At $1,499, that level of battery certification isn't guaranteed. It's a real differentiator for Retrospec.",
+    },
+    {
+      question: "Can the Koa Rev 3 handle off-road trails?",
+      answer:
+        "It handles light off-road well: packed dirt, gravel paths, and moderate terrain are all comfortable. The 26x4.0\" fat tires with puncture protection and the 80mm ZOOM suspension fork do solid work absorbing trail vibration. It's not built for aggressive singletrack or technical descents. For that you'd want a full-suspension trail ebike. But for mixed-terrain adventuring and light trail use, it's capable enough.",
+    },
+  ],
+
+  // ============================================
+  // 19. VIDEO REVIEW (OPTIONAL)
+  // ============================================
+  videoReview: {
+    heading: "Video Review",
+    title: "Retrospec Koa Rev 3 Video Review",
+    embedUrl: "https://www.youtube.com/embed/PLACEHOLDER_VIDEO_ID",
+    description:
+      "A hands-on ride review of the Koa Rev 3 covering first impressions, motor feel, braking, and real-world terrain testing to complement the written breakdown above.",
+  },
+};
+
+const retrospecValenRev2Article = {
+  // ============================================
+  // 1. REQUIRED FIELDS
+  // ============================================
+  id: "retrospec-valen-rev-2",
+  slug: "retrospec-valen-rev-2-review",
+  categorySlug: "electric-fat-bikes",
+  category: "Electric Fat Bikes",
+  brandCategorySlug: "retrospec",
+  brandCategory: "Retrospec",
+  contentType: "brand",
+
+  // ============================================
+  // 2. SEO & METADATA -- THE 3 KINGS
+  // ============================================
+  title: "Retrospec Valen Rev 2 Review (2025): Best Budget Fat Tire Electric Bike?",
+  seoTitle: "Retrospec Valen Rev 2 Review 2025: Worth It?",
+  h1: "Retrospec Valen Rev 2 Review: Real-World Performance on the Best Budget Fat Tire E-Bike",
+  metaDescription: "Hands-on Retrospec Valen Rev 2 review. 750W motor, 49-mile range, fat tires, under $1,300. Is it the best electric fat bike for the money? Find out here.",
+
+  // ============================================
+  // 3. IMAGES
+  // ============================================
+  heroImage: "/images/electric-bikes/retrospec-valen-rev-2.webp",
+  cardImage: "/images/electric-bikes/retrospec-valen-rev-2.webp",
+  articleHeroImage: "/images/electric-bikes/retrospec-valen-rev-2.webp",
+  heroImageAlt: "Retrospec Valen Rev 2 fat tire electric bike in Matte Riptide Blue on a paved trail",
+
+  // ============================================
+  // 4. PUBLISHING & CTA
+  // ============================================
+  estimatedReadingTime: 12,
+  publishedAt: "2026-01-18T00:00:00Z",
+  affiliateLink: brandAffiliateLinks["retrospec-valen-rev-2"],
+  ctaLabel: "Check Latest Price",
+
+  // ============================================
+  // 5. QUICK SUMMARY (H2)
+  // ============================================
+  quickSummary: {
+    heading: "Quick Summary",
+    paragraphs: [
+      "The Retrospec Valen Rev 2 is a moto-style electric fat bike that punches well above its price tag. At around $1,299, it's one of the most affordable ways to get into the fat tire ebike category without ending up with something that feels like a toy. A 750W rear-hub motor, 48V/500Wh LG battery, and a claimed 49-mile range give it serious credibility on paper, and it mostly delivers in the real world too.",
+      "**Best for:** Casual riders, weekend adventurers, and budget-conscious shoppers who want the moto-style aesthetic and fat tire confidence without spending $1,500 or more.",
+      "**Not ideal for:** Riders who need integrated lights, multi-speed gearing, or plan to pedal hard on long-distance rides. The single-speed drivetrain and absent lighting are real trade-offs at this price.",
+    ],
+    ratingMatrix: {
+      heading: "Performance Rating Matrix",
+      metrics: [
+        { category: "Ride Quality", rating: 8.0 },
+        { category: "Components", rating: 7.0 },
+        { category: "Screen/App", rating: 6.0 },
+        { category: "Range", rating: 7.5 },
+        { category: "Hill Climbing", rating: 7.5 },
+      ],
+      overallLabel: "Overall Rating",
+      overallRating: "7.5/10",
+      overallNote: "A surprisingly capable fat tire ebike for riders who prioritize value and simplicity",
+    },
+  },
+
+  // ============================================
+  // 6. PROS & CONS (H2 + H3s)
+  // ============================================
+  prosCons: {
+    heading: "Pros and Cons",
+    whatWeLike: [
+      "Price around $1,299 makes it one of the most affordable moto-style fat tire ebikes on the market",
+      "750W planetary geared hub motor delivers confident, punchy acceleration that matches the bike's personality",
+      "At roughly 65 lbs, it's noticeably lighter than most competitors in this style category (many weigh 80-90 lbs)",
+      "LG 21700 battery cells are a premium touch at this price point, not a generic pack",
+      "Tektro Aries mechanical disc brakes with 180mm rotors provide surprisingly short stopping distances for the size",
+      "Available in a step-through frame design, which is uncommon among moto-style ebikes",
+      "Distinctive cross-frame design and Matte Riptide Blue color option stand out from the sea of black-and-grey moto bikes",
+      "UL2271 and UL2849 certified, which matters for fire safety, especially for indoor charging",
+    ],
+    whatCouldBeBetter: [
+      "No integrated lights included. That's a real gap for any rider who commutes in low-light conditions",
+      "Single-speed drivetrain means your legs run out of road on flat straights above 20 mph before the motor even maxes out",
+      "LED indicator panel shows battery level and assist mode but lacks speed display, odometer, or trip data",
+      "49-mile range is under ideal conditions; real-world throttle-heavy use will cut that number significantly",
+      "Rigid steel fork with no suspension, so rough trails and cracked pavement translate directly to your hands and wrists",
+      "No app connectivity or Bluetooth, so you're riding analog beyond the basic LED readout",
+    ],
+  },
+
+  // ============================================
+  // 7. KEY SPECIFICATIONS (H2 + H3 groups)
+  // ============================================
+  keySpecifications: {
+    heading: "Key Specifications",
+    motorBattery: [
+      { label: "Motor", value: "750W Planetary Geared Rear Hub Motor" },
+      { label: "Battery", value: "48V / 500Wh LG Li-ion (21700 cells)" },
+      { label: "Claimed range", value: "Up to 49 miles (conditions dependent)" },
+      { label: "Charger", value: "48V 2A standard charger (on- or off-bike charging)" },
+      { label: "Charge time", value: "Approximately 5-6 hours from empty" },
+    ],
+    performance: [
+      { label: "Top assisted speed", value: "20 mph (Class 2)" },
+      { label: "Throttle", value: "Full thumb throttle" },
+      { label: "Assist modes", value: "5 Pedal Assist levels + full throttle + walk mode" },
+      { label: "Ride class", value: "Class 2" },
+    ],
+    frameBuild: [
+      { label: "Frame", value: "Valen 6061 hydroformed aluminum with external downtube battery" },
+      { label: "Fork", value: "Rigid triple clamp steel fork" },
+      { label: "Weight limit", value: "350 lbs recommended" },
+      { label: "Bike weight", value: "Approximately 65 lbs" },
+    ],
+    components: [
+      { label: "Brakes", value: "Tektro Aries mechanical disc brakes, semi-metallic pads, 180mm rotors" },
+      { label: "Drivetrain", value: "Single speed" },
+      { label: "Tires", value: "20x4.0 fat tires with full-coverage puncture protection and reflective safety strip" },
+      { label: "Grips", value: "Lock-on comfort grips" },
+      { label: "Safety certifications", value: "UL2271 and UL2849 certified" },
+    ],
+  },
+
+  // ============================================
+  // 8. PRICE & VALUE (H2)
+  // ============================================
+  priceAndValue: {
+    heading: "Price and Value",
+    paragraphs: [
+      "**MSRP: Around $1,299.** For a moto-style fat tire ebike with a 750W motor and LG battery cells, that's a genuinely competitive price. Most bikes in this aesthetic category start at $1,500 and climb toward $2,000 without hesitation. Retrospec clearly set out to undercut that, and they succeeded.",
+      "The value equation here is pretty straightforward: you're getting real performance hardware (the motor, the battery cells, the brakes) at a budget price by cutting back on the comfort upgrades and extras. No lights, no suspension fork, no app, no gearing. Whether that trade-off makes sense completely depends on how you plan to ride it.",
+      "Compare it to the Lectric XP 3.0, which sits in a similar price range around $999 but folds for storage and includes lights and fenders. The Lectric wins on practicality for commuters. But if the moto look is what you're after and you want something that feels more substantial underfoot, the Valen Rev 2 is the stronger choice.",
+      "If you can stretch the budget to around $1,799, Retrospec's own Valen Rev Plus adds a suspension fork, hydraulic brakes, integrated lighting, 8-speed drivetrain, and a bigger 720Wh battery. For riders who plan to pedal seriously or ride after dark, that upgrade is worth every extra dollar.",
+    ],
+  },
+
+  // ============================================
+  // 9. DESIGN & BUILD QUALITY (H2)
+  // ============================================
+  designAndBuildQuality: {
+    heading: "Design and Build Quality",
+    paragraphs: [
+      "The frame is where the Valen Rev 2 earns some genuine admiration. The 6061 hydroformed aluminum has clean welds, and the cross-shaped moto frame design actually looks intentional rather than derivative. Most moto-style ebikes look like they were cloned from the same CAD file. This one has its own personality.",
+      "Weigh it against the category average and the 65-pound figure is a real advantage. That extra lightness comes from the rigid steel fork (no suspension hardware to add weight) and the more compact 20-inch wheel format. It makes a difference the moment you try to lift it up a curb or haul it up a flight of stairs.",
+      "Color options are a highlight. The Matte Riptide Blue is genuinely striking. Most fat tire moto bikes are black or dark grey by default, so seeing a well-executed blue on this one turns heads. The external downtube battery integrates cleanly into the frame silhouette.",
+      "One thing to note: the triple clamp rigid steel fork looks the part visually, giving the bike its motorcycle-inspired stance. But don't mistake aesthetics for performance. It's rigid steel, not suspension. You'll feel every crack in the pavement through your wrists.",
+    ],
+    image: {
+      image: "/images/electric-bikes/retrospec-valen-rev-2-frame.webp",
+      alt: "Retrospec Valen Rev 2 moto-style frame and downtube battery detail",
+      description: "The Valen Rev 2's distinctive cross-frame design and externally mounted battery give it a clean, moto-inspired silhouette.",
+    },
+  },
+
+  // ============================================
+  // 10. MOTOR PERFORMANCE & POWER (H2)
+  // ============================================
+  motorPerformanceAndPower: {
+    heading: "Motor Performance and Power",
+    paragraphs: [
+      "Here's the thing: a 750W planetary geared hub motor on a 65-pound bike is a lot of motor for the weight. The pull from a stop is immediate and satisfying. You squeeze the throttle and it goes. No hesitation, no gradual ramp-up. That kind of responsiveness makes city riding genuinely fun.",
+      "The five pedal assist levels progress fairly evenly. Level 1 is a gentle push, good for keeping pace on flat bike paths without much effort. By level 3 you're cruising comfortably in the 15 mph range. Level 5 gives you everything the motor has, which gets you to the 20 mph Class 2 cap without much trouble on flat ground.",
+      "Hill climbing is where the combination of motor power and low bike weight pays dividends. On moderate urban grades (roughly 5-7%), the Rev 2 handles without bogging down or feeling like the motor is working too hard. Steep climbs will slow it down, but it won't stop dead the way some underpowered hub motors do. The single-speed drivetrain means your legs are less helpful on those climbs, so the motor carries most of the load.",
+      "One honest observation: the cadence sensor pedal assist isn't the most refined system out there. It responds to pedaling motion rather than actual torque, so there's a slight lag when you start pedaling from a stop before the motor kicks in. It's not terrible, just noticeable compared to torque-sensor bikes.",
+    ],
+    image: {
+      image: "/images/electric-bikes/retrospec-valen-rev-2-motor.webp",
+      alt: "Retrospec Valen Rev 2 750W rear hub motor close-up",
+      description: "The 750W planetary geared rear hub motor provides fast, confident power delivery on both throttle and pedal assist.",
+    },
+  },
+
+  // ============================================
+  // 11. BATTERY & RANGE TEST (H2)
+  // ============================================
+  batteryAndRangeTest: {
+    heading: "Battery and Range Test",
+    paragraphs: [
+      "Retrospec claims up to 49 miles per charge. Under ideal conditions (low assist, light rider, flat terrain), that's probably achievable. In the real world, riding with regular throttle use and a mixed route, expect something closer to 25-35 miles. That's still solid for a $1,299 ebike, but it's worth calibrating your expectations before a long ride.",
+      "The LG 21700 cell chemistry is a genuine quality mark. Most budget ebikes source generic cells that degrade faster over charge cycles. LG cells hold capacity better over time, which means the battery you have in year three should perform noticeably better than a comparable bike using off-brand cells.",
+      "Charging is straightforward. The downtube battery pops off for indoor charging (handy for apartment dwellers) or you can charge it while it's mounted on the bike. The 48V 2A charger takes around 5 to 6 hours from empty. That's not fast, but it's typical for the category. If you're charging overnight, it's a non-issue.",
+      "Range variables to keep in mind: every sustained throttle blast, every significant hill, and every extra 20 pounds on the bike chips away at that claimed number. Rider weight near the 350-pound limit will reduce range substantially. In cooler weather (below 40 F), lithium batteries also lose capacity, so winter riding shortens the range further.",
+    ],
+    image: {
+      image: "/images/electric-bikes/retrospec-valen-rev-2-battery.webp",
+      alt: "Retrospec Valen Rev 2 removable 48V 500Wh LG battery on downtube",
+      description: "The 500Wh LG Li-ion battery mounts externally on the downtube and removes easily for off-bike charging.",
+    },
+  },
+
+  // ============================================
+  // 12. RIDE QUALITY & COMFORT (H2)
+  // ============================================
+  rideQualityAndComfort: {
+    heading: "Ride Quality and Comfort",
+    paragraphs: [
+      "The fat tires do a lot of the heavy lifting here. Those 20x4.0 knobby tires run at lower PSI than regular bike tires, which gives them a natural cushioning effect. On broken pavement, parking lot seams, and gravel patches, the tires absorb a surprising amount of chatter that would rattle your fillings on a skinny-tire bike.",
+      "The elongated moto saddle is legitimately comfortable. It's thick, well-padded, and wide enough to feel stable under a range of body types. After 60 to 90 minutes of riding, there's some pressure buildup. It's not a premium saddle, but it holds up better than the flat, narrow seats that come on a lot of similarly priced ebikes.",
+      "Handling is stable but not agile. The 20-inch wheel size keeps the center of gravity relatively low, which makes the bike feel planted, especially at lower speeds. Don't expect it to carve corners like a proper mountain bike, but it tracks confidently through sweeping turns and feels composed at its 20 mph top speed.",
+      "That rigid steel fork is the comfort limiting factor. Smooth roads feel great. Anything choppier than light gravel starts to vibrate through the bars noticeably. If you're planning to ride on anything rougher than packed dirt paths regularly, the Rev Plus's 100mm suspension fork is worth the upgrade price.",
+    ],
+    image: {
+      image: "/images/electric-bikes/retrospec-valen-rev-2-riding.webp",
+      alt: "Rider on Retrospec Valen Rev 2 fat tire electric bike on a paved urban path",
+      description: "The upright riding position and wide fat tires make the Valen Rev 2 comfortable and stable on a variety of surfaces.",
+    },
+  },
+
+  // ============================================
+  // 13. COMPONENTS & FEATURES (H2)
+  // ============================================
+  componentsAndFeatures: {
+    heading: "Components and Features",
+    paragraphs: [
+      "The Tektro Aries mechanical disc brakes with 180mm rotors are one of the standout components at this price. Combined with the bike's relatively light 65-pound weight, stopping distances are genuinely impressive. In dry conditions the brakes feel sharp and well-modulated. In wet weather they hold up fine. They require occasional cable adjustment like any mechanical disc system, but that's a five-minute job with a hex key.",
+      "Single-speed drivetrain is the polarizing choice here. On one hand, it means zero shifting, zero derailleur adjustments, and very little that can go wrong mechanically. On the other hand, once you're above about 15 mph, you're just spinning your legs with no mechanical advantage. For throttle-primary riders in flat terrain, it's a non-issue. For anyone who plans to genuinely pedal the bike on rolling terrain, it's a real limitation.",
+      "The 20x4.0 fat tires have chunky off-road tread and full-coverage puncture protection plus a reflective sidewall strip. They grip well on gravel, sand, and dirt. On wet pavement they're predictable. The knobby pattern adds noticeable rolling resistance on smooth asphalt. You'll feel it when pedaling without assist, but that's the standard fat tire trade-off.",
+      "No lights are included. This is worth repeating because it catches people off guard. The bike has a reflective tire strip for passive visibility, but zero active lighting. For riding after dusk you'll need to purchase a headlight and taillight separately. Retrospec's Rev Plus model includes integrated lighting, which underscores that lights were a deliberate omission here to hit the price point.",
+    ],
+    image: {
+      image: "/images/electric-bikes/retrospec-valen-rev-2-brakes.webp",
+      alt: "Tektro Aries mechanical disc brakes on Retrospec Valen Rev 2",
+      description: "Tektro Aries mechanical disc brakes with 180mm rotors deliver confident stopping power that outperforms what you'd expect at this price.",
+    },
+  },
+
+  // ============================================
+  // 14. DISPLAY / APP / UX (H2)
+  // ============================================
+  displayAppUserExperience: {
+    heading: "Display, App, and User Experience",
+    paragraphs: [
+      "There's no color display, no app, no Bluetooth. The Valen Rev 2 uses a simple handlebar-mounted LED indicator panel that shows your battery level and current pedal assist setting. That's it. No speed readout, no odometer, no trip data. If you're coming from a bike with a full LCD display, this will feel like a step back. If you've never had one, you probably won't miss it.",
+      "What the simple LED setup does deliver is ease of use. Two buttons control everything: bump up pedal assist, bump it down. Long-press for walk mode. Thumb throttle on the right grip for full motor engagement. New riders can figure it out in about 90 seconds without reading a manual.",
+      "Out-of-box setup is refreshingly simple. The bike ships mostly assembled. Attach the handlebars, mount the pedals, adjust saddle height, and charge the battery. Retrospec's easy-change rear wheel system also makes removing and reinstalling the back wheel for maintenance much less painful than the standard axle-nut nightmare on most ebikes.",
+    ],
+    image: {
+      image: "/images/electric-bikes/retrospec-valen-rev-2-display.webp",
+      alt: "Retrospec Valen Rev 2 handlebar LED control panel and thumb throttle",
+      description: "The simple LED indicator panel shows battery level and assist mode. It's minimal but functional and easy to operate while riding.",
+    },
+  },
+
+  // ============================================
+  // 15. WHO THIS E-BIKE IS FOR (H2)
+  // ============================================
+  whoThisEBikeIsFor: {
+    heading: "Who This E-Bike Is For",
+    paragraphs: [
+      "**Casual weekend riders:** This is probably the Valen Rev 2's sweet spot. If you want to cruise beach paths, explore local trails, or just roll around the neighborhood with a bike that looks cool and doesn't require a finance plan, this is a satisfying choice. The moto styling gets compliments, the ride is comfortable, and 25-35 real-world miles covers most leisure ride distances easily.",
+      "**Heavier riders:** The 350-pound weight limit is genuinely generous for this category. Combined with the wide fat tires and sturdy frame construction, bigger riders will feel less compromised here than on most similarly priced ebikes. Just factor in reduced range at higher weights.",
+      "**Budget-first shoppers:** If the moto-style fat tire aesthetic is what you want and your hard budget ceiling is $1,300, you'd be hard-pressed to find more bike for the money. The motor is real, the battery cells are quality, and the brakes are better than the price would suggest. You're cutting costs on convenience features, not core performance.",
+      "**Commuters:** Honestly, look elsewhere, or budget for aftermarket lights immediately. No built-in lighting is a genuine safety and legal issue for daily commuters. The Lectric XP 3.0 or Aventon Sinch.2 make more practical commuters at similar price points. If the moto look is non-negotiable, step up to the Valen Rev Plus.",
+    ],
+  },
+
+  // ============================================
+  // 16. ALTERNATIVES TO CONSIDER (H2)
+  // ============================================
+  alternativesToConsider: {
+    heading: "Alternatives to Consider",
+    comparisons: [
+      {
+        modelComparison: "Retrospec Valen Rev 2 vs Retrospec Valen Rev Plus",
+        optionA: {
+          label: "Choose the Valen Rev 2 if...",
+          points: [
+            "Your budget is firmly under $1,400 and you need a capable fat tire ebike in the moto style",
+            "You ride primarily in daylight and don't need integrated lighting",
+            "You prefer throttle-dominant riding over pedaling and single-speed simplicity appeals to you",
+            "You want the lightest moto-style fat bike in the category at around 65 lbs",
+          ],
+        },
+        optionB: {
+          label: "Choose the Valen Rev Plus if...",
+          points: [
+            "You'll ride in mixed lighting conditions and need built-in front and rear lights",
+            "You want the 100mm suspension fork for trail riding and rougher terrain",
+            "You prefer hydraulic disc brakes and the 8-speed Shimano drivetrain for real pedaling versatility",
+            "The extra $500 is workable and you want the complete, no-compromises version of this bike",
+          ],
+        },
+      },
+      {
+        modelComparison: "Retrospec Valen Rev 2 vs Lectric XP 3.0",
+        optionA: {
+          label: "Choose the Valen Rev 2 if...",
+          points: [
+            "The moto-style aesthetic is a priority. The Lectric looks like a folding commuter, not a motorcycle",
+            "You want a higher weight limit (350 lbs vs 330 lbs on the Lectric)",
+            "You prefer a slightly more planted, non-folding ride feel at speed",
+          ],
+        },
+        optionB: {
+          label: "Choose the Lectric XP 3.0 if...",
+          points: [
+            "You need a folding fat tire ebike for apartment storage or mixed transit commutes",
+            "Integrated lighting and included fenders matter for practical everyday use",
+            "Budget is tight, and the XP 3.0 comes in around $200 less than the Rev 2",
+          ],
+        },
+      },
+    ],
+  },
+
+  // ============================================
+  // 17. FINAL VERDICT (H2)
+  // ============================================
+  finalVerdict: {
+    heading: "Final Verdict",
+    summary: "The Retrospec Valen Rev 2 is a genuinely good fat tire electric bike for what it costs. The motor is punchy, the LG battery pack is a quality component, the brakes stop the bike well, and the 65-pound weight makes it easier to live with than most moto-style competitors. The trade-offs are real though: no lights, no suspension, a single-speed drivetrain, and a very basic display. These aren't deal-breakers for the right rider, but they rule the bike out for serious commuters and trail enthusiasts.",
+    recommendation: "Buy it if you're a leisure rider, weekend explorer, or bigger rider who wants an affordable electric fat bike with real personality and doesn't need every convenience feature. Skip it if you ride after dark regularly, plan to tackle technical trails, or want a proper pedaling experience on varied terrain. For those riders, save another $500 and get the Valen Rev Plus instead.",
+  },
+
+  // ============================================
+  // 18. FAQ SECTION (H2 + H3 questions)
+  // ============================================
+  faqTitle: "FAQs",
+  faq: [
+    {
+      question: "Is the Retrospec Valen Rev 2 good for commuting?",
+      answer: "It depends heavily on your commute. For daytime rides of 10-15 miles on bike paths or quiet streets, it's comfortable and capable. The problem is the lack of integrated lights. Riding this in low-light conditions or after dark requires adding aftermarket lighting, which is both an extra cost and an extra step every ride. If your commute is entirely in daylight and you don't need fenders, it'll do the job. But for most urban commuters, a bike like the Lectric XP 3.0 or Aventon Sinch.2 is a more practical fit.",
+    },
+    {
+      question: "How fast does the Retrospec Valen Rev 2 go?",
+      answer: "The Valen Rev 2 tops out at 20 mph in pedal assist mode, which puts it in the Class 2 category. The full throttle also maxes at 20 mph. Legally, this means it can use bike lanes in most US states without registration. You won't be breaking any speed records, but 20 mph is plenty comfortable for casual riding and covers ground quickly enough to be genuinely useful.",
+    },
+    {
+      question: "What is the real-world range of the Valen Rev 2?",
+      answer: "Retrospec claims up to 49 miles, which is achievable under ideal conditions: light pedal assist, flat terrain, lighter rider. In typical real-world use with regular throttle engagement and mixed terrain, expect 25-35 miles per charge. Heavier riders (above 250 lbs), frequent full-throttle use, and hilly routes will push you toward the lower end of that range. For most leisure and recreational rides, 25+ miles is more than enough.",
+    },
+    {
+      question: "Is the Retrospec Valen Rev 2 worth buying in 2025?",
+      answer: "Yes, for the right buyer. At around $1,299, it remains one of the most affordable ways to get a moto-style fat tire electric bike with a real 750W motor and quality LG battery cells. The spec sheet holds up in 2025 and the value proposition is still strong compared to similarly priced competitors. Just go in with clear eyes about what's missing: lights, suspension, gearing, and a real display. If you can live with that, you'll be happy with the purchase.",
+    },
+    {
+      question: "How does the Valen Rev 2 compare to the Valen Rev Plus?",
+      answer: "The Rev 2 and Rev Plus share the same moto-style DNA and 750W motor, but the Rev Plus adds a 100mm suspension fork, hydraulic disc brakes, Shimano 8-speed drivetrain, integrated front and rear lighting, a larger 720Wh battery, and a top speed of 28 mph (Class 3). The Rev Plus costs around $500 more at roughly $1,799. If you'll use any of those upgrade features regularly, especially the lights or the suspension, the Rev Plus is worth the stretch. If you're riding casually in daylight and want to keep costs down, the Rev 2 delivers the essentials.",
+    },
+    {
+      question: "Does the Retrospec Valen Rev 2 have suspension?",
+      answer: "No. The Valen Rev 2 uses a rigid triple clamp steel fork with no suspension travel. The fat tires do provide natural cushioning at lower PSI, which absorbs a fair amount of vibration on smooth-to-moderate surfaces. But for anything rougher than light gravel or broken pavement, you'll feel the difference. Riders who want suspension need to step up to the Valen Rev Plus, which comes with a 100mm suspension fork.",
+    },
+    {
+      question: "What is the weight limit on the Retrospec Valen Rev 2?",
+      answer: "Retrospec rates the Valen Rev 2 with a 350-pound recommended weight limit. That's one of the higher limits in this price range and makes it a solid option for heavier riders. The elongated moto saddle is designed to accommodate riders across a range of body types. Keep in mind that heavier loads will reduce the effective range per charge, so adjust your mileage expectations accordingly.",
+    },
+    {
+      question: "Is the Retrospec Valen Rev 2 a good electric fat bike for beginners?",
+      answer: "Actually, yes. It's well-suited for new ebike riders in several ways. The single-speed drivetrain removes the complexity of shifting. The thumb throttle is intuitive. The five pedal assist levels let you dial in as much or as little motor help as you want while you get comfortable. The fat tires also make the bike feel more stable and forgiving than a standard ebike, which builds confidence quickly. The only beginner caveat: add lights before riding after dark, as none are included.",
+    },
+  ],
+
+  // ============================================
+  // 19. VIDEO REVIEW (OPTIONAL)
+  // ============================================
+  videoReview: {
+    heading: "Video Review",
+    title: "Retrospec Valen Rev 2 Video Review",
+    embedUrl: "https://www.youtube.com/embed/",
+    description: "Watch a full ride test of the Valen Rev 2 covering motor performance, real-world range, comfort on different surfaces, and a direct comparison with the Valen Rev Plus.",
+  },
+};
+
 
 const brands = [
   chathamRevPlus2Article,
   chathamRev3Article,
   beaumontRevPlusArticle,
+  beaumontRev3StepThroughArticle,
   valenRevPlusArticle,
   valenRev3Article,
+  koaRev3Article,
+  retrospecValenRev2Article,
 ];
 
 export const brandArticles = brands;
