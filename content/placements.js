@@ -17,6 +17,7 @@ export const placements = {
   home: {
     // Hero carousel slides (featured posts)
     hero: [
+      "electric-fat-bikes/retrospec-valen-rev-3-review",
       "electric-bikes/best-electric-bikes",
       "electric-mountain-bikes/best-electric-mountain-bikes",
       "electric-bikes/is-it-worth-getting-electric-bike",
@@ -37,8 +38,8 @@ export const placements = {
       // Three smaller articles in right sidebar
       sidebar: [
         "electric-mountain-bikes/best-electric-mountain-bikes",
-        "electric-folding-bikes/best-electric-folding-bikes",
-        "electric-road-bikes/best-electric-road-bikes",
+        "electric-fat-bikes/retrospec-valen-rev-3-review",
+        "electric-city-bikes/retrospec-beaumont-rev-plus-step-through-review",
       ]
     },
 
@@ -53,6 +54,14 @@ export const placements = {
       "electric-fat-bikes/best-electric-fat-bikes",
       "electric-cruiser-bikes/best-electric-cruiser-bikes",
       "electric-hybrid-bikes/best-electric-hybrid-bikes",
+    ],
+
+    // Latest posts grid (explicit order; replaces default first-N from all money posts)
+    latestPosts: [
+      "electric-fat-bikes/retrospec-valen-rev-3-review",
+      "electric-fat-bikes/retrospec-koa-rev-2-step-through-review",
+      "electric-city-bikes/retrospec-beaumont-rev-plus-step-through-review",
+      "electric-cruiser-bikes/retrospec-chatham-rev-plus-2-review",
     ],
   },
 
@@ -300,7 +309,9 @@ export function getAllPlacementKeys() {
 
   // Homepage placements
   const home = placements.home ?? {};
-  [...(home.hero ?? []), ...(home.gallery ?? [])].forEach((key) => keys.add(key.toLowerCase()));
+  [...(home.hero ?? []), ...(home.gallery ?? []), ...(home.latestPosts ?? [])].forEach((key) =>
+    keys.add(key.toLowerCase()),
+  );
   const showcase = home.showcase ?? {};
   if (showcase.highlight) keys.add(showcase.highlight.toLowerCase());
   [...(showcase.sidebar ?? [])].forEach((key) => keys.add(key.toLowerCase()));

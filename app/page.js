@@ -20,6 +20,9 @@ export const metadata = homeSeo.metadata;
 // Get hero image for the carousel.
 const getHeroImage = (post) => post?.heroImage ?? '/default-og.png';
 
+const postGridKey = (post) =>
+  `${post?.categorySlug}/${post?.slug}`.toLowerCase();
+
 // Homepage aggregates spotlight hero, latest content, gallery, etc.
 export default async function HomePage() {
   const posts = await getAllBlogPosts();
@@ -63,6 +66,22 @@ export default async function HomePage() {
     ? homePlacements.gallery
     : infoPosts.slice(0, 4);
 
+  const curatedLatestPosts = homePlacements.latestPosts ?? [];
+  const moneyTypePosts = posts.filter((post) => post.contentType === 'money');
+
+  const latestPostsForGrid =
+    curatedLatestPosts.length > 0
+      ? (() => {
+          const curatedKeys = new Set(curatedLatestPosts.map(postGridKey));
+          const moneyLead = moneyTypePosts
+            .filter((post) => !curatedKeys.has(postGridKey(post)))
+            .slice(0, 2);
+          return [...moneyLead, ...curatedLatestPosts];
+        })()
+      : moneyPosts;
+
+  const latestPostsMax = 6;
+
   return (
     <main className="flex min-h-screen flex-col bg-[#F5F5F5]">
       <JsonLdSchema data={buildWebsiteSchema()} />
@@ -80,8 +99,9 @@ export default async function HomePage() {
       />
       <HomeCategories />
       <LatestPosts
-        posts={moneyPosts}
+        posts={latestPostsForGrid}
         heading="Latest posts"
+        maxPosts={latestPostsMax}
       />
       <HomeNewsletter />
       <Script

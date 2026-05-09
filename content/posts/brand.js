@@ -3007,9 +3007,12 @@ const koaRev2StepThroughArticle = {
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-fat-bikes/retrospec-koa-rev-2-step-through.webp",
-  cardImage: "/images/electric-fat-bikes/retrospec-koa-rev-2-step-through.webp",
-  articleHeroImage: "/images/electric-fat-bikes/retrospec-koa-rev-2-step-through.webp",
+  heroImage:
+    "/images/brand/retrospec/Koa Rev 2 Fat Tire Electric Bike - Step Through.webp",
+  cardImage:
+    "/images/brand/retrospec/Koa Rev 2 Fat Tire Electric Bike - Step Through.webp",
+  articleHeroImage:
+    "/images/brand/retrospec/Koa Rev 2 Fat Tire Electric Bike - Step Through.webp",
   heroImageAlt:
     "Retrospec Koa Rev 2 Step-Through fat tire electric bike on a mixed gravel and pavement trail",
 
@@ -3123,7 +3126,8 @@ const koaRev2StepThroughArticle = {
       "Overall build quality feels honest and appropriate for the price. There's no premium flex or carbon-fiber pretension here. It's a practical, well-assembled bike that holds up to regular use.",
     ],
     image: {
-      image: "/images/electric-fat-bikes/retrospec-koa-rev-2-frame.webp",
+      image:
+        "/images/brand/retrospec/Koa Rev 2 Fat Tire Electric Bike - Step Through Design.webp",
       alt: "Retrospec Koa Rev 2 Step-Through frame and integrated battery detail",
       description:
         "The hydroformed 6061 aluminum frame with integrated downtube battery keeps the profile cleaner than most fat bikes at this price",
@@ -3141,7 +3145,8 @@ const koaRev2StepThroughArticle = {
       "Hill climbing is where you'll feel the 500W ceiling most clearly. Testing showed the throttle-only mode struggling on inclines above 12%, and PAS becomes noticeably slow on steep grades. Active pedaling in a lower gear keeps you moving, but this isn't a bike that will float up a steep San Francisco block without some legwork.",
     ],
     image: {
-      image: "/images/electric-fat-bikes/retrospec-koa-rev-2-motor.webp",
+      image:
+        "/images/brand/retrospec/Koa Rev 2 Fat Tire Electric Bike - Step Through Motor.webp",
       alt: "Retrospec Koa Rev 2 500W rear hub motor close-up",
       description: "The 500W rear hub motor handles flat terrain and moderate grades with ease",
     },
@@ -3158,7 +3163,8 @@ const koaRev2StepThroughArticle = {
       "For most daily commutes under 15 miles round-trip, range isn't going to be an issue at all. The battery is honest for its size. The 500Wh pack is on the smaller side compared to what the 2025 market now considers standard (600-800Wh), so if you're planning longer weekend rides, pack a plan for a mid-trip charge or stick to PAS 1-2.",
     ],
     image: {
-      image: "/images/electric-fat-bikes/retrospec-koa-rev-2-battery.webp",
+      image:
+        "/images/brand/retrospec/Koa Rev 2 Fat Tire Electric Bike - Step Through Battery.webp",
       alt: "Retrospec Koa Rev 2 removable 500Wh integrated battery",
       description:
         "The 500Wh removable battery charges both on and off the bike for flexible convenience",
@@ -3176,7 +3182,8 @@ const koaRev2StepThroughArticle = {
       "One note for heavier riders: the suspension fork is on the softer side. At 230 lbs, multiple testers found even maximum preload wasn't quite firm enough. If that describes you, the Koa Rev+ 2 with its upgraded fork is worth the extra spend.",
     ],
     image: {
-      image: "/images/electric-fat-bikes/retrospec-koa-rev-2-riding.webp",
+      image:
+        "/images/brand/retrospec/Koa Rev 2 Fat Tire Electric Bike - Step Through Comfort.webp",
       alt: "Rider on Retrospec Koa Rev 2 Step-Through on a mixed terrain path",
       description:
         "The step-through frame and wide tires make for an easy, comfortable ride on almost any surface",
@@ -3195,7 +3202,8 @@ const koaRev2StepThroughArticle = {
       "Integrated front and rear lights are a real plus. The 60-lux headlight upgrade is noticeably brighter than what earlier Koa models had, and the rear light activates with braking. Fenders are included standard, which is more than a lot of competitors bother with.",
     ],
     image: {
-      image: "/images/electric-fat-bikes/retrospec-koa-rev-2-brakes.webp",
+      image:
+        "/images/brand/retrospec/Koa Rev 2 Fat Tire Electric Bike - Step Through Brake.webp",
       alt: "Tektro mechanical disc brakes with 180mm rotors on Retrospec Koa Rev 2",
       description:
         "Upgraded 180mm Tektro disc brakes offer reliable stopping power well above the category norm",
@@ -3213,7 +3221,8 @@ const koaRev2StepThroughArticle = {
       "Retrospec doesn't currently offer a companion app for the Koa Rev 2, which keeps things simple but does mean no ride tracking, custom PAS tuning, or firmware updates through your phone. For most riders this won't matter. For the tech-enthusiast crowd, it's a gap worth knowing about before you buy.",
     ],
     image: {
-      image: "/images/electric-fat-bikes/retrospec-koa-rev-2-display.webp",
+      image:
+        "/images/brand/retrospec/Koa Rev 2 Fat Tire Electric Bike - Step Through Screen.webp",
       alt: "Retrospec Koa Rev 2 center-mounted display and handlebar controls",
       description:
         "Simple, functional display with intuitive handlebar pod controls everything you need while riding",
