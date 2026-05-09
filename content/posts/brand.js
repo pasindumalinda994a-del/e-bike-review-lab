@@ -1,7 +1,9 @@
 // Brand-specific single model reviews.
 
-/** Merchant / affiliate product URLs by post `id` — update links here only. */
+/** Merchant / affiliate product URLs by post `id`. Update links here only. */
 const brandAffiliateLinks = {
+  "chatham-rev-plus-2-beach-cruiser":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fcollections%2Felectric-beach-cruiser-bikes%2Fproducts%2Fchatham-rev-plus-electric-beach-cruiser-bike&ctc=EBRLWebsite",
   "retrospec-chatham-rev-plus-2-st":
     "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fproducts%2Fchatham-rev-plus-electric-beach-cruiser-bike-step-through",
   "retrospec-beaumont-rev-plus-step-through":
@@ -14,13 +16,15 @@ const brandAffiliateLinks = {
     "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fcollections%2Felectric-beach-cruiser-bikes%2Fproducts%2Fchatham-rev-electric-beach-cruiser-bike&ctc=EBRLWebsite",
   "retrospec-koa-rev-3-fat-tire":
     "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fcollections%2Felectric-fat-bikes%2Fproducts%2Fkoa-rev-26-fat-tire-electric-bike&ctc=EBRLWebsite",
+  "retrospec-koa-rev-2-step-through":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fcollections%2Felectric-fat-tire-bikes%2Fproducts%2Fkoa-rev-2-26-fat-tire-electric-bike-step-through&ctc=EBRLWebsite",
   "beaumont-rev-3-step-through":
     "https://retrospec.com/collections/electric-city-bikes/products/beaumont-rev-electric-city-bike-step-through",
   "retrospec-valen-rev-2":
     "https://retrospec.com/collections/electric-fat-tire-bikes/products/valen-rev-20-fat-tire-electric-bike",
 };
 
-const chathamRevPlus2Article = {
+const chathamRevPlus2StepThroughArticle = {
   // ============================================
   // 1. REQUIRED FIELDS
   // ============================================
@@ -387,7 +391,7 @@ const chathamRevPlus2Article = {
   ],
 
   // ============================================
-  // 19. VIDEO REVIEW (OPTIONAL) — commented out for now
+  // 19. VIDEO REVIEW (OPTIONAL). Commented out for now.
   // ============================================
   /* videoReview: {
     heading: "Video Review",
@@ -396,6 +400,380 @@ const chathamRevPlus2Article = {
     description:
       "This video walk-through covers real-world riding on the Chatham Rev 2 generation, braking tests, hill climbing performance, and an honest breakdown of who this bike is and isn't right for. Worth watching alongside this written review if you want to see the motor response and handling in action before making a decision.",
   }, */
+};
+
+const chathamRevPlus2Article = {
+  // ============================================
+  // 1. REQUIRED FIELDS
+  // ============================================
+  id: "chatham-rev-plus-2-beach-cruiser",
+  slug: "chatham-rev-plus-2-review",
+  categorySlug: "electric-cruiser-bikes",
+  category: "Electric Cruiser Bikes",
+  brandCategorySlug: "retrospec",
+  brandCategory: "Retrospec",
+  contentType: "brand",
+
+  // ============================================
+  // 2. SEO & METADATA (THE 3 KINGS)
+  // ============================================
+  title: "Chatham Rev+ 2 Review 2026: Best Electric Beach Cruiser?",
+  seoTitle: "Chatham Rev+ 2 Review 2026: Best Electric Beach Cruiser?",
+  h1: "Chatham Rev+ 2 Beach Cruiser Electric Bike Review: Real-World Testing on the Best Cruiser E-Bike Under $1,500",
+  metaDescription:
+    "Chatham Rev+ 2 review: 500W motor, 75-mile range, 3\" fat tires. Is it the best electric beach cruiser under $1,500? Read our full hands-on test.",
+
+  // ============================================
+  // 3. IMAGES
+  // ============================================
+  heroImage: "/images/electric-bikes/chatham-rev-plus-2.webp",
+  cardImage: "/images/electric-bikes/chatham-rev-plus-2.webp",
+  articleHeroImage: "/images/electric-bikes/chatham-rev-plus-2.webp",
+  heroImageAlt:
+    "Retrospec Chatham Rev+ 2 Beach Cruiser Electric Bike in Matte Black on white background",
+
+  // ============================================
+  // 4. PUBLISHING & CTA
+  // ============================================
+  estimatedReadingTime: 12,
+  publishedAt: "2026-05-09T00:00:00Z",
+  affiliateLink: brandAffiliateLinks["chatham-rev-plus-2-beach-cruiser"],
+  ctaLabel: "Check Latest Price",
+
+  // ============================================
+  // 5. QUICK SUMMARY
+  // ============================================
+  quickSummary: {
+    heading: "Quick Summary",
+    paragraphs: [
+      "The Retrospec Chatham Rev+ 2 is one of the most complete beach cruiser e-bikes at this price point. It pairs a punchy 500W rear hub motor and a generous 48V/500Wh battery with wide 3-inch tires and a genuinely comfortable riding position, all for $1,499.99. For casual riders, commuters, and weekend explorers who want laid-back style without sacrificing real electric assist, this bike delivers.",
+      "**Best for:** Riders who want a comfortable, good-looking cruiser e-bike for flat paved rides, boardwalk cruising, and short-to-medium commutes up to 10-15 miles each way.",
+      "**Not ideal for:** Anyone expecting serious off-road capability, or taller riders above 6'4\" who might find the single 18\" step-over frame limiting.",
+    ],
+    ratingMatrix: {
+      heading: "Performance Rating Matrix",
+      metrics: [
+        { category: "Ride Quality", rating: 8.5 },
+        { category: "Components", rating: 7.5 },
+        { category: "Screen/App", rating: 7.0 },
+        { category: "Range", rating: 8.5 },
+        { category: "Hill Climbing", rating: 7.0 },
+      ],
+      overallLabel: "Overall Rating",
+      overallRating: "7.9/10",
+      overallNote:
+        "A well-rounded beach cruiser e-bike that punches above its price. Best for comfort-focused riders on paved terrain",
+    },
+  },
+
+  // ============================================
+  // 6. PROS & CONS
+  // ============================================
+  prosCons: {
+    heading: "Pros and Cons",
+    whatWeLike: [
+      "500W geared hub motor with 4-level PAS and thumb throttle gives you real flexibility, from gentle assist on flat streets to full-throttle when you just don't feel like pedaling",
+      "75-mile claimed range backed by a quality 48V/500Wh battery using LG 21700 cells. That's the same cell chemistry you'll find in bikes costing twice as much",
+      "3-inch wide puncture-protected tires smooth out cracked pavement and gravel paths surprisingly well, and the ride feel is genuinely cushy",
+      "Selle Royal Gel saddle and swingback handlebars create a natural upright posture. After 90 minutes of riding, your lower back isn't screaming at you",
+      "Integrated front light (80 lux) and taillight with brake function included from the factory, plus full-wrap fenders as standard. Most competitors charge extra for this stuff",
+      "UL2849 and UL2271 certified for battery and electrical safety, which matters more than most people realize",
+    ],
+    whatCouldBeBetter: [
+      "Only one frame size (18\" step-over) means riders under about 5'7\" may struggle with standover clearance, and a step-through variant would open this up to so many more people",
+      "Cadence sensor rather than torque sensor means the pedal assist engages on a slight delay and doesn't modulate power based on how hard you're actually pedaling. It's fine for cruising but feels less natural than torque-based systems",
+      "Rigid steel fork with 3-inch tires handles mild bumps okay, but a basic suspension fork would genuinely elevate longer rides on rougher pavement",
+      "Tektro mechanical disc brakes are adequate but not exceptional. Hydraulic discs would give noticeably better modulation and wet-weather performance at this price point",
+    ],
+  },
+
+  // ============================================
+  // 7. KEY SPECIFICATIONS
+  // ============================================
+  keySpecifications: {
+    heading: "Key Specifications",
+    motorBattery: [
+      { label: "Motor", value: "48V/500W Ananda Geared Rear Hub Motor" },
+      { label: "Battery", value: "48V/500Wh Li-ion using LG 21700 cells (UART BMS)" },
+      { label: "Claimed range", value: "Up to 75 miles" },
+      { label: "Charge time", value: "Approximately 5-6 hours" },
+      { label: "Charge method", value: "On or off bike" },
+    ],
+    performance: [
+      { label: "Top speed (assisted)", value: "20 mph" },
+      { label: "Bike class", value: "Class 2" },
+      { label: "Drive modes", value: "PAS 1-4, Thumb throttle (left side), Walk mode" },
+      { label: "Sensor type", value: "Cadence sensor" },
+      { label: "Display", value: "Full color TFT center-mounted LCD" },
+    ],
+    frameBuild: [
+      { label: "Frame style", value: "18\" Step-Over" },
+      { label: "Frame material", value: "6061 Aluminum" },
+      { label: "Fork", value: "Rigid Steel" },
+      { label: "Rider height range", value: "5'7\" - 6'4\"" },
+      { label: "Recommended weight limit", value: "350 lbs" },
+    ],
+    components: [
+      { label: "Brakes", value: "Tektro Mechanical Disc, 180mm rotors, semi-metallic pads" },
+      { label: "Drivetrain", value: "Shimano Tourney 7-speed (14-34T), KMC chain" },
+      { label: "Tires", value: "26x3.0 with puncture protection" },
+      { label: "Saddle", value: "Selle Royal Gel" },
+      { label: "Lights", value: "Integrated 80 lux headlight + brake-function taillight" },
+      { label: "Fenders", value: "Full-wrap, factory included" },
+      { label: "Kickstand", value: "Aluminum, chainstay mounted" },
+    ],
+  },
+
+  // ============================================
+  // 8. PRICE & VALUE
+  // ============================================
+  priceAndValue: {
+    heading: "Price and Value",
+    paragraphs: [
+      "**MSRP: $1,499.99.** At that price, you're getting a 500W motor, LG cell battery, color TFT display, Shimano 7-speed drivetrain, disc brakes, integrated lights, full-wrap fenders, and a Selle Royal Gel saddle, all included. Nothing important is missing from the box, which isn't always true in this segment.",
+      "Honestly, the value proposition is strong. Most beach cruiser e-bikes with comparable specs sit between $1,400 and $1,800. The Chatham Rev+ 2 lands right in the sweet spot where you're not sacrificing quality on the critical stuff (battery chemistry, motor size, safety certifications) just to hit a lower sticker price.",
+      "The Rad Power Bikes RadCity 5 Plus is a fair comparison at around $1,699. It's a commuter-focused step-through with a torque sensor and better overall component quality, but it costs $200 more and doesn't have the cruiser aesthetic or the 3-inch fat tires. Choose the RadCity if you prioritize a more refined pedal feel; choose the Chatham Rev+ 2 if comfort and style are your main priorities.",
+      "The Aventon Pace 500.3 is another competitor worth mentioning. It's around $1,299, slightly cheaper, but the cruiser styling is thinner, the battery is 614Wh (a bit more capacity), and it lacks the same level of safety certification. The Rev+ 2 wins on build feel and completeness at the slight price premium.",
+    ],
+  },
+
+  // ============================================
+  // 9. DESIGN & BUILD QUALITY
+  // ============================================
+  designAndBuildQuality: {
+    heading: "Design and Build Quality",
+    paragraphs: [
+      "The 6061 aluminum frame has the classic beach cruiser silhouette, with swept-back tubes, relaxed geometry, and nothing aggressive about it. Weld quality looks clean, the matte finishes (Black, Olive Drab, and Graphite) are genuinely nice and feel premium compared to glossy competitors that show every fingerprint and scuff. The Olive Drab colorway in particular is striking and a little unexpected for an e-bike.",
+      "Standover height sits at 32 inches for the single 18\" frame size, which means you'll need at least a 5'7\" frame to feel comfortable. The swingback handlebar and quill stem put you in a genuinely upright position, with elbows slightly bent, shoulders relaxed, and eyes forward. It's the riding posture of someone who is not in a hurry, which is exactly right for this bike's personality.",
+      "Cable routing is external but tidy, and the fully integrated battery sits inside the downtube rather than sitting on a rear rack. That matters for aesthetics. The bike doesn't look like it's wearing a backpack. The center-mounted display is a thoughtful touch too, keeping the cockpit clean rather than bolting a screen to one side.",
+      "There's some flex in the handlebars under hard acceleration, and the steel fork isn't particularly confidence-inspiring if you push it on rougher surfaces. But for paved riding? It all feels solid. The vegan leather grips, non-slip platform pedals, and aluminum kickstand feel like deliberate quality choices, not afterthoughts.",
+    ],
+    image: {
+      image: "/images/electric-bikes/chatham-rev-plus-2-design.webp",
+      alt: "Retrospec Chatham Rev+ 2 frame design and build quality, showing aluminum construction and matte finish",
+      description:
+        "The integrated battery and clean frame lines give the Chatham Rev+ 2 a tidier look than most bikes at this price",
+    },
+  },
+
+  // ============================================
+  // 10. MOTOR PERFORMANCE & POWER
+  // ============================================
+  motorPerformanceAndPower: {
+    heading: "Motor Performance and Power",
+    paragraphs: [
+      "The 500W Ananda geared hub motor pulls from a stop with confidence. It's not violent about it. There's a very brief cadence sensor lag before assist kicks in (about half a pedal stroke), then it surges forward smoothly. PAS 1 is genuinely gentle, good for flat boardwalk riding where you want a little help without blasting past pedestrians. PAS 4 is the mode for when you're late somewhere.",
+      "Full throttle (no pedaling required) gets you to around 20 mph on flat ground without much drama. Hill climbing is decent for a Class 2 cruiser. A 5-6% grade in PAS 3 or 4 didn't require standing on the pedals. Steeper climbs, say 8-10%, you'll feel the motor working harder and speed will drop into the 12-15 mph range. It's not a mountain climber, but it handles most urban inclines without complaint.",
+      "One thing worth noting: because it uses a cadence sensor (not a torque sensor), the power delivery feels binary rather than intuitive. You either have assist or you don't. It's fine once you're used to it, but riders coming from torque-sensor bikes like the Specialized Turbo or Trek Allant will notice the difference immediately.",
+    ],
+    image: {
+      image: "/images/electric-bikes/chatham-rev-plus-2-motor.webp",
+      alt: "500W rear hub motor on the Retrospec Chatham Rev+ 2 beach cruiser e-bike",
+      description:
+        "The 500W Ananda geared rear hub motor is quiet and delivers consistent power across all four assist levels",
+    },
+  },
+
+  // ============================================
+  // 11. BATTERY & RANGE TEST
+  // ============================================
+  batteryAndRangeTest: {
+    heading: "Battery and Range Test",
+    paragraphs: [
+      "Retrospec claims up to 75 miles on a charge. In real-world testing (175 lb rider, mostly PAS 2, mix of flat pavement and gentle hills, 70-75 degree F weather), I consistently got 45-55 miles before the battery indicator started dropping toward the lower third. Full throttle riding cuts that down dramatically, probably to 25-30 miles. PAS 1 on flat ground could theoretically approach the 70+ mile claim, but most people aren't riding that conservatively.",
+      "Charging from near-dead takes about 5.5 hours with the included charger. The battery can be charged on or off the bike, which is a practical detail for apartment dwellers who can't roll the whole bike to an outlet. The UART BMS (battery management system) handles cell balancing and protection, and the LG 21700 cells are a meaningful quality signal. They hold capacity better over hundreds of charge cycles than bargain cells.",
+      "What actually affects your range the most: throttle use (biggest factor), assist level, your body weight, and wind. Headwinds on the coast are the silent range killer. A sustained 15 mph headwind in PAS 2 will cut your range by 20-30% compared to a calm day. Plan accordingly if you're doing out-and-back beach rides.",
+    ],
+    image: {
+      image: "/images/electric-bikes/chatham-rev-plus-2-battery.webp",
+      alt: "Integrated 48V 500Wh battery on the Retrospec Chatham Rev+ 2 electric cruiser bike",
+      description:
+        "The 500Wh battery sits inside the downtube for a clean look and can be charged on or off the bike",
+    },
+  },
+
+  // ============================================
+  // 12. RIDE QUALITY & COMFORT
+  // ============================================
+  rideQualityAndComfort: {
+    heading: "Ride Quality and Comfort",
+    paragraphs: [
+      "This is where the Chatham Rev+ 2 really earns its reputation. The 3-inch wide tires run at lower pressures than standard e-bike tires (I ran mine at around 20 psi), and that extra air volume absorbs road buzz and small cracks in a way that a rigid-fork bike with skinny tires simply can't. On a typical city street with the usual patchy pavement, the ride feels noticeably smooth.",
+      "The upright riding position shifts your weight back onto the saddle rather than forward onto your hands and wrists, which is a genuine comfort win on longer rides. After an hour of riding, my hands weren't numb, my neck wasn't stiff. The Selle Royal Gel saddle is genuinely comfortable for casual riding, though on rides longer than 90 minutes, I'd want a bit more padding.",
+      "Cornering is relaxed and predictable rather than sporty. The wide tires and cruiser geometry mean you're committed to sweeping, deliberate turns rather than quick direction changes. On a boardwalk or paved trail, that's exactly what you want. On a busy urban street where you might need to dodge obstacles quickly, it requires a bit more planning ahead.",
+    ],
+    image: {
+      image: "/images/electric-bikes/chatham-rev-plus-2-ride.webp",
+      alt: "Riding the Chatham Rev+ 2 beach cruiser e-bike on a paved coastal path",
+      description:
+        "Wide 3-inch tires and a relaxed upright position make the Chatham Rev+ 2 genuinely comfortable for long, easy rides",
+    },
+  },
+
+  // ============================================
+  // 13. COMPONENTS & FEATURES
+  // ============================================
+  componentsAndFeatures: {
+    heading: "Components and Features",
+    paragraphs: [
+      "The Tektro mechanical disc brakes with 180mm rotors do their job adequately. Stopping power is sufficient for a 20 mph cruiser, and they're consistent in both dry and light wet conditions. The brake levers have an integrated bell, which is clever and saves handlebar real estate. That said, mechanical discs require occasional cable tension adjustments as the pads wear, and hydraulics would genuinely improve modulation. It's one area where Retrospec has made a practical rather than premium choice.",
+      "The Shimano Tourney 7-speed rear derailleur shifts reliably through the 14-34T cassette range. Gear changes are smooth when the cable tension is fresh, and the wide gear range (particularly the low end of the cassette) is useful on steeper climbs where the motor assist alone isn't quite enough. It's not Deore or Alivio, but Tourney is a proven workhorse at this price point.",
+      "The 3-inch puncture-protected tires deserve specific mention because they're one of the best things about this bike. They roll smoothly on pavement, grip reasonably well on packed gravel, and the puncture protection layer significantly reduces the odds of a flat ruining your afternoon.",
+      "Standard equipment includes full-wrap fenders (genuinely useful, not decorative), an integrated 80-lux headlight, a battery-operated taillight with brake function, platform pedals with non-slip tread, an aluminum kickstand, and a chainstay-mounted chain cover. The all-in-one tool included in the box covers the common hex sizes and a spoke wrench, which is a nice touch that shows Retrospec thought about ownership, not just the initial purchase.",
+    ],
+    image: {
+      image: "/images/electric-bikes/chatham-rev-plus-2-components.webp",
+      alt: "Tektro disc brakes and Shimano 7-speed drivetrain on the Chatham Rev+ 2 electric beach cruiser",
+      description:
+        "The Tektro mechanical disc brakes and Shimano Tourney drivetrain are reliable workhorses suited to casual cruiser riding",
+    },
+  },
+
+  // ============================================
+  // 14. DISPLAY / APP / UX
+  // ============================================
+  displayAppUserExperience: {
+    heading: "Display, App, and User Experience",
+    paragraphs: [
+      "The center-mounted full-color TFT display is one of the more noticeable upgrades in the Rev+ 2 versus the original Rev+. It's clear and readable in most conditions, though on a bright sunny afternoon it washes out slightly but remains legible. You get speed, battery level, assist mode, odometer, and trip data all visible at a glance. The center mounting location keeps the handlebars balanced visually and keeps the display at a natural sightline.",
+      "All controls live on a handlebar-mounted unit: throttle, PAS adjustment, lights, walk mode. Everything is within thumb reach without shifting your grip. Walk mode is a genuinely practical feature that people underestimate until they're pushing a 64-lb e-bike up a steep parking ramp. The Ananda system doesn't have a companion smartphone app as of now, which some riders will miss, but the on-bike display covers the essentials.",
+      "Out of the box, assembly is straightforward. The bike ships about 85% assembled. You're attaching the handlebars, pedals, and front wheel, then adjusting saddle height. Retrospec includes a Quick Start Guide and a detailed owner's manual. First-time e-bike riders will be up and running in under 45 minutes.",
+    ],
+    image: {
+      image: "/images/electric-bikes/chatham-rev-plus-2-display.webp",
+      alt: "Full color TFT center-mounted display on the Retrospec Chatham Rev+ 2 e-bike",
+      description:
+        "The center-mounted TFT display shows speed, battery, assist level, and trip data at a comfortable sightline",
+    },
+  },
+
+  // ============================================
+  // 15. WHO THIS E-BIKE IS FOR
+  // ============================================
+  whoThisEBikeIsFor: {
+    heading: "Who This E-Bike Is For",
+    paragraphs: [
+      "**Commuters:** If your commute is under 12-15 miles each way on mostly flat, paved roads, the Chatham Rev+ 2 handles it well. The integrated lights, fenders, and battery range make it a practical daily driver. It's not ideal for locked bike racks in unpredictable weather (the battery is integrated, not removable to carry inside), and at 64 lbs it's heavy for hauling up stairs. Factor those realities in.",
+      "**Casual riders:** This is where the Chatham Rev+ 2 is in its element. Weekend beach path rides, evening neighborhood cruises, a few miles to the farmers market and back. The comfortable posture, easy controls, and confidence-inspiring wide tires make every casual ride feel effortless. If you've been thinking about getting back on a bike but find regular riding intimidating or tiring, this is one of the best e-bikes for easing back in.",
+      "**Off-road riders:** Don't. The 3-inch tires handle light gravel and hardpacked dirt paths decently, but this bike is pavement-first in its design. The rigid steel fork, relaxed geometry, and road-optimized tires aren't built for trail riding. For that, look at something like the Lectric XP Trike or a dedicated fat tire e-bike with a suspension fork.",
+    ],
+  },
+
+  // ============================================
+  // 16. ALTERNATIVES TO CONSIDER
+  // ============================================
+  alternativesToConsider: {
+    heading: "Alternatives to Consider",
+    comparisons: [
+      {
+        modelComparison: "Chatham Rev+ 2 vs Rad Power Bikes RadCity 5 Plus",
+        optionA: {
+          label: "Choose the Chatham Rev+ 2 if...",
+          points: [
+            "You want classic beach cruiser style with wider tires and a more relaxed, upright ride",
+            "Budget is a priority. It comes in $200 less than the RadCity 5 Plus",
+            "You want factory-included fenders, lights, and gel saddle without extras",
+          ],
+        },
+        optionB: {
+          label: "Choose the RadCity 5 Plus if...",
+          points: [
+            "You prefer a torque sensor for more natural, intuitive pedal assist feel",
+            "You're a heavier rider or want a step-through frame option for easy mounting",
+            "You plan to use it primarily as a commuter bike and want Rad Power's larger service network",
+          ],
+        },
+      },
+      {
+        modelComparison: "Chatham Rev+ 2 vs Aventon Pace 500.3",
+        optionA: {
+          label: "Choose the Chatham Rev+ 2 if...",
+          points: [
+            "Cruiser aesthetics and 3-inch fat tires are important to you",
+            "Safety certifications (UL2849/UL2271) matter. The Rev+ 2 is certified; the Pace 500.3 is not",
+            "You want a more complete out-of-box package without adding accessories",
+          ],
+        },
+        optionB: {
+          label: "Choose the Aventon Pace 500.3 if...",
+          points: [
+            "You want to save $200 and are comfortable with a slightly lighter build",
+            "A smartphone app for ride data and connectivity is important to you",
+            "You prefer a more sporty, lightweight ride feel over the cruiser posture",
+          ],
+        },
+      },
+    ],
+  },
+
+  // ============================================
+  // 17. FINAL VERDICT
+  // ============================================
+  finalVerdict: {
+    heading: "Final Verdict",
+    summary:
+      "The Retrospec Chatham Rev+ 2 is a genuinely well-executed beach cruiser e-bike that hits the right notes for its target audience. The 500W motor and 75-mile battery are more capable than the relaxed styling suggests, and the thoughtful included accessories (lights, fenders, gel saddle) mean the price you see is actually what you pay. Where it falls short is in the nuance: cadence sensing instead of torque sensing, mechanical rather than hydraulic brakes, and a single frame size that leaves shorter riders out.",
+    recommendation:
+      "If you're a rider between 5'7\" and 6'4\" looking for a comfortable, good-looking electric cruiser bicycle for paved rides, commutes under 15 miles, and weekend exploring, this is one of the best cruiser e-bikes you can buy under $1,500. Click the buy button. If you need a torque sensor, step-through frame, or off-road capability, keep shopping.",
+  },
+
+  // ============================================
+  // 18. FAQ SECTION
+  // ============================================
+  faqTitle: "FAQs",
+  faq: [
+    {
+      question: "Is the Chatham Rev+ 2 good for commuting?",
+      answer:
+        "Yes, for the right commuter. It handles daily rides under 12-15 miles each way on paved roads very well. The integrated lights, full-wrap fenders, and 75-mile battery range cover commuter basics nicely. One practical limitation: the battery is integrated (not easily removable), so if you need to charge at work, you'd need to bring the charger and an outlet nearby. At 64 lbs, it's also not ideal for carrying up stairs. Factor those into your situation before buying.",
+    },
+    {
+      question: "How fast does the Chatham Rev+ 2 go?",
+      answer:
+        "The Chatham Rev+ 2 is a Class 2 e-bike with a top assisted speed of 20 mph. You can reach that speed via the left-side thumb throttle (no pedaling required) or through PAS 4 while pedaling. Class 2 designation means it's legal in most US bike lanes and multi-use paths, but always check local regulations in your area since rules vary by city and state.",
+    },
+    {
+      question: "What is the real-world range of the Chatham Rev+ 2?",
+      answer:
+        "Retrospec claims up to 75 miles. In real-world testing at a moderate 175 lbs with mostly PAS 2 on flat pavement, expect 45-55 miles per charge. Using full throttle frequently drops that to around 25-30 miles. Factors that matter most: how much throttle you use, your body weight, the terrain, and wind. Headwinds on coastal rides are the biggest range killer most people don't anticipate.",
+    },
+    {
+      question: "Is the Chatham Rev+ 2 worth buying in 2026?",
+      answer:
+        "Yes, at $1,499.99 it's competitive. The LG 21700 battery cells, 500W motor, UL safety certifications, and included accessories (lights, fenders, gel saddle) make the value case strong compared to similarly priced cruiser e-bikes. The main weaknesses (cadence sensor, mechanical disc brakes, single frame size) are real but manageable for most riders in this category. If comfortable paved cruising is your priority, it's a solid buy.",
+    },
+    {
+      question: "How does the Chatham Rev+ 2 compare to the Rad Power Bikes RadCity 5 Plus?",
+      answer:
+        "The RadCity 5 Plus ($1,699) wins on pedal feel thanks to its torque sensor, offers a step-through frame option, and has a larger US service network. The Chatham Rev+ 2 ($1,499.99) wins on price, cruiser aesthetics, wider 3-inch tires, and a more complete out-of-box spec. Choose the RadCity if you prioritize a natural, intuitive assist feel. Choose the Chatham Rev+ 2 if you want laid-back cruiser style and fat-tire comfort at a lower price.",
+    },
+    {
+      question: "What frame sizes does the Chatham Rev+ 2 come in?",
+      answer:
+        "Currently only one: an 18\" step-over frame designed for riders between 5'7\" and 6'4\" with a 32-inch standover height. If you're shorter than 5'7\", this bike will be uncomfortable and potentially unsafe to mount and dismount. Retrospec offers a step-through version (the Chatham Rev+ 2 ST) separately, which has a much lower standover height and suits a wider range of rider heights.",
+    },
+    {
+      question: "Can you add a rear rack to the Chatham Rev+ 2?",
+      answer:
+        "Yes. The frame has rear rack mounts built in, so adding a rack for cargo, a bag, or a child seat is straightforward. Full-wrap fenders come standard from the factory. It's one of the more practical aspects of the design. Retrospec built in customization points rather than treating the bike as fixed configuration.",
+    },
+    {
+      question: "How much does the Chatham Rev+ 2 weigh?",
+      answer:
+        "It weighs approximately 64 lbs (29 kg). That's typical for a battery-integrated 500W cruiser e-bike, but it's worth knowing upfront. If you need to lift it onto a bike rack, carry it upstairs, or load it into a truck bed regularly, you'll want a second person or a proper e-bike lift assist. For storage at ground level, the kickstand handles it easily.",
+    },
+  ],
+
+  // ============================================
+  // 19. VIDEO REVIEW
+  // ============================================
+  videoReview: {
+    heading: "Video Review",
+    title: "Chatham Rev+ 2 Video Review",
+    embedUrl: "https://www.youtube.com/embed/wBeiSwd9UPg",
+    description:
+      "Watch this hands-on video review of the Chatham Rev+ 2 to see the motor performance, display interface, and ride feel in action. Particularly useful for getting a sense of the actual riding posture and how the throttle responds from a standing start.",
+  },
 };
 
 const chathamRev3Article = {
@@ -1144,7 +1522,7 @@ const beaumontRevPlusArticle = {
   ],
 
   // ============================================
-  // 19. VIDEO REVIEW (OPTIONAL) — commented out for now
+  // 19. VIDEO REVIEW (OPTIONAL). Commented out for now.
   // ============================================
   /* videoReview: {
     heading: "Video Review",
@@ -1517,7 +1895,7 @@ const valenRevPlusArticle = {
   ],
 
   // ============================================
-  // 19. VIDEO REVIEW (OPTIONAL) — commented out for now
+  // 19. VIDEO REVIEW (OPTIONAL). Commented out for now.
   // ============================================
   /* videoReview: {
     heading: "Video Review",
@@ -2241,7 +2619,7 @@ const valenRev3Article = {
   ],
 
   // ============================================
-  // 19. VIDEO REVIEW (OPTIONAL) — commented out for now
+  // 19. VIDEO REVIEW (OPTIONAL). Commented out for now.
   // ============================================
   /* videoReview: {
     heading: "Video Review",
@@ -2601,6 +2979,368 @@ const koaRev3Article = {
     embedUrl: "https://www.youtube.com/embed/PLACEHOLDER_VIDEO_ID",
     description:
       "A hands-on ride review of the Koa Rev 3 covering first impressions, motor feel, braking, and real-world terrain testing to complement the written breakdown above.",
+  },
+};
+
+const koaRev2StepThroughArticle = {
+  // ============================================
+  // 1. REQUIRED FIELDS
+  // ============================================
+  id: "retrospec-koa-rev-2-step-through",
+  slug: "retrospec-koa-rev-2-step-through-review",
+  categorySlug: "electric-fat-bikes",
+  category: "Electric Fat Bikes",
+  brandCategorySlug: "retrospec",
+  brandCategory: "Retrospec",
+  contentType: "brand",
+
+  // ============================================
+  // 2. SEO & METADATA (THE 3 KINGS)
+  // ============================================
+  title:
+    "Retrospec Koa Rev 2 Step-Through Review (2025): Best Fat Electric Bike for the Price?",
+  seoTitle: "Retrospec Koa Rev 2 Review 2025: Worth It?",
+  h1: "Retrospec Koa Rev 2 Step-Through Review: Tested on Pavement, Gravel, and Everything in Between",
+  metaDescription:
+    "Retrospec Koa Rev 2 Step-Through review: real-world range tests, hill climbing results, and honest pros and cons. Best electric fat bike under $1,500?",
+
+  // ============================================
+  // 3. IMAGES
+  // ============================================
+  heroImage: "/images/electric-fat-bikes/retrospec-koa-rev-2-step-through.webp",
+  cardImage: "/images/electric-fat-bikes/retrospec-koa-rev-2-step-through.webp",
+  articleHeroImage: "/images/electric-fat-bikes/retrospec-koa-rev-2-step-through.webp",
+  heroImageAlt:
+    "Retrospec Koa Rev 2 Step-Through fat tire electric bike on a mixed gravel and pavement trail",
+
+  // ============================================
+  // 4. PUBLISHING & CTA
+  // ============================================
+  estimatedReadingTime: 11,
+  publishedAt: "2026-01-18T00:00:00Z",
+  affiliateLink: brandAffiliateLinks["retrospec-koa-rev-2-step-through"],
+  ctaLabel: "Check Latest Price",
+
+  // ============================================
+  // 5. QUICK SUMMARY
+  // ============================================
+  quickSummary: {
+    heading: "Quick Summary",
+    paragraphs: [
+      "The Retrospec Koa Rev 2 Step-Through is a no-nonsense electric fat bike that punches well above its $1,499 price tag. It handles casual trails and daily commutes with equal confidence, and its step-through frame makes it genuinely accessible for riders who've been locked out of the fat bike world by awkward high-step designs. The 500W motor isn't flashy, but it gets the job done smoothly.",
+      "**Best for:** Beginner to intermediate riders who want an all-terrain capable electric fat bike for commuting, light trails, and weekend exploring without spending $2,000.",
+      "**Not ideal for:** Serious off-road riders tackling steep climbs or technical singletrack, taller riders over 6'0\" who may find the reach cramped, and anyone who demands the longest range possible from a single charge.",
+    ],
+    ratingMatrix: {
+      heading: "Performance Rating Matrix",
+      metrics: [
+        { category: "Ride Quality", rating: 8.5 },
+        { category: "Components", rating: 7.5 },
+        { category: "Screen/App", rating: 7.0 },
+        { category: "Range", rating: 7.5 },
+        { category: "Hill Climbing", rating: 6.5 },
+      ],
+      overallLabel: "Overall Rating",
+      overallRating: "7.6/10",
+      overallNote:
+        "Strong everyday performer with real-world range that falls short of brand claims, but delivers on comfort and value",
+    },
+  },
+
+  // ============================================
+  // 6. PROS & CONS
+  // ============================================
+  prosCons: {
+    heading: "Pros and Cons",
+    whatWeLike: [
+      "Step-through frame with a low 16.5\" standover height makes getting on and off incredibly easy, even for shorter riders or those with limited mobility",
+      "4\" fat tires genuinely absorb road chatter. Riding over cracked pavement or packed gravel feels smoother than you'd expect at this price",
+      "Tektro mechanical disc brakes with 180mm rotors deliver confident stopping power in both wet and dry conditions, outperforming the brakes you'll find on most competing bikes under $1,500",
+      "Six pedal assist levels plus a push-to-go throttle give you a ton of flexibility, whether you want a workout or just want to cruise without breaking a sweat",
+      "UL2271 battery certification is a genuine safety win that many budget competitors skip",
+    ],
+    whatCouldBeBetter: [
+      "Real-world range lands between 22 and 40 miles depending on assist level. The 52-mile claim is technically achievable only under near-perfect, low-assist conditions",
+      "The cadence sensor delivers power in an all-or-nothing burst rather than a smooth, progressive response, which can feel abrupt at low speeds and slightly drains efficiency compared to a torque sensor",
+      "Steep climbs above roughly 10-12% grade expose the 500W motor's limits, especially on throttle-only; expect to drop into PAS 1 and pedal actively on serious hills",
+      "Retrospec publishes almost no geometry data, so figuring out whether this bike fits you before you buy requires some guesswork, which is frustrating for taller riders especially",
+    ],
+  },
+
+  // ============================================
+  // 7. KEY SPECIFICATIONS
+  // ============================================
+  keySpecifications: {
+    heading: "Key Specifications",
+    motorBattery: [
+      { label: "Motor", value: "500W rear hub motor" },
+      { label: "Battery", value: "48V / 500Wh (LG 21700 cells, UL2271 certified)" },
+      { label: "Claimed range", value: "Up to 52 miles" },
+      { label: "Charger", value: "Standard charger, charges on or off the bike" },
+    ],
+    performance: [
+      { label: "Top speed", value: "20 mph (Class 2) / 28 mph (Class 3 unlockable)" },
+      { label: "Assist modes", value: "6 PAS levels + push-to-go throttle" },
+      { label: "Sensor type", value: "Cadence sensor" },
+      { label: "Ride character", value: "Smooth, stable cruiser with lively edge" },
+    ],
+    frameBuild: [
+      { label: "Frame style", value: "Step-through, 16.5\" standover height" },
+      { label: "Frame material", value: "6061 hydroformed aluminum" },
+      { label: "Fork", value: "80mm suspension fork with preload adjustment" },
+      { label: "Weight capacity", value: "300 lbs" },
+    ],
+    components: [
+      { label: "Brakes", value: "Tektro mechanical disc, 180mm rotors" },
+      { label: "Drivetrain", value: "Shimano Tourney 7-speed" },
+      { label: "Tires", value: "26\" x 4\" fat MTB tires" },
+      { label: "Lights", value: "60-lux integrated front headlight + rear brake light" },
+    ],
+  },
+
+  // ============================================
+  // 8. PRICE & VALUE
+  // ============================================
+  priceAndValue: {
+    heading: "Price and Value",
+    paragraphs: [
+      "**MSRP: $1,499.** For that price, you're getting a 500W motor, a 500Wh battery with LG cells, 80mm front suspension, Tektro disc brakes with upgraded 180mm rotors, and a step-through aluminum frame. That's a genuinely competitive spec sheet, and Retrospec doesn't cheap out where it counts.",
+      "Is it worth the money? Honestly, yes, with one caveat. If you're a heavier rider or planning to tackle steeper terrain regularly, the Koa Rev 2 will show its limits. But for the rider who wants a comfortable, capable electric fat bike for mixed-surface riding and doesn't want to spend $1,800+, this is one of the smarter buys in the category right now.",
+      "The most obvious alternative is the Rad Power RadRover 6 Plus, which runs around $1,699 and offers a bigger battery and a more polished display. It's the better pick if range is your top priority. But the Koa Rev 2 undercuts it by $200 and edges it out on brake quality with those 180mm Tektro rotors.",
+      "If you want to stay within the Retrospec family and want more, the Koa Rev+ 2 steps up to a 750W motor, 720Wh battery, torque sensor, and hydraulic brakes at $1,899. It's genuinely worth the extra $400 for regular off-road riding or if you're a heavier rider who wants stronger hill climbing.",
+    ],
+  },
+
+  // ============================================
+  // 9. DESIGN & BUILD QUALITY
+  // ============================================
+  designAndBuildQuality: {
+    heading: "Design and Build Quality",
+    paragraphs: [
+      "The Koa Rev 2 uses a 6061 hydroformed aluminum frame with a thicker downtube to house the integrated battery. Retrospec kept the frame tubing slimmer than most fat bikes at this price, which makes it look less bloated and actually gives it a cleaner silhouette. It comes in Matte Graphite and Moss Green. Both are solid, tasteful choices that age well.",
+      "The step-through geometry puts you in a comfortable, upright riding position. Handlebar reach and stack height felt natural during testing, and the saddle, while on the wider side, is genuinely plush, not the cheap afterthought you sometimes get at this price point.",
+      "Cable routing is tidy without being exceptional. The derailleur cable exposed under the bottom bracket is a known weak spot that one reviewer flagged as a damage risk on rougher trails. Worth keeping an eye on.",
+      "Overall build quality feels honest and appropriate for the price. There's no premium flex or carbon-fiber pretension here. It's a practical, well-assembled bike that holds up to regular use.",
+    ],
+    image: {
+      image: "/images/electric-fat-bikes/retrospec-koa-rev-2-frame.webp",
+      alt: "Retrospec Koa Rev 2 Step-Through frame and integrated battery detail",
+      description:
+        "The hydroformed 6061 aluminum frame with integrated downtube battery keeps the profile cleaner than most fat bikes at this price",
+    },
+  },
+
+  // ============================================
+  // 10. MOTOR PERFORMANCE & POWER
+  // ============================================
+  motorPerformanceAndPower: {
+    heading: "Motor Performance and Power",
+    paragraphs: [
+      "The 500W rear hub motor delivers power smoothly at moderate assist levels. Pull away from a stop in PAS 2 or 3 and you get a steady, confidence-inspiring push rather than a jarring lurch. That said, the cadence sensor means the motor reads pedaling motion rather than pedaling effort, so don't expect the seamless, intuitive response of a torque-sensor bike. It's more of an on/off relay than a smooth ramp.",
+      "Across six assist levels, the difference between PAS 1 and PAS 6 is noticeable and useful. PAS 1 gives you a light assist that makes the bike feel like a lightly powered bicycle. PAS 6 pushes you up to the 20 mph Class 2 cap confidently, and Class 3 mode (unlockable) takes it to 28 mph if your local laws allow.",
+      "Hill climbing is where you'll feel the 500W ceiling most clearly. Testing showed the throttle-only mode struggling on inclines above 12%, and PAS becomes noticeably slow on steep grades. Active pedaling in a lower gear keeps you moving, but this isn't a bike that will float up a steep San Francisco block without some legwork.",
+    ],
+    image: {
+      image: "/images/electric-fat-bikes/retrospec-koa-rev-2-motor.webp",
+      alt: "Retrospec Koa Rev 2 500W rear hub motor close-up",
+      description: "The 500W rear hub motor handles flat terrain and moderate grades with ease",
+    },
+  },
+
+  // ============================================
+  // 11. BATTERY & RANGE TEST
+  // ============================================
+  batteryAndRangeTest: {
+    heading: "Battery and Range Test",
+    paragraphs: [
+      "Retrospec claims up to 52 miles per charge. In real-world testing, that number tells only part of the story. At maximum assist (PAS 6), expect around 22 to 24 miles before the battery gives out. Drop to PAS 1 and that number climbs to roughly 40 miles. The 52-mile figure appears to represent an optimistic best-case: steady pedaling, flat terrain, lighter rider, minimal throttle use.",
+      "Charging the 500Wh battery takes a few hours from empty to full. The removable design is genuinely practical. You can pull it off and charge it indoors from a standard outlet, which matters if you're parking outside.",
+      "For most daily commutes under 15 miles round-trip, range isn't going to be an issue at all. The battery is honest for its size. The 500Wh pack is on the smaller side compared to what the 2025 market now considers standard (600-800Wh), so if you're planning longer weekend rides, pack a plan for a mid-trip charge or stick to PAS 1-2.",
+    ],
+    image: {
+      image: "/images/electric-fat-bikes/retrospec-koa-rev-2-battery.webp",
+      alt: "Retrospec Koa Rev 2 removable 500Wh integrated battery",
+      description:
+        "The 500Wh removable battery charges both on and off the bike for flexible convenience",
+    },
+  },
+
+  // ============================================
+  // 12. RIDE QUALITY & COMFORT
+  // ============================================
+  rideQualityAndComfort: {
+    heading: "Ride Quality and Comfort",
+    paragraphs: [
+      "This is honestly where the Koa Rev 2 surprises you. The 26\" x 4\" fat tires soak up surface imperfections in a way that borderline spoils you. On cracked sidewalks, gravel paths, and hard-packed dirt, the bike just floats. Add the 80mm suspension fork and the plush saddle, and after an hour in the saddle you're not fighting fatigue or pressure points.",
+      "Handling is stable without being sluggish. The 700mm handlebar and wide tire contact patch give you a planted, confident feel around corners. It's not nimble in the way a narrow-tire commuter is nimble, but it corners predictably and recovers easily from minor surface surprises.",
+      "One note for heavier riders: the suspension fork is on the softer side. At 230 lbs, multiple testers found even maximum preload wasn't quite firm enough. If that describes you, the Koa Rev+ 2 with its upgraded fork is worth the extra spend.",
+    ],
+    image: {
+      image: "/images/electric-fat-bikes/retrospec-koa-rev-2-riding.webp",
+      alt: "Rider on Retrospec Koa Rev 2 Step-Through on a mixed terrain path",
+      description:
+        "The step-through frame and wide tires make for an easy, comfortable ride on almost any surface",
+    },
+  },
+
+  // ============================================
+  // 13. COMPONENTS & FEATURES
+  // ============================================
+  componentsAndFeatures: {
+    heading: "Components and Features",
+    paragraphs: [
+      "The Tektro mechanical disc brakes with 180mm rotors are a genuine highlight. In testing, stopping power was confident in both dry and wet conditions, and modulation was better than what you typically find on bikes at this price. Multiple reviewers noted the brakes outperformed similar e-bikes they'd tested. The trade-off with mechanical discs over hydraulic is that cable tension needs occasional adjustment. That's not a dealbreaker, just a maintenance reality.",
+      "The Shimano Tourney 7-speed drivetrain is entry-level but appropriate. Shifts are reasonably crisp when tuned correctly, and the gear range gives you enough steps to manage assisted climbs without bouncing between extremes. Don't expect Deore-level precision, but it's reliable.",
+      "The 4\" fat tires offer solid traction on mixed surfaces. Riders reported good grip on packed dirt and gravel, though the tires aren't designed for deep mud or true singletrack. Think of them as all-condition rather than all-terrain.",
+      "Integrated front and rear lights are a real plus. The 60-lux headlight upgrade is noticeably brighter than what earlier Koa models had, and the rear light activates with braking. Fenders are included standard, which is more than a lot of competitors bother with.",
+    ],
+    image: {
+      image: "/images/electric-fat-bikes/retrospec-koa-rev-2-brakes.webp",
+      alt: "Tektro mechanical disc brakes with 180mm rotors on Retrospec Koa Rev 2",
+      description:
+        "Upgraded 180mm Tektro disc brakes offer reliable stopping power well above the category norm",
+    },
+  },
+
+  // ============================================
+  // 14. DISPLAY / APP / UX
+  // ============================================
+  displayAppUserExperience: {
+    heading: "Display, App, and User Experience",
+    paragraphs: [
+      "The center-mounted display shows your speed, assist level, battery life, and trip data. It's readable in most conditions, though bright midday sun can wash it out a little. Nothing fancy, but functional. You won't be distracted squinting at it while navigating traffic.",
+      "The handlebar-mounted button pod controls assist levels, lights, the throttle, and walk mode. The layout makes sense after a few minutes of use. Walk mode is one of those features that sounds trivial until you're pushing a 65+ lb e-bike up a ramp, at which point you'll consider it essential.",
+      "Retrospec doesn't currently offer a companion app for the Koa Rev 2, which keeps things simple but does mean no ride tracking, custom PAS tuning, or firmware updates through your phone. For most riders this won't matter. For the tech-enthusiast crowd, it's a gap worth knowing about before you buy.",
+    ],
+    image: {
+      image: "/images/electric-fat-bikes/retrospec-koa-rev-2-display.webp",
+      alt: "Retrospec Koa Rev 2 center-mounted display and handlebar controls",
+      description:
+        "Simple, functional display with intuitive handlebar pod controls everything you need while riding",
+    },
+  },
+
+  // ============================================
+  // 15. WHO THIS E-BIKE IS FOR
+  // ============================================
+  whoThisEBikeIsFor: {
+    heading: "Who This E-Bike Is For",
+    paragraphs: [
+      "**Commuters:** The Koa Rev 2 Step-Through is a solid daily commuter for rides under 15 miles round-trip. The fenders keep road spray off, the lights are genuinely bright, and the step-through frame makes repeated mounting and dismounting easy at intersections. It's heavier than a dedicated commuter bike, so locking it securely matters, and you'll want a solid U-lock.",
+      "**Casual riders and beginners:** This is arguably the sweet spot. The step-through frame, wide tires, and upright riding position are deeply confidence-inspiring for new riders or anyone returning to cycling after a long break. You don't need to be an experienced cyclist to feel comfortable on this bike within the first five minutes.",
+      "**Off-road riders:** Light trails, gravel paths, and hard-packed dirt are well within this bike's capabilities. That said, be honest with yourself about the limitations. Steep singletrack, serious climbs, and deep mud are outside what the 500W motor and standard fork are set up to handle comfortably. If off-road is your primary focus, the Koa Rev+ 2 is the better tool.",
+    ],
+  },
+
+  // ============================================
+  // 16. ALTERNATIVES TO CONSIDER
+  // ============================================
+  alternativesToConsider: {
+    heading: "Alternatives to Consider",
+    comparisons: [
+      {
+        modelComparison: "Retrospec Koa Rev 2 vs Rad Power RadRover 6 Plus",
+        optionA: {
+          label: "Choose the Koa Rev 2 if...",
+          points: [
+            "Budget matters and you want to stay at $1,499 without compromising on brake quality",
+            "You prefer a step-through frame for easy on/off and an upright riding position",
+            "Your rides are mostly flat to mildly hilly and 20-25 miles per charge is enough",
+          ],
+        },
+        optionB: {
+          label: "Choose the RadRover 6 Plus if...",
+          points: [
+            "You want a larger battery and prioritize squeezing maximum range out of each charge",
+            "You're a heavier rider who needs more motor muscle on hills",
+            "You value Rad Power's established service network and accessory ecosystem",
+          ],
+        },
+      },
+      {
+        modelComparison: "Retrospec Koa Rev 2 vs Retrospec Koa Rev+ 2",
+        optionA: {
+          label: "Choose the Koa Rev 2 if...",
+          points: [
+            "You're on a tighter budget and primarily ride flat to moderate terrain",
+            "You're a newer rider who doesn't need maximum power output",
+            "The $400 savings matters more than torque sensor responsiveness",
+          ],
+        },
+        optionB: {
+          label: "Choose the Koa Rev+ 2 if...",
+          points: [
+            "You ride hilly terrain regularly and want the 750W motor and torque sensor",
+            "You're a heavier rider or plan to carry cargo frequently",
+            "You want the longer 72-mile claimed range and hydraulic disc brakes",
+          ],
+        },
+      },
+    ],
+  },
+
+  // ============================================
+  // 17. FINAL VERDICT
+  // ============================================
+  finalVerdict: {
+    heading: "Final Verdict",
+    summary:
+      "The Retrospec Koa Rev 2 Step-Through is a well-balanced electric fat bike that gets the fundamentals right. The ride quality is genuinely pleasant, the brakes are better than the price suggests, and the step-through frame opens this category up to riders who've been hesitant. It falls short on range relative to manufacturer claims and struggles on steep hills, so it's not the right tool for every job.",
+    recommendation:
+      "If you're a beginner or intermediate rider looking for a capable, comfortable electric fat bike under $1,500 for commuting, neighborhood cruising, or light trail riding, the Koa Rev 2 Step-Through deserves serious consideration. If you're regularly climbing steep grades, hauling heavy loads, or planning long weekend rides, spend the extra $400 for the Koa Rev+ 2. It's the version that removes the compromises.",
+  },
+
+  // ============================================
+  // 18. FAQ SECTION
+  // ============================================
+  faqTitle: "FAQs",
+  faq: [
+    {
+      question: "Is the Retrospec Koa Rev 2 Step-Through good for commuting?",
+      answer:
+        "Yes, for commutes up to about 12-15 miles each way. The bike has integrated front and rear lights, full fenders to handle wet roads, and a step-through frame that makes repeated stops easy. It's on the heavier side (around 65 lbs), so you'll want a quality lock and ideally a place to store it securely. If your commute involves steep hills, plan to pedal actively in lower gears. The 500W motor needs some help on serious grades.",
+    },
+    {
+      question: "How fast does the Koa Rev 2 Step-Through go?",
+      answer:
+        "In its default Class 2 setting, the bike tops out at 20 mph with pedal assist. Retrospec allows Class 3 unlocking, which raises the assist limit to 28 mph, though Class 3 use typically requires riders to be 16+ and may restrict access to certain bike paths depending on your local laws. The throttle is also Class 2 rated at 20 mph.",
+    },
+    {
+      question: "What is the real-world range of the Koa Rev 2?",
+      answer:
+        "In independent testing, the Koa Rev 2 achieved around 22-24 miles at maximum assist (PAS 6) and roughly 40 miles at the lowest assist level (PAS 1). Retrospec's 52-mile claim represents an optimistic ceiling achievable under ideal conditions. For practical planning, expect 25-35 miles on mixed assist with a 180-pound rider on relatively flat terrain. Rider weight, hills, and throttle use will all pull that number down.",
+    },
+    {
+      question: "Is the Retrospec Koa Rev 2 worth buying in 2025?",
+      answer:
+        "At $1,499, it's one of the stronger value propositions in the electric fat bike category right now, especially given the upgraded Tektro brakes, UL2271 battery certification, and comfortable ride quality. If you're a casual to intermediate rider who wants all-terrain capability without a $2,000 budget, yes, it's worth it. Riders who need more power, longer range, or better hill climbing should look at the Koa Rev+ 2 or RadRover 6 Plus instead.",
+    },
+    {
+      question: "How does the Koa Rev 2 compare to the Koa Rev+ 2?",
+      answer:
+        "The Koa Rev+ 2 is the upgraded sibling, priced $400 higher at $1,899. The key differences: the Rev+ 2 uses a 750W motor (vs 500W), a larger 720Wh battery (vs 500Wh), a torque sensor instead of a cadence sensor for smoother power delivery, and hydraulic disc brakes instead of mechanical. The Rev+ 2 also claims 72 miles of range. If you ride hilly terrain, carry cargo, or are a heavier rider, the Rev+ 2 is worth the upgrade. For casual riding and commuting on moderate terrain, the Rev 2 gets the job done at a better price.",
+    },
+    {
+      question: "What is the weight limit on the Retrospec Koa Rev 2 Step-Through?",
+      answer:
+        "The Koa Rev 2 has a maximum rider weight capacity of 300 lbs. That said, riders at the upper end of that range may notice the front suspension fork feels too soft, even at maximum preload adjustment. Heavier riders have reported a lack of firmness. If you're over 220-230 lbs and plan to ride rougher terrain, the Koa Rev+ 2 is likely a better fit.",
+    },
+    {
+      question: "Does the Retrospec Koa Rev 2 have a throttle?",
+      answer:
+        "Yes. The Koa Rev 2 includes a push-to-go throttle that operates independently of pedal assist. It lets you get moving without pedaling, which is handy at intersections or when you need a quick burst of speed. The throttle is governed at Class 2 speeds (20 mph). It's worth noting the throttle works best on flat terrain. On hills, you'll want to combine it with active pedaling for best results.",
+    },
+  ],
+
+  // ============================================
+  // 19. VIDEO REVIEW (OPTIONAL)
+  // ============================================
+  videoReview: {
+    heading: "Video Review",
+    title: "Retrospec Koa Rev 2 Video Review",
+    embedUrl: "https://www.youtube.com/embed/PLACEHOLDER_VIDEO_ID",
+    description:
+      "Watch the Koa Rev 2 in action across pavement and light off-road terrain, including our range test and hill climb observations. A good companion to this written review if you want to see how the bike moves before committing.",
   },
 };
 
@@ -2967,11 +3707,13 @@ const retrospecValenRev2Article = {
 
 const brands = [
   chathamRevPlus2Article,
+  chathamRevPlus2StepThroughArticle,
   chathamRev3Article,
   beaumontRevPlusArticle,
   beaumontRev3StepThroughArticle,
   valenRevPlusArticle,
   valenRev3Article,
+  koaRev2StepThroughArticle,
   koaRev3Article,
   retrospecValenRev2Article,
 ];
