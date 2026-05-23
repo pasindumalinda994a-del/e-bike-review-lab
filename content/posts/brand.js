@@ -1930,9 +1930,12 @@ const beaumontRev3StepThroughArticle = {
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-bikes/beaumont-rev-3-step-through.webp",
-  cardImage: "/images/electric-bikes/beaumont-rev-3-step-through.webp",
-  articleHeroImage: "/images/electric-bikes/beaumont-rev-3-step-through.webp",
+  heroImage:
+    "/images/brand/retrospec/Beaumont Rev 3 City Electric Bike - Step Through.webp",
+  cardImage:
+    "/images/brand/retrospec/Beaumont Rev 3 City Electric Bike - Step Through.webp",
+  articleHeroImage:
+    "/images/brand/retrospec/Beaumont Rev 3 City Electric Bike - Step Through.webp",
   heroImageAlt: "Beaumont Rev 3 Step-Through electric city bike in Blush pink on a sunny suburban street",
 
   // ============================================
@@ -2051,7 +2054,8 @@ const beaumontRev3StepThroughArticle = {
       "The full-coverage steel fenders are a practical bonus. They cover the tire completely rather than just catching the worst of the spray, which matters on wet city streets. Rear rack and integrated bell are both solidly mounted with no flex or rattle.",
     ],
     image: {
-      image: "/images/electric-bikes/beaumont-rev-3-step-through-frame.webp",
+      image:
+        "/images/brand/retrospec/Beaumont Rev 3 City Electric Bike - Step Through Design.webp",
       alt: "Beaumont Rev 3 Step-Through steel frame and Dutch handlebars close-up",
       description: "The step-through steel frame and upright Dutch handlebars define the riding experience",
     },
@@ -2068,7 +2072,8 @@ const beaumontRev3StepThroughArticle = {
       "Hills are where you feel the 350W rating honestly. Moderate grades (5-6%) are fine in level 4 or 5. Steep city hills (8%+) will have the motor working hard and speed dropping to 10-12 mph. It's not going to stall out on you, but don't expect the effortless hill-climbing you'd get from a 500W or mid-drive setup. For most city terrain, it's plenty. For San Francisco hills? You'd want more motor.",
     ],
     image: {
-      image: "/images/electric-bikes/beaumont-rev-3-motor.webp",
+      image:
+        "/images/brand/retrospec/Beaumont Rev 3 City Electric Bike - Step Through Motor.webp",
       alt: "Beaumont Rev 3 Step-Through 350W Ananda rear hub motor detail",
       description: "The 350W Ananda rear hub motor handles flat city terrain with smooth, predictable power",
     },
@@ -2085,7 +2090,8 @@ const beaumontRev3StepThroughArticle = {
       "The battery is seat tube-mounted externally, which makes removal for charging straightforward. You can pop it off the bike and charge it at your desk rather than dragging the whole bike inside, a small but genuinely appreciated design decision. The battery indicator on the LED display shows five bars, which gives you enough warning before you're caught short.",
     ],
     image: {
-      image: "/images/electric-bikes/beaumont-rev-3-battery.webp",
+      image:
+        "/images/brand/retrospec/Beaumont Rev 3 City Electric Bike - Step Through Battery.webp",
       alt: "Beaumont Rev 3 Step-Through 36V battery mounted on seat tube",
       description: "The external seat tube battery is easy to remove for indoor charging",
     },
@@ -2102,7 +2108,8 @@ const beaumontRev3StepThroughArticle = {
       "The lock-on comfort grips dampen vibration noticeably compared to standard rubber grips. No buzzing in your hands on chip-seal pavement. One thing I'd note: the bike is one frame size only (42cm, rated for 5'0\" to 5'10\"), so taller riders may want to look elsewhere. The seatpost has good adjustment range, but very tall riders might find the reach a bit short.",
     ],
     image: {
-      image: "/images/electric-bikes/beaumont-rev-3-riding-comfort.webp",
+      image:
+        "/images/brand/retrospec/Beaumont Rev 3 City Electric Bike - Step Through Comfort.webp",
       alt: "Rider on Beaumont Rev 3 Step-Through in upright Dutch riding position",
       description: "The upright Dutch riding position makes long city rides comfortable without back strain",
     },
@@ -2120,7 +2127,8 @@ const beaumontRev3StepThroughArticle = {
       "Included rear rack (22 lb capacity) and full-coverage steel fenders are excellent add-ons. The multi-tool tucked in the box covers everything you'd need for trailside adjustments. The integrated bell is a nice touch, quiet but clear, and it's part of the brake lever assembly rather than a cheap afterthought.",
     ],
     image: {
-      image: "/images/electric-bikes/beaumont-rev-3-components.webp",
+      image:
+        "/images/brand/retrospec/Beaumont Rev 3 City Electric Bike - Step Through Brake.webp",
       alt: "Beaumont Rev 3 Step-Through Tektro disc brakes and Shimano Tourney drivetrain",
       description: "Tektro disc brakes and Shimano 7-speed Tourney keep stopping and shifting reliable",
     },
@@ -2137,7 +2145,8 @@ const beaumontRev3StepThroughArticle = {
       "Setup out of the box is straightforward. Retrospec includes the all-in-one multi-tool and a clear owner's manual. Assembly takes about 45-60 minutes for someone comfortable turning a wrench. Attaching the front wheel, handlebars, pedals, and saddle are the main tasks. The Ananda control unit on the handlebars pairs intuitively: throttle, assist level up/down, headlight toggle, and walk mode are all accessible without looking down.",
     ],
     image: {
-      image: "/images/electric-bikes/beaumont-rev-3-display.webp",
+      image:
+        "/images/brand/retrospec/Beaumont Rev 3 City Electric Bike - Step Through Screen.webp",
       alt: "Beaumont Rev 3 Step-Through Ananda LED display and handlebar controls",
       description: "The Ananda handlebar controls keep everything simple, with assist, throttle, lights, and walk mode at your fingertips",
     },
