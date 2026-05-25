@@ -1557,9 +1557,9 @@ const valenRevPlusArticle = {
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-bikes/valen-rev-plus.webp",
-  cardImage: "/images/electric-bikes/valen-rev-plus-card.webp",
-  articleHeroImage: "/images/electric-bikes/valen-rev-plus-hero.webp",
+  heroImage: "/images/brand/retrospec/Valen Rev+ Fat Tire Electric Bike.webp",
+  cardImage: "/images/brand/retrospec/Valen Rev+ Fat Tire Electric Bike.webp",
+  articleHeroImage: "/images/brand/retrospec/Valen Rev+ Fat Tire Electric Bike.webp",
   heroImageAlt:
     "Retrospec Valen Rev+ Fat Tire Electric Bike in Matte Olive Drab on a coastal path",
 
@@ -1686,7 +1686,7 @@ const valenRevPlusArticle = {
       "One thing worth flagging: at 72 lbs, this thing is heavy. The bike feels planted and stable on the road because of it, but picking it up, loading it into a truck bed, or carrying it up more than one flight of stairs is genuinely a two-person job.",
     ],
     image: {
-      image: "/images/electric-bikes/valen-rev-plus-design.webp",
+      image: "/images/brand/retrospec/Valen Rev+ Fat Tire Electric Bike Design.webp",
       alt: "Retrospec Valen Rev+ frame detail showing integrated battery and hydroformed aluminum construction",
       description:
         "The hydroformed aluminum frame integrates the 720Wh battery seamlessly into the downtube",
@@ -1704,7 +1704,7 @@ const valenRevPlusArticle = {
       "Hill climbing is where this motor earns its keep. I ran it up an 8% grade for about half a mile in PAS 5, and the motor didn't bog or hesitate. Speed dropped slightly on the steeper sections, but it maintained momentum throughout. For comparison, underpowered 500W hub motors on similarly heavy fat bikes often stall noticeably on grades above 6%.",
     ],
     image: {
-      image: "/images/electric-bikes/valen-rev-plus-motor.webp",
+      image: "/images/brand/retrospec/Valen Rev+ Fat Tire Electric Bike Motor.webp",
       alt: "Retrospec Valen Rev+ 750W rear hub motor detail",
       description:
         "The 750W planetary geared hub motor delivers smooth, consistent power across all 6 assist levels",
@@ -1722,7 +1722,7 @@ const valenRevPlusArticle = {
       "A few variables to keep in mind: throttle-heavy riding, a lot of uphill, cold temperatures below 40 degrees F, and heavier riders (250+ lbs) will all reduce your range noticeably. Budget for 35-45 miles in realistic conditions and you won't be caught off guard.",
     ],
     image: {
-      image: "/images/electric-bikes/valen-rev-plus-battery.webp",
+      image: "/images/brand/retrospec/Valen Rev+ Fat Tire Electric Bike Battery.webp",
       alt: "Retrospec Valen Rev+ 720Wh LG integrated battery pack",
       description: "The 720Wh LG 21700 cell battery charges both on and off the bike",
     },
@@ -1739,7 +1739,7 @@ const valenRevPlusArticle = {
       "After an hour in the saddle, the moto-style seat still felt supportive rather than punishing. The upright geometry keeps weight off your wrists. Two hours in, I noticed some pressure from the seat on longer road sections. Nothing dramatic, but riders planning long weekend rides might consider a seat pad or swap.",
     ],
     image: {
-      image: "/images/electric-bikes/valen-rev-plus-ride.webp",
+      image: "/images/brand/retrospec/Valen Rev+ Fat Tire Electric Bike Comfort.webp",
       alt: "Person riding Retrospec Valen Rev+ on coastal path showing comfort and posture",
       description: "The upright riding position keeps weight off the wrists on longer rides",
     },
@@ -1757,7 +1757,7 @@ const valenRevPlusArticle = {
       "Lights are integrated front and rear. The 100 Lux headlight is bright enough to see by on unlit paths, and the rear light includes a brake indicator. The alloy kickstand is sturdy. Walk mode is accessible from the handlebar pod and works well for maneuvering the heavy bike in tight spaces like apartment lobbies.",
     ],
     image: {
-      image: "/images/electric-bikes/valen-rev-plus-brakes.webp",
+      image: "/images/brand/retrospec/Valen Rev+ Fat Tire Electric Bike Brake.webp",
       alt: "Tektro hydraulic disc brakes on Retrospec Valen Rev+ with 180mm ebike rotors",
       description:
         "Tektro hydraulic disc brakes with ebike-specific 180mm rotors, a genuine upgrade over competitors at this price",
@@ -1775,7 +1775,7 @@ const valenRevPlusArticle = {
       "Out-of-box assembly takes about 30-45 minutes for someone reasonably handy. The key steps are attaching the front wheel, handlebars, pedals, and saddle. Retrospec includes a decent manual, and there's an assembly video available. First-time e-bike owners should budget an extra 15-20 minutes for initial display setup.",
     ],
     image: {
-      image: "/images/electric-bikes/valen-rev-plus-display.webp",
+      image: "/images/brand/retrospec/Valen Rev+ Fat Tire Electric Bike Screen.webp",
       alt: "Retrospec Valen Rev+ center-mounted color LCD display showing speed and battery level",
       description:
         "The center-mounted color display shows all key metrics at a glance while riding",
@@ -2663,9 +2663,9 @@ const koaRev3Article = {
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-bikes/retrospec-koa-rev-3.webp",
-  cardImage: "/images/electric-bikes/retrospec-koa-rev-3-card.webp",
-  articleHeroImage: "/images/electric-bikes/retrospec-koa-rev-3-hero.webp",
+  heroImage: "/images/brand/retrospec/Koa Rev 3 Fat Tire Electric Bike.webp",
+  cardImage: "/images/brand/retrospec/Koa Rev 3 Fat Tire Electric Bike.webp",
+  articleHeroImage: "/images/brand/retrospec/Koa Rev 3 Fat Tire Electric Bike.webp",
   heroImageAlt: "Retrospec Koa Rev 3 fat tire electric bike on a gravel trail",
 
   // ============================================
@@ -2774,7 +2774,7 @@ const koaRev3Article = {
       "Aesthetically, it's a clean, sporty look that fits in equally well on a bike path or a gravel road. Cable routing is tidy, and the color options are understated enough to age well. Nothing about this screams 'budget' from a distance.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-koa-rev-3-frame.webp",
+      image: "/images/brand/retrospec/Koa Rev 3 Fat Tire Electric Bike Design.webp",
       alt: "Retrospec Koa Rev 3 hydroformed aluminum frame and integrated battery",
       description: "The integrated downtube battery keeps the Koa Rev 3 looking sharp from every angle",
     },
@@ -2791,7 +2791,7 @@ const koaRev3Article = {
       "Hill climbing is solid for a 500W motor. On moderate grades (around 5-6%), it maintains speed without breaking a sweat in PAS 4. Steeper climbs in the 10-12% range will require you to drop to a lower gear and keep pedaling, but it never felt like it was about to give up. For a bike in this class, that's about what you'd expect.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-koa-rev-3-motor.webp",
+      image: "/images/brand/retrospec/Koa Rev 3 Fat Tire Electric Bike Motor.webp",
       alt: "Retrospec Koa Rev 3 500W Ananda rear hub motor closeup",
       description: "The Ananda motor system delivers smooth, predictable power across all five assist levels",
     },
@@ -2808,7 +2808,7 @@ const koaRev3Article = {
       "Charging from near-empty takes roughly 5-6 hours with the included 2A charger, which is about average for a 500Wh pack. The battery can be charged on or off the bike, which is a nice flexibility for apartment dwellers who can't wheel the bike up to a wall outlet easily.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-koa-rev-3-battery.webp",
+      image: "/images/brand/retrospec/Koa Rev 3 Fat Tire Electric Bike Battery.webp",
       alt: "Retrospec Koa Rev 3 integrated 48V 500Wh LG battery pack",
       description: "The LG 21700 cells inside the Koa Rev 3 bring real-world credibility to the 75-mile range claim",
     },
@@ -2825,7 +2825,7 @@ const koaRev3Article = {
       "After 60-90 minutes in the saddle, the upright riding position does its job. No significant lower back fatigue or wrist pressure during testing. The saddle is comfortable for most body types, though longer-distance riders might want to swap it for something with a center cutout.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-koa-rev-3-riding.webp",
+      image: "/images/brand/retrospec/Koa Rev 3 Fat Tire Electric Bike Comfort.webp",
       alt: "Rider on Retrospec Koa Rev 3 fat tire electric bike on gravel path",
       description: "The fat tires and 80mm fork absorb the rough stuff without drama",
     },
@@ -2843,7 +2843,7 @@ const koaRev3Article = {
       "Integrated front and rear lights with a brake indicator are standard. The rear light actually reacts to braking input, which adds a real layer of safety for commuters in traffic. The brightness is adequate for visibility without being blinding. Fenders are included too, which keeps the mud and spray off your back on wet trails.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-koa-rev-3-brakes.webp",
+      image: "/images/brand/retrospec/Koa Rev 3 Fat Tire Electric Bike Brake.webp",
       alt: "Tektro hydraulic disc brakes on the Retrospec Koa Rev 3 electric fat bike",
       description:
         "Tektro hydraulic brakes are a genuine upgrade over the mechanical brakes common on competing ebikes at this price",
@@ -2861,7 +2861,7 @@ const koaRev3Article = {
       "Out-of-box assembly is straightforward. Retrospec includes all the tools you need folded into a single multi-tool, which is a thoughtful touch. Most new riders can get the bike road-ready in 30-45 minutes. The Ananda system's five PAS levels are intuitive to use from day one, with no manual required.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-koa-rev-3-display.webp",
+      image: "/images/brand/retrospec/Koa Rev 3 Fat Tire Electric Bike Screen.webp",
       alt: "Retrospec Koa Rev 3 LCD handlebar display showing speed and assist level",
       description: "The display is clean and functional, though it doesn't have app connectivity",
     },
