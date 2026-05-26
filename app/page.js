@@ -105,7 +105,7 @@ export default async function HomePage() {
       />
       <HomeNewsletter />
       <Script
-        src="http://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=4d8619e07f76b788a521eea2918d17285b4f86dc"
+        src="http://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=9bf780bdf12e6d1f7d42cfdc557706a3fcce6085"
         strategy="afterInteractive"
       />
     </main>
