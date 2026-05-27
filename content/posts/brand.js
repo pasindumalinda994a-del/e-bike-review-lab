@@ -426,9 +426,12 @@ const chathamRevPlus2Article = {
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-bikes/chatham-rev-plus-2.webp",
-  cardImage: "/images/electric-bikes/chatham-rev-plus-2.webp",
-  articleHeroImage: "/images/electric-bikes/chatham-rev-plus-2.webp",
+  heroImage:
+    "/images/brand/retrospec/Chatham Rev+ 2 Beach Cruiser Electric Bike.webp",
+  cardImage:
+    "/images/brand/retrospec/Chatham Rev+ 2 Beach Cruiser Electric Bike.webp",
+  articleHeroImage:
+    "/images/brand/retrospec/Chatham Rev+ 2 Beach Cruiser Electric Bike.webp",
   heroImageAlt:
     "Retrospec Chatham Rev+ 2 Beach Cruiser Electric Bike in Matte Black on white background",
 
@@ -549,7 +552,8 @@ const chathamRevPlus2Article = {
       "There's some flex in the handlebars under hard acceleration, and the steel fork isn't particularly confidence-inspiring if you push it on rougher surfaces. But for paved riding? It all feels solid. The vegan leather grips, non-slip platform pedals, and aluminum kickstand feel like deliberate quality choices, not afterthoughts.",
     ],
     image: {
-      image: "/images/electric-bikes/chatham-rev-plus-2-design.webp",
+      image:
+        "/images/brand/retrospec/Chatham Rev+ 2 Beach Cruiser Electric Bike Design.webp",
       alt: "Retrospec Chatham Rev+ 2 frame design and build quality, showing aluminum construction and matte finish",
       description:
         "The integrated battery and clean frame lines give the Chatham Rev+ 2 a tidier look than most bikes at this price",
@@ -567,7 +571,8 @@ const chathamRevPlus2Article = {
       "One thing worth noting: because it uses a cadence sensor (not a torque sensor), the power delivery feels binary rather than intuitive. You either have assist or you don't. It's fine once you're used to it, but riders coming from torque-sensor bikes like the Specialized Turbo or Trek Allant will notice the difference immediately.",
     ],
     image: {
-      image: "/images/electric-bikes/chatham-rev-plus-2-motor.webp",
+      image:
+        "/images/brand/retrospec/Chatham Rev+ 2 Beach Cruiser Electric Bike Motor.webp",
       alt: "500W rear hub motor on the Retrospec Chatham Rev+ 2 beach cruiser e-bike",
       description:
         "The 500W Ananda geared rear hub motor is quiet and delivers consistent power across all four assist levels",
@@ -585,7 +590,8 @@ const chathamRevPlus2Article = {
       "What actually affects your range the most: throttle use (biggest factor), assist level, your body weight, and wind. Headwinds on the coast are the silent range killer. A sustained 15 mph headwind in PAS 2 will cut your range by 20-30% compared to a calm day. Plan accordingly if you're doing out-and-back beach rides.",
     ],
     image: {
-      image: "/images/electric-bikes/chatham-rev-plus-2-battery.webp",
+      image:
+        "/images/brand/retrospec/Chatham Rev+ 2 Beach Cruiser Electric Bike Battery.webp",
       alt: "Integrated 48V 500Wh battery on the Retrospec Chatham Rev+ 2 electric cruiser bike",
       description:
         "The 500Wh battery sits inside the downtube for a clean look and can be charged on or off the bike",
@@ -603,7 +609,8 @@ const chathamRevPlus2Article = {
       "Cornering is relaxed and predictable rather than sporty. The wide tires and cruiser geometry mean you're committed to sweeping, deliberate turns rather than quick direction changes. On a boardwalk or paved trail, that's exactly what you want. On a busy urban street where you might need to dodge obstacles quickly, it requires a bit more planning ahead.",
     ],
     image: {
-      image: "/images/electric-bikes/chatham-rev-plus-2-ride.webp",
+      image:
+        "/images/brand/retrospec/Chatham Rev+ 2 Beach Cruiser Electric Bike Comfort.webp",
       alt: "Riding the Chatham Rev+ 2 beach cruiser e-bike on a paved coastal path",
       description:
         "Wide 3-inch tires and a relaxed upright position make the Chatham Rev+ 2 genuinely comfortable for long, easy rides",
@@ -622,7 +629,8 @@ const chathamRevPlus2Article = {
       "Standard equipment includes full-wrap fenders (genuinely useful, not decorative), an integrated 80-lux headlight, a battery-operated taillight with brake function, platform pedals with non-slip tread, an aluminum kickstand, and a chainstay-mounted chain cover. The all-in-one tool included in the box covers the common hex sizes and a spoke wrench, which is a nice touch that shows Retrospec thought about ownership, not just the initial purchase.",
     ],
     image: {
-      image: "/images/electric-bikes/chatham-rev-plus-2-components.webp",
+      image:
+        "/images/brand/retrospec/Chatham Rev+ 2 Beach Cruiser Electric Bike Brake.webp",
       alt: "Tektro disc brakes and Shimano 7-speed drivetrain on the Chatham Rev+ 2 electric beach cruiser",
       description:
         "The Tektro mechanical disc brakes and Shimano Tourney drivetrain are reliable workhorses suited to casual cruiser riding",
@@ -640,7 +648,8 @@ const chathamRevPlus2Article = {
       "Out of the box, assembly is straightforward. The bike ships about 85% assembled. You're attaching the handlebars, pedals, and front wheel, then adjusting saddle height. Retrospec includes a Quick Start Guide and a detailed owner's manual. First-time e-bike riders will be up and running in under 45 minutes.",
     ],
     image: {
-      image: "/images/electric-bikes/chatham-rev-plus-2-display.webp",
+      image:
+        "/images/brand/retrospec/Chatham Rev+ 2 Beach Cruiser Electric Bike Screen.webp",
       alt: "Full color TFT center-mounted display on the Retrospec Chatham Rev+ 2 e-bike",
       description:
         "The center-mounted TFT display shows speed, battery, assist level, and trip data at a comfortable sightline",
@@ -3385,9 +3394,9 @@ const retrospecValenRev2Article = {
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-bikes/retrospec-valen-rev-2.webp",
-  cardImage: "/images/electric-bikes/retrospec-valen-rev-2.webp",
-  articleHeroImage: "/images/electric-bikes/retrospec-valen-rev-2.webp",
+  heroImage: "/images/brand/retrospec/Valen Rev 2 Fat Tire Electric Bike.webp",
+  cardImage: "/images/brand/retrospec/Valen Rev 2 Fat Tire Electric Bike.webp",
+  articleHeroImage: "/images/brand/retrospec/Valen Rev 2 Fat Tire Electric Bike.webp",
   heroImageAlt: "Retrospec Valen Rev 2 fat tire electric bike in Matte Riptide Blue on a paved trail",
 
   // ============================================
@@ -3506,7 +3515,7 @@ const retrospecValenRev2Article = {
       "One thing to note: the triple clamp rigid steel fork looks the part visually, giving the bike its motorcycle-inspired stance. But don't mistake aesthetics for performance. It's rigid steel, not suspension. You'll feel every crack in the pavement through your wrists.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-valen-rev-2-frame.webp",
+      image: "/images/brand/retrospec/Valen Rev 2 Fat Tire Electric Bike Design.webp",
       alt: "Retrospec Valen Rev 2 moto-style frame and downtube battery detail",
       description: "The Valen Rev 2's distinctive cross-frame design and externally mounted battery give it a clean, moto-inspired silhouette.",
     },
@@ -3524,7 +3533,7 @@ const retrospecValenRev2Article = {
       "One honest observation: the cadence sensor pedal assist isn't the most refined system out there. It responds to pedaling motion rather than actual torque, so there's a slight lag when you start pedaling from a stop before the motor kicks in. It's not terrible, just noticeable compared to torque-sensor bikes.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-valen-rev-2-motor.webp",
+      image: "/images/brand/retrospec/Valen Rev 2 Fat Tire Electric Bike Motor.webp",
       alt: "Retrospec Valen Rev 2 750W rear hub motor close-up",
       description: "The 750W planetary geared rear hub motor provides fast, confident power delivery on both throttle and pedal assist.",
     },
@@ -3542,7 +3551,7 @@ const retrospecValenRev2Article = {
       "Range variables to keep in mind: every sustained throttle blast, every significant hill, and every extra 20 pounds on the bike chips away at that claimed number. Rider weight near the 350-pound limit will reduce range substantially. In cooler weather (below 40 F), lithium batteries also lose capacity, so winter riding shortens the range further.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-valen-rev-2-battery.webp",
+      image: "/images/brand/retrospec/Valen Rev 2 Fat Tire Electric Bike Battery.webp",
       alt: "Retrospec Valen Rev 2 removable 48V 500Wh LG battery on downtube",
       description: "The 500Wh LG Li-ion battery mounts externally on the downtube and removes easily for off-bike charging.",
     },
@@ -3560,7 +3569,7 @@ const retrospecValenRev2Article = {
       "That rigid steel fork is the comfort limiting factor. Smooth roads feel great. Anything choppier than light gravel starts to vibrate through the bars noticeably. If you're planning to ride on anything rougher than packed dirt paths regularly, the Rev Plus's 100mm suspension fork is worth the upgrade price.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-valen-rev-2-riding.webp",
+      image: "/images/brand/retrospec/Valen Rev 2 Fat Tire Electric Bike Comfort.webp",
       alt: "Rider on Retrospec Valen Rev 2 fat tire electric bike on a paved urban path",
       description: "The upright riding position and wide fat tires make the Valen Rev 2 comfortable and stable on a variety of surfaces.",
     },
@@ -3578,7 +3587,7 @@ const retrospecValenRev2Article = {
       "No lights are included. This is worth repeating because it catches people off guard. The bike has a reflective tire strip for passive visibility, but zero active lighting. For riding after dusk you'll need to purchase a headlight and taillight separately. Retrospec's Rev Plus model includes integrated lighting, which underscores that lights were a deliberate omission here to hit the price point.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-valen-rev-2-brakes.webp",
+      image: "/images/brand/retrospec/Valen Rev 2 Fat Tire Electric Bike Brake.webp",
       alt: "Tektro Aries mechanical disc brakes on Retrospec Valen Rev 2",
       description: "Tektro Aries mechanical disc brakes with 180mm rotors deliver confident stopping power that outperforms what you'd expect at this price.",
     },
@@ -3595,7 +3604,7 @@ const retrospecValenRev2Article = {
       "Out-of-box setup is refreshingly simple. The bike ships mostly assembled. Attach the handlebars, mount the pedals, adjust saddle height, and charge the battery. Retrospec's easy-change rear wheel system also makes removing and reinstalling the back wheel for maintenance much less painful than the standard axle-nut nightmare on most ebikes.",
     ],
     image: {
-      image: "/images/electric-bikes/retrospec-valen-rev-2-display.webp",
+      image: "/images/brand/retrospec/Valen Rev 2 Fat Tire Electric Bike Screen.webp",
       alt: "Retrospec Valen Rev 2 handlebar LED control panel and thumb throttle",
       description: "The simple LED indicator panel shows battery level and assist mode. It's minimal but functional and easy to operate while riding.",
     },
