@@ -19,15 +19,15 @@
 /** Velotric merchant / affiliate product URLs by product `id`. Update links here only. */
 const velotricAffiliateLinks = {
   "velotric-discover-2":
-    "https://www.velotricbike.com/products/velotric-discover-2",
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-discover-3-commuter-ebike%3Fpage_source%3Dunknown_Popups-Promo-0b68eb1e-0267-41e2-826a-33de25c6a4c1%257Cexplore_discover_3&ctc=EBRLWebsite",
   "velotric-discover-2-hybrid":
-    "https://www.velotricbike.com/products/velotric-discover-2?variant=42376523055287",
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-discover-3-commuter-ebike%3Fpage_source%3Dunknown_Popups-Promo-0b68eb1e-0267-41e2-826a-33de25c6a4c1%257Cexplore_discover_3&ctc=EBRLWebsite",
   "velotric-fold-1-plus":
-    "https://www.velotricbike.com/products/velotric-fold-1-plus",
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-fold-1-plus%3F_pos%3D1%26_psq%3Dvelotric%252Bfold%252B1%252Bplus%26_ss%3De%26_v%3D1.0%26page_source%3Dproduct_selection_SearchSidebar%257Cvelotric_fold_1_plus_ebike&ctc=EBRLWebsite",
   "velotric-breeze-1":
-    "https://www.velotricbike.com/products/velotric-breeze-1",
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-breeze-1%3F_pos%3D1%26_psq%3Dvelotric%252Bbreeze%252B1%26_ss%3De%26_v%3D1.0%26page_source%3Dproduct_selection_SearchSidebar%257Cvelotric_breeze_1_cruiser_ebike&ctc=EBRLWebsite",
   "velotric-nomad-2":
-    "https://www.velotricbike.com/products/velotric-nomad-2",
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-nomad-2%3F_pos%3D1%26_sid%3D223032eae%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_nomad_2_fat_tire_ebike&ctc=EBRLWebsite",
 };
 
 const money = [

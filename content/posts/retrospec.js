@@ -19,9 +19,9 @@ const retrospecAffiliateLinks = {
   "retrospec-koa-rev-2-step-through":
     "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fcollections%2Felectric-fat-tire-bikes%2Fproducts%2Fkoa-rev-2-26-fat-tire-electric-bike-step-through&ctc=EBRLWebsite",
   "beaumont-rev-3-step-through":
-    "https://retrospec.com/collections/electric-city-bikes/products/beaumont-rev-electric-city-bike-step-through",
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fcollections%2Felectric-city-bikes%2Fproducts%2Fbeaumont-rev-electric-city-bike-step-through&ctc=EBRLWebsite",
   "retrospec-valen-rev-2":
-    "https://retrospec.com/collections/electric-fat-tire-bikes/products/valen-rev-20-fat-tire-electric-bike",
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fcollections%2Felectric-fat-tire-bikes%2Fproducts%2Fvalen-rev-20-fat-tire-electric-bike&ctc=EBRLWebsite",
 };
 
 const chathamRevPlus2StepThroughArticle = {
