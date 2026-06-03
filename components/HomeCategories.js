@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { categories } from "@/content/categories";
-import { brandArticles } from "@/content/posts/brand";
+import { brandArticles } from "@/content/posts/brand-articles";
 
 // Icon-based grid to quickly jump into the main categories.
 export default function HomeCategories() {

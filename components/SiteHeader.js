@@ -6,7 +6,7 @@ import { ChevronDown, X, ArrowRight } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { categories } from '@/content/categories';
-import { brandArticles } from '@/content/posts/brand';
+import { brandArticles } from '@/content/posts/brand-articles';
 import AnimatedButton from '@/components/AnimatedButton';
 
 const brandPageSlugs = brandArticles.map(

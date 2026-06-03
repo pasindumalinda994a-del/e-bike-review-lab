@@ -25,6 +25,7 @@ export const placements = {
       "electric-road-bikes/best-electric-road-bikes",
       "electric-cargo-bikes/best-electric-cargo-bikes",
       "electric-city-bikes/best-electric-city-bikes",
+      "electric-commuter-bikes/best-electric-commuter-bikes",
       "electric-fat-bikes/best-electric-fat-bikes",
       "electric-cruiser-bikes/best-electric-cruiser-bikes",
       "electric-hybrid-bikes/best-electric-hybrid-bikes",
@@ -51,6 +52,7 @@ export const placements = {
       "electric-road-bikes/best-electric-road-bikes",
       "electric-cargo-bikes/best-electric-cargo-bikes",
       "electric-city-bikes/best-electric-city-bikes",
+      "electric-commuter-bikes/best-electric-commuter-bikes",
       "electric-fat-bikes/best-electric-fat-bikes",
       "electric-cruiser-bikes/best-electric-cruiser-bikes",
       "electric-hybrid-bikes/best-electric-hybrid-bikes",
@@ -100,6 +102,11 @@ export const placements = {
         "electric-city-bikes/best-electric-city-bikes",
       ],
     },
+    "electric-commuter-bikes": {
+      sidebar: [
+        "electric-commuter-bikes/best-electric-commuter-bikes",
+      ],
+    },
     "electric-fat-bikes": {
       sidebar: [
         "electric-fat-bikes/best-electric-fat-bikes",
@@ -120,6 +127,13 @@ export const placements = {
         "electric-cruiser-bikes/retrospec-chatham-rev-plus-2-review",
         "electric-bikes/best-electric-bikes",
         "electric-cruiser-bikes/best-electric-cruiser-bikes",
+      ],
+    },
+    velotric: {
+      sidebar: [
+        "electric-commuter-bikes/velotric-discover-3-review",
+        "electric-commuter-bikes/best-electric-commuter-bikes",
+        "electric-bikes/best-electric-bikes",
       ],
     },
   },

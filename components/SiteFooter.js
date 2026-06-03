@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { categories } from "@/content/categories";
-import { brandArticles } from "@/content/posts/brand";
+import { brandArticles } from "@/content/posts/brand-articles";
 import AnimatedButton from "@/components/AnimatedButton";
 
 // Global footer with navigation, resources, and contact details.
@@ -24,9 +24,9 @@ export default function SiteFooter() {
       ]),
     ).values(),
   );
-  const featuredCategories = categories
-    .filter((category) => !brandCategorySlugs.has(category.slug))
-    .slice(0, 10);
+  const featuredCategories = categories.filter(
+    (category) => !brandCategorySlugs.has(category.slug),
+  );
 
   return (
     <footer className=" bg-white ">

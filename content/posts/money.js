@@ -16,6 +16,20 @@
 // 8. BUYER'S GUIDE - Educational content sections
 // ============================================================================
 
+/** Velotric merchant / affiliate product URLs by product `id`. Update links here only. */
+const velotricAffiliateLinks = {
+  "velotric-discover-2":
+    "https://www.velotricbike.com/products/velotric-discover-2",
+  "velotric-discover-2-hybrid":
+    "https://www.velotricbike.com/products/velotric-discover-2?variant=42376523055287",
+  "velotric-fold-1-plus":
+    "https://www.velotricbike.com/products/velotric-fold-1-plus",
+  "velotric-breeze-1":
+    "https://www.velotricbike.com/products/velotric-breeze-1",
+  "velotric-nomad-2":
+    "https://www.velotricbike.com/products/velotric-nomad-2",
+};
+
 const money = [
   {
     // ============================================
@@ -281,7 +295,7 @@ const money = [
           "Basic suspension fork is more cosmetic than functional",
           "No advanced security features like GPS tracking or app connectivity"
         ],
-        affiliateLink: "https://www.velotricbike.com/products/velotric-discover-2",
+        affiliateLink: velotricAffiliateLinks["velotric-discover-2"],
         reviewLink: null
       },
 
@@ -544,7 +558,7 @@ const money = [
           model: "Velotric Discover 2",
           price: "$1,499",
           avgRating: 4.5,
-          affiliateLink: "https://www.velotricbike.com/products/velotric-discover-2"
+          affiliateLink: velotricAffiliateLinks["velotric-discover-2"]
         },
         {
           model: "Brompton Electric G-Line",
@@ -1638,7 +1652,7 @@ const money = [
     internalLinks: [
       {
         text: "Top e-bikes for daily commuting needs",
-        url: "/electric-mountain-bikes/best-electric-commuter-bikes",
+        url: "/electric-commuter-bikes/best-electric-commuter-bikes",
         description: "If you're also considering an e-bike for commuting, check out our guide to the best electric commuter bikes with cargo capacity and weather protection"
       },
       {
@@ -1836,7 +1850,7 @@ const money = [
           "At $1,499, it's pricey for a folder",
           "63 lbs makes frequent lifting challenging"
         ],
-        affiliateLink: "https://www.velotricbike.com/products/velotric-fold-1-plus",
+        affiliateLink: velotricAffiliateLinks["velotric-fold-1-plus"],
         reviewLink: null
       },
       {
@@ -2174,7 +2188,7 @@ const money = [
           model: "Velotric Fold 1 Plus",
           price: "$1,499",
           avgRating: 4.7,
-          affiliateLink: "https://www.velotricbike.com/products/velotric-fold-1-plus"
+          affiliateLink: velotricAffiliateLinks["velotric-fold-1-plus"]
         },
         {
           model: "Aventon Sinch 2.5",
@@ -4322,7 +4336,7 @@ const money = [
           "Step-through frame limits some accessory mounting options"
         ],
         
-        affiliateLink: "https://www.velotricbike.com/products/velotric-discover-2",
+        affiliateLink: velotricAffiliateLinks["velotric-discover-2"],
         reviewLink: null
       },
       
@@ -4693,7 +4707,7 @@ const money = [
           "Front suspension is adequate but not exceptional"
         ],
         
-        affiliateLink: "https://www.velotricbike.com/products/velotric-breeze-1",
+        affiliateLink: velotricAffiliateLinks["velotric-breeze-1"],
         reviewLink: null
       }
     ],
@@ -4724,7 +4738,7 @@ const money = [
           model: "Velotric Discover 2",
           price: "$1,599",
           avgRating: 4.6,
-          affiliateLink: "https://www.velotricbike.com/products/velotric-discover-2"
+          affiliateLink: velotricAffiliateLinks["velotric-discover-2"]
         },
         {
           model: "Tenways CGO600 Pro",
@@ -4766,7 +4780,7 @@ const money = [
           model: "Velotric Breeze 1",
           price: "$1,199",
           avgRating: 4.4,
-          affiliateLink: "https://www.velotricbike.com/products/velotric-breeze-1"
+          affiliateLink: velotricAffiliateLinks["velotric-breeze-1"]
         }
       ]
     },
@@ -5136,7 +5150,7 @@ const money = [
           "Online-only purchase means assembly required"
         ],
         
-        affiliateLink: "https://www.velotricbike.com/products/velotric-nomad-2",
+        affiliateLink: velotricAffiliateLinks["velotric-nomad-2"],
         reviewLink: null
       },
       
@@ -5601,7 +5615,7 @@ const money = [
           model: "Velotric Nomad 2",
           price: "$1,999",
           avgRating: 4.7,
-          affiliateLink: "https://www.velotricbike.com/products/velotric-nomad-2"
+          affiliateLink: velotricAffiliateLinks["velotric-nomad-2"]
         },
         {
           model: "Lectric XPeak 2.0",
@@ -7182,7 +7196,7 @@ const money = [
           "Budget components like mechanical brakes and basic fork show their price point",
           "Rear hub motor placement affects balance and handling compared to mid-drives"
         ],
-        affiliateLink: "https://www.velotricbike.com/products/velotric-discover-2?variant=42376523055287",
+        affiliateLink: velotricAffiliateLinks["velotric-discover-2-hybrid"],
         reviewLink: null
       }
     ],
@@ -7255,7 +7269,7 @@ const money = [
           model: "Velotric Discover 2",
           price: "$1,599",
           avgRating: 4.4,
-          affiliateLink: "https://www.velotricbike.com/products/velotric-discover-2?variant=42376523055287"
+          affiliateLink: velotricAffiliateLinks["velotric-discover-2-hybrid"]
         }
       ]
     },
@@ -7441,7 +7455,28 @@ const money = [
         description: "Honest comparison of traditional chains versus maintenance-free belt drives"
       }
     ]
-  }
+  },
+  {
+    categorySlug: "electric-commuter-bikes",
+    category: "Electric Commuter Bikes",
+    contentType: "money",
+    slug: "best-electric-commuter-bikes",
+    title: "Best Electric Commuter Bikes 2026 (Coming Soon)",
+    seoTitle: "Best Electric Commuter Bikes 2026",
+    h1: "Best Electric Commuter Bikes",
+    metaDescription:
+      "Our full commuter e-bike roundup is in progress. Check back soon for tested picks and buying advice.",
+    heroImage: "/images/products/city-bikes-hero.webp",
+    cardImage: "/images/card/electric-city-bikes.png",
+    articleHeroImage: "/images/card/electric-city-bikes.png",
+    heroImageAlt: "Electric commuter e-bike on an urban bike path",
+    introductionParagraphs: [
+      "We are building a full, field-tested guide to the best electric commuter e-bikes. This page will be updated with rankings, specs, and buying advice soon.",
+    ],
+    secondaryIntroduction: [],
+    publishedAt: "2026-06-03T00:00:00Z",
+    estimatedReadingTime: 2,
+  },
 ];
 
 export const moneyArticles = money;

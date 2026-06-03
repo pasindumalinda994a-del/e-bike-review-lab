@@ -49,6 +49,13 @@ export const categories = [
       "Comprehensive reviews of electric city bikes for urban commuters, daily riders, and anyone seeking the perfect e-bike for navigating city streets.",
   },
   {
+    slug: "electric-commuter-bikes",
+    name: "Electric Commuter Bikes",
+    heroImage: "/images/categories/Electric City Bikes.webp",
+    description:
+      "Field-tested electric commuter e-bike reviews focused on daily rides: torque sensors, racks and fenders, theft protection, and real-world range for 10–30 mile round trips.",
+  },
+  {
     slug: "electric-fat-bikes",
     name: "Electric Fat Bikes",
     heroImage: "/images/categories/Electric Fat Bikes.webp",
@@ -75,6 +82,13 @@ export const categories = [
     heroImage: "/images/categories/Retrospec.png",
     description:
       "In-depth Retrospec e-bike reviews: beach cruisers, commuters, and value-focused builds tested for real-world range, comfort, and reliability.",
+  },
+  {
+    slug: "velotric",
+    name: "Velotric",
+    heroImage: "/images/electric-bikes/velotric-discover-3.webp",
+    description:
+      "In-depth Velotric e-bike reviews: commuters and all-rounders tested for real-world range, motor performance, and everyday usability.",
   },
 ];
 

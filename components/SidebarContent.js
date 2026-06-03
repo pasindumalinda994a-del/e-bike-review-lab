@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { categories } from "../content/categories";
-import { brandArticles } from "../content/posts/brand";
+import { brandArticles } from "../content/posts/brand-articles";
 import { getSidebarFeaturedPosts } from "../lib/mock-data";
 import FeaturedPostsCarousel from "./FeaturedPostsCarousel";
 

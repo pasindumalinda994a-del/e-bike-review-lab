@@ -1,7 +1,7 @@
-// Brand-specific single model reviews.
+// Retrospec single-model brand reviews.
 
 /** Merchant / affiliate product URLs by post `id`. Update links here only. */
-const brandAffiliateLinks = {
+const retrospecAffiliateLinks = {
   "chatham-rev-plus-2-beach-cruiser":
     "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=62d44d20-c742-49c3-b633-89e0d290ba05&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fretrospec.com%2Fcollections%2Felectric-beach-cruiser-bikes%2Fproducts%2Fchatham-rev-plus-electric-beach-cruiser-bike&ctc=EBRLWebsite",
   "retrospec-chatham-rev-plus-2-st":
@@ -62,7 +62,7 @@ const chathamRevPlus2StepThroughArticle = {
   // ============================================
   estimatedReadingTime: 12,
   publishedAt: "2026-01-18T00:00:00Z",
-  affiliateLink: brandAffiliateLinks["retrospec-chatham-rev-plus-2-st"],
+  affiliateLink: retrospecAffiliateLinks["retrospec-chatham-rev-plus-2-st"],
   ctaLabel: "Check Latest Price",
 
   // ============================================
@@ -440,7 +440,7 @@ const chathamRevPlus2Article = {
   // ============================================
   estimatedReadingTime: 12,
   publishedAt: "2026-05-09T00:00:00Z",
-  affiliateLink: brandAffiliateLinks["chatham-rev-plus-2-beach-cruiser"],
+  affiliateLink: retrospecAffiliateLinks["chatham-rev-plus-2-beach-cruiser"],
   ctaLabel: "Check Latest Price",
 
   // ============================================
@@ -820,7 +820,7 @@ const chathamRev3Article = {
   // ============================================
   estimatedReadingTime: 12,
   publishedAt: "2026-01-18T00:00:00Z",
-  affiliateLink: brandAffiliateLinks["retrospec-chatham-rev-3-review"],
+  affiliateLink: retrospecAffiliateLinks["retrospec-chatham-rev-3-review"],
   ctaLabel: "Check Latest Price",
 
   // ============================================
@@ -1196,7 +1196,7 @@ const beaumontRevPlusArticle = {
   // ============================================
   estimatedReadingTime: 12,
   publishedAt: "2026-01-18T00:00:00Z",
-  affiliateLink: brandAffiliateLinks["retrospec-beaumont-rev-plus-step-through"],
+  affiliateLink: retrospecAffiliateLinks["retrospec-beaumont-rev-plus-step-through"],
   ctaLabel: "Check Latest Price",
 
   // ============================================
@@ -1577,7 +1577,7 @@ const valenRevPlusArticle = {
   // ============================================
   estimatedReadingTime: 12,
   publishedAt: "2026-01-18T00:00:00Z",
-  affiliateLink: brandAffiliateLinks["retrospec-valen-rev-plus"],
+  affiliateLink: retrospecAffiliateLinks["retrospec-valen-rev-plus"],
   ctaLabel: "Check Latest Price",
 
   // ============================================
@@ -1952,7 +1952,7 @@ const beaumontRev3StepThroughArticle = {
   // ============================================
   estimatedReadingTime: 11,
   publishedAt: "2026-01-18T00:00:00Z",
-  affiliateLink: brandAffiliateLinks["beaumont-rev-3-step-through"],
+  affiliateLink: retrospecAffiliateLinks["beaumont-rev-3-step-through"],
   ctaLabel: "Check Latest Price",
 
   // ============================================
@@ -2320,7 +2320,7 @@ const valenRev3Article = {
   // ============================================
   estimatedReadingTime: 11,
   publishedAt: "2026-01-18T00:00:00Z",
-  affiliateLink: brandAffiliateLinks["retrospec-valen-rev-3-review"],
+  affiliateLink: retrospecAffiliateLinks["retrospec-valen-rev-3-review"],
   ctaLabel: "Check Latest Price",
 
   // ============================================
@@ -2682,7 +2682,7 @@ const koaRev3Article = {
   // ============================================
   estimatedReadingTime: 12,
   publishedAt: "2026-01-18T00:00:00Z",
-  affiliateLink: brandAffiliateLinks["retrospec-koa-rev-3-fat-tire"],
+  affiliateLink: retrospecAffiliateLinks["retrospec-koa-rev-3-fat-tire"],
   ctaLabel: "Check Latest Price",
 
   // ============================================
@@ -3039,7 +3039,7 @@ const koaRev2StepThroughArticle = {
   // ============================================
   estimatedReadingTime: 11,
   publishedAt: "2026-01-18T00:00:00Z",
-  affiliateLink: brandAffiliateLinks["retrospec-koa-rev-2-step-through"],
+  affiliateLink: retrospecAffiliateLinks["retrospec-koa-rev-2-step-through"],
   ctaLabel: "Check Latest Price",
 
   // ============================================
@@ -3404,7 +3404,7 @@ const retrospecValenRev2Article = {
   // ============================================
   estimatedReadingTime: 12,
   publishedAt: "2026-01-18T00:00:00Z",
-  affiliateLink: brandAffiliateLinks["retrospec-valen-rev-2"],
+  affiliateLink: retrospecAffiliateLinks["retrospec-valen-rev-2"],
   ctaLabel: "Check Latest Price",
 
   // ============================================
@@ -3732,7 +3732,7 @@ const retrospecValenRev2Article = {
 };
 
 
-const brands = [
+export const retrospecArticles = [
   chathamRevPlus2Article,
   chathamRevPlus2StepThroughArticle,
   chathamRev3Article,
@@ -3744,5 +3744,3 @@ const brands = [
   koaRev3Article,
   retrospecValenRev2Article,
 ];
-
-export const brandArticles = brands;

@@ -94,6 +94,18 @@
 //
 // You can add any number of product articles to the array below.
 
+/** Velotric merchant / affiliate product URLs by product `id`. Update links here only. */
+const velotricAffiliateLinks = {
+  "velotric-discover-2":
+    "https://www.velotricbike.com/products/velotric-discover-2",
+  "velotric-breeze-1":
+    "https://www.velotricbike.com/products/velotric-breeze-1",
+  "velotric-fold-1-plus":
+    "https://www.velotricbike.com/products/velotric-fold-1-plus",
+  "velotric-nomad-2":
+    "https://www.velotricbike.com/products/velotric-nomad-2",
+};
+
 const products = [
   {
     // ============================================
@@ -3804,7 +3816,7 @@ const products = [
     // ============================================
     estimatedReadingTime: 11,
     publishedAt: "2025-12-29T00:00:00Z",
-    affiliateLink: "https://www.velotricbike.com/products/velotric-discover-2",
+    affiliateLink: velotricAffiliateLinks["velotric-discover-2"],
     badge: "Starting at $1,699",
     ctaLabel: "Check Current Price",
     
@@ -5904,7 +5916,7 @@ const products = [
     
     estimatedReadingTime: 10,
     publishedAt: "2026-01-03T00:00:00Z",
-    affiliateLink: "https://www.velotricbike.com/products/velotric-breeze-1",
+    affiliateLink: velotricAffiliateLinks["velotric-breeze-1"],
     badge: "Starting at $1,299",
     ctaLabel: "Check Current Price",
     
@@ -7403,7 +7415,7 @@ const products = [
     // ============================================
     estimatedReadingTime: 10,
     publishedAt: "2026-01-06T00:00:00Z",
-    affiliateLink: "https://www.velotricbike.com/products/velotric-discover-2",
+    affiliateLink: velotricAffiliateLinks["velotric-discover-2"],
     badge: "Starting at $1,699",
     ctaLabel: "Check Current Price",
     
@@ -15737,7 +15749,7 @@ const products = [
   // ============================================
   estimatedReadingTime: 11,
   publishedAt: "2025-01-29T00:00:00Z",
-  affiliateLink: "https://www.velotricbike.com/products/velotric-fold-1-plus",
+  affiliateLink: velotricAffiliateLinks["velotric-fold-1-plus"],
   badge: "Starting at $1,499",
   ctaLabel: "Check Current Price",
 
@@ -21114,7 +21126,7 @@ const products = [
 
     estimatedReadingTime: 11,
     publishedAt: "2025-02-17T00:00:00Z",
-    affiliateLink: "https://www.velotricbike.com/products/velotric-nomad-2",
+    affiliateLink: velotricAffiliateLinks["velotric-nomad-2"],
     badge: "Starting at $1,799",
     ctaLabel: "Check Current Price",
 
