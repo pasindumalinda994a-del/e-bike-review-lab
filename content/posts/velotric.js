@@ -423,9 +423,12 @@ const velotricFold1PlusArticle = {
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-bikes/velotric-fold-1-plus.webp",
-  cardImage: "/images/electric-bikes/velotric-fold-1-plus.webp",
-  articleHeroImage: "/images/electric-bikes/velotric-fold-1-plus.webp",
+  heroImage:
+    "/images/brand/velotric/Velotric Fold 1 Plus Ebike.webp",
+  cardImage:
+    "/images/brand/velotric/Velotric Fold 1 Plus Ebike.webp",
+  articleHeroImage:
+    "/images/brand/velotric/Velotric Fold 1 Plus Ebike.webp",
   heroImageAlt:
     "Velotric Fold 1 Plus folding ebike in Mango colorway on city street",
 
@@ -572,7 +575,8 @@ const velotricFold1PlusArticle = {
       "One honest note: the hinge mechanism feels secure and stays put when riding, but the folding process itself takes a little practice. It's not a sub-10-second fold like some lighter competitors. Figure on 20-30 seconds until it becomes muscle memory.",
     ],
     image: {
-      image: "/images/electric-bikes/velotric-fold-1-plus-design.webp",
+      image:
+        "/images/brand/velotric/Velotric Fold 1 Plus Ebike Design.webp",
       alt: "Velotric Fold 1 Plus frame detail showing clean cable routing and integrated rear rack",
       description:
         "Clean welds, thoughtful cable management, and a step-thru design that works for a wide range of riders",
@@ -590,7 +594,8 @@ const velotricFold1PlusArticle = {
       "On hills, the 75Nm torque handles grades up to about 10-12% without complaint in Sport mode. Steeper than that and you'll feel the motor working, but it doesn't bog down or cut out. Independent testing has clocked the Fold 1 Plus reaching 33.3 mph in unlocked assist mode, making it one of the faster folding ebikes available right now.",
     ],
     image: {
-      image: "/images/electric-bikes/velotric-fold-1-plus-motor.webp",
+      image:
+        "/images/brand/velotric/Velotric Fold 1 Plus Ebike Motor.webp",
       alt: "Velotric Fold 1 Plus 750W rear hub motor close-up",
       description:
         "The 750W hub motor with 75Nm torque handles everything from city flats to moderate hills without breaking a sweat",
@@ -608,7 +613,8 @@ const velotricFold1PlusArticle = {
       "How much range you actually get depends heavily on three variables: which sensor mode you're in (cadence mode cuts range noticeably versus torque mode), your average speed, and terrain. Eco mode at moderate pace on flat streets is genuinely close to the claimed 68 miles. Sport mode on hilly ground? Budget for 35-40 miles and plan accordingly.",
     ],
     image: {
-      image: "/images/electric-bikes/velotric-fold-1-plus-battery.webp",
+      image:
+        "/images/brand/velotric/Velotric Fold 1 Plus Ebike Battery.webp",
       alt: "Velotric Fold 1 Plus integrated battery with IPX7 waterproof rating",
       description:
         "The 48V 624Wh battery sits integrated in the frame with IPX7 and UL 2271 certifications, two things that matter more than they might seem",
@@ -626,7 +632,8 @@ const velotricFold1PlusArticle = {
       "After multiple rides in the 10-15 mile range, the saddle held up better than expected. It's soft without being mushy. Riders over 200 lbs will likely want to swap it eventually for longer rides, but for commuting distances it's genuinely comfortable out of the box. The riding posture stays upright and relaxed. Your back isn't hunched, your wrists aren't bent awkwardly. It's well thought out for all-day usability.",
     ],
     image: {
-      image: "/images/electric-bikes/velotric-fold-1-plus-riding.webp",
+      image:
+        "/images/brand/velotric/Velotric Fold 1 Plus Ebike Comfort.webp",
       alt: "Rider on Velotric Fold 1 Plus folding ebike on urban bike path",
       description:
         "The upright geometry and semi-fat tires make the Fold 1 Plus genuinely comfortable for longer city rides",
@@ -645,7 +652,8 @@ const velotricFold1PlusArticle = {
       "The included integrated lights are bright enough to be genuinely useful at night, not just legally present. The rear turn signals are a standout feature. Twist the left or right grip to signal your turns, which is something I didn't know I wanted until I had it. The integrated rear rack handles panniers or a passenger (rated to the total 450 lb payload), and the kickstand holds the bike solidly even on a slight incline.",
     ],
     image: {
-      image: "/images/electric-bikes/velotric-fold-1-plus-brakes.webp",
+      image:
+        "/images/brand/velotric/Velotric Fold 1 Plus Ebike Brake.webp",
       alt: "Velotric Fold 1 Plus 180mm hydraulic disc brake detail",
       description:
         "Hydraulic disc brakes front and rear, a meaningful upgrade over the mechanical brakes found on most competitors in this price range",
@@ -663,7 +671,8 @@ const velotricFold1PlusArticle = {
       "Setup out of the box is almost laughably easy. The bike ships mostly assembled and folded. Unfold, adjust handlebars, inflate the tires, charge the battery. You can be riding in under five minutes without touching a tool. For new ebike riders especially, that zero-friction first experience matters a lot.",
     ],
     image: {
-      image: "/images/electric-bikes/velotric-fold-1-plus-display.webp",
+      image:
+        "/images/brand/velotric/Velotric Fold 1 Plus Ebike Screen.webp",
       alt: "Velotric Fold 1 Plus color LCD display showing speed and battery level",
       description:
         "The color display reads clearly in sunlight and shows more ride data than you'd typically expect at this price point",
