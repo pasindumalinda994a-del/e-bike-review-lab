@@ -820,9 +820,9 @@ const velotricNomad2XArticle = {
   // ============================================
   // 3. IMAGES
   // ============================================
-  heroImage: "/images/electric-bikes/velotric-nomad-2x.webp",
-  cardImage: "/images/electric-bikes/velotric-nomad-2x.webp",
-  articleHeroImage: "/images/electric-bikes/velotric-nomad-2x.webp",
+  heroImage: "/images/brand/velotric/Velotric Nomad 2X Ebike.webp",
+  cardImage: "/images/brand/velotric/Velotric Nomad 2X Ebike.webp",
+  articleHeroImage: "/images/brand/velotric/Velotric Nomad 2X Ebike.webp",
   heroImageAlt:
     "Velotric Nomad 2X full suspension fat tire ebike on trail",
 
@@ -962,7 +962,7 @@ const velotricNomad2XArticle = {
       "Overall, the fit and finish punches above $2,399. Nothing feels cheap or tacked on. The integrated front and rear lights with actual turn signals are a nice touch that most bikes in this range skip entirely.",
     ],
     image: {
-      image: "/images/electric-bikes/velotric-nomad-2x-frame.webp",
+      image: "/images/brand/velotric/Velotric Nomad 2X Ebike Design.webp",
       alt: "Velotric Nomad 2X frame and build quality close-up",
       description:
         "Triple-butted aluminum frame with clean welds and integrated cable routing",
@@ -980,7 +980,7 @@ const velotricNomad2XArticle = {
       "Hill climbing is genuinely impressive. I tested it on a steep 15% grade fully loaded, and while it slowed down, it never bogged out. Lighter riders on shorter climbs won't notice any hesitation at all. The 1,400W peak output keeps it moving even when the motor has to work.",
     ],
     image: {
-      image: "/images/electric-bikes/velotric-nomad-2x-motor.webp",
+      image: "/images/brand/velotric/Velotric Nomad 2X Ebike Motor.webp",
       alt: "Velotric Nomad 2X rear hub motor and drivetrain",
       description: "750W nominal rear hub motor with 105 Nm torque",
     },
@@ -997,7 +997,7 @@ const velotricNomad2XArticle = {
       "The 801.6Wh battery is UL-certified. That matters more than most buyers realize, as it's a safety certification that filters out some of the cheap battery cells common in lower-cost ebikes. Range dips noticeably in cold weather (below 40°F) and with heavier loads, but so does every ebike's. At max payload with full cargo in Boost mode, expect something closer to 30-35 miles.",
     ],
     image: {
-      image: "/images/electric-bikes/velotric-nomad-2x-battery.webp",
+      image: "/images/brand/velotric/Velotric Nomad 2X Ebike Battery.webp",
       alt: "Velotric Nomad 2X 801.6Wh battery pack",
       description:
         "UL-certified 48V 801.6Wh battery integrated into the downtube",
@@ -1015,7 +1015,7 @@ const velotricNomad2XArticle = {
       "After 60-90 minutes in the saddle, the comfort saddle and upright geometry kept things comfortable without any unusual pressure points. The swept-back handlebars reduce wrist strain. It's not a performance riding position, but that's the point. This is a bike for covering distance comfortably, not a race.",
     ],
     image: {
-      image: "/images/electric-bikes/velotric-nomad-2x-suspension.webp",
+      image: "/images/brand/velotric/Velotric Nomad 2X Ebike Comfort.webp",
       alt: "Velotric Nomad 2X TRAMA front fork and DNM rear shock air suspension",
       description: "Full air suspension: 120mm front travel and 80mm rear travel",
     },
@@ -1033,7 +1033,7 @@ const velotricNomad2XArticle = {
       "The included accessories are legitimately useful. Front and rear lights with turn signals are bright enough for road use. The MIK rear rack handles real weight. The fenders keep you clean on wet roads. USB-C charging on the display is a small but appreciated touch for keeping a phone topped up on longer rides.",
     ],
     image: {
-      image: "/images/electric-bikes/velotric-nomad-2x-components.webp",
+      image: "/images/brand/velotric/Velotric Nomad 2X Ebike Brake.webp",
       alt: "Velotric Nomad 2X Shimano GRX Di2 drivetrain and Tektro brakes",
       description:
         "Electronic Shimano GRX Di2 shifting and hydraulic Tektro disc brakes",
@@ -1051,7 +1051,7 @@ const velotricNomad2XArticle = {
       "Out of the box, assembly is fairly straightforward. The bike ships mostly assembled and the documentation is clear. Stealth mode, which quiets the motor notification sounds, is a small touch but useful if you're on trails or in a neighborhood early in the morning.",
     ],
     image: {
-      image: "/images/electric-bikes/velotric-nomad-2x-display.webp",
+      image: "/images/brand/velotric/Velotric Nomad 2X Ebike Screen.webp",
       alt: "Velotric Nomad 2X color LCD display with USB-C port",
       description:
         "Color LCD display showing speed, battery, motor temp, and ride data",
