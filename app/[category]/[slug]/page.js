@@ -4,6 +4,7 @@ import {
   getPostByCategoryAndSlug,
 } from "@/lib/mock-data";
 import MoneyArticle from "@/components/articles/MoneyArticle";
+import DealArticle from "@/components/articles/DealArticle";
 import InformationalArticle from "@/components/articles/InformationalArticle";
 import ProductArticle from "@/components/articles/ProductArticle";
 import BrandArticle from "@/components/articles/BrandArticle";
@@ -86,6 +87,8 @@ export default async function CategoryPostPage({ params }) {
     articleContent = (
       <BrandArticle post={post} publishedDate={publishedDate} />
     );
+  } else if (post.contentType === "deal") {
+    articleContent = <DealArticle post={post} publishedDate={publishedDate} />;
   } else {
     // Default to money article layout for roundup/commercial posts
     articleContent = <MoneyArticle post={post} publishedDate={publishedDate} />;

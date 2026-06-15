@@ -1,8 +1,10 @@
 import './globals.css';
+import DealsBanner from '@/components/DealsBanner';
 import SiteFooter from '@/components/SiteFooter';
 import SiteHeader from '@/components/SiteHeader';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import SmoothScroll from '@/components/SmoothScroll';
+import { getActiveDealPosts } from '@/lib/active-deals';
 import {
   SITE_NAME,
   SITE_TAGLINE,
@@ -90,10 +92,13 @@ export const viewport = {
 
 // Wrap the app with header/footer, fonts, and analytics scripts.
 export default function RootLayout({ children }) {
+  const activeDeals = getActiveDealPosts();
+
   return (
     <html lang="en">
       <body className="flex min-h-screen flex-col bg-[#F5F5F5] text-[#0C1412]" suppressHydrationWarning>
         <SmoothScroll>
+          <DealsBanner activeDeals={activeDeals} />
           <SiteHeader />
           <main className="flex-1">
             {children}

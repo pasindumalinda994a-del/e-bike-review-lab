@@ -77,6 +77,13 @@ export const categories = [
       "Expert reviews of electric hybrid bikes combining road bike efficiency with mountain bike versatility for commuting, fitness, and adventure riding.",
   },
   {
+    slug: "deals",
+    name: "Deals",
+    heroImage: "/images/categories/Electric Bikes.webp",
+    description:
+      "Seasonal e-bike deals and discounts our test team is tracking before they sell out.",
+  },
+  {
     slug: "retrospec",
     name: "Retrospec",
     heroImage: "/images/categories/Retrospec.png",
