@@ -643,7 +643,7 @@ export default function DealArticle({ post, publishedDate }) {
           {deals.length > 0 && (
             <DealsTable
               deals={deals}
-              ctaLabel={post.productCtaLabel}
+              ctaLabel="Deal"
               title={post.dealsTableTitle}
             />
           )}
