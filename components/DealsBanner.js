@@ -1,257 +1,52 @@
 "use client";
 
 import AnimatedButton from "@/components/AnimatedButton";
-import CountdownUnit from "@/components/CountdownUnit";
 import {
-  DEALS_BANNER_STORAGE_KEY,
-  getBannerDismissKey,
-} from "@/lib/active-deals";
-import { formatCountdown, getCountdownParts } from "@/lib/deal-countdown";
+  BannerCountdown,
+  RotationDots,
+  useDealsBanner,
+} from "@/components/deals/useDealsBanner";
+import { DEALS_BANNER_STORAGE_KEY } from "@/lib/active-deals";
 import { ArrowRight, X } from "lucide-react";
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useState } from "react";
-
-const ROTATION_MS = 8000;
-
-function pad(value) {
-  return String(value).padStart(2, "0");
-}
-
-function buildCountdownUnits(parts) {
-  if (!parts) return [];
-
-  return [
-    parts.days > 0 ? { value: pad(parts.days), label: "Days" } : null,
-    { value: pad(parts.hours), label: "Hours" },
-    { value: pad(parts.minutes), label: "Min" },
-    { value: pad(parts.seconds), label: "Sec" },
-  ].filter(Boolean);
-}
-
-function BannerCountdown({ endAt, prefersReducedMotion }) {
-  const [parts, setParts] = useState(null);
-  const [compactLabel, setCompactLabel] = useState("");
-
-  useEffect(() => {
-    const tick = () => {
-      const nextParts = getCountdownParts(endAt);
-      const nextLabel = formatCountdown(endAt);
-
-      if (!nextParts || !nextLabel) {
-        setParts(null);
-        setCompactLabel("");
-        return;
-      }
-
-      setParts(nextParts);
-      setCompactLabel(prefersReducedMotion ? "Ends soon" : nextLabel);
-    };
-
-    tick();
-    const intervalMs = prefersReducedMotion ? 60000 : 1000;
-    const intervalId = window.setInterval(tick, intervalMs);
-
-    return () => window.clearInterval(intervalId);
-  }, [endAt, prefersReducedMotion]);
-
-  if (!parts) return null;
-
-  const units = buildCountdownUnits(parts);
-
-  return (
-    <>
-      <p className="text-xs font-semibold tabular-nums text-rose-300 md:hidden">
-        Ends in {compactLabel}
-      </p>
-      <div className="hidden items-center gap-1.5 md:flex">
-        <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-white/70">
-          Ends in
-        </span>
-        <div className="flex items-center gap-1">
-          {units.map((unit) => (
-            <CountdownUnit
-              key={unit.label}
-              value={unit.value}
-              label={unit.label}
-              size="compact"
-            />
-          ))}
-        </div>
-      </div>
-    </>
-  );
-}
-
-function RotationDots({ count, activeIndex, onSelect }) {
-  if (count <= 1) return null;
-
-  return (
-    <div
-      className="flex items-center gap-1.5"
-      aria-label="Deal rotation indicators"
-    >
-      {Array.from({ length: count }, (_, index) => (
-        <button
-          key={index}
-          type="button"
-          aria-label={`Show deal ${index + 1} of ${count}`}
-          aria-current={index === activeIndex ? "true" : undefined}
-          onClick={() => onSelect(index)}
-          className={`h-1.5 rounded-full transition-all duration-300 ${
-            index === activeIndex
-              ? "w-4 bg-[#3e3ce7]"
-              : "w-1.5 bg-white/30 hover:bg-white/50"
-          }`}
-        />
-      ))}
-    </div>
-  );
-}
 
 export default function DealsBanner({ activeDeals = [] }) {
-  const [mounted, setMounted] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
-  const [liveDeals, setLiveDeals] = useState(activeDeals);
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
-  const [isFading, setIsFading] = useState(false);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
-
-  const dismissKey = useMemo(
-    () => getBannerDismissKey(activeDeals),
-    [activeDeals],
-  );
-
-  useEffect(() => {
-    setMounted(true);
-
-    try {
-      const dismissed = localStorage.getItem(DEALS_BANNER_STORAGE_KEY);
-      setIsVisible(dismissed !== dismissKey);
-    } catch {
-      setIsVisible(true);
-    }
-  }, [dismissKey]);
-
-  useEffect(() => {
-    setLiveDeals(activeDeals);
-    setActiveIndex(0);
-  }, [activeDeals]);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setPrefersReducedMotion(mediaQuery.matches);
-
-    const handleMotionChange = (event) => {
-      setPrefersReducedMotion(event.matches);
-    };
-
-    mediaQuery.addEventListener("change", handleMotionChange);
-    return () => mediaQuery.removeEventListener("change", handleMotionChange);
-  }, []);
-
-  const pruneExpiredDeals = useCallback(() => {
-    setLiveDeals((current) => {
-      const next = current.filter((deal) => getCountdownParts(deal.dealEndsAt));
-      if (next.length === 0) {
-        setIsVisible(false);
-      }
-      return next;
-    });
-  }, []);
-
-  useEffect(() => {
-    if (!mounted || !isVisible) return undefined;
-
-    const intervalMs = prefersReducedMotion ? 60000 : 1000;
-    const intervalId = window.setInterval(pruneExpiredDeals, intervalMs);
-
-    return () => window.clearInterval(intervalId);
-  }, [mounted, isVisible, prefersReducedMotion, pruneExpiredDeals]);
-
-  useEffect(() => {
-    if (
-      !mounted ||
-      !isVisible ||
-      liveDeals.length <= 1 ||
-      isPaused ||
-      prefersReducedMotion
-    ) {
-      return undefined;
-    }
-
-    const intervalId = window.setInterval(() => {
-      setIsFading(true);
-      window.setTimeout(() => {
-        setActiveIndex((current) => (current + 1) % liveDeals.length);
-        setIsFading(false);
-      }, 300);
-    }, ROTATION_MS);
-
-    return () => window.clearInterval(intervalId);
-  }, [
-    mounted,
-    isVisible,
-    liveDeals.length,
-    isPaused,
+  const {
+    shouldRender,
+    liveDeals,
+    currentDeal,
+    headlineText,
+    activeIndex,
+    isFading,
     prefersReducedMotion,
-  ]);
+    handleDismiss,
+    handleSelectDeal,
+    handlePauseEnter,
+    handlePauseLeave,
+    handlePauseBlur,
+  } = useDealsBanner({
+    activeDeals,
+    storageKey: DEALS_BANNER_STORAGE_KEY,
+  });
 
-  useEffect(() => {
-    if (activeIndex >= liveDeals.length) {
-      setActiveIndex(0);
-    }
-  }, [activeIndex, liveDeals.length]);
-
-  const handleDismiss = () => {
-    setIsVisible(false);
-    try {
-      localStorage.setItem(DEALS_BANNER_STORAGE_KEY, dismissKey);
-    } catch {
-      // Ignore storage failures; banner still hides for this session.
-    }
-  };
-
-  const handleSelectDeal = (index) => {
-    if (index === activeIndex) return;
-    setIsFading(true);
-    window.setTimeout(() => {
-      setActiveIndex(index);
-      setIsFading(false);
-    }, 300);
-  };
-
-  if (!mounted || !isVisible || liveDeals.length === 0) {
+  if (!shouldRender) {
     return null;
   }
-
-  const currentDeal = liveDeals[activeIndex];
-  if (!currentDeal || !getCountdownParts(currentDeal.dealEndsAt)) {
-    return null;
-  }
-
-  const headlineText = currentDeal.teaser
-    ? `${currentDeal.headline} — ${currentDeal.teaser}`
-    : currentDeal.headline;
 
   return (
     <section
       role="region"
       aria-label="Active deals promotion"
       className="relative z-[60] border-b border-[#3e3ce7]/30 bg-gradient-to-r from-[#0C1412] to-[#1a1a2e] text-white"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
-      onFocusCapture={() => setIsPaused(true)}
-      onBlurCapture={(event) => {
-        if (!event.currentTarget.contains(event.relatedTarget)) {
-          setIsPaused(false);
-        }
-      }}
+      onMouseEnter={handlePauseEnter}
+      onMouseLeave={handlePauseLeave}
+      onFocusCapture={handlePauseEnter}
+      onBlurCapture={handlePauseBlur}
     >
       <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 md:px-12 lg:px-16">
         <div className="flex flex-col gap-2 py-2.5 md:flex-row md:items-center md:gap-3 md:py-2">
           <div className="flex min-w-0 items-start gap-2 md:flex-1 md:items-center">
-            <span className="mt-0.5 shrink-0 rounded-full bg-[#3e3ce7]/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.14em] text-[#a5a4ff] md:mt-0">
+            <span className="mt-0.5 shrink-0 rounded-sm bg-white px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.14em] text-black md:mt-0">
               Limited Time
             </span>
 

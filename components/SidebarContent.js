@@ -1,12 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
+import DealsSidebarBanner from "@/components/DealsSidebarBanner";
 import { categories } from "../content/categories";
 import { brandArticles } from "../content/posts/brand-articles";
+import { getActiveDealPosts } from "@/lib/active-deals";
 import { getSidebarFeaturedPosts } from "../lib/mock-data";
 import FeaturedPostsCarousel from "./FeaturedPostsCarousel";
 
 // About sidebar card component matching the design
 export default async function SidebarContent() {
+  const activeDeals = getActiveDealPosts();
   // Get featured posts from placements
   const featuredPosts = await getSidebarFeaturedPosts();
   const brandPageSlugs = brandArticles.map(
@@ -60,6 +63,8 @@ export default async function SidebarContent() {
 
         
       </div>
+
+      <DealsSidebarBanner activeDeals={activeDeals} />
 
       {/* Featured Posts Section */}
       <div className="rounded-lg bg-white p-6">
