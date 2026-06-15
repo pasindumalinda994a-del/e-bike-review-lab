@@ -106,7 +106,7 @@ export const dealArticles = [
       {
         id: "velotric-discover-2",
         name: "Velotric Discover 2",
-        imageUrl: "/images/deals/velotric-discover-2.webp",
+        imageUrl: "/images/brand/velotric/Velotric Discover 2.webp",
         badge: "Save $300 — No-Fuss Price Drop",
         description:
           "The Discover 2 is a straight $300 price cut, no accessory bundle attached. It goes from $1,999 to $1,699. Honestly, sometimes that's easier to evaluate because there's no math to do on freebie value. If you've been looking at the Discover 2 specifically, this is a clean 15% off. Not the splashiest deal in the sale, but it's real money back on a solid commuter e-bike.",
@@ -179,7 +179,7 @@ export const dealArticles = [
       {
         id: "velotric-nomad-2x",
         name: "Velotric Nomad 2X",
-        imageUrl: "/images/deals/velotric-nomad-2x.webp",
+        imageUrl: "/images/brand/velotric/Velotric Nomad 2X Ebike.webp",
         badge: "Upgraded Fat Tire Option",
         description:
           "The Nomad 2X is the step-up version of the Nomad 2, and it's on the same deal structure: $200 off with a free pannier bag. MTC pricing lands at $2,299 (down from $2,499), and non-MTC sits at $2,199 (down from $2,399). If you're choosing between the Nomad 2 and 2X, the extra $400 to $500 gets you upgraded components. Whether that's worth it depends on your use case, but the deal structure is identical across both.",
@@ -227,7 +227,7 @@ export const dealArticles = [
       {
         id: "velotric-fold-1-plus",
         name: "Velotric Fold 1 Plus",
-        imageUrl: "/images/deals/velotric-fold-1-plus.webp",
+        imageUrl: "/images/brand/velotric/Velotric Fold 1 Plus Ebike.webp",
         badge: "Upgraded Folder with Bag",
         description:
           "The Fold 1 Plus is $100 off at $1,399 with a free pannier bag. It's the higher-spec version of the Fold 1, and with the Fold 1 sitting at $500 off right now, you'd want to think through whether the Plus's improvements justify the $400 gap. If you know you want the upgraded components, fine. But if you're flexible, the base Fold 1 is the stronger deal this cycle.",
