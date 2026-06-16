@@ -12,6 +12,7 @@
  * - id, name, badge, dealPrice, originalPrice, description, imageUrl, affiliateLink, pros, cons
  * - offer, totalSavings, limitedStock, dealType ("price-cut" | "bonus-only")
  * - reviewLink: optional path to full product review (auto-resolved from id when omitted)
+ * - keyDetails: optional array of { value, label } headline specs (weight, speed, motor, range, battery)
  */
 
 export const dealArticles = [
@@ -76,6 +77,13 @@ export const dealArticles = [
           "Folding frame design means some ride quality trade-offs compared to full-size e-bikes",
           "No limited stock flag from Velotric, but popular models in sales like this do move fast",
         ],
+        keyDetails: [
+          { value: "63 Lbs", label: "Bike Weight" },
+          { value: "28 MPH", label: "Top Speed" },
+          { value: "750W/70Nm", label: "Motor" },
+          { value: "55 Miles", label: "Range" },
+          { value: "608 Wh", label: "Battery" },
+        ],
         reviewLink: "/deals/velotric-fold-1-review",
       },
       {
@@ -101,6 +109,13 @@ export const dealArticles = [
           "Limited stock confirmed by Velotric, so this one could sell out before June 28th",
           "At $1,349 it's still a real spend, even after the discount",
         ],
+        keyDetails: [
+          { value: "39 Lbs", label: "Bike Weight" },
+          { value: "28 MPH", label: "Top Speed" },
+          { value: "350W/40Nm", label: "Motor" },
+          { value: "70 Miles", label: "Range" },
+          { value: "352.8 Wh", label: "Battery" },
+        ],
         reviewLink: "/deals/velotric-t1-st-plus-review",
       },
       {
@@ -124,6 +139,13 @@ export const dealArticles = [
         cons: [
           "No accessory bundle means you're just getting the price cut, nothing extra",
           "Other models in the sale offer more compelling total value packages",
+        ],
+        keyDetails: [
+          { value: "61 Lbs", label: "Bike Weight" },
+          { value: "28 MPH", label: "Top Speed" },
+          { value: "750W/75Nm", label: "Motor" },
+          { value: "75 Miles", label: "Range" },
+          { value: "705.6 Wh", label: "Battery" },
         ],
         reviewLink: "/deals/velotric-discover-2-review",
       },
@@ -150,6 +172,13 @@ export const dealArticles = [
           "Limited stock confirmed, so don't sit on this one too long",
           "At $1,799 it's still a big purchase, and the $200 off is 10% rather than the headline-grabbing cuts elsewhere",
         ],
+        keyDetails: [
+          { value: "62 Lbs", label: "Bike Weight" },
+          { value: "28 MPH", label: "Top Speed" },
+          { value: "750W/90Nm", label: "Motor" },
+          { value: "70 Miles", label: "Range" },
+          { value: "705.6 Wh", label: "Battery" },
+        ],
         reviewLink: "/deals/velotric-summit-1-review",
       },
       {
@@ -173,6 +202,13 @@ export const dealArticles = [
         cons: [
           "10% off is a moderate discount, not a dramatic price event",
           "The Nomad 2X is a step up in specs and sits at a similar discount, worth comparing",
+        ],
+        keyDetails: [
+          { value: "75 Lbs", label: "Bike Weight" },
+          { value: "28 MPH", label: "Top Speed" },
+          { value: "750W/90Nm", label: "Motor" },
+          { value: "65 Miles", label: "Range" },
+          { value: "705.6 Wh", label: "Battery" },
         ],
         reviewLink: "/deals/velotric-nomad-2-review",
       },
@@ -198,6 +234,13 @@ export const dealArticles = [
           "At $2,199+ it's the pricier end of this sale without a proportionally larger discount",
           "MTC vs. non-MTC pricing difference can be confusing; check Velotric's site for which applies to your order",
         ],
+        keyDetails: [
+          { value: "80 Lbs", label: "Bike Weight" },
+          { value: "28 MPH", label: "Top Speed" },
+          { value: "750W/105Nm", label: "Motor" },
+          { value: "75 Miles", label: "Range" },
+          { value: "801.6 Wh", label: "Battery" },
+        ],
         reviewLink: "/deals/velotric-nomad-2x-review",
       },
       {
@@ -221,6 +264,13 @@ export const dealArticles = [
         cons: [
           "$100 off is only about 5.5% on the original price, so the accessories carry most of the value here",
           "Not a deal that warrants urgency if you're on the fence about the Breeze specifically",
+        ],
+        keyDetails: [
+          { value: "48 Lbs", label: "Bike Weight" },
+          { value: "28 MPH", label: "Top Speed" },
+          { value: "750W/65Nm", label: "Motor" },
+          { value: "70 Miles", label: "Range" },
+          { value: "627 Wh", label: "Battery" },
         ],
         reviewLink: "/deals/velotric-breeze-1-review",
       },
@@ -246,6 +296,13 @@ export const dealArticles = [
           "Hard to recommend over the base Fold 1 which is $400 cheaper with a bigger price cut right now",
           "$100 off is a small percentage on a $1,499 bike",
         ],
+        keyDetails: [
+          { value: "63 Lbs", label: "Bike Weight" },
+          { value: "28 MPH", label: "Top Speed" },
+          { value: "750W/75Nm", label: "Motor" },
+          { value: "68 Miles", label: "Range" },
+          { value: "608 Wh", label: "Battery" },
+        ],
         reviewLink: "/deals/velotric-fold-1-plus-review",
       },
       {
@@ -269,6 +326,13 @@ export const dealArticles = [
         cons: [
           "No price cut on the bike itself, which is a meaningful distinction from other deals in this sale",
           "Harder to justify over the Discover 2 at $1,699 for most buyers",
+        ],
+        keyDetails: [
+          { value: "61 Lbs", label: "Bike Weight" },
+          { value: "28 MPH", label: "Top Speed" },
+          { value: "750W/75Nm", label: "Motor" },
+          { value: "80 Miles", label: "Range" },
+          { value: "730 Wh", label: "Battery" },
         ],
         reviewLink: "/deals/velotric-discover-3-review",
       },
@@ -294,6 +358,13 @@ export const dealArticles = [
           "No price reduction on a $2,499 bike is hard to call a Prime Day deal in the traditional sense",
           "Tough comparison against the Discover 2's straight $300 price cut for buyers who don't need flagship specs",
         ],
+        keyDetails: [
+          { value: "60 Lbs", label: "Bike Weight" },
+          { value: "28 MPH", label: "Top Speed" },
+          { value: "500W/100Nm", label: "Motor" },
+          { value: "95 Miles", label: "Range" },
+          { value: "801.6 Wh", label: "Battery" },
+        ],
         reviewLink: "/deals/velotric-discover-max-review",
       },
       {
@@ -317,6 +388,13 @@ export const dealArticles = [
         cons: [
           "Full MSRP with accessory bundle rather than a price reduction",
           "Summit 1 at $1,799 with a real discount offers better value for most off-road riders",
+        ],
+        keyDetails: [
+          { value: "57 Lbs", label: "Bike Weight" },
+          { value: "28 MPH", label: "Top Speed" },
+          { value: "750W/100Nm", label: "Motor" },
+          { value: "95 Miles", label: "Range" },
+          { value: "801.6 Wh", label: "Battery" },
         ],
         reviewLink: "/deals/velotric-summit-2-review",
       },
@@ -342,6 +420,13 @@ export const dealArticles = [
           "No price reduction in a Prime Day sale is a bit underwhelming",
           "The Fold 1 at $999 is $500 cheaper right now and makes the Tempo hard to recommend to budget shoppers",
         ],
+        keyDetails: [
+          { value: "34 Lbs", label: "W/O Battery" },
+          { value: "28 MPH", label: "Top Speed" },
+          { value: "350W/45Nm", label: "Motor" },
+          { value: "60 Miles", label: "Range" },
+          { value: "374 Wh", label: "Battery" },
+        ],
         reviewLink: "/deals/velotric-tempo-review",
       },
       {
@@ -366,6 +451,13 @@ export const dealArticles = [
           "Full MSRP with no price cut during a Prime Day sale is easy to overlook",
           "At $1,999 with just accessories, it's harder to recommend over models with real discounts unless the GoMad is specifically what you need",
         ],
+        keyDetails: [
+          { value: "67 Lbs", label: "W/O Battery" },
+          { value: "28 MPH", label: "Top Speed" },
+          { value: "750W/85Nm", label: "Motor" },
+          { value: "75 Miles", label: "Range" },
+          { value: "801.6 Wh", label: "Battery" },
+        ],
         reviewLink: "/deals/velotric-gomad-review",
       },
       {
@@ -389,6 +481,13 @@ export const dealArticles = [
         cons: [
           "$100 off a $2,499 bike is a 4% discount, so it's more symbolic than substantial",
           "Niche product that only makes sense for a specific type of buyer",
+        ],
+        keyDetails: [
+          { value: "85.8 Lbs", label: "Bike Weight" },
+          { value: "20 MPH", label: "Top Speed" },
+          { value: "750W/90Nm", label: "Motor" },
+          { value: "60 Miles", label: "Range" },
+          { value: "804 Wh", label: "Battery" },
         ],
         reviewLink: "/deals/velotric-triker-review",
       },

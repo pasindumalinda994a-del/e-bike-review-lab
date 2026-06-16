@@ -152,7 +152,7 @@ function DealSummaryBox({ deal }) {
               aria-hidden="true"
             />
             <h4 className="text-base font-semibold text-[#0C1412] sm:text-lg">
-              What&apos;s Included
+              Free Gift
             </h4>
           </div>
           <p className="text-sm leading-normal text-[#1f2937] tracking-wide text-left sm:text-base">
@@ -160,6 +160,32 @@ function DealSummaryBox({ deal }) {
           </p>
         </div>
       )}
+    </div>
+  );
+}
+
+function DealKeyDetails({ details }) {
+  if (!details?.length) return null;
+
+  return (
+    <div className="rounded-lg bg-white p-3.5 sm:p-4">
+      <ul className="grid grid-cols-2 gap-3 sm:gap-4">
+        {details.map((item, index) => {
+          if (!item?.value && !item?.label) return null;
+          return (
+            <li key={index} className="space-y-0.5 text-left">
+              {item.value && (
+                <p className="text-base font-bold text-[#0C1412] sm:text-lg">{item.value}</p>
+              )}
+              {item.label && (
+                <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-[#666666] sm:text-xs">
+                  {item.label}
+                </p>
+              )}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
@@ -205,7 +231,7 @@ function DealsTable({ deals, ctaLabel, title = "All Deals at a Glance" }) {
                   scope="col"
                   className="hidden py-3 px-4 text-left text-xs font-semibold uppercase tracking-wide text-white/90 sm:table-cell sm:py-4 sm:px-6 sm:text-sm"
                 >
-                  Bonus
+                  Free Gift
                 </th>
                 <th
                   scope="col"
@@ -379,6 +405,8 @@ function DealCard({ deal, index, ctaLabel }) {
         <aside className="lg:col-span-4 lg:order-first">
           <div className="space-y-6">
             {hasDealSummary && <DealSummaryBox deal={deal} />}
+
+            {deal.keyDetails?.length > 0 && <DealKeyDetails details={deal.keyDetails} />}
 
             {(deal.affiliateLink && ctaLabel) || reviewLink ? (
               <div className="flex flex-row flex-wrap items-start gap-3 sm:flex-col">
