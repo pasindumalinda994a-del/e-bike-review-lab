@@ -31,9 +31,9 @@ export const dealArticles = [
       "Velotric's Prime Day 2026 sale runs June 17–28. Save up to $862 on e-bikes including the Fold 1 at $500 off, Summit 1, T1 ST Plus, and more.",
 
     // --- Images ---
-    heroImage: "/images/deals/hero1.webp",
-    cardImage: "/images/deals/card1.webp",
-    articleHeroImage: "/images/deals/article-hero.webp",
+    heroImage: "/images/deal/Velotric Prime Day Deal.webp",
+    cardImage: "/images/deal/Velotric Prime Day Deal.webp",
+    articleHeroImage: "/images/deal/Velotric Prime Day Deal.webp",
     heroImageAlt:
       "Velotric electric bikes on display during Prime Day 2026 sale event with discounts up to $862",
 
