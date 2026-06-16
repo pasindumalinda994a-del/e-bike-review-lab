@@ -57,7 +57,7 @@ export const dealArticles = [
       {
         id: "velotric-fold-1",
         name: "Velotric Fold 1",
-        imageUrl: "/images/deals/velotric-fold-1.webp",
+        imageUrl: "/images/deal/Velotric Fold 1.webp",
         badge: "Save $500 — Biggest Price Cut",
         description:
           "This is the standout deal in the sale. The Fold 1 drops from $1,499 to $999, and you get a free Half Twist Throttle Set on top of that. At under $1,000 for a folding e-bike from a brand that gets consistently solid reviews, this is one of the better folding electric bike deals you'll see this year. Worth flagging: it's a folding bike, so it's not built for heavy off-road use, but for commuting or tossing in a trunk, it punches well at this price.",
@@ -89,7 +89,7 @@ export const dealArticles = [
       {
         id: "velotric-t1-st-plus",
         name: "Velotric T1 ST Plus",
-        imageUrl: "/images/deals/velotric-t1-st-plus.webp",
+        imageUrl: "/images/deal/Velotric T1 ST Plus.webp",
         badge: "Best Bundle Value",
         description:
           "The T1 ST Plus is $300 off at $1,349, and the accessories bundled in are actually useful ones: a modular rear rack, fender pack, and a range extender battery. That last piece is what pushes the total savings to $862. A range extender alone typically runs several hundred dollars, so if you're planning longer rides and were going to buy one anyway, you're essentially getting the bike at a steep discount. This is the deal I'd point most buyers toward.",
@@ -121,7 +121,7 @@ export const dealArticles = [
       {
         id: "velotric-discover-2",
         name: "Velotric Discover 2",
-        imageUrl: "/images/brand/velotric/Velotric Discover 2.webp",
+        imageUrl: "/images/deal/Velotric Discover 2.webp",
         badge: "Save $300 — No-Fuss Price Drop",
         description:
           "The Discover 2 is a straight $300 price cut, no accessory bundle attached. It goes from $1,999 to $1,699. Honestly, sometimes that's easier to evaluate because there's no math to do on freebie value. If you've been looking at the Discover 2 specifically, this is a clean 15% off. Not the splashiest deal in the sale, but it's real money back on a solid commuter e-bike.",
@@ -152,7 +152,7 @@ export const dealArticles = [
       {
         id: "velotric-summit-1",
         name: "Velotric Summit 1",
-        imageUrl: "/images/deals/velotric-summit-1.webp",
+        imageUrl: "/images/deal/Velotric Summit 1.webp",
         badge: "Best Electric Mountain Bike Deal",
         description:
           "The Summit 1 drops $200 to $1,799 and comes with a free rear rack and fender. Total savings land at $360 when you factor in the accessories. If you've been hunting for an electric mountain bike deal, this is one of the better options in the sale. The Summit line is built for trail riding, so this isn't a commuter dressed up in off-road clothes. Just be aware that limited stock is confirmed on this one.",
@@ -184,7 +184,7 @@ export const dealArticles = [
       {
         id: "velotric-nomad-2",
         name: "Velotric Nomad 2",
-        imageUrl: "/images/deals/velotric-nomad-2.webp",
+        imageUrl: "/images/deal/Velotric Nomad 2.webp",
         badge: "Save $275 with Pannier Bag",
         description:
           "The Nomad 2 goes from $1,999 to $1,799 with a free pannier bag added in. If you're shopping for a fat tire e-bike, the Nomad 2 is Velotric's main offering in that category. The pannier bag is a practical freebie for riders who actually carry cargo. Total savings of $275 is a reasonable deal, though not the most dramatic cut in this sale.",
@@ -215,7 +215,7 @@ export const dealArticles = [
       {
         id: "velotric-nomad-2x",
         name: "Velotric Nomad 2X",
-        imageUrl: "/images/brand/velotric/Velotric Nomad 2X Ebike.webp",
+        imageUrl: "/images/deal/Velotric Nomad 2X.webp",
         badge: "Upgraded Fat Tire Option",
         description:
           "The Nomad 2X is the step-up version of the Nomad 2, and it's on the same deal structure: $200 off with a free pannier bag. MTC pricing lands at $2,299 (down from $2,499), and non-MTC sits at $2,199 (down from $2,399). If you're choosing between the Nomad 2 and 2X, the extra $400 to $500 gets you upgraded components. Whether that's worth it depends on your use case, but the deal structure is identical across both.",
@@ -246,7 +246,7 @@ export const dealArticles = [
       {
         id: "velotric-breeze-1",
         name: "Velotric Breeze 1",
-        imageUrl: "/images/deals/velotric-breeze-1.webp",
+        imageUrl: "/images/deal/Velotric Breeze 1.webp",
         badge: "Step-Through Commuter Deal",
         description:
           "The Breeze 1 is $100 off at $1,699 with a free rear rack and fender. It's one of Velotric's step-through commuter designs, which makes it a popular pick for seniors and riders who want easy on/off. Honest take: $100 off on a $1,799 bike is a modest deal percentage-wise, and the accessories add about $150 in value, so total savings of $250 is respectable. It's not the headline deal, but if the Breeze is the bike you want, this is a fine window to buy.",
@@ -277,7 +277,7 @@ export const dealArticles = [
       {
         id: "velotric-fold-1-plus",
         name: "Velotric Fold 1 Plus",
-        imageUrl: "/images/brand/velotric/Velotric Fold 1 Plus Ebike.webp",
+        imageUrl: "/images/deal/Velotric Fold 1 Plus.webp",
         badge: "Upgraded Folder with Bag",
         description:
           "The Fold 1 Plus is $100 off at $1,399 with a free pannier bag. It's the higher-spec version of the Fold 1, and with the Fold 1 sitting at $500 off right now, you'd want to think through whether the Plus's improvements justify the $400 gap. If you know you want the upgraded components, fine. But if you're flexible, the base Fold 1 is the stronger deal this cycle.",
@@ -308,7 +308,7 @@ export const dealArticles = [
       {
         id: "velotric-discover-3",
         name: "Velotric Discover 3",
-        imageUrl: "/images/deals/velotric-discover-3.webp",
+        imageUrl: "/images/deal/Velotric Discover 3.webp",
         badge: "Bonus Bundle, No Price Cut",
         description:
           "The Discover 3 stays at its full MSRP of $1,999 but comes with a free rack top bag, phone mount, and gift box. Worth being upfront: this is a bonus-only deal with no actual price reduction. The accessories have real utility, especially the phone mount for navigation, but you're paying full price for the bike itself. If you've already decided on the Discover 3 and been waiting for a reason to pull the trigger, this is that reason. If you're price-sensitive, the Discover 2 at $300 off is the more direct comparison.",
@@ -339,7 +339,7 @@ export const dealArticles = [
       {
         id: "velotric-discover-max",
         name: "Velotric Discover Max",
-        imageUrl: "/images/deals/velotric-discover-max.webp",
+        imageUrl: "/images/deal/Velotric Discover Max.webp",
         badge: "Top-Tier Commuter, Bonus-Only Deal",
         description:
           "The Discover Max is Velotric's premium commuter at $2,499, and like the Discover 3, it's a bonus-only deal this Prime Day. You get a free rack top bag, phone mount, and gift box. If you're already in the market for the Max specifically, the bundle is a nice add. But if you're comparing against the Discover 2 at $300 off, the Max costs $800 more and doesn't have a price reduction. The specs justify that difference for some buyers, but it's worth thinking through.",
@@ -370,7 +370,7 @@ export const dealArticles = [
       {
         id: "velotric-summit-2",
         name: "Velotric Summit 2",
-        imageUrl: "/images/deals/velotric-summit-2.webp",
+        imageUrl: "/images/deal/Velotric Summit 2.webp",
         badge: "Trail-Ready, Free Rack Bundle",
         description:
           "The Summit 2 stays at $2,099 but picks up a free modular rear rack and gift box, totaling $219 in extras. Again, no price drop here. The Summit 2 is the upgraded mountain e-bike in the lineup, and if that's what you're after, the rack is actually a useful freebie for carrying gear on trails or commutes. But compared to the Summit 1 with a real price cut and rack bundle, you'll want to weigh whether the Summit 2's spec bump is worth the extra spend.",
@@ -401,7 +401,7 @@ export const dealArticles = [
       {
         id: "velotric-tempo",
         name: "Velotric Tempo",
-        imageUrl: "/images/deals/velotric-tempo.webp",
+        imageUrl: "/images/deal/Velotric Tempo.webp",
         badge: "Budget-Friendly Entry Point",
         description:
           "The Tempo sits at $1,499 with no price cut, just a free rear rack and gift box. At $219 in accessories, it's not nothing, but the Tempo is already one of Velotric's more affordable models and this sale doesn't reduce the price at all. If budget is the priority and you want the lowest entry point into the Velotric lineup, the Fold 1 at $999 is a stronger conversation. The Tempo is for buyers who specifically want a non-folding design at this price tier.",
@@ -432,7 +432,7 @@ export const dealArticles = [
       {
         id: "velotric-gomad",
         name: "Velotric GoMad",
-        imageUrl: "/images/deals/velotric-gomad.webp",
+        imageUrl: "/images/deal/Velotric GoMad.webp",
         badge: "Cargo E-Bike with Free Front Rack",
         description:
           "The GoMad is Velotric's cargo-focused model at $1,999, and this sale adds a free front rack and gift box. The front rack is specific and meaningful for cargo use, so if that's your use case, it's a useful bundle. No price reduction though, same as several others in the lower-priority tier here. If you're specifically shopping for the best cargo e-bike in your budget, the free rack makes this slightly more of a deal.",
@@ -463,7 +463,7 @@ export const dealArticles = [
       {
         id: "velotric-triker",
         name: "Velotric Triker",
-        imageUrl: "/images/deals/velotric-triker.webp",
+        imageUrl: "/images/deal/Velotric Triker.webp",
         badge: "Electric Trike, $100 Off",
         description:
           "The Triker is Velotric's three-wheeled option at $2,499 full price, dropping to $2,399 with a $100 discount and free gift box. If you're in the market for an electric trike, there aren't a ton of brand-name options, and the Triker is one of the more reputable ones. The $100 off is modest, but electric trikes rarely go on sale at all. Total savings of $239 with the gift box factored in. Worth a look if this specific category is what you need.",
