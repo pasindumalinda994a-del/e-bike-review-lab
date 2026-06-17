@@ -7,6 +7,8 @@
  * Post-level fields:
  * - dealEndsAt: ISO 8601 end datetime (shows page countdown when set)
  * - countdownHeadline, countdownSubline: optional countdown copy overrides
+ * - bannerImages: optional array of { src, alt } for top deal bar carousel
+ * - sidebarImages: optional array of { src, alt } for sidebar deal card carousel
  *
  * Deal object fields:
  * - id, name, badge, dealPrice, originalPrice, description, imageUrl, affiliateLink, pros, cons
@@ -68,6 +70,35 @@ export const dealArticles = [
     articleHeroImage: "/images/deal/Velotric Prime Day Deal.webp",
     heroImageAlt:
       "Velotric electric bikes on display during Prime Day 2026 sale event with discounts up to $862",
+    bannerImages: [
+      {
+        src: "/images/deal/392x72.webp",
+        alt: "Velotric Prime Day — Discover 2 save up to $300 off",
+      },
+      {
+        src: "/images/deal/392x72-1.webp",
+        alt: "Velotric Prime Day — $200 off e-bike plus free accessory bundle",
+      },
+      {
+        src: "/images/deal/392x72-2.webp",
+        alt: "Velotric Prime Day — $100 off e-bike plus free bag worth $74.99",
+      },
+    ],
+
+    sidebarImages: [
+      {
+        src: "/images/deal/250x250.webp",
+        alt: "Velotric Prime Day — Discover 2 save up to $300 off",
+      },
+      {
+        src: "/images/deal/250x250-1.webp",
+        alt: "Velotric Prime Day — $200 off e-bike plus free accessory bundle",
+      },
+      {
+        src: "/images/deal/250x250-2.webp",
+        alt: "Velotric Prime Day — $100 off e-bike plus free bag worth $74.99",
+      },
+    ],
 
     // --- Intro ---
     introductionParagraphs: [

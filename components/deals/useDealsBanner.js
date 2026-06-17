@@ -6,6 +6,7 @@ import { formatCountdown, getCountdownParts } from "@/lib/deal-countdown";
 import { useCallback, useEffect, useMemo, useState } from "react";
 
 export const ROTATION_MS = 8000;
+export const IMAGE_ROTATION_MS = 6000;
 
 function pad(value) {
   return String(value).padStart(2, "0");
@@ -26,6 +27,7 @@ export function BannerCountdown({
   endAt,
   prefersReducedMotion,
   layout = "responsive",
+  centered = false,
 }) {
   const [parts, setParts] = useState(null);
   const [compactLabel, setCompactLabel] = useState("");
@@ -58,11 +60,15 @@ export function BannerCountdown({
 
   if (layout === "stacked") {
     return (
-      <div className="flex flex-col gap-2">
+      <div
+        className={`flex flex-col gap-2 ${centered ? "items-center text-center" : ""}`}
+      >
         <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-white/70">
           Ends in
         </span>
-        <div className="flex flex-wrap items-center gap-1">
+        <div
+          className={`flex flex-wrap items-center gap-1 ${centered ? "justify-center" : ""}`}
+        >
           {units.map((unit) => (
             <CountdownUnit
               key={unit.label}
@@ -126,13 +132,22 @@ export function RotationDots({ count, activeIndex, onSelect }) {
   );
 }
 
-export function useDealsBanner({ activeDeals = [], storageKey }) {
+function filterCarouselImages(images = []) {
+  return images.filter((image) => image?.src && image?.alt);
+}
+
+export function useDealsBanner({
+  activeDeals = [],
+  storageKey,
+  imageKey = "banner",
+}) {
   const [mounted, setMounted] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [liveDeals, setLiveDeals] = useState(activeDeals);
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [isFading, setIsFading] = useState(false);
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
   const dismissKey = useMemo(
@@ -154,6 +169,7 @@ export function useDealsBanner({ activeDeals = [], storageKey }) {
   useEffect(() => {
     setLiveDeals(activeDeals);
     setActiveIndex(0);
+    setActiveImageIndex(0);
   }, [activeDeals]);
 
   useEffect(() => {
@@ -221,6 +237,59 @@ export function useDealsBanner({ activeDeals = [], storageKey }) {
     }
   }, [activeIndex, liveDeals.length]);
 
+  const currentDeal = liveDeals[activeIndex];
+
+  const bannerImages = useMemo(
+    () => filterCarouselImages(currentDeal?.bannerImages),
+    [currentDeal],
+  );
+
+  const sidebarImages = useMemo(
+    () => filterCarouselImages(currentDeal?.sidebarImages),
+    [currentDeal],
+  );
+
+  const carouselImages = imageKey === "sidebar" ? sidebarImages : bannerImages;
+
+  useEffect(() => {
+    setActiveImageIndex(0);
+  }, [currentDeal?.slug, imageKey]);
+
+  useEffect(() => {
+    if (
+      !mounted ||
+      !isVisible ||
+      carouselImages.length <= 1 ||
+      isPaused ||
+      prefersReducedMotion
+    ) {
+      return undefined;
+    }
+
+    const intervalId = window.setInterval(() => {
+      setActiveImageIndex((current) => (current + 1) % carouselImages.length);
+    }, IMAGE_ROTATION_MS);
+
+    return () => window.clearInterval(intervalId);
+  }, [
+    mounted,
+    isVisible,
+    carouselImages.length,
+    isPaused,
+    prefersReducedMotion,
+    currentDeal?.slug,
+    imageKey,
+  ]);
+
+  useEffect(() => {
+    if (
+      activeImageIndex >= carouselImages.length &&
+      carouselImages.length > 0
+    ) {
+      setActiveImageIndex(0);
+    }
+  }, [activeImageIndex, carouselImages.length]);
+
   const handleDismiss = () => {
     setIsVisible(false);
     try {
@@ -239,6 +308,11 @@ export function useDealsBanner({ activeDeals = [], storageKey }) {
     }, 300);
   };
 
+  const handleSelectImage = (index) => {
+    if (index === activeImageIndex) return;
+    setActiveImageIndex(index);
+  };
+
   const handlePauseEnter = () => setIsPaused(true);
   const handlePauseLeave = () => setIsPaused(false);
   const handlePauseBlur = (event) => {
@@ -247,7 +321,6 @@ export function useDealsBanner({ activeDeals = [], storageKey }) {
     }
   };
 
-  const currentDeal = liveDeals[activeIndex];
   const headlineText = currentDeal?.teaser
     ? `${currentDeal.headline} — ${currentDeal.teaser}`
     : currentDeal?.headline;
@@ -267,8 +340,13 @@ export function useDealsBanner({ activeDeals = [], storageKey }) {
     activeIndex,
     isFading,
     prefersReducedMotion,
+    bannerImages,
+    sidebarImages,
+    carouselImages,
+    activeImageIndex,
     handleDismiss,
     handleSelectDeal,
+    handleSelectImage,
     handlePauseEnter,
     handlePauseLeave,
     handlePauseBlur,
