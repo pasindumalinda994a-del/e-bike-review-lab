@@ -15,6 +15,38 @@
  * - keyDetails: optional array of { value, label } headline specs (weight, speed, motor, range, battery)
  */
 
+/** Velotric affiliate product URLs for deal article. Update links here only. */
+const velotricDealAffiliateLinks = {
+  "velotric-fold-1":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-fold-1%3F_pos%3D2%26_sid%3Da3957cbbb%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_fold_1_ebike&ctc=EBRL%20Website",
+  "velotric-t1-st-plus":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-t1st-ebike%3F_pos%3D1%26_sid%3D860f21be0%26_ss%3Dr&ctc=EBRL%20Website",
+  "velotric-discover-2":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-discover-2%3F_pos%3D1%26_sid%3D91a96370a%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_discover_2_ebike&ctc=EBRL%20Website",
+  "velotric-summit-1":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-summit-1%3F_pos%3D1%26_sid%3Dca79de9a0%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_summit_1_ebike&ctc=EBRL%20Website",
+  "velotric-nomad-2":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-nomad-2%3F_pos%3D1%26_sid%3D0ee371709%26_ss%3Dr&ctc=EBRL%20Website",
+  "velotric-nomad-2x":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-nomad-2x%3F_pos%3D1%26_sid%3D6de00d525%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_nomad_2x_full_suspension_fat_tire_ebike&ctc=EBRL%20Website",
+  "velotric-breeze-1":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-breeze-1%3F_pos%3D1%26_sid%3Dd09bf21bc%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_breeze_1_cruiser_ebike&ctc=EBRL%20Website",
+  "velotric-fold-1-plus":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-fold-1-plus%3F_pos%3D1%26_sid%3Ddcb05a98c%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_fold_1_plus_ebike&ctc=EBRL%20Website",
+  "velotric-discover-3":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-discover-3-commuter-ebike%3F_pos%3D1%26_sid%3D097301faa%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_discover_3_ebike&ctc=EBRL%20Website",
+  "velotric-discover-max":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-discover-m-mid-drive-ebike%3F_pos%3D4%26_sid%3D87f286046%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_discover_m_ebike&ctc=EBRL%20Website",
+  "velotric-summit-2":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-summit-2-hybrid-ebike%3F_pos%3D1%26_sid%3Dab004f11e%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_summit_2_ebike&ctc=EBRL%20Website",
+  "velotric-tempo":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-tempo-city-ebike%3F_pos%3D1%26_sid%3De51bf1bbf%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_tempo_ebike&ctc=EBRL%20Website",
+  "velotric-gomad":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-gomad-utility-ebike%3F_pos%3D1%26_sid%3D05252b656%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_gomad_ebike&ctc=EBRL%20Website",
+  "velotric-triker":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-triker%3F_pos%3D1%26_sid%3D546b10807%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_triker_electric_tricycle&ctc=EBRL%20Website",
+};
+
 export const dealArticles = [
   {
     // --- Post metadata ---
@@ -61,7 +93,7 @@ export const dealArticles = [
         badge: "Save $500 — Biggest Price Cut",
         description:
           "This is the standout deal in the sale. The Fold 1 drops from $1,499 to $999, and you get a free Half Twist Throttle Set on top of that. At under $1,000 for a folding e-bike from a brand that gets consistently solid reviews, this is one of the better folding electric bike deals you'll see this year. Worth flagging: it's a folding bike, so it's not built for heavy off-road use, but for commuting or tossing in a trunk, it punches well at this price.",
-        affiliateLink: "https://www.velotricbike.com/",
+        affiliateLink: velotricDealAffiliateLinks["velotric-fold-1"],
         dealPrice: "$999",
         originalPrice: "$1,499",
         offer: "$500 off + Free Velotric Half Twist Throttle Set",
@@ -93,7 +125,7 @@ export const dealArticles = [
         badge: "Best Bundle Value",
         description:
           "The T1 ST Plus is $300 off at $1,349, and the accessories bundled in are actually useful ones: a modular rear rack, fender pack, and a range extender battery. That last piece is what pushes the total savings to $862. A range extender alone typically runs several hundred dollars, so if you're planning longer rides and were going to buy one anyway, you're essentially getting the bike at a steep discount. This is the deal I'd point most buyers toward.",
-        affiliateLink: "https://www.velotricbike.com/",
+        affiliateLink: velotricDealAffiliateLinks["velotric-t1-st-plus"],
         dealPrice: "$1,349",
         originalPrice: "$1,649",
         offer: "$300 off + Free Rear Rack, Fender Pack & Range Extender Battery",
@@ -125,7 +157,7 @@ export const dealArticles = [
         badge: "Save $300 — No-Fuss Price Drop",
         description:
           "The Discover 2 is a straight $300 price cut, no accessory bundle attached. It goes from $1,999 to $1,699. Honestly, sometimes that's easier to evaluate because there's no math to do on freebie value. If you've been looking at the Discover 2 specifically, this is a clean 15% off. Not the splashiest deal in the sale, but it's real money back on a solid commuter e-bike.",
-        affiliateLink: "https://www.velotricbike.com/",
+        affiliateLink: velotricDealAffiliateLinks["velotric-discover-2"],
         dealPrice: "$1,699",
         originalPrice: "$1,999",
         offer: "$300 off",
@@ -156,7 +188,7 @@ export const dealArticles = [
         badge: "Best Electric Mountain Bike Deal",
         description:
           "The Summit 1 drops $200 to $1,799 and comes with a free rear rack and fender. Total savings land at $360 when you factor in the accessories. If you've been hunting for an electric mountain bike deal, this is one of the better options in the sale. The Summit line is built for trail riding, so this isn't a commuter dressed up in off-road clothes. Just be aware that limited stock is confirmed on this one.",
-        affiliateLink: "https://www.velotricbike.com/",
+        affiliateLink: velotricDealAffiliateLinks["velotric-summit-1"],
         dealPrice: "$1,799",
         originalPrice: "$1,999",
         offer: "$200 off + Free Rear Rack & Fender",
@@ -188,7 +220,7 @@ export const dealArticles = [
         badge: "Save $275 with Pannier Bag",
         description:
           "The Nomad 2 goes from $1,999 to $1,799 with a free pannier bag added in. If you're shopping for a fat tire e-bike, the Nomad 2 is Velotric's main offering in that category. The pannier bag is a practical freebie for riders who actually carry cargo. Total savings of $275 is a reasonable deal, though not the most dramatic cut in this sale.",
-        affiliateLink: "https://www.velotricbike.com/",
+        affiliateLink: velotricDealAffiliateLinks["velotric-nomad-2"],
         dealPrice: "$1,799",
         originalPrice: "$1,999",
         offer: "$200 off + Free Rear Rack Pannier Bag",
@@ -219,7 +251,7 @@ export const dealArticles = [
         badge: "Upgraded Fat Tire Option",
         description:
           "The Nomad 2X is the step-up version of the Nomad 2, and it's on the same deal structure: $200 off with a free pannier bag. MTC pricing lands at $2,299 (down from $2,499), and non-MTC sits at $2,199 (down from $2,399). If you're choosing between the Nomad 2 and 2X, the extra $400 to $500 gets you upgraded components. Whether that's worth it depends on your use case, but the deal structure is identical across both.",
-        affiliateLink: "https://www.velotricbike.com/",
+        affiliateLink: velotricDealAffiliateLinks["velotric-nomad-2x"],
         dealPrice: "$2,199",
         originalPrice: "$2,399",
         offer: "$200 off + Free Rear Rack Pannier Bag",
@@ -250,7 +282,7 @@ export const dealArticles = [
         badge: "Step-Through Commuter Deal",
         description:
           "The Breeze 1 is $100 off at $1,699 with a free rear rack and fender. It's one of Velotric's step-through commuter designs, which makes it a popular pick for seniors and riders who want easy on/off. Honest take: $100 off on a $1,799 bike is a modest deal percentage-wise, and the accessories add about $150 in value, so total savings of $250 is respectable. It's not the headline deal, but if the Breeze is the bike you want, this is a fine window to buy.",
-        affiliateLink: "https://www.velotricbike.com/",
+        affiliateLink: velotricDealAffiliateLinks["velotric-breeze-1"],
         dealPrice: "$1,699",
         originalPrice: "$1,799",
         offer: "$100 off + Free Rear Rack & Fender",
@@ -281,7 +313,7 @@ export const dealArticles = [
         badge: "Upgraded Folder with Bag",
         description:
           "The Fold 1 Plus is $100 off at $1,399 with a free pannier bag. It's the higher-spec version of the Fold 1, and with the Fold 1 sitting at $500 off right now, you'd want to think through whether the Plus's improvements justify the $400 gap. If you know you want the upgraded components, fine. But if you're flexible, the base Fold 1 is the stronger deal this cycle.",
-        affiliateLink: "https://www.velotricbike.com/",
+        affiliateLink: velotricDealAffiliateLinks["velotric-fold-1-plus"],
         dealPrice: "$1,399",
         originalPrice: "$1,499",
         offer: "$100 off + Free Rear Rack Pannier Bag",
@@ -312,7 +344,7 @@ export const dealArticles = [
         badge: "Bonus Bundle, No Price Cut",
         description:
           "The Discover 3 stays at its full MSRP of $1,999 but comes with a free rack top bag, phone mount, and gift box. Worth being upfront: this is a bonus-only deal with no actual price reduction. The accessories have real utility, especially the phone mount for navigation, but you're paying full price for the bike itself. If you've already decided on the Discover 3 and been waiting for a reason to pull the trigger, this is that reason. If you're price-sensitive, the Discover 2 at $300 off is the more direct comparison.",
-        affiliateLink: "https://www.velotricbike.com/",
+        affiliateLink: velotricDealAffiliateLinks["velotric-discover-3"],
         dealPrice: "$1,999",
         originalPrice: "$1,999",
         offer: "Free Rack Top Bag, Phone Mount & Velotric Gift Box",
@@ -343,7 +375,7 @@ export const dealArticles = [
         badge: "Top-Tier Commuter, Bonus-Only Deal",
         description:
           "The Discover Max is Velotric's premium commuter at $2,499, and like the Discover 3, it's a bonus-only deal this Prime Day. You get a free rack top bag, phone mount, and gift box. If you're already in the market for the Max specifically, the bundle is a nice add. But if you're comparing against the Discover 2 at $300 off, the Max costs $800 more and doesn't have a price reduction. The specs justify that difference for some buyers, but it's worth thinking through.",
-        affiliateLink: "https://www.velotricbike.com/",
+        affiliateLink: velotricDealAffiliateLinks["velotric-discover-max"],
         dealPrice: "$2,499",
         originalPrice: "$2,499",
         offer: "Free Rack Top Bag, Phone Mount & Velotric Gift Box",
@@ -374,7 +406,7 @@ export const dealArticles = [
         badge: "Trail-Ready, Free Rack Bundle",
         description:
           "The Summit 2 stays at $2,099 but picks up a free modular rear rack and gift box, totaling $219 in extras. Again, no price drop here. The Summit 2 is the upgraded mountain e-bike in the lineup, and if that's what you're after, the rack is actually a useful freebie for carrying gear on trails or commutes. But compared to the Summit 1 with a real price cut and rack bundle, you'll want to weigh whether the Summit 2's spec bump is worth the extra spend.",
-        affiliateLink: "https://www.velotricbike.com/",
+        affiliateLink: velotricDealAffiliateLinks["velotric-summit-2"],
         dealPrice: "$2,099",
         originalPrice: "$2,099",
         offer: "Free Modular Rear Rack & Velotric Gift Box",
@@ -405,7 +437,7 @@ export const dealArticles = [
         badge: "Budget-Friendly Entry Point",
         description:
           "The Tempo sits at $1,499 with no price cut, just a free rear rack and gift box. At $219 in accessories, it's not nothing, but the Tempo is already one of Velotric's more affordable models and this sale doesn't reduce the price at all. If budget is the priority and you want the lowest entry point into the Velotric lineup, the Fold 1 at $999 is a stronger conversation. The Tempo is for buyers who specifically want a non-folding design at this price tier.",
-        affiliateLink: "https://www.velotricbike.com/",
+        affiliateLink: velotricDealAffiliateLinks["velotric-tempo"],
         dealPrice: "$1,499",
         originalPrice: "$1,499",
         offer: "Free Velotric Tempo Rear Rack & Velotric Gift Box",
@@ -436,7 +468,7 @@ export const dealArticles = [
         badge: "Cargo E-Bike with Free Front Rack",
         description:
           "The GoMad is Velotric's cargo-focused model at $1,999, and this sale adds a free front rack and gift box. The front rack is specific and meaningful for cargo use, so if that's your use case, it's a useful bundle. No price reduction though, same as several others in the lower-priority tier here. If you're specifically shopping for the best cargo e-bike in your budget, the free rack makes this slightly more of a deal.",
-        affiliateLink: "https://www.velotricbike.com/",
+        affiliateLink: velotricDealAffiliateLinks["velotric-gomad"],
         dealPrice: "$1,999",
         originalPrice: "$1,999",
         offer: "Free Velotric Front Rack & Velotric Gift Box",
@@ -467,7 +499,7 @@ export const dealArticles = [
         badge: "Electric Trike, $100 Off",
         description:
           "The Triker is Velotric's three-wheeled option at $2,499 full price, dropping to $2,399 with a $100 discount and free gift box. If you're in the market for an electric trike, there aren't a ton of brand-name options, and the Triker is one of the more reputable ones. The $100 off is modest, but electric trikes rarely go on sale at all. Total savings of $239 with the gift box factored in. Worth a look if this specific category is what you need.",
-        affiliateLink: "https://www.velotricbike.com/",
+        affiliateLink: velotricDealAffiliateLinks["velotric-triker"],
         dealPrice: "$2,399",
         originalPrice: "$2,499",
         offer: "$100 off + Free Velotric Gift Box",
