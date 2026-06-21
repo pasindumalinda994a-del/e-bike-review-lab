@@ -1,4 +1,5 @@
 import './globals.css';
+import DealPopup from '@/components/DealPopup';
 import DealsBanner from '@/components/DealsBanner';
 import SiteFooter from '@/components/SiteFooter';
 import SiteHeader from '@/components/SiteHeader';
@@ -104,6 +105,7 @@ export default function RootLayout({ children }) {
             {children}
           </main>
           <SiteFooter />
+          <DealPopup activeDeals={activeDeals} />
           <GoogleAnalytics />
         </SmoothScroll>
       </body>
