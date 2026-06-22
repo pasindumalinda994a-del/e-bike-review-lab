@@ -8,6 +8,7 @@ export default function SidebarImageCarousel({
   href,
   activeIndex = 0,
   onSelect,
+  onLinkClick,
 }) {
   if (!images.length || !href) {
     return null;
@@ -17,6 +18,7 @@ export default function SidebarImageCarousel({
     <div className="flex w-full flex-col gap-2">
       <Link
         href={href}
+        onClick={onLinkClick}
         className="group relative block w-full overflow-hidden rounded-lg ring-1 ring-[#3e3ce7]/40 transition-shadow hover:ring-[#3e3ce7]/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3e3ce7]"
         aria-label="View current deal promotion"
       >

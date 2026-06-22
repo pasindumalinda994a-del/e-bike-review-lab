@@ -4,9 +4,8 @@ import AnimatedButton from "@/components/AnimatedButton";
 import SidebarImageCarousel from "@/components/deals/SidebarImageCarousel";
 import {
   BannerCountdown,
-  useDealsBanner,
 } from "@/components/deals/useDealsBanner";
-import { DEALS_POPUP_STORAGE_KEY } from "@/lib/active-deals";
+import { useDealPopup } from "@/components/deals/useDealPopup";
 import { ArrowRight, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -26,11 +25,7 @@ export default function DealPopup({ activeDeals = [] }) {
     handlePauseEnter,
     handlePauseLeave,
     handlePauseBlur,
-  } = useDealsBanner({
-    activeDeals,
-    storageKey: DEALS_POPUP_STORAGE_KEY,
-    imageKey: "sidebar",
-  });
+  } = useDealPopup(activeDeals);
 
   const [isReady, setIsReady] = useState(false);
 
@@ -115,6 +110,7 @@ export default function DealPopup({ activeDeals = [] }) {
               href={currentDeal.href}
               activeIndex={activeImageIndex}
               onSelect={handleSelectImage}
+              onLinkClick={handleDismiss}
             />
           </div>
         ) : null}
@@ -154,6 +150,7 @@ export default function DealPopup({ activeDeals = [] }) {
 
             <AnimatedButton
               href={currentDeal.href}
+              onClick={handleDismiss}
               className="w-full justify-center bg-gradient-to-r from-emerald-500 to-green-600 px-4 py-2.5 text-sm text-white shadow-sm transition-all hover:brightness-110"
             >
               View Deal
