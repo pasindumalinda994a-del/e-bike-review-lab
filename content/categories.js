@@ -97,6 +97,13 @@ export const categories = [
     description:
       "In-depth Velotric e-bike reviews: commuters and all-rounders tested for real-world range, motor performance, and everyday usability.",
   },
+  {
+    slug: "ferla",
+    name: "Ferla",
+    heroImage: "/default-og.png",
+    description:
+      "In-depth Ferla e-bike reviews: family cargo trikes tested for real-world payload, safety, range, and everyday usability.",
+  },
 ];
 
 /**
