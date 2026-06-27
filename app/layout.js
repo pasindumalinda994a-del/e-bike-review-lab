@@ -3,6 +3,7 @@ import DealPopup from '@/components/DealPopup';
 import DealsBanner from '@/components/DealsBanner';
 import SiteFooter from '@/components/SiteFooter';
 import SiteHeader from '@/components/SiteHeader';
+import GoogleAdSense from '@/components/GoogleAdSense';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import SmoothScroll from '@/components/SmoothScroll';
 import { getActiveDealPosts } from '@/lib/active-deals';
@@ -107,6 +108,7 @@ export default function RootLayout({ children }) {
           <SiteFooter />
           <DealPopup activeDeals={activeDeals} />
           <GoogleAnalytics />
+          <GoogleAdSense />
         </SmoothScroll>
       </body>
     </html>
