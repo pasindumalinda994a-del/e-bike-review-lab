@@ -7108,23 +7108,44 @@ const products = [
     // ============================================
     // 3. IMAGES
     // ============================================
-    heroImage: "/images/electric-bikes/Trek Rail+ 8 Gen 5.webp",
-    cardImage: "/images/electric-bikes/Trek Rail+ 8 Gen 5.webp",
-    articleHeroImage: "/images/electric-bikes/Trek Rail+ 8 Gen 5.webp",
+    heroImage: "/images/product/Trek/Trek Rail+ 8 Gen 5 main.webp",
+    cardImage: "/images/product/Trek/Trek Rail+ 8 Gen 5 main.webp",
+    articleHeroImage: "/images/product/Trek/Trek Rail+ 8 Gen 5 main.webp",
     heroImageAlt: "Trek Rail+ 8 Gen 5 electric mountain bike on rocky trail showing mullet wheel setup and RockShox suspension",
     
     imagePrimary: {
       heading: "Adjustable Geometry for Any Trail",
       description: "The Rail+ 8 Gen 5 features Trek's Mino Link adjustable geometry system and compatibility with angle-adjust headset cups. This lets you dial in the perfect setup whether you're climbing technical ascents or pointing it down gnarly descents. I spent time in both High and Low positions, and the difference in handling is immediately noticeable.",
-      image: "/images/electric-bikes/Trek Rail+ 8 Gen 5.webp",
+      image: "/images/product/Trek/Trek Rail+ 8 Gen 5 secondary.webp",
       alt: "Trek Rail+ 8 Gen 5 Mino Link geometry adjustment system showing frame pivot"
     },
     
     imageSecondary: {
       heading: "Removable 800Wh Battery System",
       description: "Trek's new RIB 2.0 (Removable Integrated Battery) system addresses the rattling issues from previous generations. The battery drops out from underneath using a 6mm hex key, making it easier to charge separately or remove for travel. The optional tension bolt keeps everything secure on rough terrain.",
-      image: "/images/electric-bikes/Trek Rail+ 8 Gen 5.webp",
+      image: "/images/product/Trek/Trek Rail+ 8 Gen 5 secondary.webp",
       alt: "Trek Rail+ 8 Gen 5 showing Bosch 800Wh battery removal system"
+    },
+
+    imageTertiary: {
+      heading: "Alpha Platinum Aluminum: Built to Take Abuse",
+      description: "The Rail+ 8's oversized downtube houses the Bosch motor and 800Wh battery, but Trek didn't stop at bulk. Molded chainstay protection and Motor Armor on the bottom bracket area kept the frame looking nearly new after three weeks of rock strikes and root slaps on Pacific Northwest trails. Internal Control Freak cable routing means nothing rattles inside the frame, even on repeated bike park laps.",
+      image: "/images/product/Trek/Trek Rail+ 8 Gen 5 secondary.webp",
+      alt: "Trek Rail+ 8 Gen 5 Alpha Platinum aluminum frame showing chainstay protection and Motor Armor"
+    },
+
+    imageQuaternary: {
+      heading: "160mm RockShox Suspension & Mullet Wheel Setup",
+      description: "The RockShox ZEB Select fork and Deluxe Select+ RT shock deliver 160mm of travel front and rear, with a flip chip at the lower shock mount that switches progression from 19% to 24%. Paired with the mullet setup (29\" front, 27.5\" rear on Medium through XL), the Rail+ 8 rolls confidently over embedded rocks up front while staying playful and quick in tight, twisty sections.",
+      image: "/images/product/Trek/Trek Rail+ 8 Gen 5 secondary.webp",
+      alt: "Trek Rail+ 8 Gen 5 RockShox suspension and mullet wheel configuration on technical trail"
+    },
+
+    imageQuinary: {
+      heading: "Daily Usability: Charging, Apps & Maintenance",
+      description: "The RIB 2.0 battery drops out easily with a 6mm hex key for separate charging (about 4.5 hours from empty on the included 6A charger). The Bosch eBike Flow app tracks ride stats, adjusts power modes per setting, and even pushed a firmware update that improved motor performance during testing. SRAM's Universal Derailleur Hanger means any shop can help with hanger replacements, a small but meaningful detail for a bike you'll ride hard.",
+      image: "/images/product/Trek/Trek Rail+ 8 Gen 5 secondary.webp",
+      alt: "Trek Rail+ 8 Gen 5 Bosch System Controller and removable battery charging setup"
     },
     
     // ============================================

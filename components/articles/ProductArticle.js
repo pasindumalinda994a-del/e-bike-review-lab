@@ -59,6 +59,9 @@ export default function ProductArticle({ post, publishedDate }) {
   const conclusion = post.conclusion ?? {};
   const imagePrimary = post.imagePrimary ?? null;
   const imageSecondary = post.imageSecondary ?? null;
+  const imageTertiary = post.imageTertiary ?? null;
+  const imageQuaternary = post.imageQuaternary ?? null;
+  const imageQuinary = post.imageQuinary ?? null;
   const affiliateLink = safeString(post.affiliateLink);
   const badge = safeString(post.badge);
   const ctaLabel = safeString(post.ctaLabel) ?? "Check Current Price";
@@ -414,6 +417,41 @@ export default function ProductArticle({ post, publishedDate }) {
             </section>
           )}
 
+          {/* Tertiary Image Section */}
+          {imageTertiary?.image && (
+            <section className="pt-6 sm:pt-8">
+              <div className="max-w-4xl space-y-4">
+                {imageTertiary.heading && (
+                  <h3 className="text-xl font-semibold leading-[1.3] tracking-[-0.01em] text-[#0C1412] sm:text-2xl text-left">
+                    {imageTertiary.heading}
+                  </h3>
+                )}
+                <figure className="relative overflow-hidden rounded-lg">
+                  <div className="aspect-[16/9] w-full relative">
+                    <Image
+                      src={imageTertiary.image}
+                      alt={imageTertiary.alt || headline || ""}
+                      fill
+                      sizes="(min-width: 1024px) 896px, (min-width: 768px) 90vw, 100vw"
+                      className="object-cover"
+                      quality={75}
+                      priority={false}
+                      loading="lazy"
+                    />
+                  </div>
+                  {imageTertiary.description && (
+                    <figcaption className="sr-only">{imageTertiary.description}</figcaption>
+                  )}
+                </figure>
+                {imageTertiary.description && (
+                  <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
+                    {imageTertiary.description}
+                  </p>
+                )}
+              </div>
+            </section>
+          )}
+
           {/* Features Section */}
           {(features.heading || features.groups?.length) && (
             <section className="pt-6 sm:pt-8" aria-labelledby="features-heading">
@@ -450,6 +488,41 @@ export default function ProductArticle({ post, publishedDate }) {
                       </div>
                     ))}
                   </div>
+                )}
+              </div>
+            </section>
+          )}
+
+          {/* Quaternary Image Section */}
+          {imageQuaternary?.image && (
+            <section className="pt-6 sm:pt-8">
+              <div className="max-w-4xl space-y-4">
+                {imageQuaternary.heading && (
+                  <h3 className="text-xl font-semibold leading-[1.3] tracking-[-0.01em] text-[#0C1412] sm:text-2xl text-left">
+                    {imageQuaternary.heading}
+                  </h3>
+                )}
+                <figure className="relative overflow-hidden rounded-lg">
+                  <div className="aspect-[16/9] w-full relative">
+                    <Image
+                      src={imageQuaternary.image}
+                      alt={imageQuaternary.alt || headline || ""}
+                      fill
+                      sizes="(min-width: 1024px) 896px, (min-width: 768px) 90vw, 100vw"
+                      className="object-cover"
+                      quality={75}
+                      priority={false}
+                      loading="lazy"
+                    />
+                  </div>
+                  {imageQuaternary.description && (
+                    <figcaption className="sr-only">{imageQuaternary.description}</figcaption>
+                  )}
+                </figure>
+                {imageQuaternary.description && (
+                  <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
+                    {imageQuaternary.description}
+                  </p>
                 )}
               </div>
             </section>
@@ -535,6 +608,41 @@ export default function ProductArticle({ post, publishedDate }) {
                       </p>
                     ))}
                   </div>
+                )}
+              </div>
+            </section>
+          )}
+
+          {/* Quinary Image Section */}
+          {imageQuinary?.image && (
+            <section className="pt-6 sm:pt-8">
+              <div className="max-w-4xl space-y-4">
+                {imageQuinary.heading && (
+                  <h3 className="text-xl font-semibold leading-[1.3] tracking-[-0.01em] text-[#0C1412] sm:text-2xl text-left">
+                    {imageQuinary.heading}
+                  </h3>
+                )}
+                <figure className="relative overflow-hidden rounded-lg">
+                  <div className="aspect-[16/9] w-full relative">
+                    <Image
+                      src={imageQuinary.image}
+                      alt={imageQuinary.alt || headline || ""}
+                      fill
+                      sizes="(min-width: 1024px) 896px, (min-width: 768px) 90vw, 100vw"
+                      className="object-cover"
+                      quality={75}
+                      priority={false}
+                      loading="lazy"
+                    />
+                  </div>
+                  {imageQuinary.description && (
+                    <figcaption className="sr-only">{imageQuinary.description}</figcaption>
+                  )}
+                </figure>
+                {imageQuinary.description && (
+                  <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
+                    {imageQuinary.description}
+                  </p>
                 )}
               </div>
             </section>
