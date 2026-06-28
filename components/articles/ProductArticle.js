@@ -1,5 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  Battery,
+  CircleDot,
+  ClipboardList,
+  Disc3,
+  DollarSign,
+  Gauge,
+  Layers,
+  Package,
+  Ruler,
+  Settings,
+  Sparkles,
+  Target,
+  Weight,
+  Zap,
+} from "lucide-react";
 import SidebarContent from "@/components/SidebarContent";
 import AnimatedButton from "@/components/AnimatedButton";
 
@@ -230,7 +246,7 @@ export default function ProductArticle({ post, publishedDate }) {
                 href={affiliateLink}
                 external={true}
                 rel="sponsored nofollow noopener"
-                className="w-auto text-sm sm:text-base sm:w-full"
+                className="w-auto text-sm sm:text-base"
               >
                 {ctaLabel}
                 <svg
@@ -288,18 +304,19 @@ export default function ProductArticle({ post, publishedDate }) {
                   </h2>
                 )}
                 {Array.isArray(specs.items) && specs.items.length > 0 && (
-                  <dl className="grid gap-4 rounded-lg bg-white p-6 text-sm text-[#111827] sm:grid-cols-2 sm:p-8 sm:text-base">
+                  <dl className="grid gap-5 rounded-lg bg-white p-6 sm:grid-cols-2 sm:gap-6 sm:p-8">
                     {specs.items.map((item, index) => {
                       if (!item?.label && !item?.value) return null;
                       return (
-                        <div key={index} className="space-y-1">
+                        <div key={index} className="space-y-2">
                           {item.label && (
-                            <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-[#6b7280]">
+                            <dt className="flex items-center gap-2.5 text-sm font-semibold uppercase tracking-[0.15em] text-[#6b7280] sm:text-base">
+                              <SpecIcon label={item.label} />
                               {item.label}
                             </dt>
                           )}
                           {item.value && (
-                            <dd className="font-medium text-[#111827]">
+                            <dd className="text-md font-medium leading-normal text-[#111827]">
                               {item.value}
                             </dd>
                           )}
@@ -307,6 +324,31 @@ export default function ProductArticle({ post, publishedDate }) {
                       );
                     })}
                   </dl>
+                )}
+                {affiliateLink && (
+                  <div className="pt-4">
+                    <AnimatedButton
+                      href={affiliateLink}
+                      external={true}
+                      rel="sponsored nofollow noopener"
+                      className="w-auto text-sm sm:text-base"
+                    >
+                      {ctaLabel}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="h-5 w-5"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                      </svg>
+                    </AnimatedButton>
+                  </div>
                 )}
               </div>
             </section>
@@ -536,6 +578,31 @@ export default function ProductArticle({ post, publishedDate }) {
                 <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
                   {whoItsBestFor.text}
                 </p>
+                {affiliateLink && (
+                  <div className="pt-4">
+                    <AnimatedButton
+                      href={affiliateLink}
+                      external={true}
+                      rel="sponsored nofollow noopener"
+                      className="w-auto text-sm sm:text-base"
+                    >
+                      {ctaLabel}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="h-5 w-5"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                      </svg>
+                    </AnimatedButton>
+                  </div>
+                )}
               </div>
             </section>
           )}
@@ -584,6 +651,31 @@ export default function ProductArticle({ post, publishedDate }) {
                     </div>
                   )}
                 </div>
+                {affiliateLink && (
+                  <div className="pt-4">
+                    <AnimatedButton
+                      href={affiliateLink}
+                      external={true}
+                      rel="sponsored nofollow noopener"
+                      className="w-auto text-sm sm:text-base"
+                    >
+                      {ctaLabel}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="h-5 w-5"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                      </svg>
+                    </AnimatedButton>
+                  </div>
+                )}
               </div>
             </section>
           )}
@@ -628,7 +720,7 @@ export default function ProductArticle({ post, publishedDate }) {
                       href={affiliateLink}
                       external={true}
                       rel="sponsored nofollow noopener"
-                      className="w-auto text-sm sm:text-base sm:w-full"
+                      className="w-auto text-sm sm:text-base"
                     >
                       {ctaLabel}
                       <svg
@@ -783,6 +875,40 @@ function safeString(value) {
   return typeof value === "string" && value.trim().length
     ? value.trim()
     : null;
+}
+
+function getSpecIcon(label) {
+  const normalized = (label || "").toLowerCase();
+
+  if (/price|msrp|cost/.test(normalized)) return DollarSign;
+  if (/motor/.test(normalized)) return Zap;
+  if (/battery/.test(normalized)) return Battery;
+  if (/weight/.test(normalized)) return Weight;
+  if (/range/.test(normalized) && !/rider/.test(normalized)) return Gauge;
+  if (/cargo|payload|load/.test(normalized)) return Package;
+  if (/rider|height|fit|size/.test(normalized)) return Ruler;
+  if (/best for/.test(normalized)) return Target;
+  if (/wheel|tire/.test(normalized)) return CircleDot;
+  if (/brake/.test(normalized)) return Disc3;
+  if (/drivetrain|gear/.test(normalized)) return Settings;
+  if (/class|speed/.test(normalized)) return Gauge;
+  if (/dimension/.test(normalized)) return Ruler;
+  if (/frame|suspension/.test(normalized)) return Layers;
+  if (/feature|unique/.test(normalized)) return Sparkles;
+
+  return ClipboardList;
+}
+
+function SpecIcon({ label }) {
+  const Icon = getSpecIcon(label);
+
+  return (
+    <Icon
+      className="h-5 w-5 flex-shrink-0 text-[#6b7280] sm:h-[22px] sm:w-[22px]"
+      strokeWidth={2}
+      aria-hidden="true"
+    />
+  );
 }
 
 function renderMarkdownBold(text) {
