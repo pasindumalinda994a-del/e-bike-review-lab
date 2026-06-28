@@ -21,21 +21,37 @@ export default function BannerImageCarousel({
         className="group relative min-w-0 flex-1 overflow-hidden rounded-md ring-1 ring-[#3e3ce7]/40 transition-shadow hover:ring-[#3e3ce7]/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3e3ce7]"
         aria-label="View current deal promotion"
       >
-        <div className="relative aspect-[392/72] w-full bg-[#0C1412]">
+        <div className="relative aspect-[468/60] w-full bg-[#0C1412] md:aspect-[728/90]">
           {images.map((image, index) => (
-            <Image
+            <div
               key={image.src}
-              src={image.src}
-              alt={image.alt}
-              fill
-              priority={index === 0}
-              sizes="(min-width: 1024px) 480px, 90vw"
-              className={`object-contain transition-opacity duration-700 ease-in-out ${
+              className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
                 index === activeIndex
                   ? "opacity-100"
                   : "pointer-events-none opacity-0"
               }`}
-            />
+            >
+              {image.srcCompact ? (
+                <Image
+                  src={image.srcCompact}
+                  alt={image.alt}
+                  fill
+                  priority={index === 0}
+                  sizes="100vw"
+                  className="object-contain md:hidden"
+                />
+              ) : null}
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                priority={index === 0}
+                sizes="(min-width: 768px) 540px, 100vw"
+                className={`object-contain ${
+                  image.srcCompact ? "hidden md:block" : ""
+                }`}
+              />
+            </div>
           ))}
         </div>
       </Link>

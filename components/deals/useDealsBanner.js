@@ -249,7 +249,19 @@ export function useDealsBanner({
     [currentDeal],
   );
 
-  const carouselImages = imageKey === "sidebar" ? sidebarImages : bannerImages;
+  const popupImages = useMemo(
+    () => filterCarouselImages(currentDeal?.popupImages),
+    [currentDeal],
+  );
+
+  const carouselImages =
+    imageKey === "popup"
+      ? popupImages.length > 0
+        ? popupImages
+        : sidebarImages
+      : imageKey === "sidebar"
+        ? sidebarImages
+        : bannerImages;
 
   useEffect(() => {
     setActiveImageIndex(0);

@@ -7,8 +7,9 @@
  * Post-level fields:
  * - dealEndsAt: ISO 8601 end datetime (shows page countdown when set)
  * - countdownHeadline, countdownSubline: optional countdown copy overrides
- * - bannerImages: optional array of { src, alt } for top deal bar carousel
+ * - bannerImages: optional array of { src, alt, srcCompact? } for top deal bar carousel
  * - sidebarImages: optional array of { src, alt } for sidebar deal card carousel
+ * - popupImages: optional array of { src, alt } for deal popup carousel (falls back to sidebarImages)
  *
  * Deal object fields:
  * - id, name, badge, dealPrice, originalPrice, description, imageUrl, affiliateLink, pros, cons
@@ -72,31 +73,36 @@ export const dealArticles = [
       "Velotric electric bikes on sale for 4th of July with savings up to $812",
     bannerImages: [
       {
-        src: "/images/deal/392x72.webp",
-        alt: "Velotric 4th of July — Discover 2 save up to $300 off",
+        src: "/images/deal/728x90.png",
+        srcCompact: "/images/deal/468x60.png",
+        alt: "Velotric 4th of July sale — Discover 3 at $1999 with free accessories worth $139.98",
       },
       {
-        src: "/images/deal/392x72-1.webp",
-        alt: "Velotric 4th of July — $200 off e-bike plus free accessory bundle",
-      },
-      {
-        src: "/images/deal/392x72-2.webp",
-        alt: "Velotric 4th of July — $100 off e-bike plus free bag worth $74.99",
+        src: "/images/deal/728x90-1.png",
+        srcCompact: "/images/deal/468x60-1.png",
+        alt: "Velotric 4th of July sale — $200 off e-bike plus free bag worth $74.99",
       },
     ],
 
     sidebarImages: [
       {
-        src: "/images/deal/250x250.webp",
-        alt: "Velotric 4th of July — Discover 2 save up to $300 off",
+        src: "/images/deal/250x250.png",
+        alt: "Velotric 4th of July sale — Discover 3 at $1999 with free accessories worth $139.98",
       },
       {
-        src: "/images/deal/250x250-1.webp",
-        alt: "Velotric 4th of July — $200 off e-bike plus free accessory bundle",
+        src: "/images/deal/250x250-1.png",
+        alt: "Velotric 4th of July sale — $200 off e-bike plus free bag worth $74.99",
+      },
+    ],
+
+    popupImages: [
+      {
+        src: "/images/deal/125x125.png",
+        alt: "Velotric 4th of July sale — Discover 3 at $1999 with free accessories worth $139.98",
       },
       {
-        src: "/images/deal/250x250-2.webp",
-        alt: "Velotric 4th of July — $100 off e-bike plus free bag worth $74.99",
+        src: "/images/deal/125x125-1.png",
+        alt: "Velotric 4th of July sale — $200 off e-bike plus free bag worth $74.99",
       },
     ],
 

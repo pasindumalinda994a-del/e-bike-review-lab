@@ -7,6 +7,6 @@ export function useDealPopup(activeDeals = []) {
   return useDealsBanner({
     activeDeals,
     storageKey: DEALS_POPUP_STORAGE_KEY,
-    imageKey: "sidebar",
+    imageKey: "popup",
   });
 }
