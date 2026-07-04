@@ -373,13 +373,13 @@ const ferlaRoyceIIArticle = {
   // ============================================
   // 19. VIDEO REVIEW (OPTIONAL)
   // ============================================
-  videoReview: {
-    heading: "Video Review",
-    title: "Ferla Royce II Electric Cargo Bike Video Review",
-    embedUrl: "https://www.youtube.com/embed/VIDEO_ID_PLACEHOLDER",
-    description:
-      "A hands-on walkthrough of the Royce II covering the cargo box design, motor feel on hills, loading kids, and how it compares to two-wheel cargo alternatives. Worth watching alongside this written review if you want to see it in motion before committing.",
-  },
+  // videoReview: {
+  //   heading: "Video Review",
+  //   title: "Ferla Royce II Electric Cargo Bike Video Review",
+  //   embedUrl: "https://www.youtube.com/embed/VIDEO_ID_PLACEHOLDER",
+  //   description:
+  //     "A hands-on walkthrough of the Royce II covering the cargo box design, motor feel on hills, loading kids, and how it compares to two-wheel cargo alternatives. Worth watching alongside this written review if you want to see it in motion before committing.",
+  // },
 };
 
 export const ferlaArticles = [ferlaRoyceIIArticle];
