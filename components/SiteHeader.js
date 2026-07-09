@@ -50,8 +50,8 @@ const LEARN_LINKS = [
     label: "Best Electric Folding Bikes 2025",
   },
   {
-    href: "/electric-road-bikes/best-electric-road-bikes-2025",
-    label: "Best Electric Road Bikes 2025",
+    href: "/electric-road-bikes/best-electric-road-bikes",
+    label: "Best Electric Road Bikes 2026",
   },
   {
     href: "/electric-cargo-bikes/best-electric-cargo-bikes-2025",
