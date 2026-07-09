@@ -1167,6 +1167,7 @@ const beaumontRevPlusArticle = {
   // ============================================
   id: "retrospec-beaumont-rev-plus-step-through",
   slug: "retrospec-beaumont-rev-plus-step-through-review",
+  focusKeyword: "retrospec beaumont city bike review",
   categorySlug: "electric-city-bikes",
   category: "Electric City Bikes",
   brandCategorySlug: "retrospec",
@@ -1176,11 +1177,12 @@ const beaumontRevPlusArticle = {
   // ============================================
   // 2. SEO & METADATA (THE 3 KINGS)
   // ============================================
-  title: "Retrospec Beaumont Rev+ Step-Through Review (2026)",
-  seoTitle: "Retrospec Beaumont Rev+ Review 2026: Worth It?",
-  h1: "Retrospec Beaumont Rev+ Step-Through Review: 6 Weeks Riding One of the Best Electric City Bikes We've Tested",
+  title: "Retrospec Beaumont City Bike Review 2026 (Rev+ Step-Through)",
+  seoTitle: "Retrospec Beaumont City Bike Review 2026: Worth It?",
+  h1: "Retrospec Beaumont City Bike Review: 6 Weeks on the Rev+ Step-Through",
+  titleModifier: "",
   metaDescription:
-    "Hands-on Retrospec Beaumont Rev+ Step-Through review. 500W motor, 75-mile range, hydraulic disc brakes. Is this the best electric city bike under $1,400?",
+    "Retrospec Beaumont city bike review after 6 weeks of real commuting. We tested the Rev+ Step-Through for range, motor power, brakes, and value at $1,399.",
 
   // ============================================
   // 3. IMAGES
@@ -1196,6 +1198,7 @@ const beaumontRevPlusArticle = {
   // ============================================
   estimatedReadingTime: 12,
   publishedAt: "2026-01-18T00:00:00Z",
+  updatedAt: "2026-07-09T00:00:00Z",
   affiliateLink: retrospecAffiliateLinks["retrospec-beaumont-rev-plus-step-through"],
   ctaLabel: "Check Latest Price",
 
