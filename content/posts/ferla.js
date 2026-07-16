@@ -7,6 +7,14 @@ const ferlaAffiliateLinks = {
 };
 
 const FERLA_ROYCE_II_IMAGE = "/images/brand/ferla/Ferla Royce II.webp";
+const FERLA_ROYCE_II_IMAGES = {
+  design: "/images/brand/ferla/Ferla Royce II Ebike Design.webp",
+  motor: "/images/brand/ferla/Ferla Royce II Ebike Motor.webp",
+  battery: "/images/brand/ferla/Ferla Royce II Ebike Battery.webp",
+  comfort: "/images/brand/ferla/Ferla Royce II Ebike Comfort.webp",
+  brake: "/images/brand/ferla/Ferla Royce II Ebike Brake.webp",
+  screen: "/images/brand/ferla/Ferla Royce II Ebike Screen.webp",
+};
 
 const ferlaRoyceIIArticle = {
   // ============================================
@@ -151,7 +159,7 @@ const ferlaRoyceIIArticle = {
       "The optional LED glass floor in the cargo box is either a fun differentiator or a frivolous add-on, depending on your personality. Kids love it. Parents who value battery life might skip it. Either way, it signals that Ferla is thinking about the experience, not just the utility.",
     ],
     image: {
-      image: FERLA_ROYCE_II_IMAGE,
+      image: FERLA_ROYCE_II_IMAGES.design,
       alt: "Ferla Royce II cargo box detail showing bamboo composite material and side-door access",
       description:
         "The bamboo composite cargo box is one of the Royce II's most distinctive features, both practical and genuinely good-looking",
@@ -169,7 +177,7 @@ const ferlaRoyceIIArticle = {
       "Hills are where you need to be realistic. A fully loaded Royce II, say, 200 lbs of kids, 50 lbs of groceries, and a 180-lb rider, is pushing 430 lbs of moving weight. On grades above 6-8%, the motor works noticeably harder and speed drops. It won't stop, but it won't fly either. For typical suburban terrain and mild urban grades, it handles the job well. For seriously hilly cities, ride it first.",
     ],
     image: {
-      image: FERLA_ROYCE_II_IMAGE,
+      image: FERLA_ROYCE_II_IMAGES.motor,
       alt: "Ferla Royce II 750W electric motor powering the front-loading cargo trike",
       description:
         "The UL-certified 750W motor handles real family loads without drama on typical city terrain",
@@ -187,7 +195,7 @@ const ferlaRoyceIIArticle = {
       "The variables that eat range fastest are predictable: heavy loads, higher assist levels, and anything with sustained climbing. If your daily school run is 5 miles round-trip and you do two grocery runs a week, a single battery covers most families comfortably for 3-4 days between charges. If you're doing longer daily hauls or living in a hillier area, budget for the dual battery. It's worth it.",
     ],
     image: {
-      image: FERLA_ROYCE_II_IMAGE,
+      image: FERLA_ROYCE_II_IMAGES.battery,
       alt: "Ferla Royce II UL-certified 17.5Ah battery with optional dual battery system",
       description:
         "The UL-certified battery is a meaningful safety differentiator, and the dual-battery option opens up 100-mile range for serious daily riders",
@@ -205,7 +213,7 @@ const ferlaRoyceIIArticle = {
       "After 60-90 minute rides, the upright riding position holds up well. Saddle quality is decent without being exceptional, though a longer-term owner might swap it out. No notable wrist or back fatigue at a comfortable pace, which is what you want from something designed for daily family use rather than sport riding.",
     ],
     image: {
-      image: FERLA_ROYCE_II_IMAGE,
+      image: FERLA_ROYCE_II_IMAGES.comfort,
       alt: "Ferla Royce II three-wheel trike riding stability on city streets with children in cargo box",
       description:
         "The three-wheel platform is stable and confidence-inspiring, especially for parents new to cargo biking",
@@ -224,7 +232,7 @@ const ferlaRoyceIIArticle = {
       "The optional LED glass floor is genuinely fun and kids adore it, but it's a bonus, not a necessity. If it's offered as an add-on when you configure your order, factor it in based on your kids' age range and your own sense of joy per dollar.",
     ],
     image: {
-      image: FERLA_ROYCE_II_IMAGE,
+      image: FERLA_ROYCE_II_IMAGES.brake,
       alt: "Ferla Royce II hydraulic disc brakes and three-point harness safety system detail",
       description:
         "Hydraulic disc brakes and properly integrated three-point harnesses make the Royce II feel built for real family use, not just the catalog photo",
@@ -242,7 +250,7 @@ const ferlaRoyceIIArticle = {
       "Out-of-box assembly is manageable for someone comfortable with basic bike setup. Ferla ships the Royce II mostly assembled, with the remaining steps well-documented. First-time cargo bike owners might want to schedule a quick check with a local shop after setup, just to confirm everything is dialed in correctly before loading kids on it.",
     ],
     image: {
-      image: FERLA_ROYCE_II_IMAGE,
+      image: FERLA_ROYCE_II_IMAGES.screen,
       alt: "Ferla Royce II handlebar display showing assist level, speed, and battery indicator",
       description:
         "The display covers what you need without distraction, exactly right for a family hauler",
