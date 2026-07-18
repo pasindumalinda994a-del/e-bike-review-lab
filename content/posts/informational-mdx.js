@@ -5,6 +5,76 @@
  */
 export const mdxInformationalArticles = [
   {
+    id: "can-electric-bikes-get-wet",
+    slug: "can-electric-bikes-get-wet",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "can-electric-bikes-get-wet.mdx",
+    title: "Can Electric Bikes Get Wet? What You Need to Know",
+    seoTitle: "Can Electric Bikes Get Wet? What You Need to Know",
+    h1: "Riding and Charging Your E-Bike in the Rain: A Practical Guide",
+    metaDescription:
+      "Can electric bikes get wet? Yes, most handle rain fine. Here's what IP ratings mean, what to avoid, and how to charge safely after a wet ride.",
+    heroImage: "/images/guides/can-electric-bikes-get-wet-placeholder.webp",
+    cardImage: "/images/guides/can-electric-bikes-get-wet-placeholder.webp",
+    articleHeroImage: "/images/guides/can-electric-bikes-get-wet-placeholder.webp",
+    heroImageAlt: "Electric bike ridden through light rain on a wet city street",
+    estimatedReadingTime: 7,
+    publishedAt: "2026-07-18T13:00:00.000Z",
+    updatedAt: "2026-07-18T13:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Are Electric Bike Batteries Dangerous? What the Fire Data Shows",
+        url: "/guides/are-electric-bike-batteries-dangerous",
+      },
+      {
+        title: "Are Electric Bikes Worth It? A Guide by Rider Type",
+        url: "/guides/are-electric-bikes-worth-it",
+      },
+      {
+        title: "How Much Does an Electric Bike Cost? 2026 Guide",
+        url: "/guides/how-much-does-an-electric-bike-cost",
+      },
+    ],
+  },
+  {
+    id: "are-electric-bikes-worth-it",
+    slug: "are-electric-bikes-worth-it",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "are-electric-bikes-worth-it.mdx",
+    title: "Are Electric Bikes Worth It? A Guide by Rider Type",
+    seoTitle: "Are Electric Bikes Worth It? A Guide by Rider Type",
+    h1: "Is an E-Bike Worth It? It Really Depends on How You'll Use It",
+    metaDescription:
+      "Are electric bikes worth it? It depends on who's riding. Here's a real breakdown by commuter, senior, gig worker, and fitness rider.",
+    heroImage: "/images/guides/are-electric-bikes-worth-it-placeholder.webp",
+    cardImage: "/images/guides/are-electric-bikes-worth-it-placeholder.webp",
+    articleHeroImage: "/images/guides/are-electric-bikes-worth-it-placeholder.webp",
+    heroImageAlt: "Rider considering whether an electric bike is worth the investment",
+    estimatedReadingTime: 8,
+    publishedAt: "2026-07-18T12:00:00.000Z",
+    updatedAt: "2026-07-18T12:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "How Much Does an Electric Bike Cost? 2026 Guide",
+        url: "/guides/how-much-does-an-electric-bike-cost",
+      },
+      {
+        title: "Is It Worth Getting an Electric Bike? The Real Answer for 2026",
+        url: "/electric-bikes/is-it-worth-getting-electric-bike",
+      },
+      {
+        title: "Are Electric Bike Batteries Dangerous? What the Fire Data Shows",
+        url: "/guides/are-electric-bike-batteries-dangerous",
+      },
+    ],
+  },
+  {
     id: "how-much-does-an-electric-bike-cost",
     slug: "how-much-does-an-electric-bike-cost",
     categorySlug: "guides",
