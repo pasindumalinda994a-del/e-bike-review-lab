@@ -3,6 +3,8 @@ const nextConfig = {
   async redirects() {
     return [];
   },
+  // Required for next-mdx-remote with Next.js 15 (avoids dual React JSX runtimes)
+  transpilePackages: ["next-mdx-remote"],
   // Enable compression for better mobile performance
   compress: true,
   // Optimize images for mobile-first approach

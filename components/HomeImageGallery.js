@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { informationalArticles } from "@/content/posts/informational";
+import { mdxInformationalArticles } from "@/content/posts/informational-mdx";
 
 // Get card image for gallery cards.
 function getCardImage(post) {
@@ -18,7 +18,7 @@ export default function HomeImageGallery({ posts = [] }) {
 
   const sourcePosts = informationalPosts.length
     ? informationalPosts
-    : informationalArticles;
+    : mdxInformationalArticles;
 
   const galleryPosts = [...sourcePosts]
     .sort((a, b) => {

@@ -1,7 +1,7 @@
 // Combine all content buckets so the rest of the app can loop everything.
 import { moneyArticles } from "./money";
 import { dealArticles } from "./deals";
-import { informationalArticles } from "./informational";
+import { mdxInformationalArticles } from "./informational-mdx";
 import { productArticles } from "./product";
 import { brandArticles } from "./brand-articles";
 
@@ -10,9 +10,7 @@ import { brandArticles } from "./brand-articles";
 export const allPosts = [
   ...moneyArticles,
   ...dealArticles,
-  ...informationalArticles,
+  ...mdxInformationalArticles,
   ...productArticles,
   ...brandArticles,
 ];
-
-

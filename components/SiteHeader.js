@@ -27,37 +27,16 @@ const BRAND_REVIEW_LINKS = Array.from(
   ).values(),
 );
 
-// Build Reviews > Categories links from category pages.
+// Build Reviews > Categories links from category pages (Guides is top-level nav).
 const CATEGORY_REVIEW_LINKS = categories
-  .filter((category) => !brandCategorySlugs.has(category.slug))
+  .filter(
+    (category) =>
+      !brandCategorySlugs.has(category.slug) && category.slug !== "guides",
+  )
   .map((category) => ({
   href: `/${category.slug}`,
   label: category.name,
 }));
-
-// Curated learning resources anchored to our cornerstone articles.
-const LEARN_LINKS = [
-  {
-    href: "/electric-bikes/best-electric-bikes-2025",
-    label: "Best Electric Bikes 2025",
-  },
-  {
-    href: "/electric-mountain-bikes/best-electric-mountain-bikes-2025",
-    label: "Best Electric Mountain Bikes 2025",
-  },
-  {
-    href: "/electric-folding-bikes/best-electric-folding-bikes-2025",
-    label: "Best Electric Folding Bikes 2025",
-  },
-  {
-    href: "/electric-road-bikes/best-electric-road-bikes",
-    label: "Best Electric Road Bikes 2026",
-  },
-  {
-    href: "/electric-cargo-bikes/best-electric-cargo-bikes-2025",
-    label: "Best Electric Cargo Bikes 2025",
-  },
-];
 
 function DropdownAnimatedLink({ href, label }) {
   return (
@@ -81,16 +60,15 @@ function DropdownAnimatedLink({ href, label }) {
 export default function SiteHeader() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isReviewsOpen, setIsReviewsOpen] = useState(false);
-  const [isLearnOpen, setIsLearnOpen] = useState(false);
   
   // Refs for nav elements
   const reviewsButtonRef = useRef(null);
   const reviewsTopTextRef = useRef(null);
   const reviewsBottomTextRef = useRef(null);
   
-  const learnButtonRef = useRef(null);
-  const learnTopTextRef = useRef(null);
-  const learnBottomTextRef = useRef(null);
+  const guidesLinkRef = useRef(null);
+  const guidesTopTextRef = useRef(null);
+  const guidesBottomTextRef = useRef(null);
   
   const aboutLinkRef = useRef(null);
   const aboutTopTextRef = useRef(null);
@@ -123,9 +101,9 @@ export default function SiteHeader() {
     const reviewsTopText = reviewsTopTextRef.current;
     const reviewsBottomText = reviewsBottomTextRef.current;
     
-    const learnButton = learnButtonRef.current;
-    const learnTopText = learnTopTextRef.current;
-    const learnBottomText = learnBottomTextRef.current;
+    const guidesLink = guidesLinkRef.current;
+    const guidesTopText = guidesTopTextRef.current;
+    const guidesBottomText = guidesBottomTextRef.current;
     
     const aboutLink = aboutLinkRef.current;
     const aboutTopText = aboutTopTextRef.current;
@@ -136,19 +114,19 @@ export default function SiteHeader() {
     const contactBottomText = contactBottomTextRef.current;
 
     if (!reviewsButton || !reviewsTopText || !reviewsBottomText ||
-        !learnButton || !learnTopText || !learnBottomText ||
+        !guidesLink || !guidesTopText || !guidesBottomText ||
         !aboutLink || !aboutTopText || !aboutBottomText ||
         !contactLink || !contactTopText || !contactBottomText) return;
 
     // Set initial state
     if (isInitialMount.current) {
-      gsap.set([reviewsTopText, learnTopText, aboutTopText, contactTopText], { y: 0, opacity: 1 });
-      gsap.set([reviewsBottomText, learnBottomText, aboutBottomText, contactBottomText], { y: "-100%", opacity: 1 });
+      gsap.set([reviewsTopText, guidesTopText, aboutTopText, contactTopText], { y: 0, opacity: 1 });
+      gsap.set([reviewsBottomText, guidesBottomText, aboutBottomText, contactBottomText], { y: "-100%", opacity: 1 });
       isInitialMount.current = false;
     }
 
     let reviewsHoverTl = null;
-    let learnHoverTl = null;
+    let guidesHoverTl = null;
     let aboutHoverTl = null;
     let contactHoverTl = null;
 
@@ -204,17 +182,17 @@ export default function SiteHeader() {
       }, "<0.1");
     };
 
-    // Learn button animations
-    const handleLearnMouseEnter = () => {
-      if (learnHoverTl) learnHoverTl.kill();
-      learnHoverTl = gsap.timeline();
-      learnHoverTl.to(learnTopText, {
+    // Guides link animations
+    const handleGuidesMouseEnter = () => {
+      if (guidesHoverTl) guidesHoverTl.kill();
+      guidesHoverTl = gsap.timeline();
+      guidesHoverTl.to(guidesTopText, {
         y: "-100%",
         opacity: 1,
         duration: 0.2,
         ease: "power2.inOut",
       });
-      learnHoverTl.to(learnBottomText, {
+      guidesHoverTl.to(guidesBottomText, {
         y: 0,
         opacity: 1,
         duration: 0.2,
@@ -222,16 +200,16 @@ export default function SiteHeader() {
       }, "<0.1");
     };
 
-    const handleLearnMouseLeave = () => {
-      if (learnHoverTl) learnHoverTl.kill();
-      learnHoverTl = gsap.timeline();
-      learnHoverTl.to(learnBottomText, {
+    const handleGuidesMouseLeave = () => {
+      if (guidesHoverTl) guidesHoverTl.kill();
+      guidesHoverTl = gsap.timeline();
+      guidesHoverTl.to(guidesBottomText, {
         y: "100%",
         opacity: 1,
         duration: 0.2,
         ease: "power2.inOut",
       });
-      learnHoverTl.to(learnTopText, {
+      guidesHoverTl.to(guidesTopText, {
         y: 0,
         opacity: 1,
         duration: 0.2,
@@ -239,16 +217,16 @@ export default function SiteHeader() {
       }, "<0.1");
     };
 
-    const handleLearnClick = () => {
-      if (learnHoverTl) learnHoverTl.kill();
-      learnHoverTl = gsap.timeline();
-      learnHoverTl.to(learnTopText, {
+    const handleGuidesClick = () => {
+      if (guidesHoverTl) guidesHoverTl.kill();
+      guidesHoverTl = gsap.timeline();
+      guidesHoverTl.to(guidesTopText, {
         y: "-100%",
         opacity: 1,
         duration: 0.2,
         ease: "power2.inOut",
       });
-      learnHoverTl.to(learnBottomText, {
+      guidesHoverTl.to(guidesBottomText, {
         y: 0,
         opacity: 1,
         duration: 0.2,
@@ -365,9 +343,9 @@ export default function SiteHeader() {
     reviewsButton.addEventListener("mouseleave", handleReviewsMouseLeave);
     reviewsButton.addEventListener("click", handleReviewsClick);
 
-    learnButton.addEventListener("mouseenter", handleLearnMouseEnter);
-    learnButton.addEventListener("mouseleave", handleLearnMouseLeave);
-    learnButton.addEventListener("click", handleLearnClick);
+    guidesLink.addEventListener("mouseenter", handleGuidesMouseEnter);
+    guidesLink.addEventListener("mouseleave", handleGuidesMouseLeave);
+    guidesLink.addEventListener("click", handleGuidesClick);
 
     aboutLink.addEventListener("mouseenter", handleAboutMouseEnter);
     aboutLink.addEventListener("mouseleave", handleAboutMouseLeave);
@@ -383,9 +361,9 @@ export default function SiteHeader() {
       reviewsButton.removeEventListener("mouseleave", handleReviewsMouseLeave);
       reviewsButton.removeEventListener("click", handleReviewsClick);
 
-      learnButton.removeEventListener("mouseenter", handleLearnMouseEnter);
-      learnButton.removeEventListener("mouseleave", handleLearnMouseLeave);
-      learnButton.removeEventListener("click", handleLearnClick);
+      guidesLink.removeEventListener("mouseenter", handleGuidesMouseEnter);
+      guidesLink.removeEventListener("mouseleave", handleGuidesMouseLeave);
+      guidesLink.removeEventListener("click", handleGuidesClick);
 
       aboutLink.removeEventListener("mouseenter", handleAboutMouseEnter);
       aboutLink.removeEventListener("mouseleave", handleAboutMouseLeave);
@@ -396,7 +374,7 @@ export default function SiteHeader() {
       contactLink.removeEventListener("click", handleContactClick);
 
       if (reviewsHoverTl) reviewsHoverTl.kill();
-      if (learnHoverTl) learnHoverTl.kill();
+      if (guidesHoverTl) guidesHoverTl.kill();
       if (aboutHoverTl) aboutHoverTl.kill();
       if (contactHoverTl) contactHoverTl.kill();
     };
@@ -458,34 +436,20 @@ export default function SiteHeader() {
               </div>
             </div>
 
-            <div className="group relative flex items-center">
-              <button
-                ref={learnButtonRef}
-                type="button"
-                className="text-black text-sm font-semibold focus:outline-none px-3 relative inline-flex items-center overflow-hidden"
-                aria-haspopup="true"
-              >
-                <span className="block relative">
-                  <span ref={learnTopTextRef} className="block">
-                    Learn
-                  </span>
-                  <span ref={learnBottomTextRef} className="block absolute top-0 left-0 w-full">
-                    Learn
-                  </span>
+            <Link
+              ref={guidesLinkRef}
+              href="/guides"
+              className="text-black text-sm font-semibold px-3 relative inline-flex items-center overflow-hidden"
+            >
+              <span className="block relative">
+                <span ref={guidesTopTextRef} className="block">
+                  Guides
                 </span>
-              </button>
-              <div className="pointer-events-none absolute left-0 top-full z-30 hidden min-w-[240px] translate-y-7 flex-col overflow-hidden rounded-lg bg-white shadow-xl transition group-hover:pointer-events-auto group-hover:flex group-focus-within:pointer-events-auto group-focus-within:flex">
-                {LEARN_LINKS.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="px-4 py-3 text-sm text-black"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
+                <span ref={guidesBottomTextRef} className="block absolute top-0 left-0 w-full">
+                  Guides
+                </span>
+              </span>
+            </Link>
 
             <Link
               ref={aboutLinkRef}
@@ -608,33 +572,14 @@ export default function SiteHeader() {
               )}
             </div>
 
-            {/* Mobile Learn Dropdown */}
-            <div className="space-y-2">
-              <button
-                type="button"
-                onClick={() => setIsLearnOpen(!isLearnOpen)}
-                className="flex w-full items-center justify-between rounded-lg px-4 py-3 text-base font-semibold text-black"
-              >
-                Learn
-                <ChevronDown
-                  className={`h-5 w-5 transition-transform ${isLearnOpen ? 'rotate-180' : ''}`}
-                />
-              </button>
-              {isLearnOpen && (
-                <div className="ml-4 space-y-1 border-l-2 border-gray-200 pl-4">
-                  {LEARN_LINKS.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className="block rounded-lg px-4 py-2 text-sm font-semibold text-black"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+            {/* Mobile Guides link */}
+            <Link
+              href="/guides"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block rounded-lg px-4 py-3 text-base font-semibold text-black"
+            >
+              Guides
+            </Link>
 
             {/* Mobile Links */}
             <Link

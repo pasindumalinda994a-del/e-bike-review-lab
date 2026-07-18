@@ -5,12 +5,13 @@ import {
 } from "@/lib/mock-data";
 import MoneyArticle from "@/components/articles/MoneyArticle";
 import DealArticle from "@/components/articles/DealArticle";
-import InformationalArticle from "@/components/articles/InformationalArticle";
+import InformationalMdxArticle from "@/components/articles/InformationalMdxArticle";
 import ProductArticle from "@/components/articles/ProductArticle";
 import BrandArticle from "@/components/articles/BrandArticle";
 import JsonLdSchema from "@/components/JsonLdSchema";
 import HomeNewsletter from "@/components/HomeNewsletter";
 import { buildArticleMetadata, buildArticleSchemas, buildArticleSeo } from "@/lib/seo-helpers";
+import { loadMdxInformationalSource } from "@/lib/mdx-informational";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -70,13 +71,19 @@ export default async function CategoryPostPage({ params }) {
 
   let articleContent;
   if (post.contentType === "information") {
-    const supportingProducts = post.products?.slice(0, 3) ?? [];
+    if (!post.mdxSource) {
+      notFound();
+    }
+    const mdxBody = loadMdxInformationalSource(post.mdxFile);
+    if (!mdxBody) {
+      notFound();
+    }
     articleContent = (
-      <InformationalArticle
-        post={post}
+      <InformationalMdxArticle
+        post={normalizedPost}
         publishedDate={publishedDate}
+        source={mdxBody}
         heroImage={post.articleHeroImage}
-        supportingProducts={supportingProducts}
       />
     );
   } else if (post.contentType === "product") {
