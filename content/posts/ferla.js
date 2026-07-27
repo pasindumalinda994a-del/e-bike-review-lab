@@ -3,7 +3,7 @@
 /** Merchant / affiliate product URLs by post `id`. Update links here only. */
 const ferlaAffiliateLinks = {
   "ferla-royce-ii":
-    "https://ferlafamilybikes.com/products/ferla-cargo-bike-royce",
+    "https://ferlafamilybikes.com/products/ferla-cargo-bike-royce?sca_ref=11521152.DPj9lwH8VvmZc&sca_source=EBRLWebsite",
 };
 
 const FERLA_ROYCE_II_IMAGE = "/images/brand/ferla/Ferla Royce II.webp";
