@@ -4,6 +4,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import DetailedProductReviews from "@/components/DetailedProductReviews";
 import BuyersGuide from "@/components/BuyersGuide";
 import SidebarContent from "@/components/SidebarContent";
+import { renderInlineMarkdownLinks } from "@/lib/render-inline-markdown-links";
 
 /**
  * MoneyArticle Component
@@ -188,10 +189,10 @@ export default function MoneyArticle({ post, publishedDate }) {
             <section className="pt-0 sm:pt-2">
               <div className="max-w-4xl space-y-4">
                 {introductionParagraphs.map((paragraph, index) => (
-                  <p key={index} className="text-base leading-normal text-black sm:text-base tracking-wide text-left">{paragraph}</p>
+                  <p key={index} className="text-base leading-normal text-black sm:text-base tracking-wide text-left">{renderInlineMarkdownLinks(paragraph)}</p>
                 ))}
                 {secondaryParagraphs.map((paragraph, index) => (
-                  <p key={`secondary-${index}`} className="text-base leading-normal text-black sm:text-base tracking-wide text-left">{paragraph}</p>
+                  <p key={`secondary-${index}`} className="text-base leading-normal text-black sm:text-base tracking-wide text-left">{renderInlineMarkdownLinks(paragraph)}</p>
                 ))}
               </div>
             </section>
@@ -282,14 +283,14 @@ export default function MoneyArticle({ post, publishedDate }) {
                       <div className="space-y-4">
                         {section.paragraphs?.map((paragraph, index) => (
                           <p key={index} className="text-base leading-normal text-black sm:text-base tracking-wide text-left">
-                            {paragraph}
+                            {renderInlineMarkdownLinks(paragraph)}
                           </p>
                         ))}
                         {section.bullets?.length ? (
                           <ul className="space-y-3 text-left">
                             {section.bullets.map((bullet, index) => (
                               <li key={index} className="text-base leading-normal text-black sm:text-base tracking-wide relative pl-6 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-black before:content-['']">
-                                {bullet}
+                                {renderInlineMarkdownLinks(bullet)}
                               </li>
                             ))}
                           </ul>
@@ -364,10 +365,10 @@ export default function MoneyArticle({ post, publishedDate }) {
                         >
                           {Array.isArray(answer) ? (
                             answer.map((paragraph, pIndex) => (
-                              <p key={pIndex} className="text-base leading-normal text-black sm:text-base tracking-wide text-left">{paragraph}</p>
+                              <p key={pIndex} className="text-base leading-normal text-black sm:text-base tracking-wide text-left">{renderInlineMarkdownLinks(paragraph)}</p>
                             ))
                           ) : (
-                            <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left">{answer}</p>
+                            <p className="text-base leading-normal text-black sm:text-base tracking-wide text-left">{renderInlineMarkdownLinks(answer)}</p>
                           )}
                         </div>
                       )}

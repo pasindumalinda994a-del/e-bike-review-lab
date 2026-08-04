@@ -97,7 +97,7 @@ const ferlaRoyceIIArticle = {
       "At $6,499, it's a significant investment that requires a clear use case to justify. If you're only doing light occasional rides, there are cheaper options",
       "Trike geometry means it doesn't lean into corners like a two-wheel cargo bike, so tight urban turns feel deliberate rather than intuitive",
       "The size and weight of a loaded trike makes storage a real consideration. A standard single-car garage works, but a cramped city apartment does not",
-      "750W motor is solid but may feel underwhelming when you're fully loaded (450 lbs of cargo plus rider) on steep grades. The throttle helps, but don't expect effortless climbs",
+      "750W can look modest next to non-certified systems, but the Royce II is the only U.S. family/cargo trike running a 750W UL-certified motor. That choice balances power, reliability, compliance, and safety, and among UL-certified cargo trikes it sits at the top of its category. Fully loaded on steep grades it still works harder than on flats—the throttle helps, but don't expect effortless climbs",
     ],
   },
 

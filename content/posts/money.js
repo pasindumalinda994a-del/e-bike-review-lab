@@ -64,7 +64,7 @@ const money = [
 
       "Over the past six months, I've put serious miles on ten different electric bikes. Not just cruising around the block, either. I'm talking daily commutes through city traffic, weekend grocery runs with 40 pounds of cargo strapped on the back, and even some surprisingly technical trail riding. I've climbed hills that would've destroyed my legs on a regular bike, gotten caught in downpours that tested every weather rating claim, and learned exactly which features actually matter when you're using these things day in and day out.",
 
-      "What you're about to read isn't some generic roundup based on manufacturer specs. Every bike here? I rode it. Multiple times. In different conditions. I know which ones handle like a dream when you're hauling two kids to school, which motors feel smooth versus jerky, and which battery claims are legit versus wildly optimistic. Whether you're a senior looking for easy mobility, a commuter ready to ditch car payments, or an outdoor enthusiast wanting pedal-assist for those long trail days, I've found options that'll actually work for your real-world needs, not just look good in photos."
+      "What you're about to read isn't some generic roundup based on manufacturer specs. Every bike here? I rode it. Multiple times. In different conditions. I know which ones handle like a dream when you're hauling two kids to school, which motors feel smooth versus jerky, and which battery claims are legit versus wildly optimistic. Whether you're a senior looking for easy mobility, a commuter ready to ditch car payments, or an outdoor enthusiast wanting pedal-assist for those long trail days, I've found options that'll actually work for your real-world needs, not just look good in photos. Still deciding which category fits you first? Start with our [complete electric bike buying guide](/guides/what-electric-bike-should-i-buy) before you compare models."
     ],
 
     secondaryIntroduction: [],
@@ -604,9 +604,9 @@ const money = [
       {
         title: "Understanding E-Bike Classes and Legal Stuff",
         paragraphs: [
-          "Before you drop thousands on an e-bike, you need to understand what you can legally ride where you live. The US has three e-bike classes, and they determine everything from where you can ride to whether you need insurance. Class 1 bikes provide pedal assist only (no throttle) up to 20 mph. Class 2 adds a throttle but still caps at 20 mph. Class 3 offers pedal assist up to 28 mph but no throttle. Most trails and bike paths allow Class 1, some allow Class 2, and Class 3 is often restricted to roads.",
+          "Before you drop thousands on an e-bike, you need to understand what you can legally ride where you live. The US has three e-bike classes, and they determine everything from where you can ride to whether you need insurance. Class 1 bikes provide pedal assist only (no throttle) up to 20 mph. Class 2 adds a throttle but still caps at 20 mph. Class 3 offers pedal assist up to 28 mph but no throttle. Most trails and bike paths allow Class 1, some allow Class 2, and Class 3 is often restricted to roads. For a [full breakdown of e-bike laws by state](/guides/are-electric-bikes-street-legal), including where each class is allowed, see our legality guide.",
 
-          "Here's what actually matters: if you want maximum access to bike infrastructure, get a Class 1. If you want a throttle for starting from stops or need occasional no-pedaling assistance, Class 2 works great for commuting. Class 3 makes sense for longer commutes where that extra speed cuts significant time. I've ridden all three extensively, and honestly? The class matters less than finding a bike that fits your needs. Most quality e-bikes let you configure the max speed anyway, so you can technically switch between classes."
+          "Here's what actually matters: if you want maximum access to bike infrastructure, get a Class 1. If you want a throttle for starting from stops or need occasional no-pedaling assistance, Class 2 works great for commuting. Class 3 makes sense for longer commutes where that extra speed cuts significant time. I've ridden all three extensively, and honestly? The class matters less than finding a bike that fits your needs. Most quality e-bikes let you configure the max speed anyway, so you can technically switch between classes. If you're comparing assist ceilings, our guide on [how fast each class actually goes](/guides/how-fast-do-electric-bikes-go) covers real-world speeds beyond the legal labels."
         ],
         bullets: [
           "Class 1 (pedal-assist to 20 mph): Allowed almost everywhere, great for trails and recreational riding",
@@ -620,7 +620,7 @@ const money = [
         paragraphs: [
           "Every e-bike has either a hub motor (built into the wheel) or a mid-drive motor (mounted at the cranks near the pedals). Hub motors are simpler, cheaper, and require less maintenance. They're quieter and work great for flat-to-rolling terrain. Mid-drive motors are more expensive but offer better hill climbing, more natural feel, and work with your bike's gears for efficiency. Think of hub motors like having a constant push from behind, while mid-drives amplify your own pedaling effort.",
 
-          "After testing both extensively, here's my take: hub motors are perfect for budget bikes, commuters on relatively flat routes, and riders who want simplicity. Mid-drives shine for mountain biking, serious hills, heavy cargo loads, and anyone wanting that \"feels like a regular bike\" experience. The performance gap matters most on challenging terrain; flat city commuting? Hub motors work great and cost less."
+          "After testing both extensively, here's my take: hub motors are perfect for budget bikes, commuters on relatively flat routes, and riders who want simplicity. Mid-drives shine for mountain biking, serious hills, heavy cargo loads, and anyone wanting that \"feels like a regular bike\" experience. If you're shopping trails specifically, see our [best electric mountain bikes](/electric-mountain-bikes/best-electric-mountain-bikes) roundup; for family hauling, our [best electric cargo bikes](/electric-cargo-bikes/best-electric-cargo-bikes) guide goes deeper. The performance gap matters most on challenging terrain; flat city commuting? Hub motors work great and cost less."
         ],
         bullets: [
           "Hub motors: Lower cost, less maintenance, quieter operation, ideal for commuting and casual riding",
@@ -632,7 +632,7 @@ const money = [
       {
         title: "Battery Capacity and Real-World Range",
         paragraphs: [
-          "Battery capacity gets measured in watt-hours (Wh), and it's basically the gas tank size. Bigger numbers mean longer range, but also more weight and cost. Budget e-bikes typically have 400-500Wh, mid-range sits around 600-750Wh, and premium options offer 800Wh+. But here's what manufacturers won't tell you: range claims are wildly optimistic. That \"60-mile range\" assumes perfect conditions, low assist levels, flat terrain, and a lightweight rider. Real-world range is usually 50-70% of claimed range.",
+          "Battery capacity gets measured in watt-hours (Wh), and it's basically the gas tank size. Bigger numbers mean longer range, but also more weight and cost. Budget e-bikes typically have 400-500Wh, mid-range sits around 600-750Wh, and premium options offer 800Wh+. But here's what manufacturers won't tell you: range claims are wildly optimistic. That \"60-mile range\" assumes perfect conditions, low assist levels, flat terrain, and a lightweight rider. Real-world range is usually 50-70% of claimed range. For a deeper look at [what actually determines e-bike range](/guides/longest-range-electric-bike), see our range guide.",
 
           "During my testing, I tracked actual range meticulously. A 500Wh battery gave me 25-35 miles in real riding (moderate hills, mix of assist levels, 180-pound rider). A 700Wh battery stretched that to 40-55 miles. If you're commuting 10 miles each way, a 500Wh battery requires charging every 2-3 days. A 700Wh+ battery handles a full work week. Calculate your daily distance and double it as a safety margin. That's your minimum battery size."
         ],
@@ -646,7 +646,7 @@ const money = [
       {
         title: "Torque Sensors vs Cadence Sensors: Why It Matters",
         paragraphs: [
-          "This is the difference between an e-bike that feels natural and one that feels robotic. Cadence sensors detect that you're pedaling (any amount of effort) and deliver a fixed power level. It's an on/off switch, and when you start pedaling, the motor engages. Torque sensors measure HOW HARD you're pedaling and deliver proportional assistance. Push harder up a hill? The motor responds with more power. Coast? Assistance drops. It feels like riding a regular bike that suddenly got way stronger.",
+          "This is the difference between an e-bike that feels natural and one that feels robotic. Cadence sensors detect that you're pedaling (any amount of effort) and deliver a fixed power level. It's an on/off switch, and when you start pedaling, the motor engages. Torque sensors measure HOW HARD you're pedaling and deliver proportional assistance. Push harder up a hill? The motor responds with more power. Coast? Assistance drops. It feels like riding a regular bike that suddenly got way stronger. If you want the plain-English version of [how e-bike motors and sensors work](/guides/how-electric-bike-works), we break the whole system down there.",
 
           "I've logged hundreds of miles on both systems. Cadence sensors work fine once you adapt, but they feel jerky, especially starting from stops where the motor kicks in abruptly. Torque sensors feel smooth and intuitive from day one. The catch? Torque sensors cost more and typically only appear on $1,500+ bikes. If your budget allows it, prioritize torque sensors. If you're buying budget, cadence sensors are tolerable for commuting, just not as refined."
         ],
@@ -674,7 +674,7 @@ const money = [
       {
         title: "Budget Reality Check: Where to Spend and Save",
         paragraphs: [
-          "The e-bike market ranges from $600 Amazon specials to $15,000 boutique machines. After testing across this spectrum, here's the truth: the $600 bikes are almost always junk with sketchy batteries and terrible support. The $15,000 bikes are amazing but offer diminishing returns for most riders. The sweet spot depends on your use case, but generally falls between $1,200-$3,000 for quality bikes that'll last.",
+          "The e-bike market ranges from $600 Amazon specials to $15,000 boutique machines. After testing across this spectrum, here's the truth: the $600 bikes are almost always junk with sketchy batteries and terrible support. The $15,000 bikes are amazing but offer diminishing returns for most riders. The sweet spot depends on your use case, but generally falls between $1,200-$3,000 for quality bikes that'll last. For [real 2026 e-bike price tiers](/guides/how-much-does-an-electric-bike-cost) plus hidden ownership costs, see our pricing guide.",
 
           "Budget tier ($1,000-$1,500): You're getting hub motors, cadence sensors, and basic components, but from reputable brands, these are genuinely usable bikes. Lectric and Velotric dominate here. Mid-range ($1,500-$3,000): This is where torque sensors, premium batteries, and better components appear. Most commuters should shop here. Premium ($3,000-$6,000): Mid-drive motors, high-end suspension, refined integration, and it's worth it for serious riders. Luxury ($6,000+): Marginal gains unless you're a serious enthusiast or need specific capabilities like enduro mountain biking."
         ],
@@ -766,29 +766,29 @@ const money = [
 
     internalLinks: [
       {
-        text: "How to choose the right e-bike battery size for your commute",
-        url: "/electric-bikes/ebike-battery-guide",
-        description: "Detailed breakdown of battery capacities and real-world range expectations"
+        text: "complete electric bike buying guide",
+        url: "/guides/what-electric-bike-should-i-buy",
+        description: "Match the right e-bike type to your commute, hills, cargo, or fitness goals"
       },
       {
-        text: "Folding electric bikes compared: compact options for small spaces",
-        url: "/electric-bikes/folding-ebikes-guide",
-        description: "In-depth reviews of the best folding e-bikes for portability"
+        text: "how much e-bikes really cost",
+        url: "/guides/how-much-does-an-electric-bike-cost",
+        description: "2026 price tiers plus insurance, maintenance, and battery replacement costs"
       },
       {
-        text: "Electric cargo bikes for families: complete buying guide",
-        url: "/electric-bikes/cargo-ebikes-families",
-        description: "Everything you need to know about hauling kids and cargo safely"
+        text: "e-bike classes and street laws",
+        url: "/guides/are-electric-bikes-street-legal",
+        description: "Class 1, 2, and 3 rules by state so you know where you can ride"
       },
       {
-        text: "Mountain e-bike suspension explained: what you really need",
-        url: "/electric-bikes/emtb-suspension-guide",
-        description: "Understanding suspension travel and setup for electric mountain bikes"
+        text: "best folding electric bikes",
+        url: "/electric-folding-bikes/best-electric-folding-bikes",
+        description: "Compact tested picks for apartments, transit, and small storage spaces"
       },
       {
-        text: "E-bike motors compared: hub vs mid-drive performance testing",
-        url: "/electric-bikes/hub-vs-mid-drive-motors",
-        description: "Real-world testing reveals which motor type works best for different riders"
+        text: "best electric cargo bikes for families",
+        url: "/electric-cargo-bikes/best-electric-cargo-bikes",
+        description: "Family and delivery haulers tested for payload, range, and safety"
       }
     ]
   },
@@ -1462,7 +1462,7 @@ const money = [
         paragraphs: [
           "Think of a mid-drive motor like having an extra set of super-strong legs that work with your bike's gears. The motor sits at the cranks, so when you shift into an easier gear, the motor also gets that mechanical advantage. This makes mid-drives way more efficient on steep climbs and technical terrain. Hub motors, on the other hand, sit in the rear wheel and just spin that wheel faster. They don't benefit from your gearing changes.",
 
-          "In real-world terms, mid-drives feel more natural and give you better traction on climbs since the weight sits lower and more centered on the bike. Hub motors work fine for mellow terrain but struggle on steep technical sections where that rear wheel can spin out. They're also less efficient, meaning shorter range. Every bike in my top nine uses a mid-drive system. The only hub motor made the list (Aventon Ramblas) because it's incredibly cheap, not because hub motors are better."
+          "In real-world terms, mid-drives feel more natural and give you better traction on climbs since the weight sits lower and more centered on the bike. Hub motors work fine for mellow terrain but struggle on steep technical sections where that rear wheel can spin out. They're also less efficient, meaning shorter range. Every bike in my top nine uses a mid-drive system. The only hub motor made the list (Aventon Ramblas) because it's incredibly cheap, not because hub motors are better. For more on [what actually determines uphill e-bike power](/guides/can-electric-bikes-climb-steep-hills), including torque and battery factors, see our hill-climbing guide."
         ],
         bullets: [
           "Mid-drive motors work with your gears for better climbing efficiency",
@@ -1475,7 +1475,7 @@ const money = [
       {
         title: "Battery Capacity: How Much Do You Really Need?",
         paragraphs: [
-          "Battery capacity is measured in watt-hours (Wh), and it works exactly like a gas tank; bigger means you can go farther. But just like with cars, how far you actually get depends on how you drive. Running full Turbo mode on steep climbs drains batteries fast. Using Eco mode on mellow terrain extends range dramatically. Most riders find that 600-800Wh provides enough juice for typical 2-4 hour rides with 2,000-4,000 feet of climbing.",
+          "Battery capacity is measured in watt-hours (Wh), and it works exactly like a gas tank; bigger means you can go farther. But just like with cars, how far you actually get depends on how you drive. Running full Turbo mode on steep climbs drains batteries fast. Using Eco mode on mellow terrain extends range dramatically. Most riders find that 600-800Wh provides enough juice for typical 2-4 hour rides with 2,000-4,000 feet of climbing. If you want the systems-level view of [how e-bike motors and sensors work](/guides/how-electric-bike-works), that guide pairs well with this section.",
 
           "During testing, I found that batteries in the 700-800Wh range give you real freedom to ride how you want without constant range anxiety. Smaller batteries like the 360Wh units in lightweight e-MTBs require more planning and potentially a range extender. Bigger is better, but only if you need it. Those extra watt-hours add weight and cost. Figure out your typical ride length and elevation gain, then choose accordingly."
         ],
@@ -1651,24 +1651,24 @@ const money = [
 
     internalLinks: [
       {
-        text: "Top e-bikes for daily commuting needs",
-        url: "/electric-commuter-bikes/best-electric-commuter-bikes",
-        description: "If you're also considering an e-bike for commuting, check out our guide to the best electric commuter bikes with cargo capacity and weather protection"
+        text: "our tested best electric bikes roundup",
+        url: "/electric-bikes/best-electric-bikes",
+        description: "Compare e-MTBs against the best overall e-bikes across every category"
       },
       {
-        text: "Our picks for entry-level electric bikes",
-        url: "/electric-mountain-bikes/best-budget-electric-bikes",
-        description: "Looking for something even more affordable? We've tested the best budget e-bikes under $2,000 for casual riders"
+        text: "what actually determines uphill e-bike power",
+        url: "/guides/can-electric-bikes-climb-steep-hills",
+        description: "Torque, motor type, and battery size explained for steep climbs"
       },
       {
-        text: "Essential accessories for e-MTB riders",
-        url: "/electric-mountain-bikes/electric-bike-accessories",
-        description: "Complete your setup with our guide to must-have accessories, from protective gear to carrying solutions and spare batteries"
+        text: "how e-bike motors and sensors work",
+        url: "/guides/how-electric-bike-works",
+        description: "Plain-English breakdown of mid-drives, batteries, and pedal assist"
       },
       {
-        text: "How to maintain your electric mountain bike",
-        url: "/electric-mountain-bikes/electric-bike-maintenance-guide",
-        description: "Keep your investment running strong with our comprehensive maintenance guide covering batteries, motors, and components"
+        text: "best electric fat bikes for soft terrain",
+        url: "/electric-fat-bikes/best-electric-fat-bikes",
+        description: "All-terrain fat tire picks when you need flotation beyond trail bikes"
       }
     ]
   },
@@ -2246,8 +2246,8 @@ const money = [
       {
         title: "Understanding Folding E-Bike Basics",
         paragraphs: [
-          "Folding e-bikes aren't just regular bikes with hinges slapped on. The best ones balance three competing priorities: ride quality, portability, and durability. Think of it like designing a laptop. You want power, light weight, and battery life, but improving one usually compromises another. Folders use smaller wheels (16-20 inches typically) which make them compact but also more susceptible to rough pavement. The frame needs reinforcement at fold points, adding weight that counteracts portability gains.",
-          "Motor placement matters more on folders than regular e-bikes. Rear hub motors (most common) keep weight balanced but make wheel removal tricky. Mid-drive motors provide better hill climbing but cost more and add complexity. Front hub motors are rare but offer simplicity. Battery capacity directly trades off with weight. Bigger batteries mean longer range but heavier bikes. The sweet spot for most riders is 500-700Wh, providing 30-50 miles without excessive weight."
+          "Folding e-bikes aren't just regular bikes with hinges slapped on. The best ones balance three competing priorities: ride quality, portability, and durability. Think of it like designing a laptop. You want power, light weight, and battery life, but improving one usually compromises another. Folders use smaller wheels (16-20 inches typically) which make them compact but also more susceptible to rough pavement. The frame needs reinforcement at fold points, adding weight that counteracts portability gains. Not sure a folder is right for you? Our [complete electric bike buying guide](/guides/what-electric-bike-should-i-buy) walks through use cases side by side.",
+          "Motor placement matters more on folders than regular e-bikes. Rear hub motors (most common) keep weight balanced but make wheel removal tricky. Mid-drive motors provide better hill climbing but cost more and add complexity. Front hub motors are rare but offer simplicity. Battery capacity directly trades off with weight. Bigger batteries mean longer range but heavier bikes. The sweet spot for most riders is 500-700Wh, providing 30-50 miles without excessive weight. For [how much e-bikes really cost](/guides/how-much-does-an-electric-bike-cost) across folding and full-size models, see our pricing guide."
         ],
         bullets: [
           "Wheel size affects both portability and ride quality. Smaller folds tighter but feels rougher",
@@ -2395,19 +2395,24 @@ const money = [
 
     internalLinks: [
       {
-        text: "essential accessories for your new folding e-bike",
-        url: "/electric-folding-bikes/accessories-guide",
-        description: "Locks, bags, fenders and other must-have accessories for folding e-bikes"
+        text: "our tested best electric bikes roundup",
+        url: "/electric-bikes/best-electric-bikes",
+        description: "See how folders compare to the best overall e-bikes we tested"
       },
       {
-        text: "comparing folding e-bikes to compact cargo bikes",
-        url: "/electric-folding-bikes/vs-cargo-bikes",
-        description: "Which compact e-bike style best fits your lifestyle and hauling needs"
+        text: "complete electric bike buying guide",
+        url: "/guides/what-electric-bike-should-i-buy",
+        description: "Decide whether a folder, city bike, or cargo hauler fits your use case"
       },
       {
-        text: "maintenance tips for extending your folder's lifespan",
-        url: "/electric-folding-bikes/maintenance-guide",
-        description: "Simple maintenance routines that prevent expensive repairs down the road"
+        text: "how much e-bikes really cost",
+        url: "/guides/how-much-does-an-electric-bike-cost",
+        description: "Price tiers and ownership costs before you buy a compact e-bike"
+      },
+      {
+        text: "best electric city bikes for daily riding",
+        url: "/electric-city-bikes/best-electric-city-bikes",
+        description: "Full-size urban options if you don't need to fold for transit or storage"
       }
     ]
   },
@@ -3091,9 +3096,9 @@ const money = [
       {
         title: "Battery Capacity and Real-World Range",
         paragraphs: [
-          "Manufacturer range claims are fantasies. When they say \"120 miles,\" they mean on flat ground, in eco mode, with a 150-lb rider, no wind, and prayers to the battery gods. Real-world range depends on terrain, your weight, assist level, temperature, and how much you're actually pedaling. As a general rule, cut manufacturer claims by 30-40% for realistic expectations.",
+          "Manufacturer range claims are fantasies. When they say \"120 miles,\" they mean on flat ground, in eco mode, with a 150-lb rider, no wind, and prayers to the battery gods. Real-world range depends on terrain, your weight, assist level, temperature, and how much you're actually pedaling. As a general rule, cut manufacturer claims by 30-40% for realistic expectations. Pair this with our guide on [how fast each e-bike class actually goes](/guides/how-fast-do-electric-bikes-go) so speed limits don't surprise you on road rides.",
 
-          "Battery size is measured in watt-hours (Wh). Think of it like a gas tank—bigger means longer range but adds weight and cost. A 300Wh battery typically gives you 40-60 miles of mixed riding. A 400Wh battery extends that to 55-75 miles. A 600Wh+ battery can handle genuine all-day rides of 70-90+ miles. During my testing, I found that a 360Wh battery gave me comfortable range for most rides without adding excessive weight. Anything under 300Wh felt limiting unless you're buying a range extender."
+          "Battery size is measured in watt-hours (Wh). Think of it like a gas tank—bigger means longer range but adds weight and cost. A 300Wh battery typically gives you 40-60 miles of mixed riding. A 400Wh battery extends that to 55-75 miles. A 600Wh+ battery can handle genuine all-day rides of 70-90+ miles. During my testing, I found that a 360Wh battery gave me comfortable range for most rides without adding excessive weight. Anything under 300Wh felt limiting unless you're buying a range extender. Before you buy a Class 3 road bike, skim our [e-bike classes and street laws](/guides/are-electric-bikes-street-legal) guide for local rules."
         ],
         bullets: [
           "Cut manufacturer range claims by 30-40% for realistic expectations",
@@ -3256,24 +3261,24 @@ const money = [
 
     internalLinks: [
       {
-        text: "Ultimate guide to e-bike motors and battery systems",
-        url: "/electric-road-bikes/e-bike-motor-battery-guide",
-        description: "Deep dive into how electric bike motors and batteries work, maintenance tips, and maximizing performance"
+        text: "our tested best electric bikes roundup",
+        url: "/electric-bikes/best-electric-bikes",
+        description: "Compare e-road bikes against the best overall models across categories"
       },
       {
-        text: "Best lightweight e-road bikes under 25 pounds",
-        url: "/electric-road-bikes/lightweight-electric-road-bikes",
-        description: "Focused comparison of the lightest e-road bikes available for riders who prioritize weight and handling"
+        text: "how fast each e-bike class actually goes",
+        url: "/guides/how-fast-do-electric-bikes-go",
+        description: "Real-world speed limits by Class 1, 2, and 3 for road riding"
       },
       {
-        text: "E-bike range testing: Real-world battery performance",
-        url: "/electric-road-bikes/electric-bike-range-testing",
-        description: "Comprehensive range tests across different terrains, assist levels, and riding conditions"
+        text: "e-bike classes and street laws",
+        url: "/guides/are-electric-bikes-street-legal",
+        description: "Where Class 3 road e-bikes are legal and where they aren't"
       },
       {
-        text: "Commuting with an electric road bike: Complete setup guide",
-        url: "/electric-road-bikes/commuting-electric-road-bike",
-        description: "Everything you need to know about using an e-road bike for daily commuting, including gear recommendations"
+        text: "best electric hybrid bikes",
+        url: "/electric-hybrid-bikes/best-electric-hybrid-bikes",
+        description: "More upright all-rounders if pure road geometry isn't your priority"
       }
     ]
   },
@@ -3974,9 +3979,9 @@ const money = [
       {
         title: "Battery Capacity and Real-World Range",
         paragraphs: [
-          "Battery capacity (measured in watt-hours, or Wh) is like your gas tank—bigger means longer range, but also more weight and cost. A 500Wh battery typically provides 30-50 miles when carrying cargo, varying with terrain, load weight, and assist level. Dual-battery setups (1,000Wh+) enable 70-100+ mile ranges but add significant cost and weight. Most families find 500-700Wh adequate for daily use.",
+          "Battery capacity (measured in watt-hours, or Wh) is like your gas tank—bigger means longer range, but also more weight and cost. A 500Wh battery typically provides 30-50 miles when carrying cargo, varying with terrain, load weight, and assist level. Dual-battery setups (1,000Wh+) enable 70-100+ mile ranges but add significant cost and weight. Most families find 500-700Wh adequate for daily use. Loaded climbs are where cargo bikes struggle most—see [what actually determines uphill e-bike power](/guides/can-electric-bikes-climb-steep-hills) before you buy underpowered.",
           
-          "Range claims from manufacturers are optimistic—assume real-world range is 60-70% of advertised figures when hauling loads. During testing, I averaged: 40-50 miles with 500Wh batteries carrying moderate loads (one kid, groceries), 60-70 miles with 700Wh batteries in similar conditions, and 80-100+ miles with dual-battery systems. Hills, wind, and heavy loads dramatically reduce range. Cold weather can cut range by 20-30%. If your daily riding exceeds 25 miles round-trip, consider larger batteries or dual-battery options."
+          "Range claims from manufacturers are optimistic—assume real-world range is 60-70% of advertised figures when hauling loads. During testing, I averaged: 40-50 miles with 500Wh batteries carrying moderate loads (one kid, groceries), 60-70 miles with 700Wh batteries in similar conditions, and 80-100+ miles with dual-battery systems. Hills, wind, and heavy loads dramatically reduce range. Cold weather can cut range by 20-30%. If your daily riding exceeds 25 miles round-trip, consider larger batteries or dual-battery options. For [how much e-bikes really cost](/guides/how-much-does-an-electric-bike-cost) once you add seats and racks, budget with our pricing guide."
         ],
         bullets: [
           "500-700Wh: Adequate for most daily use (30-50 miles with cargo)",
@@ -4109,24 +4114,24 @@ const money = [
     
     internalLinks: [
       {
-        text: "complete guide to e-bike classes and regulations",
-        url: "/electric-cargo-bikes/ebike-classes-regulations-guide",
-        description: "Understand Class 1, 2, and 3 e-bike differences and your local laws"
+        text: "our tested best electric bikes roundup",
+        url: "/electric-bikes/best-electric-bikes",
+        description: "See how cargo haulers stack up against the best overall e-bikes"
       },
       {
-        text: "how to choose the right electric bike motor",
-        url: "/electric-cargo-bikes/choosing-ebike-motor-guide",
-        description: "Deep dive into mid-drive vs hub motors for cargo applications"
+        text: "how much e-bikes really cost",
+        url: "/guides/how-much-does-an-electric-bike-cost",
+        description: "Budget for a cargo e-bike plus racks, seats, and long-term ownership"
       },
       {
-        text: "essential cargo bike accessories for families",
-        url: "/electric-cargo-bikes/cargo-bike-accessories-guide",
-        description: "Child seats, panniers, rain covers, and safety gear recommendations"
+        text: "what actually determines uphill e-bike power",
+        url: "/guides/can-electric-bikes-climb-steep-hills",
+        description: "Torque and motor tips for loaded climbs with kids or groceries"
       },
       {
-        text: "maintaining your electric cargo bike",
-        url: "/electric-cargo-bikes/cargo-bike-maintenance-guide",
-        description: "DIY maintenance schedule and tips for long-term ownership"
+        text: "complete electric bike buying guide",
+        url: "/guides/what-electric-bike-should-i-buy",
+        description: "Confirm cargo is the right category before you commit to a hauler"
       }
     ]
   },
@@ -4843,9 +4848,9 @@ const money = [
       {
         title: "Class 1, 2, and 3: Understanding E-Bike Regulations",
         paragraphs: [
-          "E-bike classes determine where you can legally ride. Class 1 (pedal-assist only, 20 mph max) is allowed almost everywhere: bike lanes, multi-use paths, most parks. Class 2 adds a throttle (motor works without pedaling) but keeps the 20 mph limit; it's legal in most places but some trails prohibit it. Class 3 (pedal-assist to 28 mph) is the speed demon for commuters. Much faster, but often restricted from multi-use paths and some bike lanes.",
+          "E-bike classes determine where you can legally ride. Class 1 (pedal-assist only, 20 mph max) is allowed almost everywhere: bike lanes, multi-use paths, most parks. Class 2 adds a throttle (motor works without pedaling) but keeps the 20 mph limit; it's legal in most places but some trails prohibit it. Class 3 (pedal-assist to 28 mph) is the speed demon for commuters. Much faster, but often restricted from multi-use paths and some bike lanes. For a [full breakdown of e-bike laws by state](/guides/are-electric-bikes-street-legal), start there before you lock in a class.",
           
-          "Most modern e-bikes let you configure the class through settings. Want to ride bike paths? Set it to Class 1. Commuting on roads? Switch to Class 3 for speed. This flexibility is key. You're not locked into one classification. Check your local laws, though. Some cities have weird rules (like requiring helmets for Class 3, or banning throttles entirely). When in doubt, Class 1 is universally legal."
+          "Most modern e-bikes let you configure the class through settings. Want to ride bike paths? Set it to Class 1. Commuting on roads? Switch to Class 3 for speed. This flexibility is key. You're not locked into one classification. Check your local laws, though. Some cities have weird rules (like requiring helmets for Class 3, or banning throttles entirely). When in doubt, Class 1 is universally legal. Still weighing whether a city e-bike beats driving? See [are electric bikes worth it for commuting](/guides/are-electric-bikes-worth-it)."
         ],
         bullets: [
           "Class 1: 20 mph, pedal-assist only, legal almost everywhere",
@@ -4972,24 +4977,24 @@ const money = [
     
     internalLinks: [
       {
-        text: "How to choose the right e-bike for your commute distance",
-        url: "/electric-city-bikes/commuter-buying-guide",
-        description: "Complete guide to matching e-bike specs with your daily commuting needs"
+        text: "our tested best electric bikes roundup",
+        url: "/electric-bikes/best-electric-bikes",
+        description: "Compare city bikes against our best overall e-bike picks"
       },
       {
-        text: "Understanding e-bike battery care and longevity",
-        url: "/electric-city-bikes/battery-maintenance-guide",
-        description: "Learn how to maximize your e-bike battery lifespan and performance"
+        text: "e-bike classes and street laws",
+        url: "/guides/are-electric-bikes-street-legal",
+        description: "Know which class is allowed on your city paths and bike lanes"
       },
       {
-        text: "Step-through vs. traditional frame e-bikes compared",
-        url: "/electric-city-bikes/frame-styles-compared",
-        description: "Pros and cons of different e-bike frame geometries for urban riding"
+        text: "are electric bikes worth it for commuting",
+        url: "/guides/are-electric-bikes-worth-it",
+        description: "Rider-type breakdown for daily commuters replacing car trips"
       },
       {
-        text: "E-bike safety tips for riding in city traffic",
-        url: "/electric-city-bikes/urban-safety-guide",
-        description: "Essential safety strategies for navigating busy streets on an e-bike"
+        text: "how to charge an e-bike at home",
+        url: "/guides/can-electric-bike-be-charged-at-home",
+        description: "Apartment and garage charging basics for urban riders"
       }
     ]
   },
@@ -5681,9 +5686,9 @@ const money = [
       {
         title: "Understanding Fat Tire Electric Bikes Basics",
         paragraphs: [
-          "Fat bikes earn their name from those massive 4-inch-plus tires, roughly double the width of regular bike tires. Those oversized tires aren't just for looks. They dramatically increase surface area, which lowers tire pressure and creates a floating effect over soft surfaces like sand, snow, and mud. Think of it like snowshoes for bikes. Where regular tires sink and bog down, fat tires keep you moving. The electric motor adds a whole new dimension, providing power to push through resistance that would exhaust you on a regular fat bike.",
+          "Fat bikes earn their name from those massive 4-inch-plus tires, roughly double the width of regular bike tires. Those oversized tires aren't just for looks. They dramatically increase surface area, which lowers tire pressure and creates a floating effect over soft surfaces like sand, snow, and mud. Think of it like snowshoes for bikes. Where regular tires sink and bog down, fat tires keep you moving. The electric motor adds a whole new dimension, providing power to push through resistance that would exhaust you on a regular fat bike. Prefer suspension and singletrack instead? Compare our [best electric mountain bikes for trails](/electric-mountain-bikes/best-electric-mountain-bikes).",
           
-          "The trade-off? Fat tires create more rolling resistance on pavement, making them slower and less efficient on smooth surfaces. The motors compensate, but you'll definitely feel the difference switching from a road bike. Battery capacity matters more on fat bikes because those wide tires demand more power to maintain speed. That's why you see fat ebikes with 700-900Wh batteries versus 400-500Wh on regular ebikes. Also, expect these bikes to weigh 65-85 pounds. They're beasts by design. That weight provides stability in rough terrain but makes transportation and storage more challenging."
+          "The trade-off? Fat tires create more rolling resistance on pavement, making them slower and less efficient on smooth surfaces. The motors compensate, but you'll definitely feel the difference switching from a road bike. Battery capacity matters more on fat bikes because those wide tires demand more power to maintain speed. That's why you see fat ebikes with 700-900Wh batteries versus 400-500Wh on regular ebikes. Also, expect these bikes to weigh 65-85 pounds. They're beasts by design. That weight provides stability in rough terrain but makes transportation and storage more challenging. Wet snow and creek crossings are common—read [can electric bikes get wet](/guides/can-electric-bikes-get-wet) before winter riding."
         ],
         bullets: [
           "Fat tires (4+ inches) provide flotation over soft terrain but increase rolling resistance",
@@ -5842,19 +5847,24 @@ const money = [
     
     internalLinks: [
       {
-        text: "Best winter electric bike accessories and gear",
-        url: "/electric-fat-bikes/winter-accessories-guide",
-        description: "Essential gear for year-round fat bike riding in cold weather"
+        text: "our tested best electric bikes roundup",
+        url: "/electric-bikes/best-electric-bikes",
+        description: "See how fat tire models compare to the best overall e-bikes"
       },
       {
-        text: "Electric fat bike maintenance schedule and tips",
-        url: "/electric-fat-bikes/maintenance-guide",
-        description: "Keep your fat tire ebike running perfectly with this maintenance checklist"
+        text: "best electric mountain bikes for trails",
+        url: "/electric-mountain-bikes/best-electric-mountain-bikes",
+        description: "Technical trail e-MTBs when you need suspension more than flotation"
       },
       {
-        text: "Comparing folding vs standard electric fat bikes",
-        url: "/electric-fat-bikes/folding-vs-standard",
-        description: "Should you choose a folding fat bike? Pros, cons, and best options"
+        text: "can electric bikes get wet",
+        url: "/guides/can-electric-bikes-get-wet",
+        description: "Rain and wet-terrain tips that matter for year-round fat bike riding"
+      },
+      {
+        text: "what actually determines uphill e-bike power",
+        url: "/guides/can-electric-bikes-climb-steep-hills",
+        description: "Torque and motor guidance for soft sand, snow, and steep grades"
       }
     ]
   },
@@ -6524,9 +6534,9 @@ const money = [
       {
         title: "What Makes a Cruiser E-Bike Different?",
         paragraphs: [
-          "Electric cruisers aren't just e-bikes with comfy seats. They're designed around a specific philosophy: comfort and style over speed and performance. The geometry puts you in an upright riding position. Think sitting in a chair rather than leaning forward like a road bike. This reduces strain on your back, neck, and wrists. The handlebars sweep back toward you, keeping your arms relaxed. The saddle is wider and plusher than athletic bike seats. Everything about the design prioritizes leisurely, enjoyable riding.",
+          "Electric cruisers aren't just e-bikes with comfy seats. They're designed around a specific philosophy: comfort and style over speed and performance. The geometry puts you in an upright riding position. Think sitting in a chair rather than leaning forward like a road bike. This reduces strain on your back, neck, and wrists. The handlebars sweep back toward you, keeping your arms relaxed. The saddle is wider and plusher than athletic bike seats. Everything about the design prioritizes leisurely, enjoyable riding. If you're still deciding whether a cruiser fits your lifestyle, start with our [complete electric bike buying guide](/guides/what-electric-bike-should-i-buy).",
           
-          "What separates good cruisers from mediocre ones comes down to details. Quality cruisers use motors that engage smoothly rather than jerking forward. They have comfortable saddles that don't feel like bricks after 15 minutes. The weight distribution keeps the bike stable and confidence-inspiring. Good cruisers feel effortless. You're not fighting the bike or uncomfortable positions. After testing ten models extensively, I can say the difference between a $1,300 budget cruiser and a $3,000 premium one mostly shows up in long-term comfort and reliability, not flashy features."
+          "What separates good cruisers from mediocre ones comes down to details. Quality cruisers use motors that engage smoothly rather than jerking forward. They have comfortable saddles that don't feel like bricks after 15 minutes. The weight distribution keeps the bike stable and confidence-inspiring. Good cruisers feel effortless. You're not fighting the bike or uncomfortable positions. After testing ten models extensively, I can say the difference between a $1,300 budget cruiser and a $3,000 premium one mostly shows up in long-term comfort and reliability, not flashy features. For the value question by rider type, see [are electric bikes worth it by rider type](/guides/are-electric-bikes-worth-it)."
         ],
         bullets: [
           "Upright geometry reduces back and neck strain significantly",
@@ -6711,29 +6721,24 @@ const money = [
     
     internalLinks: [
       {
-        text: "How to choose your first e-bike",
-        url: "/electric-cruiser-bikes/first-ebike-buyers-guide",
-        description: "Complete beginner's guide to understanding e-bike types, features, and making the right choice"
+        text: "our tested best electric bikes roundup",
+        url: "/electric-bikes/best-electric-bikes",
+        description: "Compare cruisers against the best overall e-bikes across categories"
       },
       {
-        text: "Electric cruiser bike maintenance guide",
-        url: "/electric-cruiser-bikes/maintenance-schedule",
-        description: "Keep your e-bike cruiser running smoothly with this complete maintenance schedule and tips"
+        text: "best electric city bikes for daily riding",
+        url: "/electric-city-bikes/best-electric-city-bikes",
+        description: "More upright urban options with racks, lights, and commute features"
       },
       {
-        text: "Electric beach cruiser bike comparison",
-        url: "/electric-cruiser-bikes/beach-cruiser-comparison",
-        description: "Detailed look at the best electric bikes specifically designed for beach and coastal riding"
+        text: "are electric bikes worth it by rider type",
+        url: "/guides/are-electric-bikes-worth-it",
+        description: "Honest value breakdown for leisure, senior, and casual riders"
       },
       {
-        text: "Step-through e-bike guide for seniors",
-        url: "/electric-cruiser-bikes/seniors-step-through-guide",
-        description: "Everything older adults need to know about choosing comfortable, easy-access electric bikes"
-      },
-      {
-        text: "Fat tire cruiser bikes explained",
-        url: "/electric-cruiser-bikes/fat-tire-cruisers",
-        description: "Why fat tires matter for cruiser bikes and which models offer the best all-terrain performance"
+        text: "complete electric bike buying guide",
+        url: "/guides/what-electric-bike-should-i-buy",
+        description: "Confirm a cruiser fits your use case before you buy"
       }
     ]
   },
@@ -7288,8 +7293,8 @@ const money = [
       {
         title: "Understanding Hybrid E-Bike Basics",
         paragraphs: [
-          "Here's the thing about hybrid e-bikes: they're basically the Swiss Army knives of the cycling world. You get the efficiency of a road bike on pavement, the comfort of a cruiser on casual rides, and the capability to handle light gravel without swapping bikes. Add electric assistance to that versatility, and you've got a vehicle that genuinely can replace your car for most trips under 20 miles. The 'hybrid' part refers to the frame geometry and component choices that split the difference between pure road bikes (fast but uncomfortable) and mountain bikes (capable but slow on pavement).",
-          "The electric part typically means a mid-drive or rear hub motor rated between 250W and 750W (in the US), paired with a battery ranging from 360Wh to 720Wh. Think of the battery like your gas tank. Bigger means longer range but also more weight and cost. The motor is your engine, but unlike cars, higher wattage doesn't automatically mean better. A well-tuned 250W mid-drive with good torque often feels more powerful and natural than a poorly designed 500W hub motor. What matters most is how these systems work together and match your specific riding needs."
+          "Here's the thing about hybrid e-bikes: they're basically the Swiss Army knives of the cycling world. You get the efficiency of a road bike on pavement, the comfort of a cruiser on casual rides, and the capability to handle light gravel without swapping bikes. Add electric assistance to that versatility, and you've got a vehicle that genuinely can replace your car for most trips under 20 miles. The 'hybrid' part refers to the frame geometry and component choices that split the difference between pure road bikes (fast but uncomfortable) and mountain bikes (capable but slow on pavement). Still choosing between hybrid, city, and road? Our [complete electric bike buying guide](/guides/what-electric-bike-should-i-buy) maps use cases clearly.",
+          "The electric part typically means a mid-drive or rear hub motor rated between 250W and 750W (in the US), paired with a battery ranging from 360Wh to 720Wh. Think of the battery like your gas tank. Bigger means longer range but also more weight and cost. The motor is your engine, but unlike cars, higher wattage doesn't automatically mean better. A well-tuned 250W mid-drive with good torque often feels more powerful and natural than a poorly designed 500W hub motor. What matters most is how these systems work together and match your specific riding needs. Prefer a more upright urban setup? Compare our [best electric city bikes for daily riding](/electric-city-bikes/best-electric-city-bikes)."
         ],
         bullets: [
           "Mid-drive motors (mounted at pedals) provide better balance and hill-climbing efficiency but cost more",
@@ -7437,24 +7442,24 @@ const money = [
     
     internalLinks: [
       {
-        text: "choosing the right e-bike motor for your needs",
-        url: "/electric-hybrid-bikes/understanding-ebike-motors",
-        description: "Deep dive into mid-drive vs hub motors and how to match motor types to your riding style"
+        text: "our tested best electric bikes roundup",
+        url: "/electric-bikes/best-electric-bikes",
+        description: "See how hybrids compare to the best overall e-bikes we tested"
       },
       {
-        text: "maximizing your electric bike's battery life",
-        url: "/electric-hybrid-bikes/ebike-battery-guide",
-        description: "Learn techniques for extending range and maintaining battery health over years of use"
+        text: "best electric city bikes for daily riding",
+        url: "/electric-city-bikes/best-electric-city-bikes",
+        description: "Urban-focused picks if your rides stay mostly on pavement"
       },
       {
-        text: "essential accessories for commuter e-bikes",
-        url: "/electric-hybrid-bikes/ebike-accessories",
-        description: "The must-have gear that makes e-bike commuting practical and safe year-round"
+        text: "best electric road bikes",
+        url: "/electric-road-bikes/best-electric-road-bikes",
+        description: "Faster, lighter geometry when fitness and distance matter most"
       },
       {
-        text: "comparing electric bike drive systems",
-        url: "/electric-hybrid-bikes/chain-vs-belt-drive",
-        description: "Honest comparison of traditional chains versus maintenance-free belt drives"
+        text: "complete electric bike buying guide",
+        url: "/guides/what-electric-bike-should-i-buy",
+        description: "Match hybrid, city, or road geometry to your real riding mix"
       }
     ]
   },

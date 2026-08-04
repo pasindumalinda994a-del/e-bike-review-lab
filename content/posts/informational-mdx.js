@@ -5,6 +5,209 @@
  */
 export const mdxInformationalArticles = [
   {
+    id: "which-electric-mountain-bike-to-buy",
+    slug: "which-electric-mountain-bike-to-buy",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "which-electric-mountain-bike-to-buy.mdx",
+    title: "Which Electric Mountain Bike to Buy: A Beginner's Guide",
+    seoTitle: "Which Electric Mountain Bike to Buy: A Beginner's Guide",
+    h1: "Picking Your First Electric Mountain Bike: A Decision Framework",
+    metaDescription:
+      "Confused about which electric mountain bike to buy? Here's a decision framework covering motors, suspension, battery size, and budget, before you compare models.",
+    heroImage: "/images/info/which-electric-mountain-bike-to-buy%201.webp",
+    cardImage: "/images/info/which-electric-mountain-bike-to-buy%202.webp",
+    articleHeroImage:
+      "/images/info/which-electric-mountain-bike-to-buy.webp",
+    heroImageAlt:
+      "Beginner comparing the right electric mountain bike setup for their riding style",
+    estimatedReadingTime: 12,
+    publishedAt: "2026-08-04T12:15:00.000Z",
+    updatedAt: "2026-08-04T12:15:00.000Z",
+    relatedGuides: [
+      {
+        title: "How to Ride an Electric Mountain Bike: A Beginner's Guide",
+        url: "/guides/how-to-ride-an-electric-mountain-bike",
+      },
+      {
+        title: "How Does an Electric Mountain Bike Work? Motors, Batteries & Assist",
+        url: "/guides/how-does-an-electric-mountain-bike-work",
+      },
+      {
+        title: "Electric Mountain Bike Cost: 2026 Price Guide",
+        url: "/guides/how-much-does-an-electric-mountain-bike-cost",
+      },
+      {
+        title: "Best Electric Mountain Bikes 2026",
+        url: "/electric-mountain-bikes/best-electric-mountain-bikes",
+      },
+    ],
+  },
+  {
+    id: "how-to-ride-an-electric-mountain-bike",
+    slug: "how-to-ride-an-electric-mountain-bike",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "how-to-ride-an-electric-mountain-bike.mdx",
+    title: "How to Ride an Electric Mountain Bike: A Beginner's Guide",
+    seoTitle: "How to Ride an Electric Mountain Bike: A Beginner's Guide",
+    h1: "Riding an eMTB for the First Time: What Actually Changes",
+    metaDescription:
+      "Learn how to ride an electric mountain bike the right way, from assist modes to braking, climbing, descending, and trail etiquette.",
+    heroImage: "/images/info/how-to-ride-an-electric-mountain-bike%201.webp",
+    cardImage: "/images/info/how-to-ride-an-electric-mountain-bike%202.webp",
+    articleHeroImage:
+      "/images/info/how-to-ride-an-electric-mountain-bike.webp",
+    heroImageAlt:
+      "Beginner riding an electric mountain bike and learning eMTB basics",
+    estimatedReadingTime: 12,
+    publishedAt: "2026-08-04T11:30:00.000Z",
+    updatedAt: "2026-08-04T11:30:00.000Z",
+    relatedGuides: [
+      {
+        title: "How Does an Electric Mountain Bike Work? Motors, Batteries & Assist",
+        url: "/guides/how-does-an-electric-mountain-bike-work",
+      },
+      {
+        title: "How Fast Does an Electric Mountain Bike Go? (2025 Guide)",
+        url: "/guides/how-fast-do-electric-mountain-bike-go",
+      },
+      {
+        title: "Best Electric Mountain Bikes 2026",
+        url: "/electric-mountain-bikes/best-electric-mountain-bikes",
+      },
+      {
+        title: "What Electric Bike Should You Buy? A Complete Guide",
+        url: "/guides/what-electric-bike-should-i-buy",
+      },
+    ],
+  },
+  {
+    id: "how-fast-do-electric-mountain-bike-go",
+    slug: "how-fast-do-electric-mountain-bike-go",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "how-fast-do-electric-mountain-bike-go.mdx",
+    title: "How Fast Does an Electric Mountain Bike Go? (2025 Guide)",
+    seoTitle: "How Fast Does an Electric Mountain Bike Go? (2025 Guide)",
+    h1: "eMTB Speed Explained: Class Limits, Legal Rules and Real Trail Numbers",
+    metaDescription:
+      "How fast does an electric mountain bike go? Here's the real breakdown of Class 1, 2 and 3 speed limits, UK/EU EAPC rules, and what actually slows you down on trail.",
+    heroImage: "/images/info/how-fast-do-electric-mountain-bike-go%201.webp",
+    cardImage: "/images/info/how-fast-do-electric-mountain-bike-go%202.webp",
+    articleHeroImage:
+      "/images/info/how-fast-do-electric-mountain-bike-go.webp",
+    heroImageAlt:
+      "Electric mountain bike speed limits explained by class and region",
+    estimatedReadingTime: 10,
+    publishedAt: "2026-08-04T10:00:00.000Z",
+    updatedAt: "2026-08-04T10:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "How Electric Bikes Work: Motors, Batteries & Sensors",
+        url: "/guides/how-electric-bike-works",
+      },
+      {
+        title: "How Fast Do Electric Bikes Go? Speed Guide by Class",
+        url: "/guides/how-fast-do-electric-bikes-go",
+      },
+      {
+        title: "Are Electric Bikes Street Legal? 2026 State Guide",
+        url: "/guides/are-electric-bikes-street-legal",
+      },
+      {
+        title: "Best Electric Mountain Bikes 2026",
+        url: "/electric-mountain-bikes/best-electric-mountain-bikes",
+      },
+    ],
+  },
+  {
+    id: "how-much-does-an-electric-mountain-bike-cost",
+    slug: "how-much-does-an-electric-mountain-bike-cost",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "how-much-does-an-electric-mountain-bike-cost.mdx",
+    title: "Electric Mountain Bike Cost: 2026 Price Guide",
+    seoTitle: "Electric Mountain Bike Cost: 2026 Price Guide",
+    h1: "What You'll Actually Pay for an Electric Mountain Bike in 2026",
+    metaDescription:
+      "What does an electric mountain bike actually cost in 2026? Real prices by tier, what drives them, and ownership costs most guides skip.",
+    heroImage:
+      "/images/info/how-much-does-an-electric-mountain-bike-cost%201.webp",
+    cardImage:
+      "/images/info/how-much-does-an-electric-mountain-bike-cost%202.webp",
+    articleHeroImage:
+      "/images/info/how-much-does-an-electric-mountain-bike-cost.webp",
+    heroImageAlt:
+      "Electric mountain bike cost guide for 2026 with motor, battery, and ownership expenses",
+    estimatedReadingTime: 12,
+    publishedAt: "2026-08-04T09:00:00.000Z",
+    updatedAt: "2026-08-04T09:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "How Does an Electric Mountain Bike Work? Motors, Batteries & Assist",
+        url: "/guides/how-does-an-electric-mountain-bike-work",
+      },
+      {
+        title: "Best Electric Mountain Bikes 2026",
+        url: "/electric-mountain-bikes/best-electric-mountain-bikes",
+      },
+      {
+        title: "What Electric Bike Should You Buy? A Complete Guide",
+        url: "/guides/what-electric-bike-should-i-buy",
+      },
+      {
+        title: "Is It Worth Getting an Electric Bike? The Real Answer for 2026",
+        url: "/guides/are-electric-bikes-worth-it",
+      },
+    ],
+  },
+  {
+    id: "how-does-an-electric-mountain-bike-work",
+    slug: "how-does-an-electric-mountain-bike-work",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "how-does-an-electric-mountain-bike-work.mdx",
+    title:
+      "How Does an Electric Mountain Bike Work? A Complete Guide to Motors, Batteries and Pedal Assist",
+    seoTitle: "How Does an Electric Mountain Bike Work? Motors & Assist",
+    h1: "What's Actually Happening When You Pedal an Electric Mountain Bike",
+    metaDescription:
+      "Curious how an electric mountain bike works? Here's a plain-English breakdown of motors, batteries, pedal assist and what it actually feels like.",
+    heroImage: "/images/info/how-does-an-electric-mountain-bike-work%201.webp",
+    cardImage: "/images/info/how-does-an-electric-mountain-bike-work%202.webp",
+    articleHeroImage: "/images/info/how-does-an-electric-mountain-bike-work.webp",
+    heroImageAlt:
+      "Electric mountain bike motor, battery, and pedal assist system on the trail",
+    estimatedReadingTime: 11,
+    publishedAt: "2026-08-04T08:00:00.000Z",
+    updatedAt: "2026-08-04T08:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Best Electric Mountain Bikes 2026",
+        url: "/electric-mountain-bikes/best-electric-mountain-bikes",
+      },
+      {
+        title: "How Electric Bikes Work: Motors, Batteries & Sensors",
+        url: "/guides/how-electric-bike-works",
+      },
+      {
+        title: "What Electric Bike Should You Buy? A Complete Guide",
+        url: "/guides/what-electric-bike-should-i-buy",
+      },
+    ],
+  },
+  {
     id: "graham-jarvis-electric-bike",
     slug: "graham-jarvis-electric-bike",
     categorySlug: "guides",
@@ -30,12 +233,12 @@ export const mdxInformationalArticles = [
         url: "/guides/how-electric-bike-works",
       },
       {
-        title: "What Electric Bike Should You Buy? A Complete Guide",
-        url: "/guides/what-electric-bike-should-i-buy",
+        title: "Best Electric Mountain Bikes 2026",
+        url: "/electric-mountain-bikes/best-electric-mountain-bikes",
       },
       {
-        title: "Can Electric Bikes Climb Steep Hills? The Real Answer",
-        url: "/guides/can-electric-bikes-climb-steep-hills",
+        title: "What Electric Bike Should You Buy? A Complete Guide",
+        url: "/guides/what-electric-bike-should-i-buy",
       },
     ],
   },
@@ -61,16 +264,16 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-07-22T02:00:00.000Z",
     relatedGuides: [
       {
-        title: "Longest Range Electric Bike: What Actually Determines Range",
-        url: "/guides/longest-range-electric-bike",
+        title: "Can Electric Bikes Get Wet? What You Need to Know",
+        url: "/guides/can-electric-bikes-get-wet",
+      },
+      {
+        title: "Best Electric Bikes 2026: Top 10 Tested",
+        url: "/electric-bikes/best-electric-bikes",
       },
       {
         title: "What Electric Bike Should You Buy? A Complete Guide",
         url: "/guides/what-electric-bike-should-i-buy",
-      },
-      {
-        title: "Can Electric Bikes Get Wet? What You Need to Know",
-        url: "/guides/can-electric-bikes-get-wet",
       },
     ],
   },
@@ -104,8 +307,8 @@ export const mdxInformationalArticles = [
         url: "/guides/are-electric-bikes-street-legal",
       },
       {
-        title: "Electric Bike Price in Pakistan: Complete 2026 Guide",
-        url: "/guides/electric-bike-price-pakistan",
+        title: "Best Electric Bikes 2026: Top 10 Tested",
+        url: "/electric-bikes/best-electric-bikes",
       },
     ],
   },
@@ -131,16 +334,16 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-07-21T22:00:00.000Z",
     relatedGuides: [
       {
-        title: "Electric Bike Price in the Philippines: 2026 Buying Guide",
-        url: "/guides/electric-bike-price-philippines",
-      },
-      {
         title: "How Much Does an Electric Bike Cost? 2026 Guide",
         url: "/guides/how-much-does-an-electric-bike-cost",
       },
       {
-        title: "Are Electric Bikes Worth It? A Guide by Rider Type",
-        url: "/guides/are-electric-bikes-worth-it",
+        title: "Electric Bike Price in the Philippines: 2026 Buying Guide",
+        url: "/guides/electric-bike-price-philippines",
+      },
+      {
+        title: "What Electric Bike Should You Buy? A Complete Guide",
+        url: "/guides/what-electric-bike-should-i-buy",
       },
     ],
   },
@@ -170,8 +373,8 @@ export const mdxInformationalArticles = [
         url: "/guides/how-much-does-an-electric-bike-cost",
       },
       {
-        title: "Are Electric Bikes Worth It? A Guide by Rider Type",
-        url: "/guides/are-electric-bikes-worth-it",
+        title: "Best Electric Bikes 2026: Top 10 Tested",
+        url: "/electric-bikes/best-electric-bikes",
       },
       {
         title: "What Electric Bike Should You Buy? A Complete Guide",
@@ -209,8 +412,8 @@ export const mdxInformationalArticles = [
         url: "/guides/are-electric-bikes-street-legal",
       },
       {
-        title: "Can Electric Bikes Go on the Highway? What to Know",
-        url: "/guides/can-electric-bikes-go-on-highways",
+        title: "Best Electric Bikes 2026: Top 10 Tested",
+        url: "/electric-bikes/best-electric-bikes",
       },
     ],
   },
@@ -236,16 +439,16 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-07-21T16:00:00.000Z",
     relatedGuides: [
       {
-        title: "Are Electric Bikes Worth It? A Guide by Rider Type",
-        url: "/guides/are-electric-bikes-worth-it",
+        title: "Best Electric Bikes 2026: Top 10 Tested",
+        url: "/electric-bikes/best-electric-bikes",
       },
       {
         title: "How Much Does an Electric Bike Cost? 2026 Guide",
         url: "/guides/how-much-does-an-electric-bike-cost",
       },
       {
-        title: "Can Electric Bikes Climb Steep Hills? The Real Answer",
-        url: "/guides/can-electric-bikes-climb-steep-hills",
+        title: "Are Electric Bikes Worth It? A Guide by Rider Type",
+        url: "/guides/are-electric-bikes-worth-it",
       },
     ],
   },
@@ -310,8 +513,8 @@ export const mdxInformationalArticles = [
         url: "/guides/how-electric-bike-works",
       },
       {
-        title: "Are Electric Bikes Worth It? A Guide by Rider Type",
-        url: "/guides/are-electric-bikes-worth-it",
+        title: "Best Electric Bikes 2026: Top 10 Tested",
+        url: "/electric-bikes/best-electric-bikes",
       },
       {
         title: "Can Electric Bikes Climb Steep Hills? The Real Answer",
@@ -415,12 +618,12 @@ export const mdxInformationalArticles = [
         url: "/guides/how-much-does-an-electric-bike-cost",
       },
       {
-        title: "Are Electric Bikes Street Legal? 2026 State Guide",
-        url: "/guides/are-electric-bikes-street-legal",
+        title: "Best Electric Bikes 2026: Top 10 Tested",
+        url: "/electric-bikes/best-electric-bikes",
       },
       {
-        title: "Are Electric Bikes Worth It? A Guide by Rider Type",
-        url: "/guides/are-electric-bikes-worth-it",
+        title: "Are Electric Bikes Street Legal? 2026 State Guide",
+        url: "/guides/are-electric-bikes-street-legal",
       },
     ],
   },
@@ -446,16 +649,16 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-07-20T16:00:00.000Z",
     relatedGuides: [
       {
+        title: "Best Electric Mountain Bikes 2026",
+        url: "/electric-mountain-bikes/best-electric-mountain-bikes",
+      },
+      {
+        title: "What Electric Bike Should You Buy? A Complete Guide",
+        url: "/guides/what-electric-bike-should-i-buy",
+      },
+      {
         title: "How Electric Bikes Work: Motors, Batteries & Sensors",
         url: "/guides/how-electric-bike-works",
-      },
-      {
-        title: "Are Electric Bikes Worth It? A Guide by Rider Type",
-        url: "/guides/are-electric-bikes-worth-it",
-      },
-      {
-        title: "How Fast Do Electric Bikes Go? Speed Guide by Class",
-        url: "/guides/how-fast-do-electric-bikes-go",
       },
     ],
   },
@@ -485,12 +688,12 @@ export const mdxInformationalArticles = [
         url: "/guides/are-electric-bikes-street-legal",
       },
       {
-        title: "How Electric Bikes Work: Motors, Batteries & Sensors",
-        url: "/guides/how-electric-bike-works",
+        title: "Best Electric Bikes 2026: Top 10 Tested",
+        url: "/electric-bikes/best-electric-bikes",
       },
       {
-        title: "Are Electric Bikes Worth It? A Guide by Rider Type",
-        url: "/guides/are-electric-bikes-worth-it",
+        title: "Fastest Electric Bikes: What You Can Legally Buy",
+        url: "/guides/fastest-electric-bikes",
       },
     ],
   },
@@ -516,16 +719,16 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-07-20T14:00:00.000Z",
     relatedGuides: [
       {
-        title: "Are Electric Bikes Street Legal? 2026 State Guide",
-        url: "/guides/are-electric-bikes-street-legal",
+        title: "Best Electric Bikes 2026: Top 10 Tested",
+        url: "/electric-bikes/best-electric-bikes",
       },
       {
         title: "Are Electric Bike Batteries Dangerous? What the Fire Data Shows",
         url: "/guides/are-electric-bike-batteries-dangerous",
       },
       {
-        title: "How Much Does an Electric Bike Cost? 2026 Guide",
-        url: "/guides/how-much-does-an-electric-bike-cost",
+        title: "Are Electric Bikes Street Legal? 2026 State Guide",
+        url: "/guides/are-electric-bikes-street-legal",
       },
     ],
   },
@@ -555,12 +758,12 @@ export const mdxInformationalArticles = [
         url: "/guides/are-electric-bike-batteries-dangerous",
       },
       {
-        title: "Are Electric Bikes Worth It? A Guide by Rider Type",
-        url: "/guides/are-electric-bikes-worth-it",
+        title: "Best Electric City Bikes 2026",
+        url: "/electric-city-bikes/best-electric-city-bikes",
       },
       {
-        title: "How Much Does an Electric Bike Cost? 2026 Guide",
-        url: "/guides/how-much-does-an-electric-bike-cost",
+        title: "Can You Charge an Electric Bike at Home? Full Guide",
+        url: "/guides/can-electric-bike-be-charged-at-home",
       },
     ],
   },
@@ -586,16 +789,16 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-07-18T12:00:00.000Z",
     relatedGuides: [
       {
+        title: "Best Electric Bikes 2026: Top 10 Tested",
+        url: "/electric-bikes/best-electric-bikes",
+      },
+      {
         title: "How Much Does an Electric Bike Cost? 2026 Guide",
         url: "/guides/how-much-does-an-electric-bike-cost",
       },
       {
         title: "Is It Worth Getting an Electric Bike? The Real Answer for 2026",
         url: "/electric-bikes/is-it-worth-getting-electric-bike",
-      },
-      {
-        title: "Are Electric Bike Batteries Dangerous? What the Fire Data Shows",
-        url: "/guides/are-electric-bike-batteries-dangerous",
       },
     ],
   },
@@ -621,12 +824,16 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-07-18T11:00:00.000Z",
     relatedGuides: [
       {
+        title: "Best Electric Bikes 2026: Top 10 Tested",
+        url: "/electric-bikes/best-electric-bikes",
+      },
+      {
         title: "Is It Worth Getting an Electric Bike?",
         url: "/electric-bikes/is-it-worth-getting-electric-bike",
       },
       {
-        title: "Are Electric Bike Batteries Dangerous? What the Fire Data Shows",
-        url: "/guides/are-electric-bike-batteries-dangerous",
+        title: "What Electric Bike Should You Buy? A Complete Guide",
+        url: "/guides/what-electric-bike-should-i-buy",
       },
     ],
   },
@@ -652,12 +859,16 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-07-18T09:00:00.000Z",
     relatedGuides: [
       {
-        title: "Is It Worth Getting an Electric Bike?",
-        url: "/electric-bikes/is-it-worth-getting-electric-bike",
+        title: "Best Electric Bikes 2026: Top 10 Tested",
+        url: "/electric-bikes/best-electric-bikes",
       },
       {
-        title: "Are Electric Bike Batteries Dangerous? What the Fire Data Shows",
-        url: "/guides/are-electric-bike-batteries-dangerous",
+        title: "How Fast Do Electric Bikes Go? Speed Guide by Class",
+        url: "/guides/how-fast-do-electric-bikes-go",
+      },
+      {
+        title: "Can Electric Bikes Go on the Highway? What to Know",
+        url: "/guides/can-electric-bikes-go-on-highways",
       },
     ],
   },
@@ -684,12 +895,16 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-07-18T10:00:00.000Z",
     relatedGuides: [
       {
-        title: "Are Electric Bikes Street Legal? 2026 State Guide",
-        url: "/guides/are-electric-bikes-street-legal",
+        title: "Can You Charge an Electric Bike at Home? Full Guide",
+        url: "/guides/can-electric-bike-be-charged-at-home",
       },
       {
-        title: "Is It Worth Getting an Electric Bike?",
-        url: "/electric-bikes/is-it-worth-getting-electric-bike",
+        title: "Can Electric Bike Batteries Be Repaired?",
+        url: "/guides/can-electric-bike-batteries-be-repaired",
+      },
+      {
+        title: "How Much Does an Electric Bike Cost? 2026 Guide",
+        url: "/guides/how-much-does-an-electric-bike-cost",
       },
     ],
   },
@@ -718,16 +933,16 @@ export const mdxInformationalArticles = [
     updatedAt: "2025-01-15T09:00:00.000Z",
     relatedGuides: [
       {
+        title: "Best Electric Bikes 2026: Top 10 Tested",
+        url: "/electric-bikes/best-electric-bikes",
+      },
+      {
         title: "How Much Does an Electric Bike Cost? 2026 Guide",
         url: "/guides/how-much-does-an-electric-bike-cost",
       },
       {
-        title: "Are Electric Bikes Street Legal? 2026 State Guide",
-        url: "/guides/are-electric-bikes-street-legal",
-      },
-      {
-        title: "Are Electric Bike Batteries Dangerous? What the Fire Data Shows",
-        url: "/guides/are-electric-bike-batteries-dangerous",
+        title: "Are Electric Bikes Worth It? A Guide by Rider Type",
+        url: "/guides/are-electric-bikes-worth-it",
       },
     ],
   },
