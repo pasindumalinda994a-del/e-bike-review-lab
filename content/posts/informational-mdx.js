@@ -5,6 +5,46 @@
  */
 export const mdxInformationalArticles = [
   {
+    id: "electric-mountain-bike-uk",
+    slug: "electric-mountain-bike-uk",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "electric-mountain-bike-uk.mdx",
+    title: "Electric Mountain Bikes UK: Legal Rules, Best Buys and Where to Ride",
+    seoTitle: "Electric Mountain Bikes UK: Legal Rules, Best Buys and Where to Ride",
+    h1: "Which Electric Mountain Bike Is Right (and Legal) for UK Riders",
+    metaDescription:
+      "Which electric mountain bike is legal in the UK? Get the EAPC rules, where you can ride, insurance facts, and the best eMTBs by budget.",
+    heroImage: "/images/info/electric-mountain-bike-uk%201.webp",
+    cardImage: "/images/info/electric-mountain-bike-uk%202.webp",
+    articleHeroImage: "/images/info/electric-mountain-bike-uk.webp",
+    heroImageAlt:
+      "Electric mountain bike on a UK bridleway and forest trail",
+    estimatedReadingTime: 12,
+    publishedAt: "2026-08-06T00:00:00.000Z",
+    updatedAt: "2026-08-06T00:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "How Fast Does an Electric Mountain Bike Go? (2025 Guide)",
+        url: "/guides/how-fast-do-electric-mountain-bike-go",
+      },
+      {
+        title: "Are Electric Bikes Street Legal? 2026 State Guide",
+        url: "/guides/are-electric-bikes-street-legal",
+      },
+      {
+        title: "Which Electric Mountain Bike to Buy: A Beginner's Guide",
+        url: "/guides/which-electric-mountain-bike-to-buy",
+      },
+      {
+        title: "Electric Mountain Bike Cost: 2026 Price Guide",
+        url: "/guides/how-much-does-an-electric-mountain-bike-cost",
+      },
+    ],
+  },
+  {
     id: "which-electric-mountain-bike-to-buy",
     slug: "which-electric-mountain-bike-to-buy",
     categorySlug: "guides",
