@@ -5,6 +5,231 @@
  */
 export const mdxInformationalArticles = [
   {
+    id: "electric-mountain-bike-questions",
+    slug: "electric-mountain-bike-questions",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "electric-mountain-bike-questions.mdx",
+    title: "Electric Mountain Bike Questions: Complete FAQ Guide",
+    seoTitle: "Electric Mountain Bike Questions: Complete FAQ Guide",
+    h1: "The Ultimate eMTB FAQ: Every Question Answered in One Place",
+    metaDescription:
+      "Every electric mountain bike question answered in one guide, from battery life and legality to maintenance and buying advice.",
+    heroImage: "/images/info/electric-mountain-bike-questions%201.webp",
+    cardImage: "/images/info/electric-mountain-bike-questions%202.webp",
+    articleHeroImage: "/images/info/electric-mountain-bike-questions.webp",
+    heroImageAlt:
+      "Electric mountain bike FAQ guide covering batteries, legality, and buying advice",
+    estimatedReadingTime: 16,
+    publishedAt: "2026-08-09T16:00:00.000Z",
+    updatedAt: "2026-08-09T16:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Which Electric Mountain Bike to Buy: A Beginner's Guide",
+        url: "/guides/which-electric-mountain-bike-to-buy",
+      },
+      {
+        title: "Why Buy an Electric Mountain Bike? Pros, Cons and Who It's For",
+        url: "/guides/why-buy-an-electric-mountain-bike",
+      },
+      {
+        title: "Electric Mountain Bike Cost: 2026 Price Guide",
+        url: "/guides/how-much-does-an-electric-mountain-bike-cost",
+      },
+      {
+        title: "Where to Rent an Electric Mountain Bike: Complete Guide",
+        url: "/guides/where-to-rent-an-electric-mountain-bike",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is an electric mountain bike, exactly?",
+        answer:
+          "An electric mountain bike (eMTB) is a mountain bike with a motor and battery added. The motor boosts your pedaling rather than replacing it, and most models require pedaling to engage the motor.",
+      },
+      {
+        question: "How does pedal assist work on a mountain bike?",
+        answer:
+          "Pedal assist uses a sensor to measure how hard you're pedaling and adds motor power proportionally. It only engages while you pedal, unlike a throttle system which moves the bike without pedaling.",
+      },
+      {
+        question: "What's the difference between a mid-drive motor and a hub motor?",
+        answer:
+          "A mid-drive motor sits at the bottom bracket and drives the chain through the bike's gears, giving better weight distribution and climbing performance. A hub motor sits in the wheel and drives it directly, and is typically cheaper but less capable on technical terrain.",
+      },
+      {
+        question: "How long do electric mountain bike batteries last?",
+        answer:
+          "Most eMTB batteries provide 20 to 50 miles of range per charge depending on terrain and assist level, and typically last 500 to 1,000 charge cycles, or roughly 3 to 7 years of regular use, before noticeable degradation.",
+      },
+      {
+        question: "How long does it take to charge an electric mountain bike?",
+        answer:
+          "A standard charger takes about 4 to 6 hours for a full charge, while optional fast chargers can bring that down to 2 to 3 hours.",
+      },
+      {
+        question: "How much does a good electric mountain bike cost?",
+        answer:
+          "Entry-level eMTBs run about $1,500 to $2,500, mid-range bikes with full suspension and name-brand motors run $2,500 to $4,500, and high-end carbon models can exceed $8,000.",
+      },
+      {
+        question: "What are the different classes of electric mountain bikes?",
+        answer:
+          "Class 1 offers pedal assist only up to 20 mph, Class 2 adds a throttle capped at 20 mph, and Class 3 offers pedal assist only up to 28 mph with no throttle.",
+      },
+      {
+        question: "Where are electric mountain bikes legally allowed on trails?",
+        answer:
+          "Access varies by land manager. Many trails treat Class 1 eMTBs like traditional bikes, but Forest Service and BLM land often classifies eMTBs as motorized unless a trail is specifically designated open to them, so checking local rules before riding is essential.",
+      },
+      {
+        question: "Do electric mountain bikes need special maintenance?",
+        answer:
+          "Standard components need the same care as a regular mountain bike, sometimes slightly more frequent due to added motor torque. The electrical system needs occasional attention too, such as keeping contacts clean and updating motor firmware.",
+      },
+      {
+        question: "Can electric mountain bikes get wet or be ridden in the rain?",
+        answer:
+          "Yes, eMTB batteries and motors are sealed for wet weather riding. Full submersion and direct high-pressure hosing of the battery or motor should be avoided, but rain and mud riding is fine.",
+      },
+      {
+        question: "Are electric mountain bikes heavy to carry or transport?",
+        answer:
+          "Yes, most full-suspension eMTBs weigh 45 to 55 pounds compared to 28 to 32 pounds for a similar non-electric bike, mainly due to the motor and battery.",
+      },
+      {
+        question: "Can I rent an electric mountain bike before buying one?",
+        answer:
+          "Yes, many bike shops near trail systems and mountain bike resorts offer eMTB rentals and demo days, which is one of the best ways to compare motor brands before purchasing.",
+      },
+    ],
+  },
+  {
+    id: "why-buy-an-electric-mountain-bike",
+    slug: "why-buy-an-electric-mountain-bike",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "why-buy-an-electric-mountain-bike.mdx",
+    title: "Why Buy an Electric Mountain Bike? Pros, Cons and Who It's For",
+    seoTitle: "Why Buy an Electric Mountain Bike? Pros, Cons and Who It's For",
+    h1: "Should You Buy an Electric Mountain Bike? A Balanced Look at eMTBs",
+    metaDescription:
+      "Thinking about an eMTB? Here's an honest look at the real benefits, the downsides nobody advertises, and who actually benefits most.",
+    heroImage: "/images/info/why-buy-an-electric-mountain-bike%201.webp",
+    cardImage: "/images/info/why-buy-an-electric-mountain-bike%202.webp",
+    articleHeroImage: "/images/info/why-buy-an-electric-mountain-bike.webp",
+    heroImageAlt:
+      "Rider considering whether to buy an electric mountain bike on a trail overlook",
+    estimatedReadingTime: 11,
+    publishedAt: "2026-08-09T14:00:00.000Z",
+    updatedAt: "2026-08-09T14:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Electric Mountain Bike vs Regular MTB: Which to Buy",
+        url: "/guides/electric-mountain-bike-vs-regular-mountain-bike",
+      },
+      {
+        title: "Which Electric Mountain Bike to Buy: A Beginner's Guide",
+        url: "/guides/which-electric-mountain-bike-to-buy",
+      },
+      {
+        title: "Electric Mountain Bike Cost: 2026 Price Guide",
+        url: "/guides/how-much-does-an-electric-mountain-bike-cost",
+      },
+      {
+        title: "Where to Rent an Electric Mountain Bike: Complete Guide",
+        url: "/guides/where-to-rent-an-electric-mountain-bike",
+      },
+    ],
+  },
+  {
+    id: "electric-mountain-bike-vs-regular-mountain-bike",
+    slug: "electric-mountain-bike-vs-regular-mountain-bike",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "electric-mountain-bike-vs-regular-mountain-bike.mdx",
+    title: "Electric Mountain Bike vs Regular Mountain Bike: What's Right for You",
+    seoTitle: "Electric Mountain Bike vs Regular MTB: Which to Buy",
+    h1: "Electric Mountain Bike vs Regular Mountain Bike: What's Right for You",
+    metaDescription:
+      "Electric mountain bike vs regular mountain bike: real numbers on cost, fitness, trail access, and which one actually fits how you ride.",
+    heroImage:
+      "/images/info/electric-mountain-bike-vs-regular-mountain-bike%201.webp",
+    cardImage:
+      "/images/info/electric-mountain-bike-vs-regular-mountain-bike%202.webp",
+    articleHeroImage:
+      "/images/info/electric-mountain-bike-vs-regular-mountain-bike.webp",
+    heroImageAlt:
+      "Electric mountain bike and regular mountain bike side by side on a trail",
+    estimatedReadingTime: 12,
+    publishedAt: "2026-08-09T12:00:00.000Z",
+    updatedAt: "2026-08-09T12:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Which Electric Mountain Bike to Buy: A Beginner's Guide",
+        url: "/guides/which-electric-mountain-bike-to-buy",
+      },
+      {
+        title: "Electric Mountain Bike Cost: 2026 Price Guide",
+        url: "/guides/how-much-does-an-electric-mountain-bike-cost",
+      },
+      {
+        title: "Are Electric Bikes Worth It? A Guide by Rider Type",
+        url: "/guides/are-electric-bikes-worth-it",
+      },
+      {
+        title: "Where to Rent an Electric Mountain Bike: Complete Guide",
+        url: "/guides/where-to-rent-an-electric-mountain-bike",
+      },
+    ],
+  },
+  {
+    id: "where-to-rent-an-electric-mountain-bike",
+    slug: "where-to-rent-an-electric-mountain-bike",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "where-to-rent-an-electric-mountain-bike.mdx",
+    title: "Where to Rent an Electric Mountain Bike: Complete Guide",
+    seoTitle: "Where to Rent an Electric Mountain Bike: Complete Guide",
+    h1: "Renting an Electric Mountain Bike: What to Know Before You Book",
+    metaDescription:
+      "Wondering where to rent an electric mountain bike and what it actually costs? Here's how eMTB rentals work, what to bring, and if renting beats buying.",
+    heroImage: "/images/info/where-to-rent-an-electric-mountain-bike%201.webp",
+    cardImage: "/images/info/where-to-rent-an-electric-mountain-bike%202.webp",
+    articleHeroImage: "/images/info/where-to-rent-an-electric-mountain-bike.webp",
+    heroImageAlt:
+      "Rider picking up an electric mountain bike rental at a trail center shop",
+    estimatedReadingTime: 11,
+    publishedAt: "2026-08-09T00:00:00.000Z",
+    updatedAt: "2026-08-09T00:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Which Electric Mountain Bike to Buy: A Beginner's Guide",
+        url: "/guides/which-electric-mountain-bike-to-buy",
+      },
+      {
+        title: "Electric Mountain Bike Cost: 2026 Price Guide",
+        url: "/guides/how-much-does-an-electric-mountain-bike-cost",
+      },
+      {
+        title: "How to Ride an Electric Mountain Bike: A Beginner's Guide",
+        url: "/guides/how-to-ride-an-electric-mountain-bike",
+      },
+      {
+        title: "Best Electric Mountain Bikes 2026",
+        url: "/electric-mountain-bikes/best-electric-mountain-bikes",
+      },
+    ],
+  },
+  {
     id: "electric-mountain-bike-uk",
     slug: "electric-mountain-bike-uk",
     categorySlug: "guides",
