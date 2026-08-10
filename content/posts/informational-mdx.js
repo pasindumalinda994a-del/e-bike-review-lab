@@ -5,6 +5,405 @@
  */
 export const mdxInformationalArticles = [
   {
+    id: "best-folding-bike-for-the-money",
+    slug: "best-folding-bike-for-the-money",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "best-folding-bike-for-the-money.mdx",
+    title: "Best Folding Bike for the Money: 2026 Value Guide",
+    seoTitle: "Best Folding Bike for the Money: 2026 Value Guide",
+    h1: "Folding E-Bike Value Picks That Don't Feel Cheap",
+    metaDescription:
+      "Looking for the best folding bike for the money? Here's what actually matters when you're buying on a budget, and which bikes deliver.",
+    heroImage: "/images/info/best-folding-bike-for-the-money%201.webp",
+    cardImage: "/images/info/best-folding-bike-for-the-money%202.webp",
+    articleHeroImage: "/images/info/best-folding-bike-for-the-money.webp",
+    heroImageAlt: "Budget folding electric bike showing strong value for the money",
+    estimatedReadingTime: 10,
+    publishedAt: "2026-08-10T11:00:00.000Z",
+    updatedAt: "2026-08-10T11:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Best Folding Electric Bike: Tested by Use Case (2026)",
+        url: "/guides/best-folding-electric-bike",
+      },
+      {
+        title: "Best Electric Folding Bikes 2026",
+        url: "/electric-folding-bikes/best-electric-folding-bikes",
+      },
+      {
+        title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
+        url: "/guides/foldable-electric-bike-buying-guide",
+      },
+      {
+        title: "Are Foldable Electric Bikes Worth It? Real Cost Guide",
+        url: "/guides/are-foldable-electric-bikes-worth-it",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a $500 folding e-bike safe?",
+        answer:
+          "It can be, but you need to check a few things first. Look for UL 2849 certification, which covers the electrical system, and make sure the battery is from a recognizable cell manufacturer rather than an unbranded pack. A $500 bike that skips certification entirely is a bigger risk than one that's simply basic on features. Basic is fine. Uncertified is the actual concern.",
+      },
+      {
+        question: "What's a fair price for a decent folding e-bike?",
+        answer:
+          "For most riders, somewhere between $900 and $1,500 gets you a genuinely solid bike, meaning a name-brand battery around 400 to 500Wh, a reliable rear hub motor, and at least mechanical disc brakes. You can go lower and still get something usable, but that's the range where most of the meaningful corner-cutting has stopped.",
+      },
+      {
+        question: "Do more expensive folding e-bikes last longer?",
+        answer:
+          "Generally, yes, but it's not a straight line. A bike that jumps from $800 to $1,400 usually gets a real durability upgrade: better battery cells, a sturdier hinge, stronger brakes. A bike that jumps from $2,500 to $4,000 is often paying more for brand name and finishing than for meaningfully better longevity. The biggest durability gains per dollar tend to happen in that middle stretch, not at the very top of the market.",
+      },
+    ],
+  },
+  {
+    id: "best-folding-electric-bike",
+    slug: "best-folding-electric-bike",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "best-folding-electric-bike.mdx",
+    title: "Best Folding Electric Bike: Tested by Use Case (2026)",
+    seoTitle: "Best Folding Electric Bike: Tested by Use Case (2026)",
+    h1: "Folding E-Bikes We'd Actually Buy: A Use-Case Breakdown",
+    metaDescription:
+      "We tested the best folding electric bikes by real use case, not just spec sheets. Find the right pick for commuting, RV storage, tall riders, and budget.",
+    heroImage: "/images/info/best-folding-electric-bike%201.webp",
+    cardImage: "/images/info/best-folding-electric-bike%202.webp",
+    articleHeroImage: "/images/info/best-folding-electric-bike.webp",
+    heroImageAlt:
+      "Best folding electric bikes tested by use case for commuting and storage",
+    estimatedReadingTime: 12,
+    publishedAt: "2026-08-10T10:00:00.000Z",
+    updatedAt: "2026-08-10T10:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Best Folding Bike for the Money: 2026 Value Guide",
+        url: "/guides/best-folding-bike-for-the-money",
+      },
+      {
+        title: "Best Electric Folding Bikes 2026",
+        url: "/electric-folding-bikes/best-electric-folding-bikes",
+      },
+      {
+        title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
+        url: "/guides/foldable-electric-bike-buying-guide",
+      },
+      {
+        title: "Folding Electric Bike vs Regular E-Bike: Which Wins?",
+        url: "/guides/folding-electric-bike-vs-regular-electric-bike",
+      },
+    ],
+    faqs: [
+      {
+        question: "What's the best folding e-bike under $1,500?",
+        answer:
+          "The Lectric XP 3.0 is the strongest option in this range, usually landing between $1,000 and $1,300 depending on the configuration and current promotions. It offers a solid motor, real fenders and a rack, and a weight capacity that works for most riders. If you want to go even lower, the Lectric XP Lite drops under $1,000 while still holding up well against pricier competitors.",
+      },
+      {
+        question: "Is Brompton worth the extra cost?",
+        answer:
+          "It depends entirely on how often you're folding and unfolding the bike. If you're a daily transit commuter squeezing onto crowded trains or storing your bike in a small apartment entryway, the compact fold and build quality genuinely earn their price. If you're mostly riding around your neighborhood or storing the bike in a garage, you're likely paying a premium for portability you won't use to its full extent.",
+      },
+      {
+        question: "What's the best folding e-bike for beginners?",
+        answer:
+          "The Lectric XP 3.0 tends to be the easiest recommendation for first-time riders. It's simple to fold, the controls aren't overly complicated, and it's forgiving if you're still getting used to pedal assist levels. It also has a large enough community and dealer support network that troubleshooting or finding replacement parts isn't a headache.",
+      },
+    ],
+  },
+  {
+    id: "folding-electric-bike-vs-regular-electric-bike",
+    slug: "folding-electric-bike-vs-regular-electric-bike",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "folding-electric-bike-vs-regular-electric-bike.mdx",
+    title: "Folding Electric Bike vs Regular E-Bike: Which Wins?",
+    seoTitle: "Folding Electric Bike vs Regular E-Bike: Which Wins?",
+    h1: "Folding vs Non-Folding E-Bikes: How to Pick the Right One for Your Commute",
+    metaDescription:
+      "Folding electric bike vs regular electric bike: real differences in ride quality, range, price, and storage to help you pick the right one.",
+    heroImage:
+      "/images/info/folding-electric-bike-vs-regular-electric-bike%201.webp",
+    cardImage:
+      "/images/info/folding-electric-bike-vs-regular-electric-bike%202.webp",
+    articleHeroImage:
+      "/images/info/folding-electric-bike-vs-regular-electric-bike.webp",
+    heroImageAlt:
+      "Folding electric bike and regular e-bike side by side for commute comparison",
+    estimatedReadingTime: 10,
+    publishedAt: "2026-08-10T09:00:00.000Z",
+    updatedAt: "2026-08-10T09:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Best Folding Electric Bike: Tested by Use Case (2026)",
+        url: "/guides/best-folding-electric-bike",
+      },
+      {
+        title: "Best Electric Folding Bikes 2026",
+        url: "/electric-folding-bikes/best-electric-folding-bikes",
+      },
+      {
+        title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
+        url: "/guides/foldable-electric-bike-buying-guide",
+      },
+      {
+        title: "Are Foldable Electric Bikes Worth It? Real Cost Guide",
+        url: "/guides/are-foldable-electric-bikes-worth-it",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a folding e-bike slower than a regular one?",
+        answer:
+          "Not necessarily on paper. Plenty of folding e-bikes hit the same 20-28 mph top speeds as regular models, since that's more about motor wattage and local speed regulations than frame type. Where folders can feel slower is stability at higher speeds. Smaller wheels mean less momentum carrying you forward, so top speed can feel less settled even when the number on the display is identical.",
+      },
+      {
+        question: "Do folding e-bikes have less range?",
+        answer:
+          "Generally, yes. Smaller frames mean smaller batteries in most cases, so folding e-bikes commonly average 20-40 miles per charge versus 40-80+ miles on many regular e-bikes. There are exceptions, some premium folding models now pack larger batteries, but as a rule of thumb, expect less range from a folder.",
+      },
+      {
+        question: "Which is better for hills?",
+        answer:
+          "Regular e-bikes tend to handle hills better, mainly because they usually come with bigger batteries and, in many cases, stronger motors. A folding e-bike can still climb hills fine for occasional use, but sustained hill commuting will drain a smaller battery faster and put more strain on a less powerful motor over time.",
+      },
+    ],
+  },
+  {
+    id: "how-do-folding-electric-bikes-fold",
+    slug: "how-do-folding-electric-bikes-fold",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "how-do-folding-electric-bikes-fold.mdx",
+    title: "How Do Folding Electric Bikes Fold? Every Mechanism Explained",
+    seoTitle: "How Do Folding Electric Bikes Fold? Every Mechanism Explained",
+    h1: "Folding E-Bike Mechanisms: What's Actually Happening When You Fold One",
+    metaDescription:
+      "Confused about how folding electric bikes fold? Here's a plain-language breakdown of every mechanism, fold times, and what breaks first.",
+    heroImage: "/images/info/how-do-folding-electric-bikes-fold%201.webp",
+    cardImage: "/images/info/how-do-folding-electric-bikes-fold%202.webp",
+    articleHeroImage: "/images/info/how-do-folding-electric-bikes-fold.webp",
+    heroImageAlt: "Folding electric bike mid-frame hinge and clamp mechanism",
+    estimatedReadingTime: 11,
+    publishedAt: "2026-08-10T08:00:00.000Z",
+    updatedAt: "2026-08-10T08:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Folding Electric Bike vs Regular E-Bike: Which Wins?",
+        url: "/guides/folding-electric-bike-vs-regular-electric-bike",
+      },
+      {
+        title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
+        url: "/guides/foldable-electric-bike-buying-guide",
+      },
+      {
+        title: "Downsides of a Foldable E-Bike: What to Know Before Buying",
+        url: "/guides/downsides-of-a-foldable-e-bike",
+      },
+      {
+        title: "Best Electric Folding Bikes 2026",
+        url: "/electric-folding-bikes/best-electric-folding-bikes",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which fold is fastest?",
+        answer:
+          "The triangle/vertical fold, Brompton-style, is generally the fastest once you know the sequence, often under 15 seconds. Mid-frame folds are close behind and arguably easier to learn for a first-time folder.",
+      },
+      {
+        question: "Which fold is most durable?",
+        answer:
+          "There's no single answer here since durability depends heavily on build quality within each mechanism type, not just the mechanism itself. That said, well-built triangle folds and rear-triangle swing folds tend to hold up better over years of daily use than budget mid-frame clamps, simply because they're usually found on higher-priced bikes with better materials.",
+      },
+      {
+        question: "Can I fold an e-bike with the battery still attached?",
+        answer:
+          "On most models, yes, though it's not always the best idea. A permanently mounted battery adds weight to the folded package and, on some frame designs, sits close enough to the hinge point that repeated folding can stress the wiring over time. If your battery is removable, taking it off before folding is the safer habit, especially for daily commuters putting their bike through the fold-unfold cycle twice a day.",
+      },
+    ],
+  },
+  {
+    id: "foldable-electric-bike-buying-guide",
+    slug: "foldable-electric-bike-buying-guide",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "foldable-electric-bike-buying-guide.mdx",
+    title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
+    seoTitle: "Foldable Electric Bike Buying Guide: 9 Things to Check",
+    h1: "What to Know Before You Buy a Foldable Electric Bike",
+    metaDescription:
+      "Buying a foldable electric bike? Here's what actually matters, from motor power to battery range, before you spend your money.",
+    heroImage: "/images/info/foldable-electric-bike-buying-guide%201.webp",
+    cardImage: "/images/info/foldable-electric-bike-buying-guide%202.webp",
+    articleHeroImage: "/images/info/foldable-electric-bike-buying-guide.webp",
+    heroImageAlt: "Shopper comparing foldable electric bike specs before buying",
+    estimatedReadingTime: 12,
+    publishedAt: "2026-08-10T07:00:00.000Z",
+    updatedAt: "2026-08-10T07:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Best Folding Bike for the Money: 2026 Value Guide",
+        url: "/guides/best-folding-bike-for-the-money",
+      },
+      {
+        title: "Best Folding Electric Bike: Tested by Use Case (2026)",
+        url: "/guides/best-folding-electric-bike",
+      },
+      {
+        title: "How Do Folding Electric Bikes Fold? Every Mechanism Explained",
+        url: "/guides/how-do-folding-electric-bikes-fold",
+      },
+      {
+        title: "Best Electric Folding Bikes 2026",
+        url: "/electric-folding-bikes/best-electric-folding-bikes",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a 350W motor enough?",
+        answer:
+          "For flat terrain and riders under roughly 200 lbs, yes, a 350W motor handles daily commuting fine. If you're dealing with hills regularly or weigh more than that, you'll likely want at least 500W to avoid feeling underpowered.",
+      },
+      {
+        question: "What's a good folded size for an apartment?",
+        answer:
+          "Look for a folded footprint under about 30 x 28 x 15 inches if closet or corner storage is your plan. That size fits in most closets and doesn't eat up too much floor space when parked in an entryway.",
+      },
+      {
+        question: "How much should I budget?",
+        answer:
+          "For a bike you'll rely on regularly, plan on spending at least $1,000, and ideally in the $1,000-$1,800 range for the best balance of range, reliability, and component quality. Going cheaper usually means compromising on battery life or build quality in ways you'll notice within the first few months.",
+      },
+    ],
+  },
+  {
+    id: "downsides-of-a-foldable-e-bike",
+    slug: "downsides-of-a-foldable-e-bike",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "downsides-of-a-foldable-e-bike.mdx",
+    title: "Downsides of a Foldable E-Bike: What to Know Before Buying",
+    seoTitle: "Downsides of a Foldable E-Bike: What to Know Before Buying",
+    h1: "The Real Problems With Folding Electric Bikes (And How to Deal With Them)",
+    metaDescription:
+      "Thinking about a folding e-bike? Here are the real downsides, from added weight to rougher rides, plus how to shop around them.",
+    heroImage: "/images/info/downsides-of-a-foldable-e-bike%201.webp",
+    cardImage: "/images/info/downsides-of-a-foldable-e-bike%202.webp",
+    articleHeroImage: "/images/info/downsides-of-a-foldable-e-bike.webp",
+    heroImageAlt:
+      "Foldable electric bike showing hinge and compact frame trade-offs",
+    estimatedReadingTime: 10,
+    publishedAt: "2026-08-10T06:00:00.000Z",
+    updatedAt: "2026-08-10T06:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "How Do Folding Electric Bikes Fold? Every Mechanism Explained",
+        url: "/guides/how-do-folding-electric-bikes-fold",
+      },
+      {
+        title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
+        url: "/guides/foldable-electric-bike-buying-guide",
+      },
+      {
+        title: "Are Foldable Electric Bikes Worth It? Real Cost Guide",
+        url: "/guides/are-foldable-electric-bikes-worth-it",
+      },
+      {
+        title: "Best Electric Folding Bikes 2026",
+        url: "/electric-folding-bikes/best-electric-folding-bikes",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do folding hinges wear out?",
+        answer:
+          "Yes, over time and with repeated use. How fast depends heavily on build quality and how carefully the bike is folded. A well-made hinge on a quality bike can last years of daily folding. A cheaper hinge, or one that's regularly forced or folded incorrectly, can start showing play or looseness within a year.",
+      },
+      {
+        question: "Are foldable e-bikes less safe than regular ones?",
+        answer:
+          "Not inherently, as long as the hinge and locking mechanism are in good condition and properly engaged before riding. The real risk comes from a hinge that's worn, damaged, or not fully locked, which can lead to instability while riding. Checking that the fold is fully secured before every ride is a habit worth building.",
+      },
+      {
+        question: "Is a folding e-bike bad for long rides?",
+        answer:
+          "It's not ideal, but it's not bad either. The smaller wheels and more upright riding position tend to feel less comfortable over long distances compared to a standard e-bike, especially past 15 to 20 miles. For daily commutes under that range, most riders find folding e-bikes perfectly comfortable.",
+      },
+    ],
+  },
+  {
+    id: "are-foldable-electric-bikes-worth-it",
+    slug: "are-foldable-electric-bikes-worth-it",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "are-foldable-electric-bikes-worth-it.mdx",
+    title: "Are Foldable Electric Bikes Worth It? Real Cost Guide",
+    seoTitle: "Are Foldable Electric Bikes Worth It? Real Cost Guide",
+    h1: "Foldable E-Bikes: Are They Actually Worth Buying?",
+    metaDescription:
+      "Are foldable electric bikes worth it? A real numbers breakdown of cost, comfort, and lifestyle fit so you know before you buy.",
+    heroImage: "/images/info/are-foldable-electric-bikes-worth-it%201.webp",
+    cardImage: "/images/info/are-foldable-electric-bikes-worth-it%202.webp",
+    articleHeroImage: "/images/info/are-foldable-electric-bikes-worth-it.webp",
+    heroImageAlt:
+      "Foldable electric bike collapsed for apartment storage and transit commuting",
+    estimatedReadingTime: 10,
+    publishedAt: "2026-08-10T05:00:00.000Z",
+    updatedAt: "2026-08-10T05:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Best Folding Electric Bike: Tested by Use Case (2026)",
+        url: "/guides/best-folding-electric-bike",
+      },
+      {
+        title: "Folding Electric Bike vs Regular E-Bike: Which Wins?",
+        url: "/guides/folding-electric-bike-vs-regular-electric-bike",
+      },
+      {
+        title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
+        url: "/guides/foldable-electric-bike-buying-guide",
+      },
+      {
+        title: "Best Electric Folding Bikes 2026",
+        url: "/electric-folding-bikes/best-electric-folding-bikes",
+      },
+    ],
+    faqs: [
+      {
+        question: "How long do foldable e-bikes last?",
+        answer:
+          "With reasonable care, most folding e-bikes last 3 to 5 years before major components need replacing, though the frame itself can easily outlast that. Battery life is usually the limiting factor, typically good for 500 to 800 full charge cycles before capacity noticeably drops.",
+      },
+      {
+        question: "Are they more expensive to maintain than regular e-bikes?",
+        answer:
+          "A little, mainly because of the folding hinge and latch mechanisms, which need periodic inspection and occasional replacement. Budget maybe $30 to $50 more a year than you would for a standard e-bike's maintenance, mostly for hinge lubrication and hardware checks.",
+      },
+      {
+        question: "Can one person carry it alone?",
+        answer:
+          "Yes, for most models. Weights typically range from 35 to 55 pounds, which is manageable for most adults over short distances like stairs or a train platform, though it's not exactly effortless. If you have mobility concerns or back issues, look specifically for lighter models under 40 pounds before buying.",
+      },
+    ],
+  },
+  {
     id: "electric-mountain-bike-questions",
     slug: "electric-mountain-bike-questions",
     categorySlug: "guides",
