@@ -5,6 +5,180 @@
  */
 export const mdxInformationalArticles = [
   {
+    id: "best-foldable-e-bike-brands-compared",
+    slug: "best-foldable-e-bike-brands-compared",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "best-foldable-e-bike-brands-compared.mdx",
+    title: "Best Foldable E-Bike Brands Compared (2026)",
+    seoTitle: "Best Foldable E-Bike Brands Compared (2026)",
+    h1: "Brompton vs. Tern vs. Budget Folders: Which Fold Actually Matters",
+    metaDescription:
+      "Brompton, Tern, or a budget folder like Lectric? Here's an honest comparison of fold size, price, and quality to help you pick the right e-bike.",
+    heroImage: "/images/info/best-foldable-e-bike-brands-compared%201.webp",
+    cardImage: "/images/info/best-foldable-e-bike-brands-compared%202.webp",
+    articleHeroImage: "/images/info/best-foldable-e-bike-brands-compared.webp",
+    heroImageAlt:
+      "Brompton, Tern, and budget folding e-bike brands compared by fold size and price",
+    estimatedReadingTime: 12,
+    publishedAt: "2026-08-11T11:00:00.000Z",
+    updatedAt: "2026-08-11T11:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "How Do Folding Electric Bikes Fold? Every Mechanism Explained",
+        url: "/guides/how-do-folding-electric-bikes-fold",
+      },
+      {
+        title: "Best Electric Folding Bikes 2026",
+        url: "/electric-folding-bikes/best-electric-folding-bikes",
+      },
+      {
+        title: "Are Foldable E-Bikes Any Good? Owner Reviews After 6 Months",
+        url: "/guides/are-foldable-e-bikes-any-good",
+      },
+      {
+        title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
+        url: "/guides/foldable-electric-bike-buying-guide",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is Brompton worth double the price of Tern?",
+        answer:
+          "It depends what you're optimizing for. If ultimate fold compactness is your top priority, yes, Brompton earns that premium. If you want a bike that rides more like a full-size bicycle, hauls more, and comes with a longer warranty, Tern arguably gives you more bike for the money even at a slightly lower price point.",
+      },
+      {
+        question: "What's the smallest folded folding e-bike?",
+        answer:
+          "Among mainstream brands, the standard Brompton Electric folds the smallest, coming in around 22 x 23 x 11 inches. MiRiDER's One comes reasonably close at a fraction of the price, though its folded footprint is a bit larger.",
+      },
+      {
+        question: "Which brand has the best resale value?",
+        answer:
+          "Brompton has the strongest reputation for holding value, partly because of scarcity and partly because the brand rarely discounts new bikes heavily. Tern also holds up well thanks to its long warranty support and steady demand. Budget brands like Lectric and Velotric depreciate faster, which makes sense given their lower starting prices.",
+      },
+    ],
+  },
+  {
+    id: "costco-vs-direct-to-consumer-folding-ebikes",
+    slug: "costco-vs-direct-to-consumer-folding-ebikes",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "costco-vs-direct-to-consumer-folding-ebikes.mdx",
+    title:
+      "Costco vs. Direct-to-Consumer Folding E-Bikes: Which Is Actually the Better Deal?",
+    seoTitle:
+      "Best Folding E-Bike on the Market: Costco vs. Lectric, Velotric, Ride1Up",
+    h1: "Costco vs. Direct-to-Consumer Folding E-Bikes: Which Is Actually the Better Deal?",
+    metaDescription:
+      "Costco's folding e-bikes look cheap on the shelf. We compare them against Lectric, Velotric, and Ride1Up on spec, warranty, and returns to find the real deal.",
+    heroImage: "/images/info/costco-vs-direct-to-consumer-folding-ebikes%201.webp",
+    cardImage: "/images/info/costco-vs-direct-to-consumer-folding-ebikes%202.webp",
+    articleHeroImage:
+      "/images/info/costco-vs-direct-to-consumer-folding-ebikes.webp",
+    heroImageAlt:
+      "Costco warehouse folding e-bike compared with direct-to-consumer folding e-bike brands",
+    estimatedReadingTime: 11,
+    publishedAt: "2026-08-11T09:00:00.000Z",
+    updatedAt: "2026-08-11T09:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Best Folding Bike for the Money: 2026 Value Guide",
+        url: "/guides/best-folding-bike-for-the-money",
+      },
+      {
+        title: "Best Electric Folding Bikes 2026",
+        url: "/electric-folding-bikes/best-electric-folding-bikes",
+      },
+      {
+        title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
+        url: "/guides/foldable-electric-bike-buying-guide",
+      },
+      {
+        title: "What Electric Bike Should I Buy? A Decision Guide",
+        url: "/guides/what-electric-bike-should-i-buy",
+      },
+    ],
+    faqs: [
+      {
+        question: "Does Costco sell good e-bikes?",
+        answer:
+          "Costco's folding e-bikes are decent for what they are, short-range, casual-use bikes at a low price. They're not built to compete spec-for-spec with dedicated e-bike brands, and they're not trying to. For light, occasional riding, they hold up fine.",
+      },
+      {
+        question: "Can I return a Costco e-bike after riding it?",
+        answer:
+          "Generally, yes. Costco's 100% satisfaction guarantee typically applies to bikes even after use, and there are well-documented cases of refunds happening well beyond typical retail windows. That said, policies can vary by location, so it's worth confirming with your local warehouse or Costco.com before assuming.",
+      },
+      {
+        question: "Are Costco e-bikes made by real bike companies?",
+        answer:
+          "Yes, they're made by actual manufacturers like Hiboy and Jetson, both of which sell the same or similar models through their own websites and other retailers. Costco isn't manufacturing house-brand bikes; it's carrying existing products, often at a discount, sometimes as a limited or rotating selection.",
+      },
+    ],
+  },
+  {
+    id: "are-foldable-e-bikes-any-good",
+    slug: "are-foldable-e-bikes-any-good",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "are-foldable-e-bikes-any-good.mdx",
+    title: "Are Foldable E-Bikes Any Good? Owner Reviews After 6 Months",
+    seoTitle: "Are Foldable E-Bikes Any Good? Owner Reviews After 6 Months",
+    h1: "What 6 Months of Real Ownership Reveals About Folding E-Bikes",
+    metaDescription:
+      "Are foldable e-bikes any good long term? Real owners share what held up, what broke, and what they'd change after 500+ miles of riding.",
+    heroImage: "/images/info/are-foldable-e-bikes-any-good%201.webp",
+    cardImage: "/images/info/are-foldable-e-bikes-any-good%202.webp",
+    articleHeroImage: "/images/info/are-foldable-e-bikes-any-good.webp",
+    heroImageAlt:
+      "Foldable electric bike used for daily commuting after six months of ownership",
+    estimatedReadingTime: 9,
+    publishedAt: "2026-08-11T07:00:00.000Z",
+    updatedAt: "2026-08-11T07:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Are Foldable Electric Bikes Worth It? Real Cost Guide",
+        url: "/guides/are-foldable-electric-bikes-worth-it",
+      },
+      {
+        title: "Downsides of a Foldable E-Bike: What to Know Before Buying",
+        url: "/guides/downsides-of-a-foldable-e-bike",
+      },
+      {
+        title: "Best Electric Folding Bikes 2026",
+        url: "/electric-folding-bikes/best-electric-folding-bikes",
+      },
+      {
+        title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
+        url: "/guides/foldable-electric-bike-buying-guide",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do foldable e-bikes need more maintenance than regular e-bikes?",
+        answer:
+          "A bit more, mainly around the folding mechanism and smaller components, but not dramatically so. Most owners describe it as a handful of small habits (checking hinges, keeping the chain clean, monitoring tire pressure) rather than anything time-consuming or expensive.",
+      },
+      {
+        question: "How long does the battery last before it degrades?",
+        answer:
+          "Most lithium-ion e-bike batteries hold up well for 500 to 1,000 full charge cycles before you notice meaningful capacity loss, which typically works out to somewhere around 2 to 4 years of regular use depending on how you charge and store it. Owners who avoided letting the battery sit fully drained or fully charged for long stretches generally reported slower degradation.",
+      },
+      {
+        question: "Is the fold mechanism still smooth after a year?",
+        answer:
+          "For most owners, yes, especially with occasional hinge checks and light lubrication. Bikes folded multiple times daily tend to develop a slightly looser feel over time compared to ones folded less often, but this is usually a minor adjustment rather than a real mechanical problem.",
+      },
+    ],
+  },
+  {
     id: "best-folding-bike-for-the-money",
     slug: "best-folding-bike-for-the-money",
     categorySlug: "guides",
