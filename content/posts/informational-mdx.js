@@ -5,6 +5,306 @@
  */
 export const mdxInformationalArticles = [
   {
+    id: "costco-electric-bike-disadvantages",
+    slug: "costco-electric-bike-disadvantages",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "costco-electric-bike-disadvantages.mdx",
+    title: "Costco Electric Bike Disadvantages: What to Know",
+    seoTitle: "Costco Electric Bike Disadvantages: What to Know",
+    h1: "The Real Downsides of Buying an E-Bike at Costco",
+    metaDescription:
+      "Thinking about a Costco electric bike? Here are the real disadvantages, from limited models to spotty local shop support, and how to work around them.",
+    heroImage: "/images/info/costco-electric-bike-disadvantages%201.webp",
+    cardImage: "/images/info/costco-electric-bike-disadvantages%202.webp",
+    articleHeroImage: "/images/info/costco-electric-bike-disadvantages.webp",
+    heroImageAlt:
+      "Real disadvantages of buying an electric bike at Costco warehouses",
+    estimatedReadingTime: 10,
+    publishedAt: "2026-08-12T13:00:00.000Z",
+    updatedAt: "2026-08-12T13:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Are Costco E-Bikes Any Good? An Honest Look Past the Return Policy",
+        url: "/guides/are-costco-ebikes-any-good",
+      },
+      {
+        title: "What Folding E-Bikes Does Costco Actually Sell Right Now?",
+        url: "/guides/costco-folding-electric-bike",
+      },
+      {
+        title: "Costco $399 Electric Bike: Is It Real? What You'll Actually Get",
+        url: "/guides/costco-399-electric-bike",
+      },
+      {
+        title:
+          "Costco vs. Direct-to-Consumer Folding E-Bikes: Which Is Actually the Better Deal?",
+        url: "/guides/costco-vs-direct-to-consumer-folding-ebikes",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I get parts for a Costco e-bike elsewhere?",
+        answer:
+          "Sometimes, yes. Standard parts like tires, brake pads, and cables are usually interchangeable with parts from any bike shop. Proprietary parts, like a specific battery pack or a custom display unit, are trickier and typically need to come from the manufacturer directly, not Costco itself.",
+      },
+      {
+        question: "Does Costco offer bike tune-ups?",
+        answer:
+          "Costco doesn't run in-house bike service departments the way a specialty shop does. Basic assembly is usually included when the bike arrives, but ongoing maintenance, like brake adjustments or motor diagnostics, has to be handled through a local bike shop or the bike manufacturer's own service network. This is exactly why calling ahead to check local shop support matters so much before you buy.",
+      },
+      {
+        question:
+          "What happens if my Costco e-bike breaks after the return window?",
+        answer:
+          "Once you're past Costco's return window, you're generally dealing with the manufacturer's warranty rather than Costco directly. Coverage varies quite a bit by brand, so it's worth reading the warranty terms before you buy, not after something goes wrong.",
+      },
+    ],
+  },
+  {
+    id: "costco-399-electric-bike",
+    slug: "costco-399-electric-bike",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "costco-399-electric-bike.mdx",
+    title: "Costco $399 Electric Bike: Is It Real? What You'll Actually Get",
+    seoTitle: "Costco $399 Electric Bike: Is It Real? What You'll Actually Get",
+    h1: "Does Costco Really Sell a $399 Electric Bike?",
+    metaDescription:
+      "Yes, Costco sells a $399 electric bike right now. Here's exactly which model it is, what you get, and when the price isn't real.",
+    heroImage: "/images/info/costco-399-electric-bike%201.webp",
+    cardImage: "/images/info/costco-399-electric-bike%202.webp",
+    articleHeroImage: "/images/info/costco-399-electric-bike.webp",
+    heroImageAlt: "Costco Jetson Bolt Pro Max electric bike priced at $399.99",
+    estimatedReadingTime: 9,
+    publishedAt: "2026-08-12T12:00:00.000Z",
+    updatedAt: "2026-08-12T12:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Costco Electric Bike Disadvantages: What to Know",
+        url: "/guides/costco-electric-bike-disadvantages",
+      },
+      {
+        title: "What Folding E-Bikes Does Costco Actually Sell Right Now?",
+        url: "/guides/costco-folding-electric-bike",
+      },
+      {
+        title: "Are Costco E-Bikes Any Good? An Honest Look Past the Return Policy",
+        url: "/guides/are-costco-ebikes-any-good",
+      },
+      {
+        title:
+          "Costco vs. Direct-to-Consumer Folding E-Bikes: Which Is Actually the Better Deal?",
+        url: "/guides/costco-vs-direct-to-consumer-folding-ebikes",
+      },
+    ],
+    faqs: [
+      {
+        question: "Does Costco ever discount e-bikes below $400?",
+        answer:
+          "Yes, in the US the Jetson Bolt Pro Max currently sells for $399.99, and past models have dipped as low as $269.99 during in-store clearance events. Canada hasn't seen a standing $399 listing, with $529.99 currently being the floor.",
+      },
+      {
+        question: "Are clearance e-bikes still under warranty?",
+        answer:
+          "Generally yes. Manufacturer warranties typically transfer with the bike regardless of what you paid, and Costco's own return policy applies to clearance items the same way it applies to full-price ones, though it's smart to confirm return windows for e-bikes specifically since electronics sometimes carry shorter timelines than general merchandise.",
+      },
+      {
+        question: "Is a $399 e-bike safe to ride?",
+        answer:
+          "It can be, but it comes with real trade-offs. Lower weight capacities, smaller motors, and occasional reports of loose components mean you should inspect the bike carefully after assembly, especially the brakes, before riding it anywhere with traffic. If anything feels off, use Costco's return policy rather than riding it anyway.",
+      },
+    ],
+  },
+  {
+    id: "best-electric-folding-bikes",
+    slug: "best-electric-folding-bikes",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "best-electric-folding-bikes.mdx",
+    title: "Our Top Picks for the Best Electric Folding Bike Right Now",
+    seoTitle: "Best Electric Folding Bikes: Tested Picks by Category",
+    h1: "Our Top Picks for the Best Electric Folding Bike Right Now",
+    metaDescription:
+      "Our picks for the best electric folding bikes right now, including the top budget, heavy-rider, and under-$1,000 options, based on current specs and reviews.",
+    heroImage: "/images/info/best-electric-folding-bikes%201.webp",
+    cardImage: "/images/info/best-electric-folding-bikes%202.webp",
+    articleHeroImage: "/images/info/best-electric-folding-bikes.webp",
+    heroImageAlt:
+      "Best electric folding bikes picked by category for commuting, budget, and heavy riders",
+    estimatedReadingTime: 11,
+    publishedAt: "2026-08-12T11:00:00.000Z",
+    updatedAt: "2026-08-12T11:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Best Folding Electric Bike: Tested by Use Case (2026)",
+        url: "/guides/best-folding-electric-bike",
+      },
+      {
+        title: "Best Folding Bike for the Money: 2026 Value Guide",
+        url: "/guides/best-folding-bike-for-the-money",
+      },
+      {
+        title: "Best Electric Folding Bikes 2026",
+        url: "/electric-folding-bikes/best-electric-folding-bikes",
+      },
+      {
+        title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
+        url: "/guides/foldable-electric-bike-buying-guide",
+      },
+    ],
+    faqs: [
+      {
+        question: "What's the best electric folding bike overall?",
+        answer:
+          "Right now, the Velotric Fold 1 Plus takes the top spot, mainly because of its combination of range, payload capacity, and features that usually only show up on more expensive, non-folding e-bikes.",
+      },
+      {
+        question: "What's the cheapest electric folding bike worth buying?",
+        answer:
+          "The GoTrax eFold, at around $499, is the most reasonable budget option currently available. It skips premium features like hydraulic brakes and a torque sensor, but it's a legitimate, functional folding e-bike rather than a corner-cut knockoff.",
+      },
+      {
+        question: "Are electric folding bikes good for heavier riders?",
+        answer:
+          "Some are, but you need to check the payload rating specifically rather than assuming a higher-priced bike automatically means a higher weight limit. The Velotric Fold 1 Plus stands out here with a 450-lb payload capacity, well above most competitors.",
+      },
+      {
+        question: "Is there a good electric folding bike under $1,000?",
+        answer:
+          "Yes. The Lectric XP4 (500W version) starts at $999 and includes features like a torque sensor and hydraulic brakes that aren't common at that price point.",
+      },
+      {
+        question: "Do folding e-bikes ride as well as regular e-bikes?",
+        answer:
+          "The best ones come close. You'll usually give up a little in ride smoothness and top-end refinement compared to a full-size e-bike from a premium brand, but the gap has narrowed a lot. For most commuting and errand use, you likely won't notice much difference.",
+      },
+    ],
+  },
+  {
+    id: "are-costco-ebikes-any-good",
+    slug: "are-costco-ebikes-any-good",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "are-costco-ebikes-any-good.mdx",
+    title: "Are Costco E-Bikes Any Good? An Honest Look Past the Return Policy",
+    seoTitle: "Are Costco E-Bikes Any Good? An Honest Look Past the Return Policy",
+    h1: "Are Costco E-Bikes Any Good? An Honest Look Past the Return Policy",
+    metaDescription:
+      "Are Costco e-bikes any good, or is the return policy doing all the heavy lifting? Here's an honest breakdown of quality, certification, and fit.",
+    heroImage: "/images/info/are-costco-ebikes-any-good%201.webp",
+    cardImage: "/images/info/are-costco-ebikes-any-good%202.webp",
+    articleHeroImage: "/images/info/are-costco-ebikes-any-good.webp",
+    heroImageAlt:
+      "Honest look at Costco electric bike quality beyond the return policy",
+    estimatedReadingTime: 10,
+    publishedAt: "2026-08-12T10:00:00.000Z",
+    updatedAt: "2026-08-12T10:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Costco Electric Bike Disadvantages: What to Know",
+        url: "/guides/costco-electric-bike-disadvantages",
+      },
+      {
+        title: "Costco $399 Electric Bike: Is It Real? What You'll Actually Get",
+        url: "/guides/costco-399-electric-bike",
+      },
+      {
+        title: "What Folding E-Bikes Does Costco Actually Sell Right Now?",
+        url: "/guides/costco-folding-electric-bike",
+      },
+      {
+        title:
+          "Costco vs. Direct-to-Consumer Folding E-Bikes: Which Is Actually the Better Deal?",
+        url: "/guides/costco-vs-direct-to-consumer-folding-ebikes",
+      },
+    ],
+    faqs: [
+      {
+        question: "Are Costco e-bike batteries certified?",
+        answer:
+          "Generally, yes. The e-bikes Costco carries typically use batteries that meet recognized safety certifications like UL 2271, and the electrical systems are built to UL 2849 standards, since Costco's vendor requirements screen for this. That said, certification standards and specific battery suppliers can vary by model and by year, so it's worth confirming the certification listed on the specific bike's product page rather than assuming it automatically applies to every e-bike Costco has ever sold.",
+      },
+      {
+        question:
+          "Do Costco e-bikes come with a warranty beyond the return window?",
+        answer:
+          "Yes, most Costco e-bikes carry a manufacturer's warranty separate from Costco's own 90-day return policy, typically covering the frame and major components for a year or more, depending on the brand. The catch is that warranty service usually runs through the bike's manufacturer rather than through Costco directly, so response times and part availability depend on that specific vendor's support infrastructure, not on Costco itself.",
+      },
+      {
+        question: "Can a local bike shop service a Costco e-bike?",
+        answer:
+          "Most local bike shops can handle general maintenance on a Costco e-bike (tire changes, brake adjustments, tune-ups) without much trouble. Where it gets trickier is proprietary electrical components. Some shops are hesitant to work on unfamiliar e-bike motor systems or battery packs, either due to liability concerns or lack of parts access, so it's worth calling ahead to confirm before you assume any shop will take the job.",
+      },
+    ],
+  },
+  {
+    id: "costco-folding-electric-bike",
+    slug: "costco-folding-electric-bike",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "costco-folding-electric-bike.mdx",
+    title: "What Folding E-Bikes Does Costco Actually Sell Right Now?",
+    seoTitle: "Costco Folding Electric Bikes: Every Model & Price 2026",
+    h1: "What Folding E-Bikes Does Costco Actually Sell Right Now?",
+    metaDescription:
+      "Every folding electric bike Costco currently sells, in-store and online, with real prices, specs, and how often the lineup rotates.",
+    heroImage: "/images/info/costco-folding-electric-bike%201.webp",
+    cardImage: "/images/info/costco-folding-electric-bike%202.webp",
+    articleHeroImage: "/images/info/costco-folding-electric-bike.webp",
+    heroImageAlt:
+      "Folding electric bikes currently sold at Costco warehouses and Costco.com",
+    estimatedReadingTime: 10,
+    publishedAt: "2026-08-12T09:00:00.000Z",
+    updatedAt: "2026-08-12T09:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Costco $399 Electric Bike: Is It Real? What You'll Actually Get",
+        url: "/guides/costco-399-electric-bike",
+      },
+      {
+        title: "Are Costco E-Bikes Any Good? An Honest Look Past the Return Policy",
+        url: "/guides/are-costco-ebikes-any-good",
+      },
+      {
+        title:
+          "Costco vs. Direct-to-Consumer Folding E-Bikes: Which Is Actually the Better Deal?",
+        url: "/guides/costco-vs-direct-to-consumer-folding-ebikes",
+      },
+      {
+        title: "Our Top Picks for the Best Electric Folding Bike Right Now",
+        url: "/guides/best-electric-folding-bikes",
+      },
+    ],
+    faqs: [
+      {
+        question: "Does every Costco carry the same e-bikes?",
+        answer:
+          "No. Warehouse inventory varies by region, size, and local demand, so one Costco might stock the Jetson Bolt Pro and Hiboy C1 while another nearby location carries only one of the two, or neither. Checking your specific warehouse's app listing or calling ahead is the most reliable way to know what's actually on the floor.",
+      },
+      {
+        question: "Can I buy a Costco e-bike online and return it in-store?",
+        answer:
+          "Yes. Costco.com orders can be returned to any of its more than 800 warehouses worldwide, which is one of the real advantages of buying an e-bike through Costco versus a smaller online-only retailer. Just keep your original packaging if possible, since large items like bikes are easier to process as returns when they're reasonably intact.",
+      },
+      {
+        question: "How often does Costco restock e-bikes?",
+        answer:
+          "There's no fixed schedule. Restocking depends on how fast a particular model sells at a given warehouse, manufacturer supply, and whether Costco has decided to keep that item in ongoing rotation versus phasing it out. The Jetson Bolt Pro has been restocked repeatedly over several years, while newer arrivals like the Hiboy C1 don't have that track record yet.",
+      },
+    ],
+  },
+  {
     id: "best-foldable-e-bike-brands-compared",
     slug: "best-foldable-e-bike-brands-compared",
     categorySlug: "guides",
@@ -31,8 +331,8 @@ export const mdxInformationalArticles = [
         url: "/guides/how-do-folding-electric-bikes-fold",
       },
       {
-        title: "Best Electric Folding Bikes 2026",
-        url: "/electric-folding-bikes/best-electric-folding-bikes",
+        title: "Our Top Picks for the Best Electric Folding Bike Right Now",
+        url: "/guides/best-electric-folding-bikes",
       },
       {
         title: "Are Foldable E-Bikes Any Good? Owner Reviews After 6 Months",
@@ -87,20 +387,20 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-08-11T09:00:00.000Z",
     relatedGuides: [
       {
-        title: "Best Folding Bike for the Money: 2026 Value Guide",
-        url: "/guides/best-folding-bike-for-the-money",
+        title: "Costco Electric Bike Disadvantages: What to Know",
+        url: "/guides/costco-electric-bike-disadvantages",
       },
       {
-        title: "Best Electric Folding Bikes 2026",
-        url: "/electric-folding-bikes/best-electric-folding-bikes",
+        title: "Costco $399 Electric Bike: Is It Real? What You'll Actually Get",
+        url: "/guides/costco-399-electric-bike",
       },
       {
-        title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
-        url: "/guides/foldable-electric-bike-buying-guide",
+        title: "Are Costco E-Bikes Any Good? An Honest Look Past the Return Policy",
+        url: "/guides/are-costco-ebikes-any-good",
       },
       {
-        title: "What Electric Bike Should I Buy? A Decision Guide",
-        url: "/guides/what-electric-bike-should-i-buy",
+        title: "What Folding E-Bikes Does Costco Actually Sell Right Now?",
+        url: "/guides/costco-folding-electric-bike",
       },
     ],
     faqs: [
@@ -200,12 +500,12 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-08-10T11:00:00.000Z",
     relatedGuides: [
       {
-        title: "Best Folding Electric Bike: Tested by Use Case (2026)",
-        url: "/guides/best-folding-electric-bike",
+        title: "Our Top Picks for the Best Electric Folding Bike Right Now",
+        url: "/guides/best-electric-folding-bikes",
       },
       {
-        title: "Best Electric Folding Bikes 2026",
-        url: "/electric-folding-bikes/best-electric-folding-bikes",
+        title: "Best Folding Electric Bike: Tested by Use Case (2026)",
+        url: "/guides/best-folding-electric-bike",
       },
       {
         title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
@@ -257,6 +557,10 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-08-10T10:00:00.000Z",
     relatedGuides: [
       {
+        title: "Our Top Picks for the Best Electric Folding Bike Right Now",
+        url: "/guides/best-electric-folding-bikes",
+      },
+      {
         title: "Best Folding Bike for the Money: 2026 Value Guide",
         url: "/guides/best-folding-bike-for-the-money",
       },
@@ -267,10 +571,6 @@ export const mdxInformationalArticles = [
       {
         title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
         url: "/guides/foldable-electric-bike-buying-guide",
-      },
-      {
-        title: "Folding Electric Bike vs Regular E-Bike: Which Wins?",
-        url: "/guides/folding-electric-bike-vs-regular-electric-bike",
       },
     ],
     faqs: [
