@@ -5,6 +5,177 @@
  */
 export const mdxInformationalArticles = [
   {
+    id: "safe-charging-storage-folding-ebike-indoors",
+    slug: "safe-charging-storage-folding-ebike-indoors",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "safe-charging-storage-folding-ebike-indoors.mdx",
+    title: "How to Safely Charge and Store a Folding E-Bike Indoors",
+    seoTitle: "How to Safely Charge and Store a Folding E-Bike Indoors",
+    h1: "Folding E-Bike Charging Safety: What Apartment Dwellers Need to Know",
+    metaDescription:
+      "Live in an apartment with a folding e-bike? Here's how to charge and store it safely, from battery habits to what to check with your landlord.",
+    heroImage: "/images/info/safe-charging-storage-folding-ebike-indoors%201.webp",
+    cardImage: "/images/info/safe-charging-storage-folding-ebike-indoors%202.webp",
+    articleHeroImage: "/images/info/safe-charging-storage-folding-ebike-indoors.webp",
+    heroImageAlt:
+      "Folding e-bike charging indoors on a hard floor away from the apartment exit",
+    estimatedReadingTime: 12,
+    publishedAt: "2026-08-15T15:00:00.000Z",
+    updatedAt: "2026-08-15T15:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Can You Charge an Electric Bike at Home? Full Guide",
+        url: "/guides/can-electric-bike-be-charged-at-home",
+      },
+      {
+        title: "Odds of an E-Bike Battery Exploding: What the Data Shows",
+        url: "/guides/odds-of-e-bike-battery-exploding",
+      },
+      {
+        title: "Are Electric Bike Batteries Dangerous? What the Fire Data Shows",
+        url: "/guides/are-electric-bike-batteries-dangerous",
+      },
+      {
+        title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
+        url: "/guides/foldable-electric-bike-buying-guide",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is it safe to charge an e-bike overnight?",
+        answer:
+          "It's not the safest habit, even if it's the most convenient one. Charging overnight means the battery sits unmonitored for hours, often well past full charge, with nobody around to catch early warning signs like heat or smell. If you can, charge while you're home and awake, and unplug once it reaches full.",
+      },
+      {
+        question: "Can landlords ban e-bikes from apartments?",
+        answer:
+          "Yes, in most cases landlords can restrict or ban e-bikes and lithium battery charging in units, particularly through lease language or building policy. Some cities have also started introducing local fire code rules around this. Check your lease and ask your building management directly before you buy.",
+      },
+      {
+        question: "Should I remove the battery when storing a folded e-bike?",
+        answer:
+          "It's not strictly necessary if the battery is in good condition and you're storing it in a ventilated, temperature-stable spot. That said, removing the battery for long-term storage, say more than a few weeks of no use, and keeping it partially charged in a cool, dry place is generally the better move for battery longevity and peace of mind.",
+      },
+    ],
+  },
+  {
+    id: "odds-of-e-bike-battery-exploding",
+    slug: "odds-of-e-bike-battery-exploding",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "odds-of-e-bike-battery-exploding.mdx",
+    title: "Odds of an E-Bike Battery Exploding: What the Data Shows",
+    seoTitle: "Odds of an E-Bike Battery Exploding: What the Data Shows",
+    h1: "How Likely Is an E-Bike Battery Fire, Really?",
+    metaDescription:
+      "What are the real odds of an e-bike battery exploding? We break down UK OPSS and NYC FDNY fire data to show how rare incidents actually are.",
+    heroImage: "/images/info/odds-of-e-bike-battery-exploding%201.webp",
+    cardImage: "/images/info/odds-of-e-bike-battery-exploding%202.webp",
+    articleHeroImage: "/images/info/odds-of-e-bike-battery-exploding.webp",
+    heroImageAlt:
+      "E-bike battery fire odds compared using UK OPSS and NYC FDNY incident data",
+    estimatedReadingTime: 12,
+    publishedAt: "2026-08-15T14:00:00.000Z",
+    updatedAt: "2026-08-15T14:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Are Electric Bike Batteries Dangerous? What the Fire Data Shows",
+        url: "/guides/are-electric-bike-batteries-dangerous",
+      },
+      {
+        title: "How to Safely Charge and Store a Folding E-Bike Indoors",
+        url: "/guides/safe-charging-storage-folding-ebike-indoors",
+      },
+      {
+        title: "Can You Charge an Electric Bike at Home? Full Guide",
+        url: "/guides/can-electric-bike-be-charged-at-home",
+      },
+      {
+        title: "Can Electric Bike Batteries Be Repaired? What to Know Before You Spend",
+        url: "/guides/can-electric-bike-batteries-be-repaired",
+      },
+    ],
+    faqs: [
+      {
+        question: "Are lithium batteries in e-bikes more dangerous than phone batteries?",
+        answer:
+          "Not fundamentally, they use similar lithium-ion chemistry. The difference is scale and power density. An e-bike battery holds far more energy than a phone battery, so if something does go wrong, the resulting fire is bigger and harder to control. The chemistry risk per cell is comparable, but the consequences of a failure are more serious simply because there's more energy stored in the pack.",
+      },
+      {
+        question: "Is my risk higher with a folding e-bike?",
+        answer:
+          "The data doesn't show folding e-bikes as a distinct higher-risk category compared to standard e-bikes. The main practical difference is that folding models get handled and moved more often, which is a reason to buy from a manufacturer who's engineered the battery housing for that kind of use, rather than a sign that folding bikes are inherently riskier.",
+      },
+      {
+        question: "Does battery age increase fire risk?",
+        answer:
+          "Yes, generally. Batteries degrade with charge cycles, and older cells are more prone to internal faults, particularly if they've also experienced physical damage or repeated deep discharges over the years. Most manufacturers and fire safety guidance suggest paying closer attention to batteries beyond the three-year mark, especially watching for swelling, reduced range, or unusual heat.",
+      },
+    ],
+  },
+  {
+    id: "most-reliable-e-bike-brands",
+    slug: "most-reliable-e-bike-brands",
+    categorySlug: "guides",
+    category: "Guides",
+    contentType: "information",
+    mdxSource: true,
+    mdxFile: "most-reliable-e-bike-brands.mdx",
+    title: "Most Reliable E-Bike Brands: A Data-Backed 2026 Ranking",
+    seoTitle: "Most Reliable E-Bike Brands: A Data-Backed 2026 Ranking",
+    h1: "Which Folding E-Bike Brands Actually Hold Up? A Reliability Breakdown",
+    metaDescription:
+      "See which folding e-bike brands actually hold up, based on UL certification, warranty terms, and real CPSC recall records, not just opinions.",
+    heroImage: "/images/info/most-reliable-e-bike-brands%201.webp",
+    cardImage: "/images/info/most-reliable-e-bike-brands%202.webp",
+    articleHeroImage: "/images/info/most-reliable-e-bike-brands.webp",
+    heroImageAlt:
+      "Folding e-bike brands compared by UL certification, warranty, and recall history",
+    estimatedReadingTime: 12,
+    publishedAt: "2026-08-15T12:00:00.000Z",
+    updatedAt: "2026-08-15T12:00:00.000Z",
+    relatedGuides: [
+      {
+        title: "Best Foldable E-Bike Brands Compared (2026)",
+        url: "/guides/best-foldable-e-bike-brands-compared",
+      },
+      {
+        title: "Best Electric Folding Bikes: A 2026 Buyer's Guide",
+        url: "/guides/best-electric-folding-bikes",
+      },
+      {
+        title: "Are Electric Bike Batteries Dangerous? What the Fire Data Shows",
+        url: "/guides/are-electric-bike-batteries-dangerous",
+      },
+      {
+        title: "Are Foldable E-Bikes Any Good? Owner Reviews After 6 Months",
+        url: "/guides/are-foldable-e-bikes-any-good",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which e-bike brands have had battery recalls?",
+        answer:
+          "Ancheer, VIVI, and Rad Power Bikes have all been the subject of CPSC actions tied specifically to battery fire risk, along with smaller marketplace-only brands like FENGQS and the third-party battery seller UPP. Rad's case was technically a public safety warning rather than a formal recall, since the company and CPSC didn't agree on remedy terms, but functionally it carries the same message: stop using the affected battery immediately.",
+      },
+      {
+        question: "How do I check if my e-bike has an active recall?",
+        answer:
+          "Go to cpsc.gov/Recalls and search your brand and model name. You can also check SaferProducts.gov for reports that may not have escalated to a formal recall yet. If you're not sure whether your specific battery model is affected, most recall notices list the exact model number printed on the battery itself, not just the bike's model name, so check both.",
+      },
+      {
+        question: "Are cheaper brands automatically less reliable?",
+        answer:
+          "Not automatically, no. Price correlates loosely with reliability but it's not the deciding factor. Lectric sits in the mid-price range and handled its 2023 recall about as well as a company can. Rad Power, a brand that built its name on affordability and years of solid reviews, ran into serious battery problems tied more to its 2025 financial troubles than to price positioning itself. What actually predicts reliability is whether a brand invests in certification, keeps a real warranty and service infrastructure, and responds quickly when something goes wrong. Pure marketplace-only brands with no dedicated support line, regardless of price, tend to be the riskiest category, simply because there's no real mechanism to reach you if something needs fixing.",
+      },
+    ],
+  },
+  {
     id: "costco-electric-bike-disadvantages",
     slug: "costco-electric-bike-disadvantages",
     categorySlug: "guides",
@@ -128,19 +299,19 @@ export const mdxInformationalArticles = [
     contentType: "information",
     mdxSource: true,
     mdxFile: "best-electric-folding-bikes.mdx",
-    title: "Our Top Picks for the Best Electric Folding Bike Right Now",
-    seoTitle: "Best Electric Folding Bikes: Tested Picks by Category",
-    h1: "Our Top Picks for the Best Electric Folding Bike Right Now",
+    title: "Best Electric Folding Bikes: A 2026 Buyer's Guide",
+    seoTitle: "Best Electric Folding Bikes: A 2026 Buyer's Guide",
+    h1: "Finding the Right Electric Folding Bike for Your Life",
     metaDescription:
-      "Our picks for the best electric folding bikes right now, including the top budget, heavy-rider, and under-$1,000 options, based on current specs and reviews.",
+      "Looking for the best electric folding bikes in 2026? Here's what to buy at every budget, from cheap commuters to picks built for heavier riders.",
     heroImage: "/images/info/best-electric-folding-bikes%201.webp",
     cardImage: "/images/info/best-electric-folding-bikes%202.webp",
     articleHeroImage: "/images/info/best-electric-folding-bikes.webp",
     heroImageAlt:
-      "Best electric folding bikes picked by category for commuting, budget, and heavy riders",
-    estimatedReadingTime: 11,
+      "2026 electric folding bikes compared by budget, commute, and rider weight",
+    estimatedReadingTime: 14,
     publishedAt: "2026-08-12T11:00:00.000Z",
-    updatedAt: "2026-08-12T11:00:00.000Z",
+    updatedAt: "2026-08-15T13:00:00.000Z",
     relatedGuides: [
       {
         title: "Best Folding Electric Bike: Tested by Use Case (2026)",
@@ -161,29 +332,29 @@ export const mdxInformationalArticles = [
     ],
     faqs: [
       {
-        question: "What's the best electric folding bike overall?",
+        question: "What's the best folding bike overall right now?",
         answer:
-          "Right now, the Velotric Fold 1 Plus takes the top spot, mainly because of its combination of range, payload capacity, and features that usually only show up on more expensive, non-folding e-bikes.",
+          "Among electric models, the Velotric Fold 1 Plus and Lectric XP4 are the two most consistently recommended across 2026 testing, with the Fold 1 Plus edging ahead on features and the XP4 offering stronger value.",
+      },
+      {
+        question: "Where should I actually look for folding bike reviews?",
+        answer:
+          "Stick to outlets that do hands-on, long-term testing rather than single-day first impressions. Weight capacity claims, range estimates, and hinge durability only really show up after weeks of regular use, not a single test ride.",
+      },
+      {
+        question: "Is there a good electric folding bike under $1000?",
+        answer:
+          "Yes. The Engwe L20 2.0 around $800 is the strongest current pick in that range, with the GoTrax eFold as an even cheaper option if $500 is your ceiling.",
       },
       {
         question: "What's the cheapest electric folding bike worth buying?",
         answer:
-          "The GoTrax eFold, at around $499, is the most reasonable budget option currently available. It skips premium features like hydraulic brakes and a torque sensor, but it's a legitimate, functional folding e-bike rather than a corner-cut knockoff.",
+          "The GoTrax eFold around $499 is the best case for spending as little as possible while still getting a real folding e-bike. You give up hydraulic brakes, suspension, and hill-climbing power, but it works as a simple, no-frills commuter.",
       },
       {
-        question: "Are electric folding bikes good for heavier riders?",
+        question: "What should heavier riders check before buying a folding e-bike?",
         answer:
-          "Some are, but you need to check the payload rating specifically rather than assuming a higher-priced bike automatically means a higher weight limit. The Velotric Fold 1 Plus stands out here with a 450-lb payload capacity, well above most competitors.",
-      },
-      {
-        question: "Is there a good electric folding bike under $1,000?",
-        answer:
-          "Yes. The Lectric XP4 (500W version) starts at $999 and includes features like a torque sensor and hydraulic brakes that aren't common at that price point.",
-      },
-      {
-        question: "Do folding e-bikes ride as well as regular e-bikes?",
-        answer:
-          "The best ones come close. You'll usually give up a little in ride smoothness and top-end refinement compared to a full-size e-bike from a premium brand, but the gap has narrowed a lot. For most commuting and errand use, you likely won't notice much difference.",
+          "Start with total payload, not just rider weight, and leave a 50 to 75 pound buffer for cargo. Then check torque (at least 55Nm if you ride hills), tire width, and hydraulic disc brakes. The Lectric XP 3.0 (330 lbs) and Tern HSD P9 (375 lbs) are the models that actually leave room for heavier riders.",
       },
     ],
   },
@@ -282,7 +453,7 @@ export const mdxInformationalArticles = [
         url: "/guides/costco-vs-direct-to-consumer-folding-ebikes",
       },
       {
-        title: "Our Top Picks for the Best Electric Folding Bike Right Now",
+        title: "Best Electric Folding Bikes: A 2026 Buyer's Guide",
         url: "/guides/best-electric-folding-bikes",
       },
     ],
@@ -327,20 +498,20 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-08-11T11:00:00.000Z",
     relatedGuides: [
       {
+        title: "Most Reliable E-Bike Brands: A Data-Backed 2026 Ranking",
+        url: "/guides/most-reliable-e-bike-brands",
+      },
+      {
         title: "How Do Folding Electric Bikes Fold? Every Mechanism Explained",
         url: "/guides/how-do-folding-electric-bikes-fold",
       },
       {
-        title: "Our Top Picks for the Best Electric Folding Bike Right Now",
+        title: "Best Electric Folding Bikes: A 2026 Buyer's Guide",
         url: "/guides/best-electric-folding-bikes",
       },
       {
         title: "Are Foldable E-Bikes Any Good? Owner Reviews After 6 Months",
         url: "/guides/are-foldable-e-bikes-any-good",
-      },
-      {
-        title: "Foldable Electric Bike Buying Guide: 9 Things to Check",
-        url: "/guides/foldable-electric-bike-buying-guide",
       },
     ],
     faqs: [
@@ -500,7 +671,7 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-08-10T11:00:00.000Z",
     relatedGuides: [
       {
-        title: "Our Top Picks for the Best Electric Folding Bike Right Now",
+        title: "Best Electric Folding Bikes: A 2026 Buyer's Guide",
         url: "/guides/best-electric-folding-bikes",
       },
       {
@@ -557,7 +728,7 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-08-10T10:00:00.000Z",
     relatedGuides: [
       {
-        title: "Our Top Picks for the Best Electric Folding Bike Right Now",
+        title: "Best Electric Folding Bikes: A 2026 Buyer's Guide",
         url: "/guides/best-electric-folding-bikes",
       },
       {
@@ -1717,6 +1888,10 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-07-20T18:00:00.000Z",
     relatedGuides: [
       {
+        title: "How to Safely Charge and Store a Folding E-Bike Indoors",
+        url: "/guides/safe-charging-storage-folding-ebike-indoors",
+      },
+      {
         title: "Are Electric Bike Batteries Dangerous? What the Fire Data Shows",
         url: "/guides/are-electric-bike-batteries-dangerous",
       },
@@ -1751,6 +1926,10 @@ export const mdxInformationalArticles = [
     publishedAt: "2026-07-20T17:00:00.000Z",
     updatedAt: "2026-07-20T17:00:00.000Z",
     relatedGuides: [
+      {
+        title: "Odds of an E-Bike Battery Exploding: What the Data Shows",
+        url: "/guides/odds-of-e-bike-battery-exploding",
+      },
       {
         title: "How Much Does an Electric Bike Cost? 2026 Guide",
         url: "/guides/how-much-does-an-electric-bike-cost",
@@ -2033,16 +2212,20 @@ export const mdxInformationalArticles = [
     updatedAt: "2026-07-18T10:00:00.000Z",
     relatedGuides: [
       {
+        title: "Odds of an E-Bike Battery Exploding: What the Data Shows",
+        url: "/guides/odds-of-e-bike-battery-exploding",
+      },
+      {
+        title: "Most Reliable E-Bike Brands: A Data-Backed 2026 Ranking",
+        url: "/guides/most-reliable-e-bike-brands",
+      },
+      {
         title: "Can You Charge an Electric Bike at Home? Full Guide",
         url: "/guides/can-electric-bike-be-charged-at-home",
       },
       {
         title: "Can Electric Bike Batteries Be Repaired?",
         url: "/guides/can-electric-bike-batteries-be-repaired",
-      },
-      {
-        title: "How Much Does an Electric Bike Cost? 2026 Guide",
-        url: "/guides/how-much-does-an-electric-bike-cost",
       },
     ],
   },
