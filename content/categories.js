@@ -111,6 +111,13 @@ export const categories = [
     description:
       "In-depth Ferla e-bike reviews: family cargo trikes tested for real-world payload, safety, range, and everyday usability.",
   },
+  {
+    slug: "helokeep",
+    name: "Helokeep",
+    heroImage: "/images/brand/helokeep/Helokeep26M.webp",
+    description:
+      "In-depth Helokeep e-bike reviews: budget full-suspension electric mountain bikes tested for real-world power, payload, range, and cargo-hauling capability.",
+  },
 ];
 
 /**

@@ -136,6 +136,13 @@ export const placements = {
         "electric-bikes/best-electric-bikes",
       ],
     },
+    helokeep: {
+      sidebar: [
+        "electric-mountain-bikes/helokeep-26m-review",
+        "electric-mountain-bikes/best-electric-mountain-bikes",
+        "electric-bikes/best-electric-bikes",
+      ],
+    },
   },
 
   // ============================================================
