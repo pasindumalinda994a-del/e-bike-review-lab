@@ -40,6 +40,8 @@ const velotricDealAffiliateLinks = {
     "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-discover-3-commuter-ebike%3F_pos%3D1%26_sid%3D097301faa%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_discover_3_ebike&ctc=EBRL%20Website",
   "velotric-discover-max":
     "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-discover-m-mid-drive-ebike%3F_pos%3D4%26_sid%3D87f286046%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_discover_m_ebike&ctc=EBRL%20Website",
+  "velotric-discover-m":
+    "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-discover-m-mid-drive-ebike%3F_pos%3D4%26_sid%3D87f286046%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_discover_m_ebike&ctc=EBRL%20Website",
   "velotric-summit-2":
     "https://www.avantlink.com/click.php?tool_type=cl&merchant_id=357cd2d0-110e-47d6-a7fb-9292be27d1ed&website_id=87d746cd-978c-4397-9493-b0a997177a2f&url=https%3A%2F%2Fwww.velotricbike.com%2Fproducts%2Fvelotric-summit-2-hybrid-ebike%3F_pos%3D1%26_sid%3Dab004f11e%26_ss%3Dr%26page_source%3Dproduct_selection_ShopProductsGrid%257Cvelotric_summit_2_ebike&ctc=EBRL%20Website",
   "velotric-tempo":
@@ -457,6 +459,388 @@ export const dealArticles = [
         url: "/electric-bikes/best-electric-commuter-bikes",
         description:
           "A practical guide to picking an e-bike for daily rides and transit commutes",
+      },
+    ],
+  },
+  {
+    // --- Post metadata ---
+    categorySlug: "deals",
+    category: "Deals",
+    contentType: "deal",
+    slug: "best-electric-bikes-deals",
+
+    // --- SEO & headings ---
+    title: "Best Electric Bikes on Sale: Velotric Black Friday Deals (Nov 2026)",
+    seoTitle: "Best Electric Bikes: Black Friday Deals, Save Up to $760",
+    h1: "Velotric Black Friday E-Bike Deals Worth Grabbing Right Now",
+    metaDescription:
+      "Velotric's Black Friday sale is live through Nov 15. See 11 e-bike deals, what's a real price cut versus free accessories, and who each bike suits.",
+
+    // --- Images ---
+    heroImage: "/images/deal/Velotric Prime Day Deal.webp",
+    cardImage: "/images/deal/Velotric Prime Day Deal.webp",
+    articleHeroImage: "/images/deal/Velotric Prime Day Deal.webp",
+    heroImageAlt:
+      "Velotric electric bikes lineup for the Black Friday 2026 sale with savings up to $760",
+    bannerImages: [
+      {
+        src: "/images/deal/BlackFriday/Always On/728x90px.jpg",
+        srcCompact: "/images/deal/BlackFriday/Always On/468x60px.jpg",
+        alt: "Velotric Black Friday sale: always-on e-bike deals",
+      },
+      {
+        src: "/images/deal/BlackFriday/Discover 3/728x90px.jpg",
+        srcCompact: "/images/deal/BlackFriday/Discover 3/468x60px.jpg",
+        alt: "Velotric Black Friday sale: Discover 3 commuter e-bike deal",
+      },
+      {
+        src: "/images/deal/BlackFriday/Fold 1 Plus/728x90px.jpg",
+        srcCompact: "/images/deal/BlackFriday/Fold 1 Plus/468x60px.jpg",
+        alt: "Velotric Black Friday sale: Fold 1 Plus folding e-bike deal",
+      },
+    ],
+    sidebarImages: [
+      {
+        src: "/images/deal/BlackFriday/Always On/250x250px.jpg",
+        alt: "Velotric Black Friday sale: always-on e-bike deals",
+      },
+      {
+        src: "/images/deal/BlackFriday/Discover 3/250x250px.jpg",
+        alt: "Velotric Black Friday sale: Discover 3 commuter e-bike deal",
+      },
+      {
+        src: "/images/deal/BlackFriday/Fold 1 Plus/250x250px.jpg",
+        alt: "Velotric Black Friday sale: Fold 1 Plus folding e-bike deal",
+      },
+    ],
+    popupImages: [
+      {
+        src: "/images/deal/BlackFriday/Always On/125x125px.jpg",
+        alt: "Velotric Black Friday sale: always-on e-bike deals",
+      },
+      {
+        src: "/images/deal/BlackFriday/Discover 3/125x125px.jpg",
+        alt: "Velotric Black Friday sale: Discover 3 commuter e-bike deal",
+      },
+      {
+        src: "/images/deal/BlackFriday/Fold 1 Plus/125x125px.jpg",
+        alt: "Velotric Black Friday sale: Fold 1 Plus folding e-bike deal",
+      },
+    ],
+
+    // --- Intro ---
+    introductionParagraphs: [
+      "Black Friday e-bike pricing usually shows up late in November, so seeing Velotric start early is a nice surprise. Their Black Friday and Cyber Monday sale has already kicked off, and this first phase runs from November 2 to November 15, 2026. If you've been shopping for the best electric bikes and waiting for a reason to pull the trigger, this is a decent one.",
+      "Here's what I did: I went through Velotric's official campaign sheet and listed all 11 bikes in the Phase 1 lineup with their sale prices. I also split each offer into two buckets, real price cuts and free accessories, because those aren't the same thing. A $600 discount and a free mirror both get called \"savings,\" but only one of them stays in your pocket. Prices can change, so double-check the product page before you buy.",
+    ],
+
+    // --- Disclosure (extra field, render near the top of the article) ---
+    affiliateDisclosure:
+      "Heads up: some links on this page are affiliate links. If you buy through them, EBikeReviewLab may earn a commission at no extra cost to you. It doesn't change the price you pay or which bikes we list.",
+
+    // --- Post settings ---
+    estimatedReadingTime: 6,
+    publishedAt: "2026-11-05T00:00:00Z",
+    dealEndsAt: "2026-11-15T23:59:59-05:00",
+    countdownHeadline: "Phase 1 Sale Ends November 15",
+    countdownSubline:
+      "Later phases may bring different offers, so these exact prices only apply through Nov 15",
+    productCtaLabel: "Check Deal",
+    dealsTableTitle: "All Velotric Electric Bike Deals at a Glance",
+
+    // --- Quick buyer guide (extra field, short block above the deal cards) ---
+    buyerGuideTitle: "Which Bike Fits Which Rider?",
+    buyerGuide: [
+      "Daily commuters: Start with the Discover 3. It's built as a commuter bike and it's the best-priced of the Discover models right now. The Tempo is the cheaper city option, though the discount there is small.",
+      "Small spaces or mixed transit: The Fold 1 Plus is the folding pick, and at $300 off it's one of the better price cuts in this batch.",
+      "Riders who want a step-thru: Some Nomad 2X variants come in a step-thru frame, which is usually easier to get on and off. Check the product page for which variant is on sale.",
+      "Trail and hybrid riding: Look at the Summit 1 and Summit 2. The Summit 1 has the largest real discount in the whole sale. Confirm terrain and range details on the product pages.",
+      "Hauling people or gear: The GoMad comes with a choice of passenger kit, and the Breeze 1 and Nomad 2 bundles include extras like a pannier bag or a battery.",
+    ],
+
+    // --- Deal cards ---
+    deals: [
+      {
+        id: "velotric-discover-3",
+        name: "Velotric Discover 3",
+        imageUrl: "/images/deal/Velotric Discover 3.webp",
+        badge: "Top Pick for Commuters",
+        description:
+          "The sale price is $1,899, which is $100 off, and Velotric adds a free rack top bag and left mirror worth $135.98. So the real cash savings are $100, and the rest is useful gear you'd probably buy anyway. If you're after a commuter e-bike and want the extras covered, this is the easiest recommendation here.",
+        affiliateLink: velotricDealAffiliateLinks["velotric-discover-3"],
+        dealPrice: "$1,899",
+        originalPrice: "$1,999",
+        offer: "$100 off + free Rack Top Bag & Left Mirror ($135.98 value)",
+        totalSavings: "$235.98",
+        dealType: "price-cut",
+        limitedStock: false,
+        pros: [
+          "Free rack bag and mirror are things commuters actually use",
+          "Cash discount plus accessories, so you're not just getting freebies",
+          "Built as a commuter bike, which matches how most people ride",
+        ],
+        cons: [
+          "Only $100 of the $235.98 is a true price cut",
+          "Rack bag and mirror are only worth it if you'd use them",
+        ],
+      },
+      {
+        id: "velotric-discover-m",
+        name: "Velotric Discover M",
+        imageUrl: "/images/deal/Velotric Discover Max.webp",
+        badge: "$100 Off + Free Rack Bag",
+        description:
+          "This is the mid-drive model, priced at $2,399 after a $100 cut, with a free rack top bag worth $95.99. It's the priciest bike in this sale, so a $100 discount is modest in percentage terms. Still, if a mid-drive setup is what you want, you're getting a bit of cash back and a bag.",
+        affiliateLink: velotricDealAffiliateLinks["velotric-discover-m"],
+        dealPrice: "$2,399",
+        originalPrice: "$2,499",
+        offer: "$100 off + free Rack Top Bag ($95.99 value)",
+        totalSavings: "$195.99",
+        dealType: "price-cut",
+        limitedStock: false,
+        pros: [
+          "Mid-drive option, which is what some riders specifically look for",
+          "Free rack top bag included with the discount",
+        ],
+        cons: [
+          "Highest sticker price in the Phase 1 lineup",
+          "The $100 cut is about 4%, so don't expect a deep discount",
+        ],
+      },
+      {
+        id: "velotric-fold-1-plus",
+        name: "Velotric Fold 1 Plus",
+        imageUrl: "/images/deal/Velotric Fold 1 Plus.webp",
+        badge: "Save $300 + Free Mirror",
+        description:
+          "Now $1,199, down $300 from $1,499, and that's a real 20% cut. Velotric also throws in a left mirror worth $39.99. For folding e-bike shoppers, this is the strongest deal of the priority three because most of the savings is actual money off.",
+        affiliateLink: velotricDealAffiliateLinks["velotric-fold-1-plus"],
+        dealPrice: "$1,199",
+        originalPrice: "$1,499",
+        offer: "$300 off + free Left Mirror ($39.99 value)",
+        totalSavings: "$339.99",
+        dealType: "price-cut",
+        limitedStock: false,
+        pros: [
+          "$300 off is a genuine, meaningful discount",
+          "Folding frame suits apartments, car trunks and mixed commutes",
+        ],
+        cons: [
+          "The free item is just a mirror, so the value is mostly in the cash cut",
+          "Folding bikes aren't for everyone, so check the specs against your riding",
+        ],
+      },
+      {
+        id: "velotric-summit-1",
+        name: "Velotric Summit 1",
+        imageUrl: "/images/deal/Velotric Summit 1.webp",
+        badge: "Biggest Price Cut",
+        description:
+          "This one has the largest real discount in the sale. It drops from $1,999 to $1,399, which is $600 off or 30%, plus a free left mirror worth $39.99. Honestly, if the Summit 1 fits the way you ride, this is the deal that saves you the most actual cash.",
+        affiliateLink: velotricDealAffiliateLinks["velotric-summit-1"],
+        dealPrice: "$1,399",
+        originalPrice: "$1,999",
+        offer: "$600 off + free Left Mirror ($39.99 value)",
+        totalSavings: "$639.99",
+        dealType: "price-cut",
+        limitedStock: false,
+        pros: [
+          "30% off is the deepest cash discount in Phase 1",
+          "Mirror included on top",
+        ],
+        cons: [
+          "I'd check the product page for terrain and range details before assuming it fits your riding",
+          "A discount this size can mean it won't last, so look at stock on the page",
+        ],
+      },
+      {
+        id: "velotric-discover-2",
+        name: "Velotric Discover 2",
+        imageUrl: "/images/deal/Velotric Discover 2.webp",
+        badge: "Save $500",
+        description:
+          "Down from $1,999 to $1,499, with no accessories attached. It's a clean $500 off, which makes the math simple. If you don't need extras and just want the lower price, this is straightforward value.",
+        affiliateLink: velotricDealAffiliateLinks["velotric-discover-2"],
+        dealPrice: "$1,499",
+        originalPrice: "$1,999",
+        offer: "$500 off",
+        totalSavings: "$500",
+        dealType: "price-cut",
+        limitedStock: false,
+        pros: [
+          "25% off with all of it in real savings",
+          "No bundle, so you pay only for the bike",
+        ],
+        cons: [
+          "No free accessories like some other models get",
+          "Compare it against the Discover 3 on the product pages before choosing",
+        ],
+      },
+      {
+        id: "velotric-nomad-2x",
+        name: "Velotric Nomad 2X",
+        imageUrl: "/images/deal/Velotric Nomad 2X.webp",
+        badge: "Free Battery + Pannier Bag",
+        description:
+          "Here's where the fine print matters. Velotric includes a free Nomad 2X battery, left mirror and pannier bag worth $659.97. The extra $100 bike discount only applies to the Royal Blue non-MTC high-step ($2,299, down from $2,399) and the MTC high-step or step-thru ($2,399, down from $2,499). Other versions stay at $2,399 and just get the bundle, so the \"up to $759.97\" figure is for the discounted variants only.",
+        affiliateLink: velotricDealAffiliateLinks["velotric-nomad-2x"],
+        dealPrice: "$2,299",
+        originalPrice: "$2,399",
+        offer:
+          "Free battery, left mirror & pannier bag ($659.97 value) + $100 off select variants",
+        totalSavings: "Up to $759.97",
+        dealType: "price-cut",
+        limitedStock: false,
+        pros: [
+          "A free extra battery is a big add-on if range matters to you",
+          "Step-thru option is available in the discounted MTC variants",
+        ],
+        cons: [
+          "Only certain variants get the $100 price cut",
+          "Most of the headline savings is accessory value, not cash",
+        ],
+      },
+      {
+        id: "velotric-nomad-2",
+        name: "Velotric Nomad 2",
+        imageUrl: "/images/deal/Velotric Nomad 2.webp",
+        badge: "Free Battery & Mirror",
+        description:
+          "No price cut here. The bike stays at $1,999, but you get a free Nomad 2 battery and left mirror worth $539.98. That's a bonus deal, so the value depends on whether you'd actually want a second battery. Velotric lists it as limited stock while supplies last.",
+        affiliateLink: velotricDealAffiliateLinks["velotric-nomad-2"],
+        dealPrice: "$1,999",
+        originalPrice: "$1,999",
+        offer: "Free Nomad 2 battery & left mirror ($539.98 value)",
+        totalSavings: "$539.98",
+        dealType: "bonus-only",
+        limitedStock: true,
+        pros: [
+          "A free second battery can be worth real money if you ride long distances",
+          "Mirror included",
+        ],
+        cons: [
+          "The bike itself isn't discounted at all",
+          "Limited stock, so it may sell out before Nov 15",
+        ],
+      },
+      {
+        id: "velotric-breeze-1",
+        name: "Velotric Breeze 1",
+        imageUrl: "/images/deal/Velotric Breeze 1.webp",
+        badge: "Free Rack, Fender, Battery & Bag",
+        description:
+          "Another bonus-only offer. The Breeze 1 stays at $1,799, and Velotric adds a free rear rack, fender, battery and pannier bag worth $619.96. If you'd buy those extras anyway, it's a solid bundle. If not, the headline number looks bigger than the real benefit.",
+        affiliateLink: velotricDealAffiliateLinks["velotric-breeze-1"],
+        dealPrice: "$1,799",
+        originalPrice: "$1,799",
+        offer: "Free rear rack, fender, battery & pannier bag ($619.96 value)",
+        totalSavings: "$619.96",
+        dealType: "bonus-only",
+        limitedStock: true,
+        pros: [
+          "Rack, fender and bag make it ready for everyday errands",
+          "Extra battery included in the bundle",
+        ],
+        cons: [
+          "No cash discount on the bike",
+          "Limited stock while supplies last",
+        ],
+      },
+      {
+        id: "velotric-summit-2",
+        name: "Velotric Summit 2",
+        imageUrl: "/images/deal/Velotric Summit 2.webp",
+        badge: "$100 Off + Free Rack & Mirror",
+        description:
+          "Priced at $1,999 after a $100 cut from $2,099, with a free modular rear rack and left mirror worth $119.98. It's a hybrid e-bike, and this is a middle-of-the-road deal: not huge, but the accessories are handy. Compare it with the Summit 1 if you're torn, since that one has the bigger discount.",
+        affiliateLink: velotricDealAffiliateLinks["velotric-summit-2"],
+        dealPrice: "$1,999",
+        originalPrice: "$2,099",
+        offer:
+          "$100 off + free Modular Rear Rack & Left Mirror ($119.98 value)",
+        totalSavings: "$219.98",
+        dealType: "price-cut",
+        limitedStock: false,
+        pros: [
+          "Rack and mirror add everyday usefulness",
+          "A hybrid option for riders who don't want a pure commuter",
+        ],
+        cons: [
+          "Only a 5% cash discount",
+          "The cheaper Summit 1 saves you far more money",
+        ],
+      },
+      {
+        id: "velotric-gomad",
+        name: "Velotric GoMad",
+        imageUrl: "/images/deal/Velotric GoMad.webp",
+        badge: "Passenger Kit Included",
+        description:
+          "The GoMad is $1,899 after $100 off, and you can pick a free passenger kit worth $180 or a young passenger kit worth $285, or skip the kit and take the bike only. Savings top out at $385 if you choose the young passenger kit. It's a utility e-bike, so the kit only makes sense if you're actually carrying someone.",
+        affiliateLink: velotricDealAffiliateLinks["velotric-gomad"],
+        dealPrice: "$1,899",
+        originalPrice: "$1,999",
+        offer:
+          "$100 off + choice of free Passenger Kit ($180) or Young Passenger Kit ($285)",
+        totalSavings: "Up to $385",
+        dealType: "price-cut",
+        limitedStock: false,
+        pros: [
+          "You choose the kit that matches your family",
+          "Utility bike with a real use case for hauling passengers",
+        ],
+        cons: [
+          "Top savings figure assumes you want the young passenger kit",
+          "Only $100 of the savings is cash",
+        ],
+      },
+      {
+        id: "velotric-tempo",
+        name: "Velotric Tempo",
+        imageUrl: "/images/deal/Velotric Tempo.webp",
+        badge: "$50 Off",
+        description:
+          "The Tempo is down to $1,449 from $1,499. Fifty dollars off is about 3%, so I'd call this a small deal. It's a city e-bike and perfectly reasonable if it's the one you already wanted, but it's not a reason on its own to buy during the sale.",
+        affiliateLink: velotricDealAffiliateLinks["velotric-tempo"],
+        dealPrice: "$1,449",
+        originalPrice: "$1,499",
+        offer: "$50 off",
+        totalSavings: "$50",
+        dealType: "price-cut",
+        limitedStock: false,
+        pros: [
+          "Lowest entry price among the non-discounted models",
+          "City-focused design",
+        ],
+        cons: [
+          "The discount is small enough that waiting for a bigger sale wouldn't hurt",
+          "No free accessories",
+        ],
+      },
+    ],
+
+    // --- Footer internal links ---
+    internalLinksTitle: "More Deals and Guides Worth Checking Out",
+    internalLinks: [
+      {
+        text: "Electric bike deals",
+        url: "/deals/electric-bike-deals",
+        description: "A running list of current e-bike discounts across brands",
+      },
+      {
+        text: "Black Friday e-bike deals",
+        url: "/deals/black-friday-electric-bike-deals",
+        description: "Everything we're tracking as Black Friday gets closer",
+      },
+      {
+        text: "Best folding electric bikes",
+        url: "/deals/best-folding-electric-bikes",
+        description: "Options if the Fold 1 Plus has caught your eye",
+      },
+      {
+        text: "Best commuter e-bikes",
+        url: "/deals/best-commuter-ebikes",
+        description: "How commuter models compare on price and features",
       },
     ],
   },

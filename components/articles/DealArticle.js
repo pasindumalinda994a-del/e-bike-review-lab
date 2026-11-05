@@ -668,6 +668,43 @@ export default function DealArticle({ post, publishedDate }) {
             </section>
           )}
 
+          {post.affiliateDisclosure && (
+            <aside
+              className="max-w-4xl rounded-lg border border-[#e5e5e5] bg-[#f7f7f7] px-4 py-3 sm:px-5 sm:py-4"
+              aria-label="Affiliate disclosure"
+            >
+              <p className="text-sm leading-relaxed text-[#555555] tracking-wide text-left">
+                {post.affiliateDisclosure}
+              </p>
+            </aside>
+          )}
+
+          {post.buyerGuideTitle &&
+            Array.isArray(post.buyerGuide) &&
+            post.buyerGuide.length > 0 && (
+              <section
+                className="max-w-4xl space-y-4"
+                aria-labelledby="buyer-guide"
+              >
+                <h2
+                  id="buyer-guide"
+                  className="text-2xl font-bold leading-[1.25] tracking-[-0.01em] text-[#0C1412] sm:text-3xl text-left"
+                >
+                  {post.buyerGuideTitle}
+                </h2>
+                <ul className="space-y-3 list-disc pl-5">
+                  {post.buyerGuide.map((item, index) => (
+                    <li
+                      key={index}
+                      className="text-base leading-normal text-black sm:text-base tracking-wide text-left"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
           {deals.length > 0 && (
             <DealsTable
               deals={deals}
